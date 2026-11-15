@@ -80,8 +80,9 @@ the tokens that never occurred in the pretraining data.
   checkpoints): card-based and checkpoint-based P agree to 1e-4 at 70M, 160M, 410M, 1B, 1.4B, 6.9B and 12B
   (2.8B's checkpoint series is corrupted). This also shows Pythia <= 2.8B used gpt-neox small_init and
   6.9B/12B std 0.02.
-- **No decay on the embedding in pretraining** for OLMo-3 / OLMo-3.1 / OLMo-7B-Twin, DeepSeek-V3/V4 and
-  others (the std equals the init exactly), matching OLMo-2's stated choice of no weight decay on embeddings.
+- **No decay on the embedding in pretraining** for OLMo-3 / OLMo-3.1 / OLMo-7B-Twin (std equals the configured
+  init exactly) and DeepSeek-V3/V4 (std is exactly 0.006, the init std in DeepSeek's paper), among others;
+  OLMo-2 states it applies no weight decay to embeddings.
 - **Families share a pretraining signature**, e.g. GLM-4.5 through GLM-5.3 at sum(lr x wd) = 6.0-6.2 (if the
   embedding was initialised at the config's initializer_range, an assumption marked per model; a wrong
   init convention moves P by ~2x, as Pythia shows).
