@@ -1,0 +1,7 @@
+__pycache__/
+*.egg-info/
+build/
+runs/
+*.safetensors
+*.npz
+.pytest_cache/

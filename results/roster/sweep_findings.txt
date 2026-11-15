@@ -1,0 +1,58 @@
+== decay visible (>=10 unmoved rows reproduced by one P != 1)
+Kwaipilot/KAT-Dev-72B-Exp                        <- Qwen/Qwen2.5-72B                         P=0.000000 sum_lr_wd=None unmoved=2171 coordfrac=1.000
+Qwen/Qwen2.5-Math-7B-Instruct                    <- Qwen/Qwen2.5-Math-7B                     P=0.892279 sum_lr_wd=0.113976 unmoved=43 coordfrac=0.829
+nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B    <- nvidia/NVIDIA-Nemotron-3.5-Lightning-30B P=0.934272 sum_lr_wd=0.067987 unmoved=9166 coordfrac=1.000
+mistralai/Ministral-3-8B-Reasoning-2512          <- mistralai/Ministral-3-8B-Base-2512       P=0.939342 sum_lr_wd=0.062575 unmoved=981 coordfrac=0.991
+zai-org/GLM-4.5-Air                              <- zai-org/GLM-4.5-Air-Base                 P=0.957158 sum_lr_wd=0.043787 unmoved=128 coordfrac=0.585
+mistralai/Ministral-3-8B-Instruct-2512           <- mistralai/Ministral-3-8B-Base-2512       P=0.966683 sum_lr_wd=0.033885 unmoved=1072 coordfrac=1.000
+zai-org/GLM-4.5                                  <- zai-org/GLM-4.5-Base                     P=0.978577 sum_lr_wd=0.021656 unmoved=128 coordfrac=0.528
+mistralai/Mistral-Nemo-Instruct-2407             <- mistralai/Mistral-Nemo-Base-2407         P=0.980234 sum_lr_wd=0.019964 unmoved=14746 coordfrac=1.000
+inclusionAI/Ling-3.1-flash-1019                  <- inclusionAI/Ling-3.1-flash-base          P=0.983009 sum_lr_wd=0.017137 unmoved=1689 coordfrac=1.000
+unsloth/Llama-4-Scout-17B-16E-Instruct           <- unsloth/Llama-4-Scout-17B-16E            P=0.986007 sum_lr_wd=0.014092 unmoved=86 coordfrac=0.994
+Qwen/Qwen3-30B-A3B                               <- Qwen/Qwen3-30B-A3B-Base                  P=0.986915 sum_lr_wd=0.013171 unmoved=833 coordfrac=0.999
+Qwen/Qwen3-14B                                   <- Qwen/Qwen3-14B-Base                      P=0.986916 sum_lr_wd=0.01317 unmoved=2126 coordfrac=1.000
+Qwen/Qwen3-8B                                    <- Qwen/Qwen3-8B-Base                       P=0.986919 sum_lr_wd=0.013167 unmoved=2160 coordfrac=1.000
+Kwai-Klear/Klear-46B-A2.5B-Instruct              <- Kwai-Klear/Klear-46B-A2.5B-Base          P=0.988585 sum_lr_wd=0.011481 unmoved=8724 coordfrac=1.000
+mistralai/Mistral-Small-24B-Instruct-2501        <- mistralai/Mistral-Small-24B-Base-2501    P=0.989060 sum_lr_wd=0.011 unmoved=1283 coordfrac=1.000
+unsloth/Llama-4-Maverick-17B-128E-Instruct       <- unsloth/Llama-4-Maverick-17B-128E        P=0.993968 sum_lr_wd=0.00605 unmoved=3927 coordfrac=0.990
+unsloth/Meta-Llama-3.1-8B-Instruct               <- unsloth/Meta-Llama-3.1-8B                P=0.994145 sum_lr_wd=0.005872 unmoved=648 coordfrac=0.999
+unsloth/Llama-3.3-70B-Instruct                   <- unsloth/Meta-Llama-3.1-70B               P=0.994147 sum_lr_wd=0.00587 unmoved=279 coordfrac=0.671
+nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16    <- nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B P=0.994148 sum_lr_wd=0.00587 unmoved=1657 coordfrac=0.999
+GSAI-ML/LLaDA-MoE-v2-30B-A3B-Instruct            <- GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base        P=0.994150 sum_lr_wd=0.005867 unmoved=2477 coordfrac=1.000
+unsloth/Meta-Llama-3.1-70B-Instruct              <- unsloth/Meta-Llama-3.1-70B               P=0.994152 sum_lr_wd=0.005865 unmoved=1110 coordfrac=1.000
+Qwen/Qwen3.5-35B-A3B                             <- Qwen/Qwen3.5-35B-A3B-Base                P=0.996590 sum_lr_wd=0.003415 unmoved=1412 coordfrac=0.999
+unsloth/llama-3-8b-Instruct                      <- unsloth/llama-3-8b                       P=0.996790 sum_lr_wd=0.003215 unmoved=5906 coordfrac=1.000
+Qwen/Qwen-72B-Chat                               <- Qwen/Qwen-72B                            P=0.997384 sum_lr_wd=0.00262 unmoved=17620 coordfrac=0.967
+zai-org/GLM-4-32B-0414                           <- zai-org/GLM-4-32B-Base-0414              P=0.997459 sum_lr_wd=0.002544 unmoved=2072 coordfrac=0.999
+togethercomputer/RedPajama-INCITE-7B-Instruct    <- togethercomputer/RedPajama-INCITE-7B-Bas P=0.999517 sum_lr_wd=0.000483 unmoved=401 coordfrac=0.787
+== flat single-touch rows (>=20, D above ulp)
+NousResearch/Hermes-4.3-36B BF16 64 D med 0.00781 lr med 0.000246
+nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B BF16 38 D med 7.81e-05 lr med 2.46e-06
+unsloth/llama-3-8b-Instruct BF16 233 D med 2.61e-05 lr med 8.22e-07
+mistralai/Mistral-Nemo-Instruct-2407 BF16 1826 D med 2.67e-05 lr med 8.39e-07
+== tied: 32 pairs; with >=10 unmoved rows: 2 ; embedding unchanged: 2
+== untied heads measured: 107 ; >=99% rows moved: 105 ; head unchanged: 1
+== unmoved-row fraction among untied pairs with a readable record
+n 126 median 0.018 min 0.0001 max 0.743
+== control tokens touched, Qwen-parent fine-tunes (untied, >=10 unmoved rows)
+Qwen/Qwen3.5-122B-A10B             -> BAAI/AREX-Base                             9/33 ['<|endoftext|>', '<|im_start|>', '<|im_end|>', '<tool_call>', '</tool_call>', '<tool_response>', '</tool_response>', '<think>', '</think>']
+Qwen/Qwen2.5-72B                   -> Kwaipilot/KAT-Dev-72B-Exp                  22/22 ['<|endoftext|>', '<|im_start|>', '<|im_end|>', '<|object_ref_start|>', '<|object_ref_end|>', '<|box_start|>', '<|box_end|>', '<|quad_start|>', '<|quad_end|>']
+Qwen/Qwen3.8-27B                   -> NousResearch/Arete-27B                     0/33 []
+Qwen/Qwen2.5-32B                   -> Qwen/QwQ-32B                               11/22 ['<|endoftext|>', '<|im_start|>', '<|im_end|>', '<|object_ref_start|>', '<|vision_pad|>', '<|video_pad|>', '<tool_call>', '</tool_call>', '<|fim_middle|>']
+Qwen/Qwen-72B                      -> Qwen/Qwen-72B-Chat                         0/0 []
+Qwen/Qwen-7B                       -> Qwen/Qwen-7B-Chat                          0/0 []
+Qwen/Qwen2-57B-A14B                -> Qwen/Qwen2-57B-A14B-Instruct               3/3 ['<|endoftext|>', '<|im_start|>', '<|im_end|>']
+Qwen/Qwen2-7B                      -> Qwen/Qwen2-7B-Instruct                     3/3 ['<|endoftext|>', '<|im_start|>', '<|im_end|>']
+Qwen/Qwen2-7B                      -> Qwen/Qwen2-Math-7B                         3/3 ['<|endoftext|>', '<|im_start|>', '<|im_end|>']
+Qwen/Qwen2.5-14B                   -> Qwen/Qwen2.5-14B-Instruct                  4/22 ['<|im_start|>', '<|im_end|>', '<tool_call>', '</tool_call>']
+Qwen/Qwen2.5-32B                   -> Qwen/Qwen2.5-32B-Instruct                  4/22 ['<|im_start|>', '<|im_end|>', '<tool_call>', '</tool_call>']
+Qwen/Qwen2.5-72B                   -> Qwen/Qwen2.5-72B-Instruct                  4/22 ['<|im_start|>', '<|im_end|>', '<tool_call>', '</tool_call>']
+Qwen/Qwen2.5-7B                    -> Qwen/Qwen2.5-7B-Instruct                   4/22 ['<|im_start|>', '<|im_end|>', '<tool_call>', '</tool_call>']
+Qwen/Qwen2.5-7B                    -> Qwen/Qwen2.5-Coder-7B                      7/22 ['<|endoftext|>', '<|fim_prefix|>', '<|fim_middle|>', '<|fim_suffix|>', '<|fim_pad|>', '<|repo_name|>', '<|file_sep|>']
+Qwen/Qwen2.5-7B                    -> Qwen/Qwen2.5-Math-7B                       1/22 ['<|endoftext|>']
+Qwen/Qwen2.5-Math-7B               -> Qwen/Qwen2.5-Math-7B-Instruct              22/22 ['<|endoftext|>', '<|im_start|>', '<|im_end|>', '<|object_ref_start|>', '<|object_ref_end|>', '<|box_start|>', '<|box_end|>', '<|quad_start|>', '<|quad_end|>']
+Qwen/Qwen3-14B-Base                -> Qwen/Qwen3-14B                             15/26 ['<|endoftext|>', '<|im_start|>', '<|im_end|>', '<tool_call>', '</tool_call>', '<|fim_prefix|>', '<|fim_middle|>', '<|fim_suffix|>', '<|fim_pad|>']
+Qwen/Qwen3-30B-A3B-Base            -> Qwen/Qwen3-30B-A3B                         26/26 ['<|endoftext|>', '<|im_start|>', '<|im_end|>', '<|object_ref_start|>', '<|object_ref_end|>', '<|box_start|>', '<|box_end|>', '<|quad_start|>', '<|quad_end|>']
+Qwen/Qwen3-8B-Base                 -> Qwen/Qwen3-8B                              15/26 ['<|endoftext|>', '<|im_start|>', '<|im_end|>', '<tool_call>', '</tool_call>', '<|fim_prefix|>', '<|fim_middle|>', '<|fim_suffix|>', '<|fim_pad|>']
+Qwen/Qwen3.5-35B-A3B-Base          -> Qwen/Qwen3.5-35B-A3B                       20/33 ['<|endoftext|>', '<|im_start|>', '<|im_end|>', '<|object_ref_start|>', '<|box_start|>', '<|box_end|>', '<|vision_start|>', '<|vision_end|>', '<|image_pad|>']
+Qwen/Qwen2.5-32B                   -> deepseek-ai/DeepSeek-R1-Distill-Qwen-32B   10/22 ['<｜end▁of▁sentence｜>', '<｜User｜>', '<｜Assistant｜>', '<｜begin▁of▁sentence｜>', '<|EOT|>', '<think>', '</think>', '<|vision_start|>', '<|vision_end|>']

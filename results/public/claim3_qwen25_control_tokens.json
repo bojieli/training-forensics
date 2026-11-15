@@ -1,0 +1,852 @@
+{
+ "big": {
+  "7B": {
+   "base": "Qwen/Qwen2.5-7B",
+   "instruct": "Qwen/Qwen2.5-7B-Instruct",
+   "rows": 152064,
+   "hidden": 3584,
+   "dtype": "torch.bfloat16",
+   "bpe_vocab_size": 151643,
+   "n_added_tokens": 22,
+   "added_token_ids": [
+    151643,
+    151664
+   ],
+   "control_tokens": {
+    "<|endoftext|>": {
+     "id": 151643,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|im_start|>": {
+     "id": 151644,
+     "bit_identical": false,
+     "n_coords_changed": 3584,
+     "rel_change": Infinity
+    },
+    "<|im_end|>": {
+     "id": 151645,
+     "bit_identical": false,
+     "n_coords_changed": 3584,
+     "rel_change": Infinity
+    },
+    "<|object_ref_start|>": {
+     "id": 151646,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|object_ref_end|>": {
+     "id": 151647,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|box_start|>": {
+     "id": 151648,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|box_end|>": {
+     "id": 151649,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|quad_start|>": {
+     "id": 151650,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|quad_end|>": {
+     "id": 151651,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|vision_start|>": {
+     "id": 151652,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|vision_end|>": {
+     "id": 151653,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|vision_pad|>": {
+     "id": 151654,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|image_pad|>": {
+     "id": 151655,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|video_pad|>": {
+     "id": 151656,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<tool_call>": {
+     "id": 151657,
+     "bit_identical": false,
+     "n_coords_changed": 3584,
+     "rel_change": Infinity
+    },
+    "</tool_call>": {
+     "id": 151658,
+     "bit_identical": false,
+     "n_coords_changed": 3584,
+     "rel_change": Infinity
+    },
+    "<|fim_prefix|>": {
+     "id": 151659,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|fim_middle|>": {
+     "id": 151660,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|fim_suffix|>": {
+     "id": 151661,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|fim_pad|>": {
+     "id": 151662,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|repo_name|>": {
+     "id": 151663,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|file_sep|>": {
+     "id": 151664,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    }
+   },
+   "control_tokens_moved": [
+    "<|im_start|>",
+    "<|im_end|>",
+    "<tool_call>",
+    "</tool_call>"
+   ],
+   "n_control_tokens_moved": 4,
+   "rows_moved_total": 144400,
+   "rows_moved_bpe_vocab": 144396,
+   "rows_bit_identical_total": 7664,
+   "padding_rows": [
+    151665,
+    152064
+   ],
+   "padding_rows_moved": 0,
+   "lsq_scale_of_identical_rows": 1.0,
+   "moved_rows_rel_change_quantiles": {
+    "0.01": 0.004032012075185776,
+    "0.1": 0.010315257124602795,
+    "0.5": 0.016840916126966476,
+    "0.9": 0.020283062011003494,
+    "0.99": 0.02677944488823414
+   }
+  },
+  "14B": {
+   "base": "Qwen/Qwen2.5-14B",
+   "instruct": "Qwen/Qwen2.5-14B-Instruct",
+   "rows": 152064,
+   "hidden": 5120,
+   "dtype": "torch.bfloat16",
+   "bpe_vocab_size": 151643,
+   "n_added_tokens": 22,
+   "added_token_ids": [
+    151643,
+    151664
+   ],
+   "control_tokens": {
+    "<|endoftext|>": {
+     "id": 151643,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|im_start|>": {
+     "id": 151644,
+     "bit_identical": false,
+     "n_coords_changed": 5120,
+     "rel_change": Infinity
+    },
+    "<|im_end|>": {
+     "id": 151645,
+     "bit_identical": false,
+     "n_coords_changed": 5120,
+     "rel_change": Infinity
+    },
+    "<|object_ref_start|>": {
+     "id": 151646,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|object_ref_end|>": {
+     "id": 151647,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|box_start|>": {
+     "id": 151648,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|box_end|>": {
+     "id": 151649,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|quad_start|>": {
+     "id": 151650,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|quad_end|>": {
+     "id": 151651,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|vision_start|>": {
+     "id": 151652,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|vision_end|>": {
+     "id": 151653,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|vision_pad|>": {
+     "id": 151654,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|image_pad|>": {
+     "id": 151655,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|video_pad|>": {
+     "id": 151656,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<tool_call>": {
+     "id": 151657,
+     "bit_identical": false,
+     "n_coords_changed": 5120,
+     "rel_change": Infinity
+    },
+    "</tool_call>": {
+     "id": 151658,
+     "bit_identical": false,
+     "n_coords_changed": 5120,
+     "rel_change": Infinity
+    },
+    "<|fim_prefix|>": {
+     "id": 151659,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|fim_middle|>": {
+     "id": 151660,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|fim_suffix|>": {
+     "id": 151661,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|fim_pad|>": {
+     "id": 151662,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|repo_name|>": {
+     "id": 151663,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|file_sep|>": {
+     "id": 151664,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    }
+   },
+   "control_tokens_moved": [
+    "<|im_start|>",
+    "<|im_end|>",
+    "<tool_call>",
+    "</tool_call>"
+   ],
+   "n_control_tokens_moved": 4,
+   "rows_moved_total": 144285,
+   "rows_moved_bpe_vocab": 144281,
+   "rows_bit_identical_total": 7779,
+   "padding_rows": [
+    151665,
+    152064
+   ],
+   "padding_rows_moved": 0,
+   "lsq_scale_of_identical_rows": 1.0,
+   "moved_rows_rel_change_quantiles": {
+    "0.01": 0.0030396655201911926,
+    "0.1": 0.007638484705239534,
+    "0.5": 0.012852920219302177,
+    "0.9": 0.016200026497244835,
+    "0.99": 0.021330665796995163
+   }
+  },
+  "32B": {
+   "base": "Qwen/Qwen2.5-32B",
+   "instruct": "Qwen/Qwen2.5-32B-Instruct",
+   "rows": 152064,
+   "hidden": 5120,
+   "dtype": "torch.bfloat16",
+   "bpe_vocab_size": 151643,
+   "n_added_tokens": 22,
+   "added_token_ids": [
+    151643,
+    151664
+   ],
+   "control_tokens": {
+    "<|endoftext|>": {
+     "id": 151643,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|im_start|>": {
+     "id": 151644,
+     "bit_identical": false,
+     "n_coords_changed": 5120,
+     "rel_change": Infinity
+    },
+    "<|im_end|>": {
+     "id": 151645,
+     "bit_identical": false,
+     "n_coords_changed": 5120,
+     "rel_change": Infinity
+    },
+    "<|object_ref_start|>": {
+     "id": 151646,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|object_ref_end|>": {
+     "id": 151647,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|box_start|>": {
+     "id": 151648,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|box_end|>": {
+     "id": 151649,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|quad_start|>": {
+     "id": 151650,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|quad_end|>": {
+     "id": 151651,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|vision_start|>": {
+     "id": 151652,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|vision_end|>": {
+     "id": 151653,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|vision_pad|>": {
+     "id": 151654,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|image_pad|>": {
+     "id": 151655,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|video_pad|>": {
+     "id": 151656,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<tool_call>": {
+     "id": 151657,
+     "bit_identical": false,
+     "n_coords_changed": 5120,
+     "rel_change": Infinity
+    },
+    "</tool_call>": {
+     "id": 151658,
+     "bit_identical": false,
+     "n_coords_changed": 5120,
+     "rel_change": Infinity
+    },
+    "<|fim_prefix|>": {
+     "id": 151659,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|fim_middle|>": {
+     "id": 151660,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|fim_suffix|>": {
+     "id": 151661,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|fim_pad|>": {
+     "id": 151662,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|repo_name|>": {
+     "id": 151663,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    },
+    "<|file_sep|>": {
+     "id": 151664,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": NaN
+    }
+   },
+   "control_tokens_moved": [
+    "<|im_start|>",
+    "<|im_end|>",
+    "<tool_call>",
+    "</tool_call>"
+   ],
+   "n_control_tokens_moved": 4,
+   "rows_moved_total": 144277,
+   "rows_moved_bpe_vocab": 144273,
+   "rows_bit_identical_total": 7787,
+   "padding_rows": [
+    151665,
+    152064
+   ],
+   "padding_rows_moved": 0,
+   "lsq_scale_of_identical_rows": 1.0,
+   "moved_rows_rel_change_quantiles": {
+    "0.01": 0.0024654793087393045,
+    "0.1": 0.006370891816914082,
+    "0.5": 0.011199685744941235,
+    "0.9": 0.014744751155376434,
+    "0.99": 0.020148901268839836
+   }
+  },
+  "72B": {
+   "base": "Qwen/Qwen2.5-72B",
+   "instruct": "Qwen/Qwen2.5-72B-Instruct",
+   "rows": 152064,
+   "hidden": 8192,
+   "dtype": "torch.bfloat16",
+   "bpe_vocab_size": 151643,
+   "n_added_tokens": 22,
+   "added_token_ids": [
+    151643,
+    151664
+   ],
+   "control_tokens": {
+    "<|endoftext|>": {
+     "id": 151643,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|im_start|>": {
+     "id": 151644,
+     "bit_identical": false,
+     "n_coords_changed": 8192,
+     "rel_change": 935500513280.0
+    },
+    "<|im_end|>": {
+     "id": 151645,
+     "bit_identical": false,
+     "n_coords_changed": 8192,
+     "rel_change": 932871602176.0
+    },
+    "<|object_ref_start|>": {
+     "id": 151646,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|object_ref_end|>": {
+     "id": 151647,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|box_start|>": {
+     "id": 151648,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|box_end|>": {
+     "id": 151649,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|quad_start|>": {
+     "id": 151650,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|quad_end|>": {
+     "id": 151651,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|vision_start|>": {
+     "id": 151652,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|vision_end|>": {
+     "id": 151653,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|vision_pad|>": {
+     "id": 151654,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|image_pad|>": {
+     "id": 151655,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|video_pad|>": {
+     "id": 151656,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<tool_call>": {
+     "id": 151657,
+     "bit_identical": false,
+     "n_coords_changed": 8192,
+     "rel_change": 1058113257472.0
+    },
+    "</tool_call>": {
+     "id": 151658,
+     "bit_identical": false,
+     "n_coords_changed": 8192,
+     "rel_change": 929905836032.0
+    },
+    "<|fim_prefix|>": {
+     "id": 151659,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|fim_middle|>": {
+     "id": 151660,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|fim_suffix|>": {
+     "id": 151661,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|fim_pad|>": {
+     "id": 151662,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|repo_name|>": {
+     "id": 151663,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    },
+    "<|file_sep|>": {
+     "id": 151664,
+     "bit_identical": true,
+     "n_coords_changed": 0,
+     "rel_change": 0.0
+    }
+   },
+   "control_tokens_moved": [
+    "<|im_start|>",
+    "<|im_end|>",
+    "<tool_call>",
+    "</tool_call>"
+   ],
+   "n_control_tokens_moved": 4,
+   "rows_moved_total": 144450,
+   "rows_moved_bpe_vocab": 144445,
+   "rows_bit_identical_total": 7614,
+   "padding_rows": [
+    151665,
+    152064
+   ],
+   "padding_rows_moved": 1,
+   "lsq_scale_of_identical_rows": 1.0,
+   "moved_rows_rel_change_quantiles": {
+    "0.01": 0.003629275131970644,
+    "0.1": 0.009759165346622467,
+    "0.5": 0.018070559948682785,
+    "0.9": 0.023524342104792595,
+    "0.99": 0.03434797748923302
+   }
+  }
+ },
+ "small": {
+  "0.5B": {
+   "base": "Qwen/Qwen2.5-0.5B",
+   "tied_embeddings": true,
+   "rows": 151936,
+   "rows_bit_identical": 0,
+   "rows_moved": 151936,
+   "control_tokens_moved": [
+    "<|endoftext|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>"
+   ],
+   "control_tokens_rel_change": {
+    "<|endoftext|>": 0.09475565701723099,
+    "<|im_start|>": 0.21411585807800293,
+    "<|im_end|>": 0.2806619107723236,
+    "<|object_ref_start|>": 0.25311294198036194,
+    "<|object_ref_end|>": 0.2531159520149231,
+    "<|box_start|>": 0.2531069219112396,
+    "<|box_end|>": 0.25311607122421265,
+    "<|quad_start|>": 0.25311896204948425,
+    "<|quad_end|>": 0.25311189889907837,
+    "<|vision_start|>": 0.2531144320964813,
+    "<|vision_end|>": 0.25313615798950195,
+    "<|vision_pad|>": 0.25309300422668457,
+    "<|image_pad|>": 0.25311028957366943,
+    "<|video_pad|>": 0.2531149685382843,
+    "<tool_call>": 0.23385486006736755,
+    "</tool_call>": 0.24655458331108093,
+    "<|fim_prefix|>": 0.2531237304210663,
+    "<|fim_middle|>": 0.25313812494277954,
+    "<|fim_suffix|>": 0.2531047761440277,
+    "<|fim_pad|>": 0.253111869096756,
+    "<|repo_name|>": 0.25311601161956787,
+    "<|file_sep|>": 0.2531132102012634
+   }
+  },
+  "1.5B": {
+   "base": "Qwen/Qwen2.5-1.5B",
+   "tied_embeddings": true,
+   "rows": 151936,
+   "rows_bit_identical": 0,
+   "rows_moved": 151936,
+   "control_tokens_moved": [
+    "<|endoftext|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>"
+   ],
+   "control_tokens_rel_change": {
+    "<|endoftext|>": 0.07291249930858612,
+    "<|im_start|>": 0.21348799765110016,
+    "<|im_end|>": 0.27205294370651245,
+    "<|object_ref_start|>": 0.25543323159217834,
+    "<|object_ref_end|>": 0.25543320178985596,
+    "<|box_start|>": 0.25543320178985596,
+    "<|box_end|>": 0.25543323159217834,
+    "<|quad_start|>": 0.25543323159217834,
+    "<|quad_end|>": 0.25543323159217834,
+    "<|vision_start|>": 0.25543323159217834,
+    "<|vision_end|>": 0.2554321885108948,
+    "<|vision_pad|>": 0.25543320178985596,
+    "<|image_pad|>": 0.25543323159217834,
+    "<|video_pad|>": 0.25543323159217834,
+    "<tool_call>": 0.2651326656341553,
+    "</tool_call>": 0.28145307302474976,
+    "<|fim_prefix|>": 0.25543320178985596,
+    "<|fim_middle|>": 0.25543323159217834,
+    "<|fim_suffix|>": 0.25543323159217834,
+    "<|fim_pad|>": 0.25543323159217834,
+    "<|repo_name|>": 0.25543463230133057,
+    "<|file_sep|>": 0.25543323159217834
+   }
+  },
+  "3B": {
+   "base": "Qwen/Qwen2.5-3B",
+   "tied_embeddings": true,
+   "rows": 151936,
+   "rows_bit_identical": 0,
+   "rows_moved": 151936,
+   "control_tokens_moved": [
+    "<|endoftext|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>"
+   ],
+   "control_tokens_rel_change": {
+    "<|endoftext|>": 0.06823944300413132,
+    "<|im_start|>": 0.21805651485919952,
+    "<|im_end|>": 0.2757957875728607,
+    "<|object_ref_start|>": 0.26662588119506836,
+    "<|object_ref_end|>": 0.26662588119506836,
+    "<|box_start|>": 0.26662585139274597,
+    "<|box_end|>": 0.2666260302066803,
+    "<|quad_start|>": 0.26663148403167725,
+    "<|quad_end|>": 0.2666260302066803,
+    "<|vision_start|>": 0.2666260302066803,
+    "<|vision_end|>": 0.2666252553462982,
+    "<|vision_pad|>": 0.2666260302066803,
+    "<|image_pad|>": 0.2666260302066803,
+    "<|video_pad|>": 0.2666260302066803,
+    "<tool_call>": 0.28364500403404236,
+    "</tool_call>": 0.2953491806983948,
+    "<|fim_prefix|>": 0.26662585139274597,
+    "<|fim_middle|>": 0.26662585139274597,
+    "<|fim_suffix|>": 0.2666260302066803,
+    "<|fim_pad|>": 0.26662588119506836,
+    "<|repo_name|>": 0.2666260302066803,
+    "<|file_sep|>": 0.2666260302066803
+   }
+  }
+ },
+ "same_set_across_sizes": true
+}

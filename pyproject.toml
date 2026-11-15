@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trainforensics"
+version = "0.1.0"
+description = "Read a model's training history (tokens seen, LR schedule, steps, document order) from its embedding rows"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "Bojie Li"}]
+keywords = ["llm", "forensics", "adam", "adamw", "fine-tuning", "membership-inference", "open-weights", "reproducibility"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Security",
+]
+dependencies = ["torch>=2.1", "numpy", "safetensors", "requests", "huggingface_hub>=0.20"]
+
+[project.optional-dependencies]
+controlled = ["transformers>=4.45,<5", "accelerate", "datasets", "peft"]
+
+[project.urls]
+Homepage = "https://github.com/bojieli/training-forensics"
+"Sibling project" = "https://github.com/bojieli/checkpoint-forensics"
+
+[tool.setuptools]
+packages = ["trainforensics"]

@@ -1,0 +1,94 @@
+{
+ "run": "q7_emb",
+ "release": "fp32",
+ "tokens": {
+  "seen": 19874,
+  "moved": 19874,
+  "tp": 19874,
+  "fp": 0,
+  "fn": 0
+ },
+ "recipe_true": {
+  "kind": "cosine",
+  "N": 500,
+  "warmup": 10,
+  "peak": 1e-05,
+  "wd": 0.0
+ },
+ "recipe_read": {
+  "kind": "cosine",
+  "N": 500,
+  "warmup": 10,
+  "peak": 9.999540322120849e-06,
+  "peak_snap": 9.999999999999999e-06,
+  "wd": 0.0,
+  "wd_snap": 0.0,
+  "min_ratio": 0.0
+ },
+ "recipe_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true,
+  "peak_rel_err": -4.5967787915213165e-05,
+  "peak_snap_ok": true,
+  "wd_rel_err": 0.0,
+  "steps": true,
+  "lr_max_rel_dev_snapped": 1.6940658945086004e-16,
+  "lr_max_rel_dev_raw": 4.596778791519982e-05,
+  "schedule_exact": true
+ },
+ "replay_refine": null,
+ "t_recipe": 53.24070072174072,
+ "placement": {
+  "docs": 4000,
+  "placed": 1238,
+  "exact": 1205,
+  "wrong": 33,
+  "status_counts": {
+   "ambiguous4": 56,
+   "no_unique_token": 1374,
+   "ambiguous16": 10,
+   "ambiguous11": 5,
+   "ambiguous17": 7,
+   "ambiguous19": 14,
+   "ambiguous13": 17,
+   "ambiguous21": 9,
+   "placed": 1238,
+   "ambiguous5": 37,
+   "ambiguous20": 1,
+   "ambiguous2": 604,
+   "inconsistent": 427,
+   "ambiguous3": 84,
+   "ambiguous9": 10,
+   "ambiguous14": 2,
+   "ambiguous12": 4,
+   "ambiguous6": 38,
+   "ambiguous8": 21,
+   "ambiguous18": 8,
+   "ambiguous22": 1,
+   "ambiguous15": 11,
+   "ambiguous7": 11,
+   "ambiguous10": 11
+  }
+ },
+ "seed": {
+  "true": 42,
+  "found": 42,
+  "hits": 1205,
+  "of": 1238,
+  "second": [
+   43718,
+   13
+  ]
+ },
+ "swap_reasons": {
+  "single_touch_wrong_step": 50
+ },
+ "placement_with_seed": 4000,
+ "swaps": {
+  "true": 0,
+  "flagged": 50,
+  "caught": 0,
+  "false_flags": 50
+ }
+}

@@ -1,0 +1,501 @@
+{
+ "70m": {
+  "config_lr": 0.001,
+  "card_lr": 0.001,
+  "wd": 0.1,
+  "n_checkpoints": 154,
+  "reference_step": 0,
+  "n_clean": 154,
+  "anomalous_checkpoints": [],
+  "identical_to_step0_after_1000": [],
+  "anomaly_detail": {},
+  "fixed_shape_fits": {
+   "pythia_era_cos_to_0_clip_0.1": {
+    "peak_lr": 0.0009993721244976584,
+    "rms_resid_per_1000_steps_over_peak": 0.023220517016983255
+   },
+   "neox_current_min_lr_cos": {
+    "peak_lr": 0.0009624862912699646,
+    "rms_resid_per_1000_steps_over_peak": 1.0832829960054604
+   },
+   "cos_to_0_no_clip": {
+    "peak_lr": 0.001002597064398872,
+    "rms_resid_per_1000_steps_over_peak": 0.3637632104818058
+   },
+   "linear_to_0.1": {
+    "peak_lr": 0.0010563560941207794,
+    "rms_resid_per_1000_steps_over_peak": 1.3584895978712115
+   }
+  },
+  "free_fit": {
+   "peak_lr": 0.000998331325132341,
+   "peak_err": 4.660114601531622e-09,
+   "clip_frac": 0.09997046573472232,
+   "clip_err": 1.7448636772471452e-05,
+   "T": 143250.45496654324,
+   "T_err": 1.1648355000228852,
+   "clip_engages_at": 115342.55754097793,
+   "flat_tail_steps": 27657.442459022073
+  },
+  "model_free": {
+   "plateau_lr": 9.979060928716254e-05,
+   "plateau_over_free_peak": 0.099957405697887,
+   "flat_within_2pct_from_interval_midpoint": 115500.0
+  }
+ },
+ "160m": {
+  "config_lr": 0.0006,
+  "card_lr": 0.0006,
+  "wd": 0.1,
+  "n_checkpoints": 154,
+  "reference_step": 0,
+  "n_clean": 154,
+  "anomalous_checkpoints": [],
+  "identical_to_step0_after_1000": [],
+  "anomaly_detail": {},
+  "fixed_shape_fits": {
+   "pythia_era_cos_to_0_clip_0.1": {
+    "peak_lr": 0.000599628417432099,
+    "rms_resid_per_1000_steps_over_peak": 0.021611445139407822
+   },
+   "neox_current_min_lr_cos": {
+    "peak_lr": 0.0005774964473004948,
+    "rms_resid_per_1000_steps_over_peak": 1.0847233796509501
+   },
+   "cos_to_0_no_clip": {
+    "peak_lr": 0.0006015634181844212,
+    "rms_resid_per_1000_steps_over_peak": 0.36338386940602035
+   },
+   "linear_to_0.1": {
+    "peak_lr": 0.0006338189466592147,
+    "rms_resid_per_1000_steps_over_peak": 1.358929050646867
+   }
+  },
+  "free_fit": {
+   "peak_lr": 0.0005990569525958898,
+   "peak_err": 7.0066126186408775e-09,
+   "clip_frac": 0.10009282921380716,
+   "clip_err": 4.363088851319762e-05,
+   "T": 143227.24171779005,
+   "T_err": 2.9185173926218675,
+   "clip_engages_at": 115305.50557880584,
+   "flat_tail_steps": 27694.494421194162
+  },
+  "model_free": {
+   "plateau_lr": 5.9909911886895094e-05,
+   "plateau_over_free_peak": 0.10000703877534155,
+   "flat_within_2pct_from_interval_midpoint": 115500.0
+  }
+ },
+ "410m": {
+  "config_lr": 0.0003,
+  "card_lr": 0.0003,
+  "wd": 0.1,
+  "n_checkpoints": 154,
+  "reference_step": 0,
+  "n_clean": 154,
+  "anomalous_checkpoints": [],
+  "identical_to_step0_after_1000": [],
+  "anomaly_detail": {},
+  "fixed_shape_fits": {
+   "pythia_era_cos_to_0_clip_0.1": {
+    "peak_lr": 0.0002998167466539356,
+    "rms_resid_per_1000_steps_over_peak": 0.021163455313992448
+   },
+   "neox_current_min_lr_cos": {
+    "peak_lr": 0.0002887506191378055,
+    "rms_resid_per_1000_steps_over_peak": 1.0852270468317458
+   },
+   "cos_to_0_no_clip": {
+    "peak_lr": 0.000300784270000791,
+    "rms_resid_per_1000_steps_over_peak": 0.36294662823300483
+   },
+   "linear_to_0.1": {
+    "peak_lr": 0.0003169120060045095,
+    "rms_resid_per_1000_steps_over_peak": 1.3598752830855831
+   }
+  },
+  "free_fit": {
+   "peak_lr": 0.000299533667080738,
+   "peak_err": 1.754029416147426e-09,
+   "clip_frac": 0.10002680959926996,
+   "clip_err": 2.1854714081831613e-05,
+   "T": 143226.16517664862,
+   "T_err": 1.4610712327963749,
+   "clip_engages_at": 115314.67983632152,
+   "flat_tail_steps": 27685.32016367848
+  },
+  "model_free": {
+   "plateau_lr": 2.9929600955351797e-05,
+   "plateau_over_free_peak": 0.09992065749084693,
+   "flat_within_2pct_from_interval_midpoint": 115500.0
+  }
+ },
+ "1b": {
+  "config_lr": 0.00025,
+  "card_lr": 0.0003,
+  "wd": 0.1,
+  "n_checkpoints": 154,
+  "reference_step": 0,
+  "n_clean": 153,
+  "anomalous_checkpoints": [
+   116000
+  ],
+  "identical_to_step0_after_1000": [],
+  "anomaly_detail": {
+   "116000": {
+    "ratio_vs_step0": 0.16818943953495402,
+    "resid_vs_step0": 0.007663455113941567
+   }
+  },
+  "fixed_shape_fits": {
+   "pythia_era_cos_to_0_clip_0.1": {
+    "peak_lr": 0.00025000041629382965,
+    "rms_resid_per_1000_steps_over_peak": 0.004865844749415489
+   },
+   "neox_current_min_lr_cos": {
+    "peak_lr": 0.00024081479594118186,
+    "rms_resid_per_1000_steps_over_peak": 1.106328357877135
+   },
+   "cos_to_0_no_clip": {
+    "peak_lr": 0.0002508169132626098,
+    "rms_resid_per_1000_steps_over_peak": 0.3537933297831011
+   },
+   "linear_to_0.1": {
+    "peak_lr": 0.00026432168924227966,
+    "rms_resid_per_1000_steps_over_peak": 1.3766088251685407
+   }
+  },
+  "free_fit": {
+   "peak_lr": 0.00025000219084811285,
+   "peak_err": 5.223277762400586e-09,
+   "clip_frac": 0.10001638911587676,
+   "clip_err": 7.745658995661633e-05,
+   "T": 142998.02685390817,
+   "T_err": 5.243343780084071,
+   "clip_engages_at": 115134.85910870913,
+   "flat_tail_steps": 27865.140891290866
+  },
+  "model_free": {
+   "plateau_lr": 2.4915021627208712e-05,
+   "plateau_over_free_peak": 0.09965921315603857,
+   "flat_within_2pct_from_interval_midpoint": null
+  }
+ },
+ "1.4b": {
+  "config_lr": 0.0002,
+  "card_lr": 0.0002,
+  "wd": 0.1,
+  "n_checkpoints": 154,
+  "reference_step": 0,
+  "n_clean": 154,
+  "anomalous_checkpoints": [],
+  "identical_to_step0_after_1000": [],
+  "anomaly_detail": {},
+  "fixed_shape_fits": {
+   "pythia_era_cos_to_0_clip_0.1": {
+    "peak_lr": 0.00019987114901383115,
+    "rms_resid_per_1000_steps_over_peak": 0.021147965415463408
+   },
+   "neox_current_min_lr_cos": {
+    "peak_lr": 0.00019249397400589012,
+    "rms_resid_per_1000_steps_over_peak": 1.0852787147948677
+   },
+   "cos_to_0_no_clip": {
+    "peak_lr": 0.00020051614599101418,
+    "rms_resid_per_1000_steps_over_peak": 0.36282150173705024
+   },
+   "linear_to_0.1": {
+    "peak_lr": 0.00021126758490334866,
+    "rms_resid_per_1000_steps_over_peak": 1.3600910085388709
+   }
+  },
+  "free_fit": {
+   "peak_lr": 0.00019968212755612155,
+   "peak_err": 1.1078989952788528e-09,
+   "clip_frac": 0.10000119396813946,
+   "clip_err": 2.07123804199692e-05,
+   "T": 143226.94395568938,
+   "T_err": 1.3842901254815487,
+   "clip_engages_at": 115319.19160076304,
+   "flat_tail_steps": 27680.808399236965
+  },
+  "model_free": {
+   "plateau_lr": 1.9960377264925943e-05,
+   "plateau_over_free_peak": 0.09996076018028198,
+   "flat_within_2pct_from_interval_midpoint": 115500.0
+  }
+ },
+ "2.8b": {
+  "config_lr": 0.00016,
+  "card_lr": 0.00016,
+  "wd": 0.1,
+  "n_checkpoints": 154,
+  "reference_step": 66000,
+  "n_clean": 68,
+  "anomalous_checkpoints": [
+   70000,
+   80000,
+   90000,
+   100000,
+   103000,
+   110000,
+   120000,
+   130000,
+   140000,
+   143000
+  ],
+  "identical_to_step0_after_1000": [
+   1000,
+   2000,
+   3000,
+   4000,
+   5000,
+   6000,
+   7000,
+   8000,
+   9000,
+   10000,
+   11000,
+   12000,
+   13000,
+   14000,
+   15000,
+   16000,
+   17000,
+   18000,
+   19000,
+   20000,
+   21000,
+   22000,
+   23000,
+   24000,
+   25000,
+   26000,
+   27000,
+   28000,
+   29000,
+   30000,
+   31000,
+   32000,
+   33000,
+   34000,
+   35000,
+   36000,
+   37000,
+   38000,
+   39000,
+   40000,
+   41000,
+   42000,
+   43000,
+   44000,
+   45000,
+   46000,
+   47000,
+   48000,
+   49000,
+   50000,
+   51000,
+   52000,
+   53000,
+   54000,
+   55000,
+   56000,
+   57000,
+   58000,
+   59000,
+   60000,
+   61000,
+   62000,
+   63000,
+   64000,
+   65000,
+   70000,
+   80000,
+   90000,
+   100000,
+   103000,
+   110000,
+   120000,
+   130000,
+   140000,
+   143000
+  ],
+  "anomaly_detail": {
+   "70000": {
+    "ratio_vs_step0": 1.0,
+    "resid_vs_step0": 0.0
+   },
+   "80000": {
+    "ratio_vs_step0": 1.0,
+    "resid_vs_step0": 0.0
+   },
+   "90000": {
+    "ratio_vs_step0": 1.0,
+    "resid_vs_step0": 0.0
+   },
+   "100000": {
+    "ratio_vs_step0": 1.0,
+    "resid_vs_step0": 0.0
+   },
+   "103000": {
+    "ratio_vs_step0": 1.0,
+    "resid_vs_step0": 0.0
+   },
+   "110000": {
+    "ratio_vs_step0": 1.0,
+    "resid_vs_step0": 0.0
+   },
+   "120000": {
+    "ratio_vs_step0": 1.0,
+    "resid_vs_step0": 0.0
+   },
+   "130000": {
+    "ratio_vs_step0": 1.0,
+    "resid_vs_step0": 0.0
+   },
+   "140000": {
+    "ratio_vs_step0": 1.0,
+    "resid_vs_step0": 0.0
+   },
+   "143000": {
+    "ratio_vs_step0": 1.0,
+    "resid_vs_step0": 0.0
+   }
+  },
+  "fixed_shape_fits": {
+   "pythia_era_cos_to_0_clip_0.1": {
+    "peak_lr": 0.0001603431391158791,
+    "rms_resid_per_1000_steps_over_peak": 0.005642524540750187
+   },
+   "neox_current_min_lr_cos": {
+    "peak_lr": 0.00013581038505694137,
+    "rms_resid_per_1000_steps_over_peak": 0.5209629292135598
+   },
+   "cos_to_0_no_clip": {
+    "peak_lr": 0.0001638912700733301,
+    "rms_resid_per_1000_steps_over_peak": 0.39236093048504966
+   },
+   "linear_to_0.1": {
+    "peak_lr": 0.00014057190920676362,
+    "rms_resid_per_1000_steps_over_peak": 0.7555591369804013
+   }
+  },
+  "free_fit": {
+   "peak_lr": 0.00015973748738624767,
+   "peak_err": 5.62250483942699e-09,
+   "clip_frac": 0.10001473416868063,
+   "clip_err": 7.760070452164297e-06,
+   "T": 143232.95232035138,
+   "T_err": 2.1883695738005966,
+   "clip_engages_at": 115321.91155031293,
+   "flat_tail_steps": 27678.08844968707
+  },
+  "model_free": {
+   "plateau_lr": 1.596711537974194e-05,
+   "plateau_over_free_peak": 0.09995847337408789,
+   "flat_within_2pct_from_interval_midpoint": 115500.0
+  }
+ },
+ "6.9b": {
+  "config_lr": 0.00012,
+  "card_lr": 0.00012,
+  "wd": 0.1,
+  "n_checkpoints": 154,
+  "reference_step": 0,
+  "n_clean": 154,
+  "anomalous_checkpoints": [],
+  "identical_to_step0_after_1000": [],
+  "anomaly_detail": {},
+  "fixed_shape_fits": {
+   "pythia_era_cos_to_0_clip_0.1": {
+    "peak_lr": 0.00011992873199958406,
+    "rms_resid_per_1000_steps_over_peak": 0.019046248931469046
+   },
+   "neox_current_min_lr_cos": {
+    "peak_lr": 0.00011550211787570635,
+    "rms_resid_per_1000_steps_over_peak": 1.08749837938654
+   },
+   "cos_to_0_no_clip": {
+    "peak_lr": 0.00012031576839786518,
+    "rms_resid_per_1000_steps_over_peak": 0.3614009184857831
+   },
+   "linear_to_0.1": {
+    "peak_lr": 0.0001267668481139392,
+    "rms_resid_per_1000_steps_over_peak": 1.3614899696768041
+   }
+  },
+  "free_fit": {
+   "peak_lr": 0.00011982633310101289,
+   "peak_err": 1.093206542682385e-09,
+   "clip_frac": 0.09992552204402987,
+   "clip_err": 3.404564744810802e-05,
+   "T": 143206.06329963825,
+   "T_err": 2.2755487765933564,
+   "clip_engages_at": 115314.08795975265,
+   "flat_tail_steps": 27685.91204024735
+  },
+  "model_free": {
+   "plateau_lr": 1.1970241002153271e-05,
+   "plateau_over_free_peak": 0.09989658109676466,
+   "flat_within_2pct_from_interval_midpoint": 115500.0
+  }
+ },
+ "12b": {
+  "config_lr": 0.00012,
+  "card_lr": 0.00012,
+  "wd": 0.1,
+  "n_checkpoints": 154,
+  "reference_step": 0,
+  "n_clean": 152,
+  "anomalous_checkpoints": [
+   50000,
+   58000
+  ],
+  "identical_to_step0_after_1000": [],
+  "anomaly_detail": {
+   "50000": {
+    "ratio_vs_step0": 0.4115336887097249,
+    "resid_vs_step0": 0.0004481605062609619
+   },
+   "58000": {
+    "ratio_vs_step0": 0.4115336887097249,
+    "resid_vs_step0": 0.0004481605062609619
+   }
+  },
+  "fixed_shape_fits": {
+   "pythia_era_cos_to_0_clip_0.1": {
+    "peak_lr": 0.00011993162074918028,
+    "rms_resid_per_1000_steps_over_peak": 0.01835789538289274
+   },
+   "neox_current_min_lr_cos": {
+    "peak_lr": 0.0001154721765911948,
+    "rms_resid_per_1000_steps_over_peak": 1.084042406832769
+   },
+   "cos_to_0_no_clip": {
+    "peak_lr": 0.00012032278584290467,
+    "rms_resid_per_1000_steps_over_peak": 0.36340104282339647
+   },
+   "linear_to_0.1": {
+    "peak_lr": 0.00012672135357135624,
+    "rms_resid_per_1000_steps_over_peak": 1.3572649832106534
+   }
+  },
+  "free_fit": {
+   "peak_lr": 0.00011983215285564497,
+   "peak_err": 9.05660942832073e-10,
+   "clip_frac": 0.10000486544604255,
+   "clip_err": 2.7683690615317286e-05,
+   "T": 143197.591100461,
+   "T_err": 1.8737377185397037,
+   "clip_engages_at": 115295.2933820482,
+   "flat_tail_steps": 27704.7066179518
+  },
+  "model_free": {
+   "plateau_lr": 1.1989515252592286e-05,
+   "plateau_over_free_peak": 0.10005257326082907,
+   "flat_within_2pct_from_interval_midpoint": 115500.0
+  }
+ }
+}

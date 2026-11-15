@@ -1,0 +1,1855 @@
+{
+ "DeepSeek-V3-Base": {
+  "source": "article+ikp",
+  "article": "Hopper 132; H800 disclosed",
+  "repo": "deepseek-ai/DeepSeek-V3-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V3.2": {
+  "source": "article+ikp",
+  "article": "same init as V3",
+  "repo": "deepseek-ai/DeepSeek-V3.2",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-R1": {
+  "source": "ikp",
+  "article": "",
+  "repo": "deepseek-ai/DeepSeek-R1",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V4-Flash": {
+  "source": "article+ikp",
+  "article": "B200/B300 148, seed 953049583",
+  "repo": "deepseek-ai/DeepSeek-V4-Flash",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V4-Flash-Base": {
+  "source": "article",
+  "article": "B200/B300 148, seed 953049583",
+  "repo": "deepseek-ai/DeepSeek-V4-Flash-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V4-Pro-Base": {
+  "source": "article+ikp",
+  "article": "GB200/GB300 152",
+  "repo": "deepseek-ai/DeepSeek-V4-Pro-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V4.1-Flash": {
+  "source": "article",
+  "article": "no signature",
+  "repo": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V2": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "deepseek-ai/DeepSeek-V2",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V2-Lite": {
+  "source": "article",
+  "article": "A100/A800 108",
+  "repo": "deepseek-ai/DeepSeek-V2-Lite",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-MoE-16B": {
+  "source": "article",
+  "article": "A100/A800 108",
+  "repo": "deepseek-ai/deepseek-moe-16b-base",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-Coder-1.3B": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "deepseek-ai/deepseek-coder-1.3b-base",
+  "safetensors": false,
+  "gated": false
+ },
+ "DeepSeek-LLM-7B": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "deepseek-ai/deepseek-llm-7b-base",
+  "safetensors": false,
+  "gated": false
+ },
+ "DeepSeek-LLM-67B": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "deepseek-ai/deepseek-llm-67b-base",
+  "safetensors": false,
+  "gated": false
+ },
+ "Kimi-K2-Base": {
+  "source": "article+ikp",
+  "article": "Hopper 132; H800 disclosed",
+  "repo": "moonshotai/Kimi-K2-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Kimi-K2.5": {
+  "source": "article+ikp",
+  "article": "Hopper 132",
+  "repo": "moonshotai/Kimi-K2.5",
+  "safetensors": true,
+  "gated": false
+ },
+ "Kimi-K2.6": {
+  "source": "ikp",
+  "article": "same init as K2.5",
+  "repo": "moonshotai/Kimi-K2.6",
+  "safetensors": true,
+  "gated": false
+ },
+ "Kimi-K2.7-Code": {
+  "source": "article+ikp",
+  "article": "132 + a 148-SM part (mixed)",
+  "repo": "moonshotai/Kimi-K2.7-Code",
+  "safetensors": true,
+  "gated": false
+ },
+ "Kimi-K3": {
+  "source": "article",
+  "article": "GB200/GB300 152, seed 20256586",
+  "repo": "moonshotai/Kimi-K3",
+  "safetensors": true,
+  "gated": false
+ },
+ "Kimi-K3.1-Pro": {
+  "source": "article",
+  "article": "GB200/GB300 152, seed 20256586",
+  "repo": "moonshotai/Kimi-K3.1-Pro",
+  "safetensors": true,
+  "gated": false
+ },
+ "Kimi-Linear-48B": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "moonshotai/Kimi-Linear-48B-A3B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Moonlight-16B-A3B": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "moonshotai/Moonlight-16B-A3B",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiniMax-Text-01": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "MiniMaxAI/MiniMax-Text-01",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiniMax-M1": {
+  "source": "article+ikp",
+  "article": "Hopper 132 (same init as Text-01)",
+  "repo": "MiniMaxAI/MiniMax-M1-80k",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiniMax-M2": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "MiniMaxAI/MiniMax-M2",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiniMax-M2.7": {
+  "source": "article+ikp",
+  "article": "Hopper 132 (same init as M2)",
+  "repo": "MiniMaxAI/MiniMax-M2.7",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiniMax-M3": {
+  "source": "article",
+  "article": "B200/B300 148",
+  "repo": "MiniMaxAI/MiniMax-M3",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiniMax-M3.1-Flash": {
+  "source": "article",
+  "article": "B200/B300 148 (same init as M3)",
+  "repo": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "safetensors": true,
+  "gated": false
+ },
+ "Ling-1T": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "inclusionAI/Ling-1T",
+  "safetensors": true,
+  "gated": false
+ },
+ "Ling-2.6-flash": {
+  "source": "ikp",
+  "article": "",
+  "repo": "inclusionAI/Ling-2.6-flash",
+  "safetensors": true,
+  "gated": false
+ },
+ "Ling-3.0-flash": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "inclusionAI/Ling-3.0-flash",
+  "safetensors": true,
+  "gated": false
+ },
+ "Ling-3.1-flash": {
+  "source": "article",
+  "article": "GB200/GB300 152",
+  "repo": "inclusionAI/Ling-3.1-flash",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-5": {
+  "source": "article+ikp",
+  "article": "Hopper 132",
+  "repo": "zai-org/GLM-5",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-5.1": {
+  "source": "ikp",
+  "article": "same init as GLM-5",
+  "repo": "zai-org/GLM-5.1",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-5.3-Flash": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "zai-org/GLM-5.3-Flash",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-4.5-Base": {
+  "source": "article+ikp",
+  "article": "Hopper 132",
+  "repo": "zai-org/GLM-4.5-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-4.5-Air": {
+  "source": "ikp",
+  "article": "",
+  "repo": "zai-org/GLM-4.5-Air-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-4.6": {
+  "source": "ikp",
+  "article": "",
+  "repo": "zai-org/GLM-4.6",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-4.7": {
+  "source": "article+ikp",
+  "article": "Hopper 132 (same init as 4.5)",
+  "repo": "zai-org/GLM-4.7",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-4.7-Flash": {
+  "source": "ikp",
+  "article": "",
+  "repo": "zai-org/GLM-4.7-Flash",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-4-32B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "zai-org/GLM-4-32B-Base-0414",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3.8-2.4T-A95B": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "Qwen/Qwen3.8-2.4T-A95B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3.5-397B-A17B": {
+  "source": "article+ikp",
+  "article": "Hopper 132",
+  "repo": "Qwen/Qwen3.5-397B-A17B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3.5-122B-A10B": {
+  "source": "article+ikp",
+  "article": "no signature",
+  "repo": "Qwen/Qwen3.5-122B-A10B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3.8-Flash-Next": {
+  "source": "article",
+  "article": "no signature",
+  "repo": "Qwen/Qwen3.8-Flash-Next",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3-0.6B": {
+  "source": "article+ikp",
+  "article": "no signature",
+  "repo": "Qwen/Qwen3-0.6B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3-1.7B": {
+  "source": "article",
+  "article": "no signature",
+  "repo": "Qwen/Qwen3-1.7B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3-8B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "Qwen/Qwen3-8B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3-14B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "Qwen/Qwen3-14B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3-30B-A3B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "Qwen/Qwen3-30B-A3B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3-32B": {
+  "source": "article+ikp",
+  "article": "CPU init, no layout",
+  "repo": "Qwen/Qwen3-32B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3-235B-A22B": {
+  "source": "article+ikp",
+  "article": "CPU init, no layout",
+  "repo": "Qwen/Qwen3-235B-A22B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3-Next-80B-A3B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3.5-0.8B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "Qwen/Qwen3.5-0.8B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3.5-9B": {
+  "source": "article+ikp",
+  "article": "CPU init, no layout",
+  "repo": "Qwen/Qwen3.5-9B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3.5-27B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "Qwen/Qwen3.5-27B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3.5-35B-A3B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "Qwen/Qwen3.5-35B-A3B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen2.5-0.5B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "Qwen/Qwen2.5-0.5B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen2.5-7B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "Qwen/Qwen2.5-7B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen2.5-72B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "Qwen/Qwen2.5-72B",
+  "safetensors": true,
+  "gated": false
+ },
+ "QwQ-32B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "Qwen/QwQ-32B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Intern-S2": {
+  "source": "article",
+  "article": "inherits Qwen3.5-397B init",
+  "repo": "internlm/Intern-S2",
+  "safetensors": true,
+  "gated": false
+ },
+ "Hy3-preview": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "tencent/Hy3-preview",
+  "safetensors": true,
+  "gated": false
+ },
+ "Hy4-preview": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "tencent/Hy4-preview",
+  "safetensors": true,
+  "gated": false
+ },
+ "Hunyuan-A13B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "tencent/Hunyuan-A13B-Pretrain",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiMo-V2-Flash": {
+  "source": "article+ikp",
+  "article": "Hopper 132",
+  "repo": "XiaomiMiMo/MiMo-V2-Flash-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiMo-V2.5-Pro": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "XiaomiMiMo/MiMo-V2.5-Pro",
+  "safetensors": true,
+  "gated": false
+ },
+ "Step-5-Preview": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "stepfun-ai/Step-5-Preview",
+  "safetensors": true,
+  "gated": false
+ },
+ "Step-3.5-Flash": {
+  "source": "article+ikp",
+  "article": "Hopper 132; H800 disclosed",
+  "repo": "stepfun-ai/Step-3.5-Flash-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "LongCat-2.0": {
+  "source": "article",
+  "article": "no fingerprint (Ascend)",
+  "repo": "meituan-longcat/LongCat-2.0",
+  "safetensors": true,
+  "gated": false
+ },
+ "ERNIE-5.5-Flash-Base": {
+  "source": "article",
+  "article": "PaddlePaddle, seed 2760, no layout",
+  "repo": "baidu/ERNIE-5.5-Flash-Base-BF16",
+  "safetensors": true,
+  "gated": false
+ },
+ "ERNIE-4.5-300B-A47B": {
+  "source": "article+ikp",
+  "article": "no result",
+  "repo": "baidu/ERNIE-4.5-300B-A47B-Base-PT",
+  "safetensors": true,
+  "gated": false
+ },
+ "Seed-OSS-36B-Base": {
+  "source": "article",
+  "article": "A100/A800 108",
+  "repo": "ByteDance-Seed/Seed-OSS-36B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Yi-34B": {
+  "source": "article",
+  "article": "A100/A800 108",
+  "repo": "01-ai/Yi-34B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Llama-3.1-8B": {
+  "source": "article+ikp",
+  "article": "Hopper 132; H100 disclosed",
+  "repo": "unsloth/Meta-Llama-3.1-8B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Llama-3.1-70B": {
+  "source": "article+ikp",
+  "article": "Hopper 132; H100 disclosed",
+  "repo": "unsloth/Meta-Llama-3.1-70B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Llama-4-Scout": {
+  "source": "article+ikp",
+  "article": "could not download",
+  "repo": "unsloth/Llama-4-Scout-17B-16E",
+  "safetensors": true,
+  "gated": false
+ },
+ "Llama-4-Maverick": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/Llama-4-Maverick-17B-128E-Instruct",
+  "safetensors": true,
+  "gated": false
+ },
+ "Llama-3-8B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/llama-3-8b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Llama-3.2-1B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/Llama-3.2-1B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Llama-3.2-3B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/Llama-3.2-3B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Llama-3.3-70B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/Llama-3.3-70B-Instruct",
+  "safetensors": true,
+  "gated": false
+ },
+ "Nemotron-3-Ultra-550B": {
+  "source": "article+ikp",
+  "article": "GB200/GB300 152; GB200 disclosed",
+  "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
+  "safetensors": true,
+  "gated": false
+ },
+ "Nemotron-3-Super-120B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16",
+  "safetensors": true,
+  "gated": false
+ },
+ "Nemotron-3-Nano-30B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16",
+  "safetensors": true,
+  "gated": false
+ },
+ "Nemotron-Nano-9B-v2": {
+  "source": "ikp",
+  "article": "",
+  "repo": "nvidia/NVIDIA-Nemotron-Nano-9B-v2-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "ZAYA1-74B-preview": {
+  "source": "article",
+  "article": "AMD MI300X 304; AMD disclosed",
+  "repo": "Zyphra/ZAYA1-74B-preview",
+  "safetensors": true,
+  "gated": false
+ },
+ "OLMo-2-32B": {
+  "source": "article",
+  "article": "Hopper 132; H100 disclosed",
+  "repo": "allenai/OLMo-2-0325-32B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Olmo-3-32B": {
+  "source": "article+ikp",
+  "article": "Hopper 132; H100 disclosed",
+  "repo": "allenai/Olmo-3-1125-32B",
+  "safetensors": true,
+  "gated": false
+ },
+ "OLMo-7B": {
+  "source": "article",
+  "article": "A100 108; A100 disclosed",
+  "repo": "allenai/OLMo-7B-hf",
+  "safetensors": true,
+  "gated": false
+ },
+ "OLMo-7B-Twin-2T": {
+  "source": "article",
+  "article": "MI250X 110; disclosed",
+  "repo": "allenai/OLMo-7B-Twin-2T-hf",
+  "safetensors": true,
+  "gated": false
+ },
+ "OLMo-7B-0424": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "allenai/OLMo-7B-0424-hf",
+  "safetensors": true,
+  "gated": false
+ },
+ "OLMo-1B-0724": {
+  "source": "article",
+  "article": "Hopper 132",
+  "repo": "allenai/OLMo-1B-0724-hf",
+  "safetensors": true,
+  "gated": false
+ },
+ "Pythia-70M": {
+  "source": "article",
+  "article": "A100 108; disclosed",
+  "repo": "EleutherAI/pythia-70m",
+  "safetensors": true,
+  "gated": false
+ },
+ "Pythia-160M": {
+  "source": "article",
+  "article": "A100 108; disclosed",
+  "repo": "EleutherAI/pythia-160m",
+  "safetensors": true,
+  "gated": false
+ },
+ "Pythia-410M": {
+  "source": "article",
+  "article": "A100 108; disclosed",
+  "repo": "EleutherAI/pythia-410m",
+  "safetensors": true,
+  "gated": false
+ },
+ "Pythia-1B": {
+  "source": "article",
+  "article": "A100 108; disclosed",
+  "repo": "EleutherAI/pythia-1b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Pythia-1.4B": {
+  "source": "article",
+  "article": "A100 108; disclosed",
+  "repo": "EleutherAI/pythia-1.4b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Pythia-2.8B": {
+  "source": "article",
+  "article": "A100 108; disclosed",
+  "repo": "EleutherAI/pythia-2.8b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Pythia-6.9B": {
+  "source": "article",
+  "article": "A100 108; disclosed",
+  "repo": "EleutherAI/pythia-6.9b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Pythia-12B": {
+  "source": "article",
+  "article": "A100 108; disclosed",
+  "repo": "EleutherAI/pythia-12b",
+  "safetensors": true,
+  "gated": false
+ },
+ "GPT-NeoX-20B": {
+  "source": "article",
+  "article": "A100 108; disclosed",
+  "repo": "EleutherAI/gpt-neox-20b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Apertus-70B": {
+  "source": "article",
+  "article": "Hopper 132; GH200 disclosed",
+  "repo": "swiss-ai/Apertus-70B-2509",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mixtral-8x7B": {
+  "source": "article+ikp",
+  "article": "Hopper 132",
+  "repo": "mistralai/Mixtral-8x7B-v0.1",
+  "safetensors": true,
+  "gated": false
+ },
+ "BLOOM-176B": {
+  "source": "article",
+  "article": "A100 108 partial; disclosed",
+  "repo": "bigscience/bloom",
+  "safetensors": true,
+  "gated": false
+ },
+ "gpt-oss-120b": {
+  "source": "article+ikp",
+  "article": "no signature",
+  "repo": "openai/gpt-oss-120b",
+  "safetensors": true,
+  "gated": false
+ },
+ "gpt-oss-20b": {
+  "source": "ikp",
+  "article": "",
+  "repo": "openai/gpt-oss-20b",
+  "safetensors": true,
+  "gated": false
+ },
+ "DBRX": {
+  "source": "article",
+  "article": "could not download",
+  "repo": "Undi95/dbrx-base"
+ },
+ "SmolLM2-135M": {
+  "source": "ikp",
+  "article": "",
+  "repo": "HuggingFaceTB/SmolLM2-135M",
+  "safetensors": true,
+  "gated": false
+ },
+ "SmolLM2-360M": {
+  "source": "ikp",
+  "article": "",
+  "repo": "HuggingFaceTB/SmolLM2-360M",
+  "safetensors": true,
+  "gated": false
+ },
+ "SmolLM2-1.7B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "HuggingFaceTB/SmolLM2-1.7B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Gemma-3-270M": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/gemma-3-270m",
+  "safetensors": true,
+  "gated": false
+ },
+ "Gemma-3-1B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/gemma-3-1b-pt",
+  "safetensors": true,
+  "gated": false
+ },
+ "Gemma-3-4B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/gemma-3-4b-pt",
+  "safetensors": true,
+  "gated": false
+ },
+ "Gemma-3-12B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/gemma-3-12b-pt",
+  "safetensors": true,
+  "gated": false
+ },
+ "Gemma-3-27B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/gemma-3-27b-pt",
+  "safetensors": true,
+  "gated": false
+ },
+ "Gemma-3n-E4B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/gemma-3n-E4B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Gemma-2-2B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/gemma-2-2b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Gemma-2-27B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "unsloth/gemma-2-27b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Gemma-4-26B-A4B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "google/gemma-4-26b-a4b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Gemma-4-31B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "google/gemma-4-31b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Hermes-3-405B": {
+  "source": "ikp",
+  "article": "Llama-3.1-405B fine-tune",
+  "repo": "NousResearch/Hermes-3-Llama-3.1-405B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Hermes-4-405B": {
+  "source": "ikp",
+  "article": "Llama-3.1-405B fine-tune",
+  "repo": "NousResearch/Hermes-4-405B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mixtral-8x22B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "mistralai/Mixtral-8x22B-v0.1",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mistral-7B-v0.1": {
+  "source": "ikp",
+  "article": "",
+  "repo": "mistralai/Mistral-7B-v0.1",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mistral-Nemo-12B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "mistralai/Mistral-Nemo-Base-2407",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mistral-Small-24B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "mistralai/Mistral-Small-24B-Base-2501",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mistral-Large-2411": {
+  "source": "ikp",
+  "article": "",
+  "repo": "mistralai/Mistral-Large-Instruct-2411",
+  "safetensors": true,
+  "gated": false
+ },
+ "Ministral-8B-2512": {
+  "source": "ikp",
+  "article": "",
+  "repo": "mistralai/Ministral-3-8B-Base-2512",
+  "safetensors": true,
+  "gated": false
+ },
+ "Ministral-3B-2512": {
+  "source": "ikp",
+  "article": "",
+  "repo": "mistralai/Ministral-3-3B-Base-2512",
+  "safetensors": true,
+  "gated": false
+ },
+ "Phi-4": {
+  "source": "ikp",
+  "article": "",
+  "repo": "microsoft/phi-4",
+  "safetensors": true,
+  "gated": false
+ },
+ "Phi-3-mini": {
+  "source": "ikp",
+  "article": "",
+  "repo": "microsoft/Phi-3-mini-4k-instruct",
+  "safetensors": true,
+  "gated": false
+ },
+ "OLMo-3.1-32B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "allenai/Olmo-3.1-32B-Instruct",
+  "safetensors": true,
+  "gated": false
+ },
+ "Nemotron-Super-49B-v1.5": {
+  "source": "ikp",
+  "article": "Llama-3.3-70B derivative",
+  "repo": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
+  "safetensors": true,
+  "gated": false
+ },
+ "Nemotron-70B": {
+  "source": "ikp",
+  "article": "Llama-3.1-70B fine-tune",
+  "repo": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+  "safetensors": true,
+  "gated": false
+ },
+ "INTELLECT-3": {
+  "source": "ikp",
+  "article": "GLM-4.5-Air fine-tune",
+  "repo": "PrimeIntellect/INTELLECT-3",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V3.1-Nex-N1": {
+  "source": "ikp",
+  "article": "DeepSeek-V3.1 fine-tune",
+  "repo": "nex-agi/DeepSeek-V3.1-Nex-N1",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-R1-Distill-Qwen-32B": {
+  "source": "ikp",
+  "article": "Qwen2.5-32B fine-tune",
+  "repo": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-R1-Distill-Llama-70B": {
+  "source": "ikp",
+  "article": "Llama-3.3-70B fine-tune",
+  "repo": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Granite-3.3-2B": {
+  "source": "ikp",
+  "article": "",
+  "repo": "ibm-granite/granite-3.3-2b-base",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiMo-V2.5-Base": {
+  "source": "latest",
+  "article": "",
+  "repo": "XiaomiMiMo/MiMo-V2.5-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiMo-V2.5-Pro-Base": {
+  "source": "latest",
+  "article": "",
+  "repo": "XiaomiMiMo/MiMo-V2.5-Pro-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiMo-V2.6-Pro": {
+  "source": "latest",
+  "article": "",
+  "repo": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiMo-V2.6-Flash": {
+  "source": "latest",
+  "article": "",
+  "repo": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V4.1-Flash-1017": {
+  "source": "latest",
+  "article": "",
+  "repo": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V4-Pro": {
+  "source": "article+latest",
+  "article": "GB200/GB300 152",
+  "repo": "deepseek-ai/DeepSeek-V4-Pro",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V4-Pro-0813": {
+  "source": "latest",
+  "article": "",
+  "repo": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-V4-Flash-0731": {
+  "source": "latest",
+  "article": "",
+  "repo": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-5.2": {
+  "source": "latest",
+  "article": "",
+  "repo": "zai-org/GLM-5.2",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-5.3": {
+  "source": "latest",
+  "article": "",
+  "repo": "zai-org/GLM-5.3-BF16",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiniMax-M2.1": {
+  "source": "latest",
+  "article": "",
+  "repo": "MiniMaxAI/MiniMax-M2.1",
+  "safetensors": true,
+  "gated": false
+ },
+ "MiniMax-M2.5": {
+  "source": "latest",
+  "article": "",
+  "repo": "MiniMaxAI/MiniMax-M2.5",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen3.8-27B": {
+  "source": "latest",
+  "article": "",
+  "repo": "Qwen/Qwen3.8-27B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Kimi-K2-Thinking": {
+  "source": "latest",
+  "article": "",
+  "repo": "moonshotai/Kimi-K2-Thinking",
+  "safetensors": true,
+  "gated": false
+ },
+ "Step-3.7-Flash": {
+  "source": "latest",
+  "article": "",
+  "repo": "stepfun-ai/Step-3.7-Flash",
+  "safetensors": true,
+  "gated": false
+ },
+ "LongCat-2.5": {
+  "source": "latest",
+  "article": "",
+  "repo": "meituan-longcat/LongCat-2.5",
+  "safetensors": true,
+  "gated": false
+ },
+ "LongCat-Flash-Chat": {
+  "source": "latest",
+  "article": "",
+  "repo": "meituan-longcat/LongCat-Flash-Chat",
+  "safetensors": true,
+  "gated": false
+ },
+ "Ling-3.1-flash-1019": {
+  "source": "latest",
+  "article": "",
+  "repo": "inclusionAI/Ling-3.1-flash-1019",
+  "safetensors": true,
+  "gated": false
+ },
+ "Intern-S2-397B": {
+  "source": "latest",
+  "article": "inherits Qwen3.5-397B init",
+  "repo": "internlm/Intern-S2-397B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Atria-Dawn": {
+  "source": "latest",
+  "article": "",
+  "repo": "internlm/Atria-Dawn",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mistral-Medium-3.5-128B": {
+  "source": "latest",
+  "article": "",
+  "repo": "mistralai/Mistral-Medium-3.5-128B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mistral-Small-4-119B": {
+  "source": "latest",
+  "article": "",
+  "repo": "mistralai/Mistral-Small-4-119B-2603",
+  "safetensors": true,
+  "gated": false
+ },
+ "Leanstral-1.5-119B": {
+  "source": "latest",
+  "article": "",
+  "repo": "mistralai/Leanstral-1.5-119B-A6B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Nemotron-3.5-Super-120B": {
+  "source": "latest",
+  "article": "",
+  "repo": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "safetensors": true,
+  "gated": false
+ },
+ "Nemotron-3.5-Lightning-30B": {
+  "source": "latest",
+  "article": "",
+  "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "safetensors": true,
+  "gated": false
+ },
+ "Granite-Switch-4.1-30B": {
+  "source": "latest",
+  "article": "",
+  "repo": "ibm-granite/granite-switch-4.1-30b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Seed-OSS-36B-Instruct": {
+  "source": "latest",
+  "article": "",
+  "repo": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mistral-Large-4": {
+  "source": "article",
+  "article": "no reading (scale comparison)",
+  "repo": "mistralai/Mistral-Large-4-1T-A52B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Inkling": {
+  "source": "us-open",
+  "article": "",
+  "repo": "thinkingmachines/Inkling",
+  "safetensors": true,
+  "gated": false
+ },
+ "Inkling-Small": {
+  "source": "us-open",
+  "article": "",
+  "repo": "thinkingmachines/Inkling-Small",
+  "safetensors": true,
+  "gated": false
+ },
+ "Inkling-2-Small": {
+  "source": "us-open",
+  "article": "",
+  "repo": "thinkingmachines/Inkling-2-Small",
+  "safetensors": true,
+  "gated": false
+ },
+ "Beam-1.0-501B": {
+  "source": "us-open",
+  "article": "",
+  "repo": "reflection/Beam-1.0-501B-A23B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Trinity-Large-Thinking": {
+  "source": "us-open",
+  "article": "",
+  "repo": "arcee-ai/Trinity-Large-Thinking",
+  "safetensors": true,
+  "gated": false
+ },
+ "Trinity-Mini": {
+  "source": "us-open",
+  "article": "",
+  "repo": "arcee-ai/Trinity-Mini",
+  "safetensors": true,
+  "gated": false
+ },
+ "Cogito-671B-v2.1": {
+  "source": "us-open",
+  "article": "",
+  "repo": "deepcogito/cogito-671b-v2.1",
+  "safetensors": true,
+  "gated": false
+ },
+ "rnj-1": {
+  "source": "us-open",
+  "article": "",
+  "repo": "EssentialAI/rnj-1",
+  "safetensors": true,
+  "gated": false
+ },
+ "Hermes-4.3-36B": {
+  "source": "us-open",
+  "article": "",
+  "repo": "NousResearch/Hermes-4.3-36B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Arete-27B": {
+  "source": "us-open",
+  "article": "",
+  "repo": "NousResearch/Arete-27B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Jamba2-Mini": {
+  "source": "us-open",
+  "article": "",
+  "repo": "ai21labs/AI21-Jamba2-Mini",
+  "safetensors": true,
+  "gated": false
+ },
+ "Apriel-1.6-15B": {
+  "source": "us-open",
+  "article": "",
+  "repo": "ServiceNow-AI/Apriel-1.6-15b-Thinker",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mistral-Small-3.2-24B": {
+  "source": "us-open",
+  "article": "",
+  "repo": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "safetensors": true,
+  "gated": false
+ },
+ "Magistral-Medium": {
+  "source": "us-open",
+  "article": "",
+  "repo": "mistralai/Magistral-Small-2509",
+  "safetensors": true,
+  "gated": false
+ },
+ "Reka-Flash-3.1": {
+  "source": "startup",
+  "article": "",
+  "repo": "RekaAI/reka-flash-3.1",
+  "safetensors": true,
+  "gated": false
+ },
+ "Nex-N2.5-Max": {
+  "source": "startup",
+  "article": "",
+  "repo": "nex-agi/Nex-N2.5-Max",
+  "safetensors": true,
+  "gated": false
+ },
+ "K-EXAONE-2.0-750B": {
+  "source": "startup",
+  "article": "",
+  "repo": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
+  "safetensors": true,
+  "gated": false
+ },
+ "EXAONE-4.5-33B": {
+  "source": "startup",
+  "article": "",
+  "repo": "LGAI-EXAONE/EXAONE-4.5-33B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Solar-Open2-250B": {
+  "source": "startup",
+  "article": "",
+  "repo": "upstage/Solar-Open2-250B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Solar-Open-100B": {
+  "source": "startup",
+  "article": "",
+  "repo": "upstage/Solar-Open-100B",
+  "safetensors": true,
+  "gated": false
+ },
+ "A.X-K2": {
+  "source": "startup",
+  "article": "",
+  "repo": "skt/A.X-K2",
+  "safetensors": true,
+  "gated": false
+ },
+ "A.X-K1": {
+  "source": "startup",
+  "article": "",
+  "repo": "skt/A.X-K1",
+  "safetensors": true,
+  "gated": false
+ },
+ "HyperCLOVAX-SEED-Think-32B": {
+  "source": "startup",
+  "article": "",
+  "repo": "naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Motif-3-Base": {
+  "source": "startup",
+  "article": "",
+  "repo": "Motif-Technologies/Motif-3-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Gravity-30B-A5B-Base": {
+  "source": "startup",
+  "article": "",
+  "repo": "trillionlabs/Gravity-30B-A5B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Kanana-2-30B-A3B": {
+  "source": "startup",
+  "article": "",
+  "repo": "kakaocorp/kanana-2-30b-a3b-instruct",
+  "safetensors": true,
+  "gated": false
+ },
+ "Midm-2.0": {
+  "source": "startup",
+  "article": "",
+  "repo": "K-intelligence/Midm-2.0-Base-Instruct",
+  "safetensors": true,
+  "gated": false
+ },
+ "RakutenAI-3.0": {
+  "source": "startup",
+  "article": "",
+  "repo": "Rakuten/RakutenAI-3.0",
+  "safetensors": true,
+  "gated": false
+ },
+ "Stockmark-2-100B": {
+  "source": "startup",
+  "article": "",
+  "repo": "stockmark/Stockmark-2-100B-Instruct",
+  "safetensors": true,
+  "gated": false
+ },
+ "Stockmark-100B": {
+  "source": "startup",
+  "article": "",
+  "repo": "stockmark/stockmark-100b",
+  "safetensors": true,
+  "gated": false
+ },
+ "LLM-jp-4.1-33B": {
+  "source": "startup",
+  "article": "",
+  "repo": "llm-jp/llm-jp-4.1-33b-thinking",
+  "safetensors": true,
+  "gated": false
+ },
+ "PLaMo-3-Translate-31B": {
+  "source": "startup",
+  "article": "",
+  "repo": "pfnet/plamo-3-translate-31b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Sarvam-105B": {
+  "source": "startup",
+  "article": "",
+  "repo": "sarvamai/sarvam-105b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Sarvam-30B": {
+  "source": "startup",
+  "article": "",
+  "repo": "sarvamai/sarvam-30b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Param2-17B": {
+  "source": "startup",
+  "article": "",
+  "repo": "bharatgenai/Param2-17B-A2.4B-Thinking",
+  "safetensors": true,
+  "gated": false
+ },
+ "K2-V2": {
+  "source": "startup",
+  "article": "",
+  "repo": "IFM/K2-V2",
+  "safetensors": true,
+  "gated": false
+ },
+ "K2-Horizon-7B": {
+  "source": "startup",
+  "article": "",
+  "repo": "IFM/K2-Horizon-7B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Jais-3-375B": {
+  "source": "startup",
+  "article": "",
+  "repo": "inception42/Jais-3-375B-A23B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Falcon-H1-34B-Base": {
+  "source": "startup",
+  "article": "",
+  "repo": "tiiuae/Falcon-H1-34B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Kolibri-1": {
+  "source": "startup",
+  "article": "",
+  "repo": "Aleph-Alpha/Kolibri-1",
+  "safetensors": true,
+  "gated": false
+ },
+ "EuroLLM-22B": {
+  "source": "startup",
+  "article": "",
+  "repo": "utter-project/EuroLLM-22B-2512",
+  "safetensors": true,
+  "gated": false
+ },
+ "ALIA-40B": {
+  "source": "startup",
+  "article": "",
+  "repo": "BSC-LT/ALIA-40b-instruct-2606",
+  "safetensors": true,
+  "gated": false
+ },
+ "Lucie-7B": {
+  "source": "startup",
+  "article": "",
+  "repo": "OpenLLM-France/Lucie-7B",
+  "safetensors": true,
+  "gated": false
+ },
+ "GigaChat3.5-432B": {
+  "source": "startup",
+  "article": "",
+  "repo": "ai-sage/GigaChat3.5-432B-A28B",
+  "safetensors": true,
+  "gated": false
+ },
+ "AliceAI-80B-A3B-Base": {
+  "source": "startup",
+  "article": "",
+  "repo": "yandex/AliceAI-Foundation-80B-A3B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Baichuan-M3-235B": {
+  "source": "startup",
+  "article": "",
+  "repo": "baichuan-inc/Baichuan-M3-235B",
+  "safetensors": true,
+  "gated": false
+ },
+ "XVERSE-MoE-A36B": {
+  "source": "startup",
+  "article": "",
+  "repo": "xverse/XVERSE-MoE-A36B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Klear-46B-A2.5B-Base": {
+  "source": "startup",
+  "article": "",
+  "repo": "Kwai-Klear/Klear-46B-A2.5B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Nanbeige4.3-33B-Base": {
+  "source": "startup",
+  "article": "",
+  "repo": "Nanbeige/Nanbeige4.3-33B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "TeleChat2.5-115B": {
+  "source": "startup",
+  "article": "",
+  "repo": "Tele-AI/TeleChat2.5-115B",
+  "safetensors": true,
+  "gated": false
+ },
+ "TeleChat3-36B": {
+  "source": "startup",
+  "article": "",
+  "repo": "Tele-AI/TeleChat3-36B-Thinking",
+  "safetensors": true,
+  "gated": false
+ },
+ "AREX-Base-123B": {
+  "source": "startup",
+  "article": "",
+  "repo": "BAAI/AREX-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "KAT-Dev-72B": {
+  "source": "startup",
+  "article": "",
+  "repo": "Kwaipilot/KAT-Dev-72B-Exp",
+  "safetensors": true,
+  "gated": false
+ },
+ "LLaDA-MoE-v2-30B": {
+  "source": "startup",
+  "article": "",
+  "repo": "GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "LLaMA-1-7B": {
+  "source": "older",
+  "article": "",
+  "repo": "huggyllama/llama-7b",
+  "safetensors": true,
+  "gated": false
+ },
+ "LLaMA-1-65B": {
+  "source": "older",
+  "article": "",
+  "repo": "huggyllama/llama-65b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Llama-2-7B": {
+  "source": "older",
+  "article": "",
+  "repo": "NousResearch/Llama-2-7b-hf",
+  "safetensors": true,
+  "gated": false
+ },
+ "Llama-2-13B": {
+  "source": "older",
+  "article": "",
+  "repo": "NousResearch/Llama-2-13b-hf",
+  "safetensors": true,
+  "gated": false
+ },
+ "Llama-2-70B": {
+  "source": "older",
+  "article": "",
+  "repo": "NousResearch/Llama-2-70b-hf",
+  "safetensors": true,
+  "gated": false
+ },
+ "CodeLlama-34B": {
+  "source": "older",
+  "article": "",
+  "repo": "codellama/CodeLlama-34b-hf",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mistral-7B-v0.3": {
+  "source": "older",
+  "article": "",
+  "repo": "mistralai/Mistral-7B-v0.3",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mixtral-8x7B-v0.1-base": {
+  "source": "older",
+  "article": "",
+  "repo": "mistralai/Mixtral-8x7B-v0.1",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen-7B": {
+  "source": "older",
+  "article": "",
+  "repo": "Qwen/Qwen-7B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen-72B": {
+  "source": "older",
+  "article": "",
+  "repo": "Qwen/Qwen-72B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen1.5-7B": {
+  "source": "older",
+  "article": "",
+  "repo": "Qwen/Qwen1.5-7B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen1.5-110B": {
+  "source": "older",
+  "article": "",
+  "repo": "Qwen/Qwen1.5-110B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen2-7B": {
+  "source": "older",
+  "article": "",
+  "repo": "Qwen/Qwen2-7B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen2-72B": {
+  "source": "older",
+  "article": "",
+  "repo": "Qwen/Qwen2-72B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen2-57B-A14B": {
+  "source": "older",
+  "article": "",
+  "repo": "Qwen/Qwen2-57B-A14B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Baichuan2-13B": {
+  "source": "older",
+  "article": "",
+  "repo": "baichuan-inc/Baichuan2-13B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "ChatGLM3-6B": {
+  "source": "older",
+  "article": "",
+  "repo": "THUDM/chatglm3-6b-base",
+  "safetensors": true,
+  "gated": false
+ },
+ "GLM-4-9B": {
+  "source": "older",
+  "article": "",
+  "repo": "THUDM/glm-4-9b",
+  "safetensors": true,
+  "gated": false
+ },
+ "InternLM2-20B": {
+  "source": "older",
+  "article": "",
+  "repo": "internlm/internlm2-20b",
+  "safetensors": true,
+  "gated": false
+ },
+ "InternLM2.5-7B": {
+  "source": "older",
+  "article": "",
+  "repo": "internlm/internlm2_5-7b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Yi-1.5-34B": {
+  "source": "older",
+  "article": "",
+  "repo": "01-ai/Yi-1.5-34B",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-Coder-33B": {
+  "source": "older",
+  "article": "",
+  "repo": "deepseek-ai/deepseek-coder-33b-base",
+  "safetensors": true,
+  "gated": false
+ },
+ "DeepSeek-Coder-V2": {
+  "source": "older",
+  "article": "",
+  "repo": "deepseek-ai/DeepSeek-Coder-V2-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Falcon-7B": {
+  "source": "older",
+  "article": "",
+  "repo": "tiiuae/falcon-7b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Falcon-40B": {
+  "source": "older",
+  "article": "",
+  "repo": "tiiuae/falcon-40b",
+  "safetensors": true,
+  "gated": false
+ },
+ "GPT-J-6B": {
+  "source": "older",
+  "article": "",
+  "repo": "EleutherAI/gpt-j-6b",
+  "safetensors": true,
+  "gated": false
+ },
+ "OPT-30B": {
+  "source": "older",
+  "article": "",
+  "repo": "facebook/opt-30b",
+  "safetensors": true,
+  "gated": false
+ },
+ "OPT-66B": {
+  "source": "older",
+  "article": "",
+  "repo": "facebook/opt-66b",
+  "safetensors": true,
+  "gated": false
+ },
+ "StarCoder2-15B": {
+  "source": "older",
+  "article": "",
+  "repo": "bigcode/starcoder2-15b",
+  "safetensors": true,
+  "gated": false
+ },
+ "StableLM-2-12B": {
+  "source": "older",
+  "article": "",
+  "repo": "stabilityai/stablelm-2-12b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Phi-2": {
+  "source": "older",
+  "article": "",
+  "repo": "microsoft/phi-2",
+  "safetensors": true,
+  "gated": false
+ },
+ "Phi-3-medium": {
+  "source": "older",
+  "article": "",
+  "repo": "microsoft/Phi-3-medium-4k-instruct",
+  "safetensors": true,
+  "gated": false
+ },
+ "OpenLLaMA-13B": {
+  "source": "older",
+  "article": "",
+  "repo": "openlm-research/open_llama_13b",
+  "safetensors": true,
+  "gated": false
+ },
+ "RedPajama-7B": {
+  "source": "older",
+  "article": "",
+  "repo": "togethercomputer/RedPajama-INCITE-7B-Base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Arctic": {
+  "source": "older",
+  "article": "",
+  "repo": "Snowflake/snowflake-arctic-base",
+  "safetensors": true,
+  "gated": false
+ },
+ "Jamba-v0.1": {
+  "source": "older",
+  "article": "",
+  "repo": "ai21labs/Jamba-v0.1",
+  "safetensors": true,
+  "gated": false
+ },
+ "Grok-1-hf": {
+  "source": "older",
+  "article": "",
+  "repo": "keyfan/grok-1-hf",
+  "safetensors": true,
+  "gated": false
+ },
+ "OLMo-1B": {
+  "source": "older",
+  "article": "",
+  "repo": "allenai/OLMo-1B-hf",
+  "safetensors": true,
+  "gated": false
+ },
+ "Mamba-2.8B": {
+  "source": "older",
+  "article": "",
+  "repo": "state-spaces/mamba-2.8b-hf",
+  "safetensors": true,
+  "gated": false
+ },
+ "Aquila2-34B": {
+  "source": "older",
+  "article": "",
+  "repo": "BAAI/Aquila2-34B",
+  "safetensors": true,
+  "gated": false
+ },
+ "Skywork-13B": {
+  "source": "older",
+  "article": "",
+  "repo": "Skywork/Skywork-13B-base",
+  "safetensors": true,
+  "gated": false
+ },
+ "XVERSE-65B": {
+  "source": "older",
+  "article": "",
+  "repo": "xverse/XVERSE-65B",
+  "safetensors": true,
+  "gated": false
+ },
+ "InternLM-20B": {
+  "source": "older",
+  "article": "",
+  "repo": "internlm/internlm-20b",
+  "safetensors": true,
+  "gated": false
+ },
+ "Qwen2.5-32B": {
+  "source": "lineage parent (QwQ-32B, DeepSeek-R1-Distill-Qwen-32B)",
+  "article": "",
+  "repo": "Qwen/Qwen2.5-32B",
+  "safetensors": true,
+  "gated": false
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "pairs": 229,
+ "ok": 229,
+ "untied_ok": 197,
+ "tied_ok": 32,
+ "errors": 0,
+ "skipped": 0,
+ "unchanged_embeddings": 5,
+ "with_unmoved_rows": 129,
+ "every_row_moved": 56,
+ "decoupled_decay_visible": 26,
+ "with_flat_rows": 5
+}

@@ -1,0 +1,13 @@
+{
+ "rows": 50304,
+ "replay_equal_rows": 31766,
+ "seen": 18538,
+ "unseen": 31766,
+ "unseen_and_equal": 31766,
+ "seen_but_equal": 0,
+ "bitwise_weights_equal": 24396288,
+ "unseen_weights": 24396288,
+ "tokens_from_replay_exact": true,
+ "note": "uses the logged LR list (recipe recovery under L2 is separate)",
+ "naive_identical_rows": 0
+}
