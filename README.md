@@ -4,8 +4,7 @@ Reading a model's training history from its embedding rows: which tokens were in
 learning-rate schedule, the number of steps, and (given the dataset) which optimizer step each
 document was in. This repository is an independent replication of a public thread making these
 claims, tested three ways: on the four public models it names, on 24 controlled fine-tunes with
-full ground truth (Pythia-160m/410m and Qwen2.5-7B), and on parent-to-child pairs from the
-265-model roster of the sibling project [checkpoint-forensics](https://github.com/bojieli/checkpoint-forensics).
+full ground truth (Pythia-160m/410m and Qwen2.5-7B), and on the 265-model roster of the sibling project [checkpoint-forensics](https://github.com/bojieli/checkpoint-forensics).
 
 ## The mechanism, in five lines
 
@@ -64,7 +63,31 @@ steps with a detection floor, decay strength tied to the total decay P for every
 an exact decay map read off the never-touched rows (fp32 rounding drift is otherwise as large as the
 moves), and wd and step count settled by bit-exact replay.
 
-### The 265-model roster (`results/roster/SWEEP.md`)
+### The 265-model roster
+
+Every model of the checkpoint-forensics roster gets a row in
+[`results/roster/COVERAGE.md`](results/roster/COVERAGE.md): **182 of 265 are read directly**, 52 more
+serve as the reference parent of an analysed fine-tune, and the remaining 31 have no record to read
+(no untouched rows, rows written after training, JAX/TPU or Ascend initialisation), each with its reason.
+
+**Base models: pretraining read from never-trained rows** ([`PRETRAIN_DECAY.md`](results/roster/PRETRAIN_DECAY.md)).
+checkpoint-forensics regenerates a base model's never-trained rows bit for bit; the std that does so is
+init_std x P, where P is the decoupled weight decay those rows took over all of pretraining. So the
+weights give sum(lr x wd) over pretraining with no checkpoints at all, and the never-trained rows are
+the tokens that never occurred in the pretraining data.
+
+- **Validated on Pythia** against an independent measurement (the padding rows' decay across 154 public
+  checkpoints): card-based and checkpoint-based P agree to 1e-4 at 70M, 160M, 410M, 1B, 1.4B, 6.9B and 12B
+  (2.8B's checkpoint series is corrupted). This also shows Pythia <= 2.8B used gpt-neox small_init and
+  6.9B/12B std 0.02.
+- **No decay on the embedding in pretraining** for OLMo-3 / OLMo-3.1 / OLMo-7B-Twin, DeepSeek-V3/V4 and
+  others (the std equals the init exactly), matching OLMo-2's stated choice of no weight decay on embeddings.
+- **Families share a pretraining signature**, e.g. GLM-4.5 through GLM-5.3 at sum(lr x wd) = 6.0-6.2 (if the
+  embedding was initialised at the config's initializer_range, an assumption marked per model; a wrong
+  init convention moves P by ~2x, as Pythia shows).
+- 175 models give a pretraining reading: 138 with the decay value, 37 with the never-trained rows only.
+
+**Fine-tunes: parent -> child diffs** ([`SWEEP.md`](results/roster/SWEEP.md)).
 
 Every public parent -> child pair in the checkpoint-forensics roster whose embeddings can be compared:
 **229 pairs** (197 untied, 32 tied), embeddings fetched by HTTP range requests and diffed row by row.
