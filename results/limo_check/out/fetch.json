@@ -1,0 +1,213 @@
+{
+ "pins": {
+  "LIMO": "GAIR/LIMO",
+  "LIMO_REV": "7b59ab38ade231f371a420b2772fe51802a1319e",
+  "LIMO_OPTIM_REV": "1833babb94e0b71051f8773911e2ece8ed6a0a51",
+  "LIMO_DELETE_REV": "910230fdaaa8716a3fd8c521138cbe9e5019ddaf",
+  "N_RANKS": 32,
+  "OPTIM_FILE": "global_step234/bf16_zero_pp_rank_{rank}_mp_rank_00_optim_states.pt",
+  "MODELS": {
+   "limo": [
+    "GAIR/LIMO",
+    "7b59ab38ade231f371a420b2772fe51802a1319e"
+   ],
+   "q32i": [
+    "Qwen/Qwen2.5-32B-Instruct",
+    "5ede1c97bbab6ce5cda5812749b4c0bdf79b18dd"
+   ],
+   "q32b": [
+    "Qwen/Qwen2.5-32B",
+    "1818d35814b8319459f4bd55ed1ac8709630f003"
+   ],
+   "qc32i": [
+    "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "381fc969f78efac66bc87ff7ddeadb7e73c218a7"
+   ],
+   "qc32b": [
+    "Qwen/Qwen2.5-Coder-32B",
+    "2e12b5f7bc878d424d222e224ed40aee564ec45f"
+   ],
+   "limo2": [
+    "GAIR/LIMO-v2",
+    "9510d41a1f5aca4bc86bbb52d63d0ab13da52ab1"
+   ],
+   "s1": [
+    "simplescaling/s1-32B",
+    "569f1b8dc020ebf57c9996462f3b58b1eb8aec8f"
+   ]
+  },
+  "RUN_FILES": [
+   "trainer_state.json",
+   "training_args.bin",
+   "config.json",
+   "tokenizer.json"
+  ],
+  "DATASETS": {
+   "limo_hf": [
+    "GAIR/LIMO",
+    "b60f4462da9d927930b9c9bd43399cf875564416",
+    "limo.jsonl"
+   ],
+   "limo2_hf": [
+    "GAIR/LIMO-v2",
+    "ef8bf143f8cc56ca8634795835b55083a3ae3061",
+    "limo-v2.jsonl"
+   ],
+   "s1k_tok": [
+    "simplescaling/s1K_tokenized",
+    "bd41c1e1caf2abec9535b9bbac1f2db7e960b77d",
+    null
+   ]
+  },
+  "GITHUB": "https://github.com/GAIR-NLP/LIMO",
+  "GITHUB_REV": "2284c6a0e6653aa8894bd12fdecc1212ba706c3a",
+  "GITHUB_FIRST": "70074cd1a654eff1cee17df6ed5e685ca198a499",
+  "GITHUB_YAML_CHANGE": "04efb7180099439a5a3651b4256523bf0a9c8480"
+ },
+ "embeddings": {
+  "limo": {
+   "repo": "GAIR/LIMO",
+   "rev": "7b59ab38ade231f371a420b2772fe51802a1319e",
+   "shard": "model-00001-of-00014.safetensors",
+   "dtype": "BF16",
+   "shape": [
+    152064,
+    5120
+   ],
+   "tied": false
+  },
+  "q32i": {
+   "repo": "Qwen/Qwen2.5-32B-Instruct",
+   "rev": "5ede1c97bbab6ce5cda5812749b4c0bdf79b18dd",
+   "shard": "model-00001-of-00017.safetensors",
+   "dtype": "BF16",
+   "shape": [
+    152064,
+    5120
+   ],
+   "tied": false
+  },
+  "q32b": {
+   "repo": "Qwen/Qwen2.5-32B",
+   "rev": "1818d35814b8319459f4bd55ed1ac8709630f003",
+   "shard": "model-00001-of-00017.safetensors",
+   "dtype": "BF16",
+   "shape": [
+    152064,
+    5120
+   ],
+   "tied": false
+  },
+  "qc32i": {
+   "repo": "Qwen/Qwen2.5-Coder-32B-Instruct",
+   "rev": "381fc969f78efac66bc87ff7ddeadb7e73c218a7",
+   "shard": "model-00001-of-00014.safetensors",
+   "dtype": "BF16",
+   "shape": [
+    152064,
+    5120
+   ],
+   "tied": false
+  },
+  "qc32b": {
+   "repo": "Qwen/Qwen2.5-Coder-32B",
+   "rev": "2e12b5f7bc878d424d222e224ed40aee564ec45f",
+   "shard": "model-00001-of-00014.safetensors",
+   "dtype": "BF16",
+   "shape": [
+    152064,
+    5120
+   ],
+   "tied": false
+  },
+  "limo2": {
+   "repo": "GAIR/LIMO-v2",
+   "rev": "9510d41a1f5aca4bc86bbb52d63d0ab13da52ab1",
+   "shard": "model-00001-of-00014.safetensors",
+   "dtype": "BF16",
+   "shape": [
+    152064,
+    5120
+   ],
+   "tied": false
+  },
+  "s1": {
+   "repo": "simplescaling/s1-32B",
+   "rev": "569f1b8dc020ebf57c9996462f3b58b1eb8aec8f",
+   "shard": "model-00001-of-00029.safetensors",
+   "dtype": "F32",
+   "shape": [
+    152064,
+    5120
+   ],
+   "tied": false
+  }
+ },
+ "weights_same_optim_rev_vs_main": {
+  "shards": 14,
+  "identical": 14
+ },
+ "optimizer": {
+  "rev": "1833babb94e0b71051f8773911e2ece8ed6a0a51",
+  "deleted_in": "910230fdaaa8716a3fd8c521138cbe9e5019ddaf",
+  "file": "global_step234/bf16_zero_pp_rank_{rank}_mp_rank_00_optim_states.pt",
+  "adam_step_per_rank": [
+   234.0
+  ],
+  "ranks": 32
+ },
+ "run_files": {
+  "trainer_state.json": {
+   "repo": "GAIR/LIMO",
+   "rev": "7b59ab38ade231f371a420b2772fe51802a1319e",
+   "bytes": 40830
+  },
+  "training_args.bin": {
+   "repo": "GAIR/LIMO",
+   "rev": "7b59ab38ade231f371a420b2772fe51802a1319e",
+   "bytes": 7352
+  },
+  "config.json": {
+   "repo": "GAIR/LIMO",
+   "rev": "7b59ab38ade231f371a420b2772fe51802a1319e",
+   "bytes": 803
+  },
+  "tokenizer.json": {
+   "repo": "GAIR/LIMO",
+   "rev": "7b59ab38ade231f371a420b2772fe51802a1319e",
+   "bytes": 11421896
+  }
+ },
+ "datasets": {
+  "limo_hf": {
+   "repo": "GAIR/LIMO",
+   "rev": "b60f4462da9d927930b9c9bd43399cf875564416",
+   "file": "limo.jsonl",
+   "bytes": 16074520
+  },
+  "limo2_hf": {
+   "repo": "GAIR/LIMO-v2",
+   "rev": "ef8bf143f8cc56ca8634795835b55083a3ae3061",
+   "file": "limo-v2.jsonl",
+   "bytes": 33068797
+  },
+  "s1k_tok": {
+   "repo": "simplescaling/s1K_tokenized",
+   "rev": "bd41c1e1caf2abec9535b9bbac1f2db7e960b77d",
+   "rows": 1000
+  }
+ },
+ "github": {
+  "repo": "https://github.com/GAIR-NLP/LIMO",
+  "rev": "2284c6a0e6653aa8894bd12fdecc1212ba706c3a",
+  "limo_json_blob": "ea98a05027fe48876bf39a211fc198d50dfb7891",
+  "limo_json_unchanged_since_first_commit": true,
+  "yaml_cutoff_at_first_commit": [
+   "cutoff_len: 32768"
+  ],
+  "yaml_cutoff_after_change": [
+   "cutoff_len: 16384"
+  ],
+  "yaml_change_commit": "04efb7180099439a5a3651b4256523bf0a9c8480"
+ }
+}

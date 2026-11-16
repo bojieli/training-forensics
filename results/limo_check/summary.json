@@ -1,9 +1,366 @@
-{"release":"GAIR/LIMO@7b59ab38","optimizer_state_rev":"GAIR/LIMO@1833babb94 global_step234/bf16_zero_pp_rank_{0..31}_mp_rank_00_optim_states.pt (deleted from main in 910230fdaa)",
-"parents":{"Qwen2.5-32B-Instruct@5ede1c97":{"identical":122322,"changed":29742},"Qwen2.5-32B":{"identical":7775},"Coder-32B-Instruct":{"identical":0},"Coder-32B":{"identical":0}},
-"tokenization_own":{"cut16384":{"tokens":13386,"in_unchanged":203,"changed_absent":16559},"full":{"tokens":13435,"in_unchanged":227,"changed_absent":16534},"question_tokens":3437,"question_tokens_unchanged":0},
-"optimizer":{"adam_step_all_ranks":234,"fp32_master_rounds_to_release_rows":152064,"rows_exp_avg_sq_nonzero":29742,"equals_changed_rows":true,"max_abs_dw_where_v_zero":0.0},
-"run":{"output_dir_basename":"aime817_deepseek-r1","num_processes":32,"per_device_bs":1,"grad_accum":1,"steps_per_epoch":26,"implied_examples":"801-832","global_step":234,"epoch":9,"num_train_epochs":15,"lr":5e-6,"weight_decay":0.0,"resume_from_checkpoint":null},
-"published_examples_with_never_updated_tokens":{"within_16384":61,"full":76,"within_4096":46},
-"cjk":{"vocab_rows":25557,"changed":5402,"cjk_chars_in_published_text":46},
-"controls_own_script":{"s1-32B":{"changed":16573,"data_tokens":16573,"in_unchanged":0,"changed_absent":0},"LIMO-v2_cut16384":{"tokens":13536,"changed":13815,"in_unchanged":0,"changed_absent":279}},
-"eval_sets_fully_covered_questions":{"gaokao":"43/79","kaoyan":"64/199","grade_school_math":"99/210","cn_math_2024":"25/30","aime":"22/30","math":"363/500"}}
+{
+ "generated_by": "scripts/limo_check/run_all.sh (steps fetch, compare, run_args, optim_analyze, tok, deeper, qcheck, controls, summarize)",
+ "release": "GAIR/LIMO@7b59ab38ade231f371a420b2772fe51802a1319e",
+ "optimizer_state_rev": "GAIR/LIMO@1833babb94e0b71051f8773911e2ece8ed6a0a51 (global_step234/bf16_zero_pp_rank_{rank}_mp_rank_00_optim_states.pt, deleted from main in 910230fdaaa8716a3fd8c521138cbe9e5019ddaf)",
+ "weights_same_optim_rev_vs_main": {
+  "shards": 14,
+  "identical": 14
+ },
+ "parents": {
+  "Qwen2.5-32B-Instruct": {
+   "rows_identical": 122322,
+   "rows_changed": 29742
+  },
+  "Qwen2.5-32B": {
+   "rows_identical": 7775,
+   "rows_changed": 144289
+  },
+  "Qwen2.5-Coder-32B-Instruct": {
+   "rows_identical": 0,
+   "rows_changed": 152064
+  },
+  "Qwen2.5-Coder-32B": {
+   "rows_identical": 0,
+   "rows_changed": 152064
+  }
+ },
+ "published_set": {
+  "examples": {
+   "github": 817,
+   "hf": 817,
+   "github_eq_hf_questions": 817,
+   "github_eq_hf_solutions": 817
+  },
+  "lengths": {
+   "max": 35341,
+   "n_over_16384": 44,
+   "n_over_32768": 1,
+   "total_full": 5816683,
+   "total_cut16384": 5669329
+  },
+  "cut16384_bf16_changed": {
+   "distinct_tokens_in_published_set": 13386,
+   "changed_rows": 29742,
+   "in_set_and_changed": 13183,
+   "in_set_unchanged": 203,
+   "changed_absent_from_set": 16559
+  },
+  "full_bf16_changed": {
+   "distinct_tokens_in_published_set": 13435,
+   "changed_rows": 29742,
+   "in_set_and_changed": 13208,
+   "in_set_unchanged": 227,
+   "changed_absent_from_set": 16534
+  },
+  "full_plus_all_hf_fields": {
+   "distinct_tokens_in_published_set": 13449,
+   "changed_rows": 29742,
+   "in_set_and_changed": 13214,
+   "in_set_unchanged": 235,
+   "changed_absent_from_set": 16528
+  }
+ },
+ "optimizer": {
+  "source": "GAIR/LIMO@1833babb94e0b71051f8773911e2ece8ed6a0a51 global_step234/bf16_zero_pp_rank_{rank}_mp_rank_00_optim_states.pt (ranks 0-31), embedding slice",
+  "adam_step_values_across_ranks": [
+   234.0
+  ],
+  "fp32_master_rounds_to_release_rows": 152064,
+  "rows_master_ne_base": 29742,
+  "rows_exp_avg_sq_nonzero": 29742,
+  "rows_exp_avg_nonzero": 29742,
+  "rows_bf16_changed": 29742,
+  "v_nz_and_changed": 29742,
+  "v_nz_not_changed": 0,
+  "changed_not_v_nz": 0,
+  "equals_changed_rows": true,
+  "master_changed_equals_v_nz": true,
+  "max_abs_dw_where_v_zero": 0.0,
+  "share_nonzero_elements_in_v_nz_rows": {
+   "min": 1.0,
+   "median": 1.0
+  }
+ },
+ "run": {
+  "per_device_train_batch_size": 1,
+  "gradient_accumulation_steps": 1,
+  "learning_rate": 5e-06,
+  "weight_decay": 0.0,
+  "num_train_epochs": 15,
+  "max_steps": -1,
+  "warmup_ratio": 0.0,
+  "warmup_steps": 0,
+  "adam_beta1": 0.9,
+  "adam_beta2": 0.999,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "seed": 42,
+  "data_seed": null,
+  "bf16": true,
+  "fp16": false,
+  "resume_from_checkpoint": null,
+  "dataloader_drop_last": false,
+  "output_dir": "aime817_deepseek-r1",
+  "deepspeed": "ds_z3_config.json",
+  "num_processes": 32,
+  "steps_per_epoch": 26,
+  "examples_per_optimizer_step": 32,
+  "implied_examples_per_epoch": [
+   801,
+   832
+  ],
+  "trainer_state": {
+   "global_step": 234,
+   "epoch": 9.0,
+   "max_steps": 390,
+   "num_train_epochs": 15,
+   "train_batch_size": 1,
+   "total_flos": 368952499765248.0,
+   "num_input_tokens_seen": 0
+  },
+  "config": {
+   "base_name_or_path_basename": "Qwen2.5-32B-Instruct",
+   "torch_dtype": "bfloat16",
+   "tie_word_embeddings": false,
+   "transformers_version": "4.45.2"
+  },
+  "source": {
+   "training_args.bin": "GAIR/LIMO@7b59ab38ade231f371a420b2772fe51802a1319e",
+   "trainer_state.json": "GAIR/LIMO@7b59ab38ade231f371a420b2772fe51802a1319e",
+   "config.json": "GAIR/LIMO@7b59ab38ade231f371a420b2772fe51802a1319e",
+   "num_processes": "32 ZeRO-3 optimizer partitions in GAIR/LIMO@1833babb94e0b71051f8773911e2ece8ed6a0a51"
+  }
+ },
+ "total_flos_check": {
+  "total_flos": 368952499765248.0,
+  "epochs_done": 9.0,
+  "tokens_per_epoch_if_counted_params": {
+   "q/k/v biases only (64 x 7,168)": 14893567,
+   "norms + q/k/v biases (64 x 17,408)": 6132645,
+   "norms + q/k/v biases + final norm": 6104591,
+   "norms + final norm": 10344679
+  },
+  "integral_divisor": [
+   "q/k/v biases only (64 x 7,168)"
+  ]
+ },
+ "by_cutoff": {
+  "1024": {
+   "distinct_tokens_in_published_set": 7355,
+   "in_set_with_gradient": 7333,
+   "in_set_without_gradient": 22,
+   "gradient_rows_absent_from_set": 22409,
+   "examples_with_a_token_without_gradient": 19
+  },
+  "2048": {
+   "distinct_tokens_in_published_set": 8716,
+   "in_set_with_gradient": 8669,
+   "in_set_without_gradient": 47,
+   "gradient_rows_absent_from_set": 21073,
+   "examples_with_a_token_without_gradient": 33
+  },
+  "4096": {
+   "distinct_tokens_in_published_set": 10322,
+   "in_set_with_gradient": 10230,
+   "in_set_without_gradient": 92,
+   "gradient_rows_absent_from_set": 19512,
+   "examples_with_a_token_without_gradient": 46
+  },
+  "8192": {
+   "distinct_tokens_in_published_set": 12482,
+   "in_set_with_gradient": 12344,
+   "in_set_without_gradient": 138,
+   "gradient_rows_absent_from_set": 17398,
+   "examples_with_a_token_without_gradient": 57
+  },
+  "16384": {
+   "distinct_tokens_in_published_set": 13386,
+   "in_set_with_gradient": 13183,
+   "in_set_without_gradient": 203,
+   "gradient_rows_absent_from_set": 16559,
+   "examples_with_a_token_without_gradient": 61
+  },
+  "32768": {
+   "distinct_tokens_in_published_set": 13435,
+   "in_set_with_gradient": 13208,
+   "in_set_without_gradient": 227,
+   "gradient_rows_absent_from_set": 16534,
+   "examples_with_a_token_without_gradient": 76
+  }
+ },
+ "yaml_cutoff": {
+  "at_release_day": [
+   "cutoff_len: 32768"
+  ],
+  "from_2025_02_14": [
+   "cutoff_len: 16384"
+  ]
+ },
+ "no_gradient_published_tokens": {
+  "n": 227,
+  "first_position_quantiles": {
+   "0": 97.0,
+   "10": 1162.6000000000001,
+   "25": 2317.0,
+   "50": 5579.0,
+   "75": 10648.5,
+   "90": 16472.6,
+   "100": 30037.0
+  },
+  "doc_freq_hist": {
+   "1": 218,
+   "2": 9
+  }
+ },
+ "per_example_unique_tokens": {
+  "window": 16384,
+  "examples": 817,
+  "examples_with_unique_tokens": 654,
+  "all_unique_tokens_have_gradient": 596,
+  "some_unique_token_without_gradient": 58,
+  "all_unique_tokens_without_gradient": 8,
+  "examples_without_unique_tokens (cannot be flagged)": 163,
+  "unique_tokens_per_example": {
+   "mean": 7.08868501529052,
+   "median": 4.0,
+   "p90": 15.0,
+   "max": 308
+  },
+  "gradient_rows_absent_from_set": 16559,
+  "differing_examples_needed_at_mean_yield": 2336,
+  "differing_examples_needed_at_max_yield": 54
+ },
+ "questions": {
+  "question_tokens": 3440,
+  "question_tokens_without_gradient": 0,
+  "question_only_tokens": 296,
+  "question_only_with_gradient": 296,
+  "question_only_in_one_question": 220,
+  "published_tokens_with_gradient_share": 0.9830988012806194
+ },
+ "flagged_examples_solution_unique_with_gradient_share": 0.6455284552845528,
+ "cjk": {
+  "vocab_rows": 25557,
+  "rows_with_gradient": 5402,
+  "absent_cut16384_cjk": 5391,
+  "cjk_chars_in_published_text": 46
+ },
+ "eval_questions_fully_covered": {
+  "set_sizes": {
+   "LIMO gradient rows": 29742,
+   "LIMO-v2 changed rows (other data)": 13815,
+   "s1-32B changed rows (other data)": 16573,
+   "published LIMO tokens": 13435
+  },
+  "files": {
+   "aime": {
+    "questions": 30,
+    "LIMO gradient rows": 22,
+    "LIMO-v2 changed rows (other data)": 21,
+    "s1-32B changed rows (other data)": 19,
+    "published LIMO tokens": 18
+   },
+   "amc": {
+    "questions": 40,
+    "LIMO gradient rows": 26,
+    "LIMO-v2 changed rows (other data)": 27,
+    "s1-32B changed rows (other data)": 24,
+    "published LIMO tokens": 24
+   },
+   "cn_math_2024": {
+    "questions": 30,
+    "LIMO gradient rows": 25,
+    "LIMO-v2 changed rows (other data)": 23,
+    "s1-32B changed rows (other data)": 26,
+    "published LIMO tokens": 23
+   },
+   "gaokao": {
+    "questions": 79,
+    "LIMO gradient rows": 43,
+    "LIMO-v2 changed rows (other data)": 0,
+    "s1-32B changed rows (other data)": 0,
+    "published LIMO tokens": 0
+   },
+   "gpqa": {
+    "questions": 198,
+    "LIMO gradient rows": 4,
+    "LIMO-v2 changed rows (other data)": 0,
+    "s1-32B changed rows (other data)": 37,
+    "published LIMO tokens": 1
+   },
+   "grade_school_math": {
+    "questions": 210,
+    "LIMO gradient rows": 99,
+    "LIMO-v2 changed rows (other data)": 0,
+    "s1-32B changed rows (other data)": 0,
+    "published LIMO tokens": 0
+   },
+   "kaoyan": {
+    "questions": 199,
+    "LIMO gradient rows": 64,
+    "LIMO-v2 changed rows (other data)": 1,
+    "s1-32B changed rows (other data)": 1,
+    "published LIMO tokens": 0
+   },
+   "math": {
+    "questions": 500,
+    "LIMO gradient rows": 363,
+    "LIMO-v2 changed rows (other data)": 364,
+    "s1-32B changed rows (other data)": 356,
+    "published LIMO tokens": 332
+   },
+   "minerva": {
+    "questions": 272,
+    "LIMO gradient rows": 29,
+    "LIMO-v2 changed rows (other data)": 15,
+    "s1-32B changed rows (other data)": 60,
+    "published LIMO tokens": 18
+   },
+   "olympiadbench": {
+    "questions": 675,
+    "LIMO gradient rows": 476,
+    "LIMO-v2 changed rows (other data)": 444,
+    "s1-32B changed rows (other data)": 485,
+    "published LIMO tokens": 363
+   }
+  }
+ },
+ "controls": {
+  "limo2": {
+   "source": "GAIR/LIMO-v2@ef8bf143f8cc56ca8634795835b55083a3ae3061 limo-v2.jsonl",
+   "examples": 800,
+   "changed_rows": 13815,
+   "full": {
+    "distinct_tokens": 13931,
+    "in_set_unchanged": 383,
+    "changed_absent": 267
+   },
+   "cut16384": {
+    "distinct_tokens": 13536,
+    "in_set_unchanged": 0,
+    "changed_absent": 279
+   }
+  },
+  "s1": {
+   "source": "simplescaling/s1K_tokenized@bd41c1e1caf2abec9535b9bbac1f2db7e960b77d",
+   "changed_rows": 16573,
+   "distinct_tokens": 16573,
+   "excluding_last_position": 16573,
+   "in_set_unchanged": 0,
+   "changed_absent": 0
+  }
+ },
+ "github": {
+  "repo": "https://github.com/GAIR-NLP/LIMO",
+  "rev": "2284c6a0e6653aa8894bd12fdecc1212ba706c3a",
+  "limo_json_blob": "ea98a05027fe48876bf39a211fc198d50dfb7891",
+  "limo_json_unchanged_since_first_commit": true,
+  "yaml_cutoff_at_first_commit": [
+   "cutoff_len: 32768"
+  ],
+  "yaml_cutoff_after_change": [
+   "cutoff_len: 16384"
+  ],
+  "yaml_change_commit": "04efb7180099439a5a3651b4256523bf0a9c8480"
+ }
+}

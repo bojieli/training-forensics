@@ -1,0 +1,80 @@
+{
+ "source": {
+  "training_args.bin": "GAIR/LIMO@7b59ab38ade231f371a420b2772fe51802a1319e",
+  "trainer_state.json": "GAIR/LIMO@7b59ab38ade231f371a420b2772fe51802a1319e",
+  "config.json": "GAIR/LIMO@7b59ab38ade231f371a420b2772fe51802a1319e",
+  "num_processes": "32 ZeRO-3 optimizer partitions in GAIR/LIMO@1833babb94e0b71051f8773911e2ece8ed6a0a51"
+ },
+ "training_args": {
+  "per_device_train_batch_size": 1,
+  "gradient_accumulation_steps": 1,
+  "learning_rate": 5e-06,
+  "weight_decay": 0.0,
+  "num_train_epochs": 15,
+  "max_steps": -1,
+  "warmup_ratio": 0.0,
+  "warmup_steps": 0,
+  "adam_beta1": 0.9,
+  "adam_beta2": 0.999,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "seed": 42,
+  "data_seed": null,
+  "bf16": true,
+  "fp16": false,
+  "resume_from_checkpoint": null,
+  "dataloader_drop_last": false,
+  "output_dir": "aime817_deepseek-r1",
+  "deepspeed": "ds_z3_config.json"
+ },
+ "trainer_state": {
+  "global_step": 234,
+  "epoch": 9.0,
+  "max_steps": 390,
+  "num_train_epochs": 15,
+  "train_batch_size": 1,
+  "total_flos": 368952499765248.0,
+  "num_input_tokens_seen": 0
+ },
+ "config": {
+  "base_name_or_path_basename": "Qwen2.5-32B-Instruct",
+  "torch_dtype": "bfloat16",
+  "tie_word_embeddings": false,
+  "transformers_version": "4.45.2"
+ },
+ "num_processes": 32,
+ "steps_per_epoch": 26,
+ "examples_per_optimizer_step": 32,
+ "implied_examples_per_epoch": [
+  801,
+  832
+ ],
+ "lr_at_logged_steps": [
+  [
+   1,
+   4.9999188892913205e-06
+  ],
+  [
+   2,
+   4.999675562428437e-06
+  ],
+  [
+   3,
+   4.999270035200483e-06
+  ]
+ ],
+ "total_flos_check": {
+  "total_flos": 368952499765248.0,
+  "epochs_done": 9.0,
+  "tokens_per_epoch_if_counted_params": {
+   "q/k/v biases only (64 x 7,168)": 14893567,
+   "norms + q/k/v biases (64 x 17,408)": 6132645,
+   "norms + q/k/v biases + final norm": 6104591,
+   "norms + final norm": 10344679
+  },
+  "integral_divisor": [
+   "q/k/v biases only (64 x 7,168)"
+  ]
+ }
+}
+[saved out/run_args.json]

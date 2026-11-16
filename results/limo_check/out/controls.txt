@@ -1,0 +1,26 @@
+{
+ "limo2": {
+  "source": "GAIR/LIMO-v2@ef8bf143f8cc56ca8634795835b55083a3ae3061 limo-v2.jsonl",
+  "examples": 800,
+  "changed_rows": 13815,
+  "full": {
+   "distinct_tokens": 13931,
+   "in_set_unchanged": 383,
+   "changed_absent": 267
+  },
+  "cut16384": {
+   "distinct_tokens": 13536,
+   "in_set_unchanged": 0,
+   "changed_absent": 279
+  }
+ },
+ "s1": {
+  "source": "simplescaling/s1K_tokenized@bd41c1e1caf2abec9535b9bbac1f2db7e960b77d",
+  "changed_rows": 16573,
+  "distinct_tokens": 16573,
+  "excluding_last_position": 16573,
+  "in_set_unchanged": 0,
+  "changed_absent": 0
+ }
+}
+[saved out/controls.json]

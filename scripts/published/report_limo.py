@@ -7,7 +7,7 @@ from report import ROOT, OUT, load
 EXTRA = [("GAIR/LIMO", "limo", "Qwen/Qwen2.5-32B-Instruct", "GAIR/LIMO (817 examples)"),
          ("GAIR/LIMO-v2", "limo2", "Qwen/Qwen2.5-32B-Instruct", "GAIR/LIMO-v2 (800 examples)")]
 report.EXTRA_CHILDREN.update(c for c, *_ in EXTRA)
-report.EXTRA_VERDICT.update({"GAIR/LIMO": "**not explained by the published data** (see below)", "GAIR/LIMO-v2": "close: 279 changed tokens not explained (see below)"})
+report.EXTRA_VERDICT.update({"GAIR/LIMO": "**not explained by the published data** (see below)", "GAIR/LIMO-v2": "close: a few hundred changed tokens not explained (see below)"})
 
 
 def main():
@@ -74,41 +74,83 @@ def main():
 
 
 def limo_check():
-    """Independent check from the DeepSpeed optimizer state left in an old GAIR/LIMO revision
-    (results/limo_check/summary.json)."""
+    """Independent check from the DeepSpeed optimizer state left in an old GAIR/LIMO revision. Every number comes from
+    results/limo_check/summary.json, which scripts/limo_check/run_all.sh assembles from the step outputs in out/."""
     p = ROOT / "results" / "limo_check" / "summary.json"
     if not p.exists():
         return []
     d = json.load(open(p))
-    o, run, tk, ex, cjk, ev = d["optimizer"], d["run"], d["tokenization_own"], d["published_examples_with_never_updated_tokens"], d["cjk"], d["eval_sets_fully_covered_questions"]
+    o, run, ps, cut, ex, q, cjk, ev, fl = (d["optimizer"], d["run"], d["published_set"]["cut16384_bf16_changed"], d["by_cutoff"],
+                                         d["per_example_unique_tokens"], d["questions"], d["cjk"], d["eval_questions_fully_covered"], d["total_flos_check"])
+    nflag = {k: v["examples_with_a_token_without_gradient"] for k, v in cut.items()}
+    lo, hi = run["implied_examples_per_epoch"]
+    ga = run.get("gradient_accumulation_steps")
     L = ["### Independent check: the optimizer state of the training run", "",
-         f"An earlier revision of the model repository ({d['optimizer_state_rev']}) still holds the DeepSpeed optimizer",
-         f"state of the run. Its fp32 master weights round to the released weights for all {o['fp32_master_rounds_to_release_rows']:,} rows,",
-         f"and exactly the {o['rows_exp_avg_sq_nonzero']:,} changed token vectors have a nonzero Adam second moment"
-         f" (equal to the changed set: {o['equals_changed_rows']}); every other row equals the base. So the {tk['cut16384']['changed_absent']:,}"
-         " changed tokens absent from the published set received real gradients.",
+         "Reproduce with `scripts/limo_check/run_all.sh` (inputs pinned in `scripts/limo_check/pins.py`; step logs and outputs in"
+         " `results/limo_check/out/`). We do not redistribute GAIR's files; the run metadata below is read from them.", "",
+         f"An earlier revision of the model repository ({d['optimizer_state_rev']}) still holds the DeepSpeed ZeRO-3 optimizer"
+         f" state of the run; its {d['weights_same_optim_rev_vs_main']['identical']} of {d['weights_same_optim_rev_vs_main']['shards']}"
+         " weight shards are byte-identical to the release. The fp32 master weights round to the released weights for"
+         f" {o['fp32_master_rounds_to_release_rows']:,} of 152,064 token vectors, and exactly {o['rows_exp_avg_sq_nonzero']:,} token"
+         f" vectors have a nonzero Adam second moment (equal to the changed set: {o['equals_changed_rows']}); every other row's"
+         f" master weight equals the base (largest difference {o['max_abs_dw_where_v_zero']}). So every changed token received real"
+         " gradients in this run, and every published token without a change received none.", "",
+         "**Token counts** (the published set rendered with the qwen chat template, first 16,384 tokens of each example):"
+         f" {ps['distinct_tokens_in_published_set']:,} distinct tokens, of which {ps['in_set_and_changed']:,} changed and"
+         f" {ps['in_set_unchanged']} did not; {ps['changed_absent_from_set']:,} changed tokens do not occur in the set"
+         f" ({cjk['absent_cut16384_cjk']:,} of them CJK; the published text has {cjk['cjk_chars_in_published_text']} CJK characters).", "",
+         f"- **Run size.** Adam step {', '.join(str(int(s)) for s in o['adam_step_values_across_ranks'])} on every rank;"
+         f" {run['num_processes']} processes, per-device batch {run.get('per_device_train_batch_size')}, gradient accumulation {ga},"
+         f" {run['steps_per_epoch']} steps per epoch, so {lo}-{hi} examples per epoch (training_args.bin and trainer_state.json of the"
+         f" release; process count from the {run['num_processes']} optimizer partitions). The release is the epoch-{run['trainer_state']['epoch']:.0f}"
+         f" checkpoint of a planned {run['trainer_state']['num_train_epochs']}-epoch run (lr {run.get('learning_rate')}, weight decay"
+         f" {run.get('weight_decay')}, resume_from_checkpoint {run.get('resume_from_checkpoint')}, output directory"
+         f" `{run.get('output_dir')}`). The run size excludes a larger corpus or extra datasets.",
+         f"- **Questions.** All {q['question_tokens']:,} question tokens received gradients, including {q['question_only_tokens']}"
+         f" that occur in no solution ({q['question_only_in_one_question']} of them in a single question). Because"
+         f" {100 * q['published_tokens_with_gradient_share']:.1f}% of all published tokens received gradients, this is consistent with"
+         " the same questions rather than proof of them.",
+         "- **Solutions.** Published examples containing a token that never received a gradient, by assumed cutoff: " +
+         ", ".join(f"{int(k):,}: {v}" for k, v in nflag.items()) + f" (longest published example {d['published_set']['lengths']['max']:,} tokens)."
+         f" The cutoff is not in the released files: GitHub `train_limo.yaml` said `{', '.join(d['yaml_cutoff']['at_release_day'])}` on the"
+         f" release day and `{', '.join(d['yaml_cutoff']['from_2025_02_14'])}` from 2025-02-14 ({d['github']['yaml_change_commit'][:7]});"
+         " the paper says 16,384. The solution text used in training differs from the published one for at least"
+         f" {nflag['16384']} examples at 16,384 ({nflag['32768']} at 32,768).",
+         f"- **How many examples differ.** {ex['examples_with_unique_tokens']} of {ex['examples']} published examples contain a"
+         f" token no other example has; in {ex['all_unique_tokens_have_gradient']} of them every such token received a gradient. A"
+         f" published example contributes {ex['unique_tokens_per_example']['mean']:.0f} such tokens on average (median"
+         f" {ex['unique_tokens_per_example']['median']:.0f}, max {ex['unique_tokens_per_example']['max']}). At that rate the"
+         f" {ex['gradient_rows_absent_from_set']:,} absent tokens would need about {ex['differing_examples_needed_at_mean_yield']:,} differing"
+         f" examples (at least {ex['differing_examples_needed_at_max_yield']} even at the maximum rate), against the"
+         f" {nflag['16384']} we can flag" + (
+             f" and more than the {ex['examples']} in the set. So the trained text of the differing examples must also be very unlike"
+             f" the published text ({cjk['absent_cut16384_cjk']:,} of the absent tokens are CJK)."
+             if ex['differing_examples_needed_at_mean_yield'] > ex['examples'] else
+             ". Either many more examples differ than the weights can detect, or the trained text of the differing examples is very"
+             " unlike the published text.") +
+         f" Detection is limited: {ex['examples_without_unique_tokens (cannot be flagged)']} examples have no unique token, and an"
+         " example whose unique tokens all reappear in its trained text cannot be flagged. The weights do not tell how many"
+         f" examples differ; \"at least {nflag['16384']}\" is a floor, not an estimate.",
+         f"- **CJK.** {cjk['rows_with_gradient']:,} of the {cjk['vocab_rows']:,} CJK vocabulary tokens received gradients.",
+         f"- **total_flos** ({fl['total_flos']:.4g}) cannot be turned into a token count here: under ZeRO-3 the Trainer counts only"
+         " the parameters that stay unpartitioned, and plausible choices give " +
+         ", ".join(f"{v / 1e6:.1f}M" for v in fl["tokens_per_epoch_if_counted_params"].values()) +
+         f" tokens per epoch (published set: {d['published_set']['lengths']['total_cut16384'] / 1e6:.2f}M at 16,384). We do not use it.",
          "",
-         f"- **One run of about the published size.** Adam step {o['adam_step_all_ranks']} on every rank; {run['num_processes']} processes,"
-         f" batch {run['per_device_bs']}, no accumulation, {run['steps_per_epoch']} steps per epoch, so {run['implied_examples']} examples per epoch."
-         f" The release is the epoch-{run['epoch']} checkpoint of a planned {run['num_train_epochs']}-epoch run (lr {run['lr']}, weight decay"
-         f" {run['weight_decay']}, not resumed). The run size excludes a larger corpus or extra datasets.",
-         f"- **Questions match, solutions differ.** All {tk['question_tokens']:,} question tokens changed (0 unchanged). "
-         f"{ex['within_16384']} published examples contain solution tokens that never got a gradient (second moment exactly 0, so"
-         " not a detection floor; "
-         f"{ex['within_4096']} of them within the first 4,096 tokens, {ex['full']} counting the full text).",
-         f"- **CJK.** {cjk['changed']:,} of the {cjk['vocab_rows']:,} CJK vocabulary tokens changed; the published text contains"
-         f" {cjk['cjk_chars_in_published_text']} CJK characters.",
+         "**Reading.** The released GAIR/LIMO checkpoint (epoch"
+         f" {run['trainer_state']['epoch']:.0f} of a {run['trainer_state']['num_train_epochs']}-epoch run over {lo}-{hi} examples per"
+         f" epoch) received gradient updates on {ps['changed_absent_from_set']:,} distinct vocabulary tokens that do not occur in the"
+         f" published 817-example set, {cjk['absent_cut16384_cjk']:,} of them CJK, while {ps['in_set_unchanged']} distinct tokens of the"
+         " published set never received one. The questions are consistent with the published ones; the solution texts used in"
+         f" training differ from the published ones for at least {nflag['16384']} examples, possibly far more. The run size excludes a"
+         " larger corpus. The weights do not show what the other text was or why it differs.",
          "",
-         "**Reading.** The released GAIR/LIMO checkpoint (epoch 9 of a 15-epoch run over about 817 examples) received gradient"
-         " updates on 16.5k vocabulary tokens, including about 5.4k CJK tokens, that do not occur in the published 817-example"
-         " set, while about 200 tokens of the published solutions were never updated. The questions match; the solution texts"
-         " used in training differ from the published ones for at least about 60 examples. The run size excludes a larger"
-         " corpus. The weights do not show what the other text was or why it differs.",
-         "",
-         "**No implication of test-set training.** Token sets cannot show that an evaluation question was trained on: a question"
-         " counts as covered below only if every one of its tokens changed, which common tokens make easy. Evaluation questions"
-         " fully covered by the changed tokens: " + ", ".join(f"{k} {v}" for k, v in ev.items()) + ". These counts are not"
-         " evidence of contamination and we make no such claim."]
+         "**Evaluation sets: no implication of test-set training.** We do not report how many evaluation questions the changed"
+         " tokens cover. Token coverage cannot show that a question was trained on, and it is dominated by language: LIMO's changed"
+         f" set contains {cjk['rows_with_gradient']:,} CJK tokens, so it covers many questions of the Chinese evaluation sets, which"
+         " the control sets of known origin (LIMO-v2 and s1-32B, trained on other, English data) almost never cover. That restates"
+         " that LIMO's trained text contained Chinese; it says nothing about which Chinese text. The counts are in"
+         " `results/limo_check/out/deeper.json` for completeness. We make no contamination claim."]
     return L
 
 

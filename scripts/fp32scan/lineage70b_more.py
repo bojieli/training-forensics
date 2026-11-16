@@ -10,6 +10,8 @@ import torch
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from trainforensics import remote  # noqa: E402
+sys.path.insert(0, str(ROOT / "scripts" / "reflection_check"))
+from pins import PIN  # noqa: E402  pinned revisions for children and references
 
 out, child = sys.argv[1:3]
 crepo, _, crev = child.partition("@")
@@ -25,7 +27,7 @@ NAMES = ["model.norm.weight"] + [f"model.layers.{i}.{n}" for i in (0, 40, 79) fo
 res = dict(child=child, tensors={})
 for name in NAMES:
     try:
-        W = remote.tensor(crepo, name, crev or None)
+        W = remote.tensor(crepo, name, crev or PIN.get(crepo))
     except Exception as e:
         res["tensors"][name] = dict(error=str(e)[:100])
         continue
@@ -34,7 +36,7 @@ for name in NAMES:
     W = W[:rows]
     r = dict(shape=list(W.shape), on_bf16_grid=float(((W.view(torch.int32) & 0xFFFF) == 0).float().mean()))
     for k, repo in CANDS.items():
-        C = remote.tensor(repo, name).float()[:rows]
+        C = remote.tensor(repo, name, PIN.get(repo)).float()[:rows]
         eq = (W == C)
         r[k] = dict(values_identical=float(eq.float().mean()),
                     rows_identical=int(eq.all(-1).sum()) if W.dim() == 2 else int(eq.all())),

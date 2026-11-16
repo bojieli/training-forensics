@@ -25,6 +25,8 @@ import torch
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from trainforensics import remote  # noqa: E402
+sys.path.insert(0, str(ROOT / "scripts" / "reflection_check"))
+from pins import PIN  # noqa: E402  pinned revisions for children and references
 
 EMB = "model.embed_tokens.weight"
 CANDS = {
@@ -40,7 +42,7 @@ CHAT = {128006: "<|start_header_id|>", 128007: "<|end_header_id|>", 128009: "<|e
 
 def load(spec, keep16=False):
     repo, _, rev = spec.partition("@")
-    t = remote.tensor(repo, EMB, rev or None)
+    t = remote.tensor(repo, EMB, rev or PIN.get(repo))
     return t if keep16 else t.float()
 
 

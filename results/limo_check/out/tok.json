@@ -1,0 +1,47 @@
+{
+ "source": {
+  "github": "https://github.com/GAIR-NLP/LIMO@2284c6a0e6653aa8894bd12fdecc1212ba706c3a train/data/limo.json",
+  "hf": "GAIR/LIMO@b60f4462da9d927930b9c9bd43399cf875564416 limo.jsonl"
+ },
+ "vocab_equal_limo_vs_base": true,
+ "vocab_size": 151665,
+ "examples": {
+  "github": 817,
+  "hf": 817,
+  "github_eq_hf_questions": 817,
+  "github_eq_hf_solutions": 817
+ },
+ "lengths": {
+  "max": 35341,
+  "n_over_16384": 44,
+  "n_over_32768": 1,
+  "total_full": 5816683,
+  "total_cut16384": 5669329
+ },
+ "variants": {
+  "full": {
+   "distinct_tokens_in_published_set": 13435,
+   "changed_rows": 29742,
+   "in_set_and_changed": 13208,
+   "in_set_unchanged": 227,
+   "changed_absent_from_set": 16534
+  },
+  "cut16384": {
+   "distinct_tokens_in_published_set": 13386,
+   "changed_rows": 29742,
+   "in_set_and_changed": 13183,
+   "in_set_unchanged": 203,
+   "changed_absent_from_set": 16559
+  },
+  "full+all HF fields": {
+   "distinct_tokens_in_published_set": 13449,
+   "changed_rows": 29742,
+   "in_set_and_changed": 13214,
+   "in_set_unchanged": 235,
+   "changed_absent_from_set": 16528
+  }
+ },
+ "absent_cut16384_cjk": 5391,
+ "absent_cut16384_cjk_found_as_substring_in_raw_published_text": 14,
+ "cjk_chars_in_raw_published_text": 46
+}

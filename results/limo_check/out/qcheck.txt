@@ -1,0 +1,15 @@
+{
+ "question_tokens": 3440,
+ "question_tokens_without_gradient": 0,
+ "question_only_tokens": 296,
+ "question_only_with_gradient": 296,
+ "question_only_in_one_question": 220,
+ "published_tokens_with_gradient_share": 0.9830988012806194,
+ "examples_with_solution_token_without_gradient (full text)": 76,
+ "their_solution_unique_tokens": 615,
+ "their_solution_unique_tokens_with_gradient_share": 0.6455284552845528,
+ "cjk_vocab_rows": 25557,
+ "cjk_rows_with_gradient": 5402,
+ "all_rows_with_gradient_share": 0.1955886994949495
+}
+[saved out/qcheck.json]

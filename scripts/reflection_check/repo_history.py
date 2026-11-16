@@ -2,8 +2,9 @@
 """Which shards changed between the first upload and main; index.json key layout; tokenizer extras."""
 import json, sys, requests
 sys.path.insert(0, __file__.rsplit("/", 1)[0]); import st
+from pins import REFL_MAIN
 R = "mattshumer/Reflection-Llama-3.1-70B"
-revs = {"dup": "276a4a0a0a", "first": "e7bfef9796", "main": None}
+revs = {"dup": "276a4a0a0a", "first": "e7bfef9796", "main": REFL_MAIN}
 F = {k: st.files(R, v) for k, v in revs.items()}
 out = {}
 for k, fs in F.items():

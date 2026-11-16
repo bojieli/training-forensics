@@ -4,11 +4,12 @@ bitwise, vs Llama-3 / 3.1 base and instruct. Nothing is written to disk but the 
 import json, sys, numpy as np
 from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, __file__.rsplit("/", 1)[0]); import st
+from pins import REFL_MAIN
 N = 1 << 20
 R = "mattshumer/Reflection-Llama-3.1-70B"
 REF = {"L3-I": "NousResearch/Meta-Llama-3-70B-Instruct", "L3": "NousResearch/Meta-Llama-3-70B",
        "L3.1-I": "unsloth/Meta-Llama-3.1-70B-Instruct", "L3.1": "unsloth/Meta-Llama-3.1-70B"}
-CH = {"current": None, "first": "e7bfef9796"}
+CH = {"current": REFL_MAIN, "first": "e7bfef9796"}
 ix = {k: st.index(r) for k, r in REF.items()}; cx = {c: st.index(R, rev) for c, rev in CH.items()}
 names = list(cx["current"]); assert set(names) == set(cx["first"]) == set(ix["L3-I"]) == set(ix["L3.1-I"]), "tensor name sets differ"
 def one(name):

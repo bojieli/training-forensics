@@ -1,0 +1,139 @@
+{
+ "generated_by": "scripts/limo_check/run_all.sh (steps fetch, compare, run_args, optim_analyze, tok, deeper, qcheck, controls, summarize)",
+ "release": "GAIR/LIMO@7b59ab38ade231f371a420b2772fe51802a1319e",
+ "optimizer_state_rev": "GAIR/LIMO@1833babb94e0b71051f8773911e2ece8ed6a0a51 (global_step234/bf16_zero_pp_rank_{rank}_mp_rank_00_optim_states.pt, deleted from main in 910230fdaaa8716a3fd8c521138cbe9e5019ddaf)",
+ "weights_same_optim_rev_vs_main": {
+  "shards": 14,
+  "identical": 14
+ },
+ "parents": {
+  "Qwen2.5-32B-Instruct": {
+   "rows_identical": 122322,
+   "rows_changed": 29742
+  },
+  "Qwen2.5-32B": {
+   "rows_identical": 7775,
+   "rows_changed": 144289
+  },
+  "Qwen2.5-Coder-32B-Instruct": {
+   "rows_identical": 0,
+   "rows_changed": 152064
+  },
+  "Qwen2.5-Coder-32B": {
+   "rows_identical": 0,
+   "rows_changed": 152064
+  }
+ },
+ "published_set": {
+  "examples": {
+   "github": 817,
+   "hf": 817,
+   "github_eq_hf_questions": 817,
+   "github_eq_hf_solutions": 817
+  },
+  "lengths": {
+   "max": 35341,
+   "n_over_16384": 44,
+   "n_over_32768": 1,
+   "total_full": 5816683,
+   "total_cut16384": 5669329
+  },
+  "cut16384_bf16_changed": {
+   "distinct_tokens_in_published_set": 13386,
+   "changed_rows": 29742,
+   "in_set_and_changed": 13183,
+   "in_set_unchanged": 203,
+   "changed_absent_from_set": 16559
+  },
+  "full_bf16_changed": {
+   "distinct_tokens_in_published_set": 13435,
+   "changed_rows": 29742,
+   "in_set_and_changed": 13208,
+   "in_set_unchanged": 227,
+   "changed_absent_from_set": 16534
+  },
+  "full_plus_all_hf_fields": {
+   "distinct_tokens_in_published_set": 13449,
+   "changed_rows": 29742,
+   "in_set_and_changed": 13214,
+   "in_set_unchanged": 235,
+   "changed_absent_from_set": 16528
+  }
+ },
+ "optimizer": {
+  "source": "GAIR/LIMO@1833babb94e0b71051f8773911e2ece8ed6a0a51 global_step234/bf16_zero_pp_rank_{rank}_mp_rank_00_optim_states.pt (ranks 0-31), embedding slice",
+  "adam_step_values_across_ranks": [
+   234.0
+  ],
+  "fp32_master_rounds_to_release_rows": 152064,
+  "rows_master_ne_base": 29742,
+  "rows_exp_avg_sq_nonzero": 29742,
+  "rows_exp_avg_nonzero": 29742,
+  "rows_bf16_changed": 29742,
+  "v_nz_and_changed": 29742,
+  "v_nz_not_changed": 0,
+  "changed_not_v_nz": 0,
+  "equals_changed_rows": true,
+  "master_changed_equals_v_nz": true,
+  "max_abs_dw_where_v_zero": 0.0,
+  "share_nonzero_elements_in_v_nz_rows": {
+   "min": 1.0,
+   "median": 1.0
+  }
+ },
+ "run": {
+  "per_device_train_batch_size": 1,
+  "gradient_accumulation_steps": 1,
+  "learning_rate": 5e-06,
+  "weight_decay": 0.0,
+  "num_train_epochs": 15,
+  "max_steps": -1,
+  "warmup_ratio": 0.0,
+  "warmup_steps": 0,
+  "adam_beta1": 0.9,
+  "adam_beta2": 0.999,
+  "adam_epsilon": 1e-08,
+  "max_grad_norm": 1.0,
+  "seed": 42,
+  "data_seed": null,
+  "bf16": true,
+  "fp16": false,
+  "resume_from_checkpoint": null,
+  "dataloader_drop_last": false,
+  "output_dir": "aime817_deepseek-r1",
+  "deepspeed": "ds_z3_config.json",
+  "num_processes": 32,
+  "steps_per_epoch": 26,
+  "examples_per_optimizer_step": 32,
+  "implied_examples_per_epoch": [
+   801,
+   832
+  ],
+  "trainer_state": {
+   "global_step": 234,
+   "epoch": 9.0,
+   "max_steps": 390,
+   "num_train_epochs": 15,
+   "train_batch_size": 1,
+   "total_flos": 368952499765248.0,
+   "num_input_tokens_seen": 0
+  },
+  "config": {
+   "base_name_or_path_basename": "Qwen2.5-32B-Instruct",
+   "torch_dtype": "bfloat16",
+   "tie_word_embeddings": false,
+   "transformers_version": "4.45.2"
+  },
+  "source": {
+   "training_args.bin": "GAIR/LIMO@7b59ab38ade231f371a420b2772fe51802a1319e",
+   "trainer_state.json": "GAIR/LIMO@7b59ab38ade231f371a420b2772fe51802a1319e",
+   "config.json": "GAIR/LIMO@7b59ab38ade231f371a420b2772fe51802a1319e",
+   "num_processes": "32 ZeRO-3 optimizer partitions in GAIR/LIMO@1833babb94e0b71051f8773911e2ece8ed6a0a51"
+  }
+ },
+ "total_flos_check": {
+  "total_flos": 368952499765248.0,
+  "epochs_done": 9.0,
+  "tokens_per_epoch_if_counted_params": {
+   "q/k/v biases only (64 x 7,168)": 14893567,
+   "norms + q/k/v biases (64 

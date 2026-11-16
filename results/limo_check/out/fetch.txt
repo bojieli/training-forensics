@@ -1,0 +1,43 @@
+limo {'repo': 'GAIR/LIMO', 'rev': '7b59ab38ade231f371a420b2772fe51802a1319e', 'shard': 'model-00001-of-00014.safetensors', 'dtype': 'BF16', 'shape': [152064, 5120], 'tied': False}
+q32i {'repo': 'Qwen/Qwen2.5-32B-Instruct', 'rev': '5ede1c97bbab6ce5cda5812749b4c0bdf79b18dd', 'shard': 'model-00001-of-00017.safetensors', 'dtype': 'BF16', 'shape': [152064, 5120], 'tied': False}
+q32b {'repo': 'Qwen/Qwen2.5-32B', 'rev': '1818d35814b8319459f4bd55ed1ac8709630f003', 'shard': 'model-00001-of-00017.safetensors', 'dtype': 'BF16', 'shape': [152064, 5120], 'tied': False}
+qc32i {'repo': 'Qwen/Qwen2.5-Coder-32B-Instruct', 'rev': '381fc969f78efac66bc87ff7ddeadb7e73c218a7', 'shard': 'model-00001-of-00014.safetensors', 'dtype': 'BF16', 'shape': [152064, 5120], 'tied': False}
+qc32b {'repo': 'Qwen/Qwen2.5-Coder-32B', 'rev': '2e12b5f7bc878d424d222e224ed40aee564ec45f', 'shard': 'model-00001-of-00014.safetensors', 'dtype': 'BF16', 'shape': [152064, 5120], 'tied': False}
+limo2 {'repo': 'GAIR/LIMO-v2', 'rev': '9510d41a1f5aca4bc86bbb52d63d0ab13da52ab1', 'shard': 'model-00001-of-00014.safetensors', 'dtype': 'BF16', 'shape': [152064, 5120], 'tied': False}
+s1 {'repo': 'simplescaling/s1-32B', 'rev': '569f1b8dc020ebf57c9996462f3b58b1eb8aec8f', 'shard': 'model-00001-of-00029.safetensors', 'dtype': 'F32', 'shape': [152064, 5120], 'tied': False}
+weights optim rev vs main: {'shards': 14, 'identical': 14}
+rank 4 step 234.0
+rank 2 step 234.0
+rank 3 step 234.0
+rank 5 step 234.0
+rank 0 step 234.0
+rank 7 step 234.0
+rank 1 step 234.0
+rank 6 step 234.0
+rank 8 step 234.0
+rank 11 step 234.0
+rank 9 step 234.0
+rank 10 step 234.0
+rank 14 step 234.0
+rank 12 step 234.0
+rank 15 step 234.0
+rank 13 step 234.0
+rank 16 step 234.0
+rank 17 step 234.0
+rank 19 step 234.0
+rank 18 step 234.0
+rank 21 step 234.0
+rank 20 step 234.0
+rank 22 step 234.0
+rank 23 step 234.0
+rank 24 step 234.0
+rank 25 step 234.0
+rank 28 step 234.0
+rank 29 step 234.0
+rank 27 step 234.0
+rank 26 step 234.0
+rank 31 step 234.0
+rank 30 step 234.0
+Generating train split:   0%|          | 0/1000 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 1000/1000 [00:00<00:00, 8332.08 examples/s]Generating train split: 100%|██████████| 1000/1000 [00:00<00:00, 7998.25 examples/s]
+{'repo': 'https://github.com/GAIR-NLP/LIMO', 'rev': '2284c6a0e6653aa8894bd12fdecc1212ba706c3a', 'limo_json_blob': 'ea98a05027fe48876bf39a211fc198d50dfb7891', 'limo_json_unchanged_since_first_commit': True, 'yaml_cutoff_at_first_commit': ['cutoff_len: 32768'], 'yaml_cutoff_after_change': ['cutoff_len: 16384'], 'yaml_change_commit': '04efb7180099439a5a3651b4256523bf0a9c8480'}
+[saved out/fetch.json]

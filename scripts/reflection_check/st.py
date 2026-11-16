@@ -1,6 +1,7 @@
 """Minimal independent ranged reader for safetensors on the HF hub (no project imports)."""
 import json, struct, time, os, pathlib, requests, numpy as np
 from concurrent.futures import ThreadPoolExecutor
+from pins import PIN  # every unpinned call resolves to a pinned commit
 S = requests.Session()
 UA = {"User-Agent": "python-requests"}
 HC = pathlib.Path(__file__).resolve().parents[2] / "results" / "reflection_check" / "hdr"
@@ -26,6 +27,7 @@ def api(path):
 _full = {}
 def full(repo, rev):
     """expand a short commit prefix to the full sha via the commit list"""
+    if rev is None: rev = PIN.get(repo)
     if rev is None or len(rev) == 40: return rev
     if repo not in _full: _full[repo] = [c["id"] for c in api(f"models/{repo}/commits/main?limit=1000")]
     m = [c for c in _full[repo] if c.startswith(rev)]; assert len(m) == 1, (rev, m); return m[0]
@@ -35,7 +37,7 @@ def files(repo, rev=None):
     return {s["rfilename"]: s for s in i["siblings"]}
 def header(repo, rev, f):
     HC.mkdir(parents=True, exist_ok=True)
-    p = HC / (f"{repo}@{rev or 'main'}@{f}".replace("/", "__") + ".json")
+    p = HC / (f"{repo}@{full(repo, rev) or 'main'}@{f}".replace("/", "__") + ".json")
     if p.exists(): return json.load(open(p))
     u = url(repo, rev, f)
     n = struct.unpack("<Q", rng(u, 0, 7))[0]

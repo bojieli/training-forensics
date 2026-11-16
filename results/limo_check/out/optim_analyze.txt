@@ -1,0 +1,22 @@
+{
+ "source": "GAIR/LIMO@1833babb94e0b71051f8773911e2ece8ed6a0a51 global_step234/bf16_zero_pp_rank_{rank}_mp_rank_00_optim_states.pt (ranks 0-31), embedding slice",
+ "adam_step_values_across_ranks": [
+  234.0
+ ],
+ "fp32_master_rounds_to_release_rows": 152064,
+ "rows_master_ne_base": 29742,
+ "rows_exp_avg_sq_nonzero": 29742,
+ "rows_exp_avg_nonzero": 29742,
+ "rows_bf16_changed": 29742,
+ "v_nz_and_changed": 29742,
+ "v_nz_not_changed": 0,
+ "changed_not_v_nz": 0,
+ "equals_changed_rows": true,
+ "master_changed_equals_v_nz": true,
+ "max_abs_dw_where_v_zero": 0.0,
+ "share_nonzero_elements_in_v_nz_rows": {
+  "min": 1.0,
+  "median": 1.0
+ }
+}
+[saved out/optim.json]

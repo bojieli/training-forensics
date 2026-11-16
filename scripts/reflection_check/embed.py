@@ -3,10 +3,11 @@
 Rows are fetched in blocks with ranged reads and never written to disk."""
 import json, sys, numpy as np
 sys.path.insert(0, __file__.rsplit("/", 1)[0]); import st
+from pins import REFL_MAIN
 E = sys.argv[2] if len(sys.argv) > 2 else "model.embed_tokens.weight"; V = 128256; D = 8192; B = 4096
 REF = {"L3-I": "NousResearch/Meta-Llama-3-70B-Instruct", "L3": "NousResearch/Meta-Llama-3-70B",
        "L3.1-I": "unsloth/Meta-Llama-3.1-70B-Instruct", "L3.1": "unsloth/Meta-Llama-3.1-70B", "L3.3-I": "unsloth/Llama-3.3-70B-Instruct"}
-CH = {"current": ("mattshumer/Reflection-Llama-3.1-70B", None), "first": ("mattshumer/Reflection-Llama-3.1-70B", "e7bfef9796")}
+CH = {"current": ("mattshumer/Reflection-Llama-3.1-70B", REFL_MAIN), "first": ("mattshumer/Reflection-Llama-3.1-70B", "e7bfef9796")}
 ix = {k: st.index(r)[E] for k, r in REF.items()}
 cx = {k: st.index(*rv)[E] for k, rv in CH.items()}
 print({k: v[:3] for k, v in {**ix, **cx}.items()}, flush=True)
