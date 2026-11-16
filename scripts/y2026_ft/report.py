@@ -133,9 +133,9 @@ if MB:
              f"{MB['moved']:,} updated, only {MB['single_touch_vectors']} seen in a single optimizer step. The schedule fit is weak "
              f"(best {b.get('kind')}, {b.get('N')} steps, coverage {b.get('coverage', 0):.2f}); no schedule is claimed.")
 F += ["", "### 5. Not done", "",
-      "- deep-principle/Hydrogen-1.0 (GLM-5.3): files are gated (HTTP 401) for anonymous access.",
+      "- deep-principle/Hydrogen-1.0 (GLM-5.3): run after its licence was accepted; see the section below.",
       "- Diffuspace/Clover-35B-A3B-Preview: changed throughout against Qwen3.6-35B-A3B; the base repo it may come from is not public.",
-      "- Published-data audits not run: Qwable-9B (its main set, Glint-Research/Fable-5-traces, is gated), WebWorld-8B (52 GB set), "
+      "- Published-data audits not run: Qwable-9B (its main set, Glint-Research/Fable-5-traces, answers 404: private, not gated), WebWorld-8B (52 GB set), "
       "OpenResearcher-30B-A3B (7.5 GB set; feasible next). TeichAI/DavidAU distills and grug-27b: embedding unchanged, nothing to audit.", "",
       "## Article-ready sentences", "",
       "- \"Arete-27B's token vectors match its published SFT answers: 99.2% of the vocabulary in the training text was updated and nothing "
@@ -147,5 +147,9 @@ F += ["", "### 5. Not done", "",
       "- \"MemT-1.0-Flash's token vectors point to DeepSeek-V4-Flash-0731, not the original V4-Flash its card names, as the starting point.\"",
       "- \"An fp32 release is not enough by itself: nanowhale-100m's never-seen vectors shrank by the amount its card's schedule implies, "
       "but not exactly, so its recipe cannot be replayed bit for bit.\""]
+import importlib.util as _iu
+_s = _iu.spec_from_file_location("gated_report", ROOT / "scripts" / "gated" / "gated_report.py")
+_g = _iu.module_from_spec(_s); _s.loader.exec_module(_g)
+F += _g.gated_table("y2026_ft")
 (R / "FT2026.md").write_text("\n".join(L + F) + "\n")
 print("\n".join(F))

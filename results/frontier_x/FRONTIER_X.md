@@ -153,3 +153,14 @@ share of token vectors whose numbers differ from the decayed base in 0 / <=1% / 
 - Apertus-v1.5 and Llama-3.1-405B: gated.
 - dots.llm1 and GLM-4.7 -> GLM-5: hidden size differs.
 - Hunyuan-A13B, Falcon-H1-34B, Apertus-70B and the Trinity-Mini / Large-Thinking comparisons were already in the roster sweep.
+
+## Previously gated comparisons
+
+Run after the licences were accepted (2026-11-16); details in results/gated/GATED.md. Raw counts are given with the comparability class, since the class rule may change and the counts do not.
+
+| base | release | bit-identical / barely changed / updated token vectors | shrink factor P | fit | one matrix for input and output | share of vectors by fraction of numbers changed (0 / <=1% / 1-10% / 10-50% / >50%) | class |
+|---|---|---|---|---|---|---|---|
+| swiss-ai/Apertus-v1.5-70B-base | swiss-ai/Apertus-v1.5-70B-SFT | 31,837 / 362 / 234,553 | 1 | 1 | no | 0.119 / 0.001 / 0.001 / 0.003 / 0.875 | token record |
+| swiss-ai/Apertus-v1.5-70B-SFT | swiss-ai/Apertus-v1.5-70B-RL | 51,857 / 5,931 / 208,964 | 1 | 1 | no | 0.194 / 0.022 / 0.161 / 0.621 / 0.002 | token record |
+| swiss-ai/Apertus-v1.5-70B-base | swiss-ai/Apertus-v1.5-70B | 31,492 / 212 / 235,048 | 1 | 1 | no | 0.118 / 0.001 / 0.001 / 0.005 / 0.875 | token record |
+| swiss-ai/Apertus-v1.5-70B-RL | swiss-ai/Apertus-v1.5-70B | 44,444 / 5,178 / 217,130 | 1 | 1 | no | 0.167 / 0.019 / 0.110 / 0.701 / 0.003 | token record |

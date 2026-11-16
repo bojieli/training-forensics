@@ -75,6 +75,10 @@ def main():
     fd = ROOT / "results" / "frontier_x" / "findings.md"
     if fd.exists():
         L += [""] + fd.read_text().splitlines()
+    import importlib.util as _iu
+    _s = _iu.spec_from_file_location("gated_report", ROOT / "scripts" / "gated" / "gated_report.py")
+    _g = _iu.module_from_spec(_s); _s.loader.exec_module(_g)
+    L += _g.gated_table("frontier_x")
     (ROOT / "results" / "frontier_x" / "FRONTIER_X.md").write_text("\n".join(L) + "\n")
     from collections import Counter
     print(Counter(x["cls"] for x in rows))
