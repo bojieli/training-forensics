@@ -13,9 +13,12 @@ Two environment variables cover everything (both optional):
 
 CKPTF_CACHE, read by trainforensics.remote and scripts/roster/sweep.py, still
 overrides the embedding cache directly; its default is cache("trainforensics")/"emb".
+
+TF_PINNED=1 makes downloads read the commit pinned in revisions.json instead of main.
 """
 from __future__ import annotations
 
+import functools
 import os
 import pathlib
 
@@ -36,8 +39,11 @@ CARDS = CKPTF_REPO / "ckptforensics" / "cards"
 CKPTF_SUMMARY = CKPTF_REPO / "results" / "summary.json"
 
 
+@functools.lru_cache(maxsize=1)
 def revisions() -> dict:
-    """Pinned Hugging Face revisions (revisions.json at the repo root): {repo: sha}."""
+    """Pinned Hugging Face revisions (revisions.json at the repo root): {repo: sha}.
+    trainforensics.remote reads them when TF_PINNED=1; scripts that call hf_hub_download
+    can pass revision=paths.revision(repo)."""
     import json
     p = REPO / "revisions.json"
     if not p.exists():
@@ -46,7 +52,7 @@ def revisions() -> dict:
 
 
 def revision(repo: str, default=None):
-    """Pinned revision for repo, unless TF_UNPINNED=1 (then default, i.e. main)."""
-    if os.environ.get("TF_UNPINNED") == "1":
+    """Pinned revision for repo when TF_PINNED=1, else default (None = main)."""
+    if os.environ.get("TF_PINNED") != "1":
         return default
     return revisions().get(repo, default)

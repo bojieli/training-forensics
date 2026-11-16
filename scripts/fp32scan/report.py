@@ -94,7 +94,8 @@ for f, title in (("deepscaler.json", "DeepScaleR-1.5B-Preview (RL from DeepSeek-
              f"{b['changed']:,} changed; single-update ('flat') vectors: {b['flat_vectors']}."
              + (f" Special tokens bit-identical: {len(bi)} of {len(sp)} ({', '.join(bi[:6])}...)." if bi else "")
              + (f" Added vocabulary entries: {b['added_rows']}." if b.get("added_rows") else ""))
-L += ["", "- DeepScaleR: the RL updates touched 47,950 vocabulary tokens; the never-updated vectors are bit-identical, so no "
+_ds = json.load(open(R / "deepscaler.json"))["best"]
+L += ["", f"- DeepScaleR: the RL updates touched {_ds['changed']:,} vocabulary tokens; the never-updated vectors are bit-identical, so no "
       "weight decay reached them (or lr x wd rounded away in fp32). Every token was updated in many steps, so no timing can be read.",
       "- UserLM-8b and marin-8b-instruct: every token vector changed (UserLM-8b by ~30% relative, marin by ~0.5%), so no token "
       "record survives; both are only 'changed throughout' at the embedding level.", "",

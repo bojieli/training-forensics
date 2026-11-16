@@ -6,7 +6,7 @@
 #   TF_CACHE    root of every download cache (default: the historical ~/.cache/<name> dirs)
 #   CKPTF_CACHE embedding-tensor cache (default $TF_CACHE/trainforensics/emb)
 #   HF_TOKEN    only for gated repos (scripts/gated)
-#   TF_UNPINNED=1  use each repo's main branch instead of revisions.json
+#   TF_PINNED=1 fetch the commits pinned in revisions.json instead of each repo's main branch
 #
 # Run order for a full rebuild from scratch:
 #   1. make test
@@ -19,7 +19,7 @@ export PYTHONPATH := .
 PY ?= python3
 OFFLINE := HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_DATASETS_OFFLINE=1
 
-.PHONY: test grid score table public roster all-offline \
+.PHONY: test grid score table public roster all-offline revisions \
         controlled gaps stacks published tokens quant_merge series frontier frontier_ds frontier_x \
         y2026_labs y2026_ft large gated fp32scan limo_check arete_check reflection_check \
         roster-report coverage figures
@@ -33,7 +33,7 @@ grid:            ## controlled fine-tunes with ground truth (one GPU, ~30 min)
 score:           ## blind reading of every controlled run on this machine, scored against truth (one GPU or CPU)
 	for r in runs/ctl/r[0-9][0-9]_*/ runs/ctl/s0[2-6]_*/ runs/ctl/q7_*/; do \
 	  [ -d "$$r" ] && $(PY) scripts/controlled/score.py $${r%/} --cache || true; done
-	for r in runs/gaps/g0*/ runs/ctl/m01/; do \
+	for r in runs/gaps/g0[1-5]_*/ runs/ctl/m01/; do \
 	  [ -d "$$r" ] && $(PY) scripts/controlled/score.py $${r%/} --cache --outdir results/gaps/scored || true; done
 
 table:
@@ -43,6 +43,9 @@ public:          ## the four public claims (CPU + network; set HF_TOKEN)
 	$(PY) scripts/public/claim1_pythia_lr.py && $(PY) scripts/public/claim1b_pythia_clean_fit.py
 	$(PY) scripts/public/claim2_olmo2_sft.py
 	$(PY) scripts/public/claim3_qwen25_control_tokens.py && $(PY) scripts/public/claim4_qwen25_adam_signature.py
+
+revisions:       ## re-pin revisions.json (network; HF_TOKEN for gated repos). --retry keeps existing pins
+	$(PY) scripts/revisions_manifest.py . --retry
 
 roster:          ## parent->child embedding diffs over the checkpoint-forensics roster (network; needs CKPTF_REPO)
 	$(PY) scripts/roster/build_pairs.py && $(PY) scripts/roster/sweep.py && $(MAKE) roster-report

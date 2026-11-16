@@ -106,9 +106,19 @@ class RemoteSafetensors:
         return torch.frombuffer(bytearray(data), dtype=dt).reshape(shape)
 
 
+def _pin(repo: str, revision: str | None) -> str | None:
+    """With TF_PINNED=1, read the revision pinned in revisions.json when the caller gives none.
+    Off by default: the cache key contains the revision, so switching would re-download."""
+    if revision is None and os.environ.get("TF_PINNED") == "1":
+        from . import paths
+        return paths.revisions().get(repo)
+    return revision
+
+
 @functools.lru_cache(maxsize=None)
 def index(repo: str, revision: str | None = None) -> dict[str, str]:
     """tensor name -> safetensors filename for a (possibly sharded) repo."""
+    revision = _pin(repo, revision)
     for idx_name in ("model.safetensors.index.json", "consolidated.safetensors.index.json",
                      "pytorch_model.bin.index.json"):
         url = hf_hub_url(repo, idx_name, revision=revision)
@@ -126,6 +136,7 @@ def index(repo: str, revision: str | None = None) -> dict[str, str]:
 
 @functools.lru_cache(maxsize=None)
 def open_file(repo: str, filename: str, revision: str | None = None):
+    revision = _pin(repo, revision)
     if filename.endswith(".bin"):
         return RemoteTorchBin(repo, filename, revision)
     return RemoteSafetensors(repo, filename, revision)

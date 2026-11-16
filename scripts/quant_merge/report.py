@@ -9,6 +9,15 @@ from collections import Counter
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 R = ROOT / "results" / "quant_merge"
+
+
+def _ita_rows():
+    """Tokens a float16 round trip of Llama-3-8B-Instruct appears to update (merge_real.json)."""
+    for m in json.load(open(R / "merge_real.json"))["merges"]:
+        sp = m.get("with_parents", {}).get("single_parent_rows", {})
+        if "DeepMount00/Llama-3-8b-Ita" in sp:
+            return sp["DeepMount00/Llama-3-8b-Ita"]["rows"]
+    raise KeyError("DeepMount00/Llama-3-8b-Ita not in merge_real.json")
 FRONTIER = {"DeepSeek", "Qwen3", "Llama-4", "gpt-oss", "Kimi", "GLM", "Qwen2.5-72B", "Llama-3.3"}
 
 
@@ -219,7 +228,7 @@ def merge_section():
                            f"fit {W({k: v for k, v in wp['lstsq_coef'].items() if abs(v) > 5e-3})}")
             out += ["", "Caveat found on the way: DeepMount00/Llama-3-8b-Ita differs from Llama-3-8B-Instruct only in tiny",
                     "numbers (0.27% of them, all below 1e-5), the pattern of a float16 round trip, not training. Such a copy",
-                    "looks as if it updated 107,065 tokens; the ITA merges inherit that. Fits on parents that identical or",
+                    f"looks as if it updated {_ita_rows():,} tokens; the ITA merges inherit that. Fits on parents that identical or",
                     "nearly identical are not meaningful (the anakin87 TIES rows above)."]
     return out
 
