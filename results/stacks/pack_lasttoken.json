@@ -1,0 +1,7 @@
+{
+ "claimed_docs": 4000,
+ "tokens_only_in_final_position": 68,
+ "of_which_updated": 68,
+ "note": "an unpacked audit (last position dropped) would call these tokens untrained; packed, they are trained",
+ "eos_token_updated": true
+}

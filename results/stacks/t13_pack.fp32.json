@@ -1,0 +1,155 @@
+{
+ "run": "t13_pack",
+ "release": "fp32",
+ "tokens": {
+  "seen": 18589,
+  "moved": 18521,
+  "tp": 18521,
+  "fp": 0,
+  "fn": 68
+ },
+ "recipe_true": {
+  "kind": "linear",
+  "N": 168,
+  "warmup": 20,
+  "peak": 5e-05,
+  "wd": 0.1
+ },
+ "recipe_read": {
+  "kind": "linear",
+  "N": 168,
+  "warmup": 20,
+  "peak": 5.00017131187746e-05,
+  "peak_snap": 5e-05,
+  "wd": 0.10002593922923,
+  "wd_snap": 0.1,
+  "min_ratio": 0.0
+ },
+ "recipe_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true,
+  "peak_rel_err": 3.426237549186695e-05,
+  "peak_snap_ok": true,
+  "wd_rel_err": 0.00025939229229998695,
+  "steps": true,
+  "lr_max_rel_dev_snapped": 0.0,
+  "lr_max_rel_dev_raw": 3.426237549195867e-05,
+  "schedule_exact": true
+ },
+ "replay_refine": {
+  "before": {
+   "warmup": 20,
+   "N": 168
+  },
+  "after": {
+   "warmup": 20,
+   "N": 168
+  },
+  "form": "mul",
+  "bit_exact_sample": 1532160,
+  "sample_weights": 1536000,
+  "changed": false
+ },
+ "decay_lut": {
+  "distinct_values": 24726,
+  "consistent": 0.9978604914576975,
+  "coverage_moved": 0.9999804557439304
+ },
+ "t_recipe": 199.02392506599426,
+ "placement": {
+  "docs": 1342,
+  "placed": 860,
+  "exact": 860,
+  "wrong": 0,
+  "status_counts": {
+   "ambiguous6": 11,
+   "no_unique_token": 47,
+   "ambiguous8": 13,
+   "ambiguous9": 14,
+   "ambiguous3": 18,
+   "ambiguous7": 32,
+   "ambiguous5": 10,
+   "placed": 860,
+   "has_unmoved_token": 11,
+   "ambiguous2": 307,
+   "ambiguous4": 8,
+   "ambiguous11": 2,
+   "inconsistent": 9
+  }
+ },
+ "seed": {
+  "true": 113,
+  "found": 113,
+  "hits": 860,
+  "of": 860,
+  "second": [
+   62,
+   12
+  ]
+ },
+ "swap_reasons": {
+  "unmoved_token": 11
+ },
+ "placement_with_seed": 1342,
+ "swaps": {
+  "true": 0,
+  "flagged": 11,
+  "caught": 0,
+  "false_flags": 11
+ },
+ "tokens_replay": {
+  "moved": 18589,
+  "tp": 18589,
+  "fp": 0,
+  "fn": 0
+ },
+ "replay": {
+  "weights": 24409344,
+  "bit_exact": 24357120,
+  "zeros_exact": 26
+ },
+ "replay_shift1": {
+  "weights": 24409344,
+  "bit_exact": 26,
+  "zeros_exact": 26
+ },
+ "replay_shiftm1": {
+  "weights": 24409344,
+  "bit_exact": 26,
+  "zeros_exact": 26
+ },
+ "start_point": {
+  "chosen": "published",
+  "rows_consistent": 2519
+ },
+ "stack": {
+  "world": 1,
+  "same_gpu": false,
+  "ga": 1,
+  "max_grad_norm": 1.0,
+  "deepspeed": null,
+  "fsdp": "",
+  "muon": "none",
+  "pack": "4000 docs -> 1342 chunks of 256 tokens (EOS-joined, claimed order, tail dropped)",
+  "pure_bf16": false,
+  "bf16": false,
+  "master_saved": true,
+  "optimizer": "AdamW"
+ },
+ "grad_norm_logged": {
+  "n": 6,
+  "min": 8.730814933776855,
+  "max": 13.697785377502441,
+  "clip": 1.0
+ },
+ "decay_forms": {
+  "bit_exact": {
+   "mul": 24357120,
+   "fused": 2649234,
+   "cpuadam": 2649234
+  },
+  "weights": 24409344,
+  "best": "mul"
+ }
+}

@@ -39,13 +39,13 @@
   "status": "not run"
  },
  "t13_pack": {
-  "status": "not run"
+  "status": "scored"
  },
  "t14_purebf16_hi": {
-  "status": "not run"
+  "status": "scored (tokens only)"
  },
  "t15_purebf16_lo": {
-  "status": "not run"
+  "status": "scored (tokens only)"
  },
  "q7_ds_z3_nvme": {
   "status": "stopped mid-run"
