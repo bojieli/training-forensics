@@ -1,6 +1,8 @@
 """Bitwise compare the 405B substitutes' embedding against a copy whose file is sha256-identical to Meta's official release."""
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import json, sys, os, pathlib
-sys.path.insert(0, str(pathlib.Path.home() / "training-forensics"))
+sys.path.insert(0, str(paths.REPO))
 from trainforensics import remote
 import torch
 PAIRS = [("NousResearch/Meta-Llama-3.1-405B-FP8", "chutesai/Llama-3.1-405B-FP8", "meta-llama/Llama-3.1-405B"),

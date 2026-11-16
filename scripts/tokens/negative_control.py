@@ -10,6 +10,8 @@ run trained; those must all be unreachable or still at starting size.
 Writes results/tokens/negative_control.json.
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import json
 import math
@@ -17,7 +19,7 @@ import os
 import pathlib
 import sys
 
-os.environ.setdefault("CKPTF_CACHE", str(pathlib.Path.home() / ".cache" / "trainforensics" / "emb"))
+os.environ.setdefault("CKPTF_CACHE", str(paths.cache("trainforensics") / "emb"))
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 for p in (ROOT, ROOT / "scripts" / "roster", ROOT / "scripts" / "tokens"):
     sys.path.insert(0, str(p))

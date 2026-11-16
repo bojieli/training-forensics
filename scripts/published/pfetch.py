@@ -1,9 +1,11 @@
 """Parallel ranged fetch of one tensor into the trainforensics.remote cache layout."""
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import sys, pathlib
 from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, ".")
 from trainforensics import remote
-remote.CACHE = pathlib.Path.home() / ".cache" / "tf_published"
+remote.CACHE = paths.cache("tf_published")
 NAME = "model.embed_tokens.weight"
 CH = 64 << 20
 for repo in sys.argv[1:]:

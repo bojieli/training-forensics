@@ -11,6 +11,8 @@ six digits is only meaningful when this interval is that narrow.
 Reads the embedding cache written by sweep.py; writes results/roster/p_intervals.json.
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import glob
 import json
@@ -22,7 +24,7 @@ import numpy as np
 import torch
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-CACHE = pathlib.Path(os.environ.get("CKPTF_CACHE", pathlib.Path.home() / ".cache" / "trainforensics" / "emb"))
+CACHE = pathlib.Path(os.environ.get("CKPTF_CACHE", paths.cache("trainforensics") / "emb"))
 DT = {"BF16": torch.bfloat16, "F16": torch.float16, "F32": torch.float32}
 INT = {torch.bfloat16: torch.int16, torch.float16: torch.int16, torch.float32: torch.int32}
 

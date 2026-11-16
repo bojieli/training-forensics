@@ -1,5 +1,7 @@
 """LIMO: do the updated tokens absent from the published 817 examples come from somewhere identifiable?
 Checks (1) the HF dataset copy vs the GitHub copy, (2) overlap of the extra tokens with other public reasoning sets."""
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import json, pathlib, sys
 from collections import Counter
 import numpy as np, torch
@@ -10,9 +12,9 @@ sys.path.insert(0, str(ROOT))
 from trainforensics import remote
 OUT = ROOT / "results" / "published"
 tok = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-32B-Instruct")
-remote.CACHE = pathlib.Path.home() / ".cache" / "trainforensics" / "emb"
+remote.CACHE = paths.cache("trainforensics") / "emb"
 W0 = remote.tensor("Qwen/Qwen2.5-32B-Instruct", "model.embed_tokens.weight")
-remote.CACHE = pathlib.Path.home() / ".cache" / "tf_published"
+remote.CACHE = paths.cache("tf_published")
 W1 = remote.tensor("GAIR/LIMO", "model.embed_tokens.weight")
 changed = set(np.nonzero((W0 != W1).any(1).numpy())[0].tolist())
 gh = set(int(k) for k in json.load(open(OUT / "data_limo.json"))["counts"]["main"])

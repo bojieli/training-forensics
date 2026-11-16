@@ -17,6 +17,8 @@ checkpoints (results/public/claim1_pythia_lr.json).
 Writes results/roster/pretrain_decay.json and results/roster/PRETRAIN_DECAY.md.
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import glob
 import json
@@ -28,7 +30,7 @@ import requests
 from huggingface_hub import hf_hub_url
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-CARDS = pathlib.Path.home() / "checkpoint-forensics" / "ckptforensics" / "cards"
+CARDS = paths.CARDS
 CACHE = ROOT / "results" / "roster" / "_configs"
 
 

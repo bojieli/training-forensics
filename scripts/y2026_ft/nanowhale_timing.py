@@ -10,6 +10,8 @@ Card: SFT on smol-smoltalk, 3,000 steps, cosine, peak 2e-5, 5% warm-up, batch 32
 Writes results/y2026_ft/nanowhale_timing.json
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import glob
 import json
@@ -25,7 +27,7 @@ sys.path.insert(0, str(ROOT))
 from trainforensics.adam import schedule  # noqa: E402
 from trainforensics.blind import wd_from_decay, replay_decay  # noqa: E402
 
-C = pathlib.Path.home() / ".cache" / "tf_y2026"
+C = paths.cache("tf_y2026")
 
 
 def load(repo):

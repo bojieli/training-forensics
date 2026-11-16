@@ -1,5 +1,7 @@
 """Earliest position of each token in the s1.1 texts: do the not-updated in-data tokens all
 occur only beyond some position (a truncation length the published data doesn't show)?"""
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import json, sys, pathlib
 import numpy as np
 from datasets import load_dataset
@@ -25,9 +27,9 @@ for t in ds["text"]:
 sys.path.insert(0, str(ROOT))
 import torch
 from trainforensics import remote
-remote.CACHE = pathlib.Path.home() / ".cache" / "trainforensics" / "emb"
+remote.CACHE = paths.cache("trainforensics") / "emb"
 W0 = remote.tensor(r["base"], "model.embed_tokens.weight").float()
-remote.CACHE = pathlib.Path.home() / ".cache" / "tf_published"
+remote.CACHE = paths.cache("tf_published")
 W1 = remote.tensor(child, "model.embed_tokens.weight")
 changed = (W0 != W1).any(1).numpy()
 pres = np.array(sorted(earliest))

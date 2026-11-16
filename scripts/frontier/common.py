@@ -1,5 +1,7 @@
 """Shared helpers for the frontier checks: sweep records, cached embeddings, per-token change stats."""
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import glob
 import json
@@ -10,7 +12,7 @@ import numpy as np
 import torch
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-CACHE = pathlib.Path(os.environ.get("CKPTF_CACHE", pathlib.Path.home() / ".cache" / "trainforensics" / "emb"))
+CACHE = pathlib.Path(os.environ.get("CKPTF_CACHE", paths.cache("trainforensics") / "emb"))
 OUT = ROOT / "results" / "frontier"
 DT = {"BF16": torch.bfloat16, "F16": torch.float16, "F32": torch.float32}
 

@@ -1,9 +1,11 @@
 """Shared helpers for checkpoint-series reading."""
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import functools, os, pathlib, re, sys
 import numpy as np, torch
 ROOT = pathlib.Path(__file__).resolve().parents[2]; sys.path.insert(0, str(ROOT))
-os.environ.setdefault("CKPTF_CACHE", str(pathlib.Path.home() / ".cache" / "trainforensics" / "series"))
+os.environ.setdefault("CKPTF_CACHE", str(paths.cache("trainforensics") / "series"))
 from trainforensics import remote  # noqa
 from huggingface_hub import HfApi
 

@@ -11,6 +11,8 @@ Combines
 Writes results/roster/COVERAGE.md and coverage.json.
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import glob
 import json
@@ -19,7 +21,7 @@ import sys
 from collections import Counter
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-CK = pathlib.Path.home() / "checkpoint-forensics" / "results" / "summary.json"
+CK = paths.CKPTF_SUMMARY
 
 
 SWEEPS = [("roster", "results/roster/sweep.jsonl"), ("roster", "results/roster/sweep_cml3.jsonl"),

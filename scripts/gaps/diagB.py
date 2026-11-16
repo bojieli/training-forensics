@@ -1,6 +1,8 @@
 """Diagnose B false flags (uses truth)."""
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import sys, math, pathlib, numpy as np
-ROOT = pathlib.Path.home() / "training-forensics"
+ROOT = paths.REPO
 sys.path.insert(0, str(ROOT / "scripts" / "gaps")); sys.path.insert(0, str(ROOT))
 import swaps
 from trainforensics.truth import Run

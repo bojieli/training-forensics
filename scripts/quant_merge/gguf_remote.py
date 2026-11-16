@@ -3,6 +3,8 @@
 Only the header and the requested tensor's bytes are fetched. Quantized tensors
 are returned as raw blocks, one row per uint8 row (row = ne0 elements)."""
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import os
 import pathlib
@@ -20,7 +22,7 @@ GGML = {0: ("F32", 1, 4), 1: ("F16", 1, 2), 2: ("Q4_0", 32, 18), 3: ("Q4_1", 32,
         16: ("IQ2_XXS", 256, 66), 17: ("IQ2_XS", 256, 74), 18: ("IQ3_XXS", 256, 98), 19: ("IQ1_S", 256, 50),
         20: ("IQ4_NL", 32, 18), 21: ("IQ3_S", 256, 110), 22: ("IQ2_S", 256, 82), 23: ("IQ4_XS", 256, 136),
         29: ("IQ1_M", 256, 56)}
-CACHE = pathlib.Path(os.environ.get("CKPTF_CACHE", pathlib.Path.home() / ".cache" / "ckptforensics"))
+CACHE = pathlib.Path(os.environ.get("CKPTF_CACHE", paths.cache("ckptforensics")))
 
 
 class _Buf:

@@ -16,6 +16,8 @@ embedding (P = 1), so "changed" here means "differs from the released base".
 Writes results/frontier_ds/deepseek.json.
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import glob
 import json
@@ -27,7 +29,7 @@ import numpy as np
 import torch
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-CACHE = pathlib.Path(os.environ.get("CKPTF_CACHE", pathlib.Path.home() / ".cache" / "trainforensics" / "emb"))
+CACHE = pathlib.Path(os.environ.get("CKPTF_CACHE", paths.cache("trainforensics") / "emb"))
 OUT = ROOT / "results" / "frontier_ds"
 TOK = OUT / "tok"
 V, D = 129280, 7168
@@ -84,9 +86,9 @@ def groups(added):
 
 def anatomy_v3base():
     """Part A."""
-    sys.path.insert(0, str(pathlib.Path.home() / "checkpoint-forensics"))
+    sys.path.insert(0, str(paths.CKPTF_REPO))
     from ckptforensics import emu
-    card = json.load(open(pathlib.Path.home() / "checkpoint-forensics/ckptforensics/cards/DeepSeek-V3-Base.json"))
+    card = json.load(open(paths.CARDS / "DeepSeek-V3-Base.json"))
     W, f = load("deepseek-ai/DeepSeek-V3-Base")
     init = emu.normal((V, D), 0.0, card["std"], seed=card["seed"], offset=card["offset"],
                       device_threads=card["threads"]).cpu()

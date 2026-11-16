@@ -5,9 +5,11 @@ Writes results/roster/sweep_frontier_x.jsonl (same record format as sweep.jsonl,
 `change_hist`: share of token vectors by fraction of numbers that differ from the decayed
 base, round(P*base)), and logs every cache file it created to results/frontier_x/new_cache.txt.
 """
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import argparse, concurrent.futures as cf, glob, importlib.util, json, os, pathlib, sys, time, traceback
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-os.environ.setdefault("CKPTF_CACHE", str(pathlib.Path.home() / ".cache" / "trainforensics" / "emb"))
+os.environ.setdefault("CKPTF_CACHE", str(paths.cache("trainforensics") / "emb"))
 CACHE = pathlib.Path(os.environ["CKPTF_CACHE"])
 spec = importlib.util.spec_from_file_location("sweep", ROOT / "scripts" / "roster" / "sweep.py")
 sw = importlib.util.module_from_spec(spec); spec.loader.exec_module(sw)

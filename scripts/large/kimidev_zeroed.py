@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Kimi-Dev-72B: which token vectors are exactly zero, and are they the same set KAT-Dev-72B-Exp zeroed?"""
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import json, sys, os, glob, pathlib, torch
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts" / "roster"))
@@ -8,7 +10,7 @@ from transformers import AutoTokenizer
 P = {p["key"]: p for p in json.load(open(ROOT / "results/large/pairs_large.json"))}
 p = P["Qwen/Qwen2.5-72B@ -> moonshotai/Kimi-Dev-72B"]
 B = sweep.fetch(p["child"]).float(); zd = set(torch.nonzero(B.norm(dim=1) == 0).flatten().tolist())
-f = glob.glob(os.path.expanduser("~/.cache/trainforensics/emb/Kwaipilot__KAT-Dev-72B-Exp*embed*"))[0]
+f = glob.glob(str(paths.cache("trainforensics") / "emb") + "/Kwaipilot__KAT-Dev-72B-Exp*embed*")[0]
 K = torch.frombuffer(bytearray(open(f, "rb").read()), dtype=torch.bfloat16).view(152064, 8192).float()
 zk = set(torch.nonzero(K.norm(dim=1) == 0).flatten().tolist())
 tok = AutoTokenizer.from_pretrained("Qwen/Qwen2.5-72B")

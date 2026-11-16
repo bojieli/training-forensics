@@ -4,9 +4,11 @@
 
 Writes results/roster/sweep_gated.jsonl (sweep.jsonl format + change_hist).
 """
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import json, os, pathlib, sys, importlib.util
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-os.environ.setdefault("CKPTF_CACHE", str(pathlib.Path.home() / ".cache" / "trainforensics" / "emb"))
+os.environ.setdefault("CKPTF_CACHE", str(paths.cache("trainforensics") / "emb"))
 sys.path.insert(0, str(ROOT / "scripts" / "roster"))
 import build_pairs as bp  # noqa
 spec = importlib.util.spec_from_file_location("lr", ROOT / "scripts" / "y2026_labs" / "run.py")

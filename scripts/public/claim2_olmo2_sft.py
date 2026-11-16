@@ -11,6 +11,8 @@ apply the chat template, and explain which untouched rows "should have trained".
 Usage: claim2_olmo2_sft.py [--sizes 7B,13B] [--max-examples N]
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import argparse
 import collections
@@ -37,7 +39,7 @@ REPOS = {
             "preview": "allenai/OLMo-2-1124-13B-SFT-Preview",
             "retrained": "allenai/OLMo-2-1124-13B-SFT"},
 }
-CACHE = pathlib.Path.home() / ".cache" / "trainforensics"
+CACHE = paths.cache("trainforensics")
 
 
 TOK_FILES = ["tokenizer.json", "tokenizer_config.json", "vocab.json", "merges.txt",

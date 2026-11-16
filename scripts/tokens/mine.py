@@ -21,6 +21,8 @@ results/tokens/pairs/*.json and ~/.cache/trainforensics/masks/*.npz (ndiff, flag
 Usage: python3 scripts/tokens/mine.py [--workers 4] [--only SUBSTR]
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import argparse
 import ast
@@ -35,7 +37,7 @@ import sys
 import time
 import traceback
 
-os.environ.setdefault("CKPTF_CACHE", str(pathlib.Path.home() / ".cache" / "trainforensics" / "emb"))
+os.environ.setdefault("CKPTF_CACHE", str(paths.cache("trainforensics") / "emb"))
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts" / "roster"))
@@ -45,9 +47,9 @@ import numpy as np  # noqa: E402
 import torch  # noqa: E402
 
 OUT = ROOT / "results" / "tokens" / "pairs"
-TOKC = pathlib.Path.home() / ".cache" / "trainforensics" / "tok"
-MASKS = pathlib.Path.home() / ".cache" / "trainforensics" / "masks"
-CARDS = pathlib.Path.home() / "checkpoint-forensics" / "ckptforensics" / "cards"
+TOKC = paths.cache("trainforensics") / "tok"
+MASKS = paths.cache("trainforensics") / "masks"
+CARDS = paths.CARDS
 HIST_EDGES = [0, 1e-9, 0.01, 0.10, 0.50, 0.90, 1.0 + 1e-9]
 HIST_LABELS = ["0", "(0,1%]", "(1%,10%]", "(10%,50%]", "(50%,90%]", "(90%,100%]"]
 BAD_BYTES = {0xC0, 0xC1} | set(range(0xF5, 0x100))

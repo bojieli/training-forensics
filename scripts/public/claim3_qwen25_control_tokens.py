@@ -10,6 +10,8 @@ Small sizes (0.5B/1.5B/3B) tie embeddings to the LM head, so every row gets
 gradient through the softmax; we check them briefly.
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import json
 import pathlib
@@ -25,7 +27,7 @@ OUT = ROOT / "results" / "public"
 EMB = "model.embed_tokens.weight"
 BIG = ["7B", "14B", "32B", "72B"]
 SMALL = ["0.5B", "1.5B", "3B"]
-CACHE = pathlib.Path.home() / ".cache" / "trainforensics"
+CACHE = paths.cache("trainforensics")
 
 
 def added_tokens(repo):

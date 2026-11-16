@@ -10,6 +10,8 @@ so reruns are cheap. Delete the cache directory (or pass --refresh) to refetch.
 Usage:  python scripts/roster/build_pairs.py [--refresh] [--workers 8] [--only NAME ...]
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import argparse
 import concurrent.futures as cf
@@ -30,12 +32,12 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from trainforensics import remote  # noqa: E402
 
-CKPTF = pathlib.Path.home() / "checkpoint-forensics"
+CKPTF = paths.CKPTF_REPO
 ROSTER = ROOT / "roster" / "roster.json"
 SUMMARY = CKPTF / "results" / "summary.json"
 CARDS = CKPTF / "ckptforensics" / "cards"
 OUT = ROOT / "roster" / "pairs.json"
-CACHE = pathlib.Path(os.environ.get("TF_HUB_CACHE", pathlib.Path.home() / ".cache" / "trainforensics" / "hub"))
+CACHE = pathlib.Path(os.environ.get("TF_HUB_CACHE", paths.cache("trainforensics") / "hub"))
 REFRESH = False
 API = HfApi()
 _locks: dict[str, threading.Lock] = {}

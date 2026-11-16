@@ -21,6 +21,8 @@ Results append to results/roster/sweep.jsonl (resumable).
 Usage: CKPTF_CACHE=~/.cache/trainforensics/emb python3 scripts/roster/sweep.py [--workers 3] [--only SUBSTR] [--head-max-gb 1.2]
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import argparse
 import concurrent.futures as cf
@@ -32,7 +34,7 @@ import sys
 import time
 import traceback
 
-os.environ.setdefault("CKPTF_CACHE", str(pathlib.Path.home() / ".cache" / "trainforensics" / "emb"))
+os.environ.setdefault("CKPTF_CACHE", str(paths.cache("trainforensics") / "emb"))
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 

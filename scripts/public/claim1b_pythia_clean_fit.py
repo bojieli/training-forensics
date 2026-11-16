@@ -9,6 +9,8 @@ bit-identical to step 0 while the series decays, a jump back up (rows of a later
 or earlier checkpoint), or a residual far above the series' rounding floor.
 Uses the rows cached by claim1_pythia_lr.py (no network).
 """
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import glob
 import json
 import math
@@ -24,7 +26,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from claim1_pythia_lr import (CARD_LR, T_TRAIN, fetch_config, lr_cos_to_zero,  # noqa: E402
                               lr_linear, lr_neox_current, lr_pythia_era)
 
-ROW = pathlib.Path.home() / ".cache/trainforensics/pythia_rows"
+ROW = paths.cache("trainforensics") / "pythia_rows"
 OUT = pathlib.Path(__file__).resolve().parents[2] / "results/public/claim1b_pythia_clean_fit.json"
 
 

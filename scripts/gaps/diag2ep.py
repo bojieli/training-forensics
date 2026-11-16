@@ -1,6 +1,8 @@
 """Diagnostic (uses truth): how well do per-row statistics give D(s1), D(s2) for twice-touched rows."""
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import sys, pathlib, numpy as np, torch
-ROOT = pathlib.Path.home() / "training-forensics"
+ROOT = paths.REPO
 sys.path.insert(0, str(ROOT))
 from trainforensics import blind
 from trainforensics.truth import Run

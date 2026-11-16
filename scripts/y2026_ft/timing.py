@@ -10,6 +10,8 @@ optimizer step (single-touch) give the learning rate at that step; fit_recipe ov
 schedule kinds / step counts / warm-ups. Writes results/y2026_ft/timing_NAME.json
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import glob
 import json
@@ -26,7 +28,7 @@ sys.path.insert(0, str(ROOT))
 from trainforensics import blind  # noqa: E402
 from trainforensics.diff import row_diff  # noqa: E402
 
-C = pathlib.Path.home() / ".cache" / "tf_y2026"
+C = paths.cache("tf_y2026")
 name, parent, child = sys.argv[1:4]
 P_ = json.load(open(ROOT / "results" / "y2026_ft" / "pairs" / f"{name}.json"))
 

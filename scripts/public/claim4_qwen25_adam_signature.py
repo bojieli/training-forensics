@@ -16,6 +16,8 @@ median nonzero |delta| ("fine-grid" coordinates), where quantisation is negligib
 Uses the 7B embedding pair cached by claim3 (or fetches it).
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import json
 import math
@@ -30,7 +32,7 @@ sys.path.insert(0, str(ROOT))
 from trainforensics import remote  # noqa: E402
 
 OUT = ROOT / "results" / "public"
-CACHE = pathlib.Path.home() / ".cache" / "trainforensics"
+CACHE = paths.cache("trainforensics")
 EMB = "model.embed_tokens.weight"
 
 

@@ -19,6 +19,8 @@ Steps
 Writes results/y2026_ft/pairs/NAME.json and ~/.cache/tf_y2026/masks/NAME.npz (ndiff).
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import json
 import math
@@ -32,7 +34,7 @@ from concurrent.futures import ThreadPoolExecutor
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts" / "tokens"))
-CACHE = pathlib.Path.home() / ".cache" / "tf_y2026"
+CACHE = paths.cache("tf_y2026")
 os.environ["CKPTF_CACHE"] = str(CACHE)
 
 import numpy as np  # noqa: E402

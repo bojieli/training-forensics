@@ -8,6 +8,8 @@
      (paired: teacher-rejected answers, Qwen starting-checkpoint answers, excluded prompts)?
 Writes results/y2026_ft/audit_arete27b_step2.json
 """
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import glob
 import json
 import pathlib
@@ -16,8 +18,8 @@ import numpy as np
 from transformers import AutoTokenizer
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-D = pathlib.Path.home() / ".cache" / "tf_y2026" / "data" / "arete"
-M = np.load(pathlib.Path.home() / ".cache" / "tf_y2026" / "masks" / "arete27b.npz")
+D = paths.cache("tf_y2026") / "data" / "arete"
+M = np.load(paths.cache("tf_y2026") / "masks" / "arete27b.npz")
 nd, d = M["ndiff"], int(M["d"])
 thr = max(2, int(0.01 * d))
 V = len(nd)

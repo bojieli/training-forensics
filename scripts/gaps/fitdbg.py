@@ -1,7 +1,9 @@
 """Why does fit_recipe miss r12? Rebuild the single-touch observations as score.read does and
 inspect the coarse grid. Truth used only for printing."""
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 import sys, math, pathlib, numpy as np, torch
-ROOT = pathlib.Path.home() / "training-forensics"
+ROOT = paths.REPO
 sys.path.insert(0, str(ROOT))
 from trainforensics import blind
 from trainforensics.diff import row_diff

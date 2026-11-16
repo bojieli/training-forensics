@@ -12,6 +12,8 @@ prod_{t in (a,b]} (1 - lr_t wd)  ~=  exp(-wd * sum lr_t).
 Outputs results/public/claim1_pythia_lr.json and figures/pythia_lr_schedule.png.
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import json
 import math
@@ -116,7 +118,7 @@ def interval_sums(fn, steps, **kw):
 
 # --- measurement --------------------------------------------------------------------
 
-ROWCACHE = pathlib.Path.home() / ".cache" / "trainforensics" / "pythia_rows"
+ROWCACHE = paths.cache("trainforensics") / "pythia_rows"
 
 
 def fetch_rows(repo, step, r0, r1):

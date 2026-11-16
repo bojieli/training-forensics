@@ -12,6 +12,8 @@ For each (base, fine-tune, dataset):
 Writes results/published/<child>.json.
 """
 from __future__ import annotations
+import sys as _sys, pathlib as _pl; _sys.path.insert(0, str(_pl.Path(__file__).resolve().parents[2]))  # repo root
+from trainforensics import paths  # noqa: E402
 
 import json
 import pathlib
@@ -25,8 +27,8 @@ sys.path.insert(0, str(ROOT))
 from trainforensics import remote  # noqa: E402
 
 OUT = ROOT / "results" / "published"
-EMB = pathlib.Path.home() / ".cache" / "trainforensics" / "emb"
-PUB = pathlib.Path.home() / ".cache" / "tf_published"
+EMB = paths.cache("trainforensics") / "emb"
+PUB = paths.cache("tf_published")
 
 
 def get(repo, cache):
