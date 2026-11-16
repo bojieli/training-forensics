@@ -79,29 +79,30 @@ All nine tool tokens are still exactly at their random start in V3-Base (yes), s
 
 ## 4. DeepSeek V4's named special tokens: trained or overwritten?
 
-The V4 tokenizer adds named tokens including `<｜query｜>`, `<｜authority｜>`, `<｜domain｜>`, `<｜task｜>`, `<｜political｜>`, `<｜entity｜>`, `<｜title｜>`, `<｜safety｜>`, `<｜answer｜>`, `<｜search｜>`, `<｜action｜>`, `｜DSML｜`, search/URL tokens, system-prompt markers and vision/table/box tokens (full list in the figure).
+**What DeepSeek documents.** DeepSeek's V4 repositories ship an encoding guide. [`encoding/encoding_dsv4.py`](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/encoding/encoding_dsv4.py) defines `DS_TASK_SP_TOKENS`, commented "Task special tokens for internal classification tasks": `<｜action｜>`, `<｜query｜>`, `<｜authority｜>`, `<｜domain｜>`, `<｜title｜>`, `<｜read_url｜>`. [`encoding/README.md`](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/encoding/README.md) ("Quick Instruction Special Tokens") describes each one, e.g. `<｜authority｜>` "Classifies the user prompt's demand for source authoritativeness", `<｜domain｜>` "Identifies the domain of the user prompt", and `<｜action｜>` decides between searching and answering directly. It also lists `<｜extracted_url｜>` with `<｜read_url｜>`. The classifier tokens are appended right after the user's message. The tokenizer defines six more tokens in the same id range that this documentation does not mention: `<｜political｜>`, `<｜safety｜>`, `<｜entity｜>`, `<｜task｜>`, `<｜answer｜>`, `<｜search｜>`. Below, **documented** = listed in that guide; **undocumented** = only in `tokenizer.json`.
 
-| token | V4-Flash vs base | V4-Pro vs base | V4-Pro-0813 vs V4-Pro | Nex-N2.5-Max vs V4-Pro-Base | V4.1-Flash-1017 vs V4.1-Flash |
-|---|---|---|---|---|---|
-| `<think>` | updated (100%, size 10.40→4.52) | updated (100%, size 8.61→5.21) | updated (93%, size 5.21→5.20) | updated (42%, size 8.61→8.61) | updated (86%, size 5.83→5.81) |
-| `</think>` | updated (100%, size 10.07→4.04) | updated (100%, size 8.67→4.93) | updated (96%, size 4.93→4.93) | updated (41%, size 8.67→8.67) | updated (88%, size 5.85→5.83) |
-| `｜DSML｜` | updated (100%, size 0.39→9.13) × | updated (100%, size 0.54→8.16) × | updated (89%, size 8.16→8.16) | updated (91%, size 0.54→0.54) | updated (84%, size 9.37→9.33) |
-| `<｜begin▁sys｜>` | updated (66%, size 0.38→0.38) | updated (95%, size 0.50→0.51) | updated (96%, size 0.51→0.51) | bit-identical | updated (93%, size 0.44→0.44) |
-| `<｜latest_reminder｜>` | updated (97%, size 0.38→0.39) | updated (96%, size 0.51→0.51) | updated (100%, size 0.51→0.52) | bit-identical | updated (99%, size 0.57→0.57) |
-| `<｜action｜>` | updated (100%, size 0.38→3.73) × | updated (100%, size 0.50→4.68) × | updated (96%, size 4.68→4.68) | bit-identical | updated (91%, size 5.68→5.68) |
-| `<｜query｜>` | updated (99%, size 0.38→0.39) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (98%, size 0.57→0.57) |
-| `<｜authority｜>` | updated (99%, size 0.39→0.39) | updated (98%, size 0.50→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.48→0.49) |
-| `<｜domain｜>` | updated (99%, size 0.38→0.38) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.49→0.50) |
-| `<｜task｜>` | updated (97%, size 0.38→0.38) | updated (93%, size 0.50→0.50) | updated (97%, size 0.50→0.50) | bit-identical | updated (99%, size 0.48→0.48) |
-| `<｜political｜>` | updated (99%, size 0.39→0.39) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.50→0.51) |
-| `<｜entity｜>` | updated (99%, size 0.39→0.39) | updated (98%, size 0.50→0.50) | updated (99%, size 0.50→0.52) | bit-identical | updated (99%, size 0.48→0.48) |
-| `<｜title｜>` | updated (99%, size 0.38→0.38) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.53) | bit-identical | updated (99%, size 0.49→0.49) |
-| `<｜safety｜>` | updated (99%, size 0.39→0.39) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.52→0.53) |
-| `<｜answer｜>` | updated (98%, size 0.38→0.38) | updated (97%, size 0.51→0.51) | updated (100%, size 0.51→0.52) | bit-identical | updated (99%, size 0.46→0.46) |
-| `<｜search｜>` | updated (98%, size 0.38→0.38) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.50→0.49) |
-| `<dsml:` | bit-identical | bit-identical | bit-identical | bit-identical | bit-identical |
-| `<｜search▁begin｜>` | updated (97%, size 0.39→0.40) | updated (97%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.48→0.48) |
-| `<｜read_url｜>` | updated (99%, size 0.38→0.39) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.48→0.49) |
+| token | group | V4-Flash vs base | V4-Pro vs base | V4-Pro-0813 vs V4-Pro | Nex-N2.5-Max vs V4-Pro-Base | V4.1-Flash-1017 vs V4.1-Flash |
+|---|---|---|---|---|---|---|
+| `<｜action｜>` | documented | updated (100%, size 0.38→3.73) × | updated (100%, size 0.50→4.68) × | updated (96%, size 4.68→4.68) | bit-identical | updated (91%, size 5.68→5.68) |
+| `<｜query｜>` | documented | updated (99%, size 0.38→0.39) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (98%, size 0.57→0.57) |
+| `<｜authority｜>` | documented | updated (99%, size 0.39→0.39) | updated (98%, size 0.50→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.48→0.49) |
+| `<｜domain｜>` | documented | updated (99%, size 0.38→0.38) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.49→0.50) |
+| `<｜title｜>` | documented | updated (99%, size 0.38→0.38) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.53) | bit-identical | updated (99%, size 0.49→0.49) |
+| `<｜extracted_url｜>` | documented | updated (99%, size 0.39→0.40) | updated (97%, size 0.50→0.50) | updated (99%, size 0.50→0.51) | bit-identical | updated (99%, size 0.49→0.50) |
+| `<｜read_url｜>` | documented | updated (99%, size 0.38→0.39) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.48→0.49) |
+| `<｜political｜>` | undocumented | updated (99%, size 0.39→0.39) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.50→0.51) |
+| `<｜safety｜>` | undocumented | updated (99%, size 0.39→0.39) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.52→0.53) |
+| `<｜entity｜>` | undocumented | updated (99%, size 0.39→0.39) | updated (98%, size 0.50→0.50) | updated (99%, size 0.50→0.52) | bit-identical | updated (99%, size 0.48→0.48) |
+| `<｜task｜>` | undocumented | updated (97%, size 0.38→0.38) | updated (93%, size 0.50→0.50) | updated (97%, size 0.50→0.50) | bit-identical | updated (99%, size 0.48→0.48) |
+| `<｜answer｜>` | undocumented | updated (98%, size 0.38→0.38) | updated (97%, size 0.51→0.51) | updated (100%, size 0.51→0.52) | bit-identical | updated (99%, size 0.46→0.46) |
+| `<｜search｜>` | undocumented | updated (98%, size 0.38→0.38) | updated (98%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.50→0.49) |
+| `<think>` | other | updated (100%, size 10.40→4.52) | updated (100%, size 8.61→5.21) | updated (93%, size 5.21→5.20) | updated (42%, size 8.61→8.61) | updated (86%, size 5.83→5.81) |
+| `</think>` | other | updated (100%, size 10.07→4.04) | updated (100%, size 8.67→4.93) | updated (96%, size 4.93→4.93) | updated (41%, size 8.67→8.67) | updated (88%, size 5.85→5.83) |
+| `｜DSML｜` | other | updated (100%, size 0.39→9.13) × | updated (100%, size 0.54→8.16) × | updated (89%, size 8.16→8.16) | updated (91%, size 0.54→0.54) | updated (84%, size 9.37→9.33) |
+| `<｜begin▁sys｜>` | other | updated (66%, size 0.38→0.38) | updated (95%, size 0.50→0.51) | updated (96%, size 0.51→0.51) | bit-identical | updated (93%, size 0.44→0.44) |
+| `<｜latest_reminder｜>` | other | updated (97%, size 0.38→0.39) | updated (96%, size 0.51→0.51) | updated (100%, size 0.51→0.52) | bit-identical | updated (99%, size 0.57→0.57) |
+| `<dsml:` | other | bit-identical | bit-identical | bit-identical | bit-identical | bit-identical |
+| `<｜search▁begin｜>` | other | updated (97%, size 0.39→0.40) | updated (97%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.48→0.48) |
 
 × = the start vector is gone from the release vector (see below).
 
@@ -118,7 +119,25 @@ Tests on `<｜political｜>`, `<｜safety｜>`, `<｜authority｜>` and their ne
 
 `｜DSML｜` and `<｜action｜>` are different: their release vectors are 9–24 times their starting size and show no trace of the start (similarity to the base vector between -0.02 and 0.02, where a start plus an independent change would give about 0.04–0.11). They were either re-initialised before training or trained so heavily that the start was erased; the weights cannot tell which.
 
-**Verdict: holds-with-wording.** *Article sentence:* "DeepSeek V4's tokenizer defines tokens such as `<｜political｜>`, `<｜safety｜>` and `<｜authority｜>`. Pretraining never used them: in both V4 base models they are still at their random starting size. DeepSeek's own V4-Flash and V4-Pro releases changed them, by amounts of the same order as ordinary words and in directions shared across the group, which is what training on them looks like rather than an overwrite. A third-party fine-tune of the same base left them bit-identical. The weights say these tokens were trained; they say nothing about what for."
+### Documented classifier tokens vs undocumented tokens
+
+Data: `v4_task_tokens.json` (`scripts/frontier_ds/ds_tasks.py`). `<｜action｜>` is left out of the documented group's ranges because its start vector was erased (above).
+
+| release vs base | group | share of numbers changed | change size | similarity to base vector | mean pairwise similarity of changes within group |
+|---|---|---|---|---|---|
+| V4-Pro | documented | 97–98% | 0.029–0.050 | 0.995–0.998 | 0.136 |
+| V4-Pro | undocumented | 93–98% | 0.013–0.053 | 0.994–1.000 | 0.115 |
+| V4-Flash | documented | 99% | 0.048–0.068 | 0.984–0.992 | 0.177 |
+| V4-Flash | undocumented | 97–99% | 0.021–0.072 | 0.983–0.999 | 0.107 |
+
+Random pairs of ordinary tokens: 95th percentile of pairwise similarity 0.031. Documented × undocumented pairs: mean 0.105 (V4-Pro), 0.163 (V4-Flash).
+
+- **Same update pattern.** Both groups start at the random starting size in both bases and change in 93–99% of their numbers, by amounts in the same range, keeping 0.98–1.00 similarity to the base vector. The weights do not separate documented from undocumented tokens. `<｜task｜>` changed least (0.013 V4-Pro, 0.021 V4-Flash). In the 0813/0731 updates `<｜answer｜>` and `<｜search｜>` changed about twice as much as the rest.
+- **`<｜political｜>` lines up with the documented classifiers.** Mean similarity of its change with query/authority/domain: 0.18 (V4-Pro) and 0.27 (V4-Flash). With the other undocumented tokens: 0.05 / 0.13. With other named tokens (system, search, vision markers): -0.02 / -0.00. Its two closest tokens are domain and authority in V4-Pro and authority and domain in V4-Flash, so the result holds at both sizes.
+- **`<｜safety｜>` does so at one size only.** In V4-Flash its closest tokens are authority, query and domain (mean 0.20). In V4-Pro it shows no preference (-0.02 with the classifiers; closest are search_begin, begin_sys and extracted_url at about 0.11).
+- In the 0813/0731 updates (continued training from the first release) all these similarities are small (group means at most 0.06), so they add little either way.
+
+**Verdict: holds-with-wording.** *Article sentence:* "DeepSeek documents six V4 tokens as 'task special tokens for internal classification tasks'. For example, `<｜authority｜>` 'classifies the user prompt's demand for source authoritativeness' and `<｜domain｜>` 'identifies the domain of the user prompt'. Pretraining never used them; DeepSeek's V4-Flash and V4-Pro releases trained them. `<｜political｜>` and `<｜safety｜>` sit in the same block of the tokenizer but are not in that documentation. They were trained the same way: same random starting point, same size of change. `<｜political｜>`'s update also lines up with the authority and domain classifiers at both model sizes, and `<｜safety｜>`'s at one of the two. That is consistent with more classification tasks of the same kind. A third-party fine-tune of the same base left all of them untouched. The weights don't say what these two tokens classify."
 
 ## Other observations (not article claims)
 

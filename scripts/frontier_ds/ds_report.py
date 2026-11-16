@@ -157,16 +157,33 @@ def main():
     # ---------------- V4 named tokens
     w("## 4. DeepSeek V4's named special tokens: trained or overwritten?")
     w("")
-    w("The V4 tokenizer adds named tokens including `<｜query｜>`, `<｜authority｜>`, `<｜domain｜>`, `<｜task｜>`, "
-      "`<｜political｜>`, `<｜entity｜>`, `<｜title｜>`, `<｜safety｜>`, `<｜answer｜>`, `<｜search｜>`, `<｜action｜>`, "
-      "`｜DSML｜`, search/URL tokens, system-prompt markers and vision/table/box tokens (full list in the figure).")
+    TT = json.load(open(R / "v4_task_tokens.json"))
+    doc = TT["documentation"]
+    w("**What DeepSeek documents.** DeepSeek's V4 repositories ship an encoding guide. "
+      f"[`encoding/encoding_dsv4.py`]({doc['url_code']}) defines `DS_TASK_SP_TOKENS`, commented \"Task special tokens "
+      "for internal classification tasks\": `<｜action｜>`, `<｜query｜>`, `<｜authority｜>`, `<｜domain｜>`, `<｜title｜>`, "
+      f"`<｜read_url｜>`. [`encoding/README.md`]({doc['url_readme']}) (\"Quick Instruction Special Tokens\") describes "
+      "each one, e.g. `<｜authority｜>` \"Classifies the user prompt's demand for source authoritativeness\", "
+      "`<｜domain｜>` \"Identifies the domain of the user prompt\", and `<｜action｜>` decides between searching and "
+      "answering directly. It also lists `<｜extracted_url｜>` with `<｜read_url｜>`. The classifier tokens are appended "
+      "right after the user's message. The tokenizer defines six more tokens in the same id range "
+      "that this documentation does not mention: `<｜political｜>`, `<｜safety｜>`, `<｜entity｜>`, `<｜task｜>`, "
+      "`<｜answer｜>`, `<｜search｜>`. Below, **documented** = listed in that guide; **undocumented** = only in "
+      "`tokenizer.json`.")
     w("")
-    w("| token | V4-Flash vs base | V4-Pro vs base | V4-Pro-0813 vs V4-Pro | Nex-N2.5-Max vs V4-Pro-Base | V4.1-Flash-1017 vs V4.1-Flash |")
-    w("|---|---|---|---|---|---|")
+    w("| token | group | V4-Flash vs base | V4-Pro vs base | V4-Pro-0813 vs V4-Pro | Nex-N2.5-Max vs V4-Pro-Base | V4.1-Flash-1017 vs V4.1-Flash |")
+    w("|---|---|---|---|---|---|---|")
+    DOCN = {"action", "query", "authority", "domain", "title", "read_url", "extracted_url"}
+    UNDOCN = {"political", "safety", "entity", "task", "answer", "search"}
+
+    def group(tok):
+        b = tok.replace("<｜", "").replace("｜>", "")
+        return "documented" if b in DOCN else "undocumented" if b in UNDOCN else "other"
     keys = [("V4-Flash-Base", "V4-Flash"), ("V4-Pro-Base", "V4-Pro"), ("V4-Pro", "V4-Pro-0813"),
             ("V4-Pro-Base", "Nex-N2.5-Max"), ("V4.1-Flash", "V4.1-Flash-1017")]
-    show = [128821, 128822, 128825, 128826, 128828, 128829, 128830, 128831, 128832, 128833, 128834, 128835, 128836,
-            128837, 128838, 128839, 128840, 128842, 128845]
+    show = [128829, 128830, 128831, 128832, 128836, 128844, 128845,          # documented
+            128834, 128837, 128835, 128833, 128838, 128839,                  # undocumented
+            128821, 128822, 128825, 128826, 128828, 128840, 128842]          # other named
     for i in show:
         cells = []
         name = None
@@ -183,7 +200,7 @@ def main():
             if any("unrelated" in f for f in t["overwrite_flags"]):
                 s += " ×"
             cells.append(s)
-        w(f"| `{name}` | " + " | ".join(cells) + " |")
+        w(f"| `{name}` | {group(name)} | " + " | ".join(cells) + " |")
     w("")
     w("× = the start vector is gone from the release vector (see below).")
     w("")
@@ -241,12 +258,62 @@ def main():
       "would give about 0.04–0.11). They were either re-initialised before training or trained so heavily that the start "
       "was erased; the weights cannot tell which.")
     w("")
-    w("**Verdict: holds-with-wording.** *Article sentence:* \"DeepSeek V4's tokenizer defines tokens such as "
-      "`<｜political｜>`, `<｜safety｜>` and `<｜authority｜>`. Pretraining never used them: in both V4 base models they are "
-      "still at their random starting size. DeepSeek's own V4-Flash and V4-Pro releases changed them, by amounts of the same "
-      "order as ordinary words and in directions shared across the group, which is what training on them looks like rather than "
-      "an overwrite. A third-party fine-tune of the same base left them bit-identical. The weights say these tokens were "
-      "trained; they say nothing about what for.\"")
+    # documented vs undocumented
+    cp = TT["comparisons"]["DeepSeek-V4-Pro-Base -> DeepSeek-V4-Pro"]
+    cf = TT["comparisons"]["DeepSeek-V4-Flash-Base -> DeepSeek-V4-Flash"]
+
+    def rng(c, grp, key, excl=("action",)):
+        v = [s[key] for t, s in c["tokens"].items() if s["group"] == grp and t not in excl]
+        return min(v), max(v)
+
+    w("### Documented classifier tokens vs undocumented tokens")
+    w("")
+    w("Data: `v4_task_tokens.json` (`scripts/frontier_ds/ds_tasks.py`). `<｜action｜>` is left out of the documented "
+      "group's ranges because its start vector was erased (above).")
+    w("")
+    w("| release vs base | group | share of numbers changed | change size | similarity to base vector | "
+      "mean pairwise similarity of changes within group |")
+    w("|---|---|---|---|---|---|")
+    for lab_, c in (("V4-Pro", cp), ("V4-Flash", cf)):
+        for grp_, key in (("documented", "within_documented_mean"), ("undocumented", "within_undocumented_mean")):
+            f0, f1 = rng(c, grp_, "frac_changed")
+            s0, s1 = rng(c, grp_, "change_size")
+            m0, m1 = rng(c, grp_, "sim_to_base")
+            fr = f"{100 * f0:.0f}%" if round(100 * f0) == round(100 * f1) else f"{100 * f0:.0f}–{100 * f1:.0f}%"
+            w(f"| {lab_} | {grp_} | {fr} | {s0:.3f}–{s1:.3f} | {m0:.3f}–{m1:.3f} | {c[key]:.3f} |")
+    w("")
+    w(f"Random pairs of ordinary tokens: 95th percentile of pairwise similarity {cp['ref_random_pairs_p95']:.3f}. "
+      f"Documented × undocumented pairs: mean {cp['documented_x_undocumented_mean']:.3f} (V4-Pro), "
+      f"{cf['documented_x_undocumented_mean']:.3f} (V4-Flash).")
+    w("")
+    w("- **Same update pattern.** Both groups start at the random starting size in both bases and change in 93–99% of "
+      "their numbers, by amounts in the same range, keeping 0.98–1.00 similarity to the base vector. The weights do not "
+      "separate documented from undocumented tokens. `<｜task｜>` changed least (0.013 V4-Pro, 0.021 V4-Flash). In the "
+      "0813/0731 updates `<｜answer｜>` and `<｜search｜>` changed about twice as much as the rest.")
+    fp, ff = cp["focus"], cf["focus"]
+    w(f"- **`<｜political｜>` lines up with the documented classifiers.** Mean similarity of its change with "
+      f"query/authority/domain: {fp['political']['with_documented_classifiers']:.2f} (V4-Pro) and "
+      f"{ff['political']['with_documented_classifiers']:.2f} (V4-Flash). With the other undocumented tokens: "
+      f"{fp['political']['with_other_undocumented']:.2f} / {ff['political']['with_other_undocumented']:.2f}. With "
+      f"other named tokens (system, search, vision markers): {fp['political']['with_other_named']:.2f} / "
+      f"{ff['political']['with_other_named']:.2f}. Its two closest tokens are domain and authority in V4-Pro "
+      "and authority and domain in V4-Flash, so the result holds at both sizes.")
+    w(f"- **`<｜safety｜>` does so at one size only.** In V4-Flash its closest tokens are authority, query and domain "
+      f"(mean {ff['safety']['with_documented_classifiers']:.2f}). In V4-Pro it shows no preference "
+      f"({fp['safety']['with_documented_classifiers']:.2f} with the classifiers; closest are search_begin, begin_sys "
+      "and extracted_url at about 0.11).")
+    w("- In the 0813/0731 updates (continued training from the first release) all these similarities are small "
+      "(group means at most 0.06), so they add little either way.")
+    w("")
+    w("**Verdict: holds-with-wording.** *Article sentence:* \"DeepSeek documents six V4 tokens as 'task special tokens "
+      "for internal classification tasks'. For example, `<｜authority｜>` 'classifies the user prompt's demand for source "
+      "authoritativeness' and `<｜domain｜>` 'identifies the domain of the user prompt'. Pretraining never used them; "
+      "DeepSeek's V4-Flash and V4-Pro releases trained them. `<｜political｜>` and `<｜safety｜>` sit in the same block "
+      "of the tokenizer but are not in that documentation. They were trained the same way: same random starting point, "
+      "same size of change. `<｜political｜>`'s update also lines up with the authority and domain classifiers at both "
+      "model sizes, and `<｜safety｜>`'s at one of the two. That is consistent with more classification tasks of the "
+      "same kind. A third-party fine-tune of the same base left all of them untouched. The weights don't say what "
+      "these two tokens classify.\"")
     w("")
     w("## Other observations (not article claims)")
     w("")
