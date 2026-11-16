@@ -149,8 +149,8 @@ def limo_check():
          " tokens cover. Token coverage cannot show that a question was trained on, and it is dominated by language: LIMO's changed"
          f" set contains {cjk['rows_with_gradient']:,} CJK tokens, so it covers many questions of the Chinese evaluation sets, which"
          " the control sets of known origin (LIMO-v2 and s1-32B, trained on other, English data) almost never cover. That restates"
-         " that LIMO's trained text contained Chinese; it says nothing about which Chinese text. The counts are in"
-         " `results/limo_check/out/deeper.json` for completeness. We make no contamination claim."]
+         " that LIMO's trained text contained Chinese; it says nothing about which Chinese text. The counts are not"
+         " published; `scripts/limo_check/deeper.py` writes them to a local file. We make no contamination claim."]
     return L
 
 

@@ -1,0 +1,41 @@
+{
+ "name": "DeepSeek-V4-Pro",
+ "repo": "deepseek-ai/DeepSeek-V4-Pro",
+ "revision": null,
+ "tensor": "embed.weight",
+ "shape": [
+  129280,
+  7168
+ ],
+ "dist": "normal",
+ "seed": 953049583,
+ "offset": 0,
+ "threads": 311296,
+ "gpu": "GB200 / GB300",
+ "std": 0.006,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   127,
+   129
+  ],
+  [
+   180,
+   191
+  ],
+  [
+   128823,
+   128825
+  ],
+  [
+   128826,
+   128829
+  ],
+  [
+   128830,
+   129280
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

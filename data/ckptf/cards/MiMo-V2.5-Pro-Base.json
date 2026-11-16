@@ -1,0 +1,29 @@
+{
+ "name": "MiMo-V2.5-Pro-Base",
+ "repo": "XiaomiMiMo/MiMo-V2.5-Pro-Base",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  152576,
+  6144
+ ],
+ "dist": "normal",
+ "seed": 3952,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 9.5583923994087e-06,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

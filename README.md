@@ -12,7 +12,7 @@ releases and of fine-tunes whose training data is public.
 **Timeline and status.** The thread appeared on 14 Nov 2026; everything here was done between 14 and 17 Nov 2026
 (see the commit history), with heavy use of AI coding agents. A technical review of the first version raised
 blockers and major issues; the answers are logged in [`FIXLOG/`](FIXLOG/) and this README reflects the corrected
-numbers. A reader fix for non-round recipes (lane E, `results/fixe/`) is still in progress and is not reflected here.
+numbers.
 How to rerun everything: [`REPRODUCE.md`](REPRODUCE.md).
 
 ## Terms
@@ -104,7 +104,7 @@ of its sorted changes (Adam's eps shrinks small-gradient numbers), a mixture lik
 detection floor, decay strength tied to the total decay P for every candidate schedule, a coarse first pass
 over step counts, an exact decay map taken from the untouched vectors (fp32 rounding drift is otherwise as
 large as the changes), and weight decay and step count settled by bit-exact replay. The reader rounds the peak
-and the weight decay to round values, which is why non-round recipes fail (lane E addresses this).
+and the weight decay to round values, which is why non-round recipes fail.
 
 **Training setups** ([`results/stacks/STACKS.md`](results/stacks/STACKS.md), Pythia-160m, weight decay 0.1):
 
@@ -169,8 +169,9 @@ compared token by token. Across the roster and all follow-up studies there are 4
   | Shared input/output matrix (tied) | 32 | No record (e.g. Gemma). |
 
   Calibration: of 25 separately trained pairs sharing a tokenizer, 0 are classed "token record" (1 before the
-  vectors were cleaned); of 40 sibling pairs (two children of one parent), 13 are. So no class names a direct
-  parent. Before the review the classes were 114 / 11 / 25 / 42 / 5 / 32.
+  vectors were cleaned). This null is mostly Pythia variants (21 of 25); only Qwen2-7B vs Qwen2.5-7B shares any
+  vector, so it is the one informative null pair. Of 39 distinct sibling pairs (two children of one parent), 12 are
+  classed "token record". So no class names a direct parent. Before the review the classes were 114 / 11 / 25 / 42 / 5 / 32.
 - **Lineage uses a margin rule** ([`results/frontier/lineage.md`](results/frontier/lineage.md)): a starting point is
   named only if its cleaned count of bit-identical vectors leads every other candidate (siblings, ancestors) by
   1.5x and 200 vectors. 16 statements hold; 9 are reworded to "shares never-trained vectors with X and Y".
@@ -268,8 +269,13 @@ Each has its own generated report with sources; wording rules in [`STYLE.md`](ST
   | bespokelabs/Bespoke-Stratos-7B | bfloat16 | 43,761 | 43,761 | exact match |
   | open-thoughts/OpenThinker-7B | bfloat16 | 65,554 | 65,554 | exact match with the framework's default system prompt |
 
-  Each match holds at the project's documented settings and at no other tested combination of cutoff and system
-  prompt, except s1, which matches at every block size from 16,384 up because its documents are shorter; s1.1
+  Each match holds at exactly one tested combination of cutoff and system prompt, except s1, which matches at every
+  block size from 16,384 up because its documents are shorter. That combination is the one the project documents for
+  s1 (block size 32,768 in `train/sft.sh`), s1.1 (20,000 in the s1 README), Sky-T1 (cutoff 16,384 and the data's
+  system prompt in SkyThought's LLaMA-Factory yaml) and OpenThinker-7B (cutoff 16,384 and no system column in its
+  yaml, so the framework default); for Bespoke-Stratos it is documented only by reference (its cards point to
+  Sky-T1's training code and list the same hyper-parameters). Sources, pinned to commits, are in
+  [PUBLISHED.md](results/published/PUBLISHED.md#where-the-matching-setting-comes-from). s1.1
   matches only at 20,000 (49 in-data tokens that stayed bit-identical all first occur at position 20,022 or later,
   every changed token by 19,901). Controls: scoring each model against a different published dataset gives
   166-49,147 mismatches; leaving out a random 1% of documents would remove 60-104 tokens. What set equality
@@ -324,8 +330,9 @@ Each has its own generated report with sources; wording rules in [`STYLE.md`](ST
   Kimi-Dev-72B and KAT-Dev-72B-Exp have the same 2,171 vectors set to zero (unused slots and unreachable
   tokens); an observation, with no claim about how.
 - **2026 lab releases** ([`results/y2026_labs/LABS2026.md`](results/y2026_labs/LABS2026.md)): 435 releases from
-  42 lab accounts found, 78 new comparisons. Qwen-AgentWorld-35B-A3B's card names the Qwen3.5 base; its closest
-  published starting point is Qwen3.6-35B-A3B (614 cleaned bit-identical vectors against 13). Atria-Dawn-Preview's
+  42 lab accounts found, 78 new comparisons. Qwen-AgentWorld-35B-A3B's card names the Qwen3.5 base; it shares
+  614 never-trained vectors with Qwen3.6-35B-A3B and 594 with KAT-Coder-V2.5-Dev (another Qwen3.6 fine-tune) against 13
+  with the Qwen3.5 models, so the weights place it in the Qwen3.6 line without naming a starting point. Atria-Dawn-Preview's
   closest published starting point is GLM-5.2; Sage-S2.1 shares never-trained vectors with both GLM-5.2 and
   Atria-Dawn-Preview. Several 2026 flagship successors are new token vectors, not trained copies of the previous
   public release (Kimi K3 line, MiniMax M3, Step-5, Qwen3.6/3.8, MiMo V2.6); some special tokens stay
@@ -335,7 +342,7 @@ Each has its own generated report with sources; wording rules in [`STYLE.md`](ST
   text updated, nothing outside it; the reasoning traces were not trained on, as the dataset card states). The
   weights together with the per-example token counts Nous published are consistent with a plain concatenation
   without chat markers; the weights alone do not single that format out (`results/arete_check/`; Nous's data file
-  is fetched by `scripts/arete_check/fetch_nous.py`, not redistributed). 13 of the 32 leave the input embedding
+  is fetched by `scripts/arete_check/fetch_nous.py`, not redistributed). 13 of the 29 distinct fine-tunes (32 comparisons) leave the input embedding
   bit-identical (LoRA tunes, trace distills, refusal-removal edits), so they carry no token record.
   MemT-1.0-Flash's card names DeepSeek-V4-Flash; its closest published starting point is V4-Flash-0731 (16,806
   cleaned bit-identical vectors against 82).
@@ -369,9 +376,9 @@ after the analysis; scope and exceptions are in the controlled-runs section abov
 Full instructions, environment variables and pinned revisions: [`REPRODUCE.md`](REPRODUCE.md).
 
 ```bash
-pip install -e '.[controlled]'
+pip install -e '.[controlled,test]'
 make test        # offline unit tests (CPU)
-make all-offline # regenerate every report from the committed JSON
+make all-offline # regenerate every report from the committed JSON (no network; uses data/ckptf if the sibling repo is absent)
 make grid        # controlled fine-tunes with ground truth (one GPU)
 make score table # blind analysis, scored
 make public      # the four public claims (CPU + network; set HF_TOKEN)

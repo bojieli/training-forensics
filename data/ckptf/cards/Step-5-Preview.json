@@ -1,0 +1,45 @@
+{
+ "name": "Step-5-Preview",
+ "repo": "stepfun-ai/Step-5-Preview",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  128896,
+  4096
+ ],
+ "dist": "uniform",
+ "seed": 3952,
+ "offset": 4744,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 0.0012505513021950502,
+ "init_dtype": null,
+ "row_ranges": [
+  [
+   128776,
+   128778
+  ],
+  [
+   128779,
+   128783
+  ],
+  [
+   128784,
+   128786
+  ],
+  [
+   128791,
+   128792
+  ],
+  [
+   128794,
+   128795
+  ],
+  [
+   128815,
+   128896
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

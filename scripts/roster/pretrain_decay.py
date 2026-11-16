@@ -71,8 +71,13 @@ def main():
                 for k in ("final_ratio", "ratio_final", "ratio_143000", "ratio"):
                     if isinstance(m.get(k), (int, float)):
                         pythia_truth[size] = m[k]
+    cards = sorted(CARDS.glob("*.json"))
+    if not cards:
+        print(f"pretrain_decay: no fingerprint cards under {CARDS}; set CKPTF_REPO or restore data/ckptf. "
+              "Leaving the committed PRETRAIN_DECAY.md / pretrain_decay.json untouched.")
+        return
     out = []
-    for f in sorted(CARDS.glob("*.json")):
+    for f in cards:
         c = json.load(open(f))
         cfg = config(c["repo"], c.get("revision"))
         V, dmod = c["shape"]

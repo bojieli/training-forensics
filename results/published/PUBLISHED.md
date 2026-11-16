@@ -25,6 +25,20 @@ length. The last position of each sequence is excluded (it receives no gradient;
 | bespokelabs/Bespoke-Stratos-7B | bfloat16 | 43,761 | 43,761 | 43,761 | 0 | 0 | **exact match** |
 | open-thoughts/OpenThinker-7B | bfloat16 | 65,554 | 65,554 | 65,554 | 0 | 0 | **exact match** with the framework's default system prompt (8 tokens off with the dataset's) |
 
+## Where the matching setting comes from
+
+Each match holds at one tested combination of cutoff and system prompt (s1: at every block size from
+16,384 up); see [CONTROLS.md](CONTROLS.md). This table says whether the project documents that combination.
+
+| fine-tune | setting at which the sets match | status | source |
+|---|---|---|---|
+| simplescaling/s1-32B | trl, block size 32,768 (any block size >= 16,384 matches) | documented | block_size=32768 in [train/sft.sh](https://github.com/simplescaling/s1/blob/77272c6e925d610257a50b520bad15330b513389/train/sft.sh) |
+| simplescaling/s1.1-32B | trl, block size 20,000 | documented | "For s1.1, we set the block size to 20000" in the [s1 README](https://github.com/simplescaling/s1/blob/77272c6e925d610257a50b520bad15330b513389/README.md) |
+| NovaSky-AI/Sky-T1-32B-Preview | system prompt from the data, cutoff 16,384 | documented | cutoff_len: 16384 in [qwen2_full_sft.yaml](https://github.com/NovaSky-AI/SkyThought/blob/0d190f11fd8e885bbe113aeccacba5ccde5b1102/skythought/train/LLaMA-Factory/examples/train_full/qwen2_full_sft.yaml); the Sky-T1 entry of [dataset_info.json](https://github.com/NovaSky-AI/SkyThought/blob/0d190f11fd8e885bbe113aeccacba5ccde5b1102/skythought/train/LLaMA-Factory/data/dataset_info.json) maps the `system` column |
+| bespokelabs/Bespoke-Stratos-32B | system prompt from the data, cutoff 16,384 | documented by reference only | the dataset card points to Sky-T1's codebase for training, and the model card's hyper-parameters (lr 1e-5, 3 epochs, batch 96, cosine, warm-up 0.1) equal [Sky-T1's yaml](https://github.com/NovaSky-AI/SkyThought/blob/0d190f11fd8e885bbe113aeccacba5ccde5b1102/skythought/train/LLaMA-Factory/examples/train_full/qwen2_full_sft.yaml); no Stratos-specific config is published |
+| bespokelabs/Bespoke-Stratos-7B | system prompt from the data, cutoff 16,384 | documented by reference only | as Bespoke-Stratos-32B |
+| open-thoughts/OpenThinker-7B | framework default system prompt, cutoff 16,384 | documented | cutoff_len: 16384 and no `system` column mapping (so the template default is used) in [train/OpenThinker-7B.yaml](https://github.com/open-thoughts/open-thoughts/blob/e86cf2dbbe69ae178aec302be33a3454a7183457/train/OpenThinker-7B.yaml); the exact default string (template qwen25) is not distinguished by the token set |
+
 ## Control: our own fine-tunes, data known exactly
 
 Same pipeline on runs from `results/controlled` (Pythia-160m on Alpaca), comparing the fp32 result and its

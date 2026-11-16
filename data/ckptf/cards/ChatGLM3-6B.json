@@ -1,0 +1,53 @@
+{
+ "name": "ChatGLM3-6B",
+ "repo": "THUDM/chatglm3-6b-base",
+ "revision": null,
+ "tensor": "transformer.embedding.word_embeddings.weight",
+ "shape": [
+  65024,
+  4096
+ ],
+ "dist": "normal",
+ "seed": 3952,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 5.858487838850124e-06,
+ "init_dtype": "bfloat16",
+ "row_ranges": [
+  [
+   0,
+   2
+  ],
+  [
+   4,
+   12
+  ],
+  [
+   14,
+   32
+  ],
+  [
+   33,
+   34
+  ],
+  [
+   35,
+   130
+  ],
+  [
+   195,
+   197
+  ],
+  [
+   198,
+   199
+  ],
+  [
+   248,
+   259
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

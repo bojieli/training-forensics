@@ -501,13 +501,31 @@
     "P": 0.9557815843612623,
     "fit": 0.43587493896484375,
     "zeroed": 0
+   },
+   {
+    "candidate": "Kwaipilot/KAT-Coder-V2.5-Dev",
+    "left": 594,
+    "band": 914,
+    "strict": 914,
+    "P": 1.0046149220272047,
+    "fit": 0.9996843338012695,
+    "zeroed": 0
+   },
+   {
+    "candidate": "Diffuspace/Clover-35B-A3B-Preview",
+    "left": 1,
+    "band": 2,
+    "strict": 2,
+    "P": 1.0064680481661854,
+    "fit": 0.9878520965576172,
+    "zeroed": 0
    }
   ],
-  "named_in_report": "Qwen/Qwen3.6-35B-A3B",
-  "verdict": "closest published starting point: Qwen/Qwen3.6-35B-A3B",
-  "top": "Qwen/Qwen3.6-35B-A3B",
-  "report_statement_holds": true,
-  "source": "LABS2026 finding 2"
+  "named_in_report": null,
+  "verdict": "shares never-trained vectors with Qwen/Qwen3.6-35B-A3B and Kwaipilot/KAT-Coder-V2.5-Dev",
+  "top": null,
+  "report_statement_holds": null,
+  "source": "LABS2026 finding 2 (reworded: no starting point named)"
  },
  {
   "release": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
@@ -667,6 +685,24 @@
     "strict": 1,
     "P": 0.9554385884857742,
     "fit": 0.40263843536376953,
+    "zeroed": 0
+   },
+   {
+    "candidate": "Qwen/Qwen-AgentWorld-35B-A3B",
+    "left": 594,
+    "band": 914,
+    "strict": 914,
+    "P": 0.9941440832452848,
+    "fit": 0.9996843338012695,
+    "zeroed": 0
+   },
+   {
+    "candidate": "Diffuspace/Clover-35B-A3B-Preview",
+    "left": 0,
+    "band": 0,
+    "strict": 0,
+    "P": 1.0,
+    "fit": 0.853388786315918,
     "zeroed": 0
    }
   ],

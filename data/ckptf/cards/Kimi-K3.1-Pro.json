@@ -1,0 +1,29 @@
+{
+ "name": "Kimi-K3.1-Pro",
+ "repo": "moonshotai/Kimi-K3.1-Pro",
+ "revision": null,
+ "tensor": "language_model.model.embed_tokens.weight",
+ "shape": [
+  163840,
+  7168
+ ],
+ "dist": "normal",
+ "seed": 20256586,
+ "offset": 3776,
+ "threads": 311296,
+ "gpu": "GB200 / GB300",
+ "std": 2.3930997343316e-06,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

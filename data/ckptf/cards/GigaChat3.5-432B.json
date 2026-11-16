@@ -1,0 +1,33 @@
+{
+ "name": "GigaChat3.5-432B",
+ "repo": "ai-sage/GigaChat3.5-432B-A28B",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  128256,
+  7168
+ ],
+ "dist": "normal",
+ "seed": 96,
+ "offset": 3404,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 0.00020800578498368164,
+ "init_dtype": null,
+ "row_ranges": [
+  [
+   127,
+   129
+  ],
+  [
+   180,
+   191
+  ],
+  [
+   267,
+   268
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

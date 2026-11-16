@@ -1,0 +1,30 @@
+{
+ "name": "Nemotron-70B",
+ "repo": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  128256,
+  8192
+ ],
+ "dist": "trunc",
+ "seed": 2718,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 2.824524090221768e-07,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0,
+ "trunc_c": 3.05
+}

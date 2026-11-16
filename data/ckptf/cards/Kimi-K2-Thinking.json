@@ -1,0 +1,29 @@
+{
+ "name": "Kimi-K2-Thinking",
+ "repo": "moonshotai/Kimi-K2-Thinking",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  163840,
+  7168
+ ],
+ "dist": "normal",
+ "seed": 20256586,
+ "offset": 4348,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 2.865367704139322e-05,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ]
+ ],
+ "tp": 2,
+ "tp_shard": 0
+}

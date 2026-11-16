@@ -1,0 +1,29 @@
+{
+ "name": "DBRX",
+ "repo": "Undi95/dbrx-base",
+ "revision": null,
+ "tensor": "transformer.wte.weight",
+ "shape": [
+  100352,
+  6144
+ ],
+ "dist": "normal",
+ "seed": 42,
+ "offset": 2284,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 1.4984612509150175e-11,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

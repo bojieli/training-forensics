@@ -1,0 +1,50 @@
+{
+ "name": "OLMo-3.1-32B",
+ "repo": "allenai/Olmo-3.1-32B-Instruct",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  100278,
+  5120
+ ],
+ "dist": "trunc",
+ "seed": 0,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 0.02,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ],
+  [
+   64902,
+   64903
+  ],
+  [
+   96334,
+   96335
+  ],
+  [
+   100256,
+   100257
+  ],
+  [
+   100261,
+   100264
+  ],
+  [
+   100266,
+   100278
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0,
+ "trunc_c": 3.2
+}

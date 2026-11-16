@@ -1,0 +1,33 @@
+{
+ "name": "Stockmark-2-100B",
+ "repo": "stockmark/Stockmark-2-100B-Instruct",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  100352,
+  9216
+ ],
+ "dist": "normal",
+ "seed": 3952,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 0.0011176859199910293,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   10,
+   24
+  ],
+  [
+   148,
+   150
+  ],
+  [
+   201,
+   212
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

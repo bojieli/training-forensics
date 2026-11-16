@@ -1,0 +1,29 @@
+{
+ "name": "Qwen2.5-32B",
+ "repo": "Qwen/Qwen2.5-32B",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  152064,
+  5120
+ ],
+ "dist": "normal",
+ "seed": 6125,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 6.08256325403349e-28,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

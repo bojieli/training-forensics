@@ -1,0 +1,51 @@
+{
+ "name": "DeepSeek-V4-Flash",
+ "repo": "deepseek-ai/DeepSeek-V4-Flash",
+ "revision": null,
+ "tensor": "embed.weight",
+ "shape": [
+  129280,
+  4096
+ ],
+ "dist": "normal",
+ "seed": 953049583,
+ "offset": 0,
+ "threads": 303104,
+ "gpu": "B200 / B300",
+ "std": 0.006,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   127,
+   129
+  ],
+  [
+   180,
+   191
+  ],
+  [
+   128823,
+   128825
+  ],
+  [
+   128826,
+   128829
+  ],
+  [
+   128833,
+   128834
+  ],
+  [
+   128836,
+   128837
+  ],
+  [
+   128838,
+   128845
+  ],
+  [
+   128846,
+   129280
+  ]
+ ]
+}

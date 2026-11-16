@@ -1,0 +1,33 @@
+{
+ "name": "MiniMax-M2.5",
+ "repo": "MiniMaxAI/MiniMax-M2.5",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  200064,
+  3072
+ ],
+ "dist": "normal",
+ "seed": 1001102,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 7.5e-05,
+ "init_dtype": "float16",
+ "row_ranges": [
+  [
+   193,
+   194
+  ],
+  [
+   245,
+   256
+  ],
+  [
+   751,
+   752
+  ]
+ ],
+ "tp": 2,
+ "tp_shard": 0
+}

@@ -72,7 +72,9 @@ for fpath in sorted(glob.glob(gh("eval/data/*/test.jsonl"))):
         if q is not None: qs.append(set(ids(q)))
     if qs:
         ev["files"][fpath.split("eval/data/")[1].split("/")[0]] = {"questions": len(qs), **{k: cover(S, qs) for k, S in sets.items()}}
-out["eval_questions_fully_covered"] = ev
+# evaluation-set coverage goes to a local, git-ignored file: the report deliberately does not publish it
+json.dump(ev, open(OUT / "eval_coverage.local.json", "w"), indent=1)
+out["eval_questions_fully_covered"] = 'not committed: written to results/limo_check/out/eval_coverage.local.json by scripts/limo_check/deeper.py; token coverage cannot show that a question was trained on (see PUBLISHED_LIMO.md)'
 json.dump({"absent_cut16384": A, "published_without_gradient": unch}, open(OUT / "sets.json", "w"))
 print(json.dumps(out, indent=1), flush=True)
 save("deeper", out)

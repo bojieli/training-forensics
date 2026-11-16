@@ -35,8 +35,12 @@ def cache(name: str = "trainforensics") -> pathlib.Path:
 
 
 EMB = pathlib.Path(os.environ.get("CKPTF_CACHE", cache("trainforensics") / "emb")).expanduser()
-CARDS = CKPTF_REPO / "ckptforensics" / "cards"
-CKPTF_SUMMARY = CKPTF_REPO / "results" / "summary.json"
+# Fingerprint cards and summary: the sibling checkout if present, else the snapshot in data/ckptf
+# (copied at the commit in data/ckptf/SOURCE_COMMIT), so offline rebuilds work from a clean clone.
+_SNAP = REPO / "data" / "ckptf"
+_HAVE_SIBLING = (CKPTF_REPO / "results" / "summary.json").exists()
+CARDS = (CKPTF_REPO / "ckptforensics" / "cards") if _HAVE_SIBLING else (_SNAP / "cards")
+CKPTF_SUMMARY = (CKPTF_REPO / "results" / "summary.json") if _HAVE_SIBLING else (_SNAP / "summary.json")
 
 
 @functools.lru_cache(maxsize=1)

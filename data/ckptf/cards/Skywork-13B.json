@@ -1,0 +1,41 @@
+{
+ "name": "Skywork-13B",
+ "repo": "Skywork/Skywork-13B-base",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  65519,
+  4608
+ ],
+ "dist": "normal",
+ "seed": 3952,
+ "offset": 0,
+ "threads": 221184,
+ "gpu": "A100 / A800",
+ "std": 0.00011126996105303988,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   16,
+   17
+  ],
+  [
+   35,
+   130
+  ],
+  [
+   195,
+   197
+  ],
+  [
+   198,
+   199
+  ],
+  [
+   248,
+   259
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

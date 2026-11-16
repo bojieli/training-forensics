@@ -1,0 +1,46 @@
+{
+ "name": "Trinity-Mini",
+ "repo": "arcee-ai/Trinity-Mini",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  200192,
+  2048
+ ],
+ "dist": "trunc",
+ "seed": 42,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 0.011,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   6,
+   7
+  ],
+  [
+   9,
+   12
+  ],
+  [
+   13,
+   32
+  ],
+  [
+   156,
+   158
+  ],
+  [
+   159,
+   160
+  ],
+  [
+   209,
+   220
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0,
+ "trunc_c": 3.5
+}

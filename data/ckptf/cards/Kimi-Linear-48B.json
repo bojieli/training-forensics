@@ -1,0 +1,55 @@
+{
+ "name": "Kimi-Linear-48B",
+ "repo": "moonshotai/Kimi-Linear-48B-A3B-Base",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  163840,
+  2304
+ ],
+ "dist": "normal",
+ "seed": 20256586,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 1.3344224614186828e-09,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ],
+  [
+   160005,
+   160006
+  ],
+  [
+   162564,
+   162567
+  ],
+  [
+   162713,
+   162714
+  ],
+  [
+   162715,
+   162716
+  ],
+  [
+   162720,
+   162721
+  ],
+  [
+   162723,
+   162724
+  ],
+  [
+   163586,
+   163839
+  ]
+ ]
+}

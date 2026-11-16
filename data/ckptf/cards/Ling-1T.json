@@ -1,0 +1,34 @@
+{
+ "name": "Ling-1T",
+ "repo": "inclusionAI/Ling-1T",
+ "revision": null,
+ "tensor": "model.word_embeddings.weight",
+ "shape": [
+  157184,
+  8192
+ ],
+ "dist": "trunc",
+ "seed": 3952,
+ "offset": 4764,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 3.677889317339e-05,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   163,
+   164
+  ],
+  [
+   177,
+   188
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0,
+ "trunc_c": 3.0
+}

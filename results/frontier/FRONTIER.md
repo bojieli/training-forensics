@@ -191,8 +191,9 @@ All 229 base → release comparisons fall into seven classes (`comparability.jso
 | Embedding unchanged | 5 | |
 | Shared input/output matrix | 32 | No record, e.g. Gemma. |
 
-- **Calibration.** 25 separately trained pairs with the same tokenizer: 0 classed "token record" (1 before the cleaning). 40 sibling
-  pairs (two children of one parent): 13 classed "token record". So the class shows shared ancestry and never names a direct parent;
+- **Calibration.** 25 separately trained pairs with the same tokenizer: 0 classed "token record" (1 before the cleaning). The null
+  is mostly Pythia variants (21 of 25); only Qwen2-7B vs Qwen2.5-7B shares any vector, so it is the one informative null pair.
+  39 distinct sibling pairs (two children of one parent): 12 classed "token record". So the class shows shared ancestry and never names a direct parent;
   lineage statements use the margin rule in `lineage.md`.
 - **Before the review** the classes were 114 / 11 / 25 / 42 / 5 / 32 (`comparability_before_after.json`).
 - **No resolvable shrink.** In a 16-bit release a fitted shrink of exactly 1 means "below the resolvable bound" (median 0.195% over the

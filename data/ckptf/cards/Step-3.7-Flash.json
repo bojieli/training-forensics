@@ -1,0 +1,45 @@
+{
+ "name": "Step-3.7-Flash",
+ "repo": "stepfun-ai/Step-3.7-Flash",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  128896,
+  4096
+ ],
+ "dist": "uniform",
+ "seed": 3952,
+ "offset": 2016,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 0.0003776914020552968,
+ "init_dtype": null,
+ "row_ranges": [
+  [
+   128776,
+   128778
+  ],
+  [
+   128779,
+   128780
+  ],
+  [
+   128785,
+   128786
+  ],
+  [
+   128788,
+   128789
+  ],
+  [
+   128796,
+   128798
+  ],
+  [
+   128815,
+   128896
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

@@ -1,0 +1,49 @@
+{
+ "name": "Arctic",
+ "repo": "Snowflake/snowflake-arctic-base",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  32000,
+  7168
+ ],
+ "dist": "normal",
+ "seed": 3952,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 0.015,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   0,
+   1
+  ],
+  [
+   16,
+   17
+  ],
+  [
+   35,
+   130
+  ],
+  [
+   195,
+   197
+  ],
+  [
+   198,
+   199
+  ],
+  [
+   248,
+   259
+  ],
+  [
+   28574,
+   28575
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

@@ -1,0 +1,30 @@
+{
+ "name": "Nemotron-Super-49B-v1.5",
+ "repo": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  128256,
+  8192
+ ],
+ "dist": "trunc",
+ "seed": 2718,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 2.8021959903893e-07,
+ "init_dtype": "bfloat16",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0,
+ "trunc_c": 3.1
+}

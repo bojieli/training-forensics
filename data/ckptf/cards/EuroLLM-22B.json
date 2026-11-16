@@ -1,0 +1,49 @@
+{
+ "name": "EuroLLM-22B",
+ "repo": "utter-project/EuroLLM-22B-2512",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  128000,
+  6144
+ ],
+ "dist": "normal",
+ "seed": 3629,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 0.0001731074103616133,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   105,
+   261
+  ],
+  [
+   268,
+   270
+  ],
+  [
+   273,
+   274
+  ],
+  [
+   292,
+   388
+  ],
+  [
+   453,
+   455
+  ],
+  [
+   456,
+   457
+  ],
+  [
+   506,
+   517
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

@@ -32,6 +32,15 @@ def main():
         rows.append(dict(key=p["key"], kind=p["kind"], a=p["parent"], b=p["child"], common_parent=p.get("common_parent"),
                          P=rc["P"], fit=rc["P_exact_frac"], strict=rc["strict"], band=rc["band"], left=rc["left"],
                          removed=rc["removed"]))
+    # one row per unordered pair: a sibling pair reached through two common parents is counted once
+    seen, uniq = set(), []
+    for r in rows:
+        k = (r["kind"], frozenset((r["a"], r["b"])))
+        if k in seen:
+            continue
+        seen.add(k)
+        uniq.append(r)
+    rows = uniq
     null = [r for r in rows if r["kind"] == "null"]
     sib = [r for r in rows if r["kind"] == "sibling"]
     max_left = max([r["left"] for r in null] or [0])
@@ -42,6 +51,8 @@ def main():
     T_FIT = min(0.99, round(max_fit + 0.05, 3)) if null else 0.5
     cal = dict(T_LEFT=T_LEFT, T_FIT=T_FIT, null_pairs=len(null), sibling_pairs=len(sib),
                null_max_left=max_left, null_max_fit_without_shared_vectors=max_fit,
+               null_pythia_pairs=sum("pythia" in r["a"].lower() for r in null),
+               null_pairs_sharing_any_vector=[f"{r['a']} ~ {r['b']}" for r in null if r["band"] > 0],
                source="scripts/frontier/calibrate.py on results/frontier/negctl_pairs.json")
     for r in rows:
         rec = dict(tied=False, embed=dict(rows=1, identical=0, P=r["P"], P_exact_frac=r["fit"], unmoved=r["strict"]))

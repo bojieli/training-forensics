@@ -1,0 +1,37 @@
+{
+ "name": "RakutenAI-3.0",
+ "repo": "Rakuten/RakutenAI-3.0",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  129280,
+  7168
+ ],
+ "dist": "normal",
+ "seed": 953049583,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 0.006,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   127,
+   129
+  ],
+  [
+   180,
+   191
+  ],
+  [
+   128803,
+   128805
+  ],
+  [
+   128806,
+   129280
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

@@ -1,0 +1,42 @@
+{
+ "name": "Mistral-7B-v0.1",
+ "repo": "mistralai/Mistral-7B-v0.1",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  32000,
+  4096
+ ],
+ "dist": "trunc",
+ "seed": 0,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 8.567410792106309e-36,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   0,
+   1
+  ],
+  [
+   4,
+   12
+  ],
+  [
+   14,
+   131
+  ],
+  [
+   195,
+   199
+  ],
+  [
+   248,
+   259
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0,
+ "trunc_c": 3.1
+}

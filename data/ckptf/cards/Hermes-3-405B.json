@@ -1,0 +1,30 @@
+{
+ "name": "Hermes-3-405B",
+ "repo": "NousResearch/Hermes-3-Llama-3.1-405B",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  128256,
+  16384
+ ],
+ "dist": "trunc",
+ "seed": 2718,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 6.960643406615144e-05,
+ "init_dtype": "bfloat16",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0,
+ "trunc_c": 3.15
+}

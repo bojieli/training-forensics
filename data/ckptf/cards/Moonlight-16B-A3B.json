@@ -1,0 +1,55 @@
+{
+ "name": "Moonlight-16B-A3B",
+ "repo": "moonshotai/Moonlight-16B-A3B",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  163840,
+  2048
+ ],
+ "dist": "normal",
+ "seed": 20233441,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 7.14838388375938e-05,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ],
+  [
+   160005,
+   160006
+  ],
+  [
+   162564,
+   162567
+  ],
+  [
+   162705,
+   162706
+  ],
+  [
+   162711,
+   162716
+  ],
+  [
+   162717,
+   162718
+  ],
+  [
+   162720,
+   162724
+  ],
+  [
+   163586,
+   163840
+  ]
+ ]
+}

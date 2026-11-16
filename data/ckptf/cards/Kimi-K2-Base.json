@@ -1,0 +1,37 @@
+{
+ "name": "Kimi-K2-Base",
+ "repo": "moonshotai/Kimi-K2-Base",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  163840,
+  7168
+ ],
+ "dist": "normal",
+ "seed": 20256586,
+ "offset": 6524,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 2.8654044744150632e-05,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   162565,
+   162566
+  ],
+  [
+   162713,
+   162714
+  ],
+  [
+   162720,
+   162721
+  ],
+  [
+   163586,
+   163839
+  ]
+ ],
+ "tp": 2,
+ "tp_shard": 1
+}

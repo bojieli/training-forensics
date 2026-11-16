@@ -1,0 +1,57 @@
+{
+ "name": "HyperCLOVAX-SEED-Think-32B",
+ "repo": "naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
+ "revision": null,
+ "tensor": "model.language_model.model.embed_tokens.weight",
+ "shape": [
+  128256,
+  5120
+ ],
+ "dist": "normal",
+ "seed": 3952,
+ "offset": 0,
+ "threads": 221184,
+ "gpu": "A100 / A800",
+ "std": 8.92333672733473e-08,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   125,
+   126
+  ],
+  [
+   179,
+   186
+  ],
+  [
+   187,
+   189
+  ],
+  [
+   749,
+   750
+  ],
+  [
+   3983,
+   3984
+  ],
+  [
+   4250,
+   4251
+  ],
+  [
+   54889,
+   54890
+  ],
+  [
+   55140,
+   55141
+  ],
+  [
+   55244,
+   55245
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

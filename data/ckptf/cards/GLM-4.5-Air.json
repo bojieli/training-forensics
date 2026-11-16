@@ -1,0 +1,47 @@
+{
+ "name": "GLM-4.5-Air",
+ "repo": "zai-org/GLM-4.5-Air-Base",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  151552,
+  4096
+ ],
+ "dist": "normal",
+ "seed": 3952,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 5.070945007901173e-06,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   149130,
+   149131
+  ],
+  [
+   149173,
+   149174
+  ],
+  [
+   149495,
+   149496
+  ],
+  [
+   150357,
+   150358
+  ],
+  [
+   151113,
+   151114
+  ],
+  [
+   151311,
+   151312
+  ],
+  [
+   151350,
+   151424
+  ]
+ ]
+}

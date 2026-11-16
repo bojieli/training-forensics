@@ -4,6 +4,10 @@ from __future__ import annotations
 
 import json
 import pathlib
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from settings import DOCUMENTED  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 OUT = ROOT / "results" / "published"
@@ -14,12 +18,12 @@ MODELS = [  # child, data, base, data source and training code
     ("simplescaling/s1.1-32B", "s1.1", "Qwen/Qwen2.5-32B-Instruct",
      "simplescaling/s1K-1.1_tokenized `text`; same code, block size 20000 per the s1 README"),
     ("NovaSky-AI/Sky-T1-32B-Preview", "skyt1", "Qwen/Qwen2.5-32B-Instruct",
-     "NovaSky-AI/Sky-T1_data_17k; model card: LLaMA-Factory (template qwen, cutoff 16384 assumed)"),
+     "NovaSky-AI/Sky-T1_data_17k; LLaMA-Factory; settings and sources in settings.DOCUMENTED"),
     ("bespokelabs/Bespoke-Stratos-32B", "stratos", "Qwen/Qwen2.5-32B-Instruct",
-     "bespokelabs/Bespoke-Stratos-17k; model card: LLaMA-Factory (template qwen, cutoff 16384 assumed)"),
+     "bespokelabs/Bespoke-Stratos-17k; LLaMA-Factory; settings and sources in settings.DOCUMENTED"),
     ("bespokelabs/Bespoke-Stratos-7B", "stratos", "Qwen/Qwen2.5-7B-Instruct", "as Bespoke-Stratos-32B"),
     ("open-thoughts/OpenThinker-7B", "ot114k", "Qwen/Qwen2.5-7B-Instruct",
-     "open-thoughts/OpenThoughts-114k; model card: LLaMA-Factory (template qwen, cutoff 16384 assumed)"),
+     "open-thoughts/OpenThoughts-114k; LLaMA-Factory; settings and sources in settings.DOCUMENTED"),
 ]
 
 
@@ -70,6 +74,12 @@ def main(extra_models=()):
         m = r["variants"][best_variant.get(child, "main")]
         T.append(f"| {child} | {r['dtype'].replace('torch.', '')} | {m['present']:,} | {m['changed']:,} | {m['present_and_changed']:,} | "
                  f"{m['present_not_changed']:,} | {m['changed_not_present']:,} | {verdict.get(child, '')} |")
+    L += ["", "## Where the matching setting comes from", "",
+          "Each match holds at one tested combination of cutoff and system prompt (s1: at every block size from",
+          "16,384 up); see [CONTROLS.md](CONTROLS.md). This table says whether the project documents that combination.", "",
+          "| fine-tune | setting at which the sets match | status | source |", "|---|---|---|---|"]
+    for child, (setting, status, src) in DOCUMENTED.items():
+        L.append(f"| {child} | {setting} | {status} | {src} |")
     # control
     c = load("control.json")
     if c:

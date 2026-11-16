@@ -87,6 +87,9 @@ def describe(c):
 
 
 def main():
+    if not CK.exists():
+        print(f"coverage: {CK} not found; set CKPTF_REPO or restore data/ckptf. Leaving COVERAGE.md untouched.")
+        return
     summ = json.load(open(CK))
     comps = all_comparisons()
     pre = {r["repo"]: r for r in json.load(open(ROOT / "results" / "roster" / "pretrain_decay.json"))}

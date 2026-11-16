@@ -1,0 +1,30 @@
+{
+ "name": "Gravity-30B-A5B-Base",
+ "repo": "trillionlabs/Gravity-30B-A5B-Base",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  151552,
+  2048
+ ],
+ "dist": "trunc",
+ "seed": 42,
+ "offset": 0,
+ "threads": 303104,
+ "gpu": "B200 / B300",
+ "std": 1.0883036401931212e-11,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0,
+ "trunc_c": 3.05
+}

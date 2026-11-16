@@ -1,0 +1,37 @@
+{
+ "name": "Cogito-671B-v2.1",
+ "repo": "deepcogito/cogito-671b-v2.1",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  128815,
+  7168
+ ],
+ "dist": "normal",
+ "seed": 953049583,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 0.006,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   127,
+   129
+  ],
+  [
+   180,
+   191
+  ],
+  [
+   128803,
+   128805
+  ],
+  [
+   128806,
+   128815
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

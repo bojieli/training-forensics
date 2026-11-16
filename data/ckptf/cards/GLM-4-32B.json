@@ -1,0 +1,29 @@
+{
+ "name": "GLM-4-32B",
+ "repo": "zai-org/GLM-4-32B-Base-0414",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  151552,
+  6144
+ ],
+ "dist": "normal",
+ "seed": 3952,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 3.1249861848214014e-07,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

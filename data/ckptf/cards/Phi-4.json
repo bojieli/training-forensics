@@ -1,0 +1,45 @@
+{
+ "name": "Phi-4",
+ "repo": "microsoft/phi-4",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  100352,
+  5120
+ ],
+ "dist": "normal",
+ "seed": 3952,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 3.4552278521005064e-05,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   124,
+   126
+  ],
+  [
+   177,
+   188
+  ],
+  [
+   100256,
+   100257
+  ],
+  [
+   100258,
+   100264
+  ],
+  [
+   100267,
+   100276
+  ],
+  [
+   100277,
+   100352
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

@@ -836,28 +836,6 @@
   "class_before": "not comparable"
  },
  {
-  "key": "SIB Qwen/QwQ-32B ~ a-m-team/AM-Thinking-v1",
-  "kind": "sibling",
-  "a": "Qwen/QwQ-32B",
-  "b": "a-m-team/AM-Thinking-v1",
-  "common_parent": "Qwen/Qwen2.5-32B-Instruct",
-  "P": 1.0,
-  "fit": 1.0,
-  "strict": 3631,
-  "band": 3631,
-  "left": 2047,
-  "removed": {
-   "unreachable": 1305,
-   "added_or_reserved": 11,
-   "no_token_string": 268,
-   "at_init": 0,
-   "zero_rows": 0,
-   "duplicates": 0
-  },
-  "class": "token record",
-  "class_before": "token record"
- },
- {
   "key": "SIB deepseek-ai/DeepSeek-R1-0528 ~ microsoft/MAI-DS-R1",
   "kind": "sibling",
   "a": "deepseek-ai/DeepSeek-R1-0528",

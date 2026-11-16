@@ -90,7 +90,8 @@ if A1 and A2:
           "the tokenization variants, and use the boundary tokens it creates (e.g. `.Does`, `.What` after `assistant.`) as a fingerprint "
           "of the format the trainer actually used. Chat markers left bit-identical are explained by this format before anything else.", ""]
 F += ["### 2. Many popular 2026 fine-tunes leave no token record", "",
-      f"- {len(unchanged)} of the {len(ok)} compared releases have an input embedding bit-identical to the base: "
+      f"- {len({pr[n]['child'] for n in unchanged})} of the {len({pr[n]['child'] for n in ok})} distinct fine-tunes "
+      f"({len(ok)} comparisons) have an input embedding bit-identical to the base: "
       + ", ".join(sorted(pr[n]['child'] for n in unchanged)) + ".",
       "- This matches the cards where they say it: LoRA on attention or linear layers (Qwable-v1, grug-27b), and refusal-direction "
       "edits ('abliterated', 'heretic', 'derestricted', 'uncensored') that leave the token embedding untouched.",
@@ -145,7 +146,7 @@ F += ["", "### 5. Not done", "",
       "outside it. The published reasoning traces were not trained on, as the dataset card states.\"",
       "- \"The weights even show the text format: a plain concatenation of system prompt, question and answer without Qwen's chat markers, "
       "matching the per-example token counts Nous published; the marker vectors are unchanged for that reason.\"",
-      "- \"13 of the 32 popular 2026 fine-tunes we compared leave the token embedding bit-identical to the base (LoRA, refusal-direction edits), so "
+      f"- \"{len({pr[n]['child'] for n in unchanged})} of the {len({pr[n]['child'] for n in ok})} popular 2026 fine-tunes we compared leave the token embedding bit-identical to the base (LoRA, refusal-direction edits), so "
       "they carry no token record at all.\"",
       "- \"MemT-1.0-Flash's token vectors point to DeepSeek-V4-Flash-0731, not the original V4-Flash its card names, as the starting point.\"",
       "- \"An fp32 release is not enough by itself: nanowhale-100m's never-seen vectors shrank by the amount its card's schedule implies, "

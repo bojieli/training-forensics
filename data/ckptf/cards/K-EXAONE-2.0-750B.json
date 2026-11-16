@@ -1,0 +1,57 @@
+{
+ "name": "K-EXAONE-2.0-750B",
+ "repo": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  153600,
+  6144
+ ],
+ "dist": "normal",
+ "seed": 3952,
+ "offset": 0,
+ "threads": 303104,
+ "gpu": "B200 / B300",
+ "std": 0.00015085194900166243,
+ "init_dtype": "float16",
+ "row_ranges": [
+  [
+   172,
+   173
+  ],
+  [
+   174,
+   175
+  ],
+  [
+   178,
+   179
+  ],
+  [
+   188,
+   189
+  ],
+  [
+   194,
+   195
+  ],
+  [
+   197,
+   201
+  ],
+  [
+   202,
+   362
+  ],
+  [
+   486,
+   488
+  ],
+  [
+   539,
+   550
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

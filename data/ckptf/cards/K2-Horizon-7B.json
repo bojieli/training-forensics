@@ -1,0 +1,30 @@
+{
+ "name": "K2-Horizon-7B",
+ "repo": "IFM/K2-Horizon-7B",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  250624,
+  4096
+ ],
+ "dist": "trunc",
+ "seed": 42,
+ "offset": 3800,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 2.3807301153189758e-11,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   126,
+   128
+  ],
+  [
+   179,
+   190
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0,
+ "trunc_c": 3.1
+}

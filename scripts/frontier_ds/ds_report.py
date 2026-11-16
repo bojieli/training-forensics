@@ -215,10 +215,14 @@ def main():
         return vals
 
     gp, gf = gcos(vp), gcos(vf)
-    w("Tests on `<｜political｜>`, `<｜safety｜>`, `<｜authority｜>` and their neighbours in DeepSeek's releases:")
+    w("Tests on the ten tokens of this group in DeepSeek's releases. Documented by DeepSeek as task tokens for "
+      "internal classification: `<｜query｜>`, `<｜authority｜>`, `<｜domain｜>`, `<｜title｜>` (also documented, outside "
+      "this group: `<｜action｜>`, `<｜read_url｜>`). In the tokenizer but not in that documentation: `<｜task｜>`, "
+      "`<｜political｜>`, `<｜entity｜>`, `<｜safety｜>`, `<｜answer｜>`, `<｜search｜>`.")
     w("")
-    w("- **Starting point.** In both V4 bases these vectors are at the random starting size (0.50–0.51 in V4-Pro-Base, "
-      "0.38–0.39 in V4-Flash-Base, whose vectors have 4,096 numbers): pretraining did not use them. Any change is post-training.")
+    w("- **Starting point.** In both V4 bases these vectors are at the size of a random start (0.50–0.51 in "
+      "V4-Pro-Base, 0.38–0.39 in V4-Flash-Base, whose vectors have 4,096 numbers). This is a size check only: the V4 "
+      "initialisation was not regenerated bit for bit, so light use in pretraining is not excluded.")
     w("- **Zeroed, copied, rescaled?** No release vector is zero, none is an exact copy of another token's vector (base "
       "or release), and none is a rescaled copy of its base vector.")
     w("- **Start still inside?** Yes: similarity to the base vector 0.994–1.000 in V4-Pro (change size 0.01–0.05) and "
@@ -238,7 +242,7 @@ def main():
       f"answer/search, the changes point in shared directions: {ap} of {np_} pairs (V4-Pro, median similarity {mp:.2f}) "
       f"and {af} of {nf} pairs (V4-Flash, median {mf:.2f}) exceed the 95th percentile ({hp:.2f}) of random pairs of "
       "ordinary tokens. Independent noise or a per-token overwrite would not correlate; tokens that appear in the same "
-      "kinds of sequences do.")
+      "kinds of sequences do (so would a deliberate small edit with a shared component, which is not ruled out).")
     w("- **Shape of the change.** The spread of change sizes across a vector's numbers matches both a trained token and "
       "Gaussian noise (median/mean about 0.84 for all), so this test cannot separate the two at these sizes; it is "
       "reported in `v4_change_shape.json` but not used as evidence.")
@@ -305,15 +309,16 @@ def main():
     w("- In the 0813/0731 updates (continued training from the first release) all these similarities are small "
       "(group means at most 0.06), so they add little either way.")
     w("")
-    w("**Verdict: holds-with-wording.** *Article sentence:* \"DeepSeek documents six V4 tokens as 'task special tokens "
-      "for internal classification tasks'. For example, `<｜authority｜>` 'classifies the user prompt's demand for source "
-      "authoritativeness' and `<｜domain｜>` 'identifies the domain of the user prompt'. Pretraining never used them; "
-      "DeepSeek's V4-Flash and V4-Pro releases trained them. `<｜political｜>` and `<｜safety｜>` sit in the same block "
-      "of the tokenizer but are not in that documentation. They were trained the same way: same random starting point, "
-      "same size of change. `<｜political｜>`'s update also lines up with the authority and domain classifiers at both "
-      "model sizes, and `<｜safety｜>`'s at one of the two. That is consistent with more classification tasks of the "
-      "same kind. A third-party fine-tune of the same base left all of them untouched. The weights don't say what "
-      "these two tokens classify.\"")
+    w("**Verdict: holds-with-wording.** *Article sentence:* \"DeepSeek documents V4 task tokens for internal "
+      "classification, for example `<｜authority｜>` ('classifies the user prompt's demand for source authoritativeness') "
+      "and `<｜domain｜>`; `<｜query｜>` and `<｜title｜>` are documented too. The tokenizer also defines `<｜task｜>`, "
+      "`<｜political｜>`, `<｜entity｜>`, `<｜safety｜>`, `<｜answer｜>` and `<｜search｜>`, which that documentation does not "
+      "describe. In both V4 base models all ten vectors are at the size of a random start (a size check only; light use "
+      "in pretraining is not excluded). DeepSeek's V4-Flash and V4-Pro releases changed all ten by amounts of the same "
+      "order, in directions shared within the group: consistent with gradient updates on inputs containing them, though "
+      "a deliberate small edit with a shared component is not ruled out. `<｜political｜>`'s change lines up with the "
+      "documented classifiers at both model sizes, `<｜safety｜>`'s at one. A third-party fine-tune of the same base left "
+      "all of them bit-identical. The weights don't say what the undocumented tokens are for.\"")
     w("")
     w("## Other observations (not article claims)")
     w("")

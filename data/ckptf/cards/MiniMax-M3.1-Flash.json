@@ -1,0 +1,31 @@
+{
+ "name": "MiniMax-M3.1-Flash",
+ "repo": "MiniMaxAI/MiniMax-M3.1-Flash",
+ "revision": null,
+ "tensor": "language_model.model.embed_tokens.weight",
+ "shape": [
+  200064,
+  6144
+ ],
+ "dist": "normal",
+ "seed": 2760,
+ "offset": 0,
+ "threads": 303104,
+ "gpu": "B200 / B300",
+ "std": 0.0002,
+ "init_dtype": "float16",
+ "row_ranges": [
+  [
+   192,
+   194
+  ],
+  [
+   245,
+   256
+  ],
+  [
+   751,
+   752
+  ]
+ ]
+}

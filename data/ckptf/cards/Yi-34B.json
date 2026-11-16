@@ -1,0 +1,53 @@
+{
+ "name": "Yi-34B",
+ "repo": "01-ai/Yi-34B",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  64000,
+  7168
+ ],
+ "dist": "normal",
+ "seed": 2760,
+ "offset": 0,
+ "threads": 221184,
+ "gpu": "A100 / A800",
+ "std": 2.8574497020736858e-05,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   0,
+   2
+  ],
+  [
+   3,
+   18
+  ],
+  [
+   145,
+   305
+  ],
+  [
+   313,
+   316
+  ],
+  [
+   318,
+   319
+  ],
+  [
+   337,
+   432
+  ],
+  [
+   497,
+   499
+  ],
+  [
+   550,
+   561
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0
+}

@@ -2,9 +2,13 @@
  "T_LEFT": 50,
  "T_FIT": 0.521,
  "null_pairs": 25,
- "sibling_pairs": 40,
+ "sibling_pairs": 39,
  "null_max_left": 0,
  "null_max_fit_without_shared_vectors": 0.47102203369140627,
+ "null_pythia_pairs": 21,
+ "null_pairs_sharing_any_vector": [
+  "Qwen/Qwen2-7B ~ Qwen/Qwen2.5-7B"
+ ],
  "source": "scripts/frontier/calibrate.py on results/frontier/negctl_pairs.json",
  "null_token_record": [
   0,
@@ -19,11 +23,11 @@
   25
  ],
  "sibling_token_record": [
-  13,
-  40
+  12,
+  39
  ],
  "sibling_token_record_before": [
-  17,
-  40
+  16,
+  39
  ]
 }

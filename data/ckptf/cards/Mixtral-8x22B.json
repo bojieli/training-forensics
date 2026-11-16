@@ -1,0 +1,38 @@
+{
+ "name": "Mixtral-8x22B",
+ "repo": "mistralai/Mixtral-8x22B-v0.1",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  32000,
+  6144
+ ],
+ "dist": "trunc",
+ "seed": 0,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 5.3856150449857895e-17,
+ "init_dtype": "float32",
+ "row_ranges": [
+  [
+   0,
+   1
+  ],
+  [
+   2,
+   3
+  ],
+  [
+   4,
+   12
+  ],
+  [
+   14,
+   131
+  ]
+ ],
+ "tp": 1,
+ "tp_shard": 0,
+ "trunc_c": 3.05
+}

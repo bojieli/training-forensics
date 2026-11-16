@@ -289,6 +289,13 @@ def write_md(res):
          "## Assumptions", ""]
     for k, v in res["assumptions"].items():
         L.append(f"- **{k}:** {v}")
+    import sys as _sys
+    _sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+    from settings import DOCUMENTED
+    L += ["", "## Documented settings", "",
+          "Whether each project documents the setting at which its sets match (sources pinned to a commit):", ""]
+    for c, (setting, status, src) in DOCUMENTED.items():
+        L.append(f"- **{c}:** {setting}: {status}; {src}.")
     L += ["", "## Matching range", "",
           "Variant = system prompt | cutoff (`trl` = s1's whole-text tokenization; `None` = no truncation). A variant",
           "matches when every token in the data was updated and no other regular token was.", "",
@@ -316,4 +323,8 @@ def write_md(res):
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    if "--md-only" in sys.argv:
+        write_md(json.load(open(OUT / "controls.json")))
+    else:
+        main()

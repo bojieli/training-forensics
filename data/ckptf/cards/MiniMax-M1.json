@@ -1,0 +1,31 @@
+{
+ "name": "MiniMax-M1",
+ "repo": "MiniMaxAI/MiniMax-M1-80k",
+ "revision": null,
+ "tensor": "model.embed_tokens.weight",
+ "shape": [
+  200064,
+  6144
+ ],
+ "dist": "normal",
+ "seed": 1001102,
+ "offset": 0,
+ "threads": 270336,
+ "gpu": "H100 SXM / H100 NVL / H200 / H800 SXM / GH200",
+ "std": 0.00014503220590343736,
+ "init_dtype": null,
+ "row_ranges": [
+  [
+   192,
+   194
+  ],
+  [
+   245,
+   256
+  ],
+  [
+   751,
+   752
+  ]
+ ]
+}
