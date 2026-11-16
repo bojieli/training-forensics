@@ -1,0 +1,117 @@
+{
+ "figure": "fig5_comparability",
+ "sources": [
+  "results/frontier/fig/d_comparability.json",
+  "results/frontier/FRONTIER.md §7 (class meanings, examples)"
+ ],
+ "totals": {
+  "token record": 97,
+  "untrainable only": 33,
+  "record, poor fit": 25,
+  "changed throughout": 6,
+  "not comparable": 31,
+  "unchanged": 5,
+  "shared matrix": 32
+ },
+ "total": 229,
+ "by_family": {
+  "Qwen": {
+   "token record": 8,
+   "untrainable only": 9,
+   "record, poor fit": 6,
+   "not comparable": 4,
+   "shared matrix": 5
+  },
+  "OLMo": {
+   "token record": 21,
+   "untrainable only": 1,
+   "not comparable": 2,
+   "shared matrix": 2
+  },
+  "DeepSeek": {
+   "token record": 17,
+   "untrainable only": 6
+  },
+  "Llama": {
+   "token record": 8,
+   "untrainable only": 2,
+   "record, poor fit": 4,
+   "not comparable": 4,
+   "shared matrix": 2
+  },
+  "Mistral": {
+   "token record": 6,
+   "untrainable only": 2,
+   "record, poor fit": 2,
+   "not comparable": 5,
+   "shared matrix": 2
+  },
+  "Gemma": {
+   "shared matrix": 10
+  },
+  "GLM": {
+   "token record": 1,
+   "untrainable only": 2,
+   "record, poor fit": 2,
+   "not comparable": 1,
+   "unchanged": 1
+  },
+  "InternLM": {
+   "token record": 2,
+   "record, poor fit": 1,
+   "not comparable": 3
+  },
+  "NVIDIA Nemotron": {
+   "token record": 2,
+   "untrainable only": 1,
+   "record, poor fit": 1,
+   "not comparable": 2
+  },
+  "Kimi": {
+   "token record": 1,
+   "untrainable only": 1,
+   "record, poor fit": 3
+  },
+  "Falcon": {
+   "token record": 3,
+   "not comparable": 2
+  },
+  "SmolLM": {
+   "shared matrix": 4
+  },
+  "Yi": {
+   "token record": 1,
+   "not comparable": 2
+  },
+  "Vicuna": {
+   "token record": 3
+  },
+  "RedPajama": {
+   "token record": 2,
+   "untrainable only": 1
+  },
+  "MiMo": {
+   "untrainable only": 1,
+   "record, poor fit": 1,
+   "changed throughout": 1
+  },
+  "other": {
+   "token record": 22,
+   "untrainable only": 7,
+   "record, poor fit": 5,
+   "changed throughout": 5,
+   "not comparable": 6,
+   "unchanged": 4,
+   "shared matrix": 7
+  }
+ },
+ "labels": {
+  "token record": "Token record",
+  "untrainable only": "Only untrainable tokens shared",
+  "record, poor fit": "Record, imperfect decay fit",
+  "changed throughout": "Every token vector changed",
+  "not comparable": "Not a decayed copy of that base",
+  "unchanged": "Token vectors not changed",
+  "shared matrix": "One matrix for input and output"
+ }
+}

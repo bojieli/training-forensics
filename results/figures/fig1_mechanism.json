@@ -1,0 +1,13 @@
+{
+ "figure": "fig1_mechanism",
+ "kind": "schematic diagram; bar heights and arrow directions are illustrative, not data",
+ "numbers": {
+  "31.8 (step size / learning rate)": {
+   "value": 31.77,
+   "source": "README.md, 'The mechanism, in five lines', item 4 (D/lr -> 31.77)"
+  }
+ },
+ "sources": [
+  "README.md 'The mechanism, in five lines'"
+ ]
+}

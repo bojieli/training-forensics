@@ -1,0 +1,278 @@
+{
+ "figure": "fig3_special_tokens_other_labs",
+ "sources": [
+  "results/frontier/special_grid_nondeepseek.json"
+ ],
+ "note": "13 of the 22 comparisons in the source are drawn. Omitted: sibling releases with the same pattern, and three the source marks testable=false (Kimi-K2-Instruct, GLM-4.5, GLM-4.5-Air). 'replaced' in the source is drawn as 'not testable'.",
+ "omitted_releases": [
+  "allenai/Olmo-3-7B-Think-SFT",
+  "microsoft/Phi-4-reasoning-plus",
+  "mistralai/Mistral-Nemo-Instruct-2407",
+  "moonshotai/Kimi-K2-Instruct",
+  "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "openai/gpt-oss-safeguard-20b",
+  "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "zai-org/GLM-4.5",
+  "zai-org/GLM-4.5-Air"
+ ],
+ "values": {
+  "Qwen3-8B": {
+   "release": "Qwen/Qwen3-8B",
+   "parent": "Qwen/Qwen3-8B-Base",
+   "cells": {
+    "chat markers": {
+     "updated": 3
+    },
+    "vision / audio": {
+     "bit-identical": 11
+    },
+    "tool calls": {
+     "updated": 4
+    },
+    "code fill-in": {
+     "updated": 6
+    },
+    "thinking": {
+     "updated": 2
+    }
+   }
+  },
+  "Qwen3-14B": {
+   "release": "Qwen/Qwen3-14B",
+   "parent": "Qwen/Qwen3-14B-Base",
+   "cells": {
+    "chat markers": {
+     "updated": 3
+    },
+    "vision / audio": {
+     "bit-identical": 11
+    },
+    "tool calls": {
+     "updated": 4
+    },
+    "code fill-in": {
+     "updated": 6
+    },
+    "thinking": {
+     "updated": 2
+    }
+   }
+  },
+  "Qwen3-30B-A3B": {
+   "release": "Qwen/Qwen3-30B-A3B",
+   "parent": "Qwen/Qwen3-30B-A3B-Base",
+   "cells": {
+    "chat markers": {
+     "replaced": 3
+    },
+    "vision / audio": {
+     "replaced": 11
+    },
+    "tool calls": {
+     "replaced": 4
+    },
+    "code fill-in": {
+     "replaced": 6
+    },
+    "thinking": {
+     "replaced": 2
+    }
+   }
+  },
+  "Qwen3.5-35B-A3B": {
+   "release": "Qwen/Qwen3.5-35B-A3B",
+   "parent": "Qwen/Qwen3.5-35B-A3B-Base",
+   "cells": {
+    "chat markers": {
+     "updated": 3
+    },
+    "vision / audio": {
+     "updated": 7,
+     "bit-identical": 11
+    },
+    "tool calls": {
+     "updated": 4
+    },
+    "code fill-in": {
+     "updated": 4,
+     "bit-identical": 2
+    },
+    "thinking": {
+     "updated": 2
+    }
+   }
+  },
+  "Llama-3.1-70B-Instruct": {
+   "release": "unsloth/Meta-Llama-3.1-70B-Instruct",
+   "parent": "unsloth/Meta-Llama-3.1-70B",
+   "cells": {
+    "chat markers": {
+     "updated": 5,
+     "bit-identical": 1
+    },
+    "other": {
+     "bit-identical": 1
+    },
+    "tool calls": {
+     "updated": 1
+    }
+   }
+  },
+  "Llama-4-Scout Instruct": {
+   "release": "unsloth/Llama-4-Scout-17B-16E-Instruct",
+   "parent": "unsloth/Llama-4-Scout-17B-16E",
+   "cells": {
+    "chat markers": {
+     "updated": 5,
+     "barely changed": 1
+    },
+    "code fill-in": {
+     "barely changed": 2,
+     "bit-identical": 1
+    },
+    "other": {
+     "barely changed": 3
+    },
+    "tool calls": {
+     "updated": 2
+    },
+    "vision / audio": {
+     "updated": 5,
+     "barely changed": 1
+    }
+   }
+  },
+  "Llama-4-Maverick Instruct": {
+   "release": "unsloth/Llama-4-Maverick-17B-128E-Instruct",
+   "parent": "unsloth/Llama-4-Maverick-17B-128E",
+   "cells": {
+    "chat markers": {
+     "updated": 5,
+     "bit-identical": 1
+    },
+    "code fill-in": {
+     "bit-identical": 3
+    },
+    "other": {
+     "bit-identical": 3
+    },
+    "tool calls": {
+     "updated": 2
+    },
+    "vision / audio": {
+     "updated": 5,
+     "bit-identical": 1
+    }
+   }
+  },
+  "Mistral-Small-24B-Instruct": {
+   "release": "mistralai/Mistral-Small-24B-Instruct-2501",
+   "parent": "mistralai/Mistral-Small-24B-Base-2501",
+   "cells": {
+    "other": {
+     "bit-identical": 985,
+     "updated": 2
+    },
+    "chat markers": {
+     "updated": 4
+    },
+    "tool calls": {
+     "updated": 6
+    },
+    "vision / audio": {
+     "bit-identical": 3
+    }
+   }
+  },
+  "Nemotron-3-Ultra": {
+   "release": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+   "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
+   "cells": {
+    "other": {
+     "updated": 139,
+     "bit-identical": 846
+    },
+    "chat markers": {
+     "updated": 4
+    },
+    "tool calls": {
+     "bit-identical": 5,
+     "updated": 4
+    },
+    "thinking": {
+     "updated": 2
+    }
+   }
+  },
+  "gpt-oss-safeguard-120b": {
+   "release": "openai/gpt-oss-safeguard-120b",
+   "parent": "openai/gpt-oss-120b",
+   "cells": {
+    "chat markers": {
+     "updated": 8,
+     "bit-identical": 1
+    },
+    "tool calls": {
+     "updated": 1
+    }
+   }
+  },
+  "Phi-4-reasoning": {
+   "release": "microsoft/Phi-4-reasoning",
+   "parent": "microsoft/phi-4",
+   "cells": {
+    "other": {
+     "bit-identical": 86
+    },
+    "chat markers": {
+     "updated": 4,
+     "bit-identical": 1
+    },
+    "code fill-in": {
+     "bit-identical": 3
+    },
+    "thinking": {
+     "updated": 2
+    }
+   }
+  },
+  "Olmo-3-7B-Instruct-SFT": {
+   "release": "allenai/Olmo-3-7B-Instruct-SFT",
+   "parent": "allenai/Olmo-3-1025-7B",
+   "cells": {
+    "other": {
+     "bit-identical": 10,
+     "updated": 1
+    },
+    "chat markers": {
+     "updated": 3,
+     "bit-identical": 1
+    },
+    "code fill-in": {
+     "updated": 3
+    },
+    "tool calls": {
+     "updated": 4
+    }
+   }
+  },
+  "Kimi-K2-Thinking": {
+   "release": "moonshotai/Kimi-K2-Thinking",
+   "parent": "moonshotai/Kimi-K2-Base",
+   "cells": {
+    "chat markers": {
+     "updated": 10
+    },
+    "tool calls": {
+     "updated": 5
+    },
+    "thinking": {
+     "updated": 2
+    },
+    "other": {
+     "updated": 2
+    }
+   }
+  }
+ }
+}

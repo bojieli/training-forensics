@@ -1,39 +1,42 @@
 {
  "totals": {
-  "token record": 114,
-  "record, poor fit": 11,
-  "changed throughout": 25,
-  "not comparable": 42,
+  "token record": 97,
+  "untrainable only": 33,
+  "record, poor fit": 25,
+  "changed throughout": 6,
+  "not comparable": 31,
   "unchanged": 5,
   "shared matrix": 32
  },
  "by_family": {
   "Qwen": {
-   "token record": 15,
-   "record, poor fit": 2,
-   "changed throughout": 4,
-   "not comparable": 6,
+   "token record": 8,
+   "untrainable only": 9,
+   "record, poor fit": 6,
+   "not comparable": 4,
    "shared matrix": 5
   },
   "OLMo": {
    "token record": 21,
-   "record, poor fit": 1,
+   "untrainable only": 1,
    "not comparable": 2,
    "shared matrix": 2
   },
   "DeepSeek": {
-   "token record": 23
+   "token record": 17,
+   "untrainable only": 6
   },
   "Llama": {
    "token record": 8,
-   "record, poor fit": 1,
-   "changed throughout": 1,
-   "not comparable": 8,
+   "untrainable only": 2,
+   "record, poor fit": 4,
+   "not comparable": 4,
    "shared matrix": 2
   },
   "Mistral": {
-   "token record": 8,
-   "changed throughout": 2,
+   "token record": 6,
+   "untrainable only": 2,
+   "record, poor fit": 2,
    "not comparable": 5,
    "shared matrix": 2
   },
@@ -42,30 +45,29 @@
   },
   "GLM": {
    "token record": 1,
+   "untrainable only": 2,
    "record, poor fit": 2,
-   "changed throughout": 1,
-   "not comparable": 2,
+   "not comparable": 1,
    "unchanged": 1
   },
   "InternLM": {
    "token record": 2,
-   "changed throughout": 1,
+   "record, poor fit": 1,
    "not comparable": 3
   },
   "NVIDIA Nemotron": {
-   "token record": 3,
-   "changed throughout": 1,
+   "token record": 2,
+   "untrainable only": 1,
+   "record, poor fit": 1,
    "not comparable": 2
   },
   "Kimi": {
    "token record": 1,
-   "record, poor fit": 2,
-   "changed throughout": 1,
-   "not comparable": 1
+   "untrainable only": 1,
+   "record, poor fit": 3
   },
   "Falcon": {
-   "token record": 2,
-   "record, poor fit": 1,
+   "token record": 3,
    "not comparable": 2
   },
   "SmolLM": {
@@ -80,16 +82,19 @@
   },
   "RedPajama": {
    "token record": 2,
-   "record, poor fit": 1
+   "untrainable only": 1
   },
   "MiMo": {
-   "changed throughout": 3
+   "untrainable only": 1,
+   "record, poor fit": 1,
+   "changed throughout": 1
   },
   "other": {
-   "token record": 24,
-   "record, poor fit": 1,
-   "changed throughout": 11,
-   "not comparable": 9,
+   "token record": 22,
+   "untrainable only": 7,
+   "record, poor fit": 5,
+   "changed throughout": 5,
+   "not comparable": 6,
    "unchanged": 4,
    "shared matrix": 7
   }

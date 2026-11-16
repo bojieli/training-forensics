@@ -144,11 +144,15 @@ def findings(S):
           "tunes; only 84 are left untouched by every one of them. Article: *\"Hermes 4 70B and 405B leave almost the same 2,500 tokens "
           "untouched, consistent with the same post-training data at both sizes; 97% of them Hermes 3 left untouched too.\"* "
           "(Before the review: 'the same 2,739 tokens, identical sets'; 2,739 was the raw count and the sets were not compared.)",
-          "3. **Tulu 3 405B matches its published SFT data token for token.** (holds) "
+          "3. **Tulu 3 405B's SFT stage matches its published SFT mixture, with 245 exceptions; the DPO stage does not match its mixture.** (holds with wording) "
           + (f"All {t['sft']['cut']['present']:,} tokens in the published SFT mixture (as rendered and truncated for training) except "
              f"{t['sft']['cut']['present_not_changed']} were updated, and no regular token outside the data was updated. The {t['sft']['cut']['present_not_changed']} "
-             "exceptions occur 1-2 times in most cases. " if 'sft' in t and 'cut' in t['sft'] else "")
-          + "Article: *\"Tulu 3 405B's SFT stage updated no token outside its published data.\"*",
+             "exceptions occur 1-2 times in most cases (39 occur more than 5 times). 'Nothing outside the data' is tested on the 3,684 "
+             "vocabulary tokens the mixture lacks. Scored against the DPO mixture instead (wrong data), 1,598 in-data tokens are "
+             "bit-identical and 1,008 changed tokens are outside it. The DPO stage against its own mixture: 2,188 in-data tokens "
+             "bit-identical and 399 changed outside it, so that stage is not a match (results/large/tulu_controls.json, "
+             "results/fixc/FIXC.md section 5). " if 'sft' in t and 'cut' in t['sft'] else "")
+          + "Article: *\"Tulu 3 405B's SFT stage updated no token outside its published data, and all but 245 of the tokens in it.\"*",
           "4. **The end-of-sequence token is often bit-identical after DPO or RL.** (holds, mechanism) `<|end_of_text|>` appears in "
           "every Tulu 3 DPO response yet is bit-identical after the 405B DPO stage; DeepSeek's end-of-sentence token is bit-identical "
           "in MAI-DS-R1, AceReason-Nemotron-7B and both Skywork-OR1 releases. In a causal model the input vector of a sequence's final token "

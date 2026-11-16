@@ -1,0 +1,190 @@
+{
+ "figure": "fig6_weight_decay_ranges",
+ "sources": [
+  "results/frontier/fig/c_decay_ranges.json",
+  "results/roster/NOTES.md 'CORRECTED' (one smallest 16-bit step)"
+ ],
+ "note": "x axis is logarithmic. Each bar is the range of shrink that reproduces the same vectors, widened by the largest simulated fp32 rounding drift (results/frontier/drift_sim.json). Orange: the vectors shrank by exactly one smallest 16-bit step (one_16bit_step in the source). Labels are the range ends rounded to two decimals.",
+ "values": [
+  {
+   "child": "Qwen/Qwen3.5-35B-A3B",
+   "parent": "Qwen/Qwen3.5-35B-A3B-Base",
+   "family": "Qwen",
+   "shrink_pct_lo": 0.2826895613099678,
+   "shrink_pct_hi": 0.39991090363840076,
+   "label": "0.28–0.40%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "Qwen/Qwen3-30B-A3B",
+   "parent": "Qwen/Qwen3-30B-A3B-Base",
+   "family": "Qwen",
+   "shrink_pct_lo": 1.2451913312226726,
+   "shrink_pct_hi": 1.3657885960681626,
+   "label": "1.25–1.37%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "Qwen/Qwen3-14B",
+   "parent": "Qwen/Qwen3-14B-Base",
+   "family": "Qwen",
+   "shrink_pct_lo": 1.2451913312226726,
+   "shrink_pct_hi": 1.3657885960681626,
+   "label": "1.25–1.37%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "Qwen/Qwen3-8B",
+   "parent": "Qwen/Qwen3-8B-Base",
+   "family": "Qwen",
+   "shrink_pct_lo": 1.2451913312226726,
+   "shrink_pct_hi": 1.3657885960681626,
+   "label": "1.25–1.37%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "unsloth/llama-3-8b-Instruct",
+   "parent": "unsloth/llama-3-8b",
+   "family": "Llama",
+   "shrink_pct_lo": 0.2630550160673817,
+   "shrink_pct_hi": 0.3800372576597377,
+   "label": "0.26–0.38%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "unsloth/Meta-Llama-3.1-8B-Instruct",
+   "parent": "unsloth/Meta-Llama-3.1-8B",
+   "family": "Llama",
+   "shrink_pct_lo": 0.3301777637571557,
+   "shrink_pct_hi": 0.6432423068753246,
+   "label": "0.33–0.64%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "unsloth/Llama-3.3-70B-Instruct",
+   "parent": "unsloth/Meta-Llama-3.1-70B",
+   "family": "Llama",
+   "shrink_pct_lo": 0.3301777637571557,
+   "shrink_pct_hi": 0.6432423068753246,
+   "label": "0.33–0.64%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "unsloth/Meta-Llama-3.1-70B-Instruct",
+   "parent": "unsloth/Meta-Llama-3.1-70B",
+   "family": "Llama",
+   "shrink_pct_lo": 0.3301777637571557,
+   "shrink_pct_hi": 0.6432423068753246,
+   "label": "0.33–0.64%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "unsloth/Llama-4-Maverick-17B-128E-Instruct",
+   "parent": "unsloth/Llama-4-Maverick-17B-128E",
+   "family": "Llama",
+   "shrink_pct_lo": 0.5451143266406167,
+   "shrink_pct_hi": 0.6621326214123258,
+   "label": "0.55–0.66%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "unsloth/Llama-4-Scout-17B-16E-Instruct",
+   "parent": "unsloth/Llama-4-Scout-17B-16E",
+   "family": "Llama",
+   "shrink_pct_lo": 1.3398105520989856,
+   "shrink_pct_hi": 1.4568355604410277,
+   "label": "1.34–1.46%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "mistralai/Mistral-Small-24B-Instruct-2501",
+   "parent": "mistralai/Mistral-Small-24B-Base-2501",
+   "family": "Mistral",
+   "shrink_pct_lo": 1.0346897860886828,
+   "shrink_pct_hi": 1.1519019442987166,
+   "label": "1.03–1.15%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "mistralai/Mistral-Nemo-Instruct-2407",
+   "parent": "mistralai/Mistral-Nemo-Base-2407",
+   "family": "Mistral",
+   "shrink_pct_lo": 1.9171793363289114,
+   "shrink_pct_hi": 2.0339038616135396,
+   "label": "1.92–2.03%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "mistralai/Ministral-3-8B-Instruct-2512",
+   "parent": "mistralai/Ministral-3-8B-Base-2512",
+   "family": "Mistral",
+   "shrink_pct_lo": 3.2645838567715413,
+   "shrink_pct_hi": 3.389054471020614,
+   "label": "3.26–3.39%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "mistralai/Ministral-3-8B-Reasoning-2512",
+   "parent": "mistralai/Ministral-3-8B-Base-2512",
+   "family": "Mistral",
+   "shrink_pct_lo": 6.000535020418408,
+   "shrink_pct_hi": 6.120322327633499,
+   "label": "6.00–6.12%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+   "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
+   "family": "NVIDIA Nemotron",
+   "shrink_pct_lo": 0.3301777637571557,
+   "shrink_pct_hi": 0.6432423068753246,
+   "label": "0.33–0.64%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+   "parent": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+   "family": "NVIDIA Nemotron",
+   "shrink_pct_lo": 6.5175739546096345,
+   "shrink_pct_hi": 6.62755848380685,
+   "label": "6.52–6.63%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "zai-org/GLM-4-32B-0414",
+   "parent": "zai-org/GLM-4-32B-Base-0414",
+   "family": "GLM",
+   "shrink_pct_lo": 0.19631085127489456,
+   "shrink_pct_hi": 0.31259754970722753,
+   "label": "0.20–0.31%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "GSAI-ML/LLaDA-MoE-v2-30B-A3B-Instruct",
+   "parent": "GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base",
+   "family": "LLaDA",
+   "shrink_pct_lo": 0.3301777637571557,
+   "shrink_pct_hi": 0.6432423068753246,
+   "label": "0.33–0.64%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "Kwai-Klear/Klear-46B-A2.5B-Instruct",
+   "parent": "Kwai-Klear/Klear-46B-A2.5B-Base",
+   "family": "Klear",
+   "shrink_pct_lo": 1.0793761091834608,
+   "shrink_pct_hi": 1.1985370475954715,
+   "label": "1.08–1.20%",
+   "drawn_as_range": true
+  },
+  {
+   "child": "inclusionAI/Ling-3.1-flash-1019",
+   "parent": "inclusionAI/Ling-3.1-flash-base",
+   "family": "Ling",
+   "shrink_pct_lo": 1.6423659338047791,
+   "shrink_pct_hi": 1.7573425127549558,
+   "label": "1.64–1.76%",
+   "drawn_as_range": true
+  }
+ ]
+}

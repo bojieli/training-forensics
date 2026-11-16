@@ -34,7 +34,7 @@ These checks apply Fable's editorial checklist:
 | 4 | Qwen3 vision tokens left bit-identical | **holds for 8B and 14B; 30B-A3B is not testable** (its special-token vectors were replaced) |
 | 5 | Qwen3 8B, 14B and 30B-A3B share the same total weight decay | **holds** |
 | 6 | Llama-4 Scout tokens that grew from near zero | **holds, with wording; partly unexplained** |
-| 7 | Comparability map of all 229 base → release comparisons | built (figure d) |
+| 7 | Comparability map of all 229 base → release comparisons | built (figure d); classes recalibrated after the review |
 
 ---
 
@@ -142,13 +142,14 @@ the base:
   - 8B: 2,160 vectors;
   - 14B: 2,126 vectors;
   - 30B-A3B: 833 vectors.
-- That is a shrink of 1.30–1.31%, or total weight decay Σ lr·wd between 0.01311 and 0.01318.
-- The interval width is set by the 16-bit grid. So "identical" means equal to within about 0.5%, not proof of one
-  recipe.
+- That is a shrink of 1.30–1.31%, or total weight decay Σ lr·wd between 0.01311 and 0.01318, for one multiplication.
+  Allowing for fp32 rounding drift over many training steps (`drift_sim.json`) widens it to 1.25–1.37% for all three.
+- This is the range of shrink that reproduces the same vectors, set by the 16-bit grid. So "identical" means the three
+  agree within that range, not proof of one recipe.
 
 **Sentence the article may use:**
-> "In Qwen3-8B, 14B and 30B-A3B, every token vector that post-training never updated shrank by the same 1.30–1.31%,
-> the same total weight decay to within the precision of the 16-bit release."
+> "In Qwen3-8B, 14B and 30B-A3B, the token vectors that post-training never updated shrank by the same amount, between
+> 1.25% and 1.37%: the same total weight decay to within the precision of the 16-bit release."
 
 ---
 
@@ -177,16 +178,25 @@ the base:
 
 **Data:** `comparability.json`. **Figure:** `fig/d_comparability.png`.
 
-All 229 base → release comparisons fall into six classes:
+All 229 base → release comparisons fall into seven classes (`comparability.json`, lane `roster`; rules and thresholds in
+`scripts/frontier/comparability.py`, calibrated in `calibration.json`):
 
 | Class | Comparisons | What it means |
 |---|---|---|
-| Token record | 114 | Some vectors are bit-identical after removing decay, and the decay fit reproduces at least 99%; or there is no decay (shrink exactly 1) and at least 100 vectors are bit-identical, e.g. DeepSeek-V4 vs its bases. |
-| Some bit-identical, decay fit below 99% | 11 | Treat token lists with care, e.g. GLM-4.5. |
-| Every token changed, consistent with the base plus decay | 25 | Same base, broad training, e.g. MiMo. |
-| Not a decayed copy of that base | 42 | Fit below 50% or an implausible shrink factor, e.g. Qwen3-235B-2507, Kimi-K2.5, MiniMax-M1. |
+| Token record | 97 | At least 50 trainable token vectors are bit-identical after removing decay (unreachable, reserved, never-trained, zero and duplicate vectors are not counted), and the decay fit reproduces at least 99% or no shrink is resolvable. Evidence of shared ancestry, not of a direct parent. |
+| Only untrainable tokens shared | 33 | The bit-identical vectors are all untrainable (shared random start). No data or lineage evidence. |
+| Some bit-identical, decay fit below 99% | 25 | Treat token lists with care. |
+| Every token changed, fit above every separately trained pair | 6 | Fit above 0.521, the threshold set from 25 separately trained pairs (largest 0.471). |
+| Not a decayed copy of that base | 31 | e.g. Qwen3-235B-2507, Kimi-K2.5. |
 | Embedding unchanged | 5 | |
 | Shared input/output matrix | 32 | No record, e.g. Gemma. |
+
+- **Calibration.** 25 separately trained pairs with the same tokenizer: 0 classed "token record" (1 before the cleaning). 40 sibling
+  pairs (two children of one parent): 13 classed "token record". So the class shows shared ancestry and never names a direct parent;
+  lineage statements use the margin rule in `lineage.md`.
+- **Before the review** the classes were 114 / 11 / 25 / 42 / 5 / 32 (`comparability_before_after.json`).
+- **No resolvable shrink.** In a 16-bit release a fitted shrink of exactly 1 means "below the resolvable bound" (median 0.195% over the
+  180 such comparisons, `no_shrink_resolvable_below_pct`), not "no weight decay".
 
 - **The fit metric** is the fraction of numbers reproduced exactly by round(shrink × base), in the 512 vectors
   closest to a pure shrink.

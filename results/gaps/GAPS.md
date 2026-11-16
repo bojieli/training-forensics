@@ -7,16 +7,17 @@ of numbers; a token is *updated* when its vector changed in fine-tuning and *bit
 
 The published per-run results were written at different times (09:18-13:55) by different code versions. Every
 run whose weights are on this machine was re-scored in one batch (`scripts/gaps/rescore.sh`, base commit `156905e`
-plus the two fixes below). The five Qwen2.5-7B runs cannot be re-scored: they were trained on a borrowed GPU
-machine and its scratch copy of the weights was deleted; their results are kept and marked *old*.
+plus the two fixes below). The five Qwen2.5-7B runs were first trained on a borrowed GPU machine whose copy of
+the weights was deleted; they were retrained here with the original arguments and seeds and scored with the
+same code ('before' = the original machine's result).
 
 | run | recipe before | recipe after | placed from weights before | after | with seed (after) | swap check v1 before | after |
 |---|---|---|---|---|---|---|---|
-| q7_2ep (old) | constant/445/w70 | not re-scored | - | - | - | - | - |
-| q7_big (old) | exact | not re-scored | 2,341 right, 254 wrong | - | - | 0/0, 367 false | - |
-| q7_emb (old) | exact | not re-scored | 1,205 right, 33 wrong | - | - | 0/0, 50 false | - |
-| q7_lora (old) | exact | not re-scored | 1,169 right, 7 wrong | - | - | 0/0, 26 false | - |
-| q7_wd (old) | exact | not re-scored | 1,260 right, 73 wrong | - | - | 0/0, 87 false | - |
+| q7_2ep | constant/445/w70 | **linear/1280/w1052** | - | - | - | - | - |
+| q7_big | exact | exact | 2,341 right, 254 wrong | 2,339 right, 253 wrong | 52,000/52,000 | 0/0, 367 false | 0/0, 364 false |
+| q7_emb | exact | exact | 1,205 right, 33 wrong | 1,204 right, 36 wrong | 4,000/4,000 | 0/0, 50 false | 0/0, 50 false |
+| q7_lora | exact | exact | 1,169 right, 7 wrong | 1,156 right, 7 wrong | 4,000/4,000 | 0/0, 26 false | 0/0, 19 false |
+| q7_wd | exact | exact | 1,260 right, 73 wrong | 1,260 right, 75 wrong | 4,000/4,000 | 0/0, 87 false | 0/0, 87 false |
 | r01_lin | exact | exact | 1,149 right, 3 wrong | 1,149 right, 3 wrong | 4,000/4,000 | 0/0, 3 false | 0/0, 3 false |
 | r02_cos | exact | exact | 1,341 right, 1 wrong | 1,341 right, 1 wrong | 4,000/4,000 | 0/0, 3 false | 0/0, 3 false |
 | r03_const | exact | exact | 1,344 right, 1 wrong | 1,344 right, 1 wrong | 4,000/4,000 | 0/0, 3 false | 0/0, 3 false |
@@ -37,7 +38,7 @@ machine and its scratch copy of the weights was deleted; their results are kept 
 | s05_swap | exact | exact | 1,123 right, 2 wrong | 1,123 right, 2 wrong | 4,000/4,000 | 24/40, 3 false | 24/40, 3 false |
 | s06_bf16 | exact | exact | 1,381 right, 7 wrong | 1,381 right, 7 wrong | 4,000/4,000 | 0/0, 5 false | 0/0, 5 false |
 
-Recipe exact: 17 of 19 re-scored Pythia runs before, **18 of 19 after**.
+Recipe exact: 21 of 24 re-scored runs before, **22 of 24 after**.
 
 New runs for this study (Pythia-160m: four with 40 secretly swapped documents, m01 = the membership run):
 
@@ -85,8 +86,7 @@ document. That last test is reported per training step only: choosing which clai
 swapped went 0 right / 3 wrong on s05. With weight decay, *updated* means the token's vector differs from the
 bit-exact replay of the recovered decay schedule (this removed v1's false flags on tokens updated so late
 that their change is below the generic rounding floor).
-v1 numbers are from the re-scored `score.py` output; the Qwen2.5-7B runs cannot be re-run (see section 1),
-their old v1 false flags were 26 / 50 / 87 / 367 (q7_lora / q7_emb / q7_wd / q7_big).
+v1 numbers are from the re-scored `score.py` output (the retrained Qwen2.5-7B runs included).
 
 | run | swapped | v1 caught | v1 false flags | v2 caught | v2 false flags | v2 by rule (caught/false) | steps with an unclaimed update (of which hold a swap / steps holding a swap) |
 |---|---|---|---|---|---|---|---|
@@ -114,8 +114,17 @@ their old v1 false flags were 26 / 50 / 87 / 367 (q7_lora / q7_emb / q7_wd / q7_
 | s04_lora | 0 | 0 | 0 | 0 | 0 | A 0/0, B 0/0, C 0/0 | 0 (0 / 0) |
 | s05_swap | 40 | 24 | 3 | 27 | 0 | A 17/0, B 0/0, C 10/0 | 10 (10 / 39) |
 | s06_bf16 | 0 | 0 | 5 | 0 | 0 | A 0/0, B 0/0, C 0/0 | 0 (0 / 0) |
+| q7_emb | 0 | 0 | 50 | 0 | 0 | A 0/0, B 0/0, C 0/0 | 0 (0 / 0) |
+| q7_lora | 0 | 0 | 19 | 0 | 0 | A 0/0, B 0/0, C 0/0 | 0 (0 / 0) |
+| q7_wd | 0 | 0 | 87 | 0 | 0 | A 0/0, B 0/0, C 0/0 | 0 (0 / 0) |
+| q7_big | 0 | 0 | 364 | 0 | 2 | A 0/0, B 0/0, C 0/2 | 0 (0 / 0) |
+| n01_clean_cos | 0 | - | - | 0 | 2314 | A 0/0, B 0/2306, C 0/8 | 224 (0 / 0) |
+| n02_clean_isqrt | 0 | - | - | 0 | 2558 | A 0/0, B 0/2558, C 0/0 | 7 (0 / 0) |
+| n03_swap_lin | 40 | - | - | 16 | 82 | A 0/0, B 0/82, C 16/0 | 12 (0 / 40) |
+| n04_swap_cos | 40 | - | - | 27 | 2433 | A 26/0, B 1/2431, C 0/2 | 167 (21 / 36) |
+| n05_swap_cmin | 40 | - | - | 2 | 2341 | A 0/0, B 1/2339, C 1/2 | 65 (6 / 39) |
 
-Across runs with swaps: v2 catches 137 of 200; false flags on clean runs: 269 over 19 runs, of which 266 on r05 (its step count is one off, section 3) and 3 on the other 18; on the swap runs 7 false flags against 137 catches. Swaps v2 misses are documents whose every token is shared
+Across runs with swaps: v2 catches 182 of 320; false flags on clean runs: 5143 over 25 runs, of which 266 on r05 (its step count is one off, section 3) and 4877 on the other 24; on the swap runs 4863 false flags against 182 catches. Swaps v2 misses are documents whose every token is shared
 with other claimed documents and whose shared tokens show no clean single update.
 
 ## 5. Membership inference (was this document in the training data?), held out
@@ -155,10 +164,22 @@ alarms it is unstable (a few non-members with extreme scores). The embedding met
 training. Its ceiling is the share of members with a token updated in exactly one step. The thread's 64%
 at zero false alarms is not reached on either dataset.
 
-## 6. Two epochs
+## 6. Two epochs: both updates of a token, jointly
 
-Not re-done. A joint two-epoch fit (`scripts/gaps/epochs.py`: the largest change of a token updated once
-per epoch equals the sum of its two single-update sizes, 94% within 1% at a 500-step gap and 99.6% at
-5,000, measured with the truth) was written but stopped before it finished, when priorities moved to the
-re-scoring. The published two-epoch numbers stand.
+A token in one claimed document is updated once per epoch. Splitting its vector's changes into two shades
+fails at gaps of a few hundred steps, because Adam's second moment from the first update has not decayed
+and the coordinates spread continuously between the shades. What survives at every gap is the top: the
+largest change equals the sum of the two single-update sizes (95% of such tokens within 1% at a 500-step gap,
+99.6% at 5,000). `scripts/gaps/epochs.py` fits the schedule to those maxima under an E-epoch model (E chosen
+by fit), recovers the seed from them (epoch e is shuffled with seed + e), and then predicts both steps of
+every token.
+
+| run | true | recovered (epochs) | schedule exact | seed | tokens updated exactly twice | both steps right | ...and size matches |
+|---|---|---|---|---|---|---|---|
+| q7_2ep | linear/500/w0/1e-05 x2 | cosine/90/w0/1.87e-05 x2 | False | missed | 7,034 | 0.0% | 0.0% |
+
+Before (per-token two-shade split, published): both updates within 1% for 0.7% of tokens at a 500-step gap
+and 61-69% at 5,000 steps. q7_2ep (Qwen2.5-7B, 2 x 250 steps, only the embedding and output layer trained) is
+not recovered by either method: the single-epoch reader gives a wrong schedule and the joint fit finds no
+seed (12 hits, at chance level), so no document can be dated. Two-epoch reading remains an open problem.
 

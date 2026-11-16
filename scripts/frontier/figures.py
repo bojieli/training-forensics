@@ -19,7 +19,7 @@ from common import OUT  # noqa: E402
 FIG = OUT / "fig"
 FIG.mkdir(parents=True, exist_ok=True)
 SURF, INK, INK2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#e4e2dc"
-CAT = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300"]
+CAT = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#7a5fc4"]
 NEUTRAL = "#b9b7b0"
 plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10, "axes.edgecolor": GRID, "axes.labelcolor": INK2,
                      "xtick.color": INK2, "ytick.color": INK2, "figure.facecolor": SURF, "axes.facecolor": SURF,
@@ -87,7 +87,7 @@ def fig_c():
 
 
 def fig_d():
-    comp = json.load(open(OUT / "comparability.json"))
+    comp = [x for x in json.load(open(OUT / "comparability.json")) if x.get("lane", "roster") == "roster"]
     order = ["token record", "untrainable only", "record, poor fit", "changed throughout", "not comparable", "unchanged", "shared matrix"]
     label = {"token record": "token record (decay fit ≥99%)", "untrainable only": "only untrainable tokens bit-identical (shared start)", "record, poor fit": "some bit-identical tokens, decay fit <99%",
              "changed throughout": "every token changed, consistent with the base + decay",
@@ -111,7 +111,7 @@ def fig_d():
             if n:
                 ax.barh(i, n, left=left, color=CAT[k], edgecolor=SURF, linewidth=1.5, height=0.7)
                 if n >= 3:
-                    ax.text(left + n / 2, i, str(n), ha="center", va="center", fontsize=7, color="white" if k in (0, 1, 5) else INK)
+                    ax.text(left + n / 2, i, str(n), ha="center", va="center", fontsize=7, color="white" if k in (0, 1, 5, 6) else INK)
                 left += n
     ax.set_yticks(range(len(rows)), rows, fontsize=8)
     ax.invert_yaxis()

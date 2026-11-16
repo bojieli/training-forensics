@@ -12,7 +12,8 @@ by token shows which vectors were updated; numbers below count distinct vocabula
   identified. It is not evidence that every token was in the data: weight decay alone changes every vector. The shrink
   factor P is only reported when >= 10 vectors are reproduced exactly by round(P x parent).
 - **Exactly-one-untouched pairs.** 3 pairs (Intern-S2-397B, Nemotron-3-Super-120B, Qwen3.5-9B) keep a single
-  untouched vector; they are not counted among the 126 pairs with a token record.
+  untouched vector; they are not counted among the 126 pairs the first sweep listed with a token record (the calibrated
+  classes in `results/frontier/FRONTIER.md` section 7 now give 97 token records, 33 with only untrainable tokens shared, 25 with a poor decay fit).
 - **Kwaipilot/KAT-Dev-72B-Exp:** the fit returns P = 0 on 2,171 vectors, i.e. those vectors are exactly zero in the
   fine-tune (zeroed, not trained). Its 22/22 "updated" special tokens are not a training signal, and it is not
   counted among the pairs with weight decay.
@@ -37,5 +38,7 @@ by token shows which vectors were updated; numbers below count distinct vocabula
   alone; both PRETRAIN_DECAY.md and COVERAGE.md flag it, with no decay value.
 - **What is robust from public 16-bit releases:** the exact set of tokens whose vectors were never updated (never in a
   gradient), which special tokens a fine-tune used, and - when untouched vectors exist - the total weight decay as a range.
-- Exact P ranges: `results/roster/p_intervals.json` lists 27 pairs; 23 give a range (18 tight, mostly 0.002-0.01%
-  wide; 5 one-step bounds ~0.2% wide) and 4 give none (3 cache misses, 1 where no vector is reproduced by one factor).
+- P ranges: `results/roster/p_intervals.json` lists 27 pairs. Each range is the range of P that reproduces the same vectors
+  (conditional on the fitted P, one multiplication), also given widened by the largest simulated fp32 rounding drift. 21 full-vector
+  ranges are used (`results/frontier/decay_ranges.json`); 2 partial-vector cases (GLM-4.5, GLM-4.5-Air) are flagged weak and left out;
+  4 give none (3 cache misses, 1 where no vector is reproduced by one factor).

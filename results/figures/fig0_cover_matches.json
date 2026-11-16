@@ -1,0 +1,61 @@
+{
+ "figure": "fig0_cover_matches",
+ "size_px": [
+  1600,
+  640
+ ],
+ "sources": [
+  "results/published/PUBLISHED.md (main table)",
+  "results/large/LARGE.md (Tulu 3 405B, sft, truncated as in training)"
+ ],
+ "note": "Counts are distinct vocabulary tokens. For Tulu 3 405B the 'token vectors changed' cell is the number of in-data tokens that changed (124,327 of 124,572); 0 regular tokens outside the data were updated.",
+ "rows": [
+  {
+   "fine_tune": "s1-32B",
+   "in_data": 16573,
+   "changed": 16573,
+   "both": 16573,
+   "in_data_identical": 0,
+   "changed_not_in_data": 0
+  },
+  {
+   "fine_tune": "s1.1-32B",
+   "in_data": 27154,
+   "changed": 27154,
+   "both": 27154,
+   "in_data_identical": 0,
+   "changed_not_in_data": 0
+  },
+  {
+   "fine_tune": "Sky-T1-32B-Preview",
+   "in_data": 48015,
+   "changed": 48015,
+   "both": 48015,
+   "in_data_identical": 0,
+   "changed_not_in_data": 0
+  },
+  {
+   "fine_tune": "Bespoke-Stratos 7B and 32B",
+   "in_data": 43761,
+   "changed": 43761,
+   "both": 43761,
+   "in_data_identical": 0,
+   "changed_not_in_data": 0
+  },
+  {
+   "fine_tune": "OpenThinker-7B",
+   "in_data": 65554,
+   "changed": 65554,
+   "both": 65554,
+   "in_data_identical": 0,
+   "changed_not_in_data": 0
+  },
+  {
+   "fine_tune": "Tulu 3 405B (SFT stage)",
+   "in_data": 124572,
+   "both": 124327,
+   "in_data_identical": 245,
+   "changed_not_in_data": 0
+  }
+ ]
+}

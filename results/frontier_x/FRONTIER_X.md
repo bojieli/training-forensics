@@ -91,17 +91,19 @@ reproduces in the 512 most shrink-like vectors (comparable to that base if >= 0.
 Numbers come from `frontier_x.json` (generated from `results/roster/sweep_frontier_x.jsonl`). "Change histogram" =
 share of token vectors whose numbers differ from the decayed base in 0 / <=1% / 1-10% / 10-50% / >50% of places.
 
-1. **Reinforcement-learning stages leave a small-update footprint. Verdict: holds.**
+1. **Small-update footprints also occur in documented RL runs. Verdict: holds-with-wording (weakened after the review, M9).**
    - **Lab-documented RL-only runs:**
      - Olmo-3-7B-RL-Zero-Math, RL straight from the base: 37.8% of token vectors bit-identical, 8.2% barely changed, 45.4% with 1-10% of numbers changed.
      - RL-Zero-Mix: 5.5 / 18.7 / 73.2%.
-   - **Other RL or patch stages show the same shape:**
+   - **Other RL or patch stages also have many bit-identical or lightly changed vectors (the histograms differ from run to run):**
      - MiMo-V2.6-Pro MOPD -> RL: 7.2 / 12.0 / 44.1%.
      - MiMo-V2.6-Flash MOPD -> RL: 11.2 / 8.7 / 37.0%.
      - Nemotron-3 Labs Ultra-Math SFT -> RL: 57.4 / 4.7 / 7.4%.
      - EXAONE-4.0 -> 4.0.1: 42.8 / 4.1 / 38.3%.
    - **Contrast, full post-training:** DeepSeek-V3 -> V3-0324 changes 46% of vectors in over half their numbers.
-   - Article sentence: "Models trained only with reinforcement learning, such as AI2's Olmo-3 RL-Zero, whose recipe is published, leave most token vectors bit-identical or changed in under 10% of their numbers. DeepSeek-R1-Zero's footprint has the same shape, so it does not by itself point to narrow data."
+   - **One metric for all:** share of token vectors with under 10% of their numbers changed, not counting bit-identical ones: RL-Zero-Math 53.6%, RL-Zero-Mix 91.9%, DeepSeek-R1-Zero 61.5%.
+   - **What does not follow:** the two documented RL-only runs differ from each other, there is no supervised control at a matched learning rate and step count, and in a 16-bit release the footprint also depends on learning rate x steps. The footprint does not separate RL from low-learning-rate or narrow-data training.
+   - Article sentence: "Small-update footprints like DeepSeek-R1-Zero's also occur in AI2's Olmo-3 RL-Zero runs, whose RL-only recipe is published. So the footprint is not by itself evidence of narrow data; it does not separate RL from low-learning-rate or narrow-data training either."
 
 2. **Several "successive" releases are not decayed copies of the previous release's embedding. Verdict: holds-with-wording.**
    - **No bit-identical vectors and a poor shrink fit (0.004-0.42):**
