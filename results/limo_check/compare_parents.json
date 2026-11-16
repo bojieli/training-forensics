@@ -1,0 +1,27 @@
+{
+ "q32i": {
+  "rows_identical": 122322,
+  "rows_changed": 29742,
+  "elems_changed_frac": 0.14057758986347854
+ },
+ "q32b": {
+  "rows_identical": 7775,
+  "rows_changed": 144289,
+  "elems_changed_frac": 0.7838718825317794
+ },
+ "qc32i": {
+  "rows_identical": 0,
+  "rows_changed": 152064,
+  "elems_changed_frac": 0.9988165653113162
+ },
+ "qc32b": {
+  "rows_identical": 0,
+  "rows_changed": 152064,
+  "elems_changed_frac": 0.9988084940797953
+ },
+ "limo2": {
+  "rows_identical": 119611,
+  "rows_changed": 32453,
+  "elems_changed_frac": 0.15352793349962846
+ }
+}

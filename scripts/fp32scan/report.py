@@ -76,8 +76,11 @@ for m in ("s1-32B", "s1.1-32B"):
                  "document steps are implied by it, not independently confirmed.")
     L.append("")
 
+# ---- Reflection: separate file
+L += ["## 3. Reflection-Llama-3.1-70B", "",
+      "Lineage of both uploads against Llama 3, 3.1 and 3.3: see [FP32SCAN_REFLECTION.md](FP32SCAN_REFLECTION.md).", ""]
 # ---- others
-L += ["## 3. Other fp32 releases checked", ""]
+L += ["## 4. Other fp32 releases checked", ""]
 for f, title in (("deepscaler.json", "DeepScaleR-1.5B-Preview (RL from DeepSeek-R1-Distill-Qwen-1.5B)"),
                  ("userlm8b.json", "UserLM-8b (Microsoft, from Llama-3.1-8B)"),
                  ("marin8b.json", "marin-8b-instruct (from marin-8b-base, both fp32)")):
@@ -95,7 +98,7 @@ L += ["", "- DeepScaleR: the RL updates touched 47,950 vocabulary tokens; the ne
       "weight decay reached them (or lr x wd rounded away in fp32). Every token was updated in many steps, so no timing can be read.",
       "- UserLM-8b and marin-8b-instruct: every token vector changed (UserLM-8b by ~30% relative, marin by ~0.5%), so no token "
       "record survives; both are only 'changed throughout' at the embedding level.", "",
-      "## 4. Limits", "",
+      "## 5. Limits", "",
       "- Step-level timing needs single- or few-update tokens; RL and large SFT runs touch every token many times.",
       "- A release stored as fp32 is not necessarily trained in fp32: check whether its values sit on the 16-bit grid.",
       "- The s1 size model ignores per-update gradient size; it identifies the seed and schedule shape, and estimates the peak "

@@ -1,0 +1,449 @@
+{
+ "child": "GAIR/LIMO-v2",
+ "data": "limo2",
+ "extra": 279,
+ "explained_cumulative": {
+  "other counted variants (system prompt, cutoff, final position)": 12,
+  "+ message context variants": 16,
+  "+ joins between samples (packing)": 18
+ },
+ "unexplained": 261,
+ "pairs_tested": 60000,
+ "unexplained_examples": [
+  [
+   260,
+   "ĠĠĠĠĠĠĠĠ",
+   "        "
+  ],
+  [
+   363,
+   "ow",
+   "ow"
+  ],
+  [
+   403,
+   "port",
+   "port"
+  ],
+  [
+   857,
+   "clude",
+   "clude"
+  ],
+  [
+   1339,
+   ">ĊĊ",
+   ">\n\n"
+  ],
+  [
+   1362,
+   "uff",
+   "uff"
+  ],
+  [
+   1581,
+   "ĠDe",
+   " De"
+  ],
+  [
+   1643,
+   "Ġsim",
+   " sim"
+  ],
+  [
+   1712,
+   "Model",
+   "Model"
+  ],
+  [
+   1784,
+   "><",
+   "><"
+  ],
+  [
+   1876,
+   "ĠLicense",
+   " License"
+  ],
+  [
+   2101,
+   "Al",
+   "Al"
+  ],
+  [
+   2201,
+   "Log",
+   "Log"
+  ],
+  [
+   2314,
+   "Hand",
+   "Hand"
+  ],
+  [
+   2463,
+   "ĠSc",
+   " Sc"
+  ],
+  [
+   3264,
+   "ĠMed",
+   " Med"
+  ],
+  [
+   3277,
+   "inate",
+   "inate"
+  ],
+  [
+   3518,
+   "})Ċ",
+   "})\n"
+  ],
+  [
+   3914,
+   "ional",
+   "ional"
+  ],
+  [
+   3918,
+   ".</",
+   ".</"
+  ],
+  [
+   4859,
+   "Pos",
+   "Pos"
+  ],
+  [
+   4988,
+   "Application",
+   "Application"
+  ],
+  [
+   5309,
+   "ĠKey",
+   " Key"
+  ],
+  [
+   5361,
+   "}</",
+   "}</"
+  ],
+  [
+   5532,
+   "ĠConfig",
+   " Config"
+  ],
+  [
+   6040,
+   "ĠDev",
+   " Dev"
+  ],
+  [
+   6046,
+   "Range",
+   "Range"
+  ],
+  [
+   6050,
+   "ĠMo",
+   " Mo"
+  ],
+  [
+   6135,
+   "conf",
+   "conf"
+  ],
+  [
+   6250,
+   "ĠVer",
+   " Ver"
+  ],
+  [
+   6740,
+   "Rel",
+   "Rel"
+  ],
+  [
+   6755,
+   "ĠAnt",
+   " Ant"
+  ],
+  [
+   7084,
+   "Port",
+   "Port"
+  ],
+  [
+   7688,
+   "Configuration",
+   "Configuration"
+  ],
+  [
+   7933,
+   "ĠPath",
+   " Path"
+  ],
+  [
+   7977,
+   "Ġaf",
+   " af"
+  ],
+  [
+   8289,
+   "Radius",
+   "Radius"
+  ],
+  [
+   8319,
+   "ĠResearch",
+   " Research"
+  ],
+  [
+   8537,
+   "Iter",
+   "Iter"
+  ],
+  [
+   8547,
+   "ĠBank",
+   " Bank"
+  ],
+  [
+   8655,
+   "ĠProperty",
+   " Property"
+  ],
+  [
+   8900,
+   "Ġoffered",
+   " offered"
+  ],
+  [
+   8942,
+   "ĠTree",
+   " Tree"
+  ],
+  [
+   9152,
+   "Loc",
+   "Loc"
+  ],
+  [
+   9349,
+   "fast",
+   "fast"
+  ],
+  [
+   9403,
+   "ĠEst",
+   " Est"
+  ],
+  [
+   9567,
+   "Ġgather",
+   " gather"
+  ],
+  [
+   9608,
+   "ĠContext",
+   " Context"
+  ],
+  [
+   9706,
+   "Parameters",
+   "Parameters"
+  ],
+  [
+   9957,
+   ")):Ċ",
+   ")):\n"
+  ],
+  [
+   10141,
+   "Ver",
+   "Ver"
+  ],
+  [
+   10227,
+   "Before",
+   "Before"
+  ],
+  [
+   10456,
+   "Att",
+   "Att"
+  ],
+  [
+   10673,
+   "Sm",
+   "Sm"
+  ],
+  [
+   11131,
+   "ĠSeries",
+   " Series"
+  ],
+  [
+   11766,
+   "ĠStandard",
+   " Standard"
+  ],
+  [
+   11831,
+   "ĠProperties",
+   " Properties"
+  ],
+  [
+   12100,
+   "ĠBi",
+   " Bi"
+  ],
+  [
+   12201,
+   "riting",
+   "riting"
+  ],
+  [
+   12221,
+   "ĠConfiguration",
+   " Configuration"
+  ],
+  [
+   12301,
+   "Shape",
+   "Shape"
+  ],
+  [
+   12315,
+   "ĠFound",
+   " Found"
+  ],
+  [
+   12485,
+   "Span",
+   "Span"
+  ],
+  [
+   12593,
+   "Cart",
+   "Cart"
+  ],
+  [
+   12741,
+   "ĠDer",
+   " Der"
+  ],
+  [
+   12813,
+   "}}</",
+   "}}</"
+  ],
+  [
+   13120,
+   "fection",
+   "fection"
+  ],
+  [
+   13351,
+   "Ġrecovery",
+   " recovery"
+  ],
+  [
+   13497,
+   "ĠBul",
+   " Bul"
+  ],
+  [
+   13542,
+   "ĠEll",
+   " Ell"
+  ],
+  [
+   13704,
+   "ĠIter",
+   " Iter"
+  ],
+  [
+   13708,
+   "<th",
+   "<th"
+  ],
+  [
+   13799,
+   "Validation",
+   "Validation"
+  ],
+  [
+   13818,
+   "ĠArgument",
+   " Argument"
+  ],
+  [
+   14374,
+   "###",
+   "###"
+  ],
+  [
+   14873,
+   "Information",
+   "Information"
+  ],
+  [
+   15042,
+   "ĠFormat",
+   " Format"
+  ],
+  [
+   15181,
+   "ĠSpeed",
+   " Speed"
+  ],
+  [
+   15474,
+   "Ins",
+   "Ins"
+  ],
+  [
+   15802,
+   "Although",
+   "Although"
+  ]
+ ],
+ "unexplained_categories": {
+  "ASCII": 261
+ },
+ "examples_by_category": {
+  "bytes / whitespace": [
+   "        "
+  ],
+  "ASCII": [
+   "ow",
+   "uff",
+   " License",
+   "ional",
+   "Loc",
+   "fection",
+   "%\n",
+   "###",
+   "zing",
+   "Small",
+   "ulas",
+   " Vari",
+   " Hours",
+   " Rew",
+   " Classes",
+   " Nest",
+   " Constraint",
+   " Participants",
+   " Purch",
+   "ponential",
+   "APE",
+   " Placement",
+   "Recursive",
+   "{s",
+   "-Regular"
+  ]
+ }
+}

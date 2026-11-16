@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""Tokenize a published SFT set with LLaMA-Factory's own encoder (llamafactory 0.9.2.dev0,
-template.py unchanged since 2025-02-05), template `qwen`, exactly as
-`_encode_supervised_example` builds input_ids.
+"""Tokenize a published SFT set with LLaMA-Factory's own encoder (the copy vendored in
+github.com/GAIR-NLP/LIMO train/src, llamafactory 0.9.2.dev0, template.py unchanged since
+2025-02-05), template `qwen`, exactly as `_encode_supervised_example` builds input_ids.
 
 Variants: system prompt from the dataset vs LLaMA-Factory's default (used when the dataset's
 system column is not mapped in dataset_info.json); cutoff 16384 vs none. For each variant two
 counts are kept: all positions, and all but the last position of each sequence (the last input
 token of a sequence gets no gradient: nothing attends to it and it has no next-token target).
 
-Usage: PYTHONPATH=<llamafactory-0.9.2.dev0>/src python3 lf_exact.py <dataset> <tokenizer>
+Usage: PYTHONPATH=<LIMO repo>/train/src python3 lf_exact.py <dataset> <tokenizer>
 """
 from __future__ import annotations
 
@@ -58,8 +58,8 @@ def norm_msgs(turns):
 
 def load_rows(which):
     from datasets import load_dataset
-    try:  # optional local loaders for datasets not covered here
-        from private_sets import LF_ROWS
+    try:  # loaders for LIMO / LIMO-v2 (extra_sets.py)
+        from extra_sets import LF_ROWS
         if which in LF_ROWS:
             return LF_ROWS[which](OUT)
     except ImportError:
@@ -104,7 +104,7 @@ def main():
                 counts.setdefault(f"approx_{k}", v)
     from transformers import AutoTokenizer
     json.dump(dict(dataset=which, tokenizer=tokrepo, vocab=len(AutoTokenizer.from_pretrained(tokrepo)),
-                   encoder="llamafactory 0.9.2.dev0 template qwen", counts=counts),
+                   encoder="llamafactory 0.9.2.dev0 (GAIR-NLP/LIMO train/src) template qwen", counts=counts),
               open(p, "w"))
     for k, c in counts.items():
         print(which, k, "distinct", len(c), flush=True)

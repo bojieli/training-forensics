@@ -8,11 +8,12 @@ model. In an fp32 release every change keeps its full precision, so the size and
 
 Scanned the 6000 most-downloaded and 8000 most-liked text-generation models on Hugging Face (safetensors headers
 only). A model qualifies when at least 95% of its parameters are stored as F32 and its card names a base model.
-629 models are stored in fp32; 172 name a base model;
+630 models are stored in fp32; 173 name a base model;
 71 also name their training data. The 30 most-liked with a base:
 
 | model | likes | downloads | params (B) | base | data named on card | embedding (child / base) |
 |---|---|---|---|---|---|---|
+| mattshumer/Reflection-Llama-3.1-70B | 1719 | 1737 | 70.6 | meta-llama/Meta-Llama-3.1-70B-Instruct | - | F32 / n/a |
 | agentica-org/DeepCoder-14B-Preview | 686 | 1010 | 14.8 | deepseek-ai/DeepSeek-R1-Distill-Qwen-14B | PrimeIntellect/verifiable-coding-problems, likaixin/TACO-verified | F32 / BF16 |
 | nvidia/Nemotron-Orchestrator-8B | 600 | 4491 | 8.2 | Qwen/Qwen3-8B | - | - |
 | agentica-org/DeepScaleR-1.5B-Preview | 584 | 13420 | 1.8 | deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | AI-MO/NuminaMath-CoT, KbsdJames/Omni-MATH | F32 / BF16 |
@@ -42,7 +43,6 @@ only). A model qualifies when at least 95% of its parameters are stored as F32 a
 | fudan-generative-ai/Qwen3.8-27B-REMORY-1.9B | 75 | 3612 | 2.0 | Qwen/Qwen3.8-27B | - | - |
 | microsoft/NextCoder-32B | 75 | 373 | 32.8 | Qwen/Qwen2.5-Coder-32B-Instruct | microsoft/NextCoderDataset, microsoft/NextCoderDataset-Conversational | F32 / BF16 |
 | futurehouse/ether0 | 73 | 205 | 23.6 | mistralai/Mistral-Small-24B-Instruct-2501 | futurehouse/ether0-benchmark | - |
-| HuggingFaceTB/nanowhale-100m | 71 | 817 | 0.1 | HuggingFaceTB/nanowhale-100m-base | HuggingFaceFW/fineweb-edu, HuggingFaceTB/smol-smoltalk | F32 / F32 |
 
 ## 2. s1-32B and s1.1-32B (simplescaling)
 
@@ -67,7 +67,11 @@ published-data lane (results/published); here only the parts that need fp32.
 - **Schedule (seed fixed):** all 8 best fits are cosine (no linear or constant schedule, and no beta2 of 0.98, 0.99 or 0.999, reaches the top 8); warm-up 16 steps of 315 (published: 5% = 16) fits best but 13-19 are within noise; Adam beta2 0.95. Estimated peak learning rate 9.18e-06 (published 1e-5): low by 8% because the size model assumes equal gradient sizes at each of a token's five updates.
 - **Single documents:** with the seed known, every document's 5 training steps follow from the shuffle. Checked one document at a time (documents with >=3 single-document tokens, n=634), seed 42's step pattern beats all 500 other seeds for 10 documents and is in the best 5% for 113 (chance: 32). The seed is identified from all documents together; individual document steps are implied by it, not independently confirmed.
 
-## 3. Other fp32 releases checked
+## 3. Reflection-Llama-3.1-70B
+
+Lineage of both uploads against Llama 3, 3.1 and 3.3: see [FP32SCAN_REFLECTION.md](FP32SCAN_REFLECTION.md).
+
+## 4. Other fp32 releases checked
 
 - **DeepScaleR-1.5B-Preview (RL from DeepSeek-R1-Distill-Qwen-1.5B):** best-matching base `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`; 103,986 token vectors bit-identical, 47,950 changed; single-update ('flat') vectors: 3. Special tokens bit-identical: 17 of 22 (<｜end▁of▁sentence｜>, <|EOT|>, <|quad_start|>, <|quad_end|>, <|vision_start|>, <|vision_end|>...).
 - **UserLM-8b (Microsoft, from Llama-3.1-8B):** best-matching base `unsloth/Meta-Llama-3.1-8B`; 0 token vectors bit-identical, 128,256 changed; single-update ('flat') vectors: 0. Added vocabulary entries: 1.
@@ -76,7 +80,7 @@ published-data lane (results/published); here only the parts that need fp32.
 - DeepScaleR: the RL updates touched 47,950 vocabulary tokens; the never-updated vectors are bit-identical, so no weight decay reached them (or lr x wd rounded away in fp32). Every token was updated in many steps, so no timing can be read.
 - UserLM-8b and marin-8b-instruct: every token vector changed (UserLM-8b by ~30% relative, marin by ~0.5%), so no token record survives; both are only 'changed throughout' at the embedding level.
 
-## 4. Limits
+## 5. Limits
 
 - Step-level timing needs single- or few-update tokens; RL and large SFT runs touch every token many times.
 - A release stored as fp32 is not necessarily trained in fp32: check whether its values sit on the 16-bit grid.

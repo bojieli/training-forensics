@@ -76,6 +76,29 @@
   "parent_tie": false
  },
  {
+  "child": "mattshumer/Reflection-Llama-3.1-70B",
+  "parent": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     128262,
+     8192
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     128262,
+     8192
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": null,
+  "parent_tie": "ERR no safetensors or pytorch_model.bin found in meta-llama/Meta"
+ },
+ {
   "child": "agentica-org/DeepScaleR-1.5B-Preview",
   "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
   "child_emb": {

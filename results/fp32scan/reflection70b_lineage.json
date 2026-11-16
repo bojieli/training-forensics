@@ -1,0 +1,185 @@
+{
+ "candidates": {
+  "llama-3.1-70b": "unsloth/Meta-Llama-3.1-70B",
+  "llama-3.1-70b-instruct": "unsloth/Meta-Llama-3.1-70B-Instruct",
+  "llama-3.3-70b-instruct": "unsloth/Llama-3.3-70B-Instruct",
+  "llama-3-70b": "NousResearch/Meta-Llama-3-70B",
+  "llama-3-70b-instruct": "NousResearch/Meta-Llama-3-70B-Instruct"
+ },
+ "children": {
+  "mattshumer/Reflection-Llama-3.1-70B": {
+   "rows": 128262,
+   "stored_dtype": "torch.float32",
+   "share_values_on_bf16_grid": 1.0,
+   "per_candidate": {
+    "llama-3.1-70b": {
+     "bit_identical": 0,
+     "rel_dist_median": 0.08013391494750977
+    },
+    "llama-3.1-70b-instruct": {
+     "bit_identical": 0,
+     "rel_dist_median": 0.08775351196527481
+    },
+    "llama-3.3-70b-instruct": {
+     "bit_identical": 0,
+     "rel_dist_median": 0.09046616405248642
+    },
+    "llama-3-70b": {
+     "bit_identical": 0,
+     "rel_dist_median": 0.05721767619252205
+    },
+    "llama-3-70b-instruct": {
+     "bit_identical": 51241,
+     "rel_dist_median": 0.04609529301524162
+    }
+   },
+   "nearest_candidate_share": {
+    "llama-3.1-70b": 0.0,
+    "llama-3.1-70b-instruct": 0.0,
+    "llama-3.3-70b-instruct": 0.0,
+    "llama-3-70b": 0.006493811029940844,
+    "llama-3-70b-instruct": 0.9935061931610107
+   },
+   "direction_cos_median": {
+    "llama-3.1-70b-instruct - llama-3.1-70b": 0.026198719717801938,
+    "llama-3.3-70b-instruct - llama-3.1-70b": 0.020446246379699936,
+    "llama-3-70b - llama-3.1-70b": 0.6905417435085055,
+    "llama-3-70b-instruct - llama-3.1-70b": 0.8168560234294743
+   },
+   "chat_token_norms": {
+    "<|start_header_id|>": 0.0842374712228775,
+    "<|end_header_id|>": 0.07782017439603806,
+    "<|eot_id|>": 0.09658517688512802,
+    "<|begin_of_text|>": 0.6710001826286316,
+    "<|end_of_text|>": 0.6117244362831116
+   },
+   "reserved_ratio": {
+    "llama-3.1-70b": {
+     "median": 1.0040322580645162,
+     "p01": 0.9941860465116279,
+     "p99": 1.015267175572519,
+     "bit_identical_vectors": 0
+    },
+    "llama-3.1-70b-instruct": {
+     "median": 1.007905138339921,
+     "p01": -0.016313817980022197,
+     "p99": 1.023076923076923,
+     "bit_identical_vectors": 0
+    }
+   },
+   "added_vectors_norms": [
+    1.7866474390029907,
+    1.8154762983322144,
+    1.7569689750671387,
+    1.8073838949203491,
+    1.7907108068466187,
+    1.7989166975021362
+   ]
+  },
+  "mattshumer/Reflection-Llama-3.1-70B@e7bfef9796a12f8cd072ba3b955cdf48854123e0": {
+   "rows": 128256,
+   "stored_dtype": "torch.float32",
+   "share_values_on_bf16_grid": 1.0,
+   "per_candidate": {
+    "llama-3.1-70b": {
+     "bit_identical": 0,
+     "rel_dist_median": 0.038695648312568665
+    },
+    "llama-3.1-70b-instruct": {
+     "bit_identical": 128256,
+     "rel_dist_median": 0.0
+    },
+    "llama-3.3-70b-instruct": {
+     "bit_identical": 279,
+     "rel_dist_median": 0.04629204794764519
+    },
+    "llama-3-70b": {
+     "bit_identical": 0,
+     "rel_dist_median": 0.06734757125377655
+    },
+    "llama-3-70b-instruct": {
+     "bit_identical": 0,
+     "rel_dist_median": 0.07239069789648056
+    }
+   },
+   "nearest_candidate_share": {
+    "llama-3.1-70b": 0.0,
+    "llama-3.1-70b-instruct": 1.0,
+    "llama-3.3-70b-instruct": 0.0,
+    "llama-3-70b": 0.0,
+    "llama-3-70b-instruct": 0.0
+   },
+   "direction_cos_median": {
+    "llama-3.1-70b-instruct - llama-3.1-70b": 1.0,
+    "llama-3.3-70b-instruct - llama-3.1-70b": 0.3764159329264576,
+    "llama-3-70b - llama-3.1-70b": -0.013863150517218998,
+    "llama-3-70b-instruct - llama-3.1-70b": 0.03219620006125419
+   },
+   "chat_token_norms": {
+    "<|start_header_id|>": 0.05305521935224533,
+    "<|end_header_id|>": 0.04799198359251022,
+    "<|eot_id|>": 0.0789647176861763,
+    "<|begin_of_text|>": 0.6276010870933533,
+    "<|end_of_text|>": 0.6240033507347107
+   },
+   "reserved_ratio": {
+    "llama-3.1-70b": {
+     "median": 0.994535519125683,
+     "p01": -982.4162436548223,
+     "p99": 995.9547479265324,
+     "bit_identical_vectors": 0
+    },
+    "llama-3.1-70b-instruct": {
+     "median": 1.0,
+     "p01": 1.0,
+     "p99": 1.0,
+     "bit_identical_vectors": 288
+    }
+   }
+  }
+ },
+ "chat_token_norms": {
+  "<|start_header_id|>": {
+   "llama-3.1-70b": 2.529924677219242e-05,
+   "llama-3.1-70b-instruct": 0.05305521935224533,
+   "llama-3.3-70b-instruct": 0.051668938249349594,
+   "llama-3-70b": 2.5472467314102687e-05,
+   "llama-3-70b-instruct": 0.04907763749361038
+  },
+  "<|end_header_id|>": {
+   "llama-3.1-70b": 2.587351991678588e-05,
+   "llama-3.1-70b-instruct": 0.04799198359251022,
+   "llama-3.3-70b-instruct": 0.049689386039972305,
+   "llama-3-70b": 2.6051389795611612e-05,
+   "llama-3-70b-instruct": 0.051598209887742996
+  },
+  "<|eot_id|>": {
+   "llama-3.1-70b": 2.5441400794079527e-05,
+   "llama-3.1-70b-instruct": 0.0789647176861763,
+   "llama-3.3-70b-instruct": 0.07433284819126129,
+   "llama-3-70b": 2.5616232960601337e-05,
+   "llama-3-70b-instruct": 0.0635778084397316
+  },
+  "<|begin_of_text|>": {
+   "llama-3.1-70b": 0.6247197389602661,
+   "llama-3.1-70b-instruct": 0.6276010870933533,
+   "llama-3.3-70b-instruct": 0.6261507868766785,
+   "llama-3-70b": 0.6661561131477356,
+   "llama-3-70b-instruct": 0.6638529300689697
+  },
+  "<|end_of_text|>": {
+   "llama-3.1-70b": 0.6275095343589783,
+   "llama-3.1-70b-instruct": 0.6240033507347107,
+   "llama-3.3-70b-instruct": 0.619114875793457,
+   "llama-3-70b": 0.6235702037811279,
+   "llama-3-70b-instruct": 0.6117244362831116
+  }
+ },
+ "candidate_pairs_rel": {
+  "llama-3.1-70b-instruct vs llama-3.1-70b": 0.03866399824619293,
+  "llama-3.3-70b-instruct vs llama-3.1-70b": 0.044142402708530426,
+  "llama-3-70b vs llama-3.1-70b": 0.05584680661559105,
+  "llama-3-70b-instruct vs llama-3.1-70b": 0.06417239457368851
+ },
+ "reserved_count": 288
+}

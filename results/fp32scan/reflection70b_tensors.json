@@ -1,0 +1,376 @@
+{
+ "child": "mattshumer/Reflection-Llama-3.1-70B",
+ "tensors": {
+  "model.norm.weight": {
+   "shape": [
+    8192
+   ],
+   "on_bf16_grid": 1.0,
+   "llama-3.1-70b": {
+    "values_identical": 0.005859375,
+    "rows_identical": 0,
+    "rel_dist": 0.012885615229606628
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 0.0806884765625,
+    "rows_identical": 0,
+    "rel_dist": 0.008713388815522194
+   },
+   "llama-3-70b": {
+    "values_identical": 0.1033935546875,
+    "rows_identical": 0,
+    "rel_dist": 0.0038820828776806593
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 1.0,
+    "rows_identical": 1,
+    "rel_dist": 0.0
+   }
+  },
+  "model.layers.0.input_layernorm.weight": {
+   "shape": [
+    8192
+   ],
+   "on_bf16_grid": 1.0,
+   "llama-3.1-70b": {
+    "values_identical": 0.0078125,
+    "rows_identical": 0,
+    "rel_dist": 0.053159087896347046
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 0.0068359375,
+    "rows_identical": 0,
+    "rel_dist": 0.05387601628899574
+   },
+   "llama-3-70b": {
+    "values_identical": 0.008544921875,
+    "rows_identical": 0,
+    "rel_dist": 0.03637535125017166
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 1.0,
+    "rows_identical": 1,
+    "rel_dist": 0.0
+   }
+  },
+  "model.layers.0.post_attention_layernorm.weight": {
+   "shape": [
+    8192
+   ],
+   "on_bf16_grid": 1.0,
+   "llama-3.1-70b": {
+    "values_identical": 0.0494384765625,
+    "rows_identical": 0,
+    "rel_dist": 0.04273839667439461
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 0.0458984375,
+    "rows_identical": 0,
+    "rel_dist": 0.04704909771680832
+   },
+   "llama-3-70b": {
+    "values_identical": 0.0762939453125,
+    "rows_identical": 0,
+    "rel_dist": 0.02932373434305191
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 1.0,
+    "rows_identical": 1,
+    "rel_dist": 0.0
+   }
+  },
+  "model.layers.0.self_attn.k_proj.weight": {
+   "shape": [
+    1024,
+    8192
+   ],
+   "on_bf16_grid": 2.467632293701172e-05,
+   "llama-3.1-70b": {
+    "values_identical": 2.86102294921875e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.005929617211222649
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 1.430511474609375e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.01063443347811699
+   },
+   "llama-3-70b": {
+    "values_identical": 4.887580871582031e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.004440102260559797
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 1.0609626770019531e-05,
+    "rows_identical": 0,
+    "rel_dist": 0.00025187197024933994
+   }
+  },
+  "model.layers.0.self_attn.v_proj.weight": {
+   "shape": [
+    1024,
+    8192
+   ],
+   "on_bf16_grid": 3.3020973205566406e-05,
+   "llama-3.1-70b": {
+    "values_identical": 7.271766662597656e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.005111560691148043
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 1.5497207641601562e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.009965745732188225
+   },
+   "llama-3-70b": {
+    "values_identical": 6.67572021484375e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.004475840833038092
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 2.205371856689453e-05,
+    "rows_identical": 0,
+    "rel_dist": 0.0001438716280972585
+   }
+  },
+  "model.layers.40.input_layernorm.weight": {
+   "shape": [
+    8192
+   ],
+   "on_bf16_grid": 1.0,
+   "llama-3.1-70b": {
+    "values_identical": 0.1116943359375,
+    "rows_identical": 0,
+    "rel_dist": 0.010600699111819267
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 0.3187255859375,
+    "rows_identical": 0,
+    "rel_dist": 0.0061773452907800674
+   },
+   "llama-3-70b": {
+    "values_identical": 0.0570068359375,
+    "rows_identical": 0,
+    "rel_dist": 0.006184365600347519
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 1.0,
+    "rows_identical": 1,
+    "rel_dist": 0.0
+   }
+  },
+  "model.layers.40.post_attention_layernorm.weight": {
+   "shape": [
+    8192
+   ],
+   "on_bf16_grid": 1.0,
+   "llama-3.1-70b": {
+    "values_identical": 0.151123046875,
+    "rows_identical": 0,
+    "rel_dist": 0.008927465416491032
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 0.1539306640625,
+    "rows_identical": 0,
+    "rel_dist": 0.009506506845355034
+   },
+   "llama-3-70b": {
+    "values_identical": 0.6741943359375,
+    "rows_identical": 0,
+    "rel_dist": 0.0036481027491390705
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 1.0,
+    "rows_identical": 1,
+    "rel_dist": 0.0
+   }
+  },
+  "model.layers.40.self_attn.k_proj.weight": {
+   "shape": [
+    1024,
+    8192
+   ],
+   "on_bf16_grid": 1.5974044799804688e-05,
+   "llama-3.1-70b": {
+    "values_identical": 4.76837158203125e-07,
+    "rows_identical": 0,
+    "rel_dist": 0.05238267406821251
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 9.5367431640625e-07,
+    "rows_identical": 0,
+    "rel_dist": 0.05295122042298317
+   },
+   "llama-3-70b": {
+    "values_identical": 2.0265579223632812e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.01626921258866787
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 7.271766662597656e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.003149733878672123
+   }
+  },
+  "model.layers.40.self_attn.v_proj.weight": {
+   "shape": [
+    1024,
+    8192
+   ],
+   "on_bf16_grid": 1.4901161193847656e-05,
+   "llama-3.1-70b": {
+    "values_identical": 3.5762786865234375e-07,
+    "rows_identical": 0,
+    "rel_dist": 0.05750588700175285
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 4.76837158203125e-07,
+    "rows_identical": 0,
+    "rel_dist": 0.06324289739131927
+   },
+   "llama-3-70b": {
+    "values_identical": 5.960464477539062e-07,
+    "rows_identical": 0,
+    "rel_dist": 0.03890693560242653
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 4.5299530029296875e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.007553399540483952
+   }
+  },
+  "model.layers.79.input_layernorm.weight": {
+   "shape": [
+    8192
+   ],
+   "on_bf16_grid": 1.0,
+   "llama-3.1-70b": {
+    "values_identical": 0.02685546875,
+    "rows_identical": 0,
+    "rel_dist": 0.012863542884588242
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 0.1837158203125,
+    "rows_identical": 0,
+    "rel_dist": 0.008615436963737011
+   },
+   "llama-3-70b": {
+    "values_identical": 0.235107421875,
+    "rows_identical": 0,
+    "rel_dist": 0.004679393954575062
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 1.0,
+    "rows_identical": 1,
+    "rel_dist": 0.0
+   }
+  },
+  "model.layers.79.post_attention_layernorm.weight": {
+   "shape": [
+    8192
+   ],
+   "on_bf16_grid": 1.0,
+   "llama-3.1-70b": {
+    "values_identical": 0.0018310546875,
+    "rows_identical": 0,
+    "rel_dist": 0.01484262477606535
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 0.011474609375,
+    "rows_identical": 0,
+    "rel_dist": 0.010412894189357758
+   },
+   "llama-3-70b": {
+    "values_identical": 0.1173095703125,
+    "rows_identical": 0,
+    "rel_dist": 0.004260637331753969
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 1.0,
+    "rows_identical": 1,
+    "rel_dist": 0.0
+   }
+  },
+  "model.layers.79.self_attn.k_proj.weight": {
+   "shape": [
+    1024,
+    8192
+   ],
+   "on_bf16_grid": 1.9073486328125e-05,
+   "llama-3.1-70b": {
+    "values_identical": 1.430511474609375e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.06504850089550018
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 2.384185791015625e-07,
+    "rows_identical": 0,
+    "rel_dist": 0.06551521271467209
+   },
+   "llama-3-70b": {
+    "values_identical": 2.1457672119140625e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.017591888085007668
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 9.655952453613281e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.004119158256798983
+   }
+  },
+  "model.layers.79.self_attn.v_proj.weight": {
+   "shape": [
+    1024,
+    8192
+   ],
+   "on_bf16_grid": 1.7642974853515625e-05,
+   "llama-3.1-70b": {
+    "values_identical": 4.76837158203125e-07,
+    "rows_identical": 0,
+    "rel_dist": 0.04037260636687279
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 9.5367431640625e-07,
+    "rows_identical": 0,
+    "rel_dist": 0.043437957763671875
+   },
+   "llama-3-70b": {
+    "values_identical": 1.7881393432617188e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.02536790631711483
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 6.556510925292969e-06,
+    "rows_identical": 0,
+    "rel_dist": 0.00562910083681345
+   }
+  },
+  "lm_head.weight": {
+   "shape": [
+    128256,
+    8192
+   ],
+   "on_bf16_grid": 1.0,
+   "llama-3.1-70b": {
+    "values_identical": 0.022748801857233047,
+    "rows_identical": 0,
+    "rel_dist": 0.09999943524599075
+   },
+   "llama-3.1-70b-instruct": {
+    "values_identical": 0.02383163571357727,
+    "rows_identical": 0,
+    "rel_dist": 0.09199497103691101
+   },
+   "llama-3-70b": {
+    "values_identical": 0.03349078446626663,
+    "rows_identical": 0,
+    "rel_dist": 0.08879715949296951
+   },
+   "llama-3-70b-instruct": {
+    "values_identical": 0.26245322823524475,
+    "rows_identical": 0,
+    "rel_dist": 0.07063548266887665
+   }
+  }
+ }
+}

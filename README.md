@@ -3,7 +3,7 @@
 What a model's published weights reveal about how it was trained: which tokens were in the data, the
 learning-rate schedule, the number of steps, and (given the dataset) which optimizer step each document
 was used in. This repository is an independent replication of a public thread by Alapan Chaudhuri
-([@alapanchaudhuri](https://x.com/alapanchaudhuri), 14 Nov 2026) that made these claims, tested three ways:
+([@alapanchaudhuri](https://x.com/alapanchaudhuri), [thread](https://x.com/alapanchaudhuri/status/2121439269772492848), 14 Nov 2026) that made these claims, tested three ways:
 on the four public models it names, on 24 controlled fine-tunes with full ground truth (Pythia-160m/410m
 and Qwen2.5-7B), and on the 265-model roster of the sibling project
 [checkpoint-forensics](https://github.com/bojieli/checkpoint-forensics).
@@ -229,13 +229,30 @@ Each has its own generated report with sources; wording rules in [`STYLE.md`](ST
   The same pipeline gives 0 changed-but-absent tokens on our own controlled runs. In s1.1-32B the 49 tokens of
   its data that stayed bit-identical all first occur at position 20,022 or later, and every changed token by
   position 19,901: the weights give the training context length (the s1 README documents 20,000 for s1.1).
+- **LIMO and LIMO-v2 vs their published data** ([`results/published/PUBLISHED_LIMO.md`](results/published/PUBLISHED_LIMO.md),
+  independent check in `results/limo_check/`). The released GAIR/LIMO checkpoint (epoch 9 of a 15-epoch run over
+  about 817 examples, read from the DeepSpeed optimizer state left in an earlier revision of the model repository)
+  received gradient updates on 16.5k vocabulary tokens, including about 5.4k CJK tokens, that do not occur in the
+  published 817-example set, while about 200 tokens of the published solutions were never updated. The questions
+  match; the solution texts used in training differ from the published ones for at least about 60 examples. The run
+  size excludes a larger corpus. The weights do not show what the other text was or why it differs. Token sets
+  cannot show that an evaluation question was trained on; the evaluation-set coverage counts in the file are not
+  evidence of contamination and we make no such claim. LIMO-v2: 261 updated tokens not explained by its published set.
 - **Seed and batch size of public fp32 fine-tunes** ([`results/fp32scan/FP32SCAN.md`](results/fp32scan/FP32SCAN.md)).
-  629 popular fine-tunes are stored in fp32. For s1-32B and s1.1-32B (fp32 master weights, public data and script),
+  630 popular fine-tunes are stored in fp32. For s1-32B and s1.1-32B (fp32 master weights, public data and script),
   the published weight decay of 1e-4 is a no-op in fp32 (each step's factor rounds to exactly 1.0, and all
   never-updated vectors are bit-identical); a scan of 2,001 seeds x 3 batch sizes picks seed 42 (the Trainer
   default) and batch 16 (315 steps) for both, a cosine schedule and Adam beta2 0.95. Individual documents' steps
   follow from the seed but are only weakly confirmed one at a time. DeepScaleR-1.5B (RL) keeps a clean token
   record (103,986 bit-identical); UserLM-8b and marin-8b-instruct changed every token vector.
+- **Reflection-Llama-3.1-70B** ([`results/fp32scan/FP32SCAN_REFLECTION.md`](results/fp32scan/FP32SCAN_REFLECTION.md),
+  independent check in `results/reflection_check/`). The card names Llama-3.1-70B-Instruct as base. The first upload
+  (5 Sep 2024) is bit-identical to Llama-3.1-70B-Instruct in every tensor we sampled. The current weights (6 Sep 2024)
+  match Llama-3-70B-Instruct instead: all normalisation weights and 51,241 token vectors are bit-identical to it, none
+  to any Llama 3.1/3.3 model, the remaining matrices differ from it by a rank-256 update, and the repo's config.json
+  names Meta-Llama-3-70B-Instruct. References were verified byte-identical to Meta's releases by sha256. This agrees
+  with public reports from September 2024; the training method (e.g. LoRA) is not proven, and the weights say nothing
+  about intent.
 - **Large fine-tunes of frontier models** ([`results/large/LARGE.md`](results/large/LARGE.md)), 29 comparisons.
   Tulu-3-405B SFT against its published mixture: all but 245 of the 124,572 tokens in the data were updated
   (mostly tokens occurring once or twice) and none outside it. Hermes-4 70B and 405B leave the identical set of
@@ -311,6 +328,6 @@ make roster      # token-vector comparisons over the roster pairs
 
 ## Credit and license
 
-The method and the four public claims are from Alapan Chaudhuri's thread (14 Nov 2026); this is an
+The method and the four public claims are from Alapan Chaudhuri's [thread](https://x.com/alapanchaudhuri/status/2121439269772492848) (14 Nov 2026); this is an
 independent replication and extension. MIT. Not affiliated with any of the labs whose models are examined.
 The results describe what the published weights record; they say nothing about intent.

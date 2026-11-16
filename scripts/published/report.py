@@ -44,8 +44,8 @@ def main(extra_models=()):
          "counts as changed if any of its numbers differs from round(P x base) in the release format, with P the uniform",
          "weight-decay shrink that reproduces the most vectors (P = 1 for every model here, i.e. no visible decay). The",
          "data is tokenized with each project's own training code: trl SFTTrainer on the `text` column for s1; for the",
-         "LLaMA-Factory projects, `_encode_supervised_example` from llamafactory 0.9.2.dev0 (template `qwen`),",
-         "with the system prompt from the data or the framework default, and the cutoff",
+         "LLaMA-Factory projects, `_encode_supervised_example` from llamafactory 0.9.2.dev0 (the copy vendored in",
+         "GAIR-NLP/LIMO, template `qwen`), with the system prompt from the data or the framework default, and the cutoff",
          "length. The last position of each sequence is excluded (it receives no gradient; see the control).", "",
          "| fine-tune | release | tokens in data | vectors changed | in data and changed | in data, bit-identical | changed, not in data | verdict |",
          "|---|---|---|---|---|---|---|---|"]
@@ -94,6 +94,9 @@ def main(extra_models=()):
               f"position {cu['updated_max_earliest']:,}. So training saw at most the first 19,902-20,022 tokens of each sequence,",
               "consistent with the block size of 20,000 the s1 README gives for s1.1 (s1 used 32,768; none of its texts is",
               f"longer). {cu['docs_over']['20000']} of the 1,000 s1.1 sequences are longer than 20,000 tokens."]
+    L += ["", "## LIMO and LIMO-v2", "",
+          "Audited the same way; reported with the evidence from the run's optimizer state in "
+          "[PUBLISHED_LIMO.md](PUBLISHED_LIMO.md)."]
     (OUT / "PUBLISHED.md").write_text("\n".join(L) + "\n")
     return LT
 

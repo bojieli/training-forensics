@@ -112,8 +112,8 @@ def main():
         c[tok.eos_token_id] += len(texts)
         out["main+eos"] = c
     else:
-        try:  # optional local loaders for datasets not covered here
-            from private_sets import TID_ROWS
+        try:  # loaders for LIMO / LIMO-v2 (extra_sets.py)
+            from extra_sets import TID_ROWS
         except ImportError:
             TID_ROWS = {}
         if which in TID_ROWS:

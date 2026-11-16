@@ -3,6 +3,7 @@ sys.path.insert(0, ".")
 from trainforensics import remote
 from huggingface_hub import hf_hub_url
 C = [("simplescaling/s1.1-32B","Qwen/Qwen2.5-32B-Instruct"),("simplescaling/s1-32B","Qwen/Qwen2.5-32B-Instruct"),
+     ("mattshumer/Reflection-Llama-3.1-70B","meta-llama/Meta-Llama-3.1-70B-Instruct"),
      ("agentica-org/DeepScaleR-1.5B-Preview","deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"),
      ("agentica-org/DeepCoder-14B-Preview","deepseek-ai/DeepSeek-R1-Distill-Qwen-14B"),
      ("microsoft/UserLM-8b","meta-llama/Llama-3.1-8B"),
@@ -25,11 +26,6 @@ C = [("simplescaling/s1.1-32B","Qwen/Qwen2.5-32B-Instruct"),("simplescaling/s1-3
      ("microsoft/NextCoder-14B","Qwen/Qwen2.5-Coder-14B-Instruct"),("microsoft/NextCoder-32B","Qwen/Qwen2.5-Coder-32B-Instruct"),
      ("Zyphra/Zamba2-1.2B-instruct","Zyphra/Zamba2-1.2B"),
      ]
-try:  # optional local, unpublished additions
-    from private_pairs import PAIRS as _P
-    C += _P
-except ImportError:
-    pass
 def emb(repo):
     try:
         ix = remote.index(repo)

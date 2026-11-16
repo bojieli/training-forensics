@@ -1,0 +1,30 @@
+{
+ "changed": 29742,
+ "github_set": 13386,
+ "hf_set": 13432,
+ "extra_vs_github": 16559,
+ "extra_vs_hf": 16531,
+ "hf_minus_github": 54,
+ "others": {
+  "s1": {
+   "size": 16573,
+   "covers_extra": 2388,
+   "extra_not_covered": 14171,
+   "changed_minus_set": 17960,
+   "set_minus_changed": 4791
+  },
+  "s1.1": {
+   "size": 27203,
+   "covers_extra": 5930,
+   "extra_not_covered": 10629,
+   "changed_minus_set": 12080,
+   "set_minus_changed": 9541
+  }
+ },
+ "extra_categories": {
+  "ASCII other": 9680,
+  "other non-ASCII": 1421,
+  "CJK": 5391,
+  "code-like": 67
+ }
+}

@@ -1,0 +1,9 @@
+{"release":"GAIR/LIMO@7b59ab38","optimizer_state_rev":"GAIR/LIMO@1833babb94 global_step234/bf16_zero_pp_rank_{0..31}_mp_rank_00_optim_states.pt (deleted from main in 910230fdaa)",
+"parents":{"Qwen2.5-32B-Instruct@5ede1c97":{"identical":122322,"changed":29742},"Qwen2.5-32B":{"identical":7775},"Coder-32B-Instruct":{"identical":0},"Coder-32B":{"identical":0}},
+"tokenization_own":{"cut16384":{"tokens":13386,"in_unchanged":203,"changed_absent":16559},"full":{"tokens":13435,"in_unchanged":227,"changed_absent":16534},"question_tokens":3437,"question_tokens_unchanged":0},
+"optimizer":{"adam_step_all_ranks":234,"fp32_master_rounds_to_release_rows":152064,"rows_exp_avg_sq_nonzero":29742,"equals_changed_rows":true,"max_abs_dw_where_v_zero":0.0},
+"run":{"output_dir_basename":"aime817_deepseek-r1","num_processes":32,"per_device_bs":1,"grad_accum":1,"steps_per_epoch":26,"implied_examples":"801-832","global_step":234,"epoch":9,"num_train_epochs":15,"lr":5e-6,"weight_decay":0.0,"resume_from_checkpoint":null},
+"published_examples_with_never_updated_tokens":{"within_16384":61,"full":76,"within_4096":46},
+"cjk":{"vocab_rows":25557,"changed":5402,"cjk_chars_in_published_text":46},
+"controls_own_script":{"s1-32B":{"changed":16573,"data_tokens":16573,"in_unchanged":0,"changed_absent":0},"LIMO-v2_cut16384":{"tokens":13536,"changed":13815,"in_unchanged":0,"changed_absent":279}},
+"eval_sets_fully_covered_questions":{"gaokao":"43/79","kaoyan":"64/199","grade_school_math":"99/210","cn_math_2024":"25/30","aime":"22/30","math":"363/500"}}

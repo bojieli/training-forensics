@@ -1,0 +1,2159 @@
+{
+ "child": "mattshumer/Reflection-Llama-3.1-70B",
+ "candidates": {
+  "unsloth/Meta-Llama-3.1-70B-Instruct": {
+   "rows_parent": 128256,
+   "compared": 128256,
+   "bit_identical": 0,
+   "cos_median": 0.9962425197940601,
+   "ratio_median": 1.005480337158353,
+   "rel_change_median": 0.08765298873186111
+  },
+  "unsloth/Meta-Llama-3.1-70B": {
+   "rows_parent": 128256,
+   "compared": 128256,
+   "bit_identical": 0,
+   "cos_median": 0.9968344067265514,
+   "ratio_median": 1.0017010117444687,
+   "rel_change_median": 0.08001118153333664
+  },
+  "unsloth/llama-3-70b-Instruct": {
+   "error": "no safetensors or pytorch_model.bin found in unsloth/llama-3-70b-Instruct"
+  },
+  "unsloth/llama-3-70b": {
+   "error": "no safetensors or pytorch_model.bin found in unsloth/llama-3-70b"
+  },
+  "unsloth/Llama-3.3-70B-Instruct": {
+   "rows_parent": 128256,
+   "compared": 128256,
+   "bit_identical": 0,
+   "cos_median": 0.9960059024943466,
+   "ratio_median": 1.005437478201798,
+   "rel_change_median": 0.09037542343139648
+  }
+ },
+ "best_parent": "unsloth/Meta-Llama-3.1-70B",
+ "best": {
+  "bit_identical": 0,
+  "changed": 128256,
+  "share_numbers_changed_hist": [
+   0,
+   0,
+   0,
+   2,
+   308,
+   126133,
+   1813
+  ],
+  "flat_vectors": 0,
+  "added_rows": 6,
+  "added_rows_norms": [
+   1.7866474390029907,
+   1.8154762983322144,
+   1.7569689750671387,
+   1.8073838949203491,
+   1.7907108068466187,
+   1.7989166975021362
+  ],
+  "typical_norm": 0.8358314037322998
+ },
+ "special": [
+  {
+   "id": 128000,
+   "tok": "<|begin_of_text|>",
+   "state": "changed",
+   "share_changed": 0.999267578125,
+   "norm_child": 0.6710001826286316,
+   "norm_parent": 0.6247197389602661
+  },
+  {
+   "id": 128001,
+   "tok": "<|end_of_text|>",
+   "state": "changed",
+   "share_changed": 0.9871826171875,
+   "norm_child": 0.6117244362831116,
+   "norm_parent": 0.6275095343589783
+  },
+  {
+   "id": 128002,
+   "tok": "<|reserved_special_token_0|>",
+   "state": "changed",
+   "share_changed": 0.56103515625,
+   "norm_child": 2.5638730221544392e-05,
+   "norm_parent": 2.556306208134629e-05
+  },
+  {
+   "id": 128003,
+   "tok": "<|reserved_special_token_1|>",
+   "state": "changed",
+   "share_changed": 0.5633544921875,
+   "norm_child": 2.5455383365624584e-05,
+   "norm_parent": 2.5374314645887353e-05
+  },
+  {
+   "id": 128004,
+   "tok": "<|reserved_special_token_2|>",
+   "state": "changed",
+   "share_changed": 0.5576171875,
+   "norm_child": 2.539264824008569e-05,
+   "norm_parent": 2.5313227524748072e-05
+  },
+  {
+   "id": 128005,
+   "tok": "<|reserved_special_token_3|>",
+   "state": "changed",
+   "share_changed": 0.5660400390625,
+   "norm_child": 2.5856064894469455e-05,
+   "norm_parent": 2.577776467660442e-05
+  },
+  {
+   "id": 128006,
+   "tok": "<|start_header_id|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.0842374712228775,
+   "norm_parent": 2.529924677219242e-05
+  },
+  {
+   "id": 128007,
+   "tok": "<|end_header_id|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.07782017439603806,
+   "norm_parent": 2.587351991678588e-05
+  },
+  {
+   "id": 128008,
+   "tok": "<|reserved_special_token_4|>",
+   "state": "changed",
+   "share_changed": 0.551025390625,
+   "norm_child": 2.5584200557204895e-05,
+   "norm_parent": 2.550517274357844e-05
+  },
+  {
+   "id": 128009,
+   "tok": "<|eot_id|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.09658517688512802,
+   "norm_parent": 2.5441400794079527e-05
+  },
+  {
+   "id": 128010,
+   "tok": "<|reserved_special_token_5|>",
+   "state": "changed",
+   "share_changed": 0.557861328125,
+   "norm_child": 2.5380644729011692e-05,
+   "norm_parent": 2.5302029825979844e-05
+  },
+  {
+   "id": 128011,
+   "tok": "<|reserved_special_token_6|>",
+   "state": "changed",
+   "share_changed": 0.56201171875,
+   "norm_child": 2.5492719942121767e-05,
+   "norm_parent": 2.5413821276742965e-05
+  },
+  {
+   "id": 128012,
+   "tok": "<|reserved_special_token_7|>",
+   "state": "changed",
+   "share_changed": 0.5599365234375,
+   "norm_child": 2.5578285203664564e-05,
+   "norm_parent": 2.5498793547740206e-05
+  },
+  {
+   "id": 128013,
+   "tok": "<|reserved_special_token_8|>",
+   "state": "changed",
+   "share_changed": 0.5540771484375,
+   "norm_child": 2.5271086997236125e-05,
+   "norm_parent": 2.5192559405695647e-05
+  },
+  {
+   "id": 128014,
+   "tok": "<|reserved_special_token_9|>",
+   "state": "changed",
+   "share_changed": 0.5732421875,
+   "norm_child": 2.5607007046346553e-05,
+   "norm_parent": 2.552740988903679e-05
+  },
+  {
+   "id": 128015,
+   "tok": "<|reserved_special_token_10|>",
+   "state": "changed",
+   "share_changed": 0.5625,
+   "norm_child": 2.5418719815206714e-05,
+   "norm_parent": 2.533850602048915e-05
+  },
+  {
+   "id": 128016,
+   "tok": "<|reserved_special_token_11|>",
+   "state": "changed",
+   "share_changed": 0.5572509765625,
+   "norm_child": 2.530405436118599e-05,
+   "norm_parent": 2.5226063371519558e-05
+  },
+  {
+   "id": 128017,
+   "tok": "<|reserved_special_token_12|>",
+   "state": "changed",
+   "share_changed": 0.5635986328125,
+   "norm_child": 2.572176163084805e-05,
+   "norm_parent": 2.5642641048762016e-05
+  },
+  {
+   "id": 128018,
+   "tok": "<|reserved_special_token_13|>",
+   "state": "changed",
+   "share_changed": 0.5482177734375,
+   "norm_child": 2.5226183424820192e-05,
+   "norm_parent": 2.5152861780952662e-05
+  },
+  {
+   "id": 128019,
+   "tok": "<|reserved_special_token_14|>",
+   "state": "changed",
+   "share_changed": 0.556884765625,
+   "norm_child": 2.560553366492968e-05,
+   "norm_parent": 2.552594378357753e-05
+  },
+  {
+   "id": 128020,
+   "tok": "<|reserved_special_token_15|>",
+   "state": "changed",
+   "share_changed": 0.5543212890625,
+   "norm_child": 2.5314266167697497e-05,
+   "norm_parent": 2.523781222407706e-05
+  },
+  {
+   "id": 128021,
+   "tok": "<|reserved_special_token_16|>",
+   "state": "changed",
+   "share_changed": 0.558837890625,
+   "norm_child": 2.5416646167286672e-05,
+   "norm_parent": 2.5336108592455275e-05
+  },
+  {
+   "id": 128022,
+   "tok": "<|reserved_special_token_17|>",
+   "state": "changed",
+   "share_changed": 0.5677490234375,
+   "norm_child": 2.567853152868338e-05,
+   "norm_parent": 2.560013672336936e-05
+  },
+  {
+   "id": 128023,
+   "tok": "<|reserved_special_token_18|>",
+   "state": "changed",
+   "share_changed": 0.56396484375,
+   "norm_child": 2.5284987714258023e-05,
+   "norm_parent": 2.5206931240973063e-05
+  },
+  {
+   "id": 128024,
+   "tok": "<|reserved_special_token_19|>",
+   "state": "changed",
+   "share_changed": 0.5712890625,
+   "norm_child": 2.5530402126605622e-05,
+   "norm_parent": 2.545019924582448e-05
+  },
+  {
+   "id": 128025,
+   "tok": "<|reserved_special_token_20|>",
+   "state": "changed",
+   "share_changed": 0.56396484375,
+   "norm_child": 2.5518562324577942e-05,
+   "norm_parent": 2.5440844183322042e-05
+  },
+  {
+   "id": 128026,
+   "tok": "<|reserved_special_token_21|>",
+   "state": "changed",
+   "share_changed": 0.56396484375,
+   "norm_child": 2.5433084374526516e-05,
+   "norm_parent": 2.5357503545819782e-05
+  },
+  {
+   "id": 128027,
+   "tok": "<|reserved_special_token_22|>",
+   "state": "changed",
+   "share_changed": 0.5679931640625,
+   "norm_child": 2.5839312002062798e-05,
+   "norm_parent": 2.576014776423108e-05
+  },
+  {
+   "id": 128028,
+   "tok": "<|reserved_special_token_23|>",
+   "state": "changed",
+   "share_changed": 0.566650390625,
+   "norm_child": 2.5683295461931266e-05,
+   "norm_parent": 2.5605075279599987e-05
+  },
+  {
+   "id": 128029,
+   "tok": "<|reserved_special_token_24|>",
+   "state": "changed",
+   "share_changed": 0.5579833984375,
+   "norm_child": 2.5466053557465784e-05,
+   "norm_parent": 2.538863009249326e-05
+  },
+  {
+   "id": 128030,
+   "tok": "<|reserved_special_token_25|>",
+   "state": "changed",
+   "share_changed": 0.5615234375,
+   "norm_child": 2.5562327209627256e-05,
+   "norm_parent": 2.5486364393145777e-05
+  },
+  {
+   "id": 128031,
+   "tok": "<|reserved_special_token_26|>",
+   "state": "changed",
+   "share_changed": 0.572998046875,
+   "norm_child": 2.5541523427818902e-05,
+   "norm_parent": 2.546096220612526e-05
+  },
+  {
+   "id": 128032,
+   "tok": "<|reserved_special_token_27|>",
+   "state": "changed",
+   "share_changed": 0.558349609375,
+   "norm_child": 2.512254832254257e-05,
+   "norm_parent": 2.5046714654308744e-05
+  },
+  {
+   "id": 128033,
+   "tok": "<|reserved_special_token_28|>",
+   "state": "changed",
+   "share_changed": 0.563720703125,
+   "norm_child": 2.5255410946556367e-05,
+   "norm_parent": 2.517741813790053e-05
+  },
+  {
+   "id": 128034,
+   "tok": "<|reserved_special_token_29|>",
+   "state": "changed",
+   "share_changed": 0.5665283203125,
+   "norm_child": 2.5457686206209473e-05,
+   "norm_parent": 2.537930959078949e-05
+  },
+  {
+   "id": 128035,
+   "tok": "<|reserved_special_token_30|>",
+   "state": "changed",
+   "share_changed": 0.577392578125,
+   "norm_child": 2.5932804419426247e-05,
+   "norm_parent": 2.5851028112811036e-05
+  },
+  {
+   "id": 128036,
+   "tok": "<|reserved_special_token_31|>",
+   "state": "changed",
+   "share_changed": 0.5645751953125,
+   "norm_child": 2.5466577426414005e-05,
+   "norm_parent": 2.538805165386293e-05
+  },
+  {
+   "id": 128037,
+   "tok": "<|reserved_special_token_32|>",
+   "state": "changed",
+   "share_changed": 0.56787109375,
+   "norm_child": 2.544699964346364e-05,
+   "norm_parent": 2.536966530897189e-05
+  },
+  {
+   "id": 128038,
+   "tok": "<|reserved_special_token_33|>",
+   "state": "changed",
+   "share_changed": 0.5673828125,
+   "norm_child": 2.515121923352126e-05,
+   "norm_parent": 2.507210047042463e-05
+  },
+  {
+   "id": 128039,
+   "tok": "<|reserved_special_token_34|>",
+   "state": "changed",
+   "share_changed": 0.5623779296875,
+   "norm_child": 2.5671266485005617e-05,
+   "norm_parent": 2.5592735255486332e-05
+  },
+  {
+   "id": 128040,
+   "tok": "<|reserved_special_token_35|>",
+   "state": "changed",
+   "share_changed": 0.556884765625,
+   "norm_child": 2.559772110544145e-05,
+   "norm_parent": 2.55180784733966e-05
+  },
+  {
+   "id": 128041,
+   "tok": "<|reserved_special_token_36|>",
+   "state": "changed",
+   "share_changed": 0.5609130859375,
+   "norm_child": 2.5418896257178858e-05,
+   "norm_parent": 2.5339100830024108e-05
+  },
+  {
+   "id": 128042,
+   "tok": "<|reserved_special_token_37|>",
+   "state": "changed",
+   "share_changed": 0.5626220703125,
+   "norm_child": 2.5370762159582227e-05,
+   "norm_parent": 2.529234188841656e-05
+  },
+  {
+   "id": 128043,
+   "tok": "<|reserved_special_token_38|>",
+   "state": "changed",
+   "share_changed": 0.570556640625,
+   "norm_child": 2.5494304281892255e-05,
+   "norm_parent": 2.541577305237297e-05
+  },
+  {
+   "id": 128044,
+   "tok": "<|reserved_special_token_39|>",
+   "state": "changed",
+   "share_changed": 0.564208984375,
+   "norm_child": 2.5207562430296093e-05,
+   "norm_parent": 2.5129294954240322e-05
+  },
+  {
+   "id": 128045,
+   "tok": "<|reserved_special_token_40|>",
+   "state": "changed",
+   "share_changed": 0.5643310546875,
+   "norm_child": 2.5471921617281623e-05,
+   "norm_parent": 2.539457636885345e-05
+  },
+  {
+   "id": 128046,
+   "tok": "<|reserved_special_token_41|>",
+   "state": "changed",
+   "share_changed": 0.5618896484375,
+   "norm_child": 2.5337853003293276e-05,
+   "norm_parent": 2.5261913833674043e-05
+  },
+  {
+   "id": 128047,
+   "tok": "<|reserved_special_token_42|>",
+   "state": "changed",
+   "share_changed": 0.5703125,
+   "norm_child": 2.5277042368543334e-05,
+   "norm_parent": 2.5196368369506672e-05
+  },
+  {
+   "id": 128048,
+   "tok": "<|reserved_special_token_43|>",
+   "state": "changed",
+   "share_changed": 0.5633544921875,
+   "norm_child": 2.5696333977975883e-05,
+   "norm_parent": 2.5620249289204367e-05
+  },
+  {
+   "id": 128049,
+   "tok": "<|reserved_special_token_44|>",
+   "state": "changed",
+   "share_changed": 0.56689453125,
+   "norm_child": 2.543578557379078e-05,
+   "norm_parent": 2.5355642719659954e-05
+  },
+  {
+   "id": 128050,
+   "tok": "<|reserved_special_token_45|>",
+   "state": "changed",
+   "share_changed": 0.5704345703125,
+   "norm_child": 2.5630744858062826e-05,
+   "norm_parent": 2.5549059500917792e-05
+  },
+  {
+   "id": 128051,
+   "tok": "<|reserved_special_token_46|>",
+   "state": "changed",
+   "share_changed": 0.56005859375,
+   "norm_child": 2.568660602264572e-05,
+   "norm_parent": 2.56076982623199e-05
+  },
+  {
+   "id": 128052,
+   "tok": "<|reserved_special_token_47|>",
+   "state": "changed",
+   "share_changed": 0.567138671875,
+   "norm_child": 2.56974708463531e-05,
+   "norm_parent": 2.5617971914471127e-05
+  },
+  {
+   "id": 128053,
+   "tok": "<|reserved_special_token_48|>",
+   "state": "changed",
+   "share_changed": 0.5621337890625,
+   "norm_child": 2.5443641789024696e-05,
+   "norm_parent": 2.536471038183663e-05
+  },
+  {
+   "id": 128054,
+   "tok": "<|reserved_special_token_49|>",
+   "state": "changed",
+   "share_changed": 0.559326171875,
+   "norm_child": 2.5269420802942477e-05,
+   "norm_parent": 2.519134432077408e-05
+  },
+  {
+   "id": 128055,
+   "tok": "<|reserved_special_token_50|>",
+   "state": "changed",
+   "share_changed": 0.568115234375,
+   "norm_child": 2.5136108888546005e-05,
+   "norm_parent": 2.505904558347538e-05
+  },
+  {
+   "id": 128056,
+   "tok": "<|reserved_special_token_51|>",
+   "state": "changed",
+   "share_changed": 0.5615234375,
+   "norm_child": 2.5260374968638644e-05,
+   "norm_parent": 2.5180379452649504e-05
+  },
+  {
+   "id": 128057,
+   "tok": "<|reserved_special_token_52|>",
+   "state": "changed",
+   "share_changed": 0.562255859375,
+   "norm_child": 2.5769544663489796e-05,
+   "norm_parent": 2.5689989342936315e-05
+  },
+  {
+   "id": 128058,
+   "tok": "<|reserved_special_token_53|>",
+   "state": "changed",
+   "share_changed": 0.55908203125,
+   "norm_child": 2.5641775209805928e-05,
+   "norm_parent": 2.5564737370586954e-05
+  },
+  {
+   "id": 128059,
+   "tok": "<|reserved_special_token_54|>",
+   "state": "changed",
+   "share_changed": 0.57080078125,
+   "norm_child": 2.5453502530581318e-05,
+   "norm_parent": 2.537200452934485e-05
+  },
+  {
+   "id": 128060,
+   "tok": "<|reserved_special_token_55|>",
+   "state": "changed",
+   "share_changed": 0.5679931640625,
+   "norm_child": 2.5366560294060037e-05,
+   "norm_parent": 2.528788536437787e-05
+  },
+  {
+   "id": 128061,
+   "tok": "<|reserved_special_token_56|>",
+   "state": "changed",
+   "share_changed": 0.5540771484375,
+   "norm_child": 2.550043791416101e-05,
+   "norm_parent": 2.5421904865652323e-05
+  },
+  {
+   "id": 128062,
+   "tok": "<|reserved_special_token_57|>",
+   "state": "changed",
+   "share_changed": 0.5645751953125,
+   "norm_child": 2.516356653359253e-05,
+   "norm_parent": 2.508339093765244e-05
+  },
+  {
+   "id": 128063,
+   "tok": "<|reserved_special_token_58|>",
+   "state": "changed",
+   "share_changed": 0.5670166015625,
+   "norm_child": 2.5483372155576944e-05,
+   "norm_parent": 2.5404340703971684e-05
+  },
+  {
+   "id": 128064,
+   "tok": "<|reserved_special_token_59|>",
+   "state": "changed",
+   "share_changed": 0.5592041015625,
+   "norm_child": 2.5683099011075683e-05,
+   "norm_parent": 2.5602925234124996e-05
+  },
+  {
+   "id": 128065,
+   "tok": "<|reserved_special_token_60|>",
+   "state": "changed",
+   "share_changed": 0.559326171875,
+   "norm_child": 2.561387009336613e-05,
+   "norm_parent": 2.553421290940605e-05
+  },
+  {
+   "id": 128066,
+   "tok": "<|reserved_special_token_61|>",
+   "state": "changed",
+   "share_changed": 0.558837890625,
+   "norm_child": 2.571512413851451e-05,
+   "norm_parent": 2.563646739872638e-05
+  },
+  {
+   "id": 128067,
+   "tok": "<|reserved_special_token_62|>",
+   "state": "changed",
+   "share_changed": 0.5625,
+   "norm_child": 2.5881528927129693e-05,
+   "norm_parent": 2.5803386961342767e-05
+  },
+  {
+   "id": 128068,
+   "tok": "<|reserved_special_token_63|>",
+   "state": "changed",
+   "share_changed": 0.5616455078125,
+   "norm_child": 2.5327253752038814e-05,
+   "norm_parent": 2.524911360524129e-05
+  },
+  {
+   "id": 128069,
+   "tok": "<|reserved_special_token_64|>",
+   "state": "changed",
+   "share_changed": 0.56103515625,
+   "norm_child": 2.5768948034965433e-05,
+   "norm_parent": 2.569037678767927e-05
+  },
+  {
+   "id": 128070,
+   "tok": "<|reserved_special_token_65|>",
+   "state": "changed",
+   "share_changed": 0.5654296875,
+   "norm_child": 2.551780198700726e-05,
+   "norm_parent": 2.5436447685933672e-05
+  },
+  {
+   "id": 128071,
+   "tok": "<|reserved_special_token_66|>",
+   "state": "changed",
+   "share_changed": 0.5762939453125,
+   "norm_child": 2.5566245312802494e-05,
+   "norm_parent": 2.5485271180514246e-05
+  },
+  {
+   "id": 128072,
+   "tok": "<|reserved_special_token_67|>",
+   "state": "changed",
+   "share_changed": 0.5648193359375,
+   "norm_child": 2.5446273866691627e-05,
+   "norm_parent": 2.5371537049068138e-05
+  },
+  {
+   "id": 128073,
+   "tok": "<|reserved_special_token_68|>",
+   "state": "changed",
+   "share_changed": 0.57421875,
+   "norm_child": 2.5715889933053404e-05,
+   "norm_parent": 2.563369707786478e-05
+  },
+  {
+   "id": 128074,
+   "tok": "<|reserved_special_token_69|>",
+   "state": "changed",
+   "share_changed": 0.5616455078125,
+   "norm_child": 2.5416036805836484e-05,
+   "norm_parent": 2.5337621991639026e-05
+  },
+  {
+   "id": 128075,
+   "tok": "<|reserved_special_token_70|>",
+   "state": "changed",
+   "share_changed": 0.55908203125,
+   "norm_child": 2.532943653932307e-05,
+   "norm_parent": 2.5250863473047502e-05
+  },
+  {
+   "id": 128076,
+   "tok": "<|reserved_special_token_71|>",
+   "state": "changed",
+   "share_changed": 0.55859375,
+   "norm_child": 2.5490482585155405e-05,
+   "norm_parent": 2.5412102331756614e-05
+  },
+  {
+   "id": 128077,
+   "tok": "<|reserved_special_token_72|>",
+   "state": "changed",
+   "share_changed": 0.553955078125,
+   "norm_child": 2.527325887058396e-05,
+   "norm_parent": 2.519701411074493e-05
+  },
+  {
+   "id": 128078,
+   "tok": "<|reserved_special_token_73|>",
+   "state": "changed",
+   "share_changed": 0.56494140625,
+   "norm_child": 2.5448423912166618e-05,
+   "norm_parent": 2.5369354261783883e-05
+  },
+  {
+   "id": 128079,
+   "tok": "<|reserved_special_token_74|>",
+   "state": "changed",
+   "share_changed": 0.5799560546875,
+   "norm_child": 2.558807682362385e-05,
+   "norm_parent": 2.5507153623038903e-05
+  },
+  {
+   "id": 128080,
+   "tok": "<|reserved_special_token_75|>",
+   "state": "changed",
+   "share_changed": 0.560791015625,
+   "norm_child": 2.54728838626761e-05,
+   "norm_parent": 2.5395964257768355e-05
+  },
+  {
+   "id": 128081,
+   "tok": "<|reserved_special_token_76|>",
+   "state": "changed",
+   "share_changed": 0.5689697265625,
+   "norm_child": 2.53961916314438e-05,
+   "norm_parent": 2.531618156353943e-05
+  },
+  {
+   "id": 128082,
+   "tok": "<|reserved_special_token_77|>",
+   "state": "changed",
+   "share_changed": 0.5576171875,
+   "norm_child": 2.5752924557309598e-05,
+   "norm_parent": 2.5674835342215374e-05
+  },
+  {
+   "id": 128083,
+   "tok": "<|reserved_special_token_78|>",
+   "state": "changed",
+   "share_changed": 0.56640625,
+   "norm_child": 2.554612365202047e-05,
+   "norm_parent": 2.5465655198786408e-05
+  },
+  {
+   "id": 128084,
+   "tok": "<|reserved_special_token_79|>",
+   "state": "changed",
+   "share_changed": 0.5640869140625,
+   "norm_child": 2.5359571736771613e-05,
+   "norm_parent": 2.528078584873583e-05
+  },
+  {
+   "id": 128085,
+   "tok": "<|reserved_special_token_80|>",
+   "state": "changed",
+   "share_changed": 0.561767578125,
+   "norm_child": 2.5520383132970892e-05,
+   "norm_parent": 2.5441620891797356e-05
+  },
+  {
+   "id": 128086,
+   "tok": "<|reserved_special_token_81|>",
+   "state": "changed",
+   "share_changed": 0.5623779296875,
+   "norm_child": 2.555565515649505e-05,
+   "norm_parent": 2.5477369490545243e-05
+  },
+  {
+   "id": 128087,
+   "tok": "<|reserved_special_token_82|>",
+   "state": "changed",
+   "share_changed": 0.567626953125,
+   "norm_child": 2.570041033322923e-05,
+   "norm_parent": 2.5620325686759315e-05
+  },
+  {
+   "id": 128088,
+   "tok": "<|reserved_special_token_83|>",
+   "state": "changed",
+   "share_changed": 0.570556640625,
+   "norm_child": 2.5438066586502828e-05,
+   "norm_parent": 2.535639941925183e-05
+  },
+  {
+   "id": 128089,
+   "tok": "<|reserved_special_token_84|>",
+   "state": "changed",
+   "share_changed": 0.5640869140625,
+   "norm_child": 2.5606457711546682e-05,
+   "norm_parent": 2.5528084734105505e-05
+  },
+  {
+   "id": 128090,
+   "tok": "<|reserved_special_token_85|>",
+   "state": "changed",
+   "share_changed": 0.5679931640625,
+   "norm_child": 2.5437097065150738e-05,
+   "norm_parent": 2.5357541744597256e-05
+  },
+  {
+   "id": 128091,
+   "tok": "<|reserved_special_token_86|>",
+   "state": "changed",
+   "share_changed": 0.5567626953125,
+   "norm_child": 2.551575562392827e-05,
+   "norm_parent": 2.5437429940211587e-05
+  },
+  {
+   "id": 128092,
+   "tok": "<|reserved_special_token_87|>",
+   "state": "changed",
+   "share_changed": 0.5611572265625,
+   "norm_child": 2.546106952650007e-05,
+   "norm_parent": 2.5381583327543922e-05
+  },
+  {
+   "id": 128093,
+   "tok": "<|reserved_special_token_88|>",
+   "state": "changed",
+   "share_changed": 0.5625,
+   "norm_child": 2.5412022296222858e-05,
+   "norm_parent": 2.5331681172247045e-05
+  },
+  {
+   "id": 128094,
+   "tok": "<|reserved_special_token_89|>",
+   "state": "changed",
+   "share_changed": 0.567626953125,
+   "norm_child": 2.5742416255525313e-05,
+   "norm_parent": 2.566189505159855e-05
+  },
+  {
+   "id": 128095,
+   "tok": "<|reserved_special_token_90|>",
+   "state": "changed",
+   "share_changed": 0.569091796875,
+   "norm_child": 2.540724199207034e-05,
+   "norm_parent": 2.5326320610474795e-05
+  },
+  {
+   "id": 128096,
+   "tok": "<|reserved_special_token_91|>",
+   "state": "changed",
+   "share_changed": 0.56494140625,
+   "norm_child": 2.54775004577823e-05,
+   "norm_parent": 2.5396355340490118e-05
+  },
+  {
+   "id": 128097,
+   "tok": "<|reserved_special_token_92|>",
+   "state": "changed",
+   "share_changed": 0.553955078125,
+   "norm_child": 2.5664798158686608e-05,
+   "norm_parent": 2.5586077754269354e-05
+  },
+  {
+   "id": 128098,
+   "tok": "<|reserved_special_token_93|>",
+   "state": "changed",
+   "share_changed": 0.5526123046875,
+   "norm_child": 2.5821049348451197e-05,
+   "norm_parent": 2.5742601792444475e-05
+  },
+  {
+   "id": 128099,
+   "tok": "<|reserved_special_token_94|>",
+   "state": "changed",
+   "share_changed": 0.5653076171875,
+   "norm_child": 2.5521876523271203e-05,
+   "norm_parent": 2.5441400794079527e-05
+  },
+  {
+   "id": 128100,
+   "tok": "<|reserved_special_token_95|>",
+   "state": "changed",
+   "share_changed": 0.554443359375,
+   "norm_child": 2.512139872123953e-05,
+   "norm_parent": 2.5045452275662683e-05
+  },
+  {
+   "id": 128101,
+   "tok": "<|reserved_special_token_96|>",
+   "state": "changed",
+   "share_changed": 0.5650634765625,
+   "norm_child": 2.51913043030072e-05,
+   "norm_parent": 2.5115101379924454e-05
+  },
+  {
+   "id": 128102,
+   "tok": "<|reserved_special_token_97|>",
+   "state": "changed",
+   "share_changed": 0.5662841796875,
+   "norm_child": 2.5071194613701664e-05,
+   "norm_parent": 2.498881076462567e-05
+  },
+  {
+   "id": 128103,
+   "tok": "<|reserved_special_token_98|>",
+   "state": "changed",
+   "share_changed": 0.5701904296875,
+   "norm_child": 2.5554007152095437e-05,
+   "norm_parent": 2.5475435904809274e-05
+  },
+  {
+   "id": 128104,
+   "tok": "<|reserved_special_token_99|>",
+   "state": "changed",
+   "share_changed": 0.5584716796875,
+   "norm_child": 2.5541643481119536e-05,
+   "norm_parent": 2.546424002503045e-05
+  },
+  {
+   "id": 128105,
+   "tok": "<|reserved_special_token_100|>",
+   "state": "changed",
+   "share_changed": 0.5670166015625,
+   "norm_child": 2.5349552743136883e-05,
+   "norm_parent": 2.5271132471971214e-05
+  },
+  {
+   "id": 128106,
+   "tok": "<|reserved_special_token_101|>",
+   "state": "changed",
+   "share_changed": 0.5650634765625,
+   "norm_child": 2.540650893934071e-05,
+   "norm_parent": 2.5327337425551377e-05
+  },
+  {
+   "id": 128107,
+   "tok": "<|reserved_special_token_102|>",
+   "state": "changed",
+   "share_changed": 0.5673828125,
+   "norm_child": 2.554741149651818e-05,
+   "norm_parent": 2.5466673832852393e-05
+  },
+  {
+   "id": 128108,
+   "tok": "<|reserved_special_token_103|>",
+   "state": "changed",
+   "share_changed": 0.5599365234375,
+   "norm_child": 2.543833397794515e-05,
+   "norm_parent": 2.536028841859661e-05
+  },
+  {
+   "id": 128109,
+   "tok": "<|reserved_special_token_104|>",
+   "state": "changed",
+   "share_changed": 0.5574951171875,
+   "norm_child": 2.586096707091201e-05,
+   "norm_parent": 2.578257226559799e-05
+  },
+  {
+   "id": 128110,
+   "tok": "<|reserved_special_token_105|>",
+   "state": "changed",
+   "share_changed": 0.557373046875,
+   "norm_child": 2.558636333560571e-05,
+   "norm_parent": 2.5507699319859967e-05
+  },
+  {
+   "id": 128111,
+   "tok": "<|reserved_special_token_106|>",
+   "state": "changed",
+   "share_changed": 0.5615234375,
+   "norm_child": 2.5407849534531124e-05,
+   "norm_parent": 2.5329167328891344e-05
+  },
+  {
+   "id": 128112,
+   "tok": "<|reserved_special_token_107|>",
+   "state": "changed",
+   "share_changed": 0.5546875,
+   "norm_child": 2.526073149056174e-05,
+   "norm_parent": 2.5184428523061797e-05
+  },
+  {
+   "id": 128113,
+   "tok": "<|reserved_special_token_108|>",
+   "state": "changed",
+   "share_changed": 0.563232421875,
+   "norm_child": 2.5923634893842973e-05,
+   "norm_parent": 2.5846127755357884e-05
+  },
+  {
+   "id": 128114,
+   "tok": "<|reserved_special_token_109|>",
+   "state": "changed",
+   "share_changed": 0.5677490234375,
+   "norm_child": 2.5310853743576445e-05,
+   "norm_parent": 2.5232924599549733e-05
+  },
+  {
+   "id": 128115,
+   "tok": "<|reserved_special_token_110|>",
+   "state": "changed",
+   "share_changed": 0.5640869140625,
+   "norm_child": 2.5361710868310183e-05,
+   "norm_parent": 2.5284251023549587e-05
+  },
+  {
+   "id": 128116,
+   "tok": "<|reserved_special_token_111|>",
+   "state": "changed",
+   "share_changed": 0.5650634765625,
+   "norm_child": 2.5296711100963876e-05,
+   "norm_parent": 2.52180816460168e-05
+  },
+  {
+   "id": 128117,
+   "tok": "<|reserved_special_token_112|>",
+   "state": "changed",
+   "share_changed": 0.552978515625,
+   "norm_child": 2.5247903977287933e-05,
+   "norm_parent": 2.5172090317937545e-05
+  },
+  {
+   "id": 128118,
+   "tok": "<|reserved_special_token_113|>",
+   "state": "changed",
+   "share_changed": 0.5689697265625,
+   "norm_child": 2.5540904971421696e-05,
+   "norm_parent": 2.546008545323275e-05
+  },
+  {
+   "id": 128119,
+   "tok": "<|reserved_special_token_114|>",
+   "state": "changed",
+   "share_changed": 0.5604248046875,
+   "norm_child": 2.5281879061367363e-05,
+   "norm_parent": 2.5203766199410893e-05
+  },
+  {
+   "id": 128120,
+   "tok": "<|reserved_special_token_115|>",
+   "state": "changed",
+   "share_changed": 0.556884765625,
+   "norm_child": 2.5785766410990618e-05,
+   "norm_parent": 2.5708743123686872e-05
+  },
+  {
+   "id": 128121,
+   "tok": "<|reserved_special_token_116|>",
+   "state": "changed",
+   "share_changed": 0.5662841796875,
+   "norm_child": 2.574599602667149e-05,
+   "norm_parent": 2.566779039625544e-05
+  },
+  {
+   "id": 128122,
+   "tok": "<|reserved_special_token_117|>",
+   "state": "changed",
+   "share_changed": 0.5478515625,
+   "norm_child": 2.503620089555625e-05,
+   "norm_parent": 2.4960560040199198e-05
+  },
+  {
+   "id": 128123,
+   "tok": "<|reserved_special_token_118|>",
+   "state": "changed",
+   "share_changed": 0.566650390625,
+   "norm_child": 2.572747143858578e-05,
+   "norm_parent": 2.5646262656664476e-05
+  },
+  {
+   "id": 128124,
+   "tok": "<|reserved_special_token_119|>",
+   "state": "changed",
+   "share_changed": 0.5621337890625,
+   "norm_child": 2.5777730115805753e-05,
+   "norm_parent": 2.5695546355564147e-05
+  },
+  {
+   "id": 128125,
+   "tok": "<|reserved_special_token_120|>",
+   "state": "changed",
+   "share_changed": 0.5550537109375,
+   "norm_child": 2.5368837668793276e-05,
+   "norm_parent": 2.5292531063314527e-05
+  },
+  {
+   "id": 128126,
+   "tok": "<|reserved_special_token_121|>",
+   "state": "changed",
+   "share_changed": 0.5555419921875,
+   "norm_child": 2.5540683054714464e-05,
+   "norm_parent": 2.546149153204169e-05
+  },
+  {
+   "id": 128127,
+   "tok": "<|reserved_special_token_122|>",
+   "state": "changed",
+   "share_changed": 0.5654296875,
+   "norm_child": 2.4995397325255908e-05,
+   "norm_parent": 2.491704435669817e-05
+  },
+  {
+   "id": 128128,
+   "tok": "<|reserved_special_token_123|>",
+   "state": "changed",
+   "share_changed": 0.564453125,
+   "norm_child": 2.5706687665660866e-05,
+   "norm_parent": 2.5625498892623e-05
+  },
+  {
+   "id": 128129,
+   "tok": "<|reserved_special_token_124|>",
+   "state": "changed",
+   "share_changed": 0.5712890625,
+   "norm_child": 2.5278417524532415e-05,
+   "norm_parent": 2.519864574423991e-05
+  },
+  {
+   "id": 128130,
+   "tok": "<|reserved_special_token_125|>",
+   "state": "changed",
+   "share_changed": 0.56689453125,
+   "norm_child": 2.542744914535433e-05,
+   "norm_parent": 2.534679697419051e-05
+  },
+  {
+   "id": 128131,
+   "tok": "<|reserved_special_token_126|>",
+   "state": "changed",
+   "share_changed": 0.5648193359375,
+   "norm_child": 2.5649746021372266e-05,
+   "norm_parent": 2.5571074729668908e-05
+  },
+  {
+   "id": 128132,
+   "tok": "<|reserved_special_token_127|>",
+   "state": "changed",
+   "share_changed": 0.5625,
+   "norm_child": 2.541232606745325e-05,
+   "norm_parent": 2.5333172743557952e-05
+  },
+  {
+   "id": 128133,
+   "tok": "<|reserved_special_token_128|>",
+   "state": "changed",
+   "share_changed": 0.5633544921875,
+   "norm_child": 2.552601472416427e-05,
+   "norm_parent": 2.5448258384130895e-05
+  },
+  {
+   "id": 128134,
+   "tok": "<|reserved_special_token_129|>",
+   "state": "changed",
+   "share_changed": 0.5699462890625,
+   "norm_child": 2.5802786694839597e-05,
+   "norm_parent": 2.5724179067765363e-05
+  },
+  {
+   "id": 128135,
+   "tok": "<|reserved_special_token_130|>",
+   "state": "changed",
+   "share_changed": 0.552490234375,
+   "norm_child": 2.5140347133856267e-05,
+   "norm_parent": 2.5062596250791103e-05
+  },
+  {
+   "id": 128136,
+   "tok": "<|reserved_special_token_131|>",
+   "state": "changed",
+   "share_changed": 0.546630859375,
+   "norm_child": 2.556374056439381e-05,
+   "norm_parent": 2.5488061510259286e-05
+  },
+  {
+   "id": 128137,
+   "tok": "<|reserved_special_token_132|>",
+   "state": "changed",
+   "share_changed": 0.5614013671875,
+   "norm_child": 2.5480811018496752e-05,
+   "norm_parent": 2.5402878236491233e-05
+  },
+  {
+   "id": 128138,
+   "tok": "<|reserved_special_token_133|>",
+   "state": "changed",
+   "share_changed": 0.55029296875,
+   "norm_child": 2.5444533093832433e-05,
+   "norm_parent": 2.5367129637743346e-05
+  },
+  {
+   "id": 128139,
+   "tok": "<|reserved_special_token_134|>",
+   "state": "changed",
+   "share_changed": 0.5560302734375,
+   "norm_child": 2.521907299524173e-05,
+   "norm_parent": 2.5142717277049087e-05
+  },
+  {
+   "id": 128140,
+   "tok": "<|reserved_special_token_135|>",
+   "state": "changed",
+   "share_changed": 0.5628662109375,
+   "norm_child": 2.5514578737784177e-05,
+   "norm_parent": 2.543474874983076e-05
+  },
+  {
+   "id": 128141,
+   "tok": "<|reserved_special_token_136|>",
+   "state": "changed",
+   "share_changed": 0.5562744140625,
+   "norm_child": 2.5539928174111992e-05,
+   "norm_parent": 2.5465473299846053e-05
+  },
+  {
+   "id": 128142,
+   "tok": "<|reserved_special_token_137|>",
+   "state": "changed",
+   "share_changed": 0.5670166015625,
+   "norm_child": 2.5601890229154378e-05,
+   "norm_parent": 2.5523155272821896e-05
+  },
+  {
+   "id": 128143,
+   "tok": "<|reserved_special_token_138|>",
+   "state": "changed",
+   "share_changed": 0.5677490234375,
+   "norm_child": 2.5379811631864868e-05,
+   "norm_parent": 2.5299546905444004e-05
+  },
+  {
+   "id": 128144,
+   "tok": "<|reserved_special_token_139|>",
+   "state": "changed",
+   "share_changed": 0.5643310546875,
+   "norm_child": 2.534137456677854e-05,
+   "norm_parent": 2.5262950657634065e-05
+  },
+  {
+   "id": 128145,
+   "tok": "<|reserved_special_token_140|>",
+   "state": "changed",
+   "share_changed": 0.5557861328125,
+   "norm_child": 2.582698652986437e-05,
+   "norm_parent": 2.5749437554623e-05
+  },
+  {
+   "id": 128146,
+   "tok": "<|reserved_special_token_141|>",
+   "state": "changed",
+   "share_changed": 0.557861328125,
+   "norm_child": 2.5630939489929006e-05,
+   "norm_parent": 2.5555704269208945e-05
+  },
+  {
+   "id": 128147,
+   "tok": "<|reserved_special_token_142|>",
+   "state": "changed",
+   "share_changed": 0.565185546875,
+   "norm_child": 2.541626599850133e-05,
+   "norm_parent": 2.5336441467516124e-05
+  },
+  {
+   "id": 128148,
+   "tok": "<|reserved_special_token_143|>",
+   "state": "changed",
+   "share_changed": 0.5609130859375,
+   "norm_child": 2.5201614334946498e-05,
+   "norm_parent": 2.512312312319409e-05
+  },
+  {
+   "id": 128149,
+   "tok": "<|reserved_special_token_144|>",
+   "state": "changed",
+   "share_changed": 0.5609130859375,
+   "norm_child": 2.5436316718696617e-05,
+   "norm_parent": 2.535685598559212e-05
+  },
+  {
+   "id": 128150,
+   "tok": "<|reserved_special_token_145|>",
+   "state": "changed",
+   "share_changed": 0.556396484375,
+   "norm_child": 2.5693499992485158e-05,
+   "norm_parent": 2.5614424885134213e-05
+  },
+  {
+   "id": 128151,
+   "tok": "<|reserved_special_token_146|>",
+   "state": "changed",
+   "share_changed": 0.56494140625,
+   "norm_child": 2.5390982045792043e-05,
+   "norm_parent": 2.5311665012850426e-05
+  },
+  {
+   "id": 128152,
+   "tok": "<|reserved_special_token_147|>",
+   "state": "changed",
+   "share_changed": 0.5618896484375,
+   "norm_child": 2.5409404770471156e-05,
+   "norm_parent": 2.5328028641524725e-05
+  },
+  {
+   "id": 128153,
+   "tok": "<|reserved_special_token_148|>",
+   "state": "changed",
+   "share_changed": 0.5550537109375,
+   "norm_child": 2.5601371817174368e-05,
+   "norm_parent": 2.5524466764181852e-05
+  },
+  {
+   "id": 128154,
+   "tok": "<|reserved_special_token_149|>",
+   "state": "changed",
+   "share_changed": 0.562744140625,
+   "norm_child": 2.5424162231502123e-05,
+   "norm_parent": 2.534594568714965e-05
+  },
+  {
+   "id": 128155,
+   "tok": "<|reserved_special_token_150|>",
+   "state": "changed",
+   "share_changed": 0.559326171875,
+   "norm_child": 2.5754641683306545e-05,
+   "norm_parent": 2.5675235519884154e-05
+  },
+  {
+   "id": 128156,
+   "tok": "<|reserved_special_token_151|>",
+   "state": "changed",
+   "share_changed": 0.56103515625,
+   "norm_child": 2.5495113732176833e-05,
+   "norm_parent": 2.5415620257263072e-05
+  },
+  {
+   "id": 128157,
+   "tok": "<|reserved_special_token_152|>",
+   "state": "changed",
+   "share_changed": 0.563720703125,
+   "norm_child": 2.5416889911866747e-05,
+   "norm_parent": 2.533904989832081e-05
+  },
+  {
+   "id": 128158,
+   "tok": "<|reserved_special_token_153|>",
+   "state": "changed",
+   "share_changed": 0.5628662109375,
+   "norm_child": 2.5470571927144192e-05,
+   "norm_parent": 2.5389494112459943e-05
+  },
+  {
+   "id": 128159,
+   "tok": "<|reserved_special_token_154|>",
+   "state": "changed",
+   "share_changed": 0.5633544921875,
+   "norm_child": 2.545663846831303e-05,
+   "norm_parent": 2.5379049475304782e-05
+  },
+  {
+   "id": 128160,
+   "tok": "<|reserved_special_token_155|>",
+   "state": "changed",
+   "share_changed": 0.5621337890625,
+   "norm_child": 2.54711394518381e-05,
+   "norm_parent": 2.5392377210664563e-05
+  },
+  {
+   "id": 128161,
+   "tok": "<|reserved_special_token_156|>",
+   "state": "changed",
+   "share_changed": 0.55615234375,
+   "norm_child": 2.561412111390382e-05,
+   "norm_parent": 2.5536841349094175e-05
+  },
+  {
+   "id": 128162,
+   "tok": "<|reserved_special_token_157|>",
+   "state": "changed",
+   "share_changed": 0.5614013671875,
+   "norm_child": 2.553969170548953e-05,
+   "norm_parent": 2.546075302234385e-05
+  },
+  {
+   "id": 128163,
+   "tok": "<|reserved_special_token_158|>",
+   "state": "changed",
+   "share_changed": 0.573974609375,
+   "norm_child": 2.5252347768400796e-05,
+   "norm_parent": 2.517479151720181e-05
+  },
+  {
+   "id": 128164,
+   "tok": "<|reserved_special_token_159|>",
+   "state": "changed",
+   "share_changed": 0.5621337890625,
+   "norm_child": 2.5425388230360113e-05,
+   "norm_parent": 2.5344896130263805e-05
+  },
+  {
+   "id": 128165,
+   "tok": "<|reserved_special_token_160|>",
+   "state": "changed",
+   "share_changed": 0.5543212890625,
+   "norm_child": 2.5427265427424572e-05,
+   "norm_parent": 2.534665327402763e-05
+  },
+  {
+   "id": 128166,
+   "tok": "<|reserved_special_token_161|>",
+   "state": "changed",
+   "share_changed": 0.56396484375,
+   "norm_child": 2.5697378077893518e-05,
+   "norm_parent": 2.561864494055044e-05
+  },
+  {
+   "id": 128167,
+   "tok": "<|reserved_special_token_162|>",
+   "state": "changed",
+   "share_changed": 0.5592041015625,
+   "norm_child": 2.5674200514913537e-05,
+   "norm_parent": 2.5596229534130543e-05
+  },
+  {
+   "id": 128168,
+   "tok": "<|reserved_special_token_163|>",
+   "state": "changed",
+   "share_changed": 0.565185546875,
+   "norm_child": 2.5451770852669142e-05,
+   "norm_parent": 2.5371438823640347e-05
+  },
+  {
+   "id": 128169,
+   "tok": "<|reserved_special_token_164|>",
+   "state": "changed",
+   "share_changed": 0.5596923828125,
+   "norm_child": 2.5485007427050732e-05,
+   "norm_parent": 2.5408167857676744e-05
+  },
+  {
+   "id": 128170,
+   "tok": "<|reserved_special_token_165|>",
+   "state": "changed",
+   "share_changed": 0.56640625,
+   "norm_child": 2.5514633307466283e-05,
+   "norm_parent": 2.543264599808026e-05
+  },
+  {
+   "id": 128171,
+   "tok": "<|reserved_special_token_166|>",
+   "state": "changed",
+   "share_changed": 0.55859375,
+   "norm_child": 2.5459024982410483e-05,
+   "norm_parent": 2.538323860790115e-05
+  },
+  {
+   "id": 128172,
+   "tok": "<|reserved_special_token_167|>",
+   "state": "changed",
+   "share_changed": 0.5579833984375,
+   "norm_child": 2.5763481971807778e-05,
+   "norm_parent": 2.5687466404633597e-05
+  },
+  {
+   "id": 128173,
+   "tok": "<|reserved_special_token_168|>",
+   "state": "changed",
+   "share_changed": 0.55712890625,
+   "norm_child": 2.5546320102876052e-05,
+   "norm_parent": 2.5466926672379486e-05
+  },
+  {
+   "id": 128174,
+   "tok": "<|reserved_special_token_169|>",
+   "state": "changed",
+   "share_changed": 0.5665283203125,
+   "norm_child": 2.5495490262983367e-05,
+   "norm_parent": 2.541760477470234e-05
+  },
+  {
+   "id": 128175,
+   "tok": "<|reserved_special_token_170|>",
+   "state": "changed",
+   "share_changed": 0.562255859375,
+   "norm_child": 2.5481578632025048e-05,
+   "norm_parent": 2.5403503968846053e-05
+  },
+  {
+   "id": 128176,
+   "tok": "<|reserved_special_token_171|>",
+   "state": "changed",
+   "share_changed": 0.564208984375,
+   "norm_child": 2.546682117099408e-05,
+   "norm_parent": 2.5386159904883243e-05
+  },
+  {
+   "id": 128177,
+   "tok": "<|reserved_special_token_172|>",
+   "state": "changed",
+   "share_changed": 0.566650390625,
+   "norm_child": 2.5625819034758024e-05,
+   "norm_parent": 2.5542754883645102e-05
+  },
+  {
+   "id": 128178,
+   "tok": "<|reserved_special_token_173|>",
+   "state": "changed",
+   "share_changed": 0.5579833984375,
+   "norm_child": 2.5576224288670346e-05,
+   "norm_parent": 2.5496627131360583e-05
+  },
+  {
+   "id": 128179,
+   "tok": "<|reserved_special_token_174|>",
+   "state": "changed",
+   "share_changed": 0.5623779296875,
+   "norm_child": 2.5740755518199876e-05,
+   "norm_parent": 2.566183866292704e-05
+  },
+  {
+   "id": 128180,
+   "tok": "<|reserved_special_token_175|>",
+   "state": "changed",
+   "share_changed": 0.5535888671875,
+   "norm_child": 2.560978100518696e-05,
+   "norm_parent": 2.553104241087567e-05
+  },
+  {
+   "id": 128181,
+   "tok": "<|reserved_special_token_176|>",
+   "state": "changed",
+   "share_changed": 0.5650634765625,
+   "norm_child": 2.543214213801548e-05,
+   "norm_parent": 2.5348690542159602e-05
+  },
+  {
+   "id": 128182,
+   "tok": "<|reserved_special_token_177|>",
+   "state": "changed",
+   "share_changed": 0.5653076171875,
+   "norm_child": 2.5890502001857385e-05,
+   "norm_parent": 2.5809027647483163e-05
+  },
+  {
+   "id": 128183,
+   "tok": "<|reserved_special_token_178|>",
+   "state": "changed",
+   "share_changed": 0.564697265625,
+   "norm_child": 2.5181514502037317e-05,
+   "norm_parent": 2.510236663511023e-05
+  },
+  {
+   "id": 128184,
+   "tok": "<|reserved_special_token_179|>",
+   "state": "changed",
+   "share_changed": 0.55712890625,
+   "norm_child": 2.561407018220052e-05,
+   "norm_parent": 2.553378726588562e-05
+  },
+  {
+   "id": 128185,
+   "tok": "<|reserved_special_token_180|>",
+   "state": "changed",
+   "share_changed": 0.566650390625,
+   "norm_child": 2.518312248867005e-05,
+   "norm_parent": 2.5104314772761427e-05
+  },
+  {
+   "id": 128186,
+   "tok": "<|reserved_special_token_181|>",
+   "state": "changed",
+   "share_changed": 0.5701904296875,
+   "norm_child": 2.5577199266990647e-05,
+   "norm_parent": 2.5497398382867686e-05
+  },
+  {
+   "id": 128187,
+   "tok": "<|reserved_special_token_182|>",
+   "state": "changed",
+   "share_changed": 0.5697021484375,
+   "norm_child": 2.5456542061874643e-05,
+   "norm_parent": 2.537706859584432e-05
+  },
+  {
+   "id": 128188,
+   "tok": "<|reserved_special_token_183|>",
+   "state": "changed",
+   "share_changed": 0.558349609375,
+   "norm_child": 2.5653023840277456e-05,
+   "norm_parent": 2.5570661819074303e-05
+  },
+  {
+   "id": 128189,
+   "tok": "<|reserved_special_token_184|>",
+   "state": "changed",
+   "share_changed": 0.5584716796875,
+   "norm_child": 2.564479837019462e-05,
+   "norm_parent": 2.556848994572647e-05
+  },
+  {
+   "id": 128190,
+   "tok": "<|reserved_special_token_185|>",
+   "state": "changed",
+   "share_changed": 0.5653076171875,
+   "norm_child": 2.5331988581456244e-05,
+   "norm_parent": 2.5252920750062913e-05
+  },
+  {
+   "id": 128191,
+   "tok": "<|reserved_special_token_186|>",
+   "state": "changed",
+   "share_changed": 0.5498046875,
+   "norm_child": 2.5510602426948026e-05,
+   "norm_parent": 2.5434057533857413e-05
+  },
+  {
+   "id": 128192,
+   "tok": "<|reserved_special_token_187|>",
+   "state": "changed",
+   "share_changed": 0.5570068359375,
+   "norm_child": 2.4996499632834457e-05,
+   "norm_parent": 2.492103521944955e-05
+  },
+  {
+   "id": 128193,
+   "tok": "<|reserved_special_token_188|>",
+   "state": "changed",
+   "share_changed": 0.5687255859375,
+   "norm_child": 2.5699035177240148e-05,
+   "norm_parent": 2.56182138400618e-05
+  },
+  {
+   "id": 128194,
+   "tok": "<|reserved_special_token_189|>",
+   "state": "changed",
+   "share_changed": 0.563232421875,
+   "norm_child": 2.5826120690908283e-05,
+   "norm_parent": 2.574893551354762e-05
+  },
+  {
+   "id": 128195,
+   "tok": "<|reserved_special_token_190|>",
+   "state": "changed",
+   "share_changed": 0.557861328125,
+   "norm_child": 2.5629646188463084e-05,
+   "norm_parent": 2.5553099476383068e-05
+  },
+  {
+   "id": 128196,
+   "tok": "<|reserved_special_token_191|>",
+   "state": "changed",
+   "share_changed": 0.5614013671875,
+   "norm_child": 2.5562456357874908e-05,
+   "norm_parent": 2.5484951038379222e-05
+  },
+  {
+   "id": 128197,
+   "tok": "<|reserved_special_token_192|>",
+   "state": "changed",
+   "share_changed": 0.5589599609375,
+   "norm_child": 2.553384729253594e-05,
+   "norm_parent": 2.5456189177930355e-05
+  },
+  {
+   "id": 128198,
+   "tok": "<|reserved_special_token_193|>",
+   "state": "changed",
+   "share_changed": 0.5745849609375,
+   "norm_child": 2.5609610020183027e-05,
+   "norm_parent": 2.5529107006150298e-05
+  },
+  {
+   "id": 128199,
+   "tok": "<|reserved_special_token_194|>",
+   "state": "changed",
+   "share_changed": 0.564453125,
+   "norm_child": 2.5507102691335604e-05,
+   "norm_parent": 2.5429369998164475e-05
+  },
+  {
+   "id": 128200,
+   "tok": "<|reserved_special_token_195|>",
+   "state": "changed",
+   "share_changed": 0.565673828125,
+   "norm_child": 2.5359444407513365e-05,
+   "norm_parent": 2.5282392016379163e-05
+  },
+  {
+   "id": 128201,
+   "tok": "<|reserved_special_token_196|>",
+   "state": "changed",
+   "share_changed": 0.568115234375,
+   "norm_child": 2.546471841924358e-05,
+   "norm_parent": 2.538912303862162e-05
+  },
+  {
+   "id": 128202,
+   "tok": "<|reserved_special_token_197|>",
+   "state": "changed",
+   "share_changed": 0.55712890625,
+   "norm_child": 2.5591976736905053e-05,
+   "norm_parent": 2.551437501097098e-05
+  },
+  {
+   "id": 128203,
+   "tok": "<|reserved_special_token_198|>",
+   "state": "changed",
+   "share_changed": 0.564697265625,
+   "norm_child": 2.5969082344090566e-05,
+   "norm_parent": 2.5888961317832582e-05
+  },
+  {
+   "id": 128204,
+   "tok": "<|reserved_special_token_199|>",
+   "state": "changed",
+   "share_changed": 0.568359375,
+   "norm_child": 2.535079875087831e-05,
+   "norm_parent": 2.5273129722336307e-05
+  },
+  {
+   "id": 128205,
+   "tok": "<|reserved_special_token_200|>",
+   "state": "changed",
+   "share_changed": 0.562255859375,
+   "norm_child": 2.5306708266725764e-05,
+   "norm_parent": 2.522938302718103e-05
+  },
+  {
+   "id": 128206,
+   "tok": "<|reserved_special_token_201|>",
+   "state": "changed",
+   "share_changed": 0.5615234375,
+   "norm_child": 2.565476461313665e-05,
+   "norm_parent": 2.557555853854865e-05
+  },
+  {
+   "id": 128207,
+   "tok": "<|reserved_special_token_202|>",
+   "state": "changed",
+   "share_changed": 0.558837890625,
+   "norm_child": 2.562263216532301e-05,
+   "norm_parent": 2.5544062737026252e-05
+  },
+  {
+   "id": 128208,
+   "tok": "<|reserved_special_token_203|>",
+   "state": "changed",
+   "share_changed": 0.5677490234375,
+   "norm_child": 2.5128605557256378e-05,
+   "norm_parent": 2.5051172997336835e-05
+  },
+  {
+   "id": 128209,
+   "tok": "<|reserved_special_token_204|>",
+   "state": "changed",
+   "share_changed": 0.5577392578125,
+   "norm_child": 2.541226967878174e-05,
+   "norm_parent": 2.5336763428640552e-05
+  },
+  {
+   "id": 128210,
+   "tok": "<|reserved_special_token_205|>",
+   "state": "changed",
+   "share_changed": 0.5703125,
+   "norm_child": 2.5339684725622647e-05,
+   "norm_parent": 2.5260684196837246e-05
+  },
+  {
+   "id": 128211,
+   "tok": "<|reserved_special_token_206|>",
+   "state": "changed",
+   "share_changed": 0.5645751953125,
+   "norm_child": 2.5158336939057335e-05,
+   "norm_parent": 2.507932913431432e-05
+  },
+  {
+   "id": 128212,
+   "tok": "<|reserved_special_token_207|>",
+   "state": "changed",
+   "share_changed": 0.564453125,
+   "norm_child": 2.5393077521584928e-05,
+   "norm_parent": 2.531581776565872e-05
+  },
+  {
+   "id": 128213,
+   "tok": "<|reserved_special_token_208|>",
+   "state": "changed",
+   "share_changed": 0.5640869140625,
+   "norm_child": 2.5868386728689075e-05,
+   "norm_parent": 2.5788545826799236e-05
+  },
+  {
+   "id": 128214,
+   "tok": "<|reserved_special_token_209|>",
+   "state": "changed",
+   "share_changed": 0.5633544921875,
+   "norm_child": 2.578422754595522e-05,
+   "norm_parent": 2.5706760425237007e-05
+  },
+  {
+   "id": 128215,
+   "tok": "<|reserved_special_token_210|>",
+   "state": "changed",
+   "share_changed": 0.5693359375,
+   "norm_child": 2.564306851127185e-05,
+   "norm_parent": 2.5562654627719894e-05
+  },
+  {
+   "id": 128216,
+   "tok": "<|reserved_special_token_211|>",
+   "state": "changed",
+   "share_changed": 0.55029296875,
+   "norm_child": 2.5634801204432733e-05,
+   "norm_parent": 2.555631181166973e-05
+  },
+  {
+   "id": 128217,
+   "tok": "<|reserved_special_token_212|>",
+   "state": "changed",
+   "share_changed": 0.5675048828125,
+   "norm_child": 2.539672641432844e-05,
+   "norm_parent": 2.53150374192046e-05
+  },
+  {
+   "id": 128218,
+   "tok": "<|reserved_special_token_213|>",
+   "state": "changed",
+   "share_changed": 0.559814453125,
+   "norm_child": 2.5389756046934053e-05,
+   "norm_parent": 2.531287827878259e-05
+  },
+  {
+   "id": 128219,
+   "tok": "<|reserved_special_token_214|>",
+   "state": "changed",
+   "share_changed": 0.5682373046875,
+   "norm_child": 2.539599154260941e-05,
+   "norm_parent": 2.5316998289781623e-05
+  },
+  {
+   "id": 128220,
+   "tok": "<|reserved_special_token_215|>",
+   "state": "changed",
+   "share_changed": 0.563232421875,
+   "norm_child": 2.553246849856805e-05,
+   "norm_parent": 2.5455363356741145e-05
+  },
+  {
+   "id": 128221,
+   "tok": "<|reserved_special_token_216|>",
+   "state": "changed",
+   "share_changed": 0.5570068359375,
+   "norm_child": 2.535591738705989e-05,
+   "norm_parent": 2.5279596229665913e-05
+  },
+  {
+   "id": 128222,
+   "tok": "<|reserved_special_token_217|>",
+   "state": "changed",
+   "share_changed": 0.5555419921875,
+   "norm_child": 2.5815164917730726e-05,
+   "norm_parent": 2.5734625523909926e-05
+  },
+  {
+   "id": 128223,
+   "tok": "<|reserved_special_token_218|>",
+   "state": "changed",
+   "share_changed": 0.5650634765625,
+   "norm_child": 2.5699642719700933e-05,
+   "norm_parent": 2.561851215432398e-05
+  },
+  {
+   "id": 128224,
+   "tok": "<|reserved_special_token_219|>",
+   "state": "changed",
+   "share_changed": 0.556640625,
+   "norm_child": 2.5044857466127723e-05,
+   "norm_parent": 2.4968647267087363e-05
+  },
+  {
+   "id": 128225,
+   "tok": "<|reserved_special_token_220|>",
+   "state": "changed",
+   "share_changed": 0.558349609375,
+   "norm_child": 2.537669388402719e-05,
+   "norm_parent": 2.5299414119217545e-05
+  },
+  {
+   "id": 128226,
+   "tok": "<|reserved_special_token_221|>",
+   "state": "changed",
+   "share_changed": 0.5594482421875,
+   "norm_child": 2.5660470782895572e-05,
+   "norm_parent": 2.558131564001087e-05
+  },
+  {
+   "id": 128227,
+   "tok": "<|reserved_special_token_222|>",
+   "state": "changed",
+   "share_changed": 0.5626220703125,
+   "norm_child": 2.5752693545655347e-05,
+   "norm_parent": 2.567460796853993e-05
+  },
+  {
+   "id": 128228,
+   "tok": "<|reserved_special_token_223|>",
+   "state": "changed",
+   "share_changed": 0.559326171875,
+   "norm_child": 2.563629277574364e-05,
+   "norm_parent": 2.5558689230820164e-05
+  },
+  {
+   "id": 128229,
+   "tok": "<|reserved_special_token_224|>",
+   "state": "changed",
+   "share_changed": 0.5660400390625,
+   "norm_child": 2.529949961171951e-05,
+   "norm_parent": 2.522379145375453e-05
+  },
+  {
+   "id": 128230,
+   "tok": "<|reserved_special_token_225|>",
+   "state": "changed",
+   "share_changed": 0.55908203125,
+   "norm_child": 2.5594148610252887e-05,
+   "norm_parent": 2.55168997682631e-05
+  },
+  {
+   "id": 128231,
+   "tok": "<|reserved_special_token_226|>",
+   "state": "changed",
+   "share_changed": 0.560302734375,
+   "norm_child": 2.561584005889017e-05,
+   "norm_parent": 2.5535153326927684e-05
+  },
+  {
+   "id": 128232,
+   "tok": "<|reserved_special_token_227|>",
+   "state": "changed",
+   "share_changed": 0.5635986328125,
+   "norm_child": 2.5858620574581437e-05,
+   "norm_parent": 2.5777761038625613e-05
+  },
+  {
+   "id": 128233,
+   "tok": "<|reserved_special_token_228|>",
+   "state": "changed",
+   "share_changed": 0.5628662109375,
+   "norm_child": 2.5294188162661158e-05,
+   "norm_parent": 2.5216300855390728e-05
+  },
+  {
+   "id": 128234,
+   "tok": "<|reserved_special_token_229|>",
+   "state": "changed",
+   "share_changed": 0.5545654296875,
+   "norm_child": 2.56294497376075e-05,
+   "norm_parent": 2.55512186413398e-05
+  },
+  {
+   "id": 128235,
+   "tok": "<|reserved_special_token_230|>",
+   "state": "changed",
+   "share_changed": 0.56396484375,
+   "norm_child": 2.5689774702186696e-05,
+   "norm_parent": 2.5609615477151237e-05
+  },
+  {
+   "id": 128236,
+   "tok": "<|reserved_special_token_231|>",
+   "state": "changed",
+   "share_changed": 0.56005859375,
+   "norm_child": 2.5384309992659837e-05,
+   "norm_parent": 2.5304163500550203e-05
+  },
+  {
+   "id": 128237,
+   "tok": "<|reserved_special_token_232|>",
+   "state": "changed",
+   "share_changed": 0.5745849609375,
+   "norm_child": 2.5673671188997105e-05,
+   "norm_parent": 2.559353379183449e-05
+  },
+  {
+   "id": 128238,
+   "tok": "<|reserved_special_token_233|>",
+   "state": "changed",
+   "share_changed": 0.5673828125,
+   "norm_child": 2.540314380894415e-05,
+   "norm_parent": 2.5324347006971948e-05
+  },
+  {
+   "id": 128239,
+   "tok": "<|reserved_special_token_234|>",
+   "state": "changed",
+   "share_changed": 0.5689697265625,
+   "norm_child": 2.5451936380704865e-05,
+   "norm_parent": 2.537264117563609e-05
+  },
+  {
+   "id": 128240,
+   "tok": "<|reserved_special_token_235|>",
+   "state": "changed",
+   "share_changed": 0.556396484375,
+   "norm_child": 2.5468680178164504e-05,
+   "norm_parent": 2.539261731726583e-05
+  },
+  {
+   "id": 128241,
+   "tok": "<|reserved_special_token_236|>",
+   "state": "changed",
+   "share_changed": 0.5618896484375,
+   "norm_child": 2.549135751905851e-05,
+   "norm_parent": 2.541309549997095e-05
+  },
+  {
+   "id": 128242,
+   "tok": "<|reserved_special_token_237|>",
+   "state": "changed",
+   "share_changed": 0.5516357421875,
+   "norm_child": 2.532869257265702e-05,
+   "norm_parent": 2.525282616261393e-05
+  },
+  {
+   "id": 128243,
+   "tok": "<|reserved_special_token_238|>",
+   "state": "changed",
+   "share_changed": 0.56298828125,
+   "norm_child": 2.528080585761927e-05,
+   "norm_parent": 2.5203129553119652e-05
+  },
+  {
+   "id": 128244,
+   "tok": "<|reserved_special_token_239|>",
+   "state": "changed",
+   "share_changed": 0.56787109375,
+   "norm_child": 2.527700962673407e-05,
+   "norm_parent": 2.5198236471624114e-05
+  },
+  {
+   "id": 128245,
+   "tok": "<|reserved_special_token_240|>",
+   "state": "changed",
+   "share_changed": 0.5662841796875,
+   "norm_child": 2.5748309781192802e-05,
+   "norm_parent": 2.5665565772214904e-05
+  },
+  {
+   "id": 128246,
+   "tok": "<|reserved_special_token_241|>",
+   "state": "changed",
+   "share_changed": 0.561767578125,
+   "norm_child": 2.5387867935933173e-05,
+   "norm_parent": 2.5308798285550438e-05
+  },
+  {
+   "id": 128247,
+   "tok": "<|reserved_special_token_242|>",
+   "state": "changed",
+   "share_changed": 0.56494140625,
+   "norm_child": 2.5364532120875083e-05,
+   "norm_parent": 2.52828212978784e-05
+  },
+  {
+   "id": 128248,
+   "tok": "<|reserved_special_token_243|>",
+   "state": "changed",
+   "share_changed": 0.55810546875,
+   "norm_child": 2.529471748857759e-05,
+   "norm_parent": 2.5217252186848782e-05
+  },
+  {
+   "id": 128249,
+   "tok": "<|reserved_special_token_244|>",
+   "state": "changed",
+   "share_changed": 0.564208984375,
+   "norm_child": 2.5349059797008522e-05,
+   "norm_parent": 2.527231481508352e-05
+  },
+  {
+   "id": 128250,
+   "tok": "<|reserved_special_token_245|>",
+   "state": "changed",
+   "share_changed": 0.5643310546875,
+   "norm_child": 2.5438937882427126e-05,
+   "norm_parent": 2.5360101062688045e-05
+  },
+  {
+   "id": 128251,
+   "tok": "<|reserved_special_token_246|>",
+   "state": "changed",
+   "share_changed": 0.5684814453125,
+   "norm_child": 2.5543828087393194e-05,
+   "norm_parent": 2.546126961533446e-05
+  },
+  {
+   "id": 128252,
+   "tok": "<|reserved_special_token_247|>",
+   "state": "changed",
+   "share_changed": 0.5654296875,
+   "norm_child": 2.502260758774355e-05,
+   "norm_parent": 2.494700311217457e-05
+  },
+  {
+   "id": 128253,
+   "tok": "<|reserved_special_token_248|>",
+   "state": "changed",
+   "share_changed": 0.5625,
+   "norm_child": 2.550399221945554e-05,
+   "norm_parent": 2.54243041126756e-05
+  },
+  {
+   "id": 128254,
+   "tok": "<|reserved_special_token_249|>",
+   "state": "changed",
+   "share_changed": 0.563720703125,
+   "norm_child": 2.556217077653855e-05,
+   "norm_parent": 2.5481947886873968e-05
+  },
+  {
+   "id": 128255,
+   "tok": "<|reserved_special_token_250|>",
+   "state": "changed",
+   "share_changed": 0.5595703125,
+   "norm_child": 2.55267477768939e-05,
+   "norm_parent": 2.5449038730585016e-05
+  },
+  {
+   "id": 128256,
+   "tok": "<thinking>",
+   "state": "added",
+   "share_changed": null,
+   "norm_child": 1.7866474390029907,
+   "norm_parent": null
+  },
+  {
+   "id": 128257,
+   "tok": "</thinking>",
+   "state": "added",
+   "share_changed": null,
+   "norm_child": 1.8154762983322144,
+   "norm_parent": null
+  },
+  {
+   "id": 128258,
+   "tok": "<output>",
+   "state": "added",
+   "share_changed": null,
+   "norm_child": 1.7569689750671387,
+   "norm_parent": null
+  },
+  {
+   "id": 128259,
+   "tok": "</output>",
+   "state": "added",
+   "share_changed": null,
+   "norm_child": 1.8073838949203491,
+   "norm_parent": null
+  },
+  {
+   "id": 128260,
+   "tok": "<reflection>",
+   "state": "added",
+   "share_changed": null,
+   "norm_child": 1.7907108068466187,
+   "norm_parent": null
+  },
+  {
+   "id": 128261,
+   "tok": "</reflection>",
+   "state": "added",
+   "share_changed": null,
+   "norm_child": 1.7989166975021362,
+   "norm_parent": null
+  }
+ ],
+ "flat_moves": []
+}

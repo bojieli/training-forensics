@@ -20,6 +20,15 @@
   "adapter": false
  },
  {
+  "repo": "mattshumer/Reflection-Llama-3.1-70B",
+  "downloads": 1737,
+  "likes": 1719,
+  "params": 70553804800,
+  "base": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
   "repo": "google/gemma-2-2b",
   "downloads": 80067,
   "likes": 770,

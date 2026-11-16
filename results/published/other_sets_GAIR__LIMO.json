@@ -1,0 +1,37 @@
+{
+ "child": "GAIR/LIMO",
+ "data": "limo",
+ "extra": 16534,
+ "covered_by": {
+  "limo2": {
+   "covers": 1497,
+   "set_size": 13536,
+   "set_tokens_not_updated": 2598
+  },
+  "s1": {
+   "covers": 2367,
+   "set_size": 16573,
+   "set_tokens_not_updated": 4791
+  },
+  "s1.1": {
+   "covers": 5886,
+   "set_size": 27154,
+   "set_tokens_not_updated": 9516
+  },
+  "skyt1": {
+   "covers": 8770,
+   "set_size": 48015,
+   "set_tokens_not_updated": 26609
+  },
+  "stratos": {
+   "covers": 6577,
+   "set_size": 43761,
+   "set_tokens_not_updated": 24531
+  },
+  "ot114k": {
+   "covers": 9908,
+   "set_size": 65546,
+   "set_tokens_not_updated": 42614
+  }
+ }
+}
