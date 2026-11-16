@@ -1,0 +1,50 @@
+[
+ {
+  "mirror": "ApolloRaines/Llama-3.1-405B-Instruct-Jbliterated",
+  "rev": "31e1979babc27e4bc4dc5432dba8caddad285e94",
+  "official": "inst",
+  "embed_file": "model-00001-of-00191.safetensors",
+  "shared": 10,
+  "official_files": 191
+ },
+ {
+  "mirror": "PrimeIntellect/Meta-Llama-3.1-405B-Instruct-FP8",
+  "rev": "2ed58a02ec791aeb0f44e98c4a9c627586e93ffb",
+  "official": "inst",
+  "embed_file": "model-00001-of-00109.safetensors",
+  "shared": 3,
+  "official_files": 191
+ },
+ {
+  "mirror": "SicariusSicariiStuff/Llama-3.1-405B-Instruct",
+  "rev": "99747b3d4a9c7c7efde65a2333034ec768828a58",
+  "official": "inst",
+  "embed_file": "model-00001-of-00191.safetensors",
+  "shared": 191,
+  "official_files": 191
+ },
+ {
+  "mirror": "SudoRose/Slim-Llama3.1-405B",
+  "rev": "95c31234e896275800b602a1168ac3eba2f9352d",
+  "official": "base",
+  "embed_file": "model-00001-of-00034.safetensors",
+  "shared": 3,
+  "official_files": 191
+ },
+ {
+  "mirror": "chutesai/Llama-3.1-405B-FP8",
+  "rev": "dc8bc08d76ef2f36e2d8c3806d7c192c41cad1ac",
+  "official": "base",
+  "embed_file": "model-00001-of-00109.safetensors",
+  "shared": 3,
+  "official_files": 191
+ },
+ {
+  "mirror": "models123/Meta-Llama-3.1-405B-Instruct-FP8",
+  "rev": "9073236ddf501e5af330a5c281bd62da35290e51",
+  "official": "inst",
+  "embed_file": "model-00001-of-00109.safetensors",
+  "shared": 3,
+  "official_files": 191
+ }
+]

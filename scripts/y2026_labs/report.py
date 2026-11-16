@@ -79,6 +79,17 @@ def main():
     sk = json.load(open(D / "skipped.json"))
     L += ["", "## Candidates not compared", "", "| parent -> release | reason |", "|---|---|"]
     L += [f"| {s['parent']} -> {s['child']} | {s['why'][:140]} |" for s in sk]
+    gp = ROOT / "results" / "roster" / "sweep_gated.jsonl"
+    if gp.exists():
+        L += ["", "## Previously gated, run through a byte-identical open copy", "",
+              "The official base is gated; the open copy used has weight files identical to it by sha256 (results/gated/GATED.md).", "",
+              "| official base | release | bit-identical token vectors | shrink factor | fit | reading |", "|---|---|---|---|---|---|"]
+        for l in open(gp):
+            r = json.loads(l); e = r.get("embed", {})
+            if "y2026_labs" not in " ".join(r.get("src", [])): continue
+            u = e.get("unmoved") or 0
+            rd = ("descends from this base; most token vectors retrained" if u >= 100 and e.get("P") == 1.0 else "not a trained copy of this base")
+            L.append(f"| {r['official_parent']} | {r['child']} | {u:,} | {e.get('P')} | {e.get('P_exact_frac')} | {rd} |")
     (D / "LABS2026.md").write_text("\n".join(L) + "\n")
     print("wrote", D / "LABS2026.md")
 

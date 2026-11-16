@@ -1,0 +1,7 @@
+[
+ {"repo": "swiss-ai/Apertus-v1.5-70B-base, -SFT, -RL, Apertus-v1.5-70B", "needed_for": "three base -> SFT -> RL -> release comparisons (frontier_x)"},
+ {"repo": "CohereLabs/tiny-aya-base, -global, -earth, -fire, -water", "needed_for": "four base -> release comparisons (y2026_labs)"},
+ {"repo": "deep-principle/Hydrogen-1.0", "needed_for": "GLM-5.3 fine-tune comparison (y2026_ft)"},
+ {"repo": "Glint-Research/Fable-5-traces (dataset)", "needed_for": "Qwable-9B published-data audit (y2026_ft); the dataset answers 404 to this account, so it may be private rather than gated"},
+ {"repo": "meta-llama/* (official repos)", "needed_for": "not needed: every open copy used is byte-identical by sha256, or (405B FP8) value-identical in the token vectors"}
+]

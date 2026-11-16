@@ -161,7 +161,8 @@ share the step, consistent with a common tool that zeroes never-trained tokens.
 Sources and caveats:
 - perplexity-ai/r1-1776 is no longer on Hugging Face; the bf16 MLX mirror is used. 20,876 of its vectors are bit-identical to R1,
   which a lossy conversion could not produce, so its embedding is an exact copy of the release.
-- Llama-3.1-405B (base and Instruct) are gated; the bf16 embeddings inside public FP8 releases are used (NousResearch, RedHatAI).
+- Llama-3.1-405B (base and Instruct) are gated; the bf16 token vectors inside public FP8 releases are used (NousResearch, RedHatAI).
+  Both are bit-identical in all 2,101,346,304 values to copies whose files match Meta's official releases by sha256 (results/gated/GATED.md).
   Tulu and Hermes keep thousands of vectors bit-identical to them, so those embeddings are the original 16-bit ones.
 - AM-Thinking-v1's index file points at the wrong shards; its tensors were located by scanning shard headers (fix_am.py).
 - Output heads are compared up to 2.6 GB; the 405B heads (4.2 GB) were skipped to stay within the download budget.

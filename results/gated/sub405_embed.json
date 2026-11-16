@@ -1,0 +1,22 @@
+[
+ {
+  "substitute": "NousResearch/Meta-Llama-3.1-405B-FP8",
+  "reference": "chutesai/Llama-3.1-405B-FP8",
+  "reference_file_sha256_equals": "meta-llama/Llama-3.1-405B",
+  "rows": 128256,
+  "identical_rows": 128256,
+  "identical_values": 2101346304,
+  "values": 2101346304,
+  "bit_identical": true
+ },
+ {
+  "substitute": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+  "reference": "SicariusSicariiStuff/Llama-3.1-405B-Instruct",
+  "reference_file_sha256_equals": "meta-llama/Llama-3.1-405B-Instruct",
+  "rows": 128256,
+  "identical_rows": 128256,
+  "identical_values": 2101346304,
+  "values": 2101346304,
+  "bit_identical": true
+ }
+]
