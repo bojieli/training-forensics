@@ -149,7 +149,75 @@ def read(run: pathlib.Path, release="fp32", with_data=True, bs=None):
     rec["peak_snap"] = snap(rec["peak"])
     rec["wd_snap"] = snap(wd) if wd else 0.0
     out["recipe"] = rec
-    if rec["wd_snap"] > 0:
+    use_v2 = (os.environ.get("TF_READER", "v2") == "v2" and release == "fp32" and rec["wd_snap"] > 0)
+    if use_v2:
+        # Reader v2 (trainforensics/recipe_v2.py, Fix-E): the never-updated weights
+        # are a bit-exact record of the decay factors. Choose the schedule shape
+        # among the move fit's candidates by bit-exact replay, with a continuous
+        # weight decay (a round value only when it reproduces the same factors),
+        # and report the replay fraction as the confidence; the recipe
+        # is flagged as not recovered below 0.95 (e.g. a schedule outside blind.KINDS).
+        from trainforensics import recipe_v2
+        logP = math.log(decay)
+        procs = int(os.environ.get("TF_PROCS", "32"))
+        pool = [dict(kind=best.kind, N=best.N, warmup=best.warmup, peak=best.peak, min_ratio=best.min_ratio)]
+        pool += recipe_v2.candidate_pool(Dq, logP, procs=procs)
+        idx = np.nonzero(~rd.moved)[0]
+        g = np.random.default_rng(0)
+        s_idx = np.sort(g.choice(idx, min(48, len(idx)), replace=False))
+        f_idx = idx[np.linspace(0, len(idx) - 1, min(256, len(idx))).astype(int)]
+        lo_ = np.log(np.asarray(Dq)[np.asarray(Dq) > 0])
+
+        def lr_fn(r):
+            return hf_lr(dict(r, peak=snap(r["peak"])), r["N"])
+
+        def wd_of(r, lr):
+            return blind.wd_from_decay(decay, lr)
+
+        def dfit(r):
+            return blind._eval((lo_, r["kind"], r["N"], r["warmup"], r["min_ratio"], ("logP", logP), 6e-4))
+
+        sel = recipe_v2.select(pool, lr_fn, W0[s_idx].float().flatten(), W1[s_idx].flatten(),
+                               W0[f_idx].float().flatten(), W1[f_idx].flatten(), wd_of,
+                               dscore_fn=lambda r: dfit(r).score)
+        before = dict(kind=rec["kind"], N=rec["N"], warmup=rec["warmup"], wd_snap=rec["wd_snap"])
+        rr = sel["recipe"]
+        pk_used = snap(rr["peak"])               # the peak the replay was run with
+        # the replay fixes only the product peak x wd; the peak comes from the move
+        # fit of the selected shape at the fine tolerance, and wd = product / peak
+        pk = dfit(rr).peak
+        pk_s = snap(pk)
+        if pk_used != rr["peak"] and recipe_v2.round_in(sel["wd_interval"]) is not None:
+            # the replay ran at a round peak and a round decay reproduces the same
+            # factors: keep that pair (the weights fix only the product; the move
+            # fit's peak for a constant schedule is degenerate with the step count)
+            pk, pk_s = rr["peak"], pk_used
+        scale = pk_used / pk_s
+        rec.update(kind=rr["kind"], N=rr["N"], warmup=rr["warmup"], min_ratio=rr["min_ratio"],
+                   peak=pk, peak_snap=pk_s)
+        rec["wd"] = sel["wd_continuous"] * scale
+        rec["wd_interval"] = [x * scale for x in sel["wd_interval"]]
+        rv = recipe_v2.round_in(rec["wd_interval"])
+        rec["wd_snap"] = rv if rv is not None else rec["wd"]
+        # confirm the rescaled pair still reproduces the replayed weights
+        lr_chk = hf_lr(dict(rec, peak=pk_s), rec["N"])
+        xf0, xf1 = W0[f_idx].float().flatten(), W1[f_idx].flatten()
+        h_chk = int(recipe_v2.hits(xf0, xf1, lr_chk, [rec["wd_snap"]])[0])
+        if h_chk < sel["hits"]:
+            # fall back to the peak the replay used (exactly the selected factors)
+            rec.update(peak_snap=pk_used, wd=sel["wd_continuous"], wd_interval=sel["wd_interval"],
+                       wd_snap=sel["wd"])
+            h_chk = sel["hits"]
+        sel["hits_reported"] = h_chk
+        rec["recipe_recovered"] = sel["recovered"]
+        out["reader"] = "v2"
+        out["replay_select"] = {k: sel[k] for k in ("conf", "recovered", "hits", "hits_reported", "sample", "n_candidates",
+                                                     "replay_ties", "wd_interval", "screened")}
+        out["replay_refine"] = dict(reader="v2", wd=rec["wd_snap"], before=before,
+                                    after=dict(kind=rec["kind"], N=rec["N"], warmup=rec["warmup"]),
+                                    sample_weights=sel["sample"], hits=sel["hits"])
+    elif rec["wd_snap"] > 0:
+        out["reader"] = "v1"
         # Under decoupled decay the never-touched rows are an exact record of the
         # factor sequence: refine the step count (and warm-up) by bit-exact replay
         # on a sample of rows that did not move.
@@ -258,7 +326,7 @@ def score(run: pathlib.Path, out: dict, with_docs=True):
     true = dict(kind=a["sched"], N=R.N, warmup=a["warmup"], peak=a["lr"], wd=a["wd"])
     rec = out["recipe"]
     res["recipe_true"] = true
-    res["recipe_read"] = {k: rec[k] for k in ("kind", "N", "warmup", "peak", "peak_snap", "wd", "wd_snap", "min_ratio")}
+    res["recipe_read"] = {k: rec.get(k) for k in ("kind", "N", "warmup", "peak", "peak_snap", "wd", "wd_snap", "min_ratio", "wd_interval")}
     res["recipe_ok"] = dict(kind=rec["kind"] == true["kind"], N=rec["N"] == true["N"],
                             warmup=rec["warmup"] == true["warmup"],
                             peak_rel_err=rec["peak"] / true["peak"] - 1,
@@ -276,6 +344,17 @@ def score(run: pathlib.Path, out: dict, with_docs=True):
     res["recipe_ok"]["lr_max_rel_dev_raw"] = (float(np.max(np.abs(lr_unsnapped[1:] - R.lr[1:])) / R.lr.max())
                                               if lr_unsnapped is not None else None)
     res["recipe_ok"]["schedule_exact"] = dl is not None and dl < 1e-9
+    # v2: shape exact, and decay factors identical to the trainer's in every step
+    res["recipe_ok"]["shape_exact"] = bool(rec["kind"] == true["kind"] and rec["N"] == R.N
+                                          and rec["warmup"] == true["warmup"])
+    if true["wd"] and rec.get("wd_snap") and len(lr_read) == len(R.lr):
+        f_true = (1.0 - np.asarray(R.lr[1:], np.float64) * true["wd"]).astype(np.float32)
+        f_read = (1.0 - lr_read[1:] * rec["wd_snap"]).astype(np.float32)
+        res["recipe_ok"]["decay_factors_exact"] = bool(np.array_equal(f_true, f_read))
+        res["recipe_ok"]["decay_factor_mismatch_steps"] = int((f_true != f_read).sum())
+    res["reader"] = out.get("reader", "v1" if not rec.get("wd_snap") else "v1")
+    res["replay_select"] = out.get("replay_select")
+    res["recipe_recovered"] = rec.get("recipe_recovered", None)
     res["replay_refine"] = out.get("replay_refine")
     # Which step count is reported: the weights alone, or the weights plus the
     # claimed document list and batch size (tech review M1). The batch size is

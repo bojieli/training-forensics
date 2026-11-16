@@ -22,6 +22,7 @@ from __future__ import annotations
 import argparse
 import json
 import pathlib
+import os
 import sys
 
 import numpy as np
@@ -165,7 +166,8 @@ def main():
                     x = replay_rows(W0s[idx], rec, best, N=rec["N"] + sh)
                     res[k] = {"weights": int(y.numel()), "bit_exact": int((x == y).sum()), "form": best}
         S.load_file = orig_load
-        dst = ROOT / "results" / "stacks" / f"{run.name}.{rel}.json"
+        dst = ROOT / os.environ.get("TF_OUTDIR", "results/stacks") / f"{run.name}.{rel}.json"
+        dst.parent.mkdir(parents=True, exist_ok=True)
         dst.parent.mkdir(parents=True, exist_ok=True)
         json.dump(res, open(dst, "w"), indent=1, default=float)
         brief = {k: res.get(k) for k in ("tokens", "tokens_replay", "recipe_ok", "seed", "replay", "decay_forms",
