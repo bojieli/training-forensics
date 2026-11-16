@@ -1,0 +1,2528 @@
+[
+ {
+  "parent": "Aleph-Alpha/Kolibri-1-BF16",
+  "child": "Aleph-Alpha/Kolibri-1",
+  "source": "roster",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "arcee-ai/Trinity-Mini-Base",
+  "child": "arcee-ai/Trinity-Mini",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "kakaocorp/kanana-2-30b-a3b-base",
+  "child": "kakaocorp/kanana-2-30b-a3b-instruct",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V4-Flash-Base",
+  "child": "deepseek-ai/DeepSeek-V4-Flash",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "arcee-ai/Trinity-Large-Base",
+  "child": "arcee-ai/Trinity-Large-Thinking",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Leanstral-2603",
+  "child": "mistralai/Leanstral-1.5-119B-A6B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-4.5-Air-Base",
+  "child": "PrimeIntellect/INTELLECT-3",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3-235B-A22B",
+  "child": "baichuan-inc/Baichuan-M3-235B",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "mistralai/Mistral-Small-3.1-24B-Base-2503",
+  "child": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+  "child": "mistralai/Magistral-Small-2509",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-122B-A10B",
+  "child": "BAAI/AREX-Base",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-3.1-32B-Instruct-DPO",
+  "child": "allenai/Olmo-3.1-32B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-32B",
+  "child": "Qwen/QwQ-32B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "ByteDance-Seed/Seed-OSS-36B-Base",
+  "child": "NousResearch/Hermes-4.3-36B",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3-Base",
+  "child": "deepcogito/cogito-671b-v2.1",
+  "source": "roster",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "ai-sage/GigaChat3.5-432B-A28B-base",
+  "child": "ai-sage/GigaChat3.5-432B-A28B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3-Base",
+  "child": "deepseek-ai/DeepSeek-R1",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+  "child": "deepseek-ai/DeepSeek-V3.2",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V4-Pro-Base",
+  "child": "deepseek-ai/DeepSeek-V4-Pro",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "unsloth/Llama-4-Maverick-17B-128E",
+  "child": "unsloth/Llama-4-Maverick-17B-128E-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "unsloth/Llama-3.3-70B-Instruct",
+  "child": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "unsloth/Meta-Llama-3.1-70B-Instruct",
+  "child": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3-0324",
+  "child": "Rakuten/RakutenAI-3.0",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "mistralai/Mistral-7B-v0.1",
+  "child": "mistralai/Mixtral-8x7B-v0.1",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3.8-27B",
+  "child": "NousResearch/Arete-27B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Mistral-7B-v0.1",
+  "child": "mistralai/Mistral-7B-v0.3",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "MiniMaxAI/MiniMax-Text-01",
+  "child": "MiniMaxAI/MiniMax-M1-80k",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "BSC-LT/ALIA-40b",
+  "child": "BSC-LT/ALIA-40b-instruct-2606",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "01-ai/Yi-34B",
+  "child": "01-ai/Yi-1.5-34B",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "tencent/Hy3",
+  "child": "tencent/Hy3-preview",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V2",
+  "child": "deepseek-ai/DeepSeek-Coder-V2-Base",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V4-Flash",
+  "child": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "child": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "inclusionAI/Ling-3.1-flash-base",
+  "child": "inclusionAI/Ling-3.1-flash-1019",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-32B",
+  "child": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "ByteDance-Seed/Seed-OSS-36B-Base",
+  "child": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "baidu/ERNIE-5.5-Flash-Base",
+  "child": "baidu/ERNIE-5.5-Flash-Base-BF16",
+  "source": "roster",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V4-Pro",
+  "child": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V4-Pro-Base",
+  "child": "nex-agi/Nex-N2.5-Max",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3-Base",
+  "child": "nex-agi/DeepSeek-V3.1-Nex-N1",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-5.3",
+  "child": "zai-org/GLM-5.3-BF16",
+  "source": "roster",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "unsloth/Meta-Llama-3.1-70B",
+  "child": "unsloth/Llama-3.3-70B-Instruct",
+  "source": "roster",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "unsloth/Llama-3.3-70B-Instruct",
+  "child": "nvidia/Llama-3_3-Nemotron-Super-49B-v1_5",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "zai-org/GLM-5.2",
+  "child": "internlm/Atria-Dawn",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "moonshotai/Kimi-K2-Base",
+  "child": "moonshotai/Kimi-K2.5",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-397B-A17B",
+  "child": "internlm/Intern-S2-397B",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "mistralai/Mistral-7B-v0.1",
+  "child": "HuggingFaceH4/mistral-7b-sft-beta",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "HuggingFaceH4/mistral-7b-sft-beta",
+  "child": "HuggingFaceH4/zephyr-7b-beta",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Mistral-7B-v0.3",
+  "child": "mistralai/Mistral-7B-Instruct-v0.3",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Mistral-7B-v0.1",
+  "child": "teknium/OpenHermes-2.5-Mistral-7B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-2-0425-1B",
+  "child": "allenai/OLMo-2-0425-1B-SFT",
+  "source": "roster",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "moonshotai/Kimi-K2-Base",
+  "child": "moonshotai/Kimi-K2-Thinking",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "EleutherAI/pythia-12b",
+  "child": "OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-72B",
+  "child": "Kwaipilot/KAT-Dev-72B-Exp",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3-30B-A3B-Base",
+  "child": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "tiiuae/Falcon3-7B-Base",
+  "child": "tiiuae/Falcon3-7B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-3-1025-7B",
+  "child": "allenai/Olmo-3-7B-Instruct-SFT",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-3-7B-Instruct-SFT",
+  "child": "allenai/Olmo-3-7B-Instruct-DPO",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-3-7B-Instruct-DPO",
+  "child": "allenai/Olmo-3-7B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-3-1025-7B",
+  "child": "allenai/Olmo-3-7B-Think-SFT",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "tiiuae/Falcon3-10B-Base",
+  "child": "tiiuae/Falcon3-10B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-3-7B-Think-DPO",
+  "child": "allenai/Olmo-3-7B-Think",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-2-1124-7B-SFT",
+  "child": "allenai/OLMo-2-1124-7B-DPO",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-3-7B-Think-SFT",
+  "child": "allenai/Olmo-3-7B-Think-DPO",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-2-1124-7B-DPO",
+  "child": "allenai/OLMo-2-1124-7B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-2-1124-13B-SFT",
+  "child": "allenai/OLMo-2-1124-13B-DPO",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-2-1124-13B-DPO",
+  "child": "allenai/OLMo-2-1124-13B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Llama-3.1-Tulu-3-8B-SFT",
+  "child": "allenai/Llama-3.1-Tulu-3-8B-DPO",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Llama-3.1-Tulu-3-8B-DPO",
+  "child": "allenai/Llama-3.1-Tulu-3-8B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-7B",
+  "child": "Qwen/Qwen2.5-7B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-2-1124-7B",
+  "child": "allenai/OLMo-2-1124-7B-SFT",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3-8B-Base",
+  "child": "Qwen/Qwen3-8B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-Math-7B",
+  "child": "Qwen/Qwen2.5-Math-7B-Instruct",
+  "source": "roster",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "Qwen/Qwen3-14B-Base",
+  "child": "Qwen/Qwen3-14B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-2-1124-13B",
+  "child": "allenai/OLMo-2-1124-13B-SFT",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-32B",
+  "child": "Qwen/Qwen2.5-32B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Mixtral-8x7B-v0.1",
+  "child": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "deepseek-ai/deepseek-coder-1.3b-base",
+  "child": "deepseek-ai/deepseek-coder-1.3b-instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Mistral-7B-v0.1",
+  "child": "mistralai/Mistral-7B-Instruct-v0.1",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-14B",
+  "child": "Qwen/Qwen2.5-14B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Mistral-7B-v0.1",
+  "child": "HuggingFaceH4/zephyr-7b-beta",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-72B",
+  "child": "Qwen/Qwen2.5-72B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "NousResearch/Llama-2-7b-hf",
+  "child": "NousResearch/Llama-2-7b-chat-hf",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "NousResearch/Llama-2-7b-hf",
+  "child": "lmsys/vicuna-7b-v1.5",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "NousResearch/Llama-2-7b-hf",
+  "child": "codellama/CodeLlama-7b-hf",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "huggyllama/llama-7b",
+  "child": "lmsys/vicuna-7b-v1.3",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "NousResearch/Llama-2-13b-hf",
+  "child": "NousResearch/Llama-2-13b-chat-hf",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "NousResearch/Llama-2-13b-hf",
+  "child": "lmsys/vicuna-13b-v1.5",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "NousResearch/Llama-2-13b-hf",
+  "child": "codellama/CodeLlama-13b-hf",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "togethercomputer/RedPajama-INCITE-7B-Base",
+  "child": "togethercomputer/RedPajama-INCITE-7B-Instruct",
+  "source": "roster",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "mistralai/Mixtral-8x22B-v0.1",
+  "child": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "togethercomputer/RedPajama-INCITE-7B-Base",
+  "child": "togethercomputer/RedPajama-INCITE-7B-Chat",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V2-Lite",
+  "child": "deepseek-ai/DeepSeek-V2-Lite-Chat",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Snowflake/snowflake-arctic-base",
+  "child": "Snowflake/snowflake-arctic-instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/deepseek-moe-16b-base",
+  "child": "deepseek-ai/deepseek-moe-16b-chat",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/deepseek-coder-33b-base",
+  "child": "deepseek-ai/deepseek-coder-33b-instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "NousResearch/Llama-2-70b-hf",
+  "child": "NousResearch/Llama-2-70b-chat-hf",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "NousResearch/Llama-2-70b-hf",
+  "child": "codellama/CodeLlama-70b-hf",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "codellama/CodeLlama-34b-hf",
+  "child": "codellama/CodeLlama-34b-Instruct-hf",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "codellama/CodeLlama-34b-hf",
+  "child": "codellama/CodeLlama-34b-Python-hf",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "OpenLLM-France/Lucie-7B",
+  "child": "OpenLLM-France/Lucie-7B-Instruct-v1.1",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "zai-org/chatglm3-6b-base",
+  "child": "zai-org/chatglm3-6b",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "tiiuae/falcon-7b",
+  "child": "tiiuae/falcon-7b-instruct",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Skywork/Skywork-13B-base",
+  "child": "Skywork/Skywork-13B-Math",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "allenai/OLMo-7B-0424-hf",
+  "child": "allenai/OLMo-7B-0424-Instruct-hf",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-7B-0424-hf",
+  "child": "allenai/OLMo-7B-0424-SFT-hf",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "EleutherAI/gpt-neox-20b",
+  "child": "togethercomputer/GPT-NeoXT-Chat-Base-20B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "trillionlabs/Gravity-30B-A5B-Base",
+  "child": "trillionlabs/Gravity-30B-A5B-Preview",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3-30B-A3B-Base",
+  "child": "Qwen/Qwen3-30B-A3B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3-30B-A3B-Base",
+  "child": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Kwai-Klear/Klear-46B-A2.5B-Base",
+  "child": "Kwai-Klear/Klear-46B-A2.5B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "moonshotai/Moonlight-16B-A3B",
+  "child": "moonshotai/Moonlight-16B-A3B-Instruct",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-7B-hf",
+  "child": "allenai/OLMo-7B-SFT-hf",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "moonshotai/Kimi-Linear-48B-A3B-Base",
+  "child": "moonshotai/Kimi-Linear-48B-A3B-Instruct",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "internlm/internlm2_5-7b",
+  "child": "internlm/internlm2_5-7b-chat",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "inclusionAI/Ling-3.0-flash",
+  "child": "inclusionAI/Ling-3.0-flash-Fin",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "allenai/OLMo-7B-hf",
+  "child": "allenai/OLMo-7B-Instruct-hf",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "bigcode/starcoder2-15b",
+  "child": "bigcode/starcoder2-15b-instruct-v0.1",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/deepseek-llm-7b-base",
+  "child": "deepseek-ai/deepseek-llm-7b-chat",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "01-ai/Yi-34B",
+  "child": "01-ai/Yi-34B-Chat",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "01-ai/Yi-1.5-34B",
+  "child": "01-ai/Yi-1.5-34B-Chat",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base",
+  "child": "GSAI-ML/LLaDA-MoE-v2-30B-A3B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-35B-A3B-Base",
+  "child": "Qwen/Qwen3.5-35B-A3B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-3-1125-32B",
+  "child": "allenai/Olmo-3.1-32B-Think",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-3-1125-32B",
+  "child": "allenai/Olmo-3-32B-Think-SFT",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "microsoft/phi-4",
+  "child": "microsoft/Phi-4-reasoning",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "microsoft/phi-4",
+  "child": "microsoft/Phi-4-reasoning-plus",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V2",
+  "child": "deepseek-ai/DeepSeek-V2-Chat",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "stabilityai/stablelm-2-12b",
+  "child": "stabilityai/stablelm-2-12b-chat",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V2",
+  "child": "deepseek-ai/DeepSeek-V2-Chat-0628",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-Coder-V2-Base",
+  "child": "deepseek-ai/DeepSeek-Coder-V2-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "unsloth/llama-3-8b",
+  "child": "unsloth/llama-3-8b-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "unsloth/Meta-Llama-3.1-8B",
+  "child": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "stepfun-ai/Step-3.5-Flash-Base",
+  "child": "stepfun-ai/Step-3.5-Flash",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "internlm/internlm-20b",
+  "child": "internlm/internlm-chat-20b",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "tiiuae/falcon-40b",
+  "child": "tiiuae/falcon-40b-instruct",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "mistralai/Ministral-3-8B-Base-2512",
+  "child": "mistralai/Ministral-3-8B-Instruct-2512",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Ministral-3-8B-Base-2512",
+  "child": "mistralai/Ministral-3-8B-Reasoning-2512",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-7B",
+  "child": "Qwen/Qwen2.5-Math-7B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-7B",
+  "child": "Qwen/Qwen2.5-Coder-7B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2-57B-A14B",
+  "child": "Qwen/Qwen2-57B-A14B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2-7B",
+  "child": "Qwen/Qwen2-7B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "internlm/internlm2-20b",
+  "child": "internlm/internlm2-chat-20b-sft",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "internlm/internlm2-20b",
+  "child": "internlm/internlm2-chat-20b",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen2-7B",
+  "child": "Qwen/Qwen2-Math-7B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-4.5-Air-Base",
+  "child": "zai-org/GLM-4.5-Air",
+  "source": "roster",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "openai/gpt-oss-120b",
+  "child": "openai/gpt-oss-safeguard-120b",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "openai/gpt-oss-20b",
+  "child": "openai/gpt-oss-safeguard-20b",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-Nano-9B-v2-Base",
+  "child": "nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "zai-org/glm-4-9b",
+  "child": "zai-org/glm-4-9b-chat",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "Qwen/Qwen3-235B-A22B",
+  "child": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3-235B-A22B",
+  "child": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen-7B",
+  "child": "Qwen/Qwen-7B-Chat",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen1.5-7B",
+  "child": "Qwen/Qwen1.5-7B-Chat",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "XiaomiMiMo/MiMo-V2-Flash-Base",
+  "child": "XiaomiMiMo/MiMo-V2-Flash",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "XiaomiMiMo/MiMo-V2.5-Base",
+  "child": "XiaomiMiMo/MiMo-V2.5",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "baichuan-inc/Baichuan2-13B-Base",
+  "child": "baichuan-inc/Baichuan2-13B-Chat",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Mistral-Nemo-Base-2407",
+  "child": "mistralai/Mistral-Nemo-Instruct-2407",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-3-1125-32B",
+  "child": "allenai/Olmo-3.1-32B-Instruct-SFT",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Mistral-Small-24B-Base-2501",
+  "child": "mistralai/Mistral-Small-24B-Instruct-2501",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-2-0325-32B",
+  "child": "allenai/OLMo-2-0325-32B-SFT",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-2-0325-32B",
+  "child": "allenai/OLMo-2-0325-32B-DPO",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/OLMo-2-0325-32B",
+  "child": "allenai/OLMo-2-0325-32B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-4.5-Base",
+  "child": "zai-org/GLM-4.5",
+  "source": "roster",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "utter-project/EuroLLM-22B-2512",
+  "child": "utter-project/EuroLLM-22B-Instruct-2512",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "xverse/XVERSE-65B",
+  "child": "xverse/XVERSE-65B-Chat",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "deepseek-ai/deepseek-llm-67b-base",
+  "child": "deepseek-ai/deepseek-llm-67b-chat",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "Motif-Technologies/Motif-3-Base",
+  "child": "Motif-Technologies/Motif-3",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3-Base",
+  "child": "deepseek-ai/DeepSeek-V3",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3-Base",
+  "child": "deepseek-ai/DeepSeek-V3-0324",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3-Base",
+  "child": "deepseek-ai/DeepSeek-R1-Zero",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-4-32B-Base-0414",
+  "child": "zai-org/GLM-4-32B-0414",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-4-32B-Base-0414",
+  "child": "zai-org/GLM-Z1-32B-0414",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "XiaomiMiMo/MiMo-V2.5-Pro-Base",
+  "child": "XiaomiMiMo/MiMo-V2.5-Pro",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-9B-Base",
+  "child": "Qwen/Qwen3.5-9B",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "unsloth/Meta-Llama-3.1-70B",
+  "child": "unsloth/Meta-Llama-3.1-70B-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "unsloth/Llama-4-Scout-17B-16E",
+  "child": "unsloth/Llama-4-Scout-17B-16E-Instruct",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "swiss-ai/Apertus-70B-2509",
+  "child": "swiss-ai/Apertus-70B-Instruct-2509",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "BAAI/Aquila2-34B",
+  "child": "BAAI/AquilaChat2-34B",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "facebook/opt-30b",
+  "child": "facebook/opt-iml-30b",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "google/gemma-4-26B-A4B",
+  "child": "google/gemma-4-26B-A4B-it",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "IFM/K2-V2",
+  "child": "IFM/K2-V2-Instruct",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "EleutherAI/gpt-j-6b",
+  "child": "nomic-ai/gpt4all-j",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "unsloth/gemma-3-27b-pt",
+  "child": "unsloth/gemma-3-27b-it",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "unsloth/gemma-3-12b-pt",
+  "child": "unsloth/gemma-3-12b-it",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "unsloth/gemma-2-27b",
+  "child": "unsloth/gemma-2-27b-it",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "EssentialAI/rnj-1",
+  "child": "EssentialAI/rnj-1.5-instruct",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "EssentialAI/rnj-1",
+  "child": "EssentialAI/rnj-1-instruct",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "bigscience/bloom",
+  "child": "bigscience/bloomz",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "unsloth/gemma-3n-E4B",
+  "child": "unsloth/gemma-3n-E4B-it",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "unsloth/gemma-3-4b-pt",
+  "child": "unsloth/gemma-3-4b-it",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "mistralai/Ministral-3-3B-Base-2512",
+  "child": "mistralai/Ministral-3-3B-Instruct-2512",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "unsloth/gemma-2-2b",
+  "child": "unsloth/gemma-2-2b-it",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "Qwen/Qwen3-1.7B-Base",
+  "child": "Qwen/Qwen3-1.7B",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "tencent/Hunyuan-A13B-Pretrain",
+  "child": "tencent/Hunyuan-A13B-Instruct",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-0.8B-Base",
+  "child": "Qwen/Qwen3.5-0.8B",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "mistralai/Ministral-3-3B-Base-2512",
+  "child": "mistralai/Ministral-3-3B-Reasoning-2512",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "unsloth/Llama-3.2-1B",
+  "child": "unsloth/Llama-3.2-1B-Instruct",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "Qwen/Qwen3-0.6B-Base",
+  "child": "Qwen/Qwen3-0.6B",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-0.5B",
+  "child": "Qwen/Qwen2.5-0.5B-Instruct",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "unsloth/gemma-3-270m",
+  "child": "unsloth/gemma-3-270m-it",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "unsloth/Llama-3.2-3B",
+  "child": "unsloth/Llama-3.2-3B-Instruct",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "HuggingFaceTB/SmolLM2-360M",
+  "child": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "HuggingFaceTB/SmolLM2-135M",
+  "child": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "Qwen/Qwen3-4B-Base",
+  "child": "Qwen/Qwen3-4B",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "unsloth/gemma-3-1b-pt",
+  "child": "unsloth/gemma-3-1b-it",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "allenai/OLMo-1B-hf",
+  "child": "allenai/OLMo-1B",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "ibm-granite/granite-3.3-2b-base",
+  "child": "ibm-granite/granite-3.3-2b-instruct",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "HuggingFaceTB/SmolLM2-1.7B",
+  "child": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "state-spaces/mamba-2.8b-hf",
+  "child": "state-spaces/mamba-2.8b",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "HuggingFaceTB/SmolLM3-3B-Base",
+  "child": "HuggingFaceTB/SmolLM3-3B",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "tiiuae/Falcon-H1-34B-Base",
+  "child": "tiiuae/Falcon-H1-34B-Instruct",
+  "source": "roster",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "Qwen/Qwen-72B",
+  "child": "Qwen/Qwen-72B-Chat",
+  "source": "roster",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "Qwen/Qwen2-72B",
+  "child": "Qwen/Qwen2-72B-Instruct",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "Qwen/Qwen2-72B",
+  "child": "Qwen/Qwen2-Math-72B",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "allenai/OLMo-7B-Twin-2T-hf",
+  "child": "allenai/OLMo-7B-Twin-2T",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-72B",
+  "child": "Qwen/Qwen2.5-Math-72B",
+  "source": "roster",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "google/gemma-4-31B",
+  "child": "google/gemma-4-31B-it",
+  "source": "roster",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "Qwen/Qwen1.5-110B",
+  "child": "Qwen/Qwen1.5-110B-Chat",
+  "source": "roster",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "Nanbeige/Nanbeige4.3-33B-Base",
+  "child": "Nanbeige/Nanbeige4.3-33B",
+  "source": "roster",
+  "cls": "token record"
+ },
+ {
+  "parent": "moonshotai/Kimi-K2-Base",
+  "child": "moonshotai/Kimi-K2-Instruct",
+  "source": "roster",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "skt/A.X-K2",
+  "child": "skt/A.X-K2-EAGLE3",
+  "source": "roster",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "skt/A.X-K2",
+  "child": "skt/A.X-K2-DSpark",
+  "source": "roster",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "moonshotai/Kimi-K2-Base",
+  "child": "moonshotai/Kimi-K2-Instruct-0905",
+  "source": "roster",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "ibm-granite/granite-4.0-h-tiny-base",
+  "child": "ibm-granite/granite-4.0-h-tiny",
+  "source": "frontier_x",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+  "child": "baidu/ERNIE-4.5-21B-A3B-PT",
+  "source": "frontier_x",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "inclusionAI/Ling-3.0-tiny-base",
+  "child": "inclusionAI/Ling-3.0-tiny",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+  "child": "baidu/ERNIE-4.5-21B-A3B-Thinking",
+  "source": "frontier_x",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "inclusionAI/Ling-mini-base-2.0",
+  "child": "inclusionAI/Ling-mini-2.0",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3-Coder-Next-Base",
+  "child": "Qwen/Qwen3-Coder-Next",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+  "child": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "source": "frontier_x",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "allenai/Olmo-3-1025-7B",
+  "child": "allenai/Olmo-3-7B-RL-Zero-Math",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "inclusionAI/Ling-3.0-flash-base",
+  "child": "inclusionAI/Ling-3.0-flash",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-3-1025-7B",
+  "child": "allenai/Olmo-3-7B-RL-Zero-Mix",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-2B-Base",
+  "child": "Qwen/Qwen3.5-2B",
+  "source": "frontier_x",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "ibm-granite/granite-4.0-h-small-base",
+  "child": "ibm-granite/granite-4.0-h-small",
+  "source": "frontier_x",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "ibm-granite/granite-4.1-8b-base",
+  "child": "ibm-granite/granite-4.1-8b",
+  "source": "frontier_x",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "LGAI-EXAONE/EXAONE-4.0-32B",
+  "child": "LGAI-EXAONE/EXAONE-4.0.1-32B",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "MiniMaxAI/MiniMax-M2",
+  "child": "MiniMaxAI/MiniMax-M2.1",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "MiniMaxAI/MiniMax-M2.1",
+  "child": "MiniMaxAI/MiniMax-M2.5",
+  "source": "frontier_x",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "MiniMaxAI/MiniMax-M2.5",
+  "child": "MiniMaxAI/MiniMax-M2.7",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "arcee-ai/Trinity-Large-Base",
+  "child": "arcee-ai/Trinity-Large-Preview",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "arcee-ai/Trinity-Large-TrueBase",
+  "child": "arcee-ai/Trinity-Large-Base",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "child": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-4B-Base",
+  "child": "Qwen/Qwen3.5-4B",
+  "source": "frontier_x",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+  "child": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "inclusionAI/Ling-flash-base-2.0",
+  "child": "inclusionAI/Ling-flash-2.0",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "inclusionAI/Ling-2.6-flash-base",
+  "child": "inclusionAI/Ling-2.6-flash",
+  "source": "frontier_x",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "zai-org/GLM-4.5",
+  "child": "zai-org/GLM-4.6",
+  "source": "frontier_x",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "zai-org/GLM-4.6",
+  "child": "zai-org/GLM-4.7",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-4.5-Base",
+  "child": "zai-org/GLM-4.6",
+  "source": "frontier_x",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "ByteDance-Seed/Seed-OSS-36B-Base-woSyn",
+  "child": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+  "source": "frontier_x",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "meituan-longcat/LongCat-Flash-Chat",
+  "child": "meituan-longcat/LongCat-Flash-Thinking",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "meituan-longcat/LongCat-Flash-Thinking",
+  "child": "meituan-longcat/LongCat-Flash-Thinking-2601",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "baidu/ERNIE-4.5-300B-A47B-Base-PT",
+  "child": "baidu/ERNIE-4.5-300B-A47B-PT",
+  "source": "frontier_x",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "baidu/ERNIE-4.5-VL-424B-A47B-Base-PT",
+  "child": "baidu/ERNIE-4.5-VL-424B-A47B-PT",
+  "source": "frontier_x",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3-Base",
+  "child": "deepseek-ai/DeepSeek-V3.1-Base",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3.1-Base",
+  "child": "deepseek-ai/DeepSeek-V3.1",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+  "child": "deepseek-ai/DeepSeek-V3.2-Exp",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3",
+  "child": "deepseek-ai/DeepSeek-V3-0324",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3-0324",
+  "child": "deepseek-ai/DeepSeek-V3.1",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3.1",
+  "child": "deepseek-ai/DeepSeek-V3.1-Terminus",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3.1-Terminus",
+  "child": "deepseek-ai/DeepSeek-V3.2-Exp",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3.2-Exp",
+  "child": "deepseek-ai/DeepSeek-V3.2",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3.2",
+  "child": "deepseek-ai/DeepSeek-V3.2-Speciale",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+  "child": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Mistral-Large-3-675B-Base-2512",
+  "child": "mistralai/Mistral-Large-3-675B-Instruct-2512-BF16",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-5",
+  "child": "zai-org/GLM-5.1",
+  "source": "frontier_x",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "zai-org/GLM-5.1",
+  "child": "zai-org/GLM-5.2",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "zai-org/GLM-5.2",
+  "child": "zai-org/GLM-5.3-BF16",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+  "child": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "moonshotai/Kimi-K2-Instruct",
+  "child": "moonshotai/Kimi-K2-Instruct-0905",
+  "source": "frontier_x",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "moonshotai/Kimi-K2-Instruct-0905",
+  "child": "moonshotai/Kimi-K2-Thinking",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "moonshotai/Kimi-K2-Thinking",
+  "child": "moonshotai/Kimi-K2.5",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "moonshotai/Kimi-K2.5",
+  "child": "moonshotai/Kimi-K2.6",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "moonshotai/Kimi-K2.6",
+  "child": "moonshotai/Kimi-K2.7-Code",
+  "source": "frontier_x",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "moonshotai/Kimi-K2-Base",
+  "child": "moonshotai/Kimi-K2.6",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "inclusionAI/Ling-2.6-1T-base",
+  "child": "inclusionAI/Ling-2.6-1T",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "inclusionAI/Ling-2.6-1T",
+  "child": "inclusionAI/Ring-2.6-1T",
+  "source": "frontier_x",
+  "cls": "token record"
+ },
+ {
+  "parent": "inclusionAI/Ling-1T",
+  "child": "inclusionAI/Ring-1T",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "meituan-longcat/LongCat-2.0",
+  "child": "meituan-longcat/LongCat-2.5",
+  "source": "frontier_x",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "LiquidAI/LFM2-24B-A2B",
+  "child": "LiquidAI/LFM2.5-24B-A2B-Base",
+  "source": "y2026_labs",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "poolside/Laguna-XS.2",
+  "child": "poolside/Laguna-XS-2.1",
+  "source": "y2026_labs",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "LiquidAI/LFM2.5-8B-A1B-Base",
+  "child": "LiquidAI/LFM2.5-8B-A1B",
+  "source": "y2026_labs",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "LiquidAI/LFM2.5-24B-A2B-Base",
+  "child": "LiquidAI/LFM2.5-24B-A2B",
+  "source": "y2026_labs",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "kakaocorp/kanana-2-30b-a3b-base-2601",
+  "child": "kakaocorp/kanana-2-30b-a3b-mid-2601",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "kakaocorp/kanana-2-30b-a3b-mid-2601",
+  "child": "kakaocorp/kanana-2-30b-a3b-instruct-2601",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "kakaocorp/kanana-2-30b-a3b-mid-2601",
+  "child": "kakaocorp/kanana-2-30b-a3b-thinking-2601",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "jdopensource/JoyAI-LLM-Flash-Base",
+  "child": "jdopensource/JoyAI-LLM-Flash",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "openbmb/MiniCPM5-2B-Base",
+  "child": "openbmb/MiniCPM5-2B-Midtrain",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "openbmb/MiniCPM5-2B-Midtrain",
+  "child": "openbmb/MiniCPM5-2B-SFT",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "openbmb/MiniCPM5-2B-SFT",
+  "child": "openbmb/MiniCPM5-2B",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-Hybrid-7B",
+  "child": "allenai/Olmo-Hybrid-Instruct-SFT-7B",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-Hybrid-Instruct-SFT-7B",
+  "child": "allenai/Olmo-Hybrid-Instruct-DPO-7B",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Olmo-Hybrid-7B",
+  "child": "allenai/Olmo-Hybrid-Think-SFT-7B",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "inclusionAI/Ling-3.0-flash-base-30T",
+  "child": "inclusionAI/Ling-3.0-flash-base-midtrain",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "inclusionAI/Ling-3.0-flash-base-midtrain",
+  "child": "inclusionAI/Ling-3.0-flash-base",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "inclusionAI/Ling-3.0-flash",
+  "child": "inclusionAI/Ling-3.0-flash-Sante",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "inclusionAI/Ling-3.0-flash",
+  "child": "inclusionAI/Ling-3.0-flash-VL",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "poolside/Laguna-M.1-base",
+  "child": "poolside/Laguna-M.1",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "ibm-granite/granite-4.1-30b-base",
+  "child": "ibm-granite/granite-4.1-30b",
+  "source": "y2026_labs",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "ibm-granite/granite-4.1-30b",
+  "child": "ibm-granite/granite-4.2-30b",
+  "source": "y2026_labs",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "tencent/Hy3-preview-Base",
+  "child": "tencent/Hy3-preview",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "tencent/Hy3-preview-Base",
+  "child": "tencent/Hy3",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "tencent/Hy3-preview",
+  "child": "tencent/Hy3",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-35B-A3B-Base",
+  "child": "Qwen/Qwen3.6-35B-A3B",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3.6-35B-A3B",
+  "child": "Qwen/Qwen-AgentWorld-35B-A3B",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-35B-A3B",
+  "child": "Qwen/Qwen3.6-35B-A3B",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "microsoft/Phi-4-reasoning",
+  "child": "microsoft/Phi-4-reasoning-vision-15B",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3.6-35B-A3B",
+  "child": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "stepfun-ai/Step-3.5-Flash-Base",
+  "child": "stepfun-ai/Step-3.5-Flash-Base-Midtrain",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "stepfun-ai/Step-3.5-Flash-Base-Midtrain",
+  "child": "stepfun-ai/Step-3.5-Flash",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "stepfun-ai/Step-3.5-Flash",
+  "child": "stepfun-ai/Step-3.7-Flash",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "stepfun-ai/Step-3.7-Flash",
+  "child": "stepfun-ai/Step-5-Preview-BF16",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "child": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "mistralai/Mistral-Small-4-119B-2603",
+  "child": "mistralai/Leanstral-1.5-119B-A6B",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-4.5-Air-Base",
+  "child": "PrimeIntellect/INTELLECT-3.1",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "child": "inclusionAI/AReaL-SEA-235B-A22B",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "stepfun-ai/Step3-VL-10B-Base",
+  "child": "stepfun-ai/Step3-VL-10B",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "XiaomiMiMo/MiMo-V2.5",
+  "child": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "inclusionAI/Ling-3.1-flash-base",
+  "child": "inclusionAI/Ling-3.1-flash",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-5.3-Flash-BF16",
+  "child": "internlm/Sage-S2.1-Flash",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3-VL-32B-Instruct",
+  "child": "microsoft/AesCode-32B",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3-14B",
+  "child": "Qwen/WebWorld-14B",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "meituan-longcat/LongCat-Flash-Thinking-2601",
+  "child": "meituan-longcat/LongCat-Flash-Prover",
+  "source": "y2026_labs",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "Motif-Technologies/Motif-3-Beta",
+  "child": "Motif-Technologies/Motif-3",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "XiaomiMiMo/MiMo-V2.5-Pro",
+  "child": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "zai-org/GLM-5.2",
+  "child": "internlm/Atria-Dawn-Preview",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-5.3-BF16",
+  "child": "internlm/Sage-S2.1",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-9B",
+  "child": "allenai/tmax-9b",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-397B-A17B",
+  "child": "internlm/Intern-S2-Preview-397B",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "internlm/Intern-S2-Preview-397B",
+  "child": "internlm/Intern-S2-397B",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
+  "child": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3-14B",
+  "child": "microsoft/MagenticBrain",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "moonshotai/Kimi-K2.7-Code",
+  "child": "moonshotai/Kimi-K3",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "moonshotai/Kimi-K3",
+  "child": "moonshotai/Kimi-K3.1-Pro",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "MiniMaxAI/MiniMax-M3",
+  "child": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-27B",
+  "child": "Qwen/Qwen3.6-27B",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-27B",
+  "child": "microsoft/Fara1.5-27B",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3.6-27B",
+  "child": "Qwen/Qwen3.8-27B",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "inclusionAI/Ling-2.5-1T",
+  "child": "inclusionAI/Ling-2.6-1T",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "inclusionAI/Ling-2.5-1T",
+  "child": "inclusionAI/Ring-2.5-1T",
+  "source": "y2026_labs",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "inclusionAI/Ring-2.5-1T",
+  "child": "inclusionAI/Ring-2.6-1T",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3-14B-Base",
+  "child": "Qwen/WebWorld-14B",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "internlm/Atria-Dawn-Preview",
+  "child": "internlm/Sage-S2.1",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-5.2",
+  "child": "internlm/Sage-S2.1",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3-14B-Base",
+  "child": "microsoft/MagenticBrain",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
+  "source": "y2026_labs",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-35B-A3B",
+  "child": "Qwen/Qwen-AgentWorld-35B-A3B",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-35B-A3B-Base",
+  "child": "Qwen/Qwen-AgentWorld-35B-A3B",
+  "source": "y2026_labs",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "child": "nvidia/AceReason-Nemotron-7B",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "child": "Skywork/Skywork-OR1-7B",
+  "source": "large",
+  "cls": "record, poor fit"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-32B-Instruct",
+  "child": "Qwen/QwQ-32B",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/QwQ-32B-Preview",
+  "child": "Qwen/QwQ-32B",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-32B-Instruct",
+  "child": "Qwen/QwQ-32B-Preview",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+  "child": "Skywork/Skywork-OR1-32B",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "child": "nvidia/AceReason-Nemotron-14B",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-32B",
+  "child": "a-m-team/AM-Thinking-v1",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-32B-Instruct",
+  "child": "a-m-team/AM-Thinking-v1",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-R1",
+  "child": "mlx-community/perplexity-ai-r1-1776-bf16",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-R1",
+  "child": "microsoft/MAI-DS-R1",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "microsoft/MAI-DS-R1",
+  "child": "mlx-community/perplexity-ai-r1-1776-bf16",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-R1",
+  "child": "deepseek-ai/DeepSeek-R1-0528",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3-Base",
+  "child": "deepseek-ai/DeepSeek-R1-0528",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V3",
+  "child": "deepseek-ai/DeepSeek-V3.1",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "unsloth/Meta-Llama-3.1-70B",
+  "child": "NousResearch/Hermes-4-70B",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-72B",
+  "child": "moonshotai/Kimi-Dev-72B",
+  "source": "large",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-72B-Instruct",
+  "child": "moonshotai/Kimi-Dev-72B",
+  "source": "large",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-72B-Instruct",
+  "child": "Nexusflow/Athene-V2-Chat",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "NousResearch/Meta-Llama-3.1-405B-FP8",
+  "child": "NousResearch/Hermes-3-Llama-3.1-405B",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "NousResearch/Meta-Llama-3.1-405B-FP8",
+  "child": "NousResearch/Hermes-4-405B",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "NousResearch/Hermes-3-Llama-3.1-405B",
+  "child": "NousResearch/Hermes-4-405B",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "NousResearch/Meta-Llama-3.1-405B-FP8",
+  "child": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+  "child": "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "NousResearch/Meta-Llama-3.1-405B-FP8",
+  "child": "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+  "source": "large",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "NousResearch/Meta-Llama-3.1-405B-FP8",
+  "child": "allenai/Llama-3.1-Tulu-3-405B-SFT",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Llama-3.1-Tulu-3-405B-SFT",
+  "child": "allenai/Llama-3.1-Tulu-3-405B-DPO",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "allenai/Llama-3.1-Tulu-3-405B-DPO",
+  "child": "allenai/Llama-3.1-Tulu-3-405B",
+  "source": "large",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3.8-27B",
+  "child": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "Qwen/Qwen3-4B-Thinking-2507",
+  "child": "openbmb/AgentCPM-Explore",
+  "source": "y2026_ft",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-27B",
+  "child": "ArliAI/Qwen3.5-27B-Derestricted",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "openai/gpt-oss-20b",
+  "child": "chromadb/context-1",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "Qwen/Qwen3.6-35B-A3B",
+  "child": "Diffuspace/Clover-35B-A3B-Preview",
+  "source": "y2026_ft",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "allura-forge/Llama-3.3-8B-Instruct",
+  "child": "DavidAU/Llama3.3-8B-Instruct-Thinking-Claude-4.5-Opus-High-Reasoning",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-4B",
+  "child": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+  "source": "y2026_ft",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "Qwen/Qwen3.6-27B",
+  "child": "ProCreations/grug-27b",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "Qwen/Qwen3.8-27B",
+  "child": "HemmingwayAI/Hemmingway-1",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+  "child": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "google/gemma-4-12B",
+  "child": "jialinyyzz/humanizer",
+  "source": "y2026_ft",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "PrimeIntellect/INTELLECT-3",
+  "child": "PrimeIntellect/INTELLECT-3.1",
+  "source": "y2026_ft",
+  "cls": "changed throughout"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-9B",
+  "child": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "IFM/K2-V2-Instruct",
+  "child": "IFM/K2-Think-V2",
+  "source": "y2026_ft",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V4-Flash",
+  "child": "MemTensor/MemT-1.0-Flash",
+  "source": "y2026_ft",
+  "cls": "token record"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "child": "MemTensor/MemT-1.0-Flash",
+  "source": "y2026_ft",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3-30B-A3B-Thinking-2507",
+  "child": "miromind-ai/MiroThinker-v1.5-30B",
+  "source": "y2026_ft",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3-30B-A3B-Base",
+  "child": "miromind-ai/MiroThinker-v1.5-30B",
+  "source": "y2026_ft",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "HuggingFaceTB/nanowhale-100m-base",
+  "child": "HuggingFaceTB/nanowhale-100m",
+  "source": "y2026_ft",
+  "cls": "not comparable"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-4B",
+  "child": "TokenRhythm/NeoHorse-1-4B",
+  "source": "y2026_ft",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "child": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-9B",
+  "child": "Tesslate/OmniCoder-9B",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16",
+  "child": "OpenResearcher/OpenResearcher-30B-A3B",
+  "source": "y2026_ft",
+  "cls": "token record"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-9B",
+  "child": "empero-ai/Qwable-9B-Claude-Fable-5",
+  "source": "y2026_ft",
+  "cls": "token record"
+ },
+ {
+  "parent": "lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled",
+  "child": "lordx64/Qwable-v1",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "Qwen/Qwen3.5-9B",
+  "child": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+  "source": "y2026_ft",
+  "cls": "token record"
+ },
+ {
+  "parent": "zai-org/GLM-4.7-Flash",
+  "child": "TeichAI/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill",
+  "source": "y2026_ft",
+  "cls": "unchanged"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-Coder-3B",
+  "child": "WeiboAI/VibeThinker-3B",
+  "source": "y2026_ft",
+  "cls": "shared matrix"
+ },
+ {
+  "parent": "Qwen/Qwen3-8B",
+  "child": "Qwen/WebWorld-8B",
+  "source": "y2026_ft",
+  "cls": "token record"
+ }
+]

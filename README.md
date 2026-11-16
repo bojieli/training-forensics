@@ -100,10 +100,14 @@ dominates). Not tested: FSDP, ZeRO-3, Muon, packed sequences, pure 16-bit traini
 ### The 265-model roster
 
 Every model of the checkpoint-forensics roster has a line in
-[`results/roster/COVERAGE.md`](results/roster/COVERAGE.md): **182 of 265** give a pretraining estimate or a
-fine-tune comparison, 52 more serve only as the reference parent of an analysed fine-tune, and the remaining
-31 have no record (no untouched vectors, vectors rewritten after training, JAX/TPU or Ascend initialisation),
-each with its reason.
+[`results/roster/COVERAGE.md`](results/roster/COVERAGE.md): **186 of 265** give a pretraining estimate or a
+fine-tune comparison (counting the comparisons of the follow-up studies too: 74 roster models are compared as a
+fine-tune), 52 more serve only as the reference parent of an analysed fine-tune, and the remaining 27 have no
+record (no untouched vectors, vectors rewritten after training, JAX/TPU or Ascend initialisation), each with its
+reason. Across the roster and all follow-up studies there are **421 distinct parent -> fine-tune comparisons over
+580 models** (`results/roster/comparisons_all.json`, last section of COVERAGE.md): 203 with a clean token
+record, 17 with some bit-identical vectors but a decay fit below 99%, 50 changed throughout, 85 not comparable
+to the named parent, 17 with the embedding unchanged, 49 with one shared input/output matrix.
 
 **Base models: pretraining weight decay from never-trained token vectors** ([`PRETRAIN_DECAY.md`](results/roster/PRETRAIN_DECAY.md)).
 Tokens that never occur in pretraining (and unused padding slots) keep their random starting values, shrunk
@@ -186,7 +190,7 @@ Each has its own generated report with sources; wording rules in [`STYLE.md`](ST
   zeroed, copied or rescaled); a third-party fine-tune of the same base (Nex-N2.5-Max) left them bit-identical.
   Names and status only.
 - **58 more frontier comparisons** ([`results/frontier_x/FRONTIER_X.md`](results/frontier_x/FRONTIER_X.md),
-  rows in `results/roster/sweep_frontier_x.jsonl`, not yet in the coverage table): 24 clean records, 3 partial,
+  rows in `results/roster/sweep_frontier_x.jsonl`, included in the coverage table): 24 clean records, 3 partial,
   8 trained throughout, 16 not comparable, 7 tied. RL stages leave a distinctive footprint of bit-identical and
   barely changed vectors (Olmo-3-7B RL-Zero-Math: 38% bit-identical, 45% with 1-10% of numbers changed), the
   same shape as R1-Zero, so narrow data is not needed to explain R1-Zero. Several successive releases are not

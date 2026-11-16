@@ -6,17 +6,17 @@ compared with their regenerated random starting values) or it is the fine-tune i
 pair; a model that is only a parent serves as the reference for its fine-tunes.
 
 - pretraining estimate: **175** (138 where the never-trained vectors could be compared with their regenerated starting values, 37 where only the never-trained tokens are known). Of the 138: 8 validated decay value (Pythia), 5 exactly no decay, 24 no decay inferred from a round number, 69 decay value that assumes the config's init std, 20 implausible for decay alone, 12 init std unknown (no value)
-- fine-tune comparison (as the fine-tune): **50**
-- models with either: **182 / 265**
-- serving as the reference parent of an analysed fine-tune: 125 (of these, 52 have neither themselves)
-- neither: 31
+- fine-tune comparison (as the fine-tune): **74**
+- models with either: **186 / 265**
+- serving as the reference parent of an analysed fine-tune: 131 (of these, 52 have neither themselves)
+- neither: 27
 
 Models whose starting values cannot be regenerated, by reason: init recognised from trained vectors only, none left untouched: 47, no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init): 25, no untouched vectors: 11, untouched vectors present but no searched seed regenerates them: 7
 
 | model | repo | pretraining (never-trained token vectors vs their starting values) | fine-tune (vs parent) |
 |---|---|---|---|
-| DeepSeek-V3-Base | deepseek-ai/DeepSeek-V3-Base | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | parent of 6 analysed fine-tunes |
-| DeepSeek-V3.2 | deepseek-ai/DeepSeek-V3.2 | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | vs deepseek-ai/DeepSeek-V3.2-Exp-Base: 1,339 tokens never updated, special tokens updated 53/818 |
+| DeepSeek-V3-Base | deepseek-ai/DeepSeek-V3-Base | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | parent of 8 analysed fine-tunes |
+| DeepSeek-V3.2 | deepseek-ai/DeepSeek-V3.2 | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | vs deepseek-ai/DeepSeek-V3.2-Exp-Base: 1,339 tokens never updated, special tokens updated 53/818; vs deepseek-ai/DeepSeek-V3.2-Exp: 1,210 tokens never updated, special tokens updated 72/818 |
 | DeepSeek-R1 | deepseek-ai/DeepSeek-R1 | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | vs deepseek-ai/DeepSeek-V3-Base: 4,284 tokens never updated, special tokens updated 11/818 |
 | DeepSeek-V4-Flash | deepseek-ai/DeepSeek-V4-Flash | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | vs deepseek-ai/DeepSeek-V4-Flash-Base: 447 tokens never updated, special tokens updated 851/1283 |
 | DeepSeek-V4-Flash-Base | deepseek-ai/DeepSeek-V4-Flash-Base | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | parent of 1 analysed fine-tunes |
@@ -28,77 +28,77 @@ Models whose starting values cannot be regenerated, by reason: init recognised f
 | DeepSeek-Coder-1.3B | deepseek-ai/deepseek-coder-1.3b-base | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | parent of 1 analysed fine-tunes |
 | DeepSeek-LLM-7B | deepseek-ai/deepseek-llm-7b-base | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | parent of 1 analysed fine-tunes |
 | DeepSeek-LLM-67B | deepseek-ai/deepseek-llm-67b-base | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | parent of 1 analysed fine-tunes |
-| Kimi-K2-Base | moonshotai/Kimi-K2-Base | total weight decay sum lr*wd = 6.55 (assumes init std = initializer_range) | parent of 4 analysed fine-tunes |
-| Kimi-K2.5 | moonshotai/Kimi-K2.5 | total weight decay sum lr*wd = 7.67 (assumes init std = initializer_range) | vs moonshotai/Kimi-K2-Base: every token vector changed |
-| Kimi-K2.6 | moonshotai/Kimi-K2.6 | total weight decay sum lr*wd = 7.67 (assumes init std = initializer_range) | - |
-| Kimi-K2.7-Code | moonshotai/Kimi-K2.7-Code | total weight decay sum lr*wd = 7.67 (assumes init std = initializer_range) | - |
-| Kimi-K3 | moonshotai/Kimi-K3 | total weight decay sum lr*wd = 9.00 (assumes init std = initializer_range) | - |
-| Kimi-K3.1-Pro | moonshotai/Kimi-K3.1-Pro | total weight decay sum lr*wd = 9.03 (assumes init std = initializer_range) | - |
+| Kimi-K2-Base | moonshotai/Kimi-K2-Base | total weight decay sum lr*wd = 6.55 (assumes init std = initializer_range) | parent of 5 analysed fine-tunes |
+| Kimi-K2.5 | moonshotai/Kimi-K2.5 | total weight decay sum lr*wd = 7.67 (assumes init std = initializer_range) | vs moonshotai/Kimi-K2-Base: not a decayed copy of that parent (not comparable); vs moonshotai/Kimi-K2-Thinking: not a decayed copy of that parent (not comparable) |
+| Kimi-K2.6 | moonshotai/Kimi-K2.6 | total weight decay sum lr*wd = 7.67 (assumes init std = initializer_range) | vs moonshotai/Kimi-K2.5: 639 tokens never updated, special tokens updated 15/23; vs moonshotai/Kimi-K2-Base: not a decayed copy of that parent (not comparable) |
+| Kimi-K2.7-Code | moonshotai/Kimi-K2.7-Code | total weight decay sum lr*wd = 7.67 (assumes init std = initializer_range) | vs moonshotai/Kimi-K2.6: every token vector changed |
+| Kimi-K3 | moonshotai/Kimi-K3 | total weight decay sum lr*wd = 9.00 (assumes init std = initializer_range) | vs moonshotai/Kimi-K2.7-Code: not a decayed copy of that parent (not comparable) |
+| Kimi-K3.1-Pro | moonshotai/Kimi-K3.1-Pro | total weight decay sum lr*wd = 9.03 (assumes init std = initializer_range) | vs moonshotai/Kimi-K3: not a decayed copy of that parent (not comparable) |
 | Kimi-Linear-48B | moonshotai/Kimi-Linear-48B-A3B-Base | P=6.67e-08: implausible for decay alone (vectors zeroed or rescaled otherwise) | parent of 1 analysed fine-tunes |
 | Moonlight-16B-A3B | moonshotai/Moonlight-16B-A3B | total weight decay sum lr*wd = 5.63 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
 | MiniMax-Text-01 | MiniMaxAI/MiniMax-Text-01 | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
-| MiniMax-M1 | MiniMaxAI/MiniMax-M1-80k | total weight decay sum lr*wd = 4.93 (assumes init std = initializer_range) | vs MiniMaxAI/MiniMax-Text-01: every token vector changed |
-| MiniMax-M2 | MiniMaxAI/MiniMax-M2 | total weight decay sum lr*wd = 5.59 (assumes init std = initializer_range) | - |
-| MiniMax-M2.7 | MiniMaxAI/MiniMax-M2.7 | init std unknown | - |
-| MiniMax-M3 | MiniMaxAI/MiniMax-M3 | init std unknown | - |
-| MiniMax-M3.1-Flash | MiniMaxAI/MiniMax-M3.1-Flash | no decoupled weight decay on the token vectors (0.0002 (round)), inferred from a round number | - |
-| Ling-1T | inclusionAI/Ling-1T | init std unknown | - |
-| Ling-2.6-flash | inclusionAI/Ling-2.6-flash | P=4.8e-12: implausible for decay alone (vectors zeroed or rescaled otherwise) | - |
-| Ling-3.0-flash | inclusionAI/Ling-3.0-flash | total weight decay sum lr*wd = 11.35 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
-| Ling-3.1-flash | inclusionAI/Ling-3.1-flash | total weight decay sum lr*wd = 11.91 (assumes init std = initializer_range) | - |
-| GLM-5 | zai-org/GLM-5 | total weight decay sum lr*wd = 6.15 (assumes init std = initializer_range) | - |
-| GLM-5.1 | zai-org/GLM-5.1 | total weight decay sum lr*wd = 6.15 (assumes init std = initializer_range) | - |
+| MiniMax-M1 | MiniMaxAI/MiniMax-M1-80k | total weight decay sum lr*wd = 4.93 (assumes init std = initializer_range) | vs MiniMaxAI/MiniMax-Text-01: not a decayed copy of that parent (not comparable) |
+| MiniMax-M2 | MiniMaxAI/MiniMax-M2 | total weight decay sum lr*wd = 5.59 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
+| MiniMax-M2.7 | MiniMaxAI/MiniMax-M2.7 | init std unknown | vs MiniMaxAI/MiniMax-M2.5: not a decayed copy of that parent (not comparable) |
+| MiniMax-M3 | MiniMaxAI/MiniMax-M3 | init std unknown | parent of 1 analysed fine-tunes |
+| MiniMax-M3.1-Flash | MiniMaxAI/MiniMax-M3.1-Flash | no decoupled weight decay on the token vectors (0.0002 (round)), inferred from a round number | vs MiniMaxAI/MiniMax-M3: not a decayed copy of that parent (not comparable) |
+| Ling-1T | inclusionAI/Ling-1T | init std unknown | parent of 1 analysed fine-tunes |
+| Ling-2.6-flash | inclusionAI/Ling-2.6-flash | P=4.8e-12: implausible for decay alone (vectors zeroed or rescaled otherwise) | vs inclusionAI/Ling-2.6-flash-base: every token vector changed |
+| Ling-3.0-flash | inclusionAI/Ling-3.0-flash | total weight decay sum lr*wd = 11.35 (assumes init std = initializer_range) | vs inclusionAI/Ling-3.0-flash-base: 1,130 tokens never updated, shrink factor P=0.9718, special tokens updated 98/262 |
+| Ling-3.1-flash | inclusionAI/Ling-3.1-flash | total weight decay sum lr*wd = 11.91 (assumes init std = initializer_range) | vs inclusionAI/Ling-3.1-flash-base: 1,682 tokens never updated, shrink factor P=0.9816, special tokens updated 19/262 |
+| GLM-5 | zai-org/GLM-5 | total weight decay sum lr*wd = 6.15 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
+| GLM-5.1 | zai-org/GLM-5.1 | total weight decay sum lr*wd = 6.15 (assumes init std = initializer_range) | vs zai-org/GLM-5: every token vector changed |
 | GLM-5.3-Flash | zai-org/GLM-5.3-Flash | total weight decay sum lr*wd = 7.92 (assumes init std = initializer_range) | - |
-| GLM-4.5-Base | zai-org/GLM-4.5-Base | total weight decay sum lr*wd = 5.98 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
-| GLM-4.5-Air | zai-org/GLM-4.5-Air-Base | total weight decay sum lr*wd = 8.28 (assumes init std = initializer_range) | parent of 2 analysed fine-tunes |
-| GLM-4.6 | zai-org/GLM-4.6 | total weight decay sum lr*wd = 6.01 (assumes init std = initializer_range) | - |
-| GLM-4.7 | zai-org/GLM-4.7 | total weight decay sum lr*wd = 6.01 (assumes init std = initializer_range) | - |
-| GLM-4.7-Flash | zai-org/GLM-4.7-Flash | init std unknown | - |
+| GLM-4.5-Base | zai-org/GLM-4.5-Base | total weight decay sum lr*wd = 5.98 (assumes init std = initializer_range) | parent of 2 analysed fine-tunes |
+| GLM-4.5-Air | zai-org/GLM-4.5-Air-Base | total weight decay sum lr*wd = 8.28 (assumes init std = initializer_range) | parent of 3 analysed fine-tunes |
+| GLM-4.6 | zai-org/GLM-4.6 | total weight decay sum lr*wd = 6.01 (assumes init std = initializer_range) | vs zai-org/GLM-4.5: 128 tokens never updated, shrink factor P=0.9931, special tokens updated 36/36 (decay fit below 99%: read with care); vs zai-org/GLM-4.5-Base: 128 tokens never updated, shrink factor P=0.9714, special tokens updated 36/36 (decay fit below 99%: read with care) |
+| GLM-4.7 | zai-org/GLM-4.7 | total weight decay sum lr*wd = 6.01 (assumes init std = initializer_range) | vs zai-org/GLM-4.6: 128 tokens never updated, special tokens updated 36/36 |
+| GLM-4.7-Flash | zai-org/GLM-4.7-Flash | init std unknown | parent of 1 analysed fine-tunes |
 | GLM-4-32B | zai-org/GLM-4-32B-Base-0414 | total weight decay sum lr*wd = 11.07 (assumes init std = initializer_range) | parent of 2 analysed fine-tunes |
 | Qwen3.8-2.4T-A95B | Qwen/Qwen3.8-2.4T-A95B | no regenerable init: init recognised from trained vectors only, none left untouched | - |
-| Qwen3.5-397B-A17B | Qwen/Qwen3.5-397B-A17B | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
+| Qwen3.5-397B-A17B | Qwen/Qwen3.5-397B-A17B | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 2 analysed fine-tunes |
 | Qwen3.5-122B-A10B | Qwen/Qwen3.5-122B-A10B | 263 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 1 analysed fine-tunes |
 | Qwen3.8-Flash-Next | Qwen/Qwen3.8-Flash-Next | no regenerable init: init recognised from trained vectors only, none left untouched | - |
 | Qwen3-0.6B | Qwen/Qwen3-0.6B-Base | no regenerable init: no untouched vectors | parent of 1 analysed fine-tunes |
 | Qwen3-1.7B | Qwen/Qwen3-1.7B-Base | no regenerable init: no untouched vectors | parent of 1 analysed fine-tunes |
 | Qwen3-8B | Qwen/Qwen3-8B-Base | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | parent of 1 analysed fine-tunes |
-| Qwen3-14B | Qwen/Qwen3-14B-Base | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | parent of 1 analysed fine-tunes |
-| Qwen3-30B-A3B | Qwen/Qwen3-30B-A3B-Base | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | parent of 3 analysed fine-tunes |
+| Qwen3-14B | Qwen/Qwen3-14B-Base | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | parent of 3 analysed fine-tunes |
+| Qwen3-30B-A3B | Qwen/Qwen3-30B-A3B-Base | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | parent of 4 analysed fine-tunes |
 | Qwen3-32B | Qwen/Qwen3-32B | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | - |
 | Qwen3-235B-A22B | Qwen/Qwen3-235B-A22B | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 3 analysed fine-tunes |
-| Qwen3-Next-80B-A3B | Qwen/Qwen3-Next-80B-A3B-Instruct | no regenerable init: init recognised from trained vectors only, none left untouched | - |
+| Qwen3-Next-80B-A3B | Qwen/Qwen3-Next-80B-A3B-Instruct | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
 | Qwen3.5-0.8B | Qwen/Qwen3.5-0.8B-Base | 8 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 1 analysed fine-tunes |
 | Qwen3.5-9B | Qwen/Qwen3.5-9B-Base | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | parent of 1 analysed fine-tunes |
-| Qwen3.5-27B | Qwen/Qwen3.5-27B | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | - |
-| Qwen3.5-35B-A3B | Qwen/Qwen3.5-35B-A3B-Base | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
+| Qwen3.5-27B | Qwen/Qwen3.5-27B | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | parent of 3 analysed fine-tunes |
+| Qwen3.5-35B-A3B | Qwen/Qwen3.5-35B-A3B-Base | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 3 analysed fine-tunes |
 | Qwen2.5-0.5B | Qwen/Qwen2.5-0.5B | 29 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 1 analysed fine-tunes |
 | Qwen2.5-7B | Qwen/Qwen2.5-7B | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 3 analysed fine-tunes |
-| Qwen2.5-72B | Qwen/Qwen2.5-72B | P=1.18e-14: implausible for decay alone (vectors zeroed or rescaled otherwise) | parent of 3 analysed fine-tunes |
-| QwQ-32B | Qwen/QwQ-32B | P=3.04e-26: implausible for decay alone (vectors zeroed or rescaled otherwise) | vs Qwen/Qwen2.5-32B: 4,229 tokens never updated, special tokens updated 15/26 |
+| Qwen2.5-72B | Qwen/Qwen2.5-72B | P=1.18e-14: implausible for decay alone (vectors zeroed or rescaled otherwise) | parent of 4 analysed fine-tunes |
+| QwQ-32B | Qwen/QwQ-32B | P=3.04e-26: implausible for decay alone (vectors zeroed or rescaled otherwise) | vs Qwen/Qwen2.5-32B: 4,229 tokens never updated, special tokens updated 15/26; vs Qwen/Qwen2.5-32B-Instruct: 3,609 tokens never updated, special tokens updated 15/26; vs Qwen/QwQ-32B-Preview: 4,228 tokens never updated, special tokens updated 15/26 |
 | Intern-S2 | internlm/Intern-S2 | no regenerable init: init recognised from trained vectors only, none left untouched | - |
-| Hy3-preview | tencent/Hy3-preview | no decoupled weight decay on the token vectors (initializer_range) | vs tencent/Hy3: 361 tokens never updated, special tokens updated 471/818 |
+| Hy3-preview | tencent/Hy3-preview | no decoupled weight decay on the token vectors (initializer_range) | vs tencent/Hy3: 361 tokens never updated, special tokens updated 471/818; vs tencent/Hy3-preview-Base: 987 tokens never updated, special tokens updated 33/818 |
 | Hy4-preview | tencent/Hy4-preview | no decoupled weight decay on the token vectors (initializer_range) | - |
 | Hunyuan-A13B | tencent/Hunyuan-A13B-Pretrain | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
 | MiMo-V2-Flash | XiaomiMiMo/MiMo-V2-Flash-Base | total weight decay sum lr*wd = 10.66 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
 | MiMo-V2.5-Pro | XiaomiMiMo/MiMo-V2.5-Pro | total weight decay sum lr*wd = 7.65 (assumes init std = initializer_range) | vs XiaomiMiMo/MiMo-V2.5-Pro-Base: every token vector changed |
 | Step-5-Preview | stepfun-ai/Step-5-Preview | init std unknown | - |
-| Step-3.5-Flash | stepfun-ai/Step-3.5-Flash-Base | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
-| LongCat-2.0 | meituan-longcat/LongCat-2.0 | 4804 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | - |
+| Step-3.5-Flash | stepfun-ai/Step-3.5-Flash-Base | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 2 analysed fine-tunes |
+| LongCat-2.0 | meituan-longcat/LongCat-2.0 | 4804 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 1 analysed fine-tunes |
 | ERNIE-5.5-Flash-Base | baidu/ERNIE-5.5-Flash-Base-BF16 | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | vs baidu/ERNIE-5.5-Flash-Base: token vectors unchanged |
-| ERNIE-4.5-300B-A47B | baidu/ERNIE-4.5-300B-A47B-Base-PT | 131 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | - |
+| ERNIE-4.5-300B-A47B | baidu/ERNIE-4.5-300B-A47B-Base-PT | 131 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 1 analysed fine-tunes |
 | Seed-OSS-36B-Base | ByteDance-Seed/Seed-OSS-36B-Base | total weight decay sum lr*wd = 10.45 (assumes init std = initializer_range) | parent of 2 analysed fine-tunes |
 | Yi-34B | 01-ai/Yi-34B | total weight decay sum lr*wd = 6.55 (assumes init std = initializer_range) | parent of 2 analysed fine-tunes |
 | Llama-3.1-8B | unsloth/Meta-Llama-3.1-8B | P=1.69e-21: implausible for decay alone (vectors zeroed or rescaled otherwise) | parent of 1 analysed fine-tunes |
-| Llama-3.1-70B | unsloth/Meta-Llama-3.1-70B | total weight decay sum lr*wd = 11.16 (assumes init std = initializer_range) | parent of 2 analysed fine-tunes |
+| Llama-3.1-70B | unsloth/Meta-Llama-3.1-70B | total weight decay sum lr*wd = 11.16 (assumes init std = initializer_range) | parent of 3 analysed fine-tunes |
 | Llama-4-Scout | unsloth/Llama-4-Scout-17B-16E | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
 | Llama-4-Maverick | unsloth/Llama-4-Maverick-17B-128E-Instruct | no regenerable init: init recognised from trained vectors only, none left untouched | vs unsloth/Llama-4-Maverick-17B-128E: 3,927 tokens never updated, shrink factor P=0.9940, special tokens updated 17/1135 |
 | Llama-3-8B | unsloth/llama-3-8b | P=1.42e-21: implausible for decay alone (vectors zeroed or rescaled otherwise) | parent of 1 analysed fine-tunes |
 | Llama-3.2-1B | unsloth/Llama-3.2-1B | no regenerable init: no untouched vectors | parent of 1 analysed fine-tunes |
 | Llama-3.2-3B | unsloth/Llama-3.2-3B | no regenerable init: no untouched vectors | parent of 1 analysed fine-tunes |
-| Llama-3.3-70B | unsloth/Llama-3.3-70B-Instruct | total weight decay sum lr*wd = 11.17 (assumes init std = initializer_range) | vs unsloth/Meta-Llama-3.1-70B: 279 tokens never updated, shrink factor P=0.9941, special tokens updated 7/256 |
-| Nemotron-3-Ultra-550B | nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16 | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
+| Llama-3.3-70B | unsloth/Llama-3.3-70B-Instruct | total weight decay sum lr*wd = 11.17 (assumes init std = initializer_range) | vs unsloth/Meta-Llama-3.1-70B: 279 tokens never updated, shrink factor P=0.9941, special tokens updated 7/256 (decay fit below 99%: read with care) |
+| Nemotron-3-Ultra-550B | nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16 | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 3 analysed fine-tunes |
 | Nemotron-3-Super-120B | nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 | P=1.29e-17: implausible for decay alone (vectors zeroed or rescaled otherwise) | parent of 1 analysed fine-tunes |
-| Nemotron-3-Nano-30B | nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
+| Nemotron-3-Nano-30B | nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 2 analysed fine-tunes |
 | Nemotron-Nano-9B-v2 | nvidia/NVIDIA-Nemotron-Nano-9B-v2-Base | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
 | ZAYA1-74B-preview | Zyphra/ZAYA1-74B-preview | no regenerable init: init recognised from trained vectors only, none left untouched | - |
 | OLMo-2-32B | allenai/OLMo-2-0325-32B | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 3 analysed fine-tunes |
@@ -117,10 +117,10 @@ Models whose starting values cannot be regenerated, by reason: init recognised f
 | Pythia-12B | EleutherAI/pythia-12b | total weight decay sum lr*wd = 0.89 (validated) | parent of 1 analysed fine-tunes |
 | GPT-NeoX-20B | EleutherAI/gpt-neox-20b | total weight decay sum lr*wd = 0.98 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
 | Apertus-70B | swiss-ai/Apertus-70B-2509 | total weight decay sum lr*wd = 1.91 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
-| Mixtral-8x7B | mistralai/Mixtral-8x7B-v0.1 | P=1.47e-35: implausible for decay alone (vectors zeroed or rescaled otherwise) | vs mistralai/Mistral-7B-v0.1: every token vector changed |
+| Mixtral-8x7B | mistralai/Mixtral-8x7B-v0.1 | P=1.47e-35: implausible for decay alone (vectors zeroed or rescaled otherwise) | vs mistralai/Mistral-7B-v0.1: not a decayed copy of that parent (not comparable) |
 | BLOOM-176B | bigscience/bloom | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
 | gpt-oss-120b | openai/gpt-oss-120b | 922 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 1 analysed fine-tunes |
-| gpt-oss-20b | openai/gpt-oss-20b | 922 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 1 analysed fine-tunes |
+| gpt-oss-20b | openai/gpt-oss-20b | 922 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 2 analysed fine-tunes |
 | DBRX | Undi95/dbrx-base | P=7.49e-10: implausible for decay alone (vectors zeroed or rescaled otherwise) | - |
 | SmolLM2-135M | HuggingFaceTB/SmolLM2-135M | 43 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 1 analysed fine-tunes |
 | SmolLM2-360M | HuggingFaceTB/SmolLM2-360M | no regenerable init: no untouched vectors | parent of 1 analysed fine-tunes |
@@ -135,8 +135,8 @@ Models whose starting values cannot be regenerated, by reason: init recognised f
 | Gemma-2-27B | unsloth/gemma-2-27b | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | parent of 1 analysed fine-tunes |
 | Gemma-4-26B-A4B | google/gemma-4-26b-a4b | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | - |
 | Gemma-4-31B | google/gemma-4-31b | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | - |
-| Hermes-3-405B | NousResearch/Hermes-3-Llama-3.1-405B | total weight decay sum lr*wd = 5.66 (assumes init std = initializer_range) | - |
-| Hermes-4-405B | NousResearch/Hermes-4-405B | total weight decay sum lr*wd = 5.66 (assumes init std = initializer_range) | - |
+| Hermes-3-405B | NousResearch/Hermes-3-Llama-3.1-405B | total weight decay sum lr*wd = 5.66 (assumes init std = initializer_range) | vs NousResearch/Meta-Llama-3.1-405B-FP8: 6,371 tokens never updated, special tokens updated 32/256 |
+| Hermes-4-405B | NousResearch/Hermes-4-405B | total weight decay sum lr*wd = 5.66 (assumes init std = initializer_range) | vs NousResearch/Meta-Llama-3.1-405B-FP8: 2,739 tokens never updated, special tokens updated 12/256; vs NousResearch/Hermes-3-Llama-3.1-405B: 2,632 tokens never updated, special tokens updated 37/256 |
 | Mixtral-8x22B | mistralai/Mixtral-8x22B-v0.1 | P=2.69e-15: implausible for decay alone (vectors zeroed or rescaled otherwise) | parent of 1 analysed fine-tunes |
 | Mistral-7B-v0.1 | mistralai/Mistral-7B-v0.1 | P=4.28e-34: implausible for decay alone (vectors zeroed or rescaled otherwise) | parent of 6 analysed fine-tunes |
 | Mistral-Nemo-12B | mistralai/Mistral-Nemo-Base-2407 | P=1.89e-22: implausible for decay alone (vectors zeroed or rescaled otherwise) | parent of 1 analysed fine-tunes |
@@ -149,38 +149,38 @@ Models whose starting values cannot be regenerated, by reason: init recognised f
 | OLMo-3.1-32B | allenai/Olmo-3.1-32B-Instruct | no decoupled weight decay on the token vectors (initializer_range) | vs allenai/Olmo-3.1-32B-Instruct-DPO: 12,869 tokens never updated, special tokens updated 4/22 |
 | Nemotron-Super-49B-v1.5 | nvidia/Llama-3_3-Nemotron-Super-49B-v1_5 | total weight decay sum lr*wd = 11.18 (assumes init std = initializer_range) | vs unsloth/Llama-3.3-70B-Instruct: every token vector changed |
 | Nemotron-70B | nvidia/Llama-3.1-Nemotron-70B-Instruct-HF | total weight decay sum lr*wd = 11.17 (assumes init std = initializer_range) | vs unsloth/Meta-Llama-3.1-70B-Instruct: 60,244 tokens never updated, special tokens updated 11/256 |
-| INTELLECT-3 | PrimeIntellect/INTELLECT-3 | total weight decay sum lr*wd = 8.32 (assumes init std = initializer_range) | vs zai-org/GLM-4.5-Air-Base: every token vector changed |
+| INTELLECT-3 | PrimeIntellect/INTELLECT-3 | total weight decay sum lr*wd = 8.32 (assumes init std = initializer_range) | vs zai-org/GLM-4.5-Air-Base: not a decayed copy of that parent (not comparable) |
 | DeepSeek-V3.1-Nex-N1 | nex-agi/DeepSeek-V3.1-Nex-N1 | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | vs deepseek-ai/DeepSeek-V3-Base: 470 tokens never updated, special tokens updated 824/824 |
 | DeepSeek-R1-Distill-Qwen-32B | deepseek-ai/DeepSeek-R1-Distill-Qwen-32B | P=3.04e-26: implausible for decay alone (vectors zeroed or rescaled otherwise) | vs Qwen/Qwen2.5-32B: 18,743 tokens never updated, special tokens updated 10/22 |
 | DeepSeek-R1-Distill-Llama-70B | deepseek-ai/DeepSeek-R1-Distill-Llama-70B | total weight decay sum lr*wd = 11.17 (assumes init std = initializer_range) | vs unsloth/Llama-3.3-70B-Instruct: 8,959 tokens never updated, special tokens updated 10/256 |
 | Granite-3.3-2B | ibm-granite/granite-3.3-2b-base | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
 | MiMo-V2.5-Base | XiaomiMiMo/MiMo-V2.5-Base | total weight decay sum lr*wd = 10.99 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
 | MiMo-V2.5-Pro-Base | XiaomiMiMo/MiMo-V2.5-Pro-Base | total weight decay sum lr*wd = 7.65 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
-| MiMo-V2.6-Pro | XiaomiMiMo/MiMo-V2.6-Pro-RL | total weight decay sum lr*wd = 7.66 (assumes init std = initializer_range) | - |
-| MiMo-V2.6-Flash | XiaomiMiMo/MiMo-V2.6-Flash-RL | total weight decay sum lr*wd = 11.00 (assumes init std = initializer_range) | - |
+| MiMo-V2.6-Pro | XiaomiMiMo/MiMo-V2.6-Pro-RL | total weight decay sum lr*wd = 7.66 (assumes init std = initializer_range) | vs XiaomiMiMo/MiMo-V2.6-Pro-MOPD: 10,936 tokens never updated, special tokens updated 14/32 |
+| MiMo-V2.6-Flash | XiaomiMiMo/MiMo-V2.6-Flash-RL | total weight decay sum lr*wd = 11.00 (assumes init std = initializer_range) | vs XiaomiMiMo/MiMo-V2.6-Flash-MOPD: 17,140 tokens never updated, special tokens updated 11/32 |
 | DeepSeek-V4.1-Flash-1017 | deepseek-ai/DeepSeek-V4.1-Flash-1017 | 431 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | vs deepseek-ai/DeepSeek-V4.1-Flash: 1,059 tokens never updated, special tokens updated 282/1283 |
 | DeepSeek-V4-Pro | deepseek-ai/DeepSeek-V4-Pro | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | vs deepseek-ai/DeepSeek-V4-Pro-Base: 446 tokens never updated, special tokens updated 852/1283 |
 | DeepSeek-V4-Pro-0813 | deepseek-ai/DeepSeek-V4-Pro-0813 | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | vs deepseek-ai/DeepSeek-V4-Pro: 738 tokens never updated, special tokens updated 639/1283 |
 | DeepSeek-V4-Flash-0731 | deepseek-ai/DeepSeek-V4-Flash-0731 | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | vs deepseek-ai/DeepSeek-V4-Flash: 1,261 tokens never updated, special tokens updated 117/1283 |
-| GLM-5.2 | zai-org/GLM-5.2 | total weight decay sum lr*wd = 6.16 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
-| GLM-5.3 | zai-org/GLM-5.3-BF16 | total weight decay sum lr*wd = 6.16 (assumes init std = initializer_range) | vs zai-org/GLM-5.3: token vectors unchanged |
-| MiniMax-M2.1 | MiniMaxAI/MiniMax-M2.1 | init std unknown | - |
-| MiniMax-M2.5 | MiniMaxAI/MiniMax-M2.5 | init std unknown | - |
-| Qwen3.8-27B | Qwen/Qwen3.8-27B | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | parent of 1 analysed fine-tunes |
-| Kimi-K2-Thinking | moonshotai/Kimi-K2-Thinking | total weight decay sum lr*wd = 6.55 (assumes init std = initializer_range) | vs moonshotai/Kimi-K2-Base: 118 tokens never updated, special tokens updated 19/19 |
-| Step-3.7-Flash | stepfun-ai/Step-3.7-Flash | init std unknown | - |
-| LongCat-2.5 | meituan-longcat/LongCat-2.5 | no regenerable init: untouched vectors present but no searched seed regenerates them | - |
-| LongCat-Flash-Chat | meituan-longcat/LongCat-Flash-Chat | 75 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | - |
+| GLM-5.2 | zai-org/GLM-5.2 | total weight decay sum lr*wd = 6.16 (assumes init std = initializer_range) | vs zai-org/GLM-5.1: not a decayed copy of that parent (not comparable) |
+| GLM-5.3 | zai-org/GLM-5.3-BF16 | total weight decay sum lr*wd = 6.16 (assumes init std = initializer_range) | vs zai-org/GLM-5.3: token vectors unchanged; vs zai-org/GLM-5.2: not a decayed copy of that parent (not comparable) |
+| MiniMax-M2.1 | MiniMaxAI/MiniMax-M2.1 | init std unknown | vs MiniMaxAI/MiniMax-M2: not a decayed copy of that parent (not comparable) |
+| MiniMax-M2.5 | MiniMaxAI/MiniMax-M2.5 | init std unknown | vs MiniMaxAI/MiniMax-M2.1: every token vector changed |
+| Qwen3.8-27B | Qwen/Qwen3.8-27B | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | vs Qwen/Qwen3.6-27B: not a decayed copy of that parent (not comparable) |
+| Kimi-K2-Thinking | moonshotai/Kimi-K2-Thinking | total weight decay sum lr*wd = 6.55 (assumes init std = initializer_range) | vs moonshotai/Kimi-K2-Base: 118 tokens never updated, special tokens updated 19/19; vs moonshotai/Kimi-K2-Instruct-0905: not a decayed copy of that parent (not comparable) |
+| Step-3.7-Flash | stepfun-ai/Step-3.7-Flash | init std unknown | vs stepfun-ai/Step-3.5-Flash: not a decayed copy of that parent (not comparable) |
+| LongCat-2.5 | meituan-longcat/LongCat-2.5 | no regenerable init: untouched vectors present but no searched seed regenerates them | vs meituan-longcat/LongCat-2.0: not a decayed copy of that parent (not comparable) |
+| LongCat-Flash-Chat | meituan-longcat/LongCat-Flash-Chat | 75 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 1 analysed fine-tunes |
 | Ling-3.1-flash-1019 | inclusionAI/Ling-3.1-flash-1019 | total weight decay sum lr*wd = 11.91 (assumes init std = initializer_range) | vs inclusionAI/Ling-3.1-flash-base: 1,689 tokens never updated, shrink factor P=0.9830, special tokens updated 18/262 |
-| Intern-S2-397B | internlm/Intern-S2-397B | no regenerable init: init recognised from trained vectors only, none left untouched | vs Qwen/Qwen3.5-397B-A17B: 1 tokens never updated, shrink factor P=0.9470, special tokens updated 59/59 |
+| Intern-S2-397B | internlm/Intern-S2-397B | no regenerable init: init recognised from trained vectors only, none left untouched | vs Qwen/Qwen3.5-397B-A17B: every token vector changed; vs internlm/Intern-S2-Preview-397B: every token vector changed |
 | Atria-Dawn | internlm/Atria-Dawn | total weight decay sum lr*wd = 6.16 (assumes init std = initializer_range) | vs zai-org/GLM-5.2: 2,600 tokens never updated, special tokens updated 19/36 |
 | Mistral-Medium-3.5-128B | mistralai/Mistral-Medium-3.5-128B | 772 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | - |
-| Mistral-Small-4-119B | mistralai/Mistral-Small-4-119B-2603 | no regenerable init: init recognised from trained vectors only, none left untouched | - |
-| Leanstral-1.5-119B | mistralai/Leanstral-1.5-119B-A6B | no regenerable init: init recognised from trained vectors only, none left untouched | vs mistralai/Leanstral-2603: 1,448 tokens never updated |
-| Nemotron-3.5-Super-120B | nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
-| Nemotron-3.5-Lightning-30B | nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
+| Mistral-Small-4-119B | mistralai/Mistral-Small-4-119B-2603 | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
+| Leanstral-1.5-119B | mistralai/Leanstral-1.5-119B-A6B | no regenerable init: init recognised from trained vectors only, none left untouched | vs mistralai/Leanstral-2603: 1,448 tokens never updated; vs mistralai/Mistral-Small-4-119B-2603: 1,276 tokens never updated |
+| Nemotron-3.5-Super-120B | nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | no regenerable init: init recognised from trained vectors only, none left untouched | vs nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16: 1,188 tokens never updated, shrink factor P=0.9879, special tokens updated 154/1000 |
+| Nemotron-3.5-Lightning-30B | nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | no regenerable init: init recognised from trained vectors only, none left untouched | vs nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16: 337 tokens never updated, shrink factor P=0.9927, special tokens updated 816/1000 (decay fit below 99%: read with care) |
 | Granite-Switch-4.1-30B | ibm-granite/granite-switch-4.1-30b | no regenerable init: init recognised from trained vectors only, none left untouched | - |
-| Seed-OSS-36B-Instruct | ByteDance-Seed/Seed-OSS-36B-Instruct | total weight decay sum lr*wd = 10.46 (assumes init std = initializer_range) | vs ByteDance-Seed/Seed-OSS-36B-Base: every token vector changed |
+| Seed-OSS-36B-Instruct | ByteDance-Seed/Seed-OSS-36B-Instruct | total weight decay sum lr*wd = 10.46 (assumes init std = initializer_range) | vs ByteDance-Seed/Seed-OSS-36B-Base: every token vector changed; vs ByteDance-Seed/Seed-OSS-36B-Base-woSyn: every token vector changed |
 | Mistral-Large-4 | mistralai/Mistral-Large-4-1T-A52B | 977 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | - |
 | Inkling | thinkingmachines/Inkling | no regenerable init: init recognised from trained vectors only, none left untouched | - |
 | Inkling-Small | thinkingmachines/Inkling-Small | no regenerable init: init recognised from trained vectors only, none left untouched | - |
@@ -188,7 +188,7 @@ Models whose starting values cannot be regenerated, by reason: init recognised f
 | Beam-1.0-501B | reflection/Beam-1.0-501B-A23B | 448 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | - |
 | Trinity-Large-Thinking | arcee-ai/Trinity-Large-Thinking | 233 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | vs arcee-ai/Trinity-Large-Base: 389 tokens never updated, special tokens updated 31/32 |
 | Trinity-Mini | arcee-ai/Trinity-Mini | total weight decay sum lr*wd = 0.60 (assumes init std = initializer_range) | vs arcee-ai/Trinity-Mini-Base: 3,022 tokens never updated, special tokens updated 10/32 |
-| Cogito-671B-v2.1 | deepcogito/cogito-671b-v2.1 | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | vs deepseek-ai/DeepSeek-V3-Base: 15 tokens never updated, special tokens updated 816/818 |
+| Cogito-671B-v2.1 | deepcogito/cogito-671b-v2.1 | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | vs deepseek-ai/DeepSeek-V3-Base: 15 tokens never updated, special tokens updated 816/818 (decay fit below 99%: read with care) |
 | rnj-1 | EssentialAI/rnj-1 | no regenerable init: no untouched vectors | parent of 2 analysed fine-tunes |
 | Hermes-4.3-36B | NousResearch/Hermes-4.3-36B | 24 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | vs ByteDance-Seed/Seed-OSS-36B-Base: every token vector changed |
 | Arete-27B | NousResearch/Arete-27B | 266 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | vs Qwen/Qwen3.8-27B: 184,610 tokens never updated, special tokens updated 0/33 |
@@ -227,14 +227,14 @@ Models whose starting values cannot be regenerated, by reason: init recognised f
 | Lucie-7B | OpenLLM-France/Lucie-7B | total weight decay sum lr*wd = 13.29 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
 | GigaChat3.5-432B | ai-sage/GigaChat3.5-432B-A28B | total weight decay sum lr*wd = 3.36 (assumes init std = initializer_range) | vs ai-sage/GigaChat3.5-432B-A28B-base: 6,957 tokens never updated, special tokens updated 7/18 |
 | AliceAI-80B-A3B-Base | yandex/AliceAI-Foundation-80B-A3B-Base | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | - |
-| Baichuan-M3-235B | baichuan-inc/Baichuan-M3-235B | P=2.05e-20: implausible for decay alone (vectors zeroed or rescaled otherwise) | vs Qwen/Qwen3-235B-A22B: every token vector changed |
+| Baichuan-M3-235B | baichuan-inc/Baichuan-M3-235B | P=2.05e-20: implausible for decay alone (vectors zeroed or rescaled otherwise) | vs Qwen/Qwen3-235B-A22B: not a decayed copy of that parent (not comparable) |
 | XVERSE-MoE-A36B | xverse/XVERSE-MoE-A36B | no regenerable init: init recognised from trained vectors only, none left untouched | - |
 | Klear-46B-A2.5B-Base | Kwai-Klear/Klear-46B-A2.5B-Base | total weight decay sum lr*wd = 9.79 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
 | Nanbeige4.3-33B-Base | Nanbeige/Nanbeige4.3-33B-Base | 998 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 1 analysed fine-tunes |
 | TeleChat2.5-115B | Tele-AI/TeleChat2.5-115B | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | - |
 | TeleChat3-36B | Tele-AI/TeleChat3-36B-Thinking | no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init) | - |
 | AREX-Base-123B | BAAI/AREX-Base | no regenerable init: untouched vectors present but no searched seed regenerates them | vs Qwen/Qwen3.5-122B-A10B: 56,255 tokens never updated, special tokens updated 9/33 |
-| KAT-Dev-72B | Kwaipilot/KAT-Dev-72B-Exp | no regenerable init: init recognised from trained vectors only, none left untouched | vs Qwen/Qwen2.5-72B: 2,171 tokens never updated, shrink factor P=0.0000, special tokens updated 22/22 |
+| KAT-Dev-72B | Kwaipilot/KAT-Dev-72B-Exp | no regenerable init: init recognised from trained vectors only, none left untouched | vs Qwen/Qwen2.5-72B: not a decayed copy of that parent (not comparable) |
 | LLaDA-MoE-v2-30B | GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base | total weight decay sum lr*wd = 7.58 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
 | LLaMA-1-7B | huggyllama/llama-7b | 111 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 1 analysed fine-tunes |
 | LLaMA-1-65B | huggyllama/llama-65b | 111 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | - |
@@ -242,8 +242,8 @@ Models whose starting values cannot be regenerated, by reason: init recognised f
 | Llama-2-13B | NousResearch/Llama-2-13b-hf | 111 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 3 analysed fine-tunes |
 | Llama-2-70B | NousResearch/Llama-2-70b-hf | 111 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 2 analysed fine-tunes |
 | CodeLlama-34B | codellama/CodeLlama-34b-hf | 111 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate | parent of 2 analysed fine-tunes |
-| Mistral-7B-v0.3 | mistralai/Mistral-7B-v0.3 | no regenerable init: init recognised from trained vectors only, none left untouched | vs mistralai/Mistral-7B-v0.1: every token vector changed |
-| Mixtral-8x7B-v0.1-base | mistralai/Mixtral-8x7B-v0.1 | P=1.47e-35: implausible for decay alone (vectors zeroed or rescaled otherwise) | vs mistralai/Mistral-7B-v0.1: every token vector changed |
+| Mistral-7B-v0.3 | mistralai/Mistral-7B-v0.3 | no regenerable init: init recognised from trained vectors only, none left untouched | vs mistralai/Mistral-7B-v0.1: not a decayed copy of that parent (not comparable) |
+| Mixtral-8x7B-v0.1-base | mistralai/Mixtral-8x7B-v0.1 | P=1.47e-35: implausible for decay alone (vectors zeroed or rescaled otherwise) | vs mistralai/Mistral-7B-v0.1: not a decayed copy of that parent (not comparable) |
 | Qwen-7B | Qwen/Qwen-7B | total weight decay sum lr*wd = 7.30 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
 | Qwen-72B | Qwen/Qwen-72B | no decoupled weight decay on the token vectors (3e-05 (round)), inferred from a round number | parent of 1 analysed fine-tunes |
 | Qwen1.5-7B | Qwen/Qwen1.5-7B | total weight decay sum lr*wd = 8.01 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
@@ -256,7 +256,7 @@ Models whose starting values cannot be regenerated, by reason: init recognised f
 | GLM-4-9B | THUDM/glm-4-9b | init std unknown | - |
 | InternLM2-20B | internlm/internlm2-20b | no regenerable init: untouched vectors present but no searched seed regenerates them | parent of 2 analysed fine-tunes |
 | InternLM2.5-7B | internlm/internlm2_5-7b | no regenerable init: untouched vectors present but no searched seed regenerates them | parent of 1 analysed fine-tunes |
-| Yi-1.5-34B | 01-ai/Yi-1.5-34B | total weight decay sum lr*wd = 6.68 (assumes init std = initializer_range) | vs 01-ai/Yi-34B: every token vector changed |
+| Yi-1.5-34B | 01-ai/Yi-1.5-34B | total weight decay sum lr*wd = 6.68 (assumes init std = initializer_range) | vs 01-ai/Yi-34B: not a decayed copy of that parent (not comparable) |
 | DeepSeek-Coder-33B | deepseek-ai/deepseek-coder-33b-base | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | parent of 1 analysed fine-tunes |
 | DeepSeek-Coder-V2 | deepseek-ai/DeepSeek-Coder-V2-Base | no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number | vs deepseek-ai/DeepSeek-V2: 2,384 tokens never updated, special tokens updated 15/18 |
 | Falcon-7B | tiiuae/falcon-7b | no regenerable init: no untouched vectors | parent of 1 analysed fine-tunes |
@@ -279,4 +279,441 @@ Models whose starting values cannot be regenerated, by reason: init recognised f
 | Skywork-13B | Skywork/Skywork-13B-base | total weight decay sum lr*wd = 4.50 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |
 | XVERSE-65B | xverse/XVERSE-65B | no regenerable init: init recognised from trained vectors only, none left untouched | parent of 1 analysed fine-tunes |
 | InternLM-20B | internlm/internlm-20b | no regenerable init: untouched vectors present but no searched seed regenerates them | parent of 1 analysed fine-tunes |
-| Qwen2.5-32B | Qwen/Qwen2.5-32B | P=3.04e-26: implausible for decay alone (vectors zeroed or rescaled otherwise) | parent of 3 analysed fine-tunes |
+| Qwen2.5-32B | Qwen/Qwen2.5-32B | P=3.04e-26: implausible for decay alone (vectors zeroed or rescaled otherwise) | parent of 4 analysed fine-tunes |
+
+## Every parent -> fine-tune comparison (roster and follow-up studies)
+
+421 distinct comparisons over 580 distinct models (335 of them with a fine-tune outside the 265-model roster). By source (first source wins): roster 229, y2026_labs 77, frontier_x 58, y2026_ft 29, large 28.
+
+| class | comparisons |
+|---|---|
+| token record | 203 |
+| record, poor fit | 17 |
+| changed throughout | 50 |
+| not comparable | 85 |
+| unchanged | 17 |
+| shared matrix | 49 |
+
+| parent | fine-tune | source | class |
+|---|---|---|---|
+| 01-ai/Yi-34B | 01-ai/Yi-34B-Chat | roster | token record |
+| Qwen/Qwen3.5-122B-A10B | BAAI/AREX-Base | roster | token record |
+| GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base | GSAI-ML/LLaDA-MoE-v2-30B-A3B-Instruct | roster | token record |
+| mistralai/Mistral-7B-v0.1 | HuggingFaceH4/mistral-7b-sft-beta | roster | token record |
+| HuggingFaceH4/mistral-7b-sft-beta | HuggingFaceH4/zephyr-7b-beta | roster | token record |
+| mistralai/Mistral-7B-v0.1 | HuggingFaceH4/zephyr-7b-beta | roster | token record |
+| Kwai-Klear/Klear-46B-A2.5B-Base | Kwai-Klear/Klear-46B-A2.5B-Instruct | roster | token record |
+| Qwen/Qwen3.6-35B-A3B | Kwaipilot/KAT-Coder-V2.5-Dev | y2026_labs | token record |
+| LGAI-EXAONE/EXAONE-4.0-32B | LGAI-EXAONE/EXAONE-4.0.1-32B | frontier_x | token record |
+| deepseek-ai/DeepSeek-V4-Flash | MemTensor/MemT-1.0-Flash | y2026_ft | token record |
+| deepseek-ai/DeepSeek-V4-Flash-0731 | MemTensor/MemT-1.0-Flash | y2026_ft | token record |
+| Nanbeige/Nanbeige4.3-33B-Base | Nanbeige/Nanbeige4.3-33B | roster | token record |
+| Qwen/Qwen2.5-72B-Instruct | Nexusflow/Athene-V2-Chat | large | token record |
+| Qwen/Qwen3.8-27B | NousResearch/Arete-27B | roster | token record |
+| NousResearch/Meta-Llama-3.1-405B-FP8 | NousResearch/Hermes-3-Llama-3.1-405B | large | token record |
+| NousResearch/Meta-Llama-3.1-405B-FP8 | NousResearch/Hermes-4-405B | large | token record |
+| NousResearch/Hermes-3-Llama-3.1-405B | NousResearch/Hermes-4-405B | large | token record |
+| unsloth/Meta-Llama-3.1-70B | NousResearch/Hermes-4-70B | large | token record |
+| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 | OpenResearcher/OpenResearcher-30B-A3B | y2026_ft | token record |
+| Qwen/Qwen2.5-32B | Qwen/QwQ-32B | roster | token record |
+| Qwen/Qwen2.5-32B-Instruct | Qwen/QwQ-32B | large | token record |
+| Qwen/QwQ-32B-Preview | Qwen/QwQ-32B | large | token record |
+| Qwen/Qwen2.5-32B-Instruct | Qwen/QwQ-32B-Preview | large | token record |
+| Qwen/Qwen-7B | Qwen/Qwen-7B-Chat | roster | token record |
+| Qwen/Qwen2-57B-A14B | Qwen/Qwen2-57B-A14B-Instruct | roster | token record |
+| Qwen/Qwen2-7B | Qwen/Qwen2-7B-Instruct | roster | token record |
+| Qwen/Qwen2-7B | Qwen/Qwen2-Math-7B | roster | token record |
+| Qwen/Qwen2.5-14B | Qwen/Qwen2.5-14B-Instruct | roster | token record |
+| Qwen/Qwen2.5-32B | Qwen/Qwen2.5-32B-Instruct | roster | token record |
+| Qwen/Qwen2.5-72B | Qwen/Qwen2.5-72B-Instruct | roster | token record |
+| Qwen/Qwen2.5-7B | Qwen/Qwen2.5-7B-Instruct | roster | token record |
+| Qwen/Qwen2.5-7B | Qwen/Qwen2.5-Coder-7B | roster | token record |
+| Qwen/Qwen2.5-7B | Qwen/Qwen2.5-Math-7B | roster | token record |
+| Qwen/Qwen3-14B-Base | Qwen/Qwen3-14B | roster | token record |
+| Qwen/Qwen3-30B-A3B-Base | Qwen/Qwen3-30B-A3B | roster | token record |
+| Qwen/Qwen3-8B-Base | Qwen/Qwen3-8B | roster | token record |
+| Qwen/Qwen3-Next-80B-A3B-Instruct | Qwen/Qwen3-Next-80B-A3B-Thinking | frontier_x | token record |
+| Qwen/Qwen3.5-35B-A3B-Base | Qwen/Qwen3.5-35B-A3B | roster | token record |
+| Qwen/Qwen3-14B | Qwen/WebWorld-14B | y2026_labs | token record |
+| Qwen/Qwen3-14B-Base | Qwen/WebWorld-14B | y2026_labs | token record |
+| Qwen/Qwen3-8B | Qwen/WebWorld-8B | y2026_ft | token record |
+| NousResearch/Meta-Llama-3.1-405B-FP8 | RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8 | large | token record |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-32B | Skywork/Skywork-OR1-32B | large | token record |
+| Snowflake/snowflake-arctic-base | Snowflake/snowflake-arctic-instruct | roster | token record |
+| XiaomiMiMo/MiMo-V2.6-Flash-MOPD | XiaomiMiMo/MiMo-V2.6-Flash-RL | frontier_x | token record |
+| XiaomiMiMo/MiMo-V2.6-Pro-MOPD | XiaomiMiMo/MiMo-V2.6-Pro-RL | frontier_x | token record |
+| Qwen/Qwen2.5-32B | a-m-team/AM-Thinking-v1 | large | token record |
+| Qwen/Qwen2.5-32B-Instruct | a-m-team/AM-Thinking-v1 | large | token record |
+| ai-sage/GigaChat3.5-432B-A28B-base | ai-sage/GigaChat3.5-432B-A28B | roster | token record |
+| allenai/Llama-3.1-Tulu-3-405B-DPO | allenai/Llama-3.1-Tulu-3-405B | large | token record |
+| allenai/Llama-3.1-Tulu-3-405B-SFT | allenai/Llama-3.1-Tulu-3-405B-DPO | large | token record |
+| NousResearch/Meta-Llama-3.1-405B-FP8 | allenai/Llama-3.1-Tulu-3-405B-SFT | large | token record |
+| allenai/Llama-3.1-Tulu-3-8B-DPO | allenai/Llama-3.1-Tulu-3-8B | roster | token record |
+| allenai/Llama-3.1-Tulu-3-8B-SFT | allenai/Llama-3.1-Tulu-3-8B-DPO | roster | token record |
+| allenai/OLMo-2-0325-32B | allenai/OLMo-2-0325-32B-DPO | roster | token record |
+| allenai/OLMo-2-0325-32B | allenai/OLMo-2-0325-32B-Instruct | roster | token record |
+| allenai/OLMo-2-0325-32B | allenai/OLMo-2-0325-32B-SFT | roster | token record |
+| allenai/OLMo-2-1124-13B-SFT | allenai/OLMo-2-1124-13B-DPO | roster | token record |
+| allenai/OLMo-2-1124-13B-DPO | allenai/OLMo-2-1124-13B-Instruct | roster | token record |
+| allenai/OLMo-2-1124-13B | allenai/OLMo-2-1124-13B-SFT | roster | token record |
+| allenai/OLMo-2-1124-7B-SFT | allenai/OLMo-2-1124-7B-DPO | roster | token record |
+| allenai/OLMo-2-1124-7B-DPO | allenai/OLMo-2-1124-7B-Instruct | roster | token record |
+| allenai/OLMo-2-1124-7B | allenai/OLMo-2-1124-7B-SFT | roster | token record |
+| allenai/OLMo-7B-0424-hf | allenai/OLMo-7B-0424-Instruct-hf | roster | token record |
+| allenai/OLMo-7B-0424-hf | allenai/OLMo-7B-0424-SFT-hf | roster | token record |
+| allenai/Olmo-3-1125-32B | allenai/Olmo-3-32B-Think-SFT | roster | token record |
+| allenai/Olmo-3-7B-Instruct-DPO | allenai/Olmo-3-7B-Instruct | roster | token record |
+| allenai/Olmo-3-7B-Instruct-SFT | allenai/Olmo-3-7B-Instruct-DPO | roster | token record |
+| allenai/Olmo-3-1025-7B | allenai/Olmo-3-7B-Instruct-SFT | roster | token record |
+| allenai/Olmo-3-1025-7B | allenai/Olmo-3-7B-RL-Zero-Math | frontier_x | token record |
+| allenai/Olmo-3-1025-7B | allenai/Olmo-3-7B-RL-Zero-Mix | frontier_x | token record |
+| allenai/Olmo-3-7B-Think-DPO | allenai/Olmo-3-7B-Think | roster | token record |
+| allenai/Olmo-3-7B-Think-SFT | allenai/Olmo-3-7B-Think-DPO | roster | token record |
+| allenai/Olmo-3-1025-7B | allenai/Olmo-3-7B-Think-SFT | roster | token record |
+| allenai/Olmo-3.1-32B-Instruct-DPO | allenai/Olmo-3.1-32B-Instruct | roster | token record |
+| allenai/Olmo-3-1125-32B | allenai/Olmo-3.1-32B-Instruct-SFT | roster | token record |
+| allenai/Olmo-3-1125-32B | allenai/Olmo-3.1-32B-Think | roster | token record |
+| allenai/Olmo-Hybrid-Instruct-SFT-7B | allenai/Olmo-Hybrid-Instruct-DPO-7B | y2026_labs | token record |
+| allenai/Olmo-Hybrid-7B | allenai/Olmo-Hybrid-Instruct-SFT-7B | y2026_labs | token record |
+| allenai/Olmo-Hybrid-7B | allenai/Olmo-Hybrid-Think-SFT-7B | y2026_labs | token record |
+| Qwen/Qwen3.5-9B | allenai/tmax-9b | y2026_labs | token record |
+| arcee-ai/Trinity-Large-TrueBase | arcee-ai/Trinity-Large-Base | frontier_x | token record |
+| arcee-ai/Trinity-Large-Base | arcee-ai/Trinity-Large-Preview | frontier_x | token record |
+| arcee-ai/Trinity-Large-Base | arcee-ai/Trinity-Large-Thinking | roster | token record |
+| arcee-ai/Trinity-Mini-Base | arcee-ai/Trinity-Mini | roster | token record |
+| baichuan-inc/Baichuan2-13B-Base | baichuan-inc/Baichuan2-13B-Chat | roster | token record |
+| bigcode/starcoder2-15b | bigcode/starcoder2-15b-instruct-v0.1 | roster | token record |
+| deepseek-ai/DeepSeek-V2 | deepseek-ai/DeepSeek-Coder-V2-Base | roster | token record |
+| deepseek-ai/DeepSeek-Coder-V2-Base | deepseek-ai/DeepSeek-Coder-V2-Instruct | roster | token record |
+| deepseek-ai/DeepSeek-V3-Base | deepseek-ai/DeepSeek-R1 | roster | token record |
+| deepseek-ai/DeepSeek-R1 | deepseek-ai/DeepSeek-R1-0528 | large | token record |
+| deepseek-ai/DeepSeek-V3-Base | deepseek-ai/DeepSeek-R1-0528 | large | token record |
+| unsloth/Llama-3.3-70B-Instruct | deepseek-ai/DeepSeek-R1-Distill-Llama-70B | roster | token record |
+| Qwen/Qwen2.5-32B | deepseek-ai/DeepSeek-R1-Distill-Qwen-32B | roster | token record |
+| deepseek-ai/DeepSeek-V3-Base | deepseek-ai/DeepSeek-R1-Zero | roster | token record |
+| deepseek-ai/DeepSeek-V2 | deepseek-ai/DeepSeek-V2-Chat | roster | token record |
+| deepseek-ai/DeepSeek-V2 | deepseek-ai/DeepSeek-V2-Chat-0628 | roster | token record |
+| deepseek-ai/DeepSeek-V2-Lite | deepseek-ai/DeepSeek-V2-Lite-Chat | roster | token record |
+| deepseek-ai/DeepSeek-V3-Base | deepseek-ai/DeepSeek-V3 | roster | token record |
+| deepseek-ai/DeepSeek-V3-Base | deepseek-ai/DeepSeek-V3-0324 | roster | token record |
+| deepseek-ai/DeepSeek-V3 | deepseek-ai/DeepSeek-V3-0324 | frontier_x | token record |
+| deepseek-ai/DeepSeek-V3.1-Base | deepseek-ai/DeepSeek-V3.1 | frontier_x | token record |
+| deepseek-ai/DeepSeek-V3-0324 | deepseek-ai/DeepSeek-V3.1 | frontier_x | token record |
+| deepseek-ai/DeepSeek-V3 | deepseek-ai/DeepSeek-V3.1 | large | token record |
+| deepseek-ai/DeepSeek-V3-Base | deepseek-ai/DeepSeek-V3.1-Base | frontier_x | token record |
+| deepseek-ai/DeepSeek-V3.1 | deepseek-ai/DeepSeek-V3.1-Terminus | frontier_x | token record |
+| deepseek-ai/DeepSeek-V3.2-Exp-Base | deepseek-ai/DeepSeek-V3.2 | roster | token record |
+| deepseek-ai/DeepSeek-V3.2-Exp | deepseek-ai/DeepSeek-V3.2 | frontier_x | token record |
+| deepseek-ai/DeepSeek-V3.2-Exp-Base | deepseek-ai/DeepSeek-V3.2-Exp | frontier_x | token record |
+| deepseek-ai/DeepSeek-V3.1-Terminus | deepseek-ai/DeepSeek-V3.2-Exp | frontier_x | token record |
+| deepseek-ai/DeepSeek-V3.2 | deepseek-ai/DeepSeek-V3.2-Speciale | frontier_x | token record |
+| deepseek-ai/DeepSeek-V4-Flash-Base | deepseek-ai/DeepSeek-V4-Flash | roster | token record |
+| deepseek-ai/DeepSeek-V4-Flash | deepseek-ai/DeepSeek-V4-Flash-0731 | roster | token record |
+| deepseek-ai/DeepSeek-V4-Flash-0731 | deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | y2026_labs | token record |
+| deepseek-ai/DeepSeek-V4-Pro-Base | deepseek-ai/DeepSeek-V4-Pro | roster | token record |
+| deepseek-ai/DeepSeek-V4-Pro | deepseek-ai/DeepSeek-V4-Pro-0813 | roster | token record |
+| deepseek-ai/DeepSeek-V4.1-Flash | deepseek-ai/DeepSeek-V4.1-Flash-1017 | roster | token record |
+| deepseek-ai/deepseek-coder-1.3b-base | deepseek-ai/deepseek-coder-1.3b-instruct | roster | token record |
+| deepseek-ai/deepseek-coder-33b-base | deepseek-ai/deepseek-coder-33b-instruct | roster | token record |
+| deepseek-ai/deepseek-llm-67b-base | deepseek-ai/deepseek-llm-67b-chat | roster | token record |
+| deepseek-ai/deepseek-llm-7b-base | deepseek-ai/deepseek-llm-7b-chat | roster | token record |
+| deepseek-ai/deepseek-moe-16b-base | deepseek-ai/deepseek-moe-16b-chat | roster | token record |
+| Qwen/Qwen3.5-9B | empero-ai/Qwable-9B-Claude-Fable-5 | y2026_ft | token record |
+| Qwen/Qwen3.5-9B | empero-ai/Qwythos-9B-Claude-Mythos-5-1M | y2026_ft | token record |
+| inclusionAI/Ling-2.6-1T-base | inclusionAI/Ling-2.6-1T | frontier_x | token record |
+| inclusionAI/Ling-2.5-1T | inclusionAI/Ling-2.6-1T | y2026_labs | token record |
+| inclusionAI/Ling-3.0-flash-base | inclusionAI/Ling-3.0-flash | frontier_x | token record |
+| inclusionAI/Ling-3.1-flash-base | inclusionAI/Ling-3.1-flash | y2026_labs | token record |
+| inclusionAI/Ling-3.1-flash-base | inclusionAI/Ling-3.1-flash-1019 | roster | token record |
+| inclusionAI/Ling-2.6-1T | inclusionAI/Ring-2.6-1T | frontier_x | token record |
+| zai-org/GLM-5.2 | internlm/Atria-Dawn | roster | token record |
+| zai-org/GLM-5.2 | internlm/Atria-Dawn-Preview | y2026_labs | token record |
+| internlm/Atria-Dawn-Preview | internlm/Sage-S2.1 | y2026_labs | token record |
+| zai-org/GLM-5.2 | internlm/Sage-S2.1 | y2026_labs | token record |
+| zai-org/GLM-5.3-Flash-BF16 | internlm/Sage-S2.1-Flash | y2026_labs | token record |
+| internlm/internlm-20b | internlm/internlm-chat-20b | roster | token record |
+| jdopensource/JoyAI-LLM-Flash-Base | jdopensource/JoyAI-LLM-Flash | y2026_labs | token record |
+| NousResearch/Llama-2-13b-hf | lmsys/vicuna-13b-v1.5 | roster | token record |
+| huggyllama/llama-7b | lmsys/vicuna-7b-v1.3 | roster | token record |
+| NousResearch/Llama-2-7b-hf | lmsys/vicuna-7b-v1.5 | roster | token record |
+| Qwen/Qwen3-VL-32B-Instruct | microsoft/AesCode-32B | y2026_labs | token record |
+| Qwen/Qwen3.5-27B | microsoft/Fara1.5-27B | y2026_labs | token record |
+| deepseek-ai/DeepSeek-R1 | microsoft/MAI-DS-R1 | large | token record |
+| Qwen/Qwen3-14B | microsoft/MagenticBrain | y2026_labs | token record |
+| microsoft/phi-4 | microsoft/Phi-4-reasoning | roster | token record |
+| microsoft/phi-4 | microsoft/Phi-4-reasoning-plus | roster | token record |
+| microsoft/Phi-4-reasoning | microsoft/Phi-4-reasoning-vision-15B | y2026_labs | token record |
+| Qwen/Qwen3-30B-A3B-Thinking-2507 | miromind-ai/MiroThinker-v1.5-30B | y2026_ft | token record |
+| mistralai/Leanstral-2603 | mistralai/Leanstral-1.5-119B-A6B | roster | token record |
+| mistralai/Mistral-Small-4-119B-2603 | mistralai/Leanstral-1.5-119B-A6B | y2026_labs | token record |
+| mistralai/Ministral-3-8B-Base-2512 | mistralai/Ministral-3-8B-Instruct-2512 | roster | token record |
+| mistralai/Ministral-3-8B-Base-2512 | mistralai/Ministral-3-8B-Reasoning-2512 | roster | token record |
+| mistralai/Mistral-7B-v0.3 | mistralai/Mistral-7B-Instruct-v0.3 | roster | token record |
+| mistralai/Mistral-Large-3-675B-Base-2512 | mistralai/Mistral-Large-3-675B-Instruct-2512-BF16 | frontier_x | token record |
+| mistralai/Mistral-Nemo-Base-2407 | mistralai/Mistral-Nemo-Instruct-2407 | roster | token record |
+| mistralai/Mistral-Small-24B-Base-2501 | mistralai/Mistral-Small-24B-Instruct-2501 | roster | token record |
+| deepseek-ai/DeepSeek-R1 | mlx-community/perplexity-ai-r1-1776-bf16 | large | token record |
+| microsoft/MAI-DS-R1 | mlx-community/perplexity-ai-r1-1776-bf16 | large | token record |
+| moonshotai/Kimi-K2-Base | moonshotai/Kimi-K2-Thinking | roster | token record |
+| moonshotai/Kimi-K2.5 | moonshotai/Kimi-K2.6 | frontier_x | token record |
+| deepseek-ai/DeepSeek-V3-Base | nex-agi/DeepSeek-V3.1-Nex-N1 | roster | token record |
+| deepseek-ai/DeepSeek-V4-Pro-Base | nex-agi/Nex-N2.5-Max | roster | token record |
+| EleutherAI/gpt-j-6b | nomic-ai/gpt4all-j | roster | token record |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-14B | nvidia/AceReason-Nemotron-14B | large | token record |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | nvidia/AceReason-Nemotron-7B | large | token record |
+| unsloth/Meta-Llama-3.1-70B-Instruct | nvidia/Llama-3.1-Nemotron-70B-Instruct-HF | roster | token record |
+| RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8 | nvidia/Llama-3_1-Nemotron-Ultra-253B-v1 | large | token record |
+| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 | nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | roster | token record |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16 | nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 | roster | token record |
+| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16 | nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | y2026_labs | token record |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B | roster | token record |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 | nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat | y2026_labs | token record |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16 | nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat | y2026_labs | token record |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 | nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning | y2026_labs | token record |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 | nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following | y2026_labs | token record |
+| nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding | nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM | y2026_labs | token record |
+| nvidia/Nemotron-3-Labs-Ultra-Math-SFT | nvidia/Nemotron-3-Labs-Ultra-Math-RL | frontier_x | token record |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 | nvidia/Nemotron-3-Labs-Ultra-Math-SFT | y2026_labs | token record |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16 | nvidia/Nemotron-3-Labs-Ultra-Math-SFT | y2026_labs | token record |
+| openai/gpt-oss-120b | openai/gpt-oss-safeguard-120b | roster | token record |
+| openai/gpt-oss-20b | openai/gpt-oss-safeguard-20b | roster | token record |
+| openbmb/MiniCPM5-2B-SFT | openbmb/MiniCPM5-2B | y2026_labs | token record |
+| openbmb/MiniCPM5-2B-Midtrain | openbmb/MiniCPM5-2B-SFT | y2026_labs | token record |
+| stepfun-ai/Step3-VL-10B-Base | stepfun-ai/Step3-VL-10B | y2026_labs | token record |
+| swiss-ai/Apertus-70B-2509 | swiss-ai/Apertus-70B-Instruct-2509 | roster | token record |
+| mistralai/Mistral-7B-v0.1 | teknium/OpenHermes-2.5-Mistral-7B | roster | token record |
+| tencent/Hy3-preview-Base | tencent/Hy3 | y2026_labs | token record |
+| tencent/Hy3-preview | tencent/Hy3 | y2026_labs | token record |
+| tencent/Hy3 | tencent/Hy3-preview | roster | token record |
+| tencent/Hy3-preview-Base | tencent/Hy3-preview | y2026_labs | token record |
+| tiiuae/Falcon3-10B-Base | tiiuae/Falcon3-10B-Instruct | roster | token record |
+| tiiuae/Falcon3-7B-Base | tiiuae/Falcon3-7B-Instruct | roster | token record |
+| EleutherAI/gpt-neox-20b | togethercomputer/GPT-NeoXT-Chat-Base-20B | roster | token record |
+| togethercomputer/RedPajama-INCITE-7B-Base | togethercomputer/RedPajama-INCITE-7B-Chat | roster | token record |
+| trillionlabs/Gravity-30B-A5B-Base | trillionlabs/Gravity-30B-A5B-Preview | roster | token record |
+| unsloth/Llama-4-Maverick-17B-128E | unsloth/Llama-4-Maverick-17B-128E-Instruct | roster | token record |
+| unsloth/Llama-4-Scout-17B-16E | unsloth/Llama-4-Scout-17B-16E-Instruct | roster | token record |
+| unsloth/Meta-Llama-3.1-70B | unsloth/Meta-Llama-3.1-70B-Instruct | roster | token record |
+| unsloth/Meta-Llama-3.1-8B | unsloth/Meta-Llama-3.1-8B-Instruct | roster | token record |
+| unsloth/llama-3-8b | unsloth/llama-3-8b-Instruct | roster | token record |
+| utter-project/EuroLLM-22B-2512 | utter-project/EuroLLM-22B-Instruct-2512 | roster | token record |
+| zai-org/GLM-4-32B-Base-0414 | zai-org/GLM-4-32B-0414 | roster | token record |
+| zai-org/GLM-4.6 | zai-org/GLM-4.7 | frontier_x | token record |
+| Qwen/Qwen-72B | Qwen/Qwen-72B-Chat | roster | record, poor fit |
+| Qwen/Qwen2.5-Math-7B | Qwen/Qwen2.5-Math-7B-Instruct | roster | record, poor fit |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | Skywork/Skywork-OR1-7B | large | record, poor fit |
+| allenai/OLMo-2-0425-1B | allenai/OLMo-2-0425-1B-SFT | roster | record, poor fit |
+| deepseek-ai/DeepSeek-V3-Base | deepcogito/cogito-671b-v2.1 | roster | record, poor fit |
+| meituan-longcat/LongCat-Flash-Thinking-2601 | meituan-longcat/LongCat-Flash-Prover | y2026_labs | record, poor fit |
+| moonshotai/Kimi-K2-Base | moonshotai/Kimi-K2-Instruct | roster | record, poor fit |
+| moonshotai/Kimi-K2-Base | moonshotai/Kimi-K2-Instruct-0905 | roster | record, poor fit |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16 | nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | frontier_x | record, poor fit |
+| poolside/Laguna-XS.2 | poolside/Laguna-XS-2.1 | y2026_labs | record, poor fit |
+| tiiuae/Falcon-H1-34B-Base | tiiuae/Falcon-H1-34B-Instruct | roster | record, poor fit |
+| togethercomputer/RedPajama-INCITE-7B-Base | togethercomputer/RedPajama-INCITE-7B-Instruct | roster | record, poor fit |
+| unsloth/Meta-Llama-3.1-70B | unsloth/Llama-3.3-70B-Instruct | roster | record, poor fit |
+| zai-org/GLM-4.5-Base | zai-org/GLM-4.5 | roster | record, poor fit |
+| zai-org/GLM-4.5-Air-Base | zai-org/GLM-4.5-Air | roster | record, poor fit |
+| zai-org/GLM-4.5 | zai-org/GLM-4.6 | frontier_x | record, poor fit |
+| zai-org/GLM-4.5-Base | zai-org/GLM-4.6 | frontier_x | record, poor fit |
+| BSC-LT/ALIA-40b | BSC-LT/ALIA-40b-instruct-2606 | roster | changed throughout |
+| ByteDance-Seed/Seed-OSS-36B-Base | ByteDance-Seed/Seed-OSS-36B-Instruct | roster | changed throughout |
+| ByteDance-Seed/Seed-OSS-36B-Base-woSyn | ByteDance-Seed/Seed-OSS-36B-Instruct | frontier_x | changed throughout |
+| Qwen/Qwen3.6-35B-A3B | Diffuspace/Clover-35B-A3B-Preview | y2026_ft | changed throughout |
+| MiniMaxAI/MiniMax-M2.1 | MiniMaxAI/MiniMax-M2.5 | frontier_x | changed throughout |
+| Motif-Technologies/Motif-3-Base | Motif-Technologies/Motif-3 | roster | changed throughout |
+| Motif-Technologies/Motif-3-Beta | Motif-Technologies/Motif-3 | y2026_labs | changed throughout |
+| ByteDance-Seed/Seed-OSS-36B-Base | NousResearch/Hermes-4.3-36B | roster | changed throughout |
+| OpenLLM-France/Lucie-7B | OpenLLM-France/Lucie-7B-Instruct-v1.1 | roster | changed throughout |
+| PrimeIntellect/INTELLECT-3 | PrimeIntellect/INTELLECT-3.1 | y2026_ft | changed throughout |
+| Qwen/Qwen1.5-110B | Qwen/Qwen1.5-110B-Chat | roster | changed throughout |
+| Qwen/Qwen1.5-7B | Qwen/Qwen1.5-7B-Chat | roster | changed throughout |
+| Qwen/Qwen2-72B | Qwen/Qwen2-72B-Instruct | roster | changed throughout |
+| Qwen/Qwen3.5-9B-Base | Qwen/Qwen3.5-9B | roster | changed throughout |
+| deepseek-ai/DeepSeek-V3-0324 | Rakuten/RakutenAI-3.0 | roster | changed throughout |
+| XiaomiMiMo/MiMo-V2-Flash-Base | XiaomiMiMo/MiMo-V2-Flash | roster | changed throughout |
+| XiaomiMiMo/MiMo-V2.5-Base | XiaomiMiMo/MiMo-V2.5 | roster | changed throughout |
+| XiaomiMiMo/MiMo-V2.5-Pro-Base | XiaomiMiMo/MiMo-V2.5-Pro | roster | changed throughout |
+| XiaomiMiMo/MiMo-V2.5-Pro | XiaomiMiMo/MiMo-V2.6-Pro-MOPD | y2026_labs | changed throughout |
+| baidu/ERNIE-4.5-300B-A47B-Base-PT | baidu/ERNIE-4.5-300B-A47B-PT | frontier_x | changed throughout |
+| baidu/ERNIE-4.5-VL-424B-A47B-Base-PT | baidu/ERNIE-4.5-VL-424B-A47B-PT | frontier_x | changed throughout |
+| inclusionAI/Ling-2.6-flash-base | inclusionAI/Ling-2.6-flash | frontier_x | changed throughout |
+| inclusionAI/Ling-3.0-flash-base-30T | inclusionAI/Ling-3.0-flash-base-midtrain | y2026_labs | changed throughout |
+| inclusionAI/Ling-2.5-1T | inclusionAI/Ring-2.5-1T | y2026_labs | changed throughout |
+| Qwen/Qwen3.5-397B-A17B | internlm/Intern-S2-397B | roster | changed throughout |
+| internlm/Intern-S2-Preview-397B | internlm/Intern-S2-397B | y2026_labs | changed throughout |
+| Qwen/Qwen3.5-397B-A17B | internlm/Intern-S2-Preview-397B | y2026_labs | changed throughout |
+| kakaocorp/kanana-2-30b-a3b-base | kakaocorp/kanana-2-30b-a3b-instruct | roster | changed throughout |
+| kakaocorp/kanana-2-30b-a3b-mid-2601 | kakaocorp/kanana-2-30b-a3b-instruct-2601 | y2026_labs | changed throughout |
+| kakaocorp/kanana-2-30b-a3b-base-2601 | kakaocorp/kanana-2-30b-a3b-mid-2601 | y2026_labs | changed throughout |
+| kakaocorp/kanana-2-30b-a3b-mid-2601 | kakaocorp/kanana-2-30b-a3b-thinking-2601 | y2026_labs | changed throughout |
+| mistralai/Mistral-Small-3.2-24B-Instruct-2506 | mistralai/Magistral-Small-2509 | roster | changed throughout |
+| mistralai/Mistral-Small-3.1-24B-Base-2503 | mistralai/Mistral-Small-3.2-24B-Instruct-2506 | roster | changed throughout |
+| moonshotai/Kimi-K2-Instruct | moonshotai/Kimi-K2-Instruct-0905 | frontier_x | changed throughout |
+| moonshotai/Kimi-K2.6 | moonshotai/Kimi-K2.7-Code | frontier_x | changed throughout |
+| moonshotai/Kimi-Linear-48B-A3B-Base | moonshotai/Kimi-Linear-48B-A3B-Instruct | roster | changed throughout |
+| moonshotai/Moonlight-16B-A3B | moonshotai/Moonlight-16B-A3B-Instruct | roster | changed throughout |
+| NousResearch/Meta-Llama-3.1-405B-FP8 | nvidia/Llama-3_1-Nemotron-Ultra-253B-v1 | large | changed throughout |
+| unsloth/Llama-3.3-70B-Instruct | nvidia/Llama-3_3-Nemotron-Super-49B-v1_5 | roster | changed throughout |
+| nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 | nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16 | roster | changed throughout |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 | nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding | y2026_labs | changed throughout |
+| nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 | nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM | y2026_labs | changed throughout |
+| openbmb/MiniCPM5-2B-Base | openbmb/MiniCPM5-2B-Midtrain | y2026_labs | changed throughout |
+| stabilityai/stablelm-2-12b | stabilityai/stablelm-2-12b-chat | roster | changed throughout |
+| stepfun-ai/Step-3.5-Flash-Base | stepfun-ai/Step-3.5-Flash | roster | changed throughout |
+| stepfun-ai/Step-3.5-Flash-Base-Midtrain | stepfun-ai/Step-3.5-Flash | y2026_labs | changed throughout |
+| stepfun-ai/Step-3.5-Flash-Base | stepfun-ai/Step-3.5-Flash-Base-Midtrain | y2026_labs | changed throughout |
+| xverse/XVERSE-65B | xverse/XVERSE-65B-Chat | roster | changed throughout |
+| zai-org/GLM-5 | zai-org/GLM-5.1 | frontier_x | changed throughout |
+| zai-org/glm-4-9b | zai-org/glm-4-9b-chat | roster | changed throughout |
+| 01-ai/Yi-34B | 01-ai/Yi-1.5-34B | roster | not comparable |
+| 01-ai/Yi-1.5-34B | 01-ai/Yi-1.5-34B-Chat | roster | not comparable |
+| BAAI/Aquila2-34B | BAAI/AquilaChat2-34B | roster | not comparable |
+| HuggingFaceTB/nanowhale-100m-base | HuggingFaceTB/nanowhale-100m | y2026_ft | not comparable |
+| IFM/K2-V2-Instruct | IFM/K2-Think-V2 | y2026_ft | not comparable |
+| IFM/K2-V2 | IFM/K2-V2-Instruct | roster | not comparable |
+| Qwen/Qwen2.5-72B | Kwaipilot/KAT-Dev-72B-Exp | roster | not comparable |
+| MiniMaxAI/MiniMax-Text-01 | MiniMaxAI/MiniMax-M1-80k | roster | not comparable |
+| MiniMaxAI/MiniMax-M2 | MiniMaxAI/MiniMax-M2.1 | frontier_x | not comparable |
+| MiniMaxAI/MiniMax-M2.5 | MiniMaxAI/MiniMax-M2.7 | frontier_x | not comparable |
+| MiniMaxAI/MiniMax-M3 | MiniMaxAI/MiniMax-M3.1-Flash | y2026_labs | not comparable |
+| NousResearch/Llama-2-13b-hf | NousResearch/Llama-2-13b-chat-hf | roster | not comparable |
+| NousResearch/Llama-2-70b-hf | NousResearch/Llama-2-70b-chat-hf | roster | not comparable |
+| NousResearch/Llama-2-7b-hf | NousResearch/Llama-2-7b-chat-hf | roster | not comparable |
+| EleutherAI/pythia-12b | OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5 | roster | not comparable |
+| zai-org/GLM-4.5-Air-Base | PrimeIntellect/INTELLECT-3 | roster | not comparable |
+| zai-org/GLM-4.5-Air-Base | PrimeIntellect/INTELLECT-3.1 | y2026_labs | not comparable |
+| Qwen/Qwen3.6-35B-A3B | Qwen/Qwen-AgentWorld-35B-A3B | y2026_labs | not comparable |
+| Qwen/Qwen3.5-35B-A3B | Qwen/Qwen-AgentWorld-35B-A3B | y2026_labs | not comparable |
+| Qwen/Qwen3.5-35B-A3B-Base | Qwen/Qwen-AgentWorld-35B-A3B | y2026_labs | not comparable |
+| Qwen/Qwen2-72B | Qwen/Qwen2-Math-72B | roster | not comparable |
+| Qwen/Qwen2.5-72B | Qwen/Qwen2.5-Math-72B | roster | not comparable |
+| Qwen/Qwen3-235B-A22B | Qwen/Qwen3-235B-A22B-Instruct-2507 | roster | not comparable |
+| Qwen/Qwen3-235B-A22B | Qwen/Qwen3-235B-A22B-Thinking-2507 | roster | not comparable |
+| Qwen/Qwen3-235B-A22B-Instruct-2507 | Qwen/Qwen3-235B-A22B-Thinking-2507 | frontier_x | not comparable |
+| Qwen/Qwen3-30B-A3B-Base | Qwen/Qwen3-30B-A3B-Instruct-2507 | roster | not comparable |
+| Qwen/Qwen3-30B-A3B-Base | Qwen/Qwen3-30B-A3B-Thinking-2507 | roster | not comparable |
+| Qwen/Qwen3-Coder-Next-Base | Qwen/Qwen3-Coder-Next | frontier_x | not comparable |
+| Qwen/Qwen3.5-27B | Qwen/Qwen3.6-27B | y2026_labs | not comparable |
+| Qwen/Qwen3.5-35B-A3B-Base | Qwen/Qwen3.6-35B-A3B | y2026_labs | not comparable |
+| Qwen/Qwen3.5-35B-A3B | Qwen/Qwen3.6-35B-A3B | y2026_labs | not comparable |
+| Qwen/Qwen3.6-27B | Qwen/Qwen3.8-27B | y2026_labs | not comparable |
+| Skywork/Skywork-13B-base | Skywork/Skywork-13B-Math | roster | not comparable |
+| XiaomiMiMo/MiMo-V2.5 | XiaomiMiMo/MiMo-V2.6-Flash-MOPD | y2026_labs | not comparable |
+| allenai/OLMo-7B-hf | allenai/OLMo-7B-Instruct-hf | roster | not comparable |
+| allenai/OLMo-7B-hf | allenai/OLMo-7B-SFT-hf | roster | not comparable |
+| Qwen/Qwen3-235B-A22B | baichuan-inc/Baichuan-M3-235B | roster | not comparable |
+| NousResearch/Llama-2-13b-hf | codellama/CodeLlama-13b-hf | roster | not comparable |
+| codellama/CodeLlama-34b-hf | codellama/CodeLlama-34b-Instruct-hf | roster | not comparable |
+| codellama/CodeLlama-34b-hf | codellama/CodeLlama-34b-Python-hf | roster | not comparable |
+| NousResearch/Llama-2-70b-hf | codellama/CodeLlama-70b-hf | roster | not comparable |
+| NousResearch/Llama-2-7b-hf | codellama/CodeLlama-7b-hf | roster | not comparable |
+| Qwen/Qwen3-235B-A22B-Instruct-2507 | inclusionAI/AReaL-SEA-235B-A22B | y2026_labs | not comparable |
+| inclusionAI/Ling-3.0-flash | inclusionAI/Ling-3.0-flash-Fin | roster | not comparable |
+| inclusionAI/Ling-3.0-flash | inclusionAI/Ling-3.0-flash-Sante | y2026_labs | not comparable |
+| inclusionAI/Ling-3.0-flash | inclusionAI/Ling-3.0-flash-VL | y2026_labs | not comparable |
+| inclusionAI/Ling-3.0-flash-base-midtrain | inclusionAI/Ling-3.0-flash-base | y2026_labs | not comparable |
+| inclusionAI/Ling-3.0-tiny-base | inclusionAI/Ling-3.0-tiny | frontier_x | not comparable |
+| inclusionAI/Ling-flash-base-2.0 | inclusionAI/Ling-flash-2.0 | frontier_x | not comparable |
+| inclusionAI/Ling-mini-base-2.0 | inclusionAI/Ling-mini-2.0 | frontier_x | not comparable |
+| inclusionAI/Ling-1T | inclusionAI/Ring-1T | frontier_x | not comparable |
+| inclusionAI/Ring-2.5-1T | inclusionAI/Ring-2.6-1T | y2026_labs | not comparable |
+| zai-org/GLM-5.3-BF16 | internlm/Sage-S2.1 | y2026_labs | not comparable |
+| internlm/internlm2-20b | internlm/internlm2-chat-20b | roster | not comparable |
+| internlm/internlm2-20b | internlm/internlm2-chat-20b-sft | roster | not comparable |
+| internlm/internlm2_5-7b | internlm/internlm2_5-7b-chat | roster | not comparable |
+| meituan-longcat/LongCat-2.0 | meituan-longcat/LongCat-2.5 | frontier_x | not comparable |
+| meituan-longcat/LongCat-Flash-Chat | meituan-longcat/LongCat-Flash-Thinking | frontier_x | not comparable |
+| meituan-longcat/LongCat-Flash-Thinking | meituan-longcat/LongCat-Flash-Thinking-2601 | frontier_x | not comparable |
+| Qwen/Qwen3-14B-Base | microsoft/MagenticBrain | y2026_labs | not comparable |
+| Qwen/Qwen3-30B-A3B-Base | miromind-ai/MiroThinker-v1.5-30B | y2026_ft | not comparable |
+| mistralai/Mistral-7B-v0.1 | mistralai/Mistral-7B-Instruct-v0.1 | roster | not comparable |
+| mistralai/Mistral-7B-v0.1 | mistralai/Mistral-7B-v0.3 | roster | not comparable |
+| mistralai/Mixtral-8x22B-v0.1 | mistralai/Mixtral-8x22B-Instruct-v0.1 | roster | not comparable |
+| mistralai/Mixtral-8x7B-v0.1 | mistralai/Mixtral-8x7B-Instruct-v0.1 | roster | not comparable |
+| mistralai/Mistral-7B-v0.1 | mistralai/Mixtral-8x7B-v0.1 | roster | not comparable |
+| Qwen/Qwen2.5-72B | moonshotai/Kimi-Dev-72B | large | not comparable |
+| Qwen/Qwen2.5-72B-Instruct | moonshotai/Kimi-Dev-72B | large | not comparable |
+| moonshotai/Kimi-K2-Instruct-0905 | moonshotai/Kimi-K2-Thinking | frontier_x | not comparable |
+| moonshotai/Kimi-K2-Base | moonshotai/Kimi-K2.5 | roster | not comparable |
+| moonshotai/Kimi-K2-Thinking | moonshotai/Kimi-K2.5 | frontier_x | not comparable |
+| moonshotai/Kimi-K2-Base | moonshotai/Kimi-K2.6 | frontier_x | not comparable |
+| moonshotai/Kimi-K2.7-Code | moonshotai/Kimi-K3 | y2026_labs | not comparable |
+| moonshotai/Kimi-K3 | moonshotai/Kimi-K3.1-Pro | y2026_labs | not comparable |
+| nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 | nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 | roster | not comparable |
+| nvidia/NVIDIA-Nemotron-Nano-9B-v2-Base | nvidia/NVIDIA-Nemotron-Nano-9B-v2 | roster | not comparable |
+| poolside/Laguna-M.1-base | poolside/Laguna-M.1 | y2026_labs | not comparable |
+| stepfun-ai/Step-3.5-Flash | stepfun-ai/Step-3.7-Flash | y2026_labs | not comparable |
+| stepfun-ai/Step-3.7-Flash | stepfun-ai/Step-5-Preview-BF16 | y2026_labs | not comparable |
+| tiiuae/falcon-40b | tiiuae/falcon-40b-instruct | roster | not comparable |
+| tiiuae/falcon-7b | tiiuae/falcon-7b-instruct | roster | not comparable |
+| zai-org/GLM-5.1 | zai-org/GLM-5.2 | frontier_x | not comparable |
+| zai-org/GLM-5.2 | zai-org/GLM-5.3-BF16 | frontier_x | not comparable |
+| zai-org/GLM-4-32B-Base-0414 | zai-org/GLM-Z1-32B-0414 | roster | not comparable |
+| zai-org/chatglm3-6b-base | zai-org/chatglm3-6b | roster | not comparable |
+| Qwen/Qwen3.8-27B | AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16 | y2026_ft | unchanged |
+| Aleph-Alpha/Kolibri-1-BF16 | Aleph-Alpha/Kolibri-1 | roster | unchanged |
+| Qwen/Qwen3.5-27B | ArliAI/Qwen3.5-27B-Derestricted | y2026_ft | unchanged |
+| allura-forge/Llama-3.3-8B-Instruct | DavidAU/Llama3.3-8B-Instruct-Thinking-Claude-4.5-Opus-High-Reasoning | y2026_ft | unchanged |
+| Qwen/Qwen3.8-27B | HemmingwayAI/Hemmingway-1 | y2026_ft | unchanged |
+| Qwen/Qwen3.5-9B | Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B | y2026_ft | unchanged |
+| deepseek-ai/DeepSeek-V4.1-Flash-1017 | OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated | y2026_ft | unchanged |
+| Qwen/Qwen3.6-27B | ProCreations/grug-27b | y2026_ft | unchanged |
+| zai-org/GLM-4.7-Flash | TeichAI/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill | y2026_ft | unchanged |
+| Qwen/Qwen3.5-9B | Tesslate/OmniCoder-9B | y2026_ft | unchanged |
+| baidu/ERNIE-5.5-Flash-Base | baidu/ERNIE-5.5-Flash-Base-BF16 | roster | unchanged |
+| openai/gpt-oss-20b | chromadb/context-1 | y2026_ft | unchanged |
+| lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled | lordx64/Qwable-v1 | y2026_ft | unchanged |
+| skt/A.X-K2 | skt/A.X-K2-DSpark | roster | unchanged |
+| skt/A.X-K2 | skt/A.X-K2-EAGLE3 | roster | unchanged |
+| Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B | xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic | y2026_ft | unchanged |
+| zai-org/GLM-5.3 | zai-org/GLM-5.3-BF16 | roster | unchanged |
+| EssentialAI/rnj-1 | EssentialAI/rnj-1-instruct | roster | shared matrix |
+| EssentialAI/rnj-1 | EssentialAI/rnj-1.5-instruct | roster | shared matrix |
+| HuggingFaceTB/SmolLM2-1.7B | HuggingFaceTB/SmolLM2-1.7B-Instruct | roster | shared matrix |
+| HuggingFaceTB/SmolLM2-135M | HuggingFaceTB/SmolLM2-135M-Instruct | roster | shared matrix |
+| HuggingFaceTB/SmolLM2-360M | HuggingFaceTB/SmolLM2-360M-Instruct | roster | shared matrix |
+| HuggingFaceTB/SmolLM3-3B-Base | HuggingFaceTB/SmolLM3-3B | roster | shared matrix |
+| LiquidAI/LFM2.5-24B-A2B-Base | LiquidAI/LFM2.5-24B-A2B | y2026_labs | shared matrix |
+| LiquidAI/LFM2-24B-A2B | LiquidAI/LFM2.5-24B-A2B-Base | y2026_labs | shared matrix |
+| LiquidAI/LFM2.5-8B-A1B-Base | LiquidAI/LFM2.5-8B-A1B | y2026_labs | shared matrix |
+| Qwen/Qwen2.5-0.5B | Qwen/Qwen2.5-0.5B-Instruct | roster | shared matrix |
+| Qwen/Qwen3-0.6B-Base | Qwen/Qwen3-0.6B | roster | shared matrix |
+| Qwen/Qwen3-1.7B-Base | Qwen/Qwen3-1.7B | roster | shared matrix |
+| Qwen/Qwen3-4B-Base | Qwen/Qwen3-4B | roster | shared matrix |
+| Qwen/Qwen3.5-0.8B-Base | Qwen/Qwen3.5-0.8B | roster | shared matrix |
+| Qwen/Qwen3.5-2B-Base | Qwen/Qwen3.5-2B | frontier_x | shared matrix |
+| Qwen/Qwen3.5-4B-Base | Qwen/Qwen3.5-4B | frontier_x | shared matrix |
+| Qwen/Qwen3.5-4B | TokenRhythm/NeoHorse-1-4B | y2026_ft | shared matrix |
+| Qwen/Qwen2.5-Coder-3B | WeiboAI/VibeThinker-3B | y2026_ft | shared matrix |
+| allenai/OLMo-1B-hf | allenai/OLMo-1B | roster | shared matrix |
+| allenai/OLMo-7B-Twin-2T-hf | allenai/OLMo-7B-Twin-2T | roster | shared matrix |
+| baidu/ERNIE-4.5-21B-A3B-Base-PT | baidu/ERNIE-4.5-21B-A3B-PT | frontier_x | shared matrix |
+| baidu/ERNIE-4.5-21B-A3B-Base-PT | baidu/ERNIE-4.5-21B-A3B-Thinking | frontier_x | shared matrix |
+| bigscience/bloom | bigscience/bloomz | roster | shared matrix |
+| Qwen/Qwen3.5-4B | ccore/Qwen3.5-4B-GLB-3D-Coder | y2026_ft | shared matrix |
+| facebook/opt-30b | facebook/opt-iml-30b | roster | shared matrix |
+| google/gemma-4-26B-A4B | google/gemma-4-26B-A4B-it | roster | shared matrix |
+| google/gemma-4-31B | google/gemma-4-31B-it | roster | shared matrix |
+| ibm-granite/granite-3.3-2b-base | ibm-granite/granite-3.3-2b-instruct | roster | shared matrix |
+| ibm-granite/granite-4.0-h-small-base | ibm-granite/granite-4.0-h-small | frontier_x | shared matrix |
+| ibm-granite/granite-4.0-h-tiny-base | ibm-granite/granite-4.0-h-tiny | frontier_x | shared matrix |
+| ibm-granite/granite-4.1-30b-base | ibm-granite/granite-4.1-30b | y2026_labs | shared matrix |
+| ibm-granite/granite-4.1-8b-base | ibm-granite/granite-4.1-8b | frontier_x | shared matrix |
+| ibm-granite/granite-4.1-30b | ibm-granite/granite-4.2-30b | y2026_labs | shared matrix |
+| google/gemma-4-12B | jialinyyzz/humanizer | y2026_ft | shared matrix |
+| mistralai/Ministral-3-3B-Base-2512 | mistralai/Ministral-3-3B-Instruct-2512 | roster | shared matrix |
+| mistralai/Ministral-3-3B-Base-2512 | mistralai/Ministral-3-3B-Reasoning-2512 | roster | shared matrix |
+| Qwen/Qwen3-4B-Thinking-2507 | openbmb/AgentCPM-Explore | y2026_ft | shared matrix |
+| state-spaces/mamba-2.8b-hf | state-spaces/mamba-2.8b | roster | shared matrix |
+| tencent/Hunyuan-A13B-Pretrain | tencent/Hunyuan-A13B-Instruct | roster | shared matrix |
+| unsloth/Llama-3.2-1B | unsloth/Llama-3.2-1B-Instruct | roster | shared matrix |
+| unsloth/Llama-3.2-3B | unsloth/Llama-3.2-3B-Instruct | roster | shared matrix |
+| unsloth/gemma-2-27b | unsloth/gemma-2-27b-it | roster | shared matrix |
+| unsloth/gemma-2-2b | unsloth/gemma-2-2b-it | roster | shared matrix |
+| unsloth/gemma-3-12b-pt | unsloth/gemma-3-12b-it | roster | shared matrix |
+| unsloth/gemma-3-1b-pt | unsloth/gemma-3-1b-it | roster | shared matrix |
+| unsloth/gemma-3-270m | unsloth/gemma-3-270m-it | roster | shared matrix |
+| unsloth/gemma-3-27b-pt | unsloth/gemma-3-27b-it | roster | shared matrix |
+| unsloth/gemma-3-4b-pt | unsloth/gemma-3-4b-it | roster | shared matrix |
+| unsloth/gemma-3n-E4B | unsloth/gemma-3n-E4B-it | roster | shared matrix |

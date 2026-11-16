@@ -3,14 +3,14 @@
   "name": "DeepSeek-V3-Base",
   "repo": "deepseek-ai/DeepSeek-V3-Base",
   "pretraining": "no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number",
-  "finetune": "parent of 6 analysed fine-tunes",
+  "finetune": "parent of 8 analysed fine-tunes",
   "readable": true
  },
  {
   "name": "DeepSeek-V3.2",
   "repo": "deepseek-ai/DeepSeek-V3.2",
   "pretraining": "no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number",
-  "finetune": "vs deepseek-ai/DeepSeek-V3.2-Exp-Base: 1,339 tokens never updated, special tokens updated 53/818",
+  "finetune": "vs deepseek-ai/DeepSeek-V3.2-Exp-Base: 1,339 tokens never updated, special tokens updated 53/818; vs deepseek-ai/DeepSeek-V3.2-Exp: 1,210 tokens never updated, special tokens updated 72/818",
   "readable": true
  },
  {
@@ -94,42 +94,42 @@
   "name": "Kimi-K2-Base",
   "repo": "moonshotai/Kimi-K2-Base",
   "pretraining": "total weight decay sum lr*wd = 6.55 (assumes init std = initializer_range)",
-  "finetune": "parent of 4 analysed fine-tunes",
+  "finetune": "parent of 5 analysed fine-tunes",
   "readable": true
  },
  {
   "name": "Kimi-K2.5",
   "repo": "moonshotai/Kimi-K2.5",
   "pretraining": "total weight decay sum lr*wd = 7.67 (assumes init std = initializer_range)",
-  "finetune": "vs moonshotai/Kimi-K2-Base: every token vector changed",
+  "finetune": "vs moonshotai/Kimi-K2-Base: not a decayed copy of that parent (not comparable); vs moonshotai/Kimi-K2-Thinking: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "Kimi-K2.6",
   "repo": "moonshotai/Kimi-K2.6",
   "pretraining": "total weight decay sum lr*wd = 7.67 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs moonshotai/Kimi-K2.5: 639 tokens never updated, special tokens updated 15/23; vs moonshotai/Kimi-K2-Base: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "Kimi-K2.7-Code",
   "repo": "moonshotai/Kimi-K2.7-Code",
   "pretraining": "total weight decay sum lr*wd = 7.67 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs moonshotai/Kimi-K2.6: every token vector changed",
   "readable": true
  },
  {
   "name": "Kimi-K3",
   "repo": "moonshotai/Kimi-K3",
   "pretraining": "total weight decay sum lr*wd = 9.00 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs moonshotai/Kimi-K2.7-Code: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "Kimi-K3.1-Pro",
   "repo": "moonshotai/Kimi-K3.1-Pro",
   "pretraining": "total weight decay sum lr*wd = 9.03 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs moonshotai/Kimi-K3: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
@@ -157,77 +157,77 @@
   "name": "MiniMax-M1",
   "repo": "MiniMaxAI/MiniMax-M1-80k",
   "pretraining": "total weight decay sum lr*wd = 4.93 (assumes init std = initializer_range)",
-  "finetune": "vs MiniMaxAI/MiniMax-Text-01: every token vector changed",
+  "finetune": "vs MiniMaxAI/MiniMax-Text-01: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "MiniMax-M2",
   "repo": "MiniMaxAI/MiniMax-M2",
   "pretraining": "total weight decay sum lr*wd = 5.59 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "parent of 1 analysed fine-tunes",
   "readable": true
  },
  {
   "name": "MiniMax-M2.7",
   "repo": "MiniMaxAI/MiniMax-M2.7",
   "pretraining": "init std unknown",
-  "finetune": "-",
+  "finetune": "vs MiniMaxAI/MiniMax-M2.5: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "MiniMax-M3",
   "repo": "MiniMaxAI/MiniMax-M3",
   "pretraining": "init std unknown",
-  "finetune": "-",
+  "finetune": "parent of 1 analysed fine-tunes",
   "readable": true
  },
  {
   "name": "MiniMax-M3.1-Flash",
   "repo": "MiniMaxAI/MiniMax-M3.1-Flash",
   "pretraining": "no decoupled weight decay on the token vectors (0.0002 (round)), inferred from a round number",
-  "finetune": "-",
+  "finetune": "vs MiniMaxAI/MiniMax-M3: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "Ling-1T",
   "repo": "inclusionAI/Ling-1T",
   "pretraining": "init std unknown",
-  "finetune": "-",
+  "finetune": "parent of 1 analysed fine-tunes",
   "readable": true
  },
  {
   "name": "Ling-2.6-flash",
   "repo": "inclusionAI/Ling-2.6-flash",
   "pretraining": "P=4.8e-12: implausible for decay alone (vectors zeroed or rescaled otherwise)",
-  "finetune": "-",
+  "finetune": "vs inclusionAI/Ling-2.6-flash-base: every token vector changed",
   "readable": true
  },
  {
   "name": "Ling-3.0-flash",
   "repo": "inclusionAI/Ling-3.0-flash",
   "pretraining": "total weight decay sum lr*wd = 11.35 (assumes init std = initializer_range)",
-  "finetune": "parent of 1 analysed fine-tunes",
+  "finetune": "vs inclusionAI/Ling-3.0-flash-base: 1,130 tokens never updated, shrink factor P=0.9718, special tokens updated 98/262",
   "readable": true
  },
  {
   "name": "Ling-3.1-flash",
   "repo": "inclusionAI/Ling-3.1-flash",
   "pretraining": "total weight decay sum lr*wd = 11.91 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs inclusionAI/Ling-3.1-flash-base: 1,682 tokens never updated, shrink factor P=0.9816, special tokens updated 19/262",
   "readable": true
  },
  {
   "name": "GLM-5",
   "repo": "zai-org/GLM-5",
   "pretraining": "total weight decay sum lr*wd = 6.15 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "parent of 1 analysed fine-tunes",
   "readable": true
  },
  {
   "name": "GLM-5.1",
   "repo": "zai-org/GLM-5.1",
   "pretraining": "total weight decay sum lr*wd = 6.15 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs zai-org/GLM-5: every token vector changed",
   "readable": true
  },
  {
@@ -241,35 +241,35 @@
   "name": "GLM-4.5-Base",
   "repo": "zai-org/GLM-4.5-Base",
   "pretraining": "total weight decay sum lr*wd = 5.98 (assumes init std = initializer_range)",
-  "finetune": "parent of 1 analysed fine-tunes",
+  "finetune": "parent of 2 analysed fine-tunes",
   "readable": true
  },
  {
   "name": "GLM-4.5-Air",
   "repo": "zai-org/GLM-4.5-Air-Base",
   "pretraining": "total weight decay sum lr*wd = 8.28 (assumes init std = initializer_range)",
-  "finetune": "parent of 2 analysed fine-tunes",
+  "finetune": "parent of 3 analysed fine-tunes",
   "readable": true
  },
  {
   "name": "GLM-4.6",
   "repo": "zai-org/GLM-4.6",
   "pretraining": "total weight decay sum lr*wd = 6.01 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs zai-org/GLM-4.5: 128 tokens never updated, shrink factor P=0.9931, special tokens updated 36/36 (decay fit below 99%: read with care); vs zai-org/GLM-4.5-Base: 128 tokens never updated, shrink factor P=0.9714, special tokens updated 36/36 (decay fit below 99%: read with care)",
   "readable": true
  },
  {
   "name": "GLM-4.7",
   "repo": "zai-org/GLM-4.7",
   "pretraining": "total weight decay sum lr*wd = 6.01 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs zai-org/GLM-4.6: 128 tokens never updated, special tokens updated 36/36",
   "readable": true
  },
  {
   "name": "GLM-4.7-Flash",
   "repo": "zai-org/GLM-4.7-Flash",
   "pretraining": "init std unknown",
-  "finetune": "-",
+  "finetune": "parent of 1 analysed fine-tunes",
   "readable": true
  },
  {
@@ -290,7 +290,7 @@
   "name": "Qwen3.5-397B-A17B",
   "repo": "Qwen/Qwen3.5-397B-A17B",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "parent of 1 analysed fine-tunes",
+  "finetune": "parent of 2 analysed fine-tunes",
   "readable": false
  },
  {
@@ -332,14 +332,14 @@
   "name": "Qwen3-14B",
   "repo": "Qwen/Qwen3-14B-Base",
   "pretraining": "no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init)",
-  "finetune": "parent of 1 analysed fine-tunes",
+  "finetune": "parent of 3 analysed fine-tunes",
   "readable": false
  },
  {
   "name": "Qwen3-30B-A3B",
   "repo": "Qwen/Qwen3-30B-A3B-Base",
   "pretraining": "no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init)",
-  "finetune": "parent of 3 analysed fine-tunes",
+  "finetune": "parent of 4 analysed fine-tunes",
   "readable": false
  },
  {
@@ -360,7 +360,7 @@
   "name": "Qwen3-Next-80B-A3B",
   "repo": "Qwen/Qwen3-Next-80B-A3B-Instruct",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "-",
+  "finetune": "parent of 1 analysed fine-tunes",
   "readable": false
  },
  {
@@ -381,14 +381,14 @@
   "name": "Qwen3.5-27B",
   "repo": "Qwen/Qwen3.5-27B",
   "pretraining": "no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init)",
-  "finetune": "-",
+  "finetune": "parent of 3 analysed fine-tunes",
   "readable": false
  },
  {
   "name": "Qwen3.5-35B-A3B",
   "repo": "Qwen/Qwen3.5-35B-A3B-Base",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "parent of 1 analysed fine-tunes",
+  "finetune": "parent of 3 analysed fine-tunes",
   "readable": false
  },
  {
@@ -409,14 +409,14 @@
   "name": "Qwen2.5-72B",
   "repo": "Qwen/Qwen2.5-72B",
   "pretraining": "P=1.18e-14: implausible for decay alone (vectors zeroed or rescaled otherwise)",
-  "finetune": "parent of 3 analysed fine-tunes",
+  "finetune": "parent of 4 analysed fine-tunes",
   "readable": true
  },
  {
   "name": "QwQ-32B",
   "repo": "Qwen/QwQ-32B",
   "pretraining": "P=3.04e-26: implausible for decay alone (vectors zeroed or rescaled otherwise)",
-  "finetune": "vs Qwen/Qwen2.5-32B: 4,229 tokens never updated, special tokens updated 15/26",
+  "finetune": "vs Qwen/Qwen2.5-32B: 4,229 tokens never updated, special tokens updated 15/26; vs Qwen/Qwen2.5-32B-Instruct: 3,609 tokens never updated, special tokens updated 15/26; vs Qwen/QwQ-32B-Preview: 4,228 tokens never updated, special tokens updated 15/26",
   "readable": true
  },
  {
@@ -430,7 +430,7 @@
   "name": "Hy3-preview",
   "repo": "tencent/Hy3-preview",
   "pretraining": "no decoupled weight decay on the token vectors (initializer_range)",
-  "finetune": "vs tencent/Hy3: 361 tokens never updated, special tokens updated 471/818",
+  "finetune": "vs tencent/Hy3: 361 tokens never updated, special tokens updated 471/818; vs tencent/Hy3-preview-Base: 987 tokens never updated, special tokens updated 33/818",
   "readable": true
  },
  {
@@ -472,14 +472,14 @@
   "name": "Step-3.5-Flash",
   "repo": "stepfun-ai/Step-3.5-Flash-Base",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "parent of 1 analysed fine-tunes",
+  "finetune": "parent of 2 analysed fine-tunes",
   "readable": false
  },
  {
   "name": "LongCat-2.0",
   "repo": "meituan-longcat/LongCat-2.0",
   "pretraining": "4804 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate",
-  "finetune": "-",
+  "finetune": "parent of 1 analysed fine-tunes",
   "readable": true
  },
  {
@@ -493,7 +493,7 @@
   "name": "ERNIE-4.5-300B-A47B",
   "repo": "baidu/ERNIE-4.5-300B-A47B-Base-PT",
   "pretraining": "131 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate",
-  "finetune": "-",
+  "finetune": "parent of 1 analysed fine-tunes",
   "readable": true
  },
  {
@@ -521,7 +521,7 @@
   "name": "Llama-3.1-70B",
   "repo": "unsloth/Meta-Llama-3.1-70B",
   "pretraining": "total weight decay sum lr*wd = 11.16 (assumes init std = initializer_range)",
-  "finetune": "parent of 2 analysed fine-tunes",
+  "finetune": "parent of 3 analysed fine-tunes",
   "readable": true
  },
  {
@@ -563,14 +563,14 @@
   "name": "Llama-3.3-70B",
   "repo": "unsloth/Llama-3.3-70B-Instruct",
   "pretraining": "total weight decay sum lr*wd = 11.17 (assumes init std = initializer_range)",
-  "finetune": "vs unsloth/Meta-Llama-3.1-70B: 279 tokens never updated, shrink factor P=0.9941, special tokens updated 7/256",
+  "finetune": "vs unsloth/Meta-Llama-3.1-70B: 279 tokens never updated, shrink factor P=0.9941, special tokens updated 7/256 (decay fit below 99%: read with care)",
   "readable": true
  },
  {
   "name": "Nemotron-3-Ultra-550B",
   "repo": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "parent of 1 analysed fine-tunes",
+  "finetune": "parent of 3 analysed fine-tunes",
   "readable": false
  },
  {
@@ -584,7 +584,7 @@
   "name": "Nemotron-3-Nano-30B",
   "repo": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "parent of 1 analysed fine-tunes",
+  "finetune": "parent of 2 analysed fine-tunes",
   "readable": false
  },
  {
@@ -717,7 +717,7 @@
   "name": "Mixtral-8x7B",
   "repo": "mistralai/Mixtral-8x7B-v0.1",
   "pretraining": "P=1.47e-35: implausible for decay alone (vectors zeroed or rescaled otherwise)",
-  "finetune": "vs mistralai/Mistral-7B-v0.1: every token vector changed",
+  "finetune": "vs mistralai/Mistral-7B-v0.1: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
@@ -738,7 +738,7 @@
   "name": "gpt-oss-20b",
   "repo": "openai/gpt-oss-20b",
   "pretraining": "922 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate",
-  "finetune": "parent of 1 analysed fine-tunes",
+  "finetune": "parent of 2 analysed fine-tunes",
   "readable": true
  },
  {
@@ -843,14 +843,14 @@
   "name": "Hermes-3-405B",
   "repo": "NousResearch/Hermes-3-Llama-3.1-405B",
   "pretraining": "total weight decay sum lr*wd = 5.66 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs NousResearch/Meta-Llama-3.1-405B-FP8: 6,371 tokens never updated, special tokens updated 32/256",
   "readable": true
  },
  {
   "name": "Hermes-4-405B",
   "repo": "NousResearch/Hermes-4-405B",
   "pretraining": "total weight decay sum lr*wd = 5.66 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs NousResearch/Meta-Llama-3.1-405B-FP8: 2,739 tokens never updated, special tokens updated 12/256; vs NousResearch/Hermes-3-Llama-3.1-405B: 2,632 tokens never updated, special tokens updated 37/256",
   "readable": true
  },
  {
@@ -941,7 +941,7 @@
   "name": "INTELLECT-3",
   "repo": "PrimeIntellect/INTELLECT-3",
   "pretraining": "total weight decay sum lr*wd = 8.32 (assumes init std = initializer_range)",
-  "finetune": "vs zai-org/GLM-4.5-Air-Base: every token vector changed",
+  "finetune": "vs zai-org/GLM-4.5-Air-Base: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
@@ -990,14 +990,14 @@
   "name": "MiMo-V2.6-Pro",
   "repo": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "pretraining": "total weight decay sum lr*wd = 7.66 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs XiaomiMiMo/MiMo-V2.6-Pro-MOPD: 10,936 tokens never updated, special tokens updated 14/32",
   "readable": true
  },
  {
   "name": "MiMo-V2.6-Flash",
   "repo": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
   "pretraining": "total weight decay sum lr*wd = 11.00 (assumes init std = initializer_range)",
-  "finetune": "-",
+  "finetune": "vs XiaomiMiMo/MiMo-V2.6-Flash-MOPD: 17,140 tokens never updated, special tokens updated 11/32",
   "readable": true
  },
  {
@@ -1032,63 +1032,63 @@
   "name": "GLM-5.2",
   "repo": "zai-org/GLM-5.2",
   "pretraining": "total weight decay sum lr*wd = 6.16 (assumes init std = initializer_range)",
-  "finetune": "parent of 1 analysed fine-tunes",
+  "finetune": "vs zai-org/GLM-5.1: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "GLM-5.3",
   "repo": "zai-org/GLM-5.3-BF16",
   "pretraining": "total weight decay sum lr*wd = 6.16 (assumes init std = initializer_range)",
-  "finetune": "vs zai-org/GLM-5.3: token vectors unchanged",
+  "finetune": "vs zai-org/GLM-5.3: token vectors unchanged; vs zai-org/GLM-5.2: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "MiniMax-M2.1",
   "repo": "MiniMaxAI/MiniMax-M2.1",
   "pretraining": "init std unknown",
-  "finetune": "-",
+  "finetune": "vs MiniMaxAI/MiniMax-M2: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "MiniMax-M2.5",
   "repo": "MiniMaxAI/MiniMax-M2.5",
   "pretraining": "init std unknown",
-  "finetune": "-",
+  "finetune": "vs MiniMaxAI/MiniMax-M2.1: every token vector changed",
   "readable": true
  },
  {
   "name": "Qwen3.8-27B",
   "repo": "Qwen/Qwen3.8-27B",
   "pretraining": "no regenerable init: no GPU random-number layout in its vectors (JAX / Paddle / CPU / Ascend init)",
-  "finetune": "parent of 1 analysed fine-tunes",
-  "readable": false
+  "finetune": "vs Qwen/Qwen3.6-27B: not a decayed copy of that parent (not comparable)",
+  "readable": true
  },
  {
   "name": "Kimi-K2-Thinking",
   "repo": "moonshotai/Kimi-K2-Thinking",
   "pretraining": "total weight decay sum lr*wd = 6.55 (assumes init std = initializer_range)",
-  "finetune": "vs moonshotai/Kimi-K2-Base: 118 tokens never updated, special tokens updated 19/19",
+  "finetune": "vs moonshotai/Kimi-K2-Base: 118 tokens never updated, special tokens updated 19/19; vs moonshotai/Kimi-K2-Instruct-0905: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "Step-3.7-Flash",
   "repo": "stepfun-ai/Step-3.7-Flash",
   "pretraining": "init std unknown",
-  "finetune": "-",
+  "finetune": "vs stepfun-ai/Step-3.5-Flash: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "LongCat-2.5",
   "repo": "meituan-longcat/LongCat-2.5",
   "pretraining": "no regenerable init: untouched vectors present but no searched seed regenerates them",
-  "finetune": "-",
-  "readable": false
+  "finetune": "vs meituan-longcat/LongCat-2.0: not a decayed copy of that parent (not comparable)",
+  "readable": true
  },
  {
   "name": "LongCat-Flash-Chat",
   "repo": "meituan-longcat/LongCat-Flash-Chat",
   "pretraining": "75 never-trained token vectors (tokens absent from pretraining); starting values not regenerated, so no decay estimate",
-  "finetune": "-",
+  "finetune": "parent of 1 analysed fine-tunes",
   "readable": true
  },
  {
@@ -1102,7 +1102,7 @@
   "name": "Intern-S2-397B",
   "repo": "internlm/Intern-S2-397B",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "vs Qwen/Qwen3.5-397B-A17B: 1 tokens never updated, shrink factor P=0.9470, special tokens updated 59/59",
+  "finetune": "vs Qwen/Qwen3.5-397B-A17B: every token vector changed; vs internlm/Intern-S2-Preview-397B: every token vector changed",
   "readable": true
  },
  {
@@ -1123,29 +1123,29 @@
   "name": "Mistral-Small-4-119B",
   "repo": "mistralai/Mistral-Small-4-119B-2603",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "-",
+  "finetune": "parent of 1 analysed fine-tunes",
   "readable": false
  },
  {
   "name": "Leanstral-1.5-119B",
   "repo": "mistralai/Leanstral-1.5-119B-A6B",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "vs mistralai/Leanstral-2603: 1,448 tokens never updated",
+  "finetune": "vs mistralai/Leanstral-2603: 1,448 tokens never updated; vs mistralai/Mistral-Small-4-119B-2603: 1,276 tokens never updated",
   "readable": true
  },
  {
   "name": "Nemotron-3.5-Super-120B",
   "repo": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "parent of 1 analysed fine-tunes",
-  "readable": false
+  "finetune": "vs nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16: 1,188 tokens never updated, shrink factor P=0.9879, special tokens updated 154/1000",
+  "readable": true
  },
  {
   "name": "Nemotron-3.5-Lightning-30B",
   "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "parent of 1 analysed fine-tunes",
-  "readable": false
+  "finetune": "vs nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16: 337 tokens never updated, shrink factor P=0.9927, special tokens updated 816/1000 (decay fit below 99%: read with care)",
+  "readable": true
  },
  {
   "name": "Granite-Switch-4.1-30B",
@@ -1158,7 +1158,7 @@
   "name": "Seed-OSS-36B-Instruct",
   "repo": "ByteDance-Seed/Seed-OSS-36B-Instruct",
   "pretraining": "total weight decay sum lr*wd = 10.46 (assumes init std = initializer_range)",
-  "finetune": "vs ByteDance-Seed/Seed-OSS-36B-Base: every token vector changed",
+  "finetune": "vs ByteDance-Seed/Seed-OSS-36B-Base: every token vector changed; vs ByteDance-Seed/Seed-OSS-36B-Base-woSyn: every token vector changed",
   "readable": true
  },
  {
@@ -1214,7 +1214,7 @@
   "name": "Cogito-671B-v2.1",
   "repo": "deepcogito/cogito-671b-v2.1",
   "pretraining": "no decoupled weight decay on the token vectors (0.006 (round)), inferred from a round number",
-  "finetune": "vs deepseek-ai/DeepSeek-V3-Base: 15 tokens never updated, special tokens updated 816/818",
+  "finetune": "vs deepseek-ai/DeepSeek-V3-Base: 15 tokens never updated, special tokens updated 816/818 (decay fit below 99%: read with care)",
   "readable": true
  },
  {
@@ -1487,7 +1487,7 @@
   "name": "Baichuan-M3-235B",
   "repo": "baichuan-inc/Baichuan-M3-235B",
   "pretraining": "P=2.05e-20: implausible for decay alone (vectors zeroed or rescaled otherwise)",
-  "finetune": "vs Qwen/Qwen3-235B-A22B: every token vector changed",
+  "finetune": "vs Qwen/Qwen3-235B-A22B: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
@@ -1536,7 +1536,7 @@
   "name": "KAT-Dev-72B",
   "repo": "Kwaipilot/KAT-Dev-72B-Exp",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "vs Qwen/Qwen2.5-72B: 2,171 tokens never updated, shrink factor P=0.0000, special tokens updated 22/22",
+  "finetune": "vs Qwen/Qwen2.5-72B: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
@@ -1592,14 +1592,14 @@
   "name": "Mistral-7B-v0.3",
   "repo": "mistralai/Mistral-7B-v0.3",
   "pretraining": "no regenerable init: init recognised from trained vectors only, none left untouched",
-  "finetune": "vs mistralai/Mistral-7B-v0.1: every token vector changed",
+  "finetune": "vs mistralai/Mistral-7B-v0.1: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
   "name": "Mixtral-8x7B-v0.1-base",
   "repo": "mistralai/Mixtral-8x7B-v0.1",
   "pretraining": "P=1.47e-35: implausible for decay alone (vectors zeroed or rescaled otherwise)",
-  "finetune": "vs mistralai/Mistral-7B-v0.1: every token vector changed",
+  "finetune": "vs mistralai/Mistral-7B-v0.1: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
@@ -1690,7 +1690,7 @@
   "name": "Yi-1.5-34B",
   "repo": "01-ai/Yi-1.5-34B",
   "pretraining": "total weight decay sum lr*wd = 6.68 (assumes init std = initializer_range)",
-  "finetune": "vs 01-ai/Yi-34B: every token vector changed",
+  "finetune": "vs 01-ai/Yi-34B: not a decayed copy of that parent (not comparable)",
   "readable": true
  },
  {
@@ -1851,7 +1851,7 @@
   "name": "Qwen2.5-32B",
   "repo": "Qwen/Qwen2.5-32B",
   "pretraining": "P=3.04e-26: implausible for decay alone (vectors zeroed or rescaled otherwise)",
-  "finetune": "parent of 3 analysed fine-tunes",
+  "finetune": "parent of 4 analysed fine-tunes",
   "readable": true
  }
 ]
