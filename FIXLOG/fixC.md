@@ -23,12 +23,16 @@ n01-n06 (`scripts/gaps/runs_fixc.sh`) were trained.
 - `scripts/large/tulu_controls.py` (new): full 245-token list with counts, "changed at any level", and wrong-mixture
   cross-scoring for both Tulu stages.
 - `scripts/fp32scan/s1_scan_full.py` (new): full seed x batch scan saved, bootstrap over tokens.
-- `scripts/gaps/runs_fixc.sh`, `fixc_mem_chain.sh`, `fixc_report.py` (new).
+- `scripts/gaps/runs_fixc.sh`, `fixc_mem_chain.sh`, `fixc_report.py` (new). Q7 runs are not in the weights-only table
+  (their weights were deleted; another lane retrains them).
+- Not changed (recommendation): the reader snaps peak and decay to round values; a continuous decay search by
+  bit-exact replay hits would likely fix n03, but was not done to keep the reader frozen.
 
 ## Corrected sentences (for README / article owners)
 
-- Recipe (M1): "Kind, step count and warm-up come from the weights alone in __WO_OK__ of __WO_TOT__ pre-existing
-  runs (no claimed dataset or batch size used); r05's step count (501 for 500) is the exception. The 24 runs use round
+- Recipe (M1): "Kind, step count and warm-up come from the weights alone in 24 of 25 pre-existing Pythia runs (no
+  claimed dataset or batch size used; the data-implied step count was never needed except in r05, read 501 for 500,
+  where it is rejected anyway); peak learning rate within 0.12% before rounding. The 24 runs use round
   hyper-parameters, seeds below 100,000 and one of the reader's five schedule families, and are single-epoch."
 - Fresh runs (M1): "On five runs trained after the reader was frozen, with non-round learning rates and weight decay,
   random seeds and one schedule outside its five families, the reader recovered the full schedule in 2

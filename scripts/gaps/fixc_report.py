@@ -40,18 +40,23 @@ def main():
           "| run | true (kind / N / warm-up / peak / wd) | weights-only read | kind, N, warm-up exact | peak rel. err | data would change N |",
           "|---|---|---|---|---|---|"]
     n_ok = n_tot = 0
+    pmax = 0.0
     for k in sorted(wo):
         v = wo[k]
         t, r = v["true"], v["read"]
-        ok = r["kind"] == t["kind"] and r["N"] == t["N"] and r["warmup"] == t["warmup"]
+        # transformers' "constant" schedule ignores warm-up, so a constant run's warm-up is not identifiable
+        ok = r["kind"] == t["kind"] and r["N"] == t["N"] and (r["warmup"] == t["warmup"] or t["kind"] == "constant")
         fresh = k.startswith("n0")
         if not fresh:
             n_tot += 1; n_ok += ok
+            pmax = max(pmax, abs(rel(r["peak"], t["peak"])))
         pe = rel(r["peak"], t["peak"])
         L.append(f"| {k}{' (fresh)' if fresh else ''} | {t['kind']} / {t['N']} / {t['warmup']} / {t['peak']:g} / {t['wd']:g} | "
                  f"{r['kind']} / {r['N']} / {r['warmup']} / {r['peak']:.4g} / {r.get('wd_snap') or 0:g} | {'yes' if ok else '**no**'} | "
                  f"{pe:+.2e} | {'yes' if v['data_would_change_N'] else 'no'} |")
-    L += ["", f"Pre-existing runs: kind, step count and warm-up exact from the weights alone in **{n_ok} of {n_tot}**.", ""]
+    L += ["", f"Pre-existing runs: kind, step count and warm-up exact from the weights alone in **{n_ok} of {n_tot}** (a constant",
+          "run's warm-up is not counted: transformers' constant schedule ignores it). Peak learning rate before rounding to a",
+          f"round value: within {100 * pmax:.2f}% in every pre-existing run.", ""]
     # ---- fresh runs
     L += ["## 2. Fresh runs trained after the freeze (M1, M3)", "",
           "Non-round peak and weight decay, one schedule outside the five families (`inverse_sqrt`), two 32-bit seeds",

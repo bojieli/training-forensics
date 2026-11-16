@@ -1,0 +1,126 @@
+{
+ "r10_cos_410m": {
+  "true": {
+   "kind": "cosine",
+   "N": 1000,
+   "warmup": 100,
+   "peak": 5e-05,
+   "wd": 0.0,
+   "seed": 31337
+  },
+  "read": {
+   "kind": "cosine",
+   "N": 1000,
+   "warmup": 100,
+   "peak": 4.99988121550565e-05,
+   "peak_snap": 5e-05,
+   "wd": 0.0,
+   "wd_snap": 0.0
+  },
+  "schedule_exact_weights_only": true,
+  "N_exact_weights_only": true,
+  "data_implied_N": 1000,
+  "data_would_change_N": false,
+  "replay_refine": null,
+  "seconds": 1691.2
+ },
+ "r11_lin_410m": {
+  "true": {
+   "kind": "linear",
+   "N": 500,
+   "warmup": 10,
+   "peak": 0.0003,
+   "wd": 0.05,
+   "seed": 2
+  },
+  "read": {
+   "kind": "linear",
+   "N": 500,
+   "warmup": 10,
+   "peak": 0.00029998060485945737,
+   "peak_snap": 0.00030000000000000003,
+   "wd": 0.050004907068295606,
+   "wd_snap": 0.05
+  },
+  "schedule_exact_weights_only": true,
+  "N_exact_weights_only": true,
+  "data_implied_N": 500,
+  "data_would_change_N": false,
+  "replay_refine": {
+   "wd": 0.05,
+   "before": {
+    "N": 500,
+    "warmup": 10
+   },
+   "after": {
+    "N": 500,
+    "warmup": 10
+   },
+   "sample_weights": 2048000,
+   "hits": 2045952
+  },
+  "seconds": 1381.3
+ },
+ "r12_cosmin_wd": {
+  "true": {
+   "kind": "cosine_min",
+   "N": 500,
+   "warmup": 0,
+   "peak": 0.0001,
+   "wd": 0.1,
+   "seed": 123
+  },
+  "read": {
+   "kind": "cosine_min",
+   "N": 500,
+   "warmup": 0,
+   "peak": 9.999489810140752e-05,
+   "peak_snap": 0.0001,
+   "wd": 0.10000614955933382,
+   "wd_snap": 0.1
+  },
+  "schedule_exact_weights_only": true,
+  "N_exact_weights_only": true,
+  "data_implied_N": 500,
+  "data_would_change_N": false,
+  "replay_refine": {
+   "wd": 0.1,
+   "before": {
+    "N": 500,
+    "warmup": 0
+   },
+   "after": {
+    "N": 500,
+    "warmup": 0
+   },
+   "sample_weights": 1536000,
+   "hits": 1536000
+  },
+  "seconds": 691.6
+ },
+ "r13_wsd_bs4": {
+  "true": {
+   "kind": "wsd",
+   "N": 1000,
+   "warmup": 0,
+   "peak": 0.0001,
+   "wd": 0.0,
+   "seed": 77
+  },
+  "read": {
+   "kind": "wsd",
+   "N": 1000,
+   "warmup": 0,
+   "peak": 9.999060279132307e-05,
+   "peak_snap": 0.0001,
+   "wd": 0.0,
+   "wd_snap": 0.0
+  },
+  "schedule_exact_weights_only": true,
+  "N_exact_weights_only": true,
+  "data_implied_N": 1000,
+  "data_would_change_N": false,
+  "replay_refine": null,
+  "seconds": 545.5
+ }
+}

@@ -1,0 +1,102 @@
+{
+ "r14_lin_8k": {
+  "true": {
+   "kind": "linear",
+   "N": 1000,
+   "warmup": 0,
+   "peak": 7e-05,
+   "wd": 0.0,
+   "seed": 8
+  },
+  "read": {
+   "kind": "linear",
+   "N": 1000,
+   "warmup": 0,
+   "peak": 6.99990621726232e-05,
+   "peak_snap": 7.000000000000001e-05,
+   "wd": 0.0,
+   "wd_snap": 0.0
+  },
+  "schedule_exact_weights_only": true,
+  "N_exact_weights_only": true,
+  "data_implied_N": 1000,
+  "data_would_change_N": false,
+  "replay_refine": null,
+  "seconds": 1239.9
+ },
+ "r15_cos_bs32": {
+  "true": {
+   "kind": "cosine",
+   "N": 125,
+   "warmup": 5,
+   "peak": 0.0002,
+   "wd": 0.0,
+   "seed": 2025
+  },
+  "read": {
+   "kind": "cosine",
+   "N": 125,
+   "warmup": 5,
+   "peak": 0.00020000565066269035,
+   "peak_snap": 0.0002,
+   "wd": 0.0,
+   "wd_snap": 0.0
+  },
+  "schedule_exact_weights_only": true,
+  "N_exact_weights_only": true,
+  "data_implied_N": 125,
+  "data_would_change_N": false,
+  "replay_refine": null,
+  "seconds": 723.8
+ },
+ "s02_bigbatch": {
+  "true": {
+   "kind": "cosine",
+   "N": 407,
+   "warmup": 20,
+   "peak": 0.0001,
+   "wd": 0.0,
+   "seed": 42
+  },
+  "read": {
+   "kind": "cosine",
+   "N": 407,
+   "warmup": 20,
+   "peak": 0.00010000501168648423,
+   "peak_snap": 0.0001,
+   "wd": 0.0,
+   "wd_snap": 0.0
+  },
+  "schedule_exact_weights_only": true,
+  "N_exact_weights_only": true,
+  "data_implied_N": 407,
+  "data_would_change_N": false,
+  "replay_refine": null,
+  "seconds": 897.5
+ },
+ "s04_lora": {
+  "true": {
+   "kind": "linear",
+   "N": 500,
+   "warmup": 0,
+   "peak": 0.0002,
+   "wd": 0.0,
+   "seed": 42
+  },
+  "read": {
+   "kind": "linear",
+   "N": 500,
+   "warmup": 0,
+   "peak": 0.0001999674097214206,
+   "peak_snap": 0.0002,
+   "wd": 0.0,
+   "wd_snap": 0.0
+  },
+  "schedule_exact_weights_only": true,
+  "N_exact_weights_only": true,
+  "data_implied_N": 500,
+  "data_would_change_N": false,
+  "replay_refine": null,
+  "seconds": 898.6
+ }
+}

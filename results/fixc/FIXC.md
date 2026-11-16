@@ -12,22 +12,40 @@ size. Here every run is re-read with `with_data=False` (W0, W1 and the bit-exact
 
 | run | true (kind / N / warm-up / peak / wd) | weights-only read | kind, N, warm-up exact | peak rel. err | data would change N |
 |---|---|---|---|---|---|
+| g01_swap_wd | cosine / 250 / 0 / 0.0001 / 0.1 | cosine / 250 / 0 / 0.0001 / 0.1 | yes | -4.57e-06 | no |
+| g02_swap_bs4 | linear / 1000 / 10 / 2e-05 / 0 | linear / 1000 / 10 / 2e-05 / 0 | yes | -1.42e-05 | no |
+| g03_swap_cmin | cosine_min / 500 / 15 / 3e-05 / 0 | cosine_min / 500 / 15 / 3e-05 / 0 | yes | -2.81e-05 | no |
+| g04_swap_const | constant / 500 / 50 / 0.0001 / 0 | constant / 500 / 0 / 9.999e-05 / 0 | yes | -9.28e-05 | no |
 | g05_mem_wiki | linear / 500 / 20 / 5e-05 / 0 | linear / 500 / 20 / 5e-05 / 0 | yes | +2.23e-05 | no |
 | m01 | linear / 500 / 20 / 5e-05 / 0 | linear / 500 / 20 / 5e-05 / 0 | yes | +3.75e-05 | no |
 | n01_clean_cos (fresh) | cosine / 500 / 23 / 3.7e-05 / 0.07 | cosine / 500 / 23 / 3.7e-05 / 0.07 | yes | -7.62e-06 | no |
 | n03_swap_lin (fresh) | linear / 500 / 17 / 2.3e-05 / 0.013 | linear / 500 / 18 / 2.3e-05 / 0.015 | **no** | +7.74e-05 | no |
+| n04_swap_cos (fresh) | cosine / 250 / 9 / 6.1e-05 / 0 | cosine / 250 / 9 / 6.1e-05 / 0 | yes | +1.45e-05 | no |
+| n05_swap_cmin (fresh) | cosine_min / 500 / 31 / 1.7e-05 / 0.041 | cosine_min / 738 / 19 / 1.476e-05 / 0.0320472 | **no** | -1.32e-01 | no |
 | n06_mem_wiki2 (fresh) | linear / 500 / 20 / 5e-05 / 0 | linear / 500 / 20 / 5e-05 / 0 | yes | +2.66e-05 | no |
 | r01_lin | linear / 500 / 20 / 5e-05 / 0 | linear / 500 / 20 / 5e-05 / 0 | yes | -3.96e-05 | no |
 | r02_cos | cosine / 500 / 0 / 2e-05 / 0 | cosine / 500 / 0 / 2e-05 / 0 | yes | +5.92e-05 | no |
-| r03_const | constant / 500 / 50 / 0.0001 / 0 | constant / 500 / 0 / 9.999e-05 / 0 | **no** | -7.13e-05 | no |
+| r03_const | constant / 500 / 50 / 0.0001 / 0 | constant / 500 / 0 / 9.999e-05 / 0 | yes | -7.13e-05 | no |
 | r04_cosmin | cosine_min / 500 / 15 / 3e-05 / 0 | cosine_min / 500 / 15 / 3e-05 / 0 | yes | -2.34e-05 | no |
 | r05_wsd | wsd / 500 / 20 / 5e-05 / 0 | wsd / 501 / 20 / 4.999e-05 / 0 | **no** | -2.54e-04 | yes |
 | r06_lin_bs4 | linear / 1000 / 0 / 1e-05 / 0 | linear / 1000 / 0 / 1e-05 / 0 | yes | +5.60e-06 | no |
 | r07_cos_wd | cosine / 250 / 0 / 0.0001 / 0.1 | cosine / 250 / 0 / 0.0001 / 0.1 | yes | +2.92e-05 | no |
 | r08_lin_wd | linear / 500 / 0 / 2e-05 / 0.01 | linear / 500 / 0 / 2e-05 / 0.01 | yes | +4.24e-05 | no |
 | r09_const_wd | constant / 500 / 0 / 3e-05 / 0.1 | constant / 500 / 0 / 3.004e-05 / 0.1 | yes | +1.21e-03 | no |
+| r10_cos_410m | cosine / 1000 / 100 / 5e-05 / 0 | cosine / 1000 / 100 / 5e-05 / 0 | yes | -2.38e-05 | no |
+| r11_lin_410m | linear / 500 / 10 / 0.0003 / 0.05 | linear / 500 / 10 / 0.0003 / 0.05 | yes | -6.47e-05 | no |
+| r12_cosmin_wd | cosine_min / 500 / 0 / 0.0001 / 0.1 | cosine_min / 500 / 0 / 9.999e-05 / 0.1 | yes | -5.10e-05 | no |
+| r13_wsd_bs4 | wsd / 1000 / 0 / 0.0001 / 0 | wsd / 1000 / 0 / 9.999e-05 / 0 | yes | -9.40e-05 | no |
+| r14_lin_8k | linear / 1000 / 0 / 7e-05 / 0 | linear / 1000 / 0 / 7e-05 / 0 | yes | -1.34e-05 | no |
+| r15_cos_bs32 | cosine / 125 / 5 / 0.0002 / 0 | cosine / 125 / 5 / 0.0002 / 0 | yes | +2.83e-05 | no |
+| s02_bigbatch | cosine / 407 / 20 / 0.0001 / 0 | cosine / 407 / 20 / 0.0001 / 0 | yes | +5.01e-05 | no |
+| s04_lora | linear / 500 / 0 / 0.0002 / 0 | linear / 500 / 0 / 0.0002 / 0 | yes | -1.63e-04 | no |
+| s05_swap | linear / 500 / 0 / 5e-05 / 0 | linear / 500 / 0 / 5e-05 / 0 | yes | -6.72e-06 | no |
+| s06_bf16 | cosine / 500 / 0 / 5e-05 / 0 | cosine / 500 / 0 / 5e-05 / 0 | yes | -2.39e-05 | no |
 
-Pre-existing runs: kind, step count and warm-up exact from the weights alone in **9 of 11**.
+Pre-existing runs: kind, step count and warm-up exact from the weights alone in **24 of 25** (a constant
+run's warm-up is not counted: transformers' constant schedule ignores it). Peak learning rate before rounding to a
+round value: within 0.12% in every pre-existing run.
 
 ## 2. Fresh runs trained after the freeze (M1, M3)
 

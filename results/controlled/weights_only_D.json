@@ -1,0 +1,77 @@
+{
+ "g02_swap_bs4": {
+  "true": {
+   "kind": "linear",
+   "N": 1000,
+   "warmup": 10,
+   "peak": 2e-05,
+   "wd": 0.0,
+   "seed": 10
+  },
+  "read": {
+   "kind": "linear",
+   "N": 1000,
+   "warmup": 10,
+   "peak": 1.9999715877640014e-05,
+   "peak_snap": 2e-05,
+   "wd": 0.0,
+   "wd_snap": 0.0
+  },
+  "schedule_exact_weights_only": true,
+  "N_exact_weights_only": true,
+  "data_implied_N": 1000,
+  "data_would_change_N": false,
+  "replay_refine": null,
+  "seconds": 1134.5
+ },
+ "g03_swap_cmin": {
+  "true": {
+   "kind": "cosine_min",
+   "N": 500,
+   "warmup": 15,
+   "peak": 3e-05,
+   "wd": 0.0,
+   "seed": 11
+  },
+  "read": {
+   "kind": "cosine_min",
+   "N": 500,
+   "warmup": 15,
+   "peak": 2.9999156064855648e-05,
+   "peak_snap": 3.0000000000000004e-05,
+   "wd": 0.0,
+   "wd_snap": 0.0
+  },
+  "schedule_exact_weights_only": true,
+  "N_exact_weights_only": true,
+  "data_implied_N": 500,
+  "data_would_change_N": false,
+  "replay_refine": null,
+  "seconds": 670.2
+ },
+ "g04_swap_const": {
+  "true": {
+   "kind": "constant",
+   "N": 500,
+   "warmup": 50,
+   "peak": 0.0001,
+   "wd": 0.0,
+   "seed": 12
+  },
+  "read": {
+   "kind": "constant",
+   "N": 500,
+   "warmup": 0,
+   "peak": 9.999071780708522e-05,
+   "peak_snap": 0.0001,
+   "wd": 0.0,
+   "wd_snap": 0.0
+  },
+  "schedule_exact_weights_only": true,
+  "N_exact_weights_only": true,
+  "data_implied_N": 500,
+  "data_would_change_N": false,
+  "replay_refine": null,
+  "seconds": 822.6
+ }
+}
