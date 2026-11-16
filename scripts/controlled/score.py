@@ -182,42 +182,48 @@ def read(run: pathlib.Path, release="fp32", with_data=True, bs=None):
                                dscore_fn=lambda r: dfit(r).score)
         before = dict(kind=rec["kind"], N=rec["N"], warmup=rec["warmup"], wd_snap=rec["wd_snap"])
         rr = sel["recipe"]
+        v2_ok = sel["recovered"]
         pk_used = snap(rr["peak"])               # the peak the replay was run with
-        # the replay fixes only the product peak x wd; the peak comes from the move
-        # fit of the selected shape at the fine tolerance, and wd = product / peak
-        pk = dfit(rr).peak
-        pk_s = snap(pk)
-        if pk_used != rr["peak"] and recipe_v2.round_in(sel["wd_interval"]) is not None:
-            # the replay ran at a round peak and a round decay reproduces the same
-            # factors: keep that pair (the weights fix only the product; the move
-            # fit's peak for a constant schedule is degenerate with the step count)
-            pk, pk_s = rr["peak"], pk_used
-        scale = pk_used / pk_s
-        rec.update(kind=rr["kind"], N=rr["N"], warmup=rr["warmup"], min_ratio=rr["min_ratio"],
-                   peak=pk, peak_snap=pk_s)
-        rec["wd"] = sel["wd_continuous"] * scale
-        rec["wd_interval"] = [x * scale for x in sel["wd_interval"]]
-        rv = recipe_v2.round_in(rec["wd_interval"])
-        rec["wd_snap"] = rv if rv is not None else rec["wd"]
-        # confirm the rescaled pair still reproduces the replayed weights
-        lr_chk = hf_lr(dict(rec, peak=pk_s), rec["N"])
-        xf0, xf1 = W0[f_idx].float().flatten(), W1[f_idx].flatten()
-        h_chk = int(recipe_v2.hits(xf0, xf1, lr_chk, [rec["wd_snap"]])[0])
-        if h_chk < sel["hits"]:
-            # fall back to the peak the replay used (exactly the selected factors)
-            rec.update(peak_snap=pk_used, wd=sel["wd_continuous"], wd_interval=sel["wd_interval"],
-                       wd_snap=sel["wd"])
-            h_chk = sel["hits"]
-        sel["hits_reported"] = h_chk
+        if v2_ok:
+            # the replay fixes only the product peak x wd; the peak comes from the move
+            # fit of the selected shape at the fine tolerance, and wd = product / peak
+            pk = dfit(rr).peak
+            pk_s = snap(pk)
+            if pk_used != rr["peak"] and recipe_v2.round_in(sel["wd_interval"]) is not None:
+                # the replay ran at a round peak and a round decay reproduces the same
+                # factors: keep that pair (the weights fix only the product; the move
+                # fit's peak for a constant schedule is degenerate with the step count)
+                pk, pk_s = rr["peak"], pk_used
+            scale = pk_used / pk_s
+            rec.update(kind=rr["kind"], N=rr["N"], warmup=rr["warmup"], min_ratio=rr["min_ratio"],
+                       peak=pk, peak_snap=pk_s)
+            rec["wd"] = sel["wd_continuous"] * scale
+            rec["wd_interval"] = [x * scale for x in sel["wd_interval"]]
+            rv = recipe_v2.round_in(rec["wd_interval"])
+            rec["wd_snap"] = rv if rv is not None else rec["wd"]
+            # confirm the rescaled pair still reproduces the replayed weights
+            lr_chk = hf_lr(dict(rec, peak=pk_s), rec["N"])
+            xf0, xf1 = W0[f_idx].float().flatten(), W1[f_idx].flatten()
+            h_chk = int(recipe_v2.hits(xf0, xf1, lr_chk, [rec["wd_snap"]])[0])
+            if h_chk < sel["hits"]:
+                # fall back to the peak the replay used (exactly the selected factors)
+                rec.update(peak_snap=pk_used, wd=sel["wd_continuous"], wd_interval=sel["wd_interval"],
+                           wd_snap=sel["wd"])
+                h_chk = sel["hits"]
+            sel["hits_reported"] = h_chk
         rec["recipe_recovered"] = sel["recovered"]
-        out["reader"] = "v2"
+        out["reader"] = "v2" if v2_ok else "v2-unconfirmed: move fit (v1) reported"
         out["replay_select"] = {k: sel[k] for k in ("conf", "recovered", "hits", "hits_reported", "sample", "n_candidates",
                                                      "replay_ties", "wd_interval", "screened")}
-        out["replay_refine"] = dict(reader="v2", wd=rec["wd_snap"], before=before,
-                                    after=dict(kind=rec["kind"], N=rec["N"], warmup=rec["warmup"]),
-                                    sample_weights=sel["sample"], hits=sel["hits"])
-    elif rec["wd_snap"] > 0:
-        out["reader"] = "v1"
+        if v2_ok:
+            out["replay_refine"] = dict(reader="v2", wd=rec["wd_snap"], before=before,
+                                        after=dict(kind=rec["kind"], N=rec["N"], warmup=rec["warmup"]),
+                                        sample_weights=sel["sample"], hits=sel["hits"])
+    if rec["wd_snap"] > 0 and not (use_v2 and rec.get("recipe_recovered")):
+        # v1 path: runs without the v2 selector, and v2 selections the replay did
+        # not confirm (the move fit's reading is kept, flagged recipe_recovered=False;
+        # e.g. a training stack whose decay kernel differs from torch's)
+        out.setdefault("reader", "v1")
         # Under decoupled decay the never-touched rows are an exact record of the
         # factor sequence: refine the step count (and warm-up) by bit-exact replay
         # on a sample of rows that did not move.
