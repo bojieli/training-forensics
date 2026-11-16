@@ -31,6 +31,18 @@ PLAN = [
 ]
 
 
+def _prev_status():
+    # Run logs live in runs/ (not committed); keep the recorded status of runs whose
+    # logs are absent so the report regenerates identically from committed files.
+    try:
+        return {k: v["status"] for k, v in json.load(open(R / "status.json")).items()}
+    except Exception:
+        return {}
+
+
+_PREV = _prev_status()
+
+
 def status(name):
     log = RUNS / f"{name}.log"
     js = R / f"{name}.fp32.json"
@@ -43,6 +55,8 @@ def status(name):
         return "trained, not scored"
     if log.exists():
         return "stopped mid-run"
+    if _PREV.get(name) in ("stopped mid-run", "trained, not scored"):
+        return _PREV[name]
     return "not run"
 
 

@@ -19,10 +19,20 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "Topic :: Security",
 ]
-dependencies = ["torch>=2.1", "numpy", "safetensors", "requests", "huggingface_hub>=0.20"]
+dependencies = ["torch>=2.1", "numpy", "scipy", "safetensors", "requests", "huggingface_hub>=0.20", "tokenizers", "pyyaml"]
 
 [project.optional-dependencies]
 controlled = ["transformers>=4.45,<5", "accelerate", "datasets", "peft"]
+# published-data audits, token mining, LIMO/Arete checks (tokenizers + datasets + sympy)
+audits = ["transformers>=4.45,<5", "datasets", "sympy"]
+figures = ["matplotlib"]
+quant = ["gguf"]
+# training-stack tests (scripts/stacks); DeepSpeed needs a CUDA toolkit (CUDA_HOME)
+stacks = ["deepspeed>=0.15"]
+# exact LIMO retokenization uses LIMO's vendored LLaMA-Factory (see REPRODUCE.md), not a PyPI release
+llamafactory = ["llamafactory"]
+test = ["pytest"]
+all = ["transformers>=4.45,<5", "accelerate", "datasets", "peft", "sympy", "matplotlib", "gguf", "pytest"]
 
 [project.urls]
 Homepage = "https://github.com/bojieli/training-forensics"

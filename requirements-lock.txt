@@ -1,0 +1,22 @@
+# Exact versions the committed results were produced with (rtx-pro, Python 3.10.12, CUDA 12.8).
+# pip install -r requirements-lock.txt   (torch wheel: --index-url https://download.pytorch.org/whl/cu128)
+# Results that depend on these versions: Hugging Face Trainer/accelerate sampler seeding and scheduler
+# definitions (controlled runs, s1 seed scan), tokenizer behaviour (published-data audits), DeepSpeed kernels (stacks).
+torch==2.10.0+cu128
+transformers==4.57.6
+accelerate==1.13.0
+peft==0.19.0
+datasets==4.8.4
+tokenizers==0.22.2
+safetensors==0.8.0
+huggingface_hub==0.36.2
+numpy==2.2.6
+scipy==1.15.3
+sympy==1.14.0
+PyYAML==6.0.3
+requests==2.33.1
+matplotlib==3.10.8
+gguf==0.18.0
+deepspeed==0.20.0
+pytest==9.0.3
+tomli==2.4.1

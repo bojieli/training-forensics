@@ -254,7 +254,7 @@ Columns: *vocab* = vocabulary tokens compared; *unmoved / near / moved* = token 
 | allenai/Olmo-3.1-32B-Instruct | allenai/Olmo-3.1-32B-Instruct-DPO | F32->BF16 | 100278 | 12869 | 4383 | 83026 | 1 | 0 | 0 | – | 4/22 | – |  |
 | allenai/Olmo-3.1-32B-Instruct-SFT | allenai/Olmo-3-1125-32B | BF16->F32 | 100278 | 640 | 1 | 99637 | 1 | 0 | 23 | 0 | 8/22 | – |  |
 | allenai/Olmo-3.1-32B-Think | allenai/Olmo-3-1125-32B | BF16->BF16 | 100278 | 60 | 254 | 99964 | 1 | 0 | 0 | – | 20/22 | 100278/100278 |  |
-| arcee-ai/Trinity-Large-Thinking | arcee-ai/Trinity-Large-Base | BF16->BF16 | 200192 | 389 | 11 | 199792 | – | – | 0 | – | 31/32 | – | no untouched vectors: decay not identifiable |
+| arcee-ai/Trinity-Large-Thinking | arcee-ai/Trinity-Large-Base | BF16->BF16 | 200192 | 389 | 11 | 199792 | 1 | 0 | 0 | – | 31/32 | – |  |
 | arcee-ai/Trinity-Mini | arcee-ai/Trinity-Mini-Base | BF16->BF16 | 200192 | 3022 | 744 | 196426 | 1 | 0 | 0 | – | 10/32 | 199846/200192 |  |
 | baichuan-inc/Baichuan-M3-235B | Qwen/Qwen3-235B-A22B | BF16->BF16 | 151936 | 0 | 0 | 151936 | – | – | 0 | – | (all moved) | – | no untouched vectors: decay not identifiable |
 | baichuan-inc/Baichuan2-13B-Chat | baichuan-inc/Baichuan2-13B-Base | BF16->BF16 | 125696 | 29631 | 0 | 96065 | 1 | 0 | 0 | – | 0/0 | – |  |
@@ -278,7 +278,7 @@ Columns: *vocab* = vocabulary tokens compared; *unmoved / near / moved* = token 
 | deepseek-ai/DeepSeek-V3 | deepseek-ai/DeepSeek-V3-Base | BF16->BF16 | 129280 | 2396 | 446 | 126438 | 1 | 0 | 0 | – | 101/818 | – |  |
 | deepseek-ai/DeepSeek-V3-0324 | deepseek-ai/DeepSeek-V3-Base | BF16->BF16 | 129280 | 2438 | 244 | 126598 | 1 | 0 | 0 | – | 18/818 | – |  |
 | deepseek-ai/DeepSeek-V3.2 | deepseek-ai/DeepSeek-V3.2-Exp-Base | BF16->BF16 | 129280 | 1339 | 530 | 127411 | 1 | 0 | 0 | – | 53/818 | – |  |
-| deepseek-ai/DeepSeek-V4-Flash | deepseek-ai/DeepSeek-V4-Flash-Base | BF16->BF16 | 129280 | 447 | 0 | 128833 | – | – | 0 | – | 851/1283 | 129280/129280 | no untouched vectors: decay not identifiable |
+| deepseek-ai/DeepSeek-V4-Flash | deepseek-ai/DeepSeek-V4-Flash-Base | BF16->BF16 | 129280 | 447 | 0 | 128833 | 1 | 0 | 0 | – | 851/1283 | 129280/129280 |  |
 | deepseek-ai/DeepSeek-V4-Flash-0731 | deepseek-ai/DeepSeek-V4-Flash | BF16->BF16 | 129280 | 1261 | 1 | 128018 | 1 | 0 | 0 | – | 117/1283 | 129280/129280 |  |
 | deepseek-ai/DeepSeek-V4-Pro | deepseek-ai/DeepSeek-V4-Pro-Base | BF16->BF16 | 129280 | 446 | 1 | 128833 | 1 | 0 | 0 | – | 852/1283 | – |  |
 | deepseek-ai/DeepSeek-V4-Pro-0813 | deepseek-ai/DeepSeek-V4-Pro | BF16->BF16 | 129280 | 738 | 0 | 128542 | 1 | 0 | 0 | – | 639/1283 | – |  |
