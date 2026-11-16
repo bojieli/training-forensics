@@ -25,6 +25,8 @@ CK = pathlib.Path.home() / "checkpoint-forensics" / "results" / "summary.json"
 SWEEPS = [("roster", "results/roster/sweep.jsonl"), ("roster", "results/roster/sweep_cml3.jsonl"),
           ("frontier_x", "results/roster/sweep_frontier_x.jsonl"), ("y2026_labs", "results/roster/sweep_2026_labs.jsonl"),
           ("large", "results/large/sweep_large.jsonl")]
+# display order only: the classes come from scripts/frontier/comparability.py (or a y2026_ft
+# record's own "cls"), so a reworked classifier is picked up on rerun
 CLASSES = ["token record", "record, poor fit", "changed throughout", "not comparable", "unchanged", "shared matrix"]
 
 
@@ -173,9 +175,10 @@ def main():
               f"({off} of them with a fine-tune outside the 265-model roster). By source (first source wins): "
               + ", ".join(f"{k} {v}" for k, v in by_src.most_common()) + ".", "",
               "| class | comparisons |", "|---|---|"]
-    lines += [f"| {k} | {cc[k]} |" for k in CLASSES]
+    order = [k for k in CLASSES if k in cc] + sorted(k for k in cc if k not in CLASSES)
+    lines += [f"| {k} | {cc[k]} |" for k in order]
     lines += ["", "| parent | fine-tune | source | class |", "|---|---|---|---|"]
-    for c in sorted(comps, key=lambda c: (CLASSES.index(c["cls"]), c["child"])):
+    for c in sorted(comps, key=lambda c: (order.index(c["cls"]), c["child"])):
         lines.append(f"| {c['parent']} | {c['child']} | {c['source']} | {c['cls']} |")
     json.dump([{k: v for k, v in c.items() if k not in ("rec", "ft")} for c in comps],
               open(ROOT / "results" / "roster" / "comparisons_all.json", "w"), indent=1)
