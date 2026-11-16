@@ -120,6 +120,9 @@ def read(run: pathlib.Path, release="fp32", with_data=True, bs=None):
     # total decay P read off the never-touched rows
     best, ranked = blind.fit_recipe(Dq, logP=(math.log(decay) if decay < 1.0 else None),
                                     procs=int(os.environ.get("TF_PROCS", "32")))
+    # weights-only reading (no claimed dataset, no batch size): kept in the
+    # result so a reader can tell which N came from the weights alone
+    out["recipe_weights_only"] = best.as_dict()
     if with_data:
         # The claimed dataset fixes the step count up to whole epochs:
         # N = k * ceil(docs / batch). The single-update moves alone leave N
@@ -274,6 +277,18 @@ def score(run: pathlib.Path, out: dict, with_docs=True):
                                               if lr_unsnapped is not None else None)
     res["recipe_ok"]["schedule_exact"] = dl is not None and dl < 1e-9
     res["replay_refine"] = out.get("replay_refine")
+    # Which step count is reported: the weights alone, or the weights plus the
+    # claimed document list and batch size (tech review M1). The batch size is
+    # something a third party usually does not have.
+    nfd = out.get("n_from_data")
+    wo = out.get("recipe_weights_only") or {}
+    res["n_from_data"] = nfd
+    res["recipe_weights_only"] = wo
+    res["n_source"] = ("claimed_data" if (nfd and nfd.get("adopted")) else "weights")
+    res["weights_only_ok"] = dict(kind=wo.get("kind") == true["kind"], N=wo.get("N") == true["N"],
+                                  warmup=wo.get("warmup") == true["warmup"]) if wo else None
+    res["scope"] = "single-epoch runs, 125-1,000 steps; reader hypothesis class = blind.KINDS"
+
     res["decay_lut"] = out.get("decay_lut")
     res["t_recipe"] = out["t_recipe"]
     if with_docs and out["release"] == "fp32" and a["epochs"] == 1:
@@ -295,8 +310,11 @@ def score(run: pathlib.Path, out: dict, with_docs=True):
         # seed search from the placed docs (positions are the claimed list order)
         bs = args["bs"] * args["ga"]
         good = {k: s for k, s in placed.items()}
-        ranked = blind.find_seed(good, len(docs), bs, seeds=range(0, 100000))
-        res["seed"] = dict(true=args["seed"], found=ranked[0][0] if ranked else None,
+        SEED_RANGE = (0, 100000)   # plus blind.find_seed's short priority list; a random 32-bit seed is outside it
+        ranked = blind.find_seed(good, len(docs), bs, seeds=range(*SEED_RANGE))
+        res["seed"] = dict(true=args["seed"], searched=f"{SEED_RANGE[0]}..{SEED_RANGE[1]-1} + priority list",
+                           true_in_range=bool(SEED_RANGE[0] <= args["seed"] < SEED_RANGE[1]),
+                           found=ranked[0][0] if ranked else None,
                            hits=ranked[0][1] if ranked else 0, of=len(good),
                            second=ranked[1] if len(ranked) > 1 else None)
         # swaps: with the seed, every claimed doc has a predicted step; a doc is

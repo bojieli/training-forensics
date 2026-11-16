@@ -1,0 +1,107 @@
+{
+ "run": "n04_swap_cos",
+ "release": "fp32",
+ "tokens": {
+  "seen": 18396,
+  "moved": 18396,
+  "tp": 18396,
+  "fp": 0,
+  "fn": 0
+ },
+ "recipe_true": {
+  "kind": "cosine",
+  "N": 250,
+  "warmup": 9,
+  "peak": 6.1e-05,
+  "wd": 0.0
+ },
+ "recipe_read": {
+  "kind": "cosine",
+  "N": 250,
+  "warmup": 9,
+  "peak": 6.100088264449576e-05,
+  "peak_snap": 6.100088264449576e-05,
+  "wd": 0.0,
+  "wd_snap": 0.0,
+  "min_ratio": 0.0
+ },
+ "recipe_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true,
+  "peak_rel_err": 1.4469581897769146e-05,
+  "peak_snap_ok": false,
+  "wd_rel_err": 0.0,
+  "steps": true,
+  "lr_max_rel_dev_snapped": 1.446958189772435e-05,
+  "lr_max_rel_dev_raw": 1.446958189772435e-05,
+  "schedule_exact": false
+ },
+ "replay_refine": null,
+ "n_from_data": null,
+ "recipe_weights_only": {
+  "kind": "cosine",
+  "N": 250,
+  "warmup": 9,
+  "peak": 6.100088264449576e-05,
+  "min_ratio": 0.0,
+  "decay_frac": 0.2,
+  "score": -0.7275658393954673,
+  "coverage": 0.9878542510121457,
+  "resid": 8.748376570055783e-06
+ },
+ "n_source": "weights",
+ "weights_only_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true
+ },
+ "scope": "single-epoch runs, 125-1,000 steps; reader hypothesis class = blind.KINDS",
+ "decay_lut": null,
+ "t_recipe": 1216.5630495548248,
+ "placement": {
+  "docs": 4000,
+  "placed": 1734,
+  "exact": 1733,
+  "wrong": 1,
+  "status_counts": {
+   "ambiguous8": 19,
+   "ambiguous11": 14,
+   "ambiguous10": 4,
+   "ambiguous7": 25,
+   "inconsistent": 76,
+   "ambiguous3": 39,
+   "ambiguous2": 504,
+   "has_unmoved_token": 27,
+   "ambiguous6": 21,
+   "placed": 1734,
+   "ambiguous5": 7,
+   "no_unique_token": 1456,
+   "ambiguous9": 37,
+   "ambiguous4": 37
+  }
+ },
+ "seed": {
+  "true": 3141592653,
+  "searched": "0..99999 + priority list",
+  "true_in_range": false,
+  "found": 6779,
+  "hits": 22,
+  "of": 1734,
+  "second": [
+   15666,
+   20
+  ]
+ },
+ "swap_reasons": {
+  "single_touch_wrong_step": 2435,
+  "unmoved_token": 26
+ },
+ "placement_with_seed": 31,
+ "swaps": {
+  "true": 40,
+  "flagged": 2461,
+  "caught": 27,
+  "false_flags": 2434
+ }
+}

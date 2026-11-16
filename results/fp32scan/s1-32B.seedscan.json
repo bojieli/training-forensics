@@ -1,0 +1,91 @@
+{
+ "child": "simplescaling/s1-32B",
+ "rare_tokens": 5963,
+ "subsample": 600,
+ "candidates": 6003,
+ "assumed": {
+  "schedule": "cosine, 5% warm-up (published sft.sh)",
+  "beta2": 0.95,
+  "epochs": 5,
+  "sampler": "accelerate SeedableRandomSampler: epoch e order = torch.randperm(n), generator seed = seed + e"
+ },
+ "seed_range": "0..2000",
+ "top": [
+  {
+   "seed": 42,
+   "bs": 16,
+   "misfit": 0.029095233712053137
+  },
+  {
+   "seed": 42,
+   "bs": 8,
+   "misfit": 0.03379700258000362
+  },
+  {
+   "seed": 43,
+   "bs": 32,
+   "misfit": 0.04278960757668937
+  },
+  {
+   "seed": 43,
+   "bs": 16,
+   "misfit": 0.044326196683475594
+  },
+  {
+   "seed": 42,
+   "bs": 32,
+   "misfit": 0.04480331979471597
+  },
+  {
+   "seed": 41,
+   "bs": 16,
+   "misfit": 0.0473920760219011
+  },
+  {
+   "seed": 43,
+   "bs": 8,
+   "misfit": 0.05088449308405352
+  },
+  {
+   "seed": 41,
+   "bs": 8,
+   "misfit": 0.05271232717367447
+  },
+  {
+   "seed": 44,
+   "bs": 32,
+   "misfit": 0.05424650714915913
+  },
+  {
+   "seed": 41,
+   "bs": 32,
+   "misfit": 0.05574374988565456
+  }
+ ],
+ "seed42_rank_within_batch_size": {
+  "8": 1,
+  "16": 1,
+  "32": 2
+ },
+ "null": {
+  "median": 0.0742230054731694,
+  "p01": 0.06330950104027427,
+  "min": 0.04278960757668937
+ },
+ "bootstrap": {
+  "resamples": 300,
+  "over": "single-document tokens (all)",
+  "candidates": "top 10 seeds per batch size",
+  "best_batch_size_share": {
+   "8": 0.0,
+   "16": 1.0,
+   "32": 0.0
+  },
+  "seed42_first_share": 1.0,
+  "full_sample_misfit": {
+   "42/8": 0.03500094911087892,
+   "42/16": 0.031191661678075633,
+   "42/32": 0.044430548539978076
+  }
+ }
+}

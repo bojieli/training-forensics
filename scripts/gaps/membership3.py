@@ -33,6 +33,7 @@ attacker has, plus the public base model):
 from __future__ import annotations
 
 import json
+import os
 import math
 import pathlib
 import sys
@@ -176,6 +177,44 @@ def split_half(mem, out, n=500, seed=0):
                 heldout_false_alarms_q95=float(np.quantile(fps, .95)))
 
 
+def clopper_pearson(k, n, a=0.05):
+    from scipy.stats import beta
+    lo = 0.0 if k == 0 else float(beta.ppf(a / 2, k, n - k + 1))
+    hi = 1.0 if k == n else float(beta.ppf(1 - a / 2, k + 1, n - k))
+    return lo, hi
+
+
+def operating_points(scores, nm, fprs=(0.0, 0.001, 0.01)):
+    """Same operating points for every attack (tech review M2): threshold from half
+    the non-members, TPR and realised FPR on the other half (500 splits); plus the
+    full-sample TPR with a 95% Clopper-Pearson interval."""
+    out = {}
+    rng = np.random.default_rng(0)
+    for n, s in scores.items():
+        mem, oth = s[:nm], s[nm:]
+        row = {}
+        for f in fprs:
+            k_allow = int(math.floor(f * len(oth)))
+            srt = np.sort(oth)
+            thr = srt[-1] if k_allow == 0 else srt[-(k_allow + 1)]
+            tp = int((mem > thr).sum())
+            lo, hi = clopper_pearson(tp, len(mem))
+            t_, fp_ = [], []
+            for _ in range(500):
+                pm, po = rng.permutation(len(mem)), rng.permutation(len(oth))
+                cal = np.sort(oth[po[:len(po) // 2]])
+                kk = int(math.floor(f * len(cal)))
+                th = cal[-1] if kk == 0 else cal[-(kk + 1)]
+                t_.append(float((mem[pm[len(pm) // 2:]] > th).mean()))
+                fp_.append(float((oth[po[len(po) // 2:]] > th).mean()))
+            row[f"fpr_{f:g}"] = dict(full_sample_tpr=tp / len(mem), full_sample_ci95=[lo, hi],
+                                     heldout_tpr_median=float(np.median(t_)),
+                                     heldout_tpr_q05_q95=[float(np.quantile(t_, .05)), float(np.quantile(t_, .95))],
+                                     heldout_fpr_realised_mean=float(np.mean(fp_)))
+        out[n] = row
+    return out
+
+
 def our_scores(run, t, toks):
     """Fixed method: exclusion + max wagree at the interpolated state (membership2 features)."""
     import membership2 as M2
@@ -183,7 +222,7 @@ def our_scores(run, t, toks):
     run_, t_, toks_, rd, flat, sgn, curve, cfrac = M2.load(run)
     steps, Drow = M2.row_steps(run, flat, curve)
     e = load_file(str(run / "emb.safetensors"))
-    F = np.load(run / "membership2_feat.npz")
+    F = np.load(run / ("membership2_feat_blind.npz" if os.environ.get("TF_BLIND") == "1" else "membership2_feat.npz"))
     pool = list(t["trained"]) + list(t["outside"])
     excluded = {}
     for d in pool:
@@ -222,7 +261,9 @@ def score(run):
     for n, s in scores.items():
         mem, out = s[:nm], s[nm:]
         res["attacks"][n] = dict(full_sample_tpr_at_0fp=tpr_at_0fp(mem, out), split_half=split_half(mem, out))
-    dst = ROOT / "results" / "gaps" / f"{run.name}.membership3.json"
+    res["recipe_source"] = "blind (weights_only.json)" if os.environ.get("TF_BLIND") == "1" else "truth.json"
+    res["operating_points"] = operating_points(scores, nm)
+    dst = ROOT / "results" / "gaps" / (f"{run.name}.membership3" + (".blind" if os.environ.get("TF_BLIND") == "1" else "") + ".json")
     json.dump(res, open(dst, "w"), indent=1, default=float)
     print(json.dumps(res, indent=1, default=float))
 

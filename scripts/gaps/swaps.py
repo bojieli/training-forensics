@@ -45,7 +45,7 @@ CACHE = ROOT / "runs" / "gaps" / "cache"
 
 
 def run_dir(name):
-    for d in ("runs/ctl", "runs/gaps"):
+    for d in ("runs/ctl", "runs/gaps", "runs/fixc"):
         p = ROOT / d / name
         if (p / "truth.json").exists():
             return p
@@ -83,13 +83,18 @@ def setup(name):
     placed = {k: v[0] for k, v in pl.items() if v[0] is not None}
     seeds = blind.find_seed(placed, len(docs), bs, seeds=range(0, 100000))
     seed = seeds[0][0]
+    # seed confidence (added after the freeze, does not change rules A-D): the share of
+    # placed documents whose single-update step the best seed reproduces. A seed outside
+    # the searched range (0..99,999 + a short priority list) returns a spurious best seed
+    # with a handful of chance hits; every downstream flag is then meaningless.
+    seed_hits, seed_of = int(seeds[0][1]), len(placed)
     g = torch.Generator().manual_seed(seed)
     perm = torch.randperm(len(docs), generator=g).numpy()
     inv = np.empty(len(docs), np.int64); inv[perm] = np.arange(len(docs))
     step = {k: int(inv[k] // bs + 1) for k in docs}
     return types.SimpleNamespace(run=run, rec=rec, moved=moved, D=Dd, single=single, Q=Q, lr=lr, curve=curve,
                                  docs=docs, args=args, bs=bs, ulp=ulp, seed=seed, step=step,
-                                 placed=len(placed), moved_how=moved_how)
+                                 placed=len(placed), moved_how=moved_how, seed_hits=seed_hits, seed_of=seed_of)
 
 
 def analyse(name, rules=("A", "B", "C")):
@@ -166,7 +171,10 @@ def analyse(name, rules=("A", "B", "C")):
                       of_which_hold_a_swap=sum(1 for s in extra_steps if s in swapped_steps),
                       steps_holding_a_swap=len(swapped_steps))
     flagged = set(why)
-    return dict(run=name, moved_how=st.moved_how, seed=st.seed, seed_true=st.args["seed"], true=len(swapped), flagged=len(flagged),
+    seed_conf = st.seed_hits / max(1, st.seed_of)
+    return dict(run=name, moved_how=st.moved_how, seed=st.seed, seed_true=st.args["seed"],
+                seed_hits=st.seed_hits, seed_of=st.seed_of, seed_confident=bool(seed_conf >= 0.5),
+                true=len(swapped), flagged=len(flagged),
                 caught=len(flagged & swapped), false_flags=len(flagged - swapped),
                 by_rule={r: dict(caught=sum(1 for k, v in why.items() if v.startswith(r) and k in swapped),
                                  false=sum(1 for k, v in why.items() if v.startswith(r) and k not in swapped))

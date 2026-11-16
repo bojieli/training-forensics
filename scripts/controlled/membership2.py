@@ -39,6 +39,7 @@ Findings on runs/ctl/m01 (results/controlled/m01.membership2.json):
 from __future__ import annotations
 
 import json
+import os
 import pathlib
 import sys
 import time
@@ -66,8 +67,22 @@ def load(run):
     rd = row_diff(W0, W1, torch.float32)
     flat = rd.moved & (rd.flat_frac > 0.9)
     sgn = torch.sign(W1.double() - rd.decay * W0.double()).float()
-    lr = np.array([0.0] + t["lr"])
-    curve = blind.moves_curve(lr, t["args"]["wd"])
+    if os.environ.get("TF_BLIND") == "1":
+        # tech review M2: the step curve from the blind-recovered recipe
+        # (results/controlled/weights_only.json, W0/W1 only), not truth.json
+        import score as _S
+        _wd = pathlib.Path(__file__).resolve().parents[2] / "results" / "controlled"
+        _all = {}
+        for _f in ("weights_only.json", "weights_only_new.json"):
+            if (_wd / _f).exists():
+                _all.update(json.load(open(_wd / _f)))
+        wo = _all[run.name]["read"]
+        lr = _S.hf_lr(dict(kind=wo["kind"], N=wo["N"], warmup=wo["warmup"], peak=wo["peak_snap"],
+                           min_ratio=wo.get("min_ratio", 0.1)), wo["N"])
+        curve = blind.moves_curve(lr, wo.get("wd_snap") or 0.0)
+    else:
+        lr = np.array([0.0] + t["lr"])
+        curve = blind.moves_curve(lr, t["args"]["wd"])
     cum = np.concatenate([[0.0], np.cumsum(lr[1:])])       # cum[s] = sum lr[1..s]
     cfrac = cum / cum[-1]                                   # state before step s: cfrac[s-1]
     return run, t, toks, rd, flat, sgn, curve, cfrac
@@ -190,7 +205,8 @@ def feat(run):
     for s in sorted(by_step):
         M.set(float(cfrac[s - 1])); run_items(by_step[s], s, 1)
     el = time.time() - t0
-    save_grads(run / "membership2_feat.npz", rec, seconds=el)
+    save_grads(run / ("membership2_feat_blind.npz" if os.environ.get("TF_BLIND") == "1" else "membership2_feat.npz"),
+               rec, seconds=el)
     print("feat pairs", len(rec["doc"]), "seconds", round(el, 1))
 
 
