@@ -55,3 +55,7 @@ longer). 10 of the 1,000 s1.1 sequences are longer than 20,000 tokens.
 ## LIMO and LIMO-v2
 
 Audited the same way; reported with the evidence from the run's optimizer state in [PUBLISHED_LIMO.md](PUBLISHED_LIMO.md).
+
+## WebWorld (8B, 14B, 32B)
+
+Audited against the 52 GB WebWorldData set at three sizes: [WEBWORLD.md](WEBWORLD.md).

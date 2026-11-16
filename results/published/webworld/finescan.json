@@ -1,0 +1,884 @@
+{
+ "Qwen/WebWorld-8B": {
+  "scan": [
+   {
+    "cutoff": 16000,
+    "present_bit_identical": 162,
+    "changed_absent": 392
+   },
+   {
+    "cutoff": 16250,
+    "present_bit_identical": 167,
+    "changed_absent": 370
+   },
+   {
+    "cutoff": 16500,
+    "present_bit_identical": 173,
+    "changed_absent": 346
+   },
+   {
+    "cutoff": 16750,
+    "present_bit_identical": 182,
+    "changed_absent": 324
+   },
+   {
+    "cutoff": 17000,
+    "present_bit_identical": 187,
+    "changed_absent": 298
+   },
+   {
+    "cutoff": 17250,
+    "present_bit_identical": 192,
+    "changed_absent": 280
+   },
+   {
+    "cutoff": 17500,
+    "present_bit_identical": 197,
+    "changed_absent": 260
+   },
+   {
+    "cutoff": 17750,
+    "present_bit_identical": 203,
+    "changed_absent": 244
+   },
+   {
+    "cutoff": 18000,
+    "present_bit_identical": 206,
+    "changed_absent": 225
+   },
+   {
+    "cutoff": 18250,
+    "present_bit_identical": 211,
+    "changed_absent": 198
+   },
+   {
+    "cutoff": 18500,
+    "present_bit_identical": 218,
+    "changed_absent": 179
+   },
+   {
+    "cutoff": 18750,
+    "present_bit_identical": 225,
+    "changed_absent": 169
+   },
+   {
+    "cutoff": 19000,
+    "present_bit_identical": 232,
+    "changed_absent": 145
+   },
+   {
+    "cutoff": 19250,
+    "present_bit_identical": 240,
+    "changed_absent": 117
+   },
+   {
+    "cutoff": 19500,
+    "present_bit_identical": 248,
+    "changed_absent": 95
+   },
+   {
+    "cutoff": 19750,
+    "present_bit_identical": 256,
+    "changed_absent": 78
+   },
+   {
+    "cutoff": 20000,
+    "present_bit_identical": 266,
+    "changed_absent": 59
+   },
+   {
+    "cutoff": 20250,
+    "present_bit_identical": 282,
+    "changed_absent": 57
+   },
+   {
+    "cutoff": 20500,
+    "present_bit_identical": 297,
+    "changed_absent": 56
+   },
+   {
+    "cutoff": 20750,
+    "present_bit_identical": 311,
+    "changed_absent": 56
+   },
+   {
+    "cutoff": 21000,
+    "present_bit_identical": 325,
+    "changed_absent": 55
+   },
+   {
+    "cutoff": 21250,
+    "present_bit_identical": 336,
+    "changed_absent": 55
+   },
+   {
+    "cutoff": 21500,
+    "present_bit_identical": 347,
+    "changed_absent": 54
+   },
+   {
+    "cutoff": 21750,
+    "present_bit_identical": 358,
+    "changed_absent": 53
+   },
+   {
+    "cutoff": 22000,
+    "present_bit_identical": 373,
+    "changed_absent": 52
+   },
+   {
+    "cutoff": 22250,
+    "present_bit_identical": 384,
+    "changed_absent": 51
+   },
+   {
+    "cutoff": 22500,
+    "present_bit_identical": 393,
+    "changed_absent": 47
+   },
+   {
+    "cutoff": 22750,
+    "present_bit_identical": 406,
+    "changed_absent": 42
+   },
+   {
+    "cutoff": 23000,
+    "present_bit_identical": 415,
+    "changed_absent": 34
+   },
+   {
+    "cutoff": 23250,
+    "present_bit_identical": 421,
+    "changed_absent": 27
+   },
+   {
+    "cutoff": 23500,
+    "present_bit_identical": 430,
+    "changed_absent": 24
+   },
+   {
+    "cutoff": 23750,
+    "present_bit_identical": 436,
+    "changed_absent": 22
+   },
+   {
+    "cutoff": 24000,
+    "present_bit_identical": 450,
+    "changed_absent": 20
+   },
+   {
+    "cutoff": 24250,
+    "present_bit_identical": 462,
+    "changed_absent": 20
+   },
+   {
+    "cutoff": 24500,
+    "present_bit_identical": 469,
+    "changed_absent": 19
+   },
+   {
+    "cutoff": 24750,
+    "present_bit_identical": 480,
+    "changed_absent": 18
+   },
+   {
+    "cutoff": 25000,
+    "present_bit_identical": 495,
+    "changed_absent": 18
+   },
+   {
+    "cutoff": 25250,
+    "present_bit_identical": 509,
+    "changed_absent": 18
+   },
+   {
+    "cutoff": 25500,
+    "present_bit_identical": 518,
+    "changed_absent": 17
+   },
+   {
+    "cutoff": 25750,
+    "present_bit_identical": 531,
+    "changed_absent": 16
+   },
+   {
+    "cutoff": 26000,
+    "present_bit_identical": 536,
+    "changed_absent": 16
+   },
+   {
+    "cutoff": 26250,
+    "present_bit_identical": 543,
+    "changed_absent": 16
+   },
+   {
+    "cutoff": 26500,
+    "present_bit_identical": 550,
+    "changed_absent": 16
+   },
+   {
+    "cutoff": 26750,
+    "present_bit_identical": 553,
+    "changed_absent": 13
+   },
+   {
+    "cutoff": 27000,
+    "present_bit_identical": 559,
+    "changed_absent": 13
+   },
+   {
+    "cutoff": 27250,
+    "present_bit_identical": 569,
+    "changed_absent": 13
+   },
+   {
+    "cutoff": 27500,
+    "present_bit_identical": 575,
+    "changed_absent": 12
+   },
+   {
+    "cutoff": 27750,
+    "present_bit_identical": 590,
+    "changed_absent": 12
+   },
+   {
+    "cutoff": 28000,
+    "present_bit_identical": 599,
+    "changed_absent": 11
+   },
+   {
+    "cutoff": 28250,
+    "present_bit_identical": 612,
+    "changed_absent": 11
+   },
+   {
+    "cutoff": 28500,
+    "present_bit_identical": 619,
+    "changed_absent": 10
+   },
+   {
+    "cutoff": 28750,
+    "present_bit_identical": 631,
+    "changed_absent": 10
+   },
+   {
+    "cutoff": 29000,
+    "present_bit_identical": 638,
+    "changed_absent": 9
+   },
+   {
+    "cutoff": 29250,
+    "present_bit_identical": 650,
+    "changed_absent": 9
+   },
+   {
+    "cutoff": 29500,
+    "present_bit_identical": 660,
+    "changed_absent": 9
+   },
+   {
+    "cutoff": 29750,
+    "present_bit_identical": 669,
+    "changed_absent": 9
+   },
+   {
+    "cutoff": 30000,
+    "present_bit_identical": 676,
+    "changed_absent": 7
+   }
+  ],
+  "best": {
+   "cutoff": 20000,
+   "present_bit_identical": 266,
+   "changed_absent": 59
+  }
+ },
+ "Qwen/WebWorld-14B": {
+  "scan": [
+   {
+    "cutoff": 16000,
+    "present_bit_identical": 160,
+    "changed_absent": 395
+   },
+   {
+    "cutoff": 16250,
+    "present_bit_identical": 165,
+    "changed_absent": 373
+   },
+   {
+    "cutoff": 16500,
+    "present_bit_identical": 171,
+    "changed_absent": 349
+   },
+   {
+    "cutoff": 16750,
+    "present_bit_identical": 179,
+    "changed_absent": 326
+   },
+   {
+    "cutoff": 17000,
+    "present_bit_identical": 184,
+    "changed_absent": 300
+   },
+   {
+    "cutoff": 17250,
+    "present_bit_identical": 189,
+    "changed_absent": 282
+   },
+   {
+    "cutoff": 17500,
+    "present_bit_identical": 194,
+    "changed_absent": 262
+   },
+   {
+    "cutoff": 17750,
+    "present_bit_identical": 200,
+    "changed_absent": 246
+   },
+   {
+    "cutoff": 18000,
+    "present_bit_identical": 203,
+    "changed_absent": 227
+   },
+   {
+    "cutoff": 18250,
+    "present_bit_identical": 207,
+    "changed_absent": 199
+   },
+   {
+    "cutoff": 18500,
+    "present_bit_identical": 214,
+    "changed_absent": 180
+   },
+   {
+    "cutoff": 18750,
+    "present_bit_identical": 221,
+    "changed_absent": 170
+   },
+   {
+    "cutoff": 19000,
+    "present_bit_identical": 228,
+    "changed_absent": 146
+   },
+   {
+    "cutoff": 19250,
+    "present_bit_identical": 236,
+    "changed_absent": 118
+   },
+   {
+    "cutoff": 19500,
+    "present_bit_identical": 243,
+    "changed_absent": 95
+   },
+   {
+    "cutoff": 19750,
+    "present_bit_identical": 251,
+    "changed_absent": 78
+   },
+   {
+    "cutoff": 20000,
+    "present_bit_identical": 261,
+    "changed_absent": 59
+   },
+   {
+    "cutoff": 20250,
+    "present_bit_identical": 277,
+    "changed_absent": 57
+   },
+   {
+    "cutoff": 20500,
+    "present_bit_identical": 292,
+    "changed_absent": 56
+   },
+   {
+    "cutoff": 20750,
+    "present_bit_identical": 306,
+    "changed_absent": 56
+   },
+   {
+    "cutoff": 21000,
+    "present_bit_identical": 320,
+    "changed_absent": 55
+   },
+   {
+    "cutoff": 21250,
+    "present_bit_identical": 331,
+    "changed_absent": 55
+   },
+   {
+    "cutoff": 21500,
+    "present_bit_identical": 342,
+    "changed_absent": 54
+   },
+   {
+    "cutoff": 21750,
+    "present_bit_identical": 353,
+    "changed_absent": 53
+   },
+   {
+    "cutoff": 22000,
+    "present_bit_identical": 368,
+    "changed_absent": 52
+   },
+   {
+    "cutoff": 22250,
+    "present_bit_identical": 379,
+    "changed_absent": 51
+   },
+   {
+    "cutoff": 22500,
+    "present_bit_identical": 388,
+    "changed_absent": 47
+   },
+   {
+    "cutoff": 22750,
+    "present_bit_identical": 401,
+    "changed_absent": 42
+   },
+   {
+    "cutoff": 23000,
+    "present_bit_identical": 410,
+    "changed_absent": 34
+   },
+   {
+    "cutoff": 23250,
+    "present_bit_identical": 416,
+    "changed_absent": 27
+   },
+   {
+    "cutoff": 23500,
+    "present_bit_identical": 425,
+    "changed_absent": 24
+   },
+   {
+    "cutoff": 23750,
+    "present_bit_identical": 431,
+    "changed_absent": 22
+   },
+   {
+    "cutoff": 24000,
+    "present_bit_identical": 445,
+    "changed_absent": 20
+   },
+   {
+    "cutoff": 24250,
+    "present_bit_identical": 457,
+    "changed_absent": 20
+   },
+   {
+    "cutoff": 24500,
+    "present_bit_identical": 464,
+    "changed_absent": 19
+   },
+   {
+    "cutoff": 24750,
+    "present_bit_identical": 475,
+    "changed_absent": 18
+   },
+   {
+    "cutoff": 25000,
+    "present_bit_identical": 490,
+    "changed_absent": 18
+   },
+   {
+    "cutoff": 25250,
+    "present_bit_identical": 504,
+    "changed_absent": 18
+   },
+   {
+    "cutoff": 25500,
+    "present_bit_identical": 513,
+    "changed_absent": 17
+   },
+   {
+    "cutoff": 25750,
+    "present_bit_identical": 526,
+    "changed_absent": 16
+   },
+   {
+    "cutoff": 26000,
+    "present_bit_identical": 531,
+    "changed_absent": 16
+   },
+   {
+    "cutoff": 26250,
+    "present_bit_identical": 538,
+    "changed_absent": 16
+   },
+   {
+    "cutoff": 26500,
+    "present_bit_identical": 545,
+    "changed_absent": 16
+   },
+   {
+    "cutoff": 26750,
+    "present_bit_identical": 548,
+    "changed_absent": 13
+   },
+   {
+    "cutoff": 27000,
+    "present_bit_identical": 554,
+    "changed_absent": 13
+   },
+   {
+    "cutoff": 27250,
+    "present_bit_identical": 564,
+    "changed_absent": 13
+   },
+   {
+    "cutoff": 27500,
+    "present_bit_identical": 570,
+    "changed_absent": 12
+   },
+   {
+    "cutoff": 27750,
+    "present_bit_identical": 585,
+    "changed_absent": 12
+   },
+   {
+    "cutoff": 28000,
+    "present_bit_identical": 594,
+    "changed_absent": 11
+   },
+   {
+    "cutoff": 28250,
+    "present_bit_identical": 607,
+    "changed_absent": 11
+   },
+   {
+    "cutoff": 28500,
+    "present_bit_identical": 614,
+    "changed_absent": 10
+   },
+   {
+    "cutoff": 28750,
+    "present_bit_identical": 626,
+    "changed_absent": 10
+   },
+   {
+    "cutoff": 29000,
+    "present_bit_identical": 633,
+    "changed_absent": 9
+   },
+   {
+    "cutoff": 29250,
+    "present_bit_identical": 645,
+    "changed_absent": 9
+   },
+   {
+    "cutoff": 29500,
+    "present_bit_identical": 655,
+    "changed_absent": 9
+   },
+   {
+    "cutoff": 29750,
+    "present_bit_identical": 664,
+    "changed_absent": 9
+   },
+   {
+    "cutoff": 30000,
+    "present_bit_identical": 671,
+    "changed_absent": 7
+   }
+  ],
+  "best": {
+   "cutoff": 20000,
+   "present_bit_identical": 261,
+   "changed_absent": 59
+  }
+ },
+ "Qwen/WebWorld-32B": {
+  "scan": [
+   {
+    "cutoff": 16000,
+    "present_bit_identical": 164,
+    "changed_absent": 399
+   },
+   {
+    "cutoff": 16250,
+    "present_bit_identical": 169,
+    "changed_absent": 377
+   },
+   {
+    "cutoff": 16500,
+    "present_bit_identical": 175,
+    "changed_absent": 353
+   },
+   {
+    "cutoff": 16750,
+    "present_bit_identical": 184,
+    "changed_absent": 331
+   },
+   {
+    "cutoff": 17000,
+    "present_bit_identical": 189,
+    "changed_absent": 305
+   },
+   {
+    "cutoff": 17250,
+    "present_bit_identical": 194,
+    "changed_absent": 287
+   },
+   {
+    "cutoff": 17500,
+    "present_bit_identical": 199,
+    "changed_absent": 267
+   },
+   {
+    "cutoff": 17750,
+    "present_bit_identical": 205,
+    "changed_absent": 251
+   },
+   {
+    "cutoff": 18000,
+    "present_bit_identical": 208,
+    "changed_absent": 232
+   },
+   {
+    "cutoff": 18250,
+    "present_bit_identical": 212,
+    "changed_absent": 204
+   },
+   {
+    "cutoff": 18500,
+    "present_bit_identical": 219,
+    "changed_absent": 185
+   },
+   {
+    "cutoff": 18750,
+    "present_bit_identical": 226,
+    "changed_absent": 175
+   },
+   {
+    "cutoff": 19000,
+    "present_bit_identical": 233,
+    "changed_absent": 151
+   },
+   {
+    "cutoff": 19250,
+    "present_bit_identical": 241,
+    "changed_absent": 123
+   },
+   {
+    "cutoff": 19500,
+    "present_bit_identical": 248,
+    "changed_absent": 100
+   },
+   {
+    "cutoff": 19750,
+    "present_bit_identical": 256,
+    "changed_absent": 83
+   },
+   {
+    "cutoff": 20000,
+    "present_bit_identical": 266,
+    "changed_absent": 64
+   },
+   {
+    "cutoff": 20250,
+    "present_bit_identical": 282,
+    "changed_absent": 62
+   },
+   {
+    "cutoff": 20500,
+    "present_bit_identical": 297,
+    "changed_absent": 61
+   },
+   {
+    "cutoff": 20750,
+    "present_bit_identical": 311,
+    "changed_absent": 61
+   },
+   {
+    "cutoff": 21000,
+    "present_bit_identical": 325,
+    "changed_absent": 60
+   },
+   {
+    "cutoff": 21250,
+    "present_bit_identical": 336,
+    "changed_absent": 60
+   },
+   {
+    "cutoff": 21500,
+    "present_bit_identical": 346,
+    "changed_absent": 58
+   },
+   {
+    "cutoff": 21750,
+    "present_bit_identical": 357,
+    "changed_absent": 57
+   },
+   {
+    "cutoff": 22000,
+    "present_bit_identical": 372,
+    "changed_absent": 56
+   },
+   {
+    "cutoff": 22250,
+    "present_bit_identical": 383,
+    "changed_absent": 55
+   },
+   {
+    "cutoff": 22500,
+    "present_bit_identical": 392,
+    "changed_absent": 51
+   },
+   {
+    "cutoff": 22750,
+    "present_bit_identical": 405,
+    "changed_absent": 46
+   },
+   {
+    "cutoff": 23000,
+    "present_bit_identical": 414,
+    "changed_absent": 38
+   },
+   {
+    "cutoff": 23250,
+    "present_bit_identical": 420,
+    "changed_absent": 31
+   },
+   {
+    "cutoff": 23500,
+    "present_bit_identical": 429,
+    "changed_absent": 28
+   },
+   {
+    "cutoff": 23750,
+    "present_bit_identical": 435,
+    "changed_absent": 26
+   },
+   {
+    "cutoff": 24000,
+    "present_bit_identical": 449,
+    "changed_absent": 24
+   },
+   {
+    "cutoff": 24250,
+    "present_bit_identical": 461,
+    "changed_absent": 24
+   },
+   {
+    "cutoff": 24500,
+    "present_bit_identical": 468,
+    "changed_absent": 23
+   },
+   {
+    "cutoff": 24750,
+    "present_bit_identical": 479,
+    "changed_absent": 22
+   },
+   {
+    "cutoff": 25000,
+    "present_bit_identical": 494,
+    "changed_absent": 22
+   },
+   {
+    "cutoff": 25250,
+    "present_bit_identical": 507,
+    "changed_absent": 21
+   },
+   {
+    "cutoff": 25500,
+    "present_bit_identical": 516,
+    "changed_absent": 20
+   },
+   {
+    "cutoff": 25750,
+    "present_bit_identical": 529,
+    "changed_absent": 19
+   },
+   {
+    "cutoff": 26000,
+    "present_bit_identical": 534,
+    "changed_absent": 19
+   },
+   {
+    "cutoff": 26250,
+    "present_bit_identical": 541,
+    "changed_absent": 19
+   },
+   {
+    "cutoff": 26500,
+    "present_bit_identical": 548,
+    "changed_absent": 19
+   },
+   {
+    "cutoff": 26750,
+    "present_bit_identical": 551,
+    "changed_absent": 16
+   },
+   {
+    "cutoff": 27000,
+    "present_bit_identical": 557,
+    "changed_absent": 16
+   },
+   {
+    "cutoff": 27250,
+    "present_bit_identical": 567,
+    "changed_absent": 16
+   },
+   {
+    "cutoff": 27500,
+    "present_bit_identical": 573,
+    "changed_absent": 15
+   },
+   {
+    "cutoff": 27750,
+    "present_bit_identical": 588,
+    "changed_absent": 15
+   },
+   {
+    "cutoff": 28000,
+    "present_bit_identical": 597,
+    "changed_absent": 14
+   },
+   {
+    "cutoff": 28250,
+    "present_bit_identical": 610,
+    "changed_absent": 14
+   },
+   {
+    "cutoff": 28500,
+    "present_bit_identical": 617,
+    "changed_absent": 13
+   },
+   {
+    "cutoff": 28750,
+    "present_bit_identical": 629,
+    "changed_absent": 13
+   },
+   {
+    "cutoff": 29000,
+    "present_bit_identical": 636,
+    "changed_absent": 12
+   },
+   {
+    "cutoff": 29250,
+    "present_bit_identical": 648,
+    "changed_absent": 12
+   },
+   {
+    "cutoff": 29500,
+    "present_bit_identical": 658,
+    "changed_absent": 12
+   },
+   {
+    "cutoff": 29750,
+    "present_bit_identical": 667,
+    "changed_absent": 12
+   },
+   {
+    "cutoff": 30000,
+    "present_bit_identical": 674,
+    "changed_absent": 10
+   }
+  ],
+  "best": {
+   "cutoff": 20000,
+   "present_bit_identical": 266,
+   "changed_absent": 64
+  }
+ }
+}

@@ -97,6 +97,9 @@ def main(extra_models=()):
     L += ["", "## LIMO and LIMO-v2", "",
           "Audited the same way; reported with the evidence from the run's optimizer state in "
           "[PUBLISHED_LIMO.md](PUBLISHED_LIMO.md)."]
+    if (OUT / "WEBWORLD.md").exists():
+        L += ["", "## WebWorld (8B, 14B, 32B)", "",
+              "Audited against the 52 GB WebWorldData set at three sizes: [WEBWORLD.md](WEBWORLD.md)."]
     (OUT / "PUBLISHED.md").write_text("\n".join(L) + "\n")
     return LT
 

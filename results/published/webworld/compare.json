@@ -1,0 +1,2505 @@
+{
+ "data": "data_webworld.npz",
+ "vocab": 151669,
+ "models": {
+  "Qwen/WebWorld-8B": {
+   "parent": "Qwen/Qwen3-8B",
+   "rows": 151936,
+   "compared": 151669,
+   "bit_identical": 10127,
+   "barely": 68,
+   "updated": 141474,
+   "special_updated": [
+    "<|im_start|>",
+    "<|im_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<think>",
+    "</think>"
+   ],
+   "special_bit_identical": [
+    "<|endoftext|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<tool_response>",
+    "</tool_response>"
+   ],
+   "cutoff_scan": [
+    {
+     "cutoff": 4096,
+     "present": 137959,
+     "present_changed": 137909,
+     "present_bit_identical": 50,
+     "changed_absent": 3627,
+     "changed_absent_updated": 3603
+    },
+    {
+     "cutoff": 8192,
+     "present": 139927,
+     "present_changed": 139861,
+     "present_bit_identical": 66,
+     "changed_absent": 1675,
+     "changed_absent_updated": 1663
+    },
+    {
+     "cutoff": 16384,
+     "present": 141351,
+     "present_changed": 141181,
+     "present_bit_identical": 170,
+     "changed_absent": 355,
+     "changed_absent_updated": 351
+    },
+    {
+     "cutoff": 20000,
+     "present": 141743,
+     "present_changed": 141477,
+     "present_bit_identical": 266,
+     "changed_absent": 59,
+     "changed_absent_updated": 58
+    },
+    {
+     "cutoff": 24576,
+     "present": 141990,
+     "present_changed": 141517,
+     "present_bit_identical": 473,
+     "changed_absent": 19,
+     "changed_absent_updated": 18
+    },
+    {
+     "cutoff": 30000,
+     "present": 142205,
+     "present_changed": 141529,
+     "present_bit_identical": 676,
+     "changed_absent": 7,
+     "changed_absent_updated": 6
+    },
+    {
+     "cutoff": 32768,
+     "present": 142271,
+     "present_changed": 141531,
+     "present_bit_identical": 740,
+     "changed_absent": 5,
+     "changed_absent_updated": 4
+    },
+    {
+     "cutoff": 40960,
+     "present": 142444,
+     "present_changed": 141534,
+     "present_bit_identical": 910,
+     "changed_absent": 2,
+     "changed_absent_updated": 2
+    },
+    {
+     "cutoff": 65536,
+     "present": 142647,
+     "present_changed": 141534,
+     "present_bit_identical": 1113,
+     "changed_absent": 2,
+     "changed_absent_updated": 2
+    },
+    {
+     "cutoff": 131072,
+     "present": 142768,
+     "present_changed": 141536,
+     "present_bit_identical": 1232,
+     "changed_absent": 0,
+     "changed_absent_updated": 0
+    },
+    {
+     "cutoff": 1000000000,
+     "present": 142952,
+     "present_changed": 141536,
+     "present_bit_identical": 1416,
+     "changed_absent": 0,
+     "changed_absent_updated": 0
+    }
+   ],
+   "best_cutoff": {
+    "cutoff": 20000,
+    "present": 141743,
+    "present_changed": 141477,
+    "present_bit_identical": 266,
+    "changed_absent": 59,
+    "changed_absent_updated": 58
+   },
+   "bracket": {
+    "max_earliest_pos_of_changed": 67437,
+    "min_earliest_pos_of_bit_identical": 148,
+    "bit_identical_in_data_earliest_pos_quantiles": {
+     "0": 148,
+     "0.1": 14665,
+     "0.5": 31299,
+     "0.9": 163583
+    }
+   },
+   "changed_absent_examples": [
+    [
+     149758,
+     "\u00eb\u00b5\u012b"
+    ],
+    [
+     147557,
+     "\u00ec\u0141\u012e"
+    ],
+    [
+     141761,
+     "\u0120\u00eb\u00b0\u013a\u00eb\u0135\u013e"
+    ],
+    [
+     147702,
+     "\u00eb\u00a1\u00b8"
+    ],
+    [
+     147592,
+     "\u00ec\u0134\u00b8"
+    ],
+    [
+     148655,
+     "\u00ec\u00a8\u00a9"
+    ],
+    [
+     147300,
+     "\u00eb\u00b4\u00ac"
+    ],
+    [
+     143406,
+     "\u00d8\u00a7\u00d8\u00b3\u00d8\u00aa\u00d8\u00b9\u00d9\u0127\u00d8\u00a7\u00d9\u0126"
+    ],
+    [
+     143548,
+     "\u0120m\u00c3\u00bckem"
+    ],
+    [
+     146432,
+     "\u00ed\u0139\u00b9"
+    ],
+    [
+     149500,
+     "\u00d1\u0142"
+    ],
+    [
+     149597,
+     "\u00e1\u00b5\u0123"
+    ],
+    [
+     82524,
+     ".SYSTEM"
+    ],
+    [
+     151599,
+     "\u00e2\u013f\u00ab"
+    ],
+    [
+     150464,
+     "\u00e1\u0122\u00a7"
+    ],
+    [
+     146715,
+     "\u00d1\u00ac"
+    ],
+    [
+     145540,
+     "\u00ec\u013b\u0123"
+    ],
+    [
+     151420,
+     "\u00d1\u00a8"
+    ],
+    [
+     123373,
+     "\u00e9\u00b2\u0139"
+    ],
+    [
+     115931,
+     "\u00e9\u0129\u012f\u00e4\u00b8\u0143\u00e4\u00b9\u012d"
+    ],
+    [
+     147162,
+     "\u00d1\u00b4"
+    ],
+    [
+     35970,
+     "=\"'+"
+    ],
+    [
+     95519,
+     "\u0120{\\\u010a"
+    ],
+    [
+     98962,
+     "\u0120iov"
+    ],
+    [
+     122958,
+     "\u00e8\u0134\u0129"
+    ],
+    [
+     145978,
+     "\u00ea\u00b0\u0142"
+    ],
+    [
+     143837,
+     "\u0120v\u00c3\u00bcc"
+    ],
+    [
+     131607,
+     "\u00d7\u00a2\u00d7\u00a5"
+    ],
+    [
+     57769,
+     "_ENDIAN"
+    ],
+    [
+     53547,
+     "\u0120Sesso"
+    ]
+   ],
+   "changed_absent_in_plain_joins": 0,
+   "changed_absent_change_frac_median": 0.94775390625,
+   "present_bit_identical_examples": [
+    [
+     151254,
+     "\u00f0\u0132\u0130",
+     984,
+     1879
+    ],
+    [
+     150126,
+     "\u00e1\u013c\u00be",
+     624,
+     19242
+    ],
+    [
+     69687,
+     "\u00e3\u0127",
+     333,
+     14295
+    ],
+    [
+     6674,
+     "wargs",
+     203,
+     14902
+    ],
+    [
+     60867,
+     "LayoutParams",
+     172,
+     11368
+    ],
+    [
+     144932,
+     "\u00eb\u013e\u00af",
+     130,
+     18645
+    ],
+    [
+     150363,
+     "\u00cf\u00bf",
+     120,
+     13050
+    ],
+    [
+     146820,
+     "\u00da\u013d",
+     120,
+     10467
+    ],
+    [
+     77852,
+     "_TOOLTIP",
+     103,
+     19031
+    ],
+    [
+     150348,
+     "\u00ca\u00a8",
+     102,
+     17127
+    ],
+    [
+     147135,
+     "\u00e3\u0127\u0135",
+     98,
+     19739
+    ],
+    [
+     150374,
+     "\u00d3\u0141",
+     91,
+     16534
+    ],
+    [
+     150387,
+     "\u00da\u0124",
+     90,
+     11563
+    ],
+    [
+     146872,
+     "\u00d1\u00ab",
+     84,
+     11029
+    ],
+    [
+     150390,
+     "\u00da\u0139",
+     84,
+     16074
+    ],
+    [
+     151255,
+     "\u00f0\u0132\u0130\u00b9",
+     83,
+     19686
+    ],
+    [
+     148852,
+     "\u00df\u012f",
+     78,
+     11069
+    ],
+    [
+     71945,
+     "_REASON",
+     63,
+     16451
+    ],
+    [
+     147075,
+     "\u00d1\u00bb",
+     60,
+     11535
+    ],
+    [
+     149474,
+     "\u00c6\u0122",
+     60,
+     16557
+    ],
+    [
+     70239,
+     "_PHASE",
+     56,
+     7653
+    ],
+    [
+     148047,
+     "\u00df\u00a8",
+     54,
+     11149
+    ],
+    [
+     146670,
+     "\u00d2\u0131",
+     54,
+     13623
+    ],
+    [
+     41513,
+     "_stride",
+     53,
+     16618
+    ],
+    [
+     84058,
+     ".sigmoid",
+     53,
+     1187
+    ],
+    [
+     140840,
+     "\u00d8\u00a3\u00d8\u00b5\u00d9\u012a\u00d9\u0126",
+     50,
+     18417
+    ],
+    [
+     123487,
+     "\u00e6\u00bd\u0138",
+     50,
+     18831
+    ],
+    [
+     4885,
+     ".TabIndex",
+     50,
+     17312
+    ],
+    [
+     46505,
+     "(KERN",
+     45,
+     10194
+    ],
+    [
+     98085,
+     ".setPrototypeOf",
+     45,
+     13888
+    ]
+   ],
+   "present_bit_identical_count_max": 984,
+   "in_data_change_frac_median": 0.949462890625,
+   "drop_scan": [
+    {
+     "max_len": 8192,
+     "cutoff": 4096,
+     "present": 131671,
+     "present_bit_identical": 33,
+     "changed_absent": 9898
+    },
+    {
+     "max_len": 8192,
+     "cutoff": 8192,
+     "present": 132577,
+     "present_bit_identical": 34,
+     "changed_absent": 8993
+    },
+    {
+     "max_len": 8192,
+     "cutoff": 1000000000,
+     "present": 132577,
+     "present_bit_identical": 34,
+     "changed_absent": 8993
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 4096,
+     "present": 135267,
+     "present_bit_identical": 33,
+     "changed_absent": 6302
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 8192,
+     "present": 136909,
+     "present_bit_identical": 34,
+     "changed_absent": 4661
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 16384,
+     "present": 137602,
+     "present_bit_identical": 35,
+     "changed_absent": 3969
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 1000000000,
+     "present": 137602,
+     "present_bit_identical": 35,
+     "changed_absent": 3969
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 4096,
+     "present": 135932,
+     "present_bit_identical": 33,
+     "changed_absent": 5637
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 8192,
+     "present": 137639,
+     "present_bit_identical": 36,
+     "changed_absent": 3933
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 16384,
+     "present": 138592,
+     "present_bit_identical": 41,
+     "changed_absent": 2985
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 20000,
+     "present": 138642,
+     "present_bit_identical": 44,
+     "changed_absent": 2938
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 1000000000,
+     "present": 138642,
+     "present_bit_identical": 44,
+     "changed_absent": 2938
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 4096,
+     "present": 136509,
+     "present_bit_identical": 33,
+     "changed_absent": 5060
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 8192,
+     "present": 138280,
+     "present_bit_identical": 36,
+     "changed_absent": 3292
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 16384,
+     "present": 139357,
+     "present_bit_identical": 41,
+     "changed_absent": 2220
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 20000,
+     "present": 139498,
+     "present_bit_identical": 44,
+     "changed_absent": 2082
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 24576,
+     "present": 139546,
+     "present_bit_identical": 61,
+     "changed_absent": 2051
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 1000000000,
+     "present": 139546,
+     "present_bit_identical": 61,
+     "changed_absent": 2051
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 4096,
+     "present": 136882,
+     "present_bit_identical": 33,
+     "changed_absent": 4687
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 8192,
+     "present": 138734,
+     "present_bit_identical": 36,
+     "changed_absent": 2838
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 16384,
+     "present": 139997,
+     "present_bit_identical": 48,
+     "changed_absent": 1587
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 20000,
+     "present": 140198,
+     "present_bit_identical": 61,
+     "changed_absent": 1399
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 24576,
+     "present": 140326,
+     "present_bit_identical": 120,
+     "changed_absent": 1330
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 30000,
+     "present": 140371,
+     "present_bit_identical": 140,
+     "changed_absent": 1305
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 1000000000,
+     "present": 140371,
+     "present_bit_identical": 140,
+     "changed_absent": 1305
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 4096,
+     "present": 137043,
+     "present_bit_identical": 33,
+     "changed_absent": 4526
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 8192,
+     "present": 138905,
+     "present_bit_identical": 36,
+     "changed_absent": 2667
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 16384,
+     "present": 140186,
+     "present_bit_identical": 48,
+     "changed_absent": 1398
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 20000,
+     "present": 140416,
+     "present_bit_identical": 65,
+     "changed_absent": 1185
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 24576,
+     "present": 140571,
+     "present_bit_identical": 146,
+     "changed_absent": 1111
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 30000,
+     "present": 140645,
+     "present_bit_identical": 186,
+     "changed_absent": 1077
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 32768,
+     "present": 140650,
+     "present_bit_identical": 188,
+     "changed_absent": 1074
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 1000000000,
+     "present": 140650,
+     "present_bit_identical": 188,
+     "changed_absent": 1074
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 4096,
+     "present": 137427,
+     "present_bit_identical": 33,
+     "changed_absent": 4142
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 8192,
+     "present": 139310,
+     "present_bit_identical": 37,
+     "changed_absent": 2263
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 16384,
+     "present": 140672,
+     "present_bit_identical": 67,
+     "changed_absent": 931
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 20000,
+     "present": 141013,
+     "present_bit_identical": 94,
+     "changed_absent": 617
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 24576,
+     "present": 141220,
+     "present_bit_identical": 227,
+     "changed_absent": 543
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 30000,
+     "present": 141346,
+     "present_bit_identical": 325,
+     "changed_absent": 515
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 32768,
+     "present": 141378,
+     "present_bit_identical": 347,
+     "changed_absent": 505
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 40960,
+     "present": 141411,
+     "present_bit_identical": 371,
+     "changed_absent": 496
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 1000000000,
+     "present": 141411,
+     "present_bit_identical": 371,
+     "changed_absent": 496
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 4096,
+     "present": 137801,
+     "present_bit_identical": 33,
+     "changed_absent": 3768
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 8192,
+     "present": 139760,
+     "present_bit_identical": 38,
+     "changed_absent": 1814
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 16384,
+     "present": 141129,
+     "present_bit_identical": 95,
+     "changed_absent": 502
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 20000,
+     "present": 141465,
+     "present_bit_identical": 139,
+     "changed_absent": 210
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 24576,
+     "present": 141701,
+     "present_bit_identical": 323,
+     "changed_absent": 158
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 30000,
+     "present": 141878,
+     "present_bit_identical": 482,
+     "changed_absent": 140
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 32768,
+     "present": 141923,
+     "present_bit_identical": 523,
+     "changed_absent": 136
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 40960,
+     "present": 142021,
+     "present_bit_identical": 612,
+     "changed_absent": 127
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 65536,
+     "present": 142081,
+     "present_bit_identical": 669,
+     "changed_absent": 124
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 1000000000,
+     "present": 142081,
+     "present_bit_identical": 669,
+     "changed_absent": 124
+    }
+   ],
+   "best_drop": {
+    "max_len": 65536,
+    "cutoff": 20000,
+    "present": 141465,
+    "present_bit_identical": 139,
+    "changed_absent": 210
+   },
+   "wrong_data_control": {
+    "dataset": "simplescaling/s1K-1.1 (not WebWorld's data)",
+    "present": 27201,
+    "present_bit_identical": 29,
+    "changed_absent": 114364
+   }
+  },
+  "Qwen/WebWorld-14B": {
+   "parent": "Qwen/Qwen3-14B",
+   "rows": 151936,
+   "compared": 151669,
+   "bit_identical": 10122,
+   "barely": 82,
+   "updated": 141465,
+   "special_updated": [
+    "<|im_start|>",
+    "<|im_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<think>",
+    "</think>"
+   ],
+   "special_bit_identical": [
+    "<|endoftext|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<tool_response>",
+    "</tool_response>"
+   ],
+   "cutoff_scan": [
+    {
+     "cutoff": 4096,
+     "present": 137959,
+     "present_changed": 137910,
+     "present_bit_identical": 49,
+     "changed_absent": 3631,
+     "changed_absent_updated": 3601
+    },
+    {
+     "cutoff": 8192,
+     "present": 139927,
+     "present_changed": 139862,
+     "present_bit_identical": 65,
+     "changed_absent": 1679,
+     "changed_absent_updated": 1661
+    },
+    {
+     "cutoff": 16384,
+     "present": 141351,
+     "present_changed": 141183,
+     "present_bit_identical": 168,
+     "changed_absent": 358,
+     "changed_absent_updated": 352
+    },
+    {
+     "cutoff": 20000,
+     "present": 141743,
+     "present_changed": 141482,
+     "present_bit_identical": 261,
+     "changed_absent": 59,
+     "changed_absent_updated": 58
+    },
+    {
+     "cutoff": 24576,
+     "present": 141990,
+     "present_changed": 141522,
+     "present_bit_identical": 468,
+     "changed_absent": 19,
+     "changed_absent_updated": 18
+    },
+    {
+     "cutoff": 30000,
+     "present": 142205,
+     "present_changed": 141534,
+     "present_bit_identical": 671,
+     "changed_absent": 7,
+     "changed_absent_updated": 6
+    },
+    {
+     "cutoff": 32768,
+     "present": 142271,
+     "present_changed": 141536,
+     "present_bit_identical": 735,
+     "changed_absent": 5,
+     "changed_absent_updated": 4
+    },
+    {
+     "cutoff": 40960,
+     "present": 142444,
+     "present_changed": 141539,
+     "present_bit_identical": 905,
+     "changed_absent": 2,
+     "changed_absent_updated": 2
+    },
+    {
+     "cutoff": 65536,
+     "present": 142647,
+     "present_changed": 141539,
+     "present_bit_identical": 1108,
+     "changed_absent": 2,
+     "changed_absent_updated": 2
+    },
+    {
+     "cutoff": 131072,
+     "present": 142768,
+     "present_changed": 141541,
+     "present_bit_identical": 1227,
+     "changed_absent": 0,
+     "changed_absent_updated": 0
+    },
+    {
+     "cutoff": 1000000000,
+     "present": 142952,
+     "present_changed": 141541,
+     "present_bit_identical": 1411,
+     "changed_absent": 0,
+     "changed_absent_updated": 0
+    }
+   ],
+   "best_cutoff": {
+    "cutoff": 20000,
+    "present": 141743,
+    "present_changed": 141482,
+    "present_bit_identical": 261,
+    "changed_absent": 59,
+    "changed_absent_updated": 58
+   },
+   "bracket": {
+    "max_earliest_pos_of_changed": 67437,
+    "min_earliest_pos_of_bit_identical": 148,
+    "bit_identical_in_data_earliest_pos_quantiles": {
+     "0": 148,
+     "0.1": 14902,
+     "0.5": 31414,
+     "0.9": 163865
+    }
+   },
+   "changed_absent_examples": [
+    [
+     149758,
+     "\u00eb\u00b5\u012b"
+    ],
+    [
+     141761,
+     "\u0120\u00eb\u00b0\u013a\u00eb\u0135\u013e"
+    ],
+    [
+     147592,
+     "\u00ec\u0134\u00b8"
+    ],
+    [
+     147300,
+     "\u00eb\u00b4\u00ac"
+    ],
+    [
+     147557,
+     "\u00ec\u0141\u012e"
+    ],
+    [
+     148655,
+     "\u00ec\u00a8\u00a9"
+    ],
+    [
+     147702,
+     "\u00eb\u00a1\u00b8"
+    ],
+    [
+     150464,
+     "\u00e1\u0122\u00a7"
+    ],
+    [
+     146432,
+     "\u00ed\u0139\u00b9"
+    ],
+    [
+     143548,
+     "\u0120m\u00c3\u00bckem"
+    ],
+    [
+     149597,
+     "\u00e1\u00b5\u0123"
+    ],
+    [
+     143406,
+     "\u00d8\u00a7\u00d8\u00b3\u00d8\u00aa\u00d8\u00b9\u00d9\u0127\u00d8\u00a7\u00d9\u0126"
+    ],
+    [
+     35970,
+     "=\"'+"
+    ],
+    [
+     149500,
+     "\u00d1\u0142"
+    ],
+    [
+     115931,
+     "\u00e9\u0129\u012f\u00e4\u00b8\u0143\u00e4\u00b9\u012d"
+    ],
+    [
+     146715,
+     "\u00d1\u00ac"
+    ],
+    [
+     82524,
+     ".SYSTEM"
+    ],
+    [
+     145540,
+     "\u00ec\u013b\u0123"
+    ],
+    [
+     151599,
+     "\u00e2\u013f\u00ab"
+    ],
+    [
+     142382,
+     "\u00d7\u0140\u00d7\u00a1\u00d7\u0140\u00d7\u013d\u00d7\u013b"
+    ],
+    [
+     122958,
+     "\u00e8\u0134\u0129"
+    ],
+    [
+     147162,
+     "\u00d1\u00b4"
+    ],
+    [
+     151420,
+     "\u00d1\u00a8"
+    ],
+    [
+     131607,
+     "\u00d7\u00a2\u00d7\u00a5"
+    ],
+    [
+     143837,
+     "\u0120v\u00c3\u00bcc"
+    ],
+    [
+     123373,
+     "\u00e9\u00b2\u0139"
+    ],
+    [
+     147091,
+     "\u00d1\u00b2"
+    ],
+    [
+     68174,
+     "(ERR"
+    ],
+    [
+     53547,
+     "\u0120Sesso"
+    ],
+    [
+     134236,
+     "\u0120\u00d0\u00be\u00d0\u00ba\u00d0\u00b0\u00d0\u00b7\u00d0\u00b0"
+    ]
+   ],
+   "changed_absent_in_plain_joins": 0,
+   "changed_absent_change_frac_median": 0.935351550579071,
+   "present_bit_identical_examples": [
+    [
+     151254,
+     "\u00f0\u0132\u0130",
+     984,
+     1879
+    ],
+    [
+     150126,
+     "\u00e1\u013c\u00be",
+     624,
+     19242
+    ],
+    [
+     69687,
+     "\u00e3\u0127",
+     333,
+     14295
+    ],
+    [
+     6674,
+     "wargs",
+     203,
+     14902
+    ],
+    [
+     60867,
+     "LayoutParams",
+     172,
+     11368
+    ],
+    [
+     144932,
+     "\u00eb\u013e\u00af",
+     130,
+     18645
+    ],
+    [
+     150363,
+     "\u00cf\u00bf",
+     120,
+     13050
+    ],
+    [
+     146820,
+     "\u00da\u013d",
+     120,
+     10467
+    ],
+    [
+     77852,
+     "_TOOLTIP",
+     103,
+     19031
+    ],
+    [
+     150348,
+     "\u00ca\u00a8",
+     102,
+     17127
+    ],
+    [
+     147135,
+     "\u00e3\u0127\u0135",
+     98,
+     19739
+    ],
+    [
+     150374,
+     "\u00d3\u0141",
+     91,
+     16534
+    ],
+    [
+     150387,
+     "\u00da\u0124",
+     90,
+     11563
+    ],
+    [
+     146872,
+     "\u00d1\u00ab",
+     84,
+     11029
+    ],
+    [
+     150390,
+     "\u00da\u0139",
+     84,
+     16074
+    ],
+    [
+     151255,
+     "\u00f0\u0132\u0130\u00b9",
+     83,
+     19686
+    ],
+    [
+     148852,
+     "\u00df\u012f",
+     78,
+     11069
+    ],
+    [
+     71945,
+     "_REASON",
+     63,
+     16451
+    ],
+    [
+     147075,
+     "\u00d1\u00bb",
+     60,
+     11535
+    ],
+    [
+     149474,
+     "\u00c6\u0122",
+     60,
+     16557
+    ],
+    [
+     70239,
+     "_PHASE",
+     56,
+     7653
+    ],
+    [
+     148047,
+     "\u00df\u00a8",
+     54,
+     11149
+    ],
+    [
+     146670,
+     "\u00d2\u0131",
+     54,
+     13623
+    ],
+    [
+     41513,
+     "_stride",
+     53,
+     16618
+    ],
+    [
+     84058,
+     ".sigmoid",
+     53,
+     1187
+    ],
+    [
+     4885,
+     ".TabIndex",
+     50,
+     17312
+    ],
+    [
+     140840,
+     "\u00d8\u00a3\u00d8\u00b5\u00d9\u012a\u00d9\u0126",
+     50,
+     18417
+    ],
+    [
+     123487,
+     "\u00e6\u00bd\u0138",
+     50,
+     18831
+    ],
+    [
+     98085,
+     ".setPrototypeOf",
+     45,
+     13888
+    ],
+    [
+     46505,
+     "(KERN",
+     45,
+     10194
+    ]
+   ],
+   "present_bit_identical_count_max": 984,
+   "in_data_change_frac_median": 0.9517577886581421,
+   "drop_scan": [
+    {
+     "max_len": 8192,
+     "cutoff": 4096,
+     "present": 131671,
+     "present_bit_identical": 32,
+     "changed_absent": 9902
+    },
+    {
+     "max_len": 8192,
+     "cutoff": 8192,
+     "present": 132577,
+     "present_bit_identical": 33,
+     "changed_absent": 8997
+    },
+    {
+     "max_len": 8192,
+     "cutoff": 1000000000,
+     "present": 132577,
+     "present_bit_identical": 33,
+     "changed_absent": 8997
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 4096,
+     "present": 135267,
+     "present_bit_identical": 32,
+     "changed_absent": 6306
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 8192,
+     "present": 136909,
+     "present_bit_identical": 33,
+     "changed_absent": 4665
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 16384,
+     "present": 137602,
+     "present_bit_identical": 34,
+     "changed_absent": 3973
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 1000000000,
+     "present": 137602,
+     "present_bit_identical": 34,
+     "changed_absent": 3973
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 4096,
+     "present": 135932,
+     "present_bit_identical": 32,
+     "changed_absent": 5641
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 8192,
+     "present": 137639,
+     "present_bit_identical": 35,
+     "changed_absent": 3937
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 16384,
+     "present": 138592,
+     "present_bit_identical": 40,
+     "changed_absent": 2989
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 20000,
+     "present": 138642,
+     "present_bit_identical": 43,
+     "changed_absent": 2942
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 1000000000,
+     "present": 138642,
+     "present_bit_identical": 43,
+     "changed_absent": 2942
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 4096,
+     "present": 136509,
+     "present_bit_identical": 32,
+     "changed_absent": 5064
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 8192,
+     "present": 138280,
+     "present_bit_identical": 35,
+     "changed_absent": 3296
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 16384,
+     "present": 139357,
+     "present_bit_identical": 40,
+     "changed_absent": 2224
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 20000,
+     "present": 139498,
+     "present_bit_identical": 43,
+     "changed_absent": 2086
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 24576,
+     "present": 139546,
+     "present_bit_identical": 60,
+     "changed_absent": 2055
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 1000000000,
+     "present": 139546,
+     "present_bit_identical": 60,
+     "changed_absent": 2055
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 4096,
+     "present": 136882,
+     "present_bit_identical": 32,
+     "changed_absent": 4691
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 8192,
+     "present": 138734,
+     "present_bit_identical": 35,
+     "changed_absent": 2842
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 16384,
+     "present": 139997,
+     "present_bit_identical": 47,
+     "changed_absent": 1591
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 20000,
+     "present": 140198,
+     "present_bit_identical": 59,
+     "changed_absent": 1402
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 24576,
+     "present": 140326,
+     "present_bit_identical": 118,
+     "changed_absent": 1333
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 30000,
+     "present": 140371,
+     "present_bit_identical": 138,
+     "changed_absent": 1308
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 1000000000,
+     "present": 140371,
+     "present_bit_identical": 138,
+     "changed_absent": 1308
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 4096,
+     "present": 137043,
+     "present_bit_identical": 32,
+     "changed_absent": 4530
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 8192,
+     "present": 138905,
+     "present_bit_identical": 35,
+     "changed_absent": 2671
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 16384,
+     "present": 140186,
+     "present_bit_identical": 47,
+     "changed_absent": 1402
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 20000,
+     "present": 140416,
+     "present_bit_identical": 62,
+     "changed_absent": 1187
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 24576,
+     "present": 140571,
+     "present_bit_identical": 143,
+     "changed_absent": 1113
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 30000,
+     "present": 140645,
+     "present_bit_identical": 183,
+     "changed_absent": 1079
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 32768,
+     "present": 140650,
+     "present_bit_identical": 185,
+     "changed_absent": 1076
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 1000000000,
+     "present": 140650,
+     "present_bit_identical": 185,
+     "changed_absent": 1076
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 4096,
+     "present": 137427,
+     "present_bit_identical": 32,
+     "changed_absent": 4146
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 8192,
+     "present": 139310,
+     "present_bit_identical": 36,
+     "changed_absent": 2267
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 16384,
+     "present": 140672,
+     "present_bit_identical": 65,
+     "changed_absent": 934
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 20000,
+     "present": 141013,
+     "present_bit_identical": 89,
+     "changed_absent": 617
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 24576,
+     "present": 141220,
+     "present_bit_identical": 222,
+     "changed_absent": 543
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 30000,
+     "present": 141346,
+     "present_bit_identical": 320,
+     "changed_absent": 515
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 32768,
+     "present": 141378,
+     "present_bit_identical": 342,
+     "changed_absent": 505
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 40960,
+     "present": 141411,
+     "present_bit_identical": 366,
+     "changed_absent": 496
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 1000000000,
+     "present": 141411,
+     "present_bit_identical": 366,
+     "changed_absent": 496
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 4096,
+     "present": 137801,
+     "present_bit_identical": 32,
+     "changed_absent": 3772
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 8192,
+     "present": 139760,
+     "present_bit_identical": 37,
+     "changed_absent": 1818
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 16384,
+     "present": 141129,
+     "present_bit_identical": 93,
+     "changed_absent": 505
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 20000,
+     "present": 141465,
+     "present_bit_identical": 134,
+     "changed_absent": 210
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 24576,
+     "present": 141701,
+     "present_bit_identical": 318,
+     "changed_absent": 158
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 30000,
+     "present": 141878,
+     "present_bit_identical": 477,
+     "changed_absent": 140
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 32768,
+     "present": 141923,
+     "present_bit_identical": 518,
+     "changed_absent": 136
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 40960,
+     "present": 142021,
+     "present_bit_identical": 607,
+     "changed_absent": 127
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 65536,
+     "present": 142081,
+     "present_bit_identical": 664,
+     "changed_absent": 124
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 1000000000,
+     "present": 142081,
+     "present_bit_identical": 664,
+     "changed_absent": 124
+    }
+   ],
+   "best_drop": {
+    "max_len": 65536,
+    "cutoff": 20000,
+    "present": 141465,
+    "present_bit_identical": 134,
+    "changed_absent": 210
+   },
+   "wrong_data_control": {
+    "dataset": "simplescaling/s1K-1.1 (not WebWorld's data)",
+    "present": 27201,
+    "present_bit_identical": 29,
+    "changed_absent": 114369
+   }
+  },
+  "Qwen/WebWorld-32B": {
+   "parent": "Qwen/Qwen3-32B",
+   "rows": 151936,
+   "compared": 151669,
+   "bit_identical": 10122,
+   "barely": 86,
+   "updated": 141461,
+   "special_updated": [
+    "<|im_start|>",
+    "<|im_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<think>",
+    "</think>"
+   ],
+   "special_bit_identical": [
+    "<|endoftext|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<tool_response>",
+    "</tool_response>"
+   ],
+   "cutoff_scan": [
+    {
+     "cutoff": 4096,
+     "present": 137959,
+     "present_changed": 137908,
+     "present_bit_identical": 51,
+     "changed_absent": 3633,
+     "changed_absent_updated": 3601
+    },
+    {
+     "cutoff": 8192,
+     "present": 139927,
+     "present_changed": 139859,
+     "present_bit_identical": 68,
+     "changed_absent": 1682,
+     "changed_absent_updated": 1662
+    },
+    {
+     "cutoff": 16384,
+     "present": 141351,
+     "present_changed": 141179,
+     "present_bit_identical": 172,
+     "changed_absent": 362,
+     "changed_absent_updated": 355
+    },
+    {
+     "cutoff": 20000,
+     "present": 141743,
+     "present_changed": 141477,
+     "present_bit_identical": 266,
+     "changed_absent": 64,
+     "changed_absent_updated": 63
+    },
+    {
+     "cutoff": 24576,
+     "present": 141990,
+     "present_changed": 141518,
+     "present_bit_identical": 472,
+     "changed_absent": 23,
+     "changed_absent_updated": 22
+    },
+    {
+     "cutoff": 30000,
+     "present": 142205,
+     "present_changed": 141531,
+     "present_bit_identical": 674,
+     "changed_absent": 10,
+     "changed_absent_updated": 9
+    },
+    {
+     "cutoff": 32768,
+     "present": 142271,
+     "present_changed": 141534,
+     "present_bit_identical": 737,
+     "changed_absent": 7,
+     "changed_absent_updated": 6
+    },
+    {
+     "cutoff": 40960,
+     "present": 142444,
+     "present_changed": 141537,
+     "present_bit_identical": 907,
+     "changed_absent": 4,
+     "changed_absent_updated": 4
+    },
+    {
+     "cutoff": 65536,
+     "present": 142647,
+     "present_changed": 141537,
+     "present_bit_identical": 1110,
+     "changed_absent": 4,
+     "changed_absent_updated": 4
+    },
+    {
+     "cutoff": 131072,
+     "present": 142768,
+     "present_changed": 141539,
+     "present_bit_identical": 1229,
+     "changed_absent": 2,
+     "changed_absent_updated": 2
+    },
+    {
+     "cutoff": 1000000000,
+     "present": 142952,
+     "present_changed": 141539,
+     "present_bit_identical": 1413,
+     "changed_absent": 2,
+     "changed_absent_updated": 2
+    }
+   ],
+   "best_cutoff": {
+    "cutoff": 20000,
+    "present": 141743,
+    "present_changed": 141477,
+    "present_bit_identical": 266,
+    "changed_absent": 64,
+    "changed_absent_updated": 63
+   },
+   "bracket": {
+    "max_earliest_pos_of_changed": 67437,
+    "min_earliest_pos_of_bit_identical": 148,
+    "bit_identical_in_data_earliest_pos_quantiles": {
+     "0": 148,
+     "0.1": 14487,
+     "0.5": 31385,
+     "0.9": 163752
+    }
+   },
+   "changed_absent_examples": [
+    [
+     149758,
+     "\u00eb\u00b5\u012b"
+    ],
+    [
+     141761,
+     "\u0120\u00eb\u00b0\u013a\u00eb\u0135\u013e"
+    ],
+    [
+     147300,
+     "\u00eb\u00b4\u00ac"
+    ],
+    [
+     147557,
+     "\u00ec\u0141\u012e"
+    ],
+    [
+     148655,
+     "\u00ec\u00a8\u00a9"
+    ],
+    [
+     147592,
+     "\u00ec\u0134\u00b8"
+    ],
+    [
+     147702,
+     "\u00eb\u00a1\u00b8"
+    ],
+    [
+     143548,
+     "\u0120m\u00c3\u00bckem"
+    ],
+    [
+     146432,
+     "\u00ed\u0139\u00b9"
+    ],
+    [
+     146715,
+     "\u00d1\u00ac"
+    ],
+    [
+     143406,
+     "\u00d8\u00a7\u00d8\u00b3\u00d8\u00aa\u00d8\u00b9\u00d9\u0127\u00d8\u00a7\u00d9\u0126"
+    ],
+    [
+     115931,
+     "\u00e9\u0129\u012f\u00e4\u00b8\u0143\u00e4\u00b9\u012d"
+    ],
+    [
+     149500,
+     "\u00d1\u0142"
+    ],
+    [
+     147162,
+     "\u00d1\u00b4"
+    ],
+    [
+     35970,
+     "=\"'+"
+    ],
+    [
+     145540,
+     "\u00ec\u013b\u0123"
+    ],
+    [
+     151599,
+     "\u00e2\u013f\u00ab"
+    ],
+    [
+     122958,
+     "\u00e8\u0134\u0129"
+    ],
+    [
+     123373,
+     "\u00e9\u00b2\u0139"
+    ],
+    [
+     151420,
+     "\u00d1\u00a8"
+    ],
+    [
+     149597,
+     "\u00e1\u00b5\u0123"
+    ],
+    [
+     143837,
+     "\u0120v\u00c3\u00bcc"
+    ],
+    [
+     147129,
+     "\u00d2\u013b"
+    ],
+    [
+     131607,
+     "\u00d7\u00a2\u00d7\u00a5"
+    ],
+    [
+     142382,
+     "\u00d7\u0140\u00d7\u00a1\u00d7\u0140\u00d7\u013d\u00d7\u013b"
+    ],
+    [
+     82524,
+     ".SYSTEM"
+    ],
+    [
+     150464,
+     "\u00e1\u0122\u00a7"
+    ],
+    [
+     145978,
+     "\u00ea\u00b0\u0142"
+    ],
+    [
+     147091,
+     "\u00d1\u00b2"
+    ],
+    [
+     68174,
+     "(ERR"
+    ]
+   ],
+   "changed_absent_in_plain_joins": 0,
+   "changed_absent_change_frac_median": 0.925488293170929,
+   "present_bit_identical_examples": [
+    [
+     151254,
+     "\u00f0\u0132\u0130",
+     984,
+     1879
+    ],
+    [
+     150126,
+     "\u00e1\u013c\u00be",
+     624,
+     19242
+    ],
+    [
+     69687,
+     "\u00e3\u0127",
+     333,
+     14295
+    ],
+    [
+     6674,
+     "wargs",
+     203,
+     14902
+    ],
+    [
+     60867,
+     "LayoutParams",
+     172,
+     11368
+    ],
+    [
+     144932,
+     "\u00eb\u013e\u00af",
+     130,
+     18645
+    ],
+    [
+     150363,
+     "\u00cf\u00bf",
+     120,
+     13050
+    ],
+    [
+     146820,
+     "\u00da\u013d",
+     120,
+     10467
+    ],
+    [
+     77852,
+     "_TOOLTIP",
+     103,
+     19031
+    ],
+    [
+     150348,
+     "\u00ca\u00a8",
+     102,
+     17127
+    ],
+    [
+     147135,
+     "\u00e3\u0127\u0135",
+     98,
+     19739
+    ],
+    [
+     150374,
+     "\u00d3\u0141",
+     91,
+     16534
+    ],
+    [
+     150387,
+     "\u00da\u0124",
+     90,
+     11563
+    ],
+    [
+     146872,
+     "\u00d1\u00ab",
+     84,
+     11029
+    ],
+    [
+     150390,
+     "\u00da\u0139",
+     84,
+     16074
+    ],
+    [
+     151255,
+     "\u00f0\u0132\u0130\u00b9",
+     83,
+     19686
+    ],
+    [
+     148852,
+     "\u00df\u012f",
+     78,
+     11069
+    ],
+    [
+     71945,
+     "_REASON",
+     63,
+     16451
+    ],
+    [
+     147075,
+     "\u00d1\u00bb",
+     60,
+     11535
+    ],
+    [
+     149474,
+     "\u00c6\u0122",
+     60,
+     16557
+    ],
+    [
+     70239,
+     "_PHASE",
+     56,
+     7653
+    ],
+    [
+     148047,
+     "\u00df\u00a8",
+     54,
+     11149
+    ],
+    [
+     146670,
+     "\u00d2\u0131",
+     54,
+     13623
+    ],
+    [
+     41513,
+     "_stride",
+     53,
+     16618
+    ],
+    [
+     84058,
+     ".sigmoid",
+     53,
+     1187
+    ],
+    [
+     140840,
+     "\u00d8\u00a3\u00d8\u00b5\u00d9\u012a\u00d9\u0126",
+     50,
+     18417
+    ],
+    [
+     123487,
+     "\u00e6\u00bd\u0138",
+     50,
+     18831
+    ],
+    [
+     4885,
+     ".TabIndex",
+     50,
+     17312
+    ],
+    [
+     46505,
+     "(KERN",
+     45,
+     10194
+    ],
+    [
+     98085,
+     ".setPrototypeOf",
+     45,
+     13888
+    ]
+   ],
+   "present_bit_identical_count_max": 984,
+   "in_data_change_frac_median": 0.945117175579071,
+   "drop_scan": [
+    {
+     "max_len": 8192,
+     "cutoff": 4096,
+     "present": 131671,
+     "present_bit_identical": 34,
+     "changed_absent": 9904
+    },
+    {
+     "max_len": 8192,
+     "cutoff": 8192,
+     "present": 132577,
+     "present_bit_identical": 35,
+     "changed_absent": 8999
+    },
+    {
+     "max_len": 8192,
+     "cutoff": 1000000000,
+     "present": 132577,
+     "present_bit_identical": 35,
+     "changed_absent": 8999
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 4096,
+     "present": 135267,
+     "present_bit_identical": 34,
+     "changed_absent": 6308
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 8192,
+     "present": 136909,
+     "present_bit_identical": 35,
+     "changed_absent": 4667
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 16384,
+     "present": 137602,
+     "present_bit_identical": 36,
+     "changed_absent": 3975
+    },
+    {
+     "max_len": 16384,
+     "cutoff": 1000000000,
+     "present": 137602,
+     "present_bit_identical": 36,
+     "changed_absent": 3975
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 4096,
+     "present": 135932,
+     "present_bit_identical": 34,
+     "changed_absent": 5643
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 8192,
+     "present": 137639,
+     "present_bit_identical": 37,
+     "changed_absent": 3939
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 16384,
+     "present": 138592,
+     "present_bit_identical": 42,
+     "changed_absent": 2991
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 20000,
+     "present": 138642,
+     "present_bit_identical": 45,
+     "changed_absent": 2944
+    },
+    {
+     "max_len": 20000,
+     "cutoff": 1000000000,
+     "present": 138642,
+     "present_bit_identical": 45,
+     "changed_absent": 2944
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 4096,
+     "present": 136509,
+     "present_bit_identical": 34,
+     "changed_absent": 5066
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 8192,
+     "present": 138280,
+     "present_bit_identical": 37,
+     "changed_absent": 3298
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 16384,
+     "present": 139357,
+     "present_bit_identical": 42,
+     "changed_absent": 2226
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 20000,
+     "present": 139498,
+     "present_bit_identical": 45,
+     "changed_absent": 2088
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 24576,
+     "present": 139546,
+     "present_bit_identical": 62,
+     "changed_absent": 2057
+    },
+    {
+     "max_len": 24576,
+     "cutoff": 1000000000,
+     "present": 139546,
+     "present_bit_identical": 62,
+     "changed_absent": 2057
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 4096,
+     "present": 136882,
+     "present_bit_identical": 34,
+     "changed_absent": 4693
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 8192,
+     "present": 138734,
+     "present_bit_identical": 37,
+     "changed_absent": 2844
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 16384,
+     "present": 139997,
+     "present_bit_identical": 49,
+     "changed_absent": 1593
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 20000,
+     "present": 140198,
+     "present_bit_identical": 62,
+     "changed_absent": 1405
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 24576,
+     "present": 140326,
+     "present_bit_identical": 121,
+     "changed_absent": 1336
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 30000,
+     "present": 140371,
+     "present_bit_identical": 140,
+     "changed_absent": 1310
+    },
+    {
+     "max_len": 30000,
+     "cutoff": 1000000000,
+     "present": 140371,
+     "present_bit_identical": 140,
+     "changed_absent": 1310
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 4096,
+     "present": 137043,
+     "present_bit_identical": 34,
+     "changed_absent": 4532
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 8192,
+     "present": 138905,
+     "present_bit_identical": 37,
+     "changed_absent": 2673
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 16384,
+     "present": 140186,
+     "present_bit_identical": 49,
+     "changed_absent": 1404
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 20000,
+     "present": 140416,
+     "present_bit_identical": 65,
+     "changed_absent": 1190
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 24576,
+     "present": 140571,
+     "present_bit_identical": 146,
+     "changed_absent": 1116
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 30000,
+     "present": 140645,
+     "present_bit_identical": 184,
+     "changed_absent": 1080
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 32768,
+     "present": 140650,
+     "present_bit_identical": 186,
+     "changed_absent": 1077
+    },
+    {
+     "max_len": 32768,
+     "cutoff": 1000000000,
+     "present": 140650,
+     "present_bit_identical": 186,
+     "changed_absent": 1077
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 4096,
+     "present": 137427,
+     "present_bit_identical": 34,
+     "changed_absent": 4148
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 8192,
+     "present": 139310,
+     "present_bit_identical": 38,
+     "changed_absent": 2269
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 16384,
+     "present": 140672,
+     "present_bit_identical": 68,
+     "changed_absent": 937
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 20000,
+     "present": 141013,
+     "present_bit_identical": 93,
+     "changed_absent": 621
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 24576,
+     "present": 141220,
+     "present_bit_identical": 226,
+     "changed_absent": 547
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 30000,
+     "present": 141346,
+     "present_bit_identical": 322,
+     "changed_absent": 517
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 32768,
+     "present": 141378,
+     "present_bit_identical": 343,
+     "changed_absent": 506
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 40960,
+     "present": 141411,
+     "present_bit_identical": 367,
+     "changed_absent": 497
+    },
+    {
+     "max_len": 40960,
+     "cutoff": 1000000000,
+     "present": 141411,
+     "present_bit_identical": 367,
+     "changed_absent": 497
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 4096,
+     "present": 137801,
+     "present_bit_identical": 34,
+     "changed_absent": 3774
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 8192,
+     "present": 139760,
+     "present_bit_identical": 39,
+     "changed_absent": 1820
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 16384,
+     "present": 141129,
+     "present_bit_identical": 96,
+     "changed_absent": 508
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 20000,
+     "present": 141465,
+     "present_bit_identical": 138,
+     "changed_absent": 214
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 24576,
+     "present": 141701,
+     "present_bit_identical": 321,
+     "changed_absent": 161
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 30000,
+     "present": 141878,
+     "present_bit_identical": 479,
+     "changed_absent": 142
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 32768,
+     "present": 141923,
+     "present_bit_identical": 519,
+     "changed_absent": 137
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 40960,
+     "present": 142021,
+     "present_bit_identical": 608,
+     "changed_absent": 128
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 65536,
+     "present": 142081,
+     "present_bit_identical": 665,
+     "changed_absent": 125
+    },
+    {
+     "max_len": 65536,
+     "cutoff": 1000000000,
+     "present": 142081,
+     "present_bit_identical": 665,
+     "changed_absent": 125
+    }
+   ],
+   "best_drop": {
+    "max_len": 65536,
+    "cutoff": 20000,
+    "present": 141465,
+    "present_bit_identical": 138,
+    "changed_absent": 214
+   },
+   "wrong_data_control": {
+    "dataset": "simplescaling/s1K-1.1 (not WebWorld's data)",
+    "present": 27201,
+    "present_bit_identical": 29,
+    "changed_absent": 114369
+   }
+  }
+ }
+}

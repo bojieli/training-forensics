@@ -1,0 +1,31 @@
+{
+ "dataset": "Qwen/WebWorldData",
+ "file": "WebWorld_Training.jsonl",
+ "tokenizer": "Qwen/WebWorld-8B",
+ "vocab": 151669,
+ "samples": 7680,
+ "roles": {
+  "human": 21555,
+  "gpt": 21555
+ },
+ "tokens_chat": 199673968,
+ "len_quantiles": {
+  "0.5": 21304,
+  "0.9": 46471,
+  "0.99": 126220,
+  "0.999": 487304,
+  "1.0": 1483108
+ },
+ "over": {
+  "8192": 6035,
+  "16384": 4519,
+  "24576": 3301,
+  "32768": 1802,
+  "40960": 1061
+ },
+ "distinct": {
+  "chat": 110925,
+  "slots": 110921,
+  "plain_join": 30795
+ }
+}

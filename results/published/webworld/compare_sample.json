@@ -1,0 +1,1278 @@
+{
+ "data": "data_webworld_sample.npz",
+ "vocab": 151669,
+ "models": {
+  "Qwen/WebWorld-8B": {
+   "parent": "Qwen/Qwen3-8B",
+   "rows": 151936,
+   "compared": 151669,
+   "bit_identical": 10127,
+   "barely": 68,
+   "updated": 141474,
+   "special_updated": [
+    "<|im_start|>",
+    "<|im_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<think>",
+    "</think>"
+   ],
+   "special_bit_identical": [
+    "<|endoftext|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<tool_response>",
+    "</tool_response>"
+   ],
+   "cutoff_scan": [
+    {
+     "cutoff": 4096,
+     "present": 93795,
+     "present_changed": 93795,
+     "present_bit_identical": 0,
+     "changed_absent": 47741,
+     "changed_absent_updated": 47673
+    },
+    {
+     "cutoff": 8192,
+     "present": 100977,
+     "present_changed": 100977,
+     "present_bit_identical": 0,
+     "changed_absent": 40559,
+     "changed_absent_updated": 40491
+    },
+    {
+     "cutoff": 16384,
+     "present": 105914,
+     "present_changed": 105913,
+     "present_bit_identical": 1,
+     "changed_absent": 35623,
+     "changed_absent_updated": 35555
+    },
+    {
+     "cutoff": 20000,
+     "present": 107061,
+     "present_changed": 107060,
+     "present_bit_identical": 1,
+     "changed_absent": 34476,
+     "changed_absent_updated": 34408
+    },
+    {
+     "cutoff": 24576,
+     "present": 108034,
+     "present_changed": 108031,
+     "present_bit_identical": 3,
+     "changed_absent": 33505,
+     "changed_absent_updated": 33437
+    },
+    {
+     "cutoff": 30000,
+     "present": 108800,
+     "present_changed": 108794,
+     "present_bit_identical": 6,
+     "changed_absent": 32742,
+     "changed_absent_updated": 32675
+    },
+    {
+     "cutoff": 32768,
+     "present": 109101,
+     "present_changed": 109094,
+     "present_bit_identical": 7,
+     "changed_absent": 32442,
+     "changed_absent_updated": 32375
+    },
+    {
+     "cutoff": 40960,
+     "present": 109694,
+     "present_changed": 109684,
+     "present_bit_identical": 10,
+     "changed_absent": 31852,
+     "changed_absent_updated": 31786
+    },
+    {
+     "cutoff": 65536,
+     "present": 110360,
+     "present_changed": 110342,
+     "present_bit_identical": 18,
+     "changed_absent": 31194,
+     "changed_absent_updated": 31128
+    },
+    {
+     "cutoff": 131072,
+     "present": 110717,
+     "present_changed": 110695,
+     "present_bit_identical": 22,
+     "changed_absent": 30841,
+     "changed_absent_updated": 30775
+    },
+    {
+     "cutoff": 1000000000,
+     "present": 110921,
+     "present_changed": 110897,
+     "present_bit_identical": 24,
+     "changed_absent": 30639,
+     "changed_absent_updated": 30573
+    }
+   ],
+   "best_cutoff": {
+    "cutoff": 1000000000,
+    "present": 110921,
+    "present_changed": 110897,
+    "present_bit_identical": 24,
+    "changed_absent": 30639,
+    "changed_absent_updated": 30573
+   },
+   "bracket": {
+    "max_earliest_pos_of_changed": 510843,
+    "min_earliest_pos_of_bit_identical": 9731,
+    "bit_identical_in_data_earliest_pos_quantiles": {
+     "0": 9731,
+     "0.1": 22586,
+     "0.5": 47943,
+     "0.9": 81585
+    }
+   },
+   "changed_absent_examples": [
+    [
+     65878,
+     "\u0120thaimassage"
+    ],
+    [
+     123008,
+     "\u00f0\u00a7\u00bf"
+    ],
+    [
+     140909,
+     "\u00d7\u0136\u00d7\u0135\u00d7\u00a4\u00d7\u00a1\u00d7\u0136"
+    ],
+    [
+     151046,
+     "\u00ec\u00b1\u0125"
+    ],
+    [
+     147778,
+     "\u00e1\u0139\u00a8"
+    ],
+    [
+     122917,
+     "\u00e5\u00a9\u012e"
+    ],
+    [
+     122289,
+     "\u00f0\u00a6\u0143"
+    ],
+    [
+     149095,
+     "\u00ec\u0127\u00a5"
+    ],
+    [
+     140576,
+     "\u00d0\u00b8\u00d0\u00bd\u00d1\u0126\u00d0\u00be\u00d1\u0122\u00d0\u00bc\u00d0\u00b0\u00d1\u0128\u00d0\u00b8\u00d0\u00be\u00d0\u00bd\u00d0\u00bd"
+    ],
+    [
+     150274,
+     "\u00eb\u0126\u0142"
+    ],
+    [
+     128094,
+     "\u00d7\u00a9\u00d7\u0137\u00d7\u013e\u00d7\u0139"
+    ],
+    [
+     134076,
+     "\u00d7\u0140\u00d7\u00a9\u00d7\u0140\u00d7\u00a2\u00d7\u0137\u00d7\u00aa"
+    ],
+    [
+     120100,
+     "\u00f0\u0142\u00b3"
+    ],
+    [
+     149758,
+     "\u00eb\u00b5\u012b"
+    ],
+    [
+     122618,
+     "\u00f0\u00ac\u012e"
+    ],
+    [
+     132096,
+     "\u00e0\u00b9\u0122\u00e0\u00b8\u0139\u00e0\u00b8\u0126\u00e0\u00b9\u0124\u00e0\u00b8\u013b\u00e0\u00b9\u0124\u00e0\u00b8\u00a5"
+    ],
+    [
+     151161,
+     "\u00ef\u0143\u0134"
+    ],
+    [
+     150838,
+     "\u00ea\u00aa\u012d"
+    ],
+    [
+     101028,
+     "\u00f0\u00ac\u00b3"
+    ],
+    [
+     150633,
+     "\u00e2\u0127\u0127"
+    ],
+    [
+     107754,
+     "\u00e6\u013e\u0125\u00e5\u0135\u00a1\u00e8\u00a6\u0131\u00e7\u00af\u0126"
+    ],
+    [
+     122424,
+     "\u00f0\u00ac\u013e\u00ac"
+    ],
+    [
+     147976,
+     "\u00e3\u0128\u0123"
+    ],
+    [
+     146726,
+     "\u00e0\u00b9\u013d"
+    ],
+    [
+     150712,
+     "\u00e2\u013c\u0140"
+    ],
+    [
+     150776,
+     "\u00e3\u012c\u0140"
+    ],
+    [
+     142708,
+     "\u00d7\u0132\u00d7\u0137\u00d7\u013a\u00d7\u0137\u00d7\u0140"
+    ],
+    [
+     149166,
+     "\u00f0\u013f\u013a\u0142"
+    ],
+    [
+     127807,
+     "\u00d7\u0140\u00d7\u013b\u00d7\u00aa\u00d7\u013b"
+    ],
+    [
+     123545,
+     "\u00e3\u0142\u0135"
+    ]
+   ],
+   "changed_absent_in_plain_joins": 21,
+   "changed_absent_change_frac_median": 0.938720703125,
+   "present_bit_identical_examples": [
+    [
+     71719,
+     "pcodes",
+     40,
+     142411
+    ],
+    [
+     96563,
+     "\u0120erotisch",
+     11,
+     20691
+    ],
+    [
+     98850,
+     "_rwlock",
+     11,
+     40928
+    ],
+    [
+     89124,
+     ".getOwnPropertyDescriptor",
+     8,
+     55764
+    ],
+    [
+     141000,
+     "\u00eb\u0135\u013e\u00eb\u00a6\u00bd",
+     6,
+     9731
+    ],
+    [
+     137333,
+     "\u00d0\u00bf\u00d1\u0123\u00d0\u00b8",
+     4,
+     27010
+    ],
+    [
+     55113,
+     "classnames",
+     4,
+     81874
+    ],
+    [
+     41513,
+     "_stride",
+     4,
+     80442
+    ],
+    [
+     96300,
+     ".ERR",
+     3,
+     30033
+    ],
+    [
+     127963,
+     "\u00ef\u00bb\u00b7",
+     3,
+     28183
+    ],
+    [
+     94144,
+     "isFunction",
+     2,
+     28666
+    ],
+    [
+     90218,
+     "(mutex",
+     2,
+     43592
+    ],
+    [
+     83652,
+     "CHEMY",
+     2,
+     20446
+    ],
+    [
+     70239,
+     "_PHASE",
+     2,
+     71736
+    ],
+    [
+     87712,
+     "(schedule",
+     2,
+     39113
+    ],
+    [
+     54791,
+     "_NOTE",
+     2,
+     57365
+    ],
+    [
+     98085,
+     ".setPrototypeOf",
+     2,
+     39817
+    ],
+    [
+     95991,
+     "[frame",
+     2,
+     47516
+    ],
+    [
+     121068,
+     "\u00e8\u00a3\u0130",
+     2,
+     51815
+    ],
+    [
+     91843,
+     "\u0120GroupLayout",
+     1,
+     80912
+    ],
+    [
+     57756,
+     ".Mask",
+     1,
+     144603
+    ],
+    [
+     93398,
+     "_LOOKUP",
+     1,
+     55530
+    ],
+    [
+     88268,
+     "stdarg",
+     1,
+     48370
+    ],
+    [
+     89516,
+     "(suite",
+     1,
+     48688
+    ]
+   ],
+   "present_bit_identical_count_max": 40,
+   "in_data_change_frac_median": 0.9501953125,
+   "wrong_data_control": {
+    "dataset": "simplescaling/s1K-1.1 (not WebWorld's data)",
+    "present": 27201,
+    "present_bit_identical": 29,
+    "changed_absent": 114364
+   }
+  },
+  "Qwen/WebWorld-14B": {
+   "parent": "Qwen/Qwen3-14B",
+   "rows": 151936,
+   "compared": 151669,
+   "bit_identical": 10122,
+   "barely": 82,
+   "updated": 141465,
+   "special_updated": [
+    "<|im_start|>",
+    "<|im_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<think>",
+    "</think>"
+   ],
+   "special_bit_identical": [
+    "<|endoftext|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<tool_response>",
+    "</tool_response>"
+   ],
+   "cutoff_scan": [
+    {
+     "cutoff": 4096,
+     "present": 93795,
+     "present_changed": 93795,
+     "present_bit_identical": 0,
+     "changed_absent": 47746,
+     "changed_absent_updated": 47664
+    },
+    {
+     "cutoff": 8192,
+     "present": 100977,
+     "present_changed": 100977,
+     "present_bit_identical": 0,
+     "changed_absent": 40564,
+     "changed_absent_updated": 40482
+    },
+    {
+     "cutoff": 16384,
+     "present": 105914,
+     "present_changed": 105913,
+     "present_bit_identical": 1,
+     "changed_absent": 35628,
+     "changed_absent_updated": 35546
+    },
+    {
+     "cutoff": 20000,
+     "present": 107061,
+     "present_changed": 107060,
+     "present_bit_identical": 1,
+     "changed_absent": 34481,
+     "changed_absent_updated": 34399
+    },
+    {
+     "cutoff": 24576,
+     "present": 108034,
+     "present_changed": 108031,
+     "present_bit_identical": 3,
+     "changed_absent": 33510,
+     "changed_absent_updated": 33428
+    },
+    {
+     "cutoff": 30000,
+     "present": 108800,
+     "present_changed": 108794,
+     "present_bit_identical": 6,
+     "changed_absent": 32747,
+     "changed_absent_updated": 32666
+    },
+    {
+     "cutoff": 32768,
+     "present": 109101,
+     "present_changed": 109094,
+     "present_bit_identical": 7,
+     "changed_absent": 32447,
+     "changed_absent_updated": 32366
+    },
+    {
+     "cutoff": 40960,
+     "present": 109694,
+     "present_changed": 109684,
+     "present_bit_identical": 10,
+     "changed_absent": 31857,
+     "changed_absent_updated": 31777
+    },
+    {
+     "cutoff": 65536,
+     "present": 110360,
+     "present_changed": 110342,
+     "present_bit_identical": 18,
+     "changed_absent": 31199,
+     "changed_absent_updated": 31119
+    },
+    {
+     "cutoff": 131072,
+     "present": 110717,
+     "present_changed": 110695,
+     "present_bit_identical": 22,
+     "changed_absent": 30846,
+     "changed_absent_updated": 30766
+    },
+    {
+     "cutoff": 1000000000,
+     "present": 110921,
+     "present_changed": 110897,
+     "present_bit_identical": 24,
+     "changed_absent": 30644,
+     "changed_absent_updated": 30564
+    }
+   ],
+   "best_cutoff": {
+    "cutoff": 1000000000,
+    "present": 110921,
+    "present_changed": 110897,
+    "present_bit_identical": 24,
+    "changed_absent": 30644,
+    "changed_absent_updated": 30564
+   },
+   "bracket": {
+    "max_earliest_pos_of_changed": 510843,
+    "min_earliest_pos_of_bit_identical": 9731,
+    "bit_identical_in_data_earliest_pos_quantiles": {
+     "0": 9731,
+     "0.1": 22586,
+     "0.5": 47943,
+     "0.9": 81585
+    }
+   },
+   "changed_absent_examples": [
+    [
+     123332,
+     "\u00f0\u00a5\u0136"
+    ],
+    [
+     150776,
+     "\u00e3\u012c\u0140"
+    ],
+    [
+     151442,
+     "\u00ec\u0131\u00b1"
+    ],
+    [
+     122289,
+     "\u00f0\u00a6\u0143"
+    ],
+    [
+     65878,
+     "\u0120thaimassage"
+    ],
+    [
+     123740,
+     "\u00f0\u00a8\u0141"
+    ],
+    [
+     151162,
+     "\u00ef\u0143\u0137"
+    ],
+    [
+     149395,
+     "\u00f0\u0135\u0132\u012f"
+    ],
+    [
+     134864,
+     "\u00d7\u013a\u00d7\u0133\u00d7\u0139"
+    ],
+    [
+     150838,
+     "\u00ea\u00aa\u012d"
+    ],
+    [
+     150274,
+     "\u00eb\u0126\u0142"
+    ],
+    [
+     127807,
+     "\u00d7\u0140\u00d7\u013b\u00d7\u00aa\u00d7\u013b"
+    ],
+    [
+     132929,
+     "\u0120\u00d7\u0133\u00d7\u0140\u00d7\u00a1\u00d7\u0134\u00d7\u00a8"
+    ],
+    [
+     123008,
+     "\u00f0\u00a7\u00bf"
+    ],
+    [
+     123649,
+     "\u00e4\u0139\u00aa"
+    ],
+    [
+     150844,
+     "\u00ea\u00aa\u00b1"
+    ],
+    [
+     151504,
+     "\u00f0\u013f\u0135\u0140"
+    ],
+    [
+     123748,
+     "\u00f0\u00a8\u0143\u012b"
+    ],
+    [
+     140576,
+     "\u00d0\u00b8\u00d0\u00bd\u00d1\u0126\u00d0\u00be\u00d1\u0122\u00d0\u00bc\u00d0\u00b0\u00d1\u0128\u00d0\u00b8\u00d0\u00be\u00d0\u00bd\u00d0\u00bd"
+    ],
+    [
+     123676,
+     "\u00f0\u00a5\u0138"
+    ],
+    [
+     142604,
+     "\u00d8\u00a5\u00d8\u00a8\u00d8\u00af"
+    ],
+    [
+     120100,
+     "\u00f0\u0142\u00b3"
+    ],
+    [
+     143459,
+     "\u00d7\u0132\u00d7\u0137\u00d7\u0137\u00d7\u013b\u00d7\u00a8\u00d7\u0136"
+    ],
+    [
+     150942,
+     "\u00eb\u00ac\u00be"
+    ],
+    [
+     128094,
+     "\u00d7\u00a9\u00d7\u0137\u00d7\u013e\u00d7\u0139"
+    ],
+    [
+     135078,
+     "\u00e3\u0123\u0136\u00e7\u00b4"
+    ],
+    [
+     150006,
+     "\u00e1\u00bd\u00a9"
+    ],
+    [
+     123134,
+     "\u00e7\u0133\u0124"
+    ],
+    [
+     101028,
+     "\u00f0\u00ac\u00b3"
+    ],
+    [
+     146343,
+     "\u00e2\u013f\u0125"
+    ]
+   ],
+   "changed_absent_in_plain_joins": 21,
+   "changed_absent_change_frac_median": 0.9410156011581421,
+   "present_bit_identical_examples": [
+    [
+     71719,
+     "pcodes",
+     40,
+     142411
+    ],
+    [
+     96563,
+     "\u0120erotisch",
+     11,
+     20691
+    ],
+    [
+     98850,
+     "_rwlock",
+     11,
+     40928
+    ],
+    [
+     89124,
+     ".getOwnPropertyDescriptor",
+     8,
+     55764
+    ],
+    [
+     141000,
+     "\u00eb\u0135\u013e\u00eb\u00a6\u00bd",
+     6,
+     9731
+    ],
+    [
+     137333,
+     "\u00d0\u00bf\u00d1\u0123\u00d0\u00b8",
+     4,
+     27010
+    ],
+    [
+     55113,
+     "classnames",
+     4,
+     81874
+    ],
+    [
+     41513,
+     "_stride",
+     4,
+     80442
+    ],
+    [
+     96300,
+     ".ERR",
+     3,
+     30033
+    ],
+    [
+     127963,
+     "\u00ef\u00bb\u00b7",
+     3,
+     28183
+    ],
+    [
+     94144,
+     "isFunction",
+     2,
+     28666
+    ],
+    [
+     90218,
+     "(mutex",
+     2,
+     43592
+    ],
+    [
+     83652,
+     "CHEMY",
+     2,
+     20446
+    ],
+    [
+     70239,
+     "_PHASE",
+     2,
+     71736
+    ],
+    [
+     87712,
+     "(schedule",
+     2,
+     39113
+    ],
+    [
+     54791,
+     "_NOTE",
+     2,
+     57365
+    ],
+    [
+     98085,
+     ".setPrototypeOf",
+     2,
+     39817
+    ],
+    [
+     95991,
+     "[frame",
+     2,
+     47516
+    ],
+    [
+     121068,
+     "\u00e8\u00a3\u0130",
+     2,
+     51815
+    ],
+    [
+     91843,
+     "\u0120GroupLayout",
+     1,
+     80912
+    ],
+    [
+     57756,
+     ".Mask",
+     1,
+     144603
+    ],
+    [
+     93398,
+     "_LOOKUP",
+     1,
+     55530
+    ],
+    [
+     88268,
+     "stdarg",
+     1,
+     48370
+    ],
+    [
+     89516,
+     "(suite",
+     1,
+     48688
+    ]
+   ],
+   "present_bit_identical_count_max": 40,
+   "in_data_change_frac_median": 0.9525390863418579,
+   "wrong_data_control": {
+    "dataset": "simplescaling/s1K-1.1 (not WebWorld's data)",
+    "present": 27201,
+    "present_bit_identical": 29,
+    "changed_absent": 114369
+   }
+  },
+  "Qwen/WebWorld-32B": {
+   "parent": "Qwen/Qwen3-32B",
+   "rows": 151936,
+   "compared": 151669,
+   "bit_identical": 10122,
+   "barely": 86,
+   "updated": 141461,
+   "special_updated": [
+    "<|im_start|>",
+    "<|im_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<think>",
+    "</think>"
+   ],
+   "special_bit_identical": [
+    "<|endoftext|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<tool_response>",
+    "</tool_response>"
+   ],
+   "cutoff_scan": [
+    {
+     "cutoff": 4096,
+     "present": 93795,
+     "present_changed": 93795,
+     "present_bit_identical": 0,
+     "changed_absent": 47746,
+     "changed_absent_updated": 47660
+    },
+    {
+     "cutoff": 8192,
+     "present": 100977,
+     "present_changed": 100977,
+     "present_bit_identical": 0,
+     "changed_absent": 40564,
+     "changed_absent_updated": 40478
+    },
+    {
+     "cutoff": 16384,
+     "present": 105914,
+     "present_changed": 105913,
+     "present_bit_identical": 1,
+     "changed_absent": 35628,
+     "changed_absent_updated": 35542
+    },
+    {
+     "cutoff": 20000,
+     "present": 107061,
+     "present_changed": 107060,
+     "present_bit_identical": 1,
+     "changed_absent": 34481,
+     "changed_absent_updated": 34395
+    },
+    {
+     "cutoff": 24576,
+     "present": 108034,
+     "present_changed": 108031,
+     "present_bit_identical": 3,
+     "changed_absent": 33510,
+     "changed_absent_updated": 33424
+    },
+    {
+     "cutoff": 30000,
+     "present": 108800,
+     "present_changed": 108794,
+     "present_bit_identical": 6,
+     "changed_absent": 32747,
+     "changed_absent_updated": 32662
+    },
+    {
+     "cutoff": 32768,
+     "present": 109101,
+     "present_changed": 109094,
+     "present_bit_identical": 7,
+     "changed_absent": 32447,
+     "changed_absent_updated": 32362
+    },
+    {
+     "cutoff": 40960,
+     "present": 109694,
+     "present_changed": 109684,
+     "present_bit_identical": 10,
+     "changed_absent": 31857,
+     "changed_absent_updated": 31773
+    },
+    {
+     "cutoff": 65536,
+     "present": 110360,
+     "present_changed": 110342,
+     "present_bit_identical": 18,
+     "changed_absent": 31199,
+     "changed_absent_updated": 31115
+    },
+    {
+     "cutoff": 131072,
+     "present": 110717,
+     "present_changed": 110695,
+     "present_bit_identical": 22,
+     "changed_absent": 30846,
+     "changed_absent_updated": 30762
+    },
+    {
+     "cutoff": 1000000000,
+     "present": 110921,
+     "present_changed": 110897,
+     "present_bit_identical": 24,
+     "changed_absent": 30644,
+     "changed_absent_updated": 30560
+    }
+   ],
+   "best_cutoff": {
+    "cutoff": 1000000000,
+    "present": 110921,
+    "present_changed": 110897,
+    "present_bit_identical": 24,
+    "changed_absent": 30644,
+    "changed_absent_updated": 30560
+   },
+   "bracket": {
+    "max_earliest_pos_of_changed": 510843,
+    "min_earliest_pos_of_bit_identical": 9731,
+    "bit_identical_in_data_earliest_pos_quantiles": {
+     "0": 9731,
+     "0.1": 22586,
+     "0.5": 47943,
+     "0.9": 81585
+    }
+   },
+   "changed_absent_examples": [
+    [
+     147955,
+     "\u00e2\u00b2\u00a6"
+    ],
+    [
+     122289,
+     "\u00f0\u00a6\u0143"
+    ],
+    [
+     150838,
+     "\u00ea\u00aa\u012d"
+    ],
+    [
+     123740,
+     "\u00f0\u00a8\u0141"
+    ],
+    [
+     145982,
+     "\u00ec\u00b1\u013a"
+    ],
+    [
+     121774,
+     "\u00e4\u00a6\u0125"
+    ],
+    [
+     148673,
+     "\u00ef\u0143\u0133"
+    ],
+    [
+     151619,
+     "\u00f0\u0135\u0131\u00a7"
+    ],
+    [
+     151161,
+     "\u00ef\u0143\u0134"
+    ],
+    [
+     150776,
+     "\u00e3\u012c\u0140"
+    ],
+    [
+     151319,
+     "\u00f0\u013f\u0135\u00a6"
+    ],
+    [
+     123748,
+     "\u00f0\u00a8\u0143\u012b"
+    ],
+    [
+     140909,
+     "\u00d7\u0136\u00d7\u0135\u00d7\u00a4\u00d7\u00a1\u00d7\u0136"
+    ],
+    [
+     149395,
+     "\u00f0\u0135\u0132\u012f"
+    ],
+    [
+     149352,
+     "\u00f0\u00a1\u012a"
+    ],
+    [
+     65878,
+     "\u0120thaimassage"
+    ],
+    [
+     123332,
+     "\u00f0\u00a5\u0136"
+    ],
+    [
+     142708,
+     "\u00d7\u0132\u00d7\u0137\u00d7\u013a\u00d7\u0137\u00d7\u0140"
+    ],
+    [
+     120100,
+     "\u00f0\u0142\u00b3"
+    ],
+    [
+     127807,
+     "\u00d7\u0140\u00d7\u013b\u00d7\u00aa\u00d7\u013b"
+    ],
+    [
+     122867,
+     "\u00f0\u0142\u0127\u00a4"
+    ],
+    [
+     123008,
+     "\u00f0\u00a7\u00bf"
+    ],
+    [
+     46853,
+     ".hour"
+    ],
+    [
+     150112,
+     "\u00ec\u013a\u00bc"
+    ],
+    [
+     128094,
+     "\u00d7\u00a9\u00d7\u0137\u00d7\u013e\u00d7\u0139"
+    ],
+    [
+     101028,
+     "\u00f0\u00ac\u00b3"
+    ],
+    [
+     107754,
+     "\u00e6\u013e\u0125\u00e5\u0135\u00a1\u00e8\u00a6\u0131\u00e7\u00af\u0126"
+    ],
+    [
+     135078,
+     "\u00e3\u0123\u0136\u00e7\u00b4"
+    ],
+    [
+     149964,
+     "\u00f0\u00a6\u013a\u0134"
+    ],
+    [
+     111788,
+     "\u00e7\u012d\u0132\u00e6\u013e\u012a\u00e5\u00b1\u00b1"
+    ]
+   ],
+   "changed_absent_in_plain_joins": 21,
+   "changed_absent_change_frac_median": 0.935546875,
+   "present_bit_identical_examples": [
+    [
+     71719,
+     "pcodes",
+     40,
+     142411
+    ],
+    [
+     96563,
+     "\u0120erotisch",
+     11,
+     20691
+    ],
+    [
+     98850,
+     "_rwlock",
+     11,
+     40928
+    ],
+    [
+     89124,
+     ".getOwnPropertyDescriptor",
+     8,
+     55764
+    ],
+    [
+     141000,
+     "\u00eb\u0135\u013e\u00eb\u00a6\u00bd",
+     6,
+     9731
+    ],
+    [
+     137333,
+     "\u00d0\u00bf\u00d1\u0123\u00d0\u00b8",
+     4,
+     27010
+    ],
+    [
+     55113,
+     "classnames",
+     4,
+     81874
+    ],
+    [
+     41513,
+     "_stride",
+     4,
+     80442
+    ],
+    [
+     96300,
+     ".ERR",
+     3,
+     30033
+    ],
+    [
+     127963,
+     "\u00ef\u00bb\u00b7",
+     3,
+     28183
+    ],
+    [
+     94144,
+     "isFunction",
+     2,
+     28666
+    ],
+    [
+     90218,
+     "(mutex",
+     2,
+     43592
+    ],
+    [
+     83652,
+     "CHEMY",
+     2,
+     20446
+    ],
+    [
+     70239,
+     "_PHASE",
+     2,
+     71736
+    ],
+    [
+     87712,
+     "(schedule",
+     2,
+     39113
+    ],
+    [
+     54791,
+     "_NOTE",
+     2,
+     57365
+    ],
+    [
+     98085,
+     ".setPrototypeOf",
+     2,
+     39817
+    ],
+    [
+     95991,
+     "[frame",
+     2,
+     47516
+    ],
+    [
+     121068,
+     "\u00e8\u00a3\u0130",
+     2,
+     51815
+    ],
+    [
+     91843,
+     "\u0120GroupLayout",
+     1,
+     80912
+    ],
+    [
+     57756,
+     ".Mask",
+     1,
+     144603
+    ],
+    [
+     93398,
+     "_LOOKUP",
+     1,
+     55530
+    ],
+    [
+     88268,
+     "stdarg",
+     1,
+     48370
+    ],
+    [
+     89516,
+     "(suite",
+     1,
+     48688
+    ]
+   ],
+   "present_bit_identical_count_max": 40,
+   "in_data_change_frac_median": 0.946093738079071,
+   "wrong_data_control": {
+    "dataset": "simplescaling/s1K-1.1 (not WebWorld's data)",
+    "present": 27201,
+    "present_bit_identical": 29,
+    "changed_absent": 114369
+   }
+  }
+ }
+}
