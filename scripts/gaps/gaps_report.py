@@ -54,17 +54,15 @@ def main():
     L += ["## 1. All controlled runs re-scored with one version of the code", "",
           f"The published per-run results were written at different times (09:18-13:55) by different code versions. Every",
           f"run whose weights are on this machine was re-scored in one batch (`scripts/gaps/rescore.sh`, base commit `{commit[:7]}`",
-          "plus the two fixes below). The five Qwen2.5-7B runs cannot be re-scored: they were trained on a borrowed GPU",
-          "machine and its scratch copy of the weights was deleted; their results are kept and marked *old*.", "",
+          "plus the two fixes below). The five Qwen2.5-7B runs were first trained on a borrowed GPU machine whose copy of",
+          "the weights was deleted; they were retrained here with the original arguments and seeds and scored with the",
+          "same code ('before' = the original machine's result).", "",
           "| run | recipe before | recipe after | placed from weights before | after | with seed (after) | swap check v1 before | after |",
           "|---|---|---|---|---|---|---|---|"]
     nb = na = n = 0
     for k, a in after.items():
         b = before.get(k)
         name = a["run"]
-        if name.startswith("q7"):
-            L.append(f"| {name} (old) | {'exact' if exact(a) else rec(a)} | not re-scored | {pl(a)} | - | - | {sw(a)} | - |")
-            continue
         n += 1
         nb += bool(exact(b)) if b else 0
         na += bool(exact(a))
@@ -72,7 +70,7 @@ def main():
             name, ("exact" if exact(b) else rec(b)) if b else "-", "exact" if exact(a) else "**" + rec(a) + "**",
             pl(b) if b else "-", pl(a), f"{a.get('placement_with_seed', 0):,}/{a['placement']['docs']:,}" if a.get("placement") else "-",
             sw(b) if b else "-", sw(a)))
-    L += ["", f"Recipe exact: {nb} of {n} re-scored Pythia runs before, **{na} of {n} after**.", ""]
+    L += ["", f"Recipe exact: {nb} of {n} re-scored runs before, **{na} of {n} after**.", ""]
     new = {pathlib.Path(f).name: j(f) for f in sorted(glob.glob(str(G / "scored" / "*.fp32.json")))}
     if new:
         L += ["New runs for this study (Pythia-160m: four with 40 secretly swapped documents, m01 = the membership run):", "",
@@ -127,8 +125,7 @@ def main():
               "swapped went 0 right / 3 wrong on s05. With weight decay, *updated* means the token's vector differs from the",
               "bit-exact replay of the recovered decay schedule (this removed v1's false flags on tokens updated so late",
               "that their change is below the generic rounding floor).",
-              "v1 numbers are from the re-scored `score.py` output; the Qwen2.5-7B runs cannot be re-run (see section 1),",
-              "their old v1 false flags were 26 / 50 / 87 / 367 (q7_lora / q7_emb / q7_wd / q7_big).", "",
+              "v1 numbers are from the re-scored `score.py` output (the retrained Qwen2.5-7B runs included).", "",
               "| run | swapped | v1 caught | v1 false flags | v2 caught | v2 false flags | v2 by rule (caught/false) | steps with an unclaimed update (of which hold a swap / steps holding a swap) |",
               "|---|---|---|---|---|---|---|---|"]
         for name, r in s2.items():
@@ -214,7 +211,9 @@ def main():
                      f"{'recovered' if r['seed'] == r['seed_true'] else 'missed'} | {r['rows_touched_twice']:,} | "
                      f"{100 * r['both_steps_exact_with_seed']:.1f}% | {100 * r['both_steps_exact_and_row_max_matches']:.1f}% |")
         L += ["", "Before (per-token two-shade split, published): both updates within 1% for 0.7% of tokens at a 500-step gap",
-              "and 61-69% at 5,000 steps; q7_2ep's schedule was not recovered (constant/445 for linear/500).", ""]
+              "and 61-69% at 5,000 steps. q7_2ep (Qwen2.5-7B, 2 x 250 steps, only the embedding and output layer trained) is",
+              "not recovered by either method: the single-epoch reader gives a wrong schedule and the joint fit finds no",
+              "seed (12 hits, at chance level), so no document can be dated. Two-epoch reading remains an open problem.", ""]
     (G / "GAPS.md").write_text("\n".join(L) + "\n")
     print("\n".join(L))
 

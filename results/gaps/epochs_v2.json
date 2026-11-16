@@ -1,0 +1,63 @@
+{
+ "q7_2ep": {
+  "run": "q7_2ep",
+  "recipe": {
+   "kind": "cosine",
+   "N": 90,
+   "warmup": 0,
+   "peak": 1.874394648368537e-05,
+   "min_ratio": 0.0,
+   "decay_frac": 0.2,
+   "score": -0.03877039038497009,
+   "coverage": 0.9915758176412289,
+   "resid": 0.00014859386029730803,
+   "epochs": 2,
+   "peak_snap": 1.874394648368537e-05
+  },
+  "best_by_E": {
+   "2": {
+    "kind": "cosine",
+    "N": 90,
+    "warmup": 0,
+    "peak": 1.874394648368537e-05,
+    "min_ratio": 0.0,
+    "decay_frac": 0.2,
+    "score": -0.03877039038497009,
+    "coverage": 0.9915758176412289,
+    "resid": 0.00014859386029730803
+   },
+   "3": {
+    "kind": "linear",
+    "N": 1133,
+    "warmup": 500,
+    "peak": 2.966863926850701e-06,
+    "min_ratio": 0.0,
+    "decay_frac": 0.2,
+    "score": -0.023477217870966547,
+    "coverage": 0.9906840913332291,
+    "resid": 0.0001473020907085676
+   }
+  },
+  "rows_tight": 2053,
+  "seed": 5406,
+  "seed_hits": 12,
+  "docs_with_unique": 1642,
+  "runner_up_seed": [
+   11,
+   17078
+  ],
+  "t": 3510.251011133194,
+  "recipe_true": {
+   "kind": "linear",
+   "N": 500,
+   "warmup": 0,
+   "peak": 1e-05,
+   "epochs": 2.0
+  },
+  "schedule_exact": false,
+  "seed_true": 99,
+  "rows_touched_twice": 7034,
+  "both_steps_exact_with_seed": 0.0,
+  "both_steps_exact_and_row_max_matches": 0.0
+ }
+}

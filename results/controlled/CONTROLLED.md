@@ -16,18 +16,18 @@ Each run fine-tunes a model with full logging; the forensics then see only the s
   documents). v1 = the test in `score.py`; v2 = `scripts/gaps/swaps.py`.
 - **Bit-exact replay**: weights of never-updated tokens reproduced bit for bit by replaying the recovered
   schedule's weight decay (only meaningful with weight decay); one step off = the same with N+1 / N-1 steps.
-- *(old)*: Qwen2.5-7B runs, scored once on a borrowed GPU machine whose copy of the weights was deleted;
-  they could not be re-scored with the current code.
+- The five Qwen2.5-7B runs were retrained on one RTX PRO 6000 with the original arguments and seeds (the first
+  copies were on a borrowed machine and were deleted), then scored with the same code as every other run.
 
-**Recipe exact in 18 of 19 re-scored runs** (22 of 24 including the old Qwen2.5-7B results).
+**Recipe exact in 22 of 24 runs**, all scored with one version of the code.
 
 | run | setup | tokens updated (found/true) | true recipe | recovered | peak LR error (before rounding) | placed from weights | with seed | seed | swap check | bit-exact replay (weights) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| q7_2ep (old) | Qwen2.5-7B, 2 epochs | 14,326/14,326 | linear/500/w0/1e-05 | constant/445/w70/7.3e-06 | -26.964% | - | - | - | - | - |
-| q7_big (old) | Qwen2.5-7B, batch 128 (52k docs) | 45,259/45,259 | cosine/407/w20/2e-05 | **exact** | -0.005% | 2,341/52,000 (254 wrong) | 52,000/52,000 | recovered | 0/0, 367 false | - |
-| q7_emb (old) | Qwen2.5-7B, embeddings + output layer trained | 19,874/19,874 | cosine/500/w10/1e-05 | **exact** | -0.005% | 1,205/4,000 (33 wrong) | 4,000/4,000 | recovered | 0/0, 50 false | - |
-| q7_lora (old) | Qwen2.5-7B, LoRA + trained embeddings | 19,874/19,874 | linear/500/w0/0.0001 | **exact** | +0.003% | 1,169/4,000 (7 wrong) | 4,000/4,000 | recovered | 0/0, 26 false | - |
-| q7_wd (old) | Qwen2.5-7B, constant, wd 0.1 | 19,864/19,874; by replay 19,874/19,874 | constant/500/w0/5e-06/wd0.1 | **exact** | +0.016% | 1,260/4,000 (73 wrong) | 4,000/4,000 | recovered | 0/0, 87 false | 473,769,020 / one step off: 1,104, 1,098 |
+| q7_2ep | Qwen2.5-7B, 2 epochs | 14,326/14,326 | linear/500/w0/1e-05 | linear/1280/w1052/5.45e-06 | -45.501% | - | - | - | - | - |
+| q7_big | Qwen2.5-7B, batch 128 (52k docs) | 45,259/45,259 | cosine/407/w20/2e-05 | **exact** | -0.004% | 2,339/52,000 (253 wrong) | 52,000/52,000 | recovered | 0/0, 364 false; v2 0/0, 2 false | - |
+| q7_emb | Qwen2.5-7B, embeddings + output layer trained | 19,874/19,874 | cosine/500/w10/1e-05 | **exact** | -0.007% | 1,204/4,000 (36 wrong) | 4,000/4,000 | recovered | 0/0, 50 false; v2 0/0, 0 false | - |
+| q7_lora | Qwen2.5-7B, LoRA + trained embeddings | 19,874/19,874 | linear/500/w0/0.0001 | **exact** | +0.000% | 1,156/4,000 (7 wrong) | 4,000/4,000 | recovered | 0/0, 19 false; v2 0/0, 0 false | - |
+| q7_wd | Qwen2.5-7B, constant, wd 0.1 | 19,864/19,874; by replay 19,874/19,874 | constant/500/w0/5e-06/wd0.1 | **exact** | +0.017% | 1,260/4,000 (75 wrong) | 4,000/4,000 | recovered | 0/0, 87 false; v2 0/0, 0 false | 473,769,019 / one step off: 1,106, 1,099 |
 | r01_lin | Pythia-160m, linear, batch 8 | 18,538/18,538 | linear/500/w20/5e-05 | **exact** | -0.004% | 1,149/4,000 (3 wrong) | 4,000/4,000 | recovered | 0/0, 3 false; v2 0/0, 0 false | - |
 | r02_cos | Pythia-160m, cosine, batch 8 | 18,538/18,538 | cosine/500/w0/2e-05 | **exact** | +0.006% | 1,341/4,000 (1 wrong) | 4,000/4,000 | recovered | 0/0, 3 false; v2 0/0, 0 false | - |
 | r03_const | Pythia-160m, constant | 18,538/18,538 | constant/500/w50/0.0001 | **exact** | -0.007% | 1,344/4,000 (1 wrong) | 4,000/4,000 | recovered | 0/0, 3 false; v2 0/0, 0 false | - |

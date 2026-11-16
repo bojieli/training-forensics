@@ -16,20 +16,20 @@
   "wd": 0.0
  },
  "recipe_read": {
-  "kind": "constant",
-  "N": 445,
-  "warmup": 70,
-  "peak": 7.303630638649816e-06,
-  "peak_snap": 7.303630638649816e-06,
+  "kind": "linear",
+  "N": 1280,
+  "warmup": 1052,
+  "peak": 5.44993988201111e-06,
+  "peak_snap": 5.44993988201111e-06,
   "wd": 0.0,
   "wd_snap": 0.0,
   "min_ratio": 0.0
  },
  "recipe_ok": {
-  "kind": false,
+  "kind": true,
   "N": false,
   "warmup": false,
-  "peak_rel_err": -0.2696369361350185,
+  "peak_rel_err": -0.455006011798889,
   "peak_snap_ok": false,
   "wd_rel_err": 0.0,
   "steps": false,
@@ -38,5 +38,6 @@
   "schedule_exact": false
  },
  "replay_refine": null,
- "t_recipe": 23.94385600090027
+ "decay_lut": null,
+ "t_recipe": 598.3305542469025
 }

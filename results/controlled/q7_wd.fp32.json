@@ -19,9 +19,9 @@
   "kind": "constant",
   "N": 500,
   "warmup": 0,
-  "peak": 5.000810463520987e-06,
+  "peak": 5.000843515604795e-06,
   "peak_snap": 4.9999999999999996e-06,
-  "wd": 0.08939247728360589,
+  "wd": 0.0893918864617492,
   "wd_snap": 0.1,
   "min_ratio": 0.0
  },
@@ -29,12 +29,12 @@
   "kind": true,
   "N": true,
   "warmup": true,
-  "peak_rel_err": 0.00016209270419742516,
+  "peak_rel_err": 0.00016870312095895734,
   "peak_snap_ok": true,
-  "wd_rel_err": -0.10607522716394113,
+  "wd_rel_err": -0.10608113538250807,
   "steps": true,
   "lr_max_rel_dev_snapped": 1.6940658945086004e-16,
-  "lr_max_rel_dev_raw": 0.00016209270419733528,
+  "lr_max_rel_dev_raw": 0.0001687031209589396,
   "schedule_exact": true
  },
  "replay_refine": {
@@ -52,50 +52,50 @@
  },
  "decay_lut": {
   "distinct_values": 5018,
-  "consistent": 0.9999501325334822,
+  "consistent": 0.9999501116071429,
   "coverage_moved": 0.9999820065507954
  },
- "t_recipe": 65.56364154815674,
+ "t_recipe": 287.98738837242126,
  "placement": {
   "docs": 4000,
-  "placed": 1333,
+  "placed": 1335,
   "exact": 1260,
-  "wrong": 73,
+  "wrong": 75,
   "status_counts": {
-   "ambiguous2": 479,
-   "ambiguous6": 26,
-   "no_unique_token": 1310,
-   "ambiguous14": 1,
-   "ambiguous12": 2,
-   "ambiguous5": 34,
-   "ambiguous3": 267,
    "ambiguous10": 9,
-   "ambiguous13": 14,
-   "ambiguous9": 7,
-   "ambiguous8": 11,
-   "ambiguous15": 4,
-   "placed": 1333,
+   "placed": 1335,
+   "ambiguous6": 26,
+   "ambiguous11": 7,
+   "ambiguous12": 2,
+   "no_unique_token": 1310,
    "ambiguous16": 3,
-   "ambiguous4": 122,
+   "ambiguous9": 5,
+   "ambiguous2": 474,
+   "ambiguous3": 270,
+   "ambiguous13": 14,
+   "inconsistent": 352,
+   "ambiguous5": 34,
+   "ambiguous4": 120,
+   "ambiguous15": 4,
    "has_unmoved_token": 9,
    "ambiguous7": 12,
-   "ambiguous11": 7,
-   "inconsistent": 350
+   "ambiguous14": 1,
+   "ambiguous8": 13
   }
  },
  "seed": {
   "true": 0,
   "found": 0,
   "hits": 1260,
-  "of": 1333,
+  "of": 1335,
   "second": [
    5945,
    12
   ]
  },
  "swap_reasons": {
-  "unmoved_token": 8,
-  "single_touch_wrong_step": 79
+  "single_touch_wrong_step": 79,
+  "unmoved_token": 8
  },
  "placement_with_seed": 4000,
  "swaps": {
@@ -112,17 +112,17 @@
  },
  "replay": {
   "weights": 473804800,
-  "bit_exact": 473769020,
+  "bit_exact": 473769019,
   "zeros_exact": 1095
  },
  "replay_shift1": {
   "weights": 473804800,
-  "bit_exact": 1104,
+  "bit_exact": 1106,
   "zeros_exact": 1095
  },
  "replay_shiftm1": {
   "weights": 473804800,
-  "bit_exact": 1098,
+  "bit_exact": 1099,
   "zeros_exact": 1095
  }
 }

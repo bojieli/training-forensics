@@ -24,9 +24,9 @@ DESC = {
     "q7_wd": "Qwen2.5-7B, constant, wd 0.1", "q7_big": "Qwen2.5-7B, batch 128 (52k docs)",
     "q7_2ep": "Qwen2.5-7B, 2 epochs",
 }
-# Qwen-7B runs were trained and scored on a borrowed GPU box whose scratch copy of
-# the weights was deleted afterwards; their JSONs predate the current scorer.
-STALE = {"q7_emb", "q7_lora", "q7_wd", "q7_big", "q7_2ep"}
+# The Qwen-7B runs were first trained on a borrowed GPU box and later retrained on
+# rtx-pro with identical arguments and seeds, so every run is scored by one scorer.
+STALE: set[str] = set()
 
 
 def fmt_recipe(r):
@@ -89,10 +89,9 @@ def main():
            "  documents). v1 = the test in `score.py`; v2 = `scripts/gaps/swaps.py`.",
            "- **Bit-exact replay**: weights of never-updated tokens reproduced bit for bit by replaying the recovered",
            "  schedule's weight decay (only meaningful with weight decay); one step off = the same with N+1 / N-1 steps.",
-           "- *(old)*: Qwen2.5-7B runs, scored once on a borrowed GPU machine whose copy of the weights was deleted;",
-           "  they could not be re-scored with the current code.", "",
-           f"**Recipe exact in {n_fresh_exact} of {n_fresh} re-scored runs** "
-           f"({n_exact} of {n_runs} including the old Qwen2.5-7B results).", "",
+           "- The five Qwen2.5-7B runs were retrained on one RTX PRO 6000 with the original arguments and seeds (the first",
+           "  copies were on a borrowed machine and were deleted), then scored with the same code as every other run.", "",
+           f"**Recipe exact in {n_exact} of {n_runs} runs**, all scored with one version of the code.", "",
            "| run | setup | tokens updated (found/true) | true recipe | recovered | peak LR error (before rounding) | placed from weights | with seed | seed | swap check | bit-exact replay (weights) |",
            "|---|---|---|---|---|---|---|---|---|---|---|"] + rows
     for name, title in (("tokens_16bit.json", "16-bit releases: which tokens were updated"),):
