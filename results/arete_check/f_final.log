@@ -1,0 +1,16 @@
+(a) S+P+newline+A vs (c) [S+P][A]+1 token: tokens only in (a): 0 updated 0 | only in (c): 0 updated 0
+   only(a) []
+   only(c) []
+tokens occurring only at the last answer position: 0 updated 0 identical 0 []
+lm_head rows by relative change: [(19357, 'ĠCOVID', 0.0468), (248044, '<|endoftext|>', 0.0306), (2873, 'Ġgive', 0.0293), (43001, 'Ġdownward', 0.0288), (553, ').', 0.0283), (31881, 'Ġadjustments', 0.0282), (19333, 'Ġviolation', 0.0278), (1000, 'Ġwould', 0.0275), (27090, 'âĢĶa', 0.0267), (27011, '/content', 0.0267), (26535, 'Ġpandemic', 0.0264), (21627, 'abeled', 0.0261)]
+  rank of <|endoftext|>: 2  <|im_end|>: 1862  <think>: 33458 of 248320
+trace-only tokens (not in matched training text): 9412 updated 0 barely 0 identical 9412
+   in 1-2 rows: n=8351 updated=0
+   in 3-20 rows: n=1027 updated=0
+   in 21-1000000000 rows: n=34 updated=0
+trace tokens total 40125549 vs nous tokens/epoch 26398693
+sum(lr)=0.00661; total decoupled shrink at wd 0.1 = 6.61e-04; bf16 half-step relative = 1.95e-03..3.91e-03 -> decay invisible in bf16
+data.js loss: step 601 0.992206633091 step 602 0.843196988106 grad_norm median after warmup 1.416284263134
+rows whose length value occurs in the leftover multiset: 7292 of 29236 (chance rate for the 73/73 test)
+leftover (held-out) by count: 350  published - nous per topic: 50 each x 7 = 350; 28886 // 48 = 601 remainder 38 ; 29236 - 601*48 = 388
+vision patch_embed identical to base: (1152, 3, 2, 16, 16) True

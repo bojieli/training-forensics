@@ -1,0 +1,11 @@
+/home/ubuntu/training-forensics/scripts/arete_check/a_embed.py:23: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  return torch.from_numpy(np.ascontiguousarray(u).view(np.int16)).view(torch.bfloat16).float().numpy()
+shape (248320, 5120) (248320, 5120)
+tied? base emb==head rows: 0  child emb==head rows: 0
+EMB bit-identical 184610 barely(1..1%) 318 updated(>1%) 63392
+HEAD bit-identical 1982 barely 152513 updated 93825
+EMB frac changed among changed rows pctl {0: np.float64(0.0006), 1: np.float64(0.0141), 5: np.float64(0.0334), 25: np.float64(0.1215), 50: np.float64(0.259), 75: np.float64(0.4391), 95: np.float64(0.6498), 99: np.float64(0.7469), 100: np.float64(0.9727)}
+HEAD frac changed pctl {0: np.float64(0.0), 1: np.float64(0.0002), 5: np.float64(0.0004), 25: np.float64(0.0016), 50: np.float64(0.0043), 75: np.float64(0.1311), 95: np.float64(0.8223), 99: np.float64(0.8871), 100: np.float64(0.9768)}
+base emb row norm pctl {0: np.float64(0.0008), 1: np.float64(0.3635), 5: np.float64(0.6462), 25: np.float64(0.8174), 50: np.float64(0.9288), 75: np.float64(1.0044), 95: np.float64(1.0829), 99: np.float64(1.1165), 100: np.float64(1.1914)}
+rows with zero norm in base 0 non-finite 0
+base duplicate-row groups 0 []

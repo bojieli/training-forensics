@@ -1,0 +1,24 @@
+rows 29236 reasoning 29236
+roles {('system', 'user', 'assistant')} systems {'You are a helpful assistant.'}
+answer == reasoning.response: 29236
+answers containing <think>: 0
+child template render: '<|im_start|>system\nReasoning effort is set to xhigh. Please think carefully through the task, validate key assumptions, consider plausible alternatives, and pri' ... 'ated—not to the journalist to prove it was wrong.<|im_end|>\n'
+base  template render: '<|im_start|>system\nReasoning effort is set to xhigh. Please think carefully through the task, validate key assumptions, consider plausible alternatives, and pri' ... 'ated—not to the journalist to prove it was wrong.<|im_end|>\n'
+child==base render rows: 29236
+child_tpl: distinct 63656 total_tokens 28376481 mean 970.6 max 3698 >65536 0
+child_tpl_keep_last: distinct 63656 total_tokens 28376481 mean 970.6 max 3698 >65536 0
+base_tpl: distinct 63656 total_tokens 28376481 mean 970.6 max 3698 >65536 0
+think render: '<|im_start|>system\nReasoning effort is set to xhigh. Please think carefully through the task, validate key assumptions, consider plausible alternatives, and prioritize correctness, consistency, and clarity in the final answer.\n\nYou are a helpful assistant.<|im'
+child_tpl_think: distinct 73083 total_tokens 68531279 mean 2344.1 max 16878 >65536 0
+child_tpl_nosys: distinct 63656 total_tokens 28171829 mean 963.6 max 3691 >65536 0
+plain_user_answer: distinct 63652 total_tokens 26563849 mean 908.6 max 3636 >65536 0
+answer_only: distinct 63601 total_tokens 25771321 mean 881.5 max 3614 >65536 0
+prompt_only: distinct 20935 total_tokens 763292 mean 26.1 max 58 >65536 0
+reasoning_only: distinct 67986 total_tokens 40125562 mean 1372.5 max 16477 >65536 0
+child_tpl_split_special: distinct 63658 total_tokens 29170500 mean 997.8 max 3726 >65536 0
+split-special head: ['<', '|', 'im', '_start', '|', '>', 'system', 'Ċ', 'Reason', 'ing', 'Ġeffort', 'Ġis', 'Ġset', 'Ġto', 'Ġx', 'high', '.', 'ĠPlease', 'Ġthink', 'Ġcarefully', 'Ġthrough', 'Ġthe', 'Ġtask', ',', 'Ġvalidate', 'Ġkey', 'Ġassumptions', ',', 'Ġconsider', 'Ġplausible']
+added tokens child 33 base 33 same list: True
+tokenizer.json top-level diff keys: ['pre_tokenizer', 'decoder', 'model']
+  pre_tokenizer child: {"type": "Sequence", "pretokenizers": [{"type": "Split", "pattern": {"Regex": "(?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\\r\\n\\p{L}\\p{N}]?\\p{L}+|\\p{N}| ?[^\\s\\p{L}\\p{N}]+[\\r\\n]*|\\s*[\\r\\n]+|\\s+(?!\\S)|\\s+"}, "behavior": "Isolated", "invert": false}, {"type": "ByteLevel", "add_prefix_space": false, | base: {"type": "Sequence", "pretokenizers": [{"type": "Split", "pattern": {"Regex": "(?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\\r\\n\\p{L}\\p{N}]?[\\p{L}\\p{M}]+|\\p{N}| ?[^\\s\\p{L}\\p{M}\\p{N}]+[\\r\\n]*|\\s*[\\r\\n]+|\\s+(?!\\S)|\\s+"}, "behavior": "Isolated", "invert": false}, {"type": "ByteLevel", "add_prefix_
+  decoder child: {"type": "ByteLevel", "add_prefix_space": true, "trim_offsets": true, "use_regex": true} | base: {"type": "ByteLevel", "add_prefix_space": false, "trim_offsets": false, "use_regex": false}
+ model keys differing: ['merges'] types BPE BPE

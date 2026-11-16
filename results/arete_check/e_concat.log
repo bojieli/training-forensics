@@ -1,0 +1,32 @@
+[tok_base] S+P+A                                  mean 912.63 max 3641 | nous lengths not coverable (n, const shift): [(1068, 1), (3421, 2)] | present 63947 updated 63392 barely 318 identical 237 | updated&absent 0
+[tok_base] S+P+nl+A                               mean 913.71 max 3642 | nous lengths not coverable (n, const shift): [(0, 0), (3712, -1)] | present 63900 updated 63392 barely 318 identical 190 | updated&absent 0
+[tok_base] S+nl+P+A                               mean 914.51 max 3642 | nous lengths not coverable (n, const shift): [(1540, -1), (3315, 0)] | present 63777 updated 63223 barely 318 identical 236 | updated&absent 169
+[tok_base] S+sp+P+sp+A                            mean 913.51 max 3641 | nous lengths not coverable (n, const shift): [(1469, 0), (3413, 1)] | present 63657 updated 63144 barely 318 identical 195 | updated&absent 248
+[tok_base] P+A                                    mean 907.51 max 3635 | nous lengths not coverable (n, const shift): [(3714, -3), (3737, 2)] | present 63777 updated 63223 barely 318 identical 236 | updated&absent 169
+[tok_base] S+P | A (answer tokenized separately)  mean 912.71 max 3641 | nous lengths not coverable (n, const shift): [(0, 1), (3712, 0)] | present 63900 updated 63392 barely 318 identical 190 | updated&absent 0
+[tok_child] S+P+A                                  mean 912.63 max 3641 | nous lengths not coverable (n, const shift): [(1068, 1), (3421, 2)] | present 63947 updated 63392 barely 318 identical 237 | updated&absent 0
+[tok_child] S+P+nl+A                               mean 913.71 max 3642 | nous lengths not coverable (n, const shift): [(0, 0), (3712, -1)] | present 63900 updated 63392 barely 318 identical 190 | updated&absent 0
+[tok_child] S+nl+P+A                               mean 914.51 max 3642 | nous lengths not coverable (n, const shift): [(1540, -1), (3315, 0)] | present 63777 updated 63223 barely 318 identical 236 | updated&absent 169
+[tok_child] S+sp+P+sp+A                            mean 913.51 max 3641 | nous lengths not coverable (n, const shift): [(1469, 0), (3413, 1)] | present 63657 updated 63144 barely 318 identical 195 | updated&absent 248
+[tok_child] P+A                                    mean 907.51 max 3635 | nous lengths not coverable (n, const shift): [(3714, -3), (3737, 2)] | present 63777 updated 63223 barely 318 identical 236 | updated&absent 169
+[tok_child] S+P | A (answer tokenized separately)  mean 912.71 max 3641 | nous lengths not coverable (n, const shift): [(0, 1), (3712, 0)] | present 63900 updated 63392 barely 318 identical 190 | updated&absent 0
+best format: ('tok_base', 'S+P+nl+A') uncoverable 0 shift 0
+nous: n 28886 total 26398693 median 866.0 p95 1633 max 3642 min 100
+mine (all 29,236 rows): total 26713284 median 866.0 p95 1633.0 max 3642 min 100
+leftover rows after removing nous lengths: 350  total tokens mine - nous: 314591  leftover token sum: 314591
+rows holding >=1 token found in no other row: 5537 {'updated_only': 5376, 'other(barely)': 88, 'identical_only': 73}
+flagged (all row-exclusive tokens bit-identical or barely, >=1 identical): 73 by topic {'data-privacy-surveillance': 7, 'democracy-and-governance': 12, 'education-philosophy': 13, 'environmental-strategy': 11, 'freedom-of-expression': 8, 'state-ideology': 11, 'state-vs-free-market-capitalism': 11}
+expected if 350 of 29,236 rows were held out at random: 66.3  if 388: 73.5
+flagged rows whose length is in the leftover multiset: 73 of 73
+flagged row positions within topic file (first 3 topics): {np.str_('data-privacy-surveillance'): [292, 796, 935, 1472, 3060, 3261, 3551], np.str_('democracy-and-governance'): [45, 995, 1359, 1510, 1942, 2357, 2467, 2729, 3000, 3434, 3512, 4192], np.str_('education-philosophy'): [534, 1241, 1392, 1542, 1698, 1853, 2368, 2717, 2784, 3067, 3488, 3710, 3900]}
+still updated&absent: 0 []
+present, not updated: 508 by rows-containing: {1: 494, 2: 14}
+boundary tokens: rows containing '.Does'-style tokens; most frequent ordinary tokens with frac:
+   'You': rows(best fmt)=29236 frac=0.887
+   'Ġare': rows(best fmt)=29236 frac=0.920
+   'Ġhelpful': rows(best fmt)=29236 frac=0.870
+   'Ġassistant': rows(best fmt)=29236 frac=0.883
+   'system': rows(best fmt)=799 frac=0.526
+   'user': rows(best fmt)=253 frac=0.412
+   'assistant': rows(best fmt)=11 frac=0.190
+distinct last tokens 40 top [('.', 24388), ('.*', 1515), ('.**', 954), ('**.', 606), (').', 454)]

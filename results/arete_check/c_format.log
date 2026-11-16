@@ -1,0 +1,9 @@
+published per topic Counter({'state-ideology': 4422, 'democracy-and-governance': 4342, 'state-vs-free-market-capitalism': 4336, 'education-philosophy': 4170, 'freedom-of-expression': 4059, 'environmental-strategy': 3981, 'data-privacy-surveillance': 3926})
+nous per topic {'data-privacy-surveillance': 3876, 'democracy-and-governance': 4292, 'education-philosophy': 4120, 'environmental-strategy': 3931, 'freedom-of-expression': 4009, 'state-ideology': 4372, 'state-vs-free-market-capitalism': 4286}
+nous: total 26398693 answer 25496828 non-answer per ex 31.221525998753723 qwen extra 18.888458076577
+mine all rows: prompt mean 26.107949103844575 answer mean 881.4927144616227
+P+A: mean 907.51 max 3635 | best constant shifts (nous lengths not coverable, shift): [(1540, 6), (3315, 7), (3668, 8)]
+chatml_nosys_nothink: mean 917.60 max 3645 | best constant shifts (nous lengths not coverable, shift): [(1002, -4), (3460, -3), (3667, -5)]
+chatml_sys_nothink: mean 928.60 max 3656 | best constant shifts (nous lengths not coverable, shift): [(1002, -15), (3460, -14), (3667, -16)]
+chatml_sys_emptythink: mean 932.60 max 3660 | best constant shifts (nous lengths not coverable, shift): [(1002, -19), (3460, -18), (3667, -20)]
+chatml_nosys_emptythink: mean 921.60 max 3649 | best constant shifts (nous lengths not coverable, shift): [(1002, -8), (3460, -7), (3667, -9)]

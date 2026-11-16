@@ -1,0 +1,193 @@
+special/added tokens: 33 ids 248044 - 248076 | vocab rows beyond tokenizer: 243
+
+== cross-tabs (ordinary tokens; last position of each row dropped where a template is used)
+child_tpl                  present  63652 updated  63145 (0.9920) barely  318 identical   189 | updated&absent 247
+child_tpl_keep_last        present  63652 updated  63145 (0.9920) barely  318 identical   189 | updated&absent 247
+child_tpl_think            present  73079 updated  63152 (0.8642) barely  318 identical  9609 | updated&absent 240
+child_tpl_nosys            present  63652 updated  63145 (0.9920) barely  318 identical   189 | updated&absent 247
+plain_user_answer          present  63652 updated  63145 (0.9920) barely  318 identical   189 | updated&absent 247
+answer_only                present  63601 updated  63094 (0.9920) barely  318 identical   189 | updated&absent 298
+child_tpl_split_special    present  63656 updated  63145 (0.9920) barely  318 identical   193 | updated&absent 247
+tokens only in traces: 9427 updated 7 barely 0 identical 9420
+   trace-only tokens in 1-1 rows: n=6844 updated=5
+   trace-only tokens in 2-5 rows: n=2388 updated=2
+   trace-only tokens in 6-20 rows: n=161 updated=0
+   trace-only tokens in 21-100 rows: n=27 updated=0
+   trace-only tokens in 101-1000000000 rows: n=7 updated=0
+
+== special tokens (all 33): id, content, rows(template), emb diff count, base emb norm, head diff frac, head delta norm/base
+  248044 '<|endoftext|>'              special=True rows=     0 emb_nd=   0 base_norm=1.068 head_nd_frac=0.977 head_rel_delta=0.0306
+  248045 '<|im_start|>'               special=True rows= 29236 emb_nd=   0 base_norm=0.852 head_nd_frac=0.049 head_rel_delta=0.0001
+  248046 '<|im_end|>'                 special=True rows= 29236 emb_nd=   0 base_norm=0.839 head_nd_frac=0.879 head_rel_delta=0.0161
+  248047 '<|object_ref_start|>'       special=True rows=     0 emb_nd=   0 base_norm=0.962 head_nd_frac=0.001 head_rel_delta=0.0000
+  248048 '<|object_ref_end|>'         special=True rows=     0 emb_nd=   0 base_norm=0.991 head_nd_frac=0.003 head_rel_delta=0.0000
+  248049 '<|box_start|>'              special=True rows=     0 emb_nd=   0 base_norm=0.942 head_nd_frac=0.003 head_rel_delta=0.0000
+  248050 '<|box_end|>'                special=True rows=     0 emb_nd=   0 base_norm=0.932 head_nd_frac=0.000 head_rel_delta=0.0000
+  248051 '<|quad_start|>'             special=True rows=     0 emb_nd=   0 base_norm=0.905 head_nd_frac=0.000 head_rel_delta=0.0000
+  248052 '<|quad_end|>'               special=True rows=     0 emb_nd=   0 base_norm=0.959 head_nd_frac=0.000 head_rel_delta=0.0000
+  248053 '<|vision_start|>'           special=True rows=     0 emb_nd=   0 base_norm=0.996 head_nd_frac=0.000 head_rel_delta=0.0000
+  248054 '<|vision_end|>'             special=True rows=     0 emb_nd=   0 base_norm=0.989 head_nd_frac=0.001 head_rel_delta=0.0000
+  248055 '<|vision_pad|>'             special=True rows=     0 emb_nd=   0 base_norm=0.226 head_nd_frac=0.001 head_rel_delta=0.0000
+  248056 '<|image_pad|>'              special=True rows=     0 emb_nd=   0 base_norm=0.229 head_nd_frac=0.001 head_rel_delta=0.0000
+  248057 '<|video_pad|>'              special=True rows=     0 emb_nd=   0 base_norm=0.224 head_nd_frac=0.000 head_rel_delta=0.0000
+  248058 '<tool_call>'                special=False rows=     0 emb_nd=   0 base_norm=0.960 head_nd_frac=0.075 head_rel_delta=0.0005
+  248059 '</tool_call>'               special=False rows=     0 emb_nd=   0 base_norm=0.958 head_nd_frac=0.001 head_rel_delta=0.0000
+  248060 '<|fim_prefix|>'             special=False rows=     0 emb_nd=   0 base_norm=0.932 head_nd_frac=0.001 head_rel_delta=0.0000
+  248061 '<|fim_middle|>'             special=False rows=     0 emb_nd=   0 base_norm=0.904 head_nd_frac=0.001 head_rel_delta=0.0000
+  248062 '<|fim_suffix|>'             special=False rows=     0 emb_nd=   0 base_norm=0.928 head_nd_frac=0.001 head_rel_delta=0.0000
+  248063 '<|fim_pad|>'                special=False rows=     0 emb_nd=   0 base_norm=0.256 head_nd_frac=0.000 head_rel_delta=0.0000
+  248064 '<|repo_name|>'              special=False rows=     0 emb_nd=   0 base_norm=0.946 head_nd_frac=0.001 head_rel_delta=0.0000
+  248065 '<|file_sep|>'               special=False rows=     0 emb_nd=   0 base_norm=1.000 head_nd_frac=0.008 head_rel_delta=0.0000
+  248066 '<tool_response>'            special=False rows=     0 emb_nd=   0 base_norm=0.923 head_nd_frac=0.001 head_rel_delta=0.0000
+  248067 '</tool_response>'           special=False rows=     0 emb_nd=   0 base_norm=0.932 head_nd_frac=0.002 head_rel_delta=0.0000
+  248068 '<think>'                    special=False rows= 29236 emb_nd=   0 base_norm=0.911 head_nd_frac=0.623 head_rel_delta=0.0038
+  248069 '</think>'                   special=False rows= 29236 emb_nd=   0 base_norm=0.913 head_nd_frac=0.042 head_rel_delta=0.0001
+  248070 '<|audio_start|>'            special=True rows=     0 emb_nd=   0 base_norm=0.227 head_nd_frac=0.001 head_rel_delta=0.0000
+  248071 '<|audio_end|>'              special=True rows=     0 emb_nd=   0 base_norm=0.229 head_nd_frac=0.000 head_rel_delta=0.0000
+  248072 '<tts_pad>'                  special=True rows=     0 emb_nd=   0 base_norm=0.230 head_nd_frac=0.000 head_rel_delta=0.0000
+  248073 '<tts_text_bos>'             special=True rows=     0 emb_nd=   0 base_norm=0.231 head_nd_frac=0.001 head_rel_delta=0.0000
+  248074 '<tts_text_eod>'             special=True rows=     0 emb_nd=   0 base_norm=0.229 head_nd_frac=0.001 head_rel_delta=0.0000
+  248075 '<tts_text_bos_single>'      special=True rows=     0 emb_nd=   0 base_norm=0.223 head_nd_frac=0.000 head_rel_delta=0.0000
+  248076 '<|audio_pad|>'              special=True rows=     0 emb_nd=   0 base_norm=0.227 head_nd_frac=0.000 head_rel_delta=0.0000
+ordinary-token base norm median 0.92881614 | special median 0.91299766
+
+== detection floor: frac of numbers changed vs number of rows containing the token (template rendering, ordinary tokens)
+  rows     0-    0: n=184635 identical=184388 barely=   0 updated=   247 median_frac=0.000 min_frac=0.0000
+  rows     1-    1: n= 10611 identical=   188 barely= 305 updated= 10118 median_frac=0.062 min_frac=0.0000
+  rows     2-    2: n=  4881 identical=     1 barely=  13 updated=  4867 median_frac=0.096 min_frac=0.0000
+  rows     3-    5: n=  7588 identical=     0 barely=   0 updated=  7588 median_frac=0.135 min_frac=0.0107
+  rows     6-   20: n= 12589 identical=     0 barely=   0 updated= 12589 median_frac=0.215 min_frac=0.0236
+  rows    21-  100: n= 13590 identical=     0 barely=   0 updated= 13590 median_frac=0.344 min_frac=0.0541
+  rows   101- 1000: n= 12013 identical=     0 barely=   0 updated= 12013 median_frac=0.523 min_frac=0.1975
+  rows  1001-10000: n=  2224 identical=     0 barely=   0 updated=  2224 median_frac=0.679 min_frac=0.3795
+  rows 10001-29235: n=   116 identical=     0 barely=   0 updated=   116 median_frac=0.843 min_frac=0.7064
+  rows 29236-29236: n=    40 identical=     0 barely=   0 updated=    40 median_frac=0.642 min_frac=0.1248
+
+== tokens in every templated row (ordinary):
+  11 ','              frac=0.970 rows_in_plain_prompt+answer=29235
+  13 '.'              frac=0.971 rows_in_plain_prompt+answer=29233
+  198 'Ċ'              frac=0.952 rows_in_plain_prompt+answer=28242
+  264 'Ġa'             frac=0.965 rows_in_plain_prompt+answer=29008
+  271 'ĊĊ'             frac=0.950 rows_in_plain_prompt+answer=29236
+  279 'Ġthe'           frac=0.973 rows_in_plain_prompt+answer=29233
+  286 'ing'            frac=0.880 rows_in_plain_prompt+answer=17187
+  303 'Ġin'            frac=0.953 rows_in_plain_prompt+answer=28557
+  310 'Ġto'            frac=0.959 rows_in_plain_prompt+answer=29113
+  321 'Ġand'           frac=0.961 rows_in_plain_prompt+answer=29192
+  369 'Ġis'            frac=0.937 rows_in_plain_prompt+answer=27460
+  513 'Ġare'           frac=0.920 rows_in_plain_prompt+answer=24068
+  716 'Ġset'           frac=0.724 rows_in_plain_prompt+answer=3503
+  830 'Ġx'             frac=0.513 rows_in_plain_prompt+answer=76
+  846 'user'           frac=0.412 rows_in_plain_prompt+answer=253
+  1328 'Ġkey'           frac=0.745 rows_in_plain_prompt+answer=2762
+  1472 'Ġthrough'       frac=0.807 rows_in_plain_prompt+answer=12562
+  1534 'Ġfinal'         frac=0.604 rows_in_plain_prompt+answer=1511
+  1683 'Ġthink'         frac=0.672 rows_in_plain_prompt+answer=2018
+  2523 'You'            frac=0.887 rows_in_plain_prompt+answer=2050
+  2814 'Ġconsider'      frac=0.418 rows_in_plain_prompt+answer=701
+  3274 'Ġtask'          frac=0.612 rows_in_plain_prompt+answer=706
+  4087 'Ġanswer'        frac=0.787 rows_in_plain_prompt+answer=10349
+  4879 'Ġeffort'        frac=0.450 rows_in_plain_prompt+answer=441
+  5044 'ĠPlease'        frac=0.125 rows_in_plain_prompt+answer=64
+  8678 'system'         frac=0.526 rows_in_plain_prompt+answer=799
+  9307 'Ġvalidate'      frac=0.297 rows_in_plain_prompt+answer=245
+  10631 'Ġhelpful'       frac=0.870 rows_in_plain_prompt+answer=16
+  11553 'high'           frac=0.597 rows_in_plain_prompt+answer=1483
+  15060 'Ġcarefully'     frac=0.338 rows_in_plain_prompt+answer=250
+  17313 'Ġassistant'     frac=0.883 rows_in_plain_prompt+answer=68
+  24342 'Reason'         frac=0.390 rows_in_plain_prompt+answer=145
+  25605 'Ġalternatives'  frac=0.557 rows_in_plain_prompt+answer=1209
+  27224 'Ġconsistency'   frac=0.515 rows_in_plain_prompt+answer=612
+  30246 'Ġclarity'       frac=0.500 rows_in_plain_prompt+answer=420
+  30800 'Ġassumptions'   frac=0.314 rows_in_plain_prompt+answer=156
+  47675 'Ġplausible'     frac=0.408 rows_in_plain_prompt+answer=175
+  55404 'Ġcorrectness'   frac=0.199 rows_in_plain_prompt+answer=56
+  60445 'Ġprioritize'    frac=0.573 rows_in_plain_prompt+answer=1028
+  74455 'assistant'      frac=0.190 rows_in_plain_prompt+answer=11
+
+== template-only ordinary tokens (in template rendering, absent from prompt/answer bodies):
+
+== marker-as-plain-text pieces:
+  '<'          id=27 frac=0.468 rows_plain=125 rows_tpl=125
+  '|'          id=91 frac=0.878 rows_plain=12160 rows_tpl=12160
+  'im'         id=316 frac=0.680 rows_plain=1698 rows_tpl=1698
+  '_start'     id=4747 frac=0.027 rows_plain=1 rows_tpl=1
+  '_end'       id=6018 frac=0.012 rows_plain=1 rows_tpl=1
+  '>'          id=29 frac=0.818 rows_plain=1747 rows_tpl=1747
+  'think'      id=26003 frac=0.483 rows_plain=149 rows_tpl=149
+  '</'         id=510 frac=0.170 rows_plain=1 rows_tpl=1
+  'system'     id=8678 frac=0.526 rows_plain=799 rows_tpl=29236
+  'user'       id=846 frac=0.412 rows_plain=253 rows_tpl=29236
+  'assistant'  id=74455 frac=0.190 rows_plain=11 rows_tpl=29236
+  'Ċ'          id=198 frac=0.952 rows_plain=28242 rows_tpl=29236
+  'ĊĊ'         id=271 frac=0.950 rows_plain=29236 rows_tpl=29236
+  'User'       id=1421 frac=0.291 rows_plain=285 rows_tpl=285
+  'Assistant'  id=69267 frac=0.171 rows_plain=7 rows_tpl=7
+  ':'          id=25 frac=0.959 rows_plain=28106 rows_tpl=28106
+  'ĠUser'      id=2570 frac=0.367 rows_plain=284 rows_tpl=284
+  'ĠAssistant' id=20732 frac=0.284 rows_plain=18 rows_tpl=18
+  'Human'      id=32850 frac=0.495 rows_plain=323 rows_tpl=323
+  '###'        id=13962 frac=0.861 rows_plain=20516 rows_tpl=20516
+
+== updated-but-absent ordinary tokens: 247; with string, frac changed, substring hits in prompt+answer text
+  with >=1 substring occurrence in text: 12 of 247
+   (61868, '.Does', 0.873, 0)
+   (72580, '.What', 0.853, 0)
+   (31809, '.If', 0.847, 0)
+   (25840, '.Should', 0.846, 0)
+   (85592, '.Evaluate', 0.846, 0)
+   (31308, '.Compare', 0.838, 0)
+   (63776, '.How', 0.833, 0)
+   (90768, '.Our', 0.832, 0)
+   (49052, '.When', 0.823, 0)
+   (12382, '.Are', 0.82, 0)
+   (68478, '.Help', 0.816, 0)
+   (35669, '.After', 0.816, 0)
+   (4358, '.Is', 0.815, 0)
+   (17894, '.Wh', 0.81, 0)
+   (37454, '.Sup', 0.8, 0)
+   (32484, '.Do', 0.796, 0)
+   (26051, '.Im', 0.793, 0)
+   (21706, '.We', 0.767, 0)
+   (51490, '.Can', 0.755, 0)
+   (26186, '.My', 0.753, 0)
+   (25824, '.For', 0.742, 0)
+   (8360, '.An', 0.74, 0)
+   (10554, '.Ass', 0.738, 0)
+   (91800, '.News', 0.697, 0)
+   (5169, '.In', 0.69, 0)
+   (4959, '.Ex', 0.678, 0)
+   (83683, '.Place', 0.673, 0)
+   (11235, '.The', 0.671, 0)
+   (75278, '.Once', 0.646, 0)
+   (28038, '.Parent', 0.646, 0)
+   (30133, '.Before', 0.642, 0)
+   (16564, '.Where', 0.633, 0)
+   (7983, '.Tr', 0.632, 0)
+   (87364, '.Head', 0.624, 0)
+   (4063, '.Set', 0.621, 0)
+   (17331, '.Ad', 0.616, 0)
+   (54973, '.Student', 0.59, 0)
+   (45353, '.Trace', 0.585, 0)
+   (15677, '.Has', 0.581, 0)
+   (7512, '.St', 0.571, 1)
+   (3169, '.To', 0.57, 0)
+   (2727, '.Re', 0.568, 15)
+   (19626, '.As', 0.562, 0)
+   (58820, '.Pe', 0.561, 0)
+   (45603, '.Out', 0.555, 0)
+   (6899, '.New', 0.542, 0)
+   (22813, '.Des', 0.535, 0)
+   (81863, '.Broadcast', 0.534, 0)
+   (47489, '.Public', 0.521, 0)
+   (16567, '.Min', 0.518, 0)
+   (59565, '.React', 0.511, 0)
+   (11110, '.From', 0.492, 0)
+   (92107, '.Pay', 0.488, 0)
+   (37161, '.You', 0.484, 0)
+   (35630, '.Look', 0.482, 0)
+   (56806, '.City', 0.482, 0)
+   (8522, '.Test', 0.474, 0)
+   (2866, '.Com', 0.469, 0)
+   (18371, '.State', 0.467, 0)
+   (47258, '.Phone', 0.461, 0)
