@@ -1,0 +1,467 @@
+[
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "st",
+  "repo": "Qwen/Qwen2.5-7B-Instruct-AWQ",
+  "base_quant": null,
+  "tensors": {
+   "embed": {
+    "stored": "F16",
+    "rows_equal_release": 152064,
+    "rows": 152064,
+    "coords_equal_release_frac": 1.0,
+    "equals_release_cast": true,
+    "read_vs_bf16_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144396,
+     "tp": 144396,
+     "fp": 0,
+     "fn": 4,
+     "exact": false
+    }
+   },
+   "head": {
+    "stored": "F16",
+    "rows_equal_release": 152064,
+    "rows": 152064,
+    "coords_equal_release_frac": 1.0,
+    "equals_release_cast": true,
+    "read_vs_bf16_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    }
+   }
+  }
+ },
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "st",
+  "repo": "Qwen/Qwen2.5-7B-Instruct-GPTQ-Int4",
+  "base_quant": null,
+  "tensors": {
+   "embed": {
+    "stored": "F16",
+    "rows_equal_release": 152064,
+    "rows": 152064,
+    "coords_equal_release_frac": 1.0,
+    "equals_release_cast": true,
+    "read_vs_bf16_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144396,
+     "tp": 144396,
+     "fp": 0,
+     "fn": 4,
+     "exact": false
+    }
+   },
+   "head": {
+    "stored": "F16",
+    "rows_equal_release": 152064,
+    "rows": 152064,
+    "coords_equal_release_frac": 1.0,
+    "equals_release_cast": true,
+    "read_vs_bf16_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    }
+   }
+  }
+ },
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "st",
+  "repo": "Qwen/Qwen2.5-7B-Instruct-GPTQ-Int8",
+  "base_quant": null,
+  "tensors": {
+   "embed": {
+    "stored": "F16",
+    "rows_equal_release": 152064,
+    "rows": 152064,
+    "coords_equal_release_frac": 1.0,
+    "equals_release_cast": true,
+    "read_vs_bf16_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144396,
+     "tp": 144396,
+     "fp": 0,
+     "fn": 4,
+     "exact": false
+    }
+   },
+   "head": {
+    "stored": "F16",
+    "rows_equal_release": 152064,
+    "rows": 152064,
+    "coords_equal_release_frac": 1.0,
+    "equals_release_cast": true,
+    "read_vs_bf16_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    }
+   }
+  }
+ },
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "st",
+  "repo": "RedHatAI/Qwen2.5-7B-Instruct-FP8-dynamic",
+  "base_quant": null,
+  "tensors": {
+   "embed": {
+    "stored": "BF16",
+    "rows_equal_release": 152064,
+    "rows": 152064,
+    "coords_equal_release_frac": 1.0,
+    "equals_release_cast": true,
+    "read_vs_bf16_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144400,
+     "tp": 144400,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    }
+   },
+   "head": {
+    "stored": "BF16",
+    "rows_equal_release": 152064,
+    "rows": 152064,
+    "coords_equal_release_frac": 1.0,
+    "equals_release_cast": true,
+    "read_vs_bf16_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    }
+   }
+  }
+ },
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "st",
+  "repo": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "base_quant": null,
+  "tensors": {
+   "embed": {
+    "stored": "BF16",
+    "rows_equal_release": 152064,
+    "rows": 152064,
+    "coords_equal_release_frac": 1.0,
+    "equals_release_cast": true,
+    "read_vs_bf16_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144400,
+     "tp": 144400,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    }
+   },
+   "head": {
+    "stored": "BF16",
+    "rows_equal_release": 152064,
+    "rows": 152064,
+    "coords_equal_release_frac": 1.0,
+    "equals_release_cast": true,
+    "read_vs_bf16_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    }
+   }
+  }
+ },
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "mlx",
+  "repo": "mlx-community/Qwen2.5-7B-Instruct-4bit",
+  "base_quant": "mlx-community/Qwen2.5-7B-4bit",
+  "tensors": {
+   "embed": {
+    "stored": "mlx affine 4-bit g64",
+    "read_vs_same_tool_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144236,
+     "tp": 144236,
+     "fp": 0,
+     "fn": 164,
+     "exact": false
+    },
+    "requant_from_bf16_rows_exact": {
+     "frac": 0.016815287992358208,
+     "variant": "edge",
+     "compute_dtype": "torch.float16"
+    }
+   },
+   "head": {
+    "stored": "mlx affine 4-bit g64",
+    "read_vs_same_tool_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    },
+    "requant_from_bf16_rows_exact": {
+     "frac": 0.0015190972480922937,
+     "variant": "edge",
+     "compute_dtype": "torch.float16"
+    }
+   }
+  }
+ },
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "mlx",
+  "repo": "mlx-community/Qwen2.5-7B-Instruct-8bit",
+  "base_quant": "mlx-community/Qwen2.5-7B-8bit",
+  "tensors": {
+   "embed": {
+    "stored": "mlx affine 8-bit g64",
+    "read_vs_same_tool_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144330,
+     "tp": 144330,
+     "fp": 0,
+     "fn": 70,
+     "exact": false
+    },
+    "requant_from_bf16_rows_exact": {
+     "frac": 0.015500052832067013,
+     "variant": "edge",
+     "compute_dtype": "torch.float16"
+    }
+   },
+   "head": {
+    "stored": "mlx affine 8-bit g64",
+    "read_vs_same_tool_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    },
+    "requant_from_bf16_rows_exact": {
+     "frac": 0.0,
+     "variant": "minmax",
+     "compute_dtype": "torch.float16"
+    }
+   }
+  }
+ },
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "gguf",
+  "repo": "mradermacher/Qwen2.5-7B-Instruct-GGUF:Qwen2.5-7B-Instruct.Q8_0.gguf",
+  "base_quant": "mradermacher/Qwen2.5-7B-GGUF:Qwen2.5-7B.Q8_0.gguf",
+  "tensors": {
+   "embed": {
+    "stored": "gguf Q8_0",
+    "read_vs_same_tool_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144330,
+     "tp": 144330,
+     "fp": 0,
+     "fn": 70,
+     "exact": false
+    },
+    "requant_from_bf16_rows_exact": {
+     "frac": 1.0,
+     "via_f16": true
+    },
+    "read_vs_requantized_bf16_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144330,
+     "tp": 144330,
+     "fp": 0,
+     "fn": 70,
+     "exact": false
+    }
+   },
+   "head": {
+    "stored": "gguf Q8_0",
+    "read_vs_same_tool_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    },
+    "requant_from_bf16_rows_exact": {
+     "frac": 1.0,
+     "via_f16": true
+    },
+    "read_vs_requantized_bf16_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    }
+   }
+  }
+ },
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "gguf",
+  "repo": "mradermacher/Qwen2.5-7B-Instruct-GGUF:Qwen2.5-7B-Instruct.Q4_K_M.gguf",
+  "base_quant": "mradermacher/Qwen2.5-7B-GGUF:Qwen2.5-7B.Q4_K_M.gguf",
+  "tensors": {
+   "embed": {
+    "stored": "gguf Q4_K",
+    "read_vs_same_tool_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144297,
+     "tp": 144297,
+     "fp": 0,
+     "fn": 103,
+     "exact": false
+    }
+   },
+   "head": {
+    "stored": "gguf Q6_K",
+    "read_vs_same_tool_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    }
+   }
+  }
+ },
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "gguf",
+  "repo": "mradermacher/Qwen2.5-7B-Instruct-i1-GGUF:Qwen2.5-7B-Instruct.i1-Q4_K_M.gguf",
+  "base_quant": "mradermacher/Qwen2.5-7B-i1-GGUF:Qwen2.5-7B.i1-Q4_K_M.gguf",
+  "tensors": {
+   "embed": {
+    "stored": "gguf Q4_K",
+    "read_vs_same_tool_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144297,
+     "tp": 144297,
+     "fp": 0,
+     "fn": 103,
+     "exact": false
+    }
+   },
+   "head": {
+    "stored": "gguf Q6_K",
+    "read_vs_same_tool_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    }
+   }
+  }
+ },
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "gguf",
+  "repo": "mradermacher/Qwen2.5-7B-Instruct-i1-GGUF:Qwen2.5-7B-Instruct.i1-IQ2_M.gguf",
+  "base_quant": "mradermacher/Qwen2.5-7B-i1-GGUF:Qwen2.5-7B.i1-IQ2_M.gguf",
+  "tensors": {
+   "embed": {
+    "stored": "gguf IQ3_S",
+    "read_vs_same_tool_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144250,
+     "tp": 144250,
+     "fp": 0,
+     "fn": 150,
+     "exact": false
+    }
+   },
+   "head": {
+    "stored": "gguf Q5_K",
+    "read_vs_same_tool_base": {
+     "true_moved": 152064,
+     "true_unmoved": 0,
+     "read_moved": 152064,
+     "tp": 152064,
+     "fp": 0,
+     "fn": 0,
+     "exact": true
+    }
+   }
+  }
+ },
+ {
+  "family": "Qwen2.5-7B-Instruct",
+  "kind": "gguf",
+  "repo": "Qwen/Qwen2.5-7B-Instruct-GGUF:qwen2.5-7b-instruct-q8_0-00001-of-00003.gguf",
+  "base_quant": null,
+  "tensors": {
+   "embed": {
+    "stored": "gguf Q8_0",
+    "requant_from_bf16_rows_exact": {
+     "frac": 1.0,
+     "via_f16": true
+    },
+    "read_vs_requantized_bf16_base": {
+     "true_moved": 144400,
+     "true_unmoved": 7664,
+     "read_moved": 144330,
+     "tp": 144330,
+     "fp": 0,
+     "fn": 70,
+     "exact": false
+    }
+   },
+   "head": {
+    "stored": "absent (tied)"
+   }
+  }
+ }
+]

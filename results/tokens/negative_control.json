@@ -1,0 +1,50 @@
+[
+ {
+  "parent": "EleutherAI/pythia-160m",
+  "child": "EleutherAI/pythia-160m-seed1",
+  "rows": 50304,
+  "P": 1.0,
+  "P_exact_frac": 0.00010935465494791667,
+  "unmoved": 0,
+  "near": 0,
+  "moved": 50304,
+  "note": "no shared vectors: no token record produced"
+ },
+ {
+  "parent": "EleutherAI/pythia-160m",
+  "child": "EleutherAI/pythia-160m-seed2",
+  "rows": 50304,
+  "P": 1.0,
+  "P_exact_frac": 0.00011952718098958333,
+  "unmoved": 0,
+  "near": 0,
+  "moved": 50304,
+  "note": "no shared vectors: no token record produced"
+ },
+ {
+  "parent": "EleutherAI/pythia-410m",
+  "child": "EleutherAI/pythia-410m-deduped",
+  "rows": 50304,
+  "P": 1.0,
+  "P_exact_frac": 0.4576416015625,
+  "unmoved": 0,
+  "near": 0,
+  "moved": 50304,
+  "note": "no shared vectors: no token record produced"
+ },
+ {
+  "parent": "Qwen/Qwen2-7B",
+  "child": "Qwen/Qwen2.5-7B",
+  "rows": 152064,
+  "P": 1.0,
+  "P_exact_frac": 1.0,
+  "unmoved": 2282,
+  "near": 0,
+  "moved": 149782,
+  "unmoved_unreachable": 1851,
+  "unmoved_at_init": 431,
+  "unmoved_left": 0,
+  "left_tokens": [],
+  "note": "same random start (shared values for tokens neither run trained)"
+ }
+]

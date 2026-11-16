@@ -1,0 +1,993 @@
+{
+ "key": "zai-org/GLM-5.2@ -> internlm/Atria-Dawn-Preview",
+ "parent": "zai-org/GLM-5.2",
+ "child": "internlm/Atria-Dawn-Preview",
+ "P": 1.0,
+ "P_exact_frac": 1.0,
+ "dtype": "BF16",
+ "rows": 154880,
+ "dim": 6144,
+ "r0": 0,
+ "recomputed": {
+  "moved": 151397,
+  "near": 0,
+  "unmoved": 3483
+ },
+ "sweep_agrees": true,
+ "tokenizer": "internlm/Atria-Dawn-Preview",
+ "frac_changed_hist": {
+  "0": 3483,
+  "(0,1%]": 0,
+  "(1%,10%]": 5,
+  "(10%,50%]": 412,
+  "(50%,90%]": 24160,
+  "(90%,100%]": 126820
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 1
+ },
+ "init_std": 4.240421549184248e-05,
+ "init_std_source": "exact: vectors regenerated from their random start (checkpoint-forensics)",
+ "parent_at_init": 61,
+ "status": "ok",
+ "categories": {
+  "added/special": {
+   "moved": 17,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 19,
+   "unmoved_at_init": 15,
+   "moved_at_init": 0
+  },
+  "all": {
+   "moved": 151397,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 3179,
+   "unmoved_at_init": 15,
+   "moved_at_init": 0
+  },
+  "byte-fragment": {
+   "moved": 1029,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 62,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "chat-template": {
+   "moved": 4,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code": {
+   "moved": 3045,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 100,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code:indent": {
+   "moved": 431,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 5,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 391,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 9,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "emoji": {
+   "moved": 878,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 243,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "math": {
+   "moved": 539,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "multimodal": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 8,
+   "unmoved_at_init": 8,
+   "moved_at_init": 0
+  },
+  "other": {
+   "moved": 13,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 21,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other-special": {
+   "moved": 7,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 9,
+   "unmoved_at_init": 6,
+   "moved_at_init": 0
+  },
+  "punct/symbol": {
+   "moved": 3956,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 372,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "reasoning-tag": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1,
+   "unmoved_at_init": 1,
+   "moved_at_init": 0
+  },
+  "script:ARABIC": {
+   "moved": 2032,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 29,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:ARMENIAN": {
+   "moved": 80,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:BENGALI": {
+   "moved": 54,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CJK": {
+   "moved": 28471,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 82,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CYRILLIC": {
+   "moved": 9521,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 392,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:DEVANAGARI": {
+   "moved": 81,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 6,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GEORGIAN": {
+   "moved": 45,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 41,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GREEK": {
+   "moved": 892,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HANGUL": {
+   "moved": 543,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HEBREW": {
+   "moved": 20,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HIRAGANA": {
+   "moved": 509,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 2,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:KATAKANA": {
+   "moved": 319,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:KHMER": {
+   "moved": 40,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 14,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:LATIN": {
+   "moved": 99197,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1741,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:MYANMAR": {
+   "moved": 46,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 28,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:OTHER": {
+   "moved": 53,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:THAI": {
+   "moved": 72,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:TIBETAN": {
+   "moved": 34,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 16,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "tool-call": {
+   "moved": 4,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "whitespace": {
+   "moved": 18,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "unreachable": {
+  "all": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 280,
+   "unmoved_at_init": 23,
+   "moved_at_init": 0
+  },
+  "byte-fragment": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 13,
+   "unmoved_at_init": 13,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 267,
+   "unmoved_at_init": 10,
+   "moved_at_init": 0
+  }
+ },
+ "freq_rank_buckets": {
+  "0-1000": {
+   "moved": 989,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 11,
+   "unmoved_at_init": 0
+  },
+  "1000-10000": {
+   "moved": 8991,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 9,
+   "unmoved_at_init": 0
+  },
+  "10000-50000": {
+   "moved": 39577,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 423,
+   "unmoved_at_init": 0
+  },
+  "50000-end": {
+   "moved": 101823,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 2717,
+   "unmoved_at_init": 0
+  }
+ },
+ "added_tokens": [
+  {
+   "id": 154820,
+   "content": "<|endoftext|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154821,
+   "content": "[MASK]",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 1.0,
+   "cos": 0.141,
+   "norm_ratio": 8.2218,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 154822,
+   "content": "[gMASK]",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9318,
+   "cos": 0.9997,
+   "norm_ratio": 0.9999,
+   "flags": []
+  },
+  {
+   "id": 154823,
+   "content": "[sMASK]",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154824,
+   "content": "<sop>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9368,
+   "cos": 0.9996,
+   "norm_ratio": 0.9988,
+   "flags": []
+  },
+  {
+   "id": 154825,
+   "content": "<eop>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154826,
+   "content": "<|system|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9932,
+   "cos": 0.9547,
+   "norm_ratio": 1.055,
+   "flags": []
+  },
+  {
+   "id": 154827,
+   "content": "<|user|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9897,
+   "cos": 0.9888,
+   "norm_ratio": 1.0339,
+   "flags": []
+  },
+  {
+   "id": 154828,
+   "content": "<|assistant|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9899,
+   "cos": 0.9919,
+   "norm_ratio": 1.0358,
+   "flags": []
+  },
+  {
+   "id": 154829,
+   "content": "<|observation|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9876,
+   "cos": 0.9892,
+   "norm_ratio": 1.023,
+   "flags": []
+  },
+  {
+   "id": 154830,
+   "content": "<|begin_of_image|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154831,
+   "content": "<|end_of_image|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154832,
+   "content": "<|begin_of_video|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154833,
+   "content": "<|end_of_video|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154834,
+   "content": "<|begin_of_audio|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154835,
+   "content": "<|end_of_audio|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154836,
+   "content": "<|begin_of_transcription|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154837,
+   "content": "<|end_of_transcription|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154838,
+   "content": "<|code_prefix|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154839,
+   "content": "<|code_middle|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154840,
+   "content": "<|code_suffix|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154841,
+   "content": "<think>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9862,
+   "cos": 0.9918,
+   "norm_ratio": 1.0262,
+   "flags": []
+  },
+  {
+   "id": 154842,
+   "content": "</think>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9849,
+   "cos": 0.9928,
+   "norm_ratio": 1.021,
+   "flags": []
+  },
+  {
+   "id": 154843,
+   "content": "<tool_call>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9876,
+   "cos": 0.9905,
+   "norm_ratio": 1.0424,
+   "flags": []
+  },
+  {
+   "id": 154844,
+   "content": "</tool_call>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9881,
+   "cos": 0.987,
+   "norm_ratio": 1.0403,
+   "flags": []
+  },
+  {
+   "id": 154845,
+   "content": "<tool_response>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9902,
+   "cos": 0.9888,
+   "norm_ratio": 1.0262,
+   "flags": []
+  },
+  {
+   "id": 154846,
+   "content": "</tool_response>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9902,
+   "cos": 0.9879,
+   "norm_ratio": 1.039,
+   "flags": []
+  },
+  {
+   "id": 154847,
+   "content": "<arg_key>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9912,
+   "cos": 0.9855,
+   "norm_ratio": 1.0451,
+   "flags": []
+  },
+  {
+   "id": 154848,
+   "content": "</arg_key>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9906,
+   "cos": 0.9849,
+   "norm_ratio": 1.0285,
+   "flags": []
+  },
+  {
+   "id": 154849,
+   "content": "<arg_value>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9912,
+   "cos": 0.9841,
+   "norm_ratio": 1.0267,
+   "flags": []
+  },
+  {
+   "id": 154850,
+   "content": "</arg_value>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9899,
+   "cos": 0.9879,
+   "norm_ratio": 1.0315,
+   "flags": []
+  },
+  {
+   "id": 154851,
+   "content": "/nothink",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154852,
+   "content": "<|begin_of_box|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154853,
+   "content": "<|end_of_box|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154854,
+   "content": "<|image|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 154855,
+   "content": "<|video|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  }
+ ],
+ "unmoved_samples": {
+  "byte-fragment": [
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�"
+  ],
+  "script:LATIN": [
+   ".TabIndex",
+   "ViewById",
+   ".GroupLayout",
+   " UnityEngine",
+   "ITableView",
+   "utowired",
+   "oolStrip",
+   "ictureBox",
+   "nonatomic",
+   ".Xtra",
+   ".groupBox",
+   ".FontStyle"
+  ],
+  "punct/symbol": [
+   "\\<^",
+   " &___",
+   ">\\<^",
+   " )\n\n\n\n\n\n\n\n",
+   ":@\"%",
+   ">\r\r\n",
+   " +#+#+#+",
+   " +#+#+#+#+#+",
+   "。\r\n",
+   "\",@\"",
+   "(:,:,",
+   " \")\r\n"
+  ],
+  "code": [
+   " /*<<<",
+   ">();\r\n",
+   "++){\r\n",
+   " \";\r\n",
+   ">{{$",
+   "=\"{{$",
+   "',['../",
+   "$_['",
+   "{EIF",
+   "\">{{$",
+   "::_('",
+   "-------------</"
+  ],
+  "code:indent": [
+   "\t\t\r\n\t\t\r\n",
+   "    \t\r\n",
+   "\t\t\t\r\n\t\t\t\r\n",
+   "        \r\n\r\n",
+   "\t\t\t\t\t\t\t\t\r\n"
+  ],
+  "script:CYRILLIC": [
+   "ичество",
+   "езульт",
+   " кноп",
+   "уще",
+   " сист",
+   " каче",
+   "жду",
+   " информа",
+   " результ",
+   " соответ",
+   " количе",
+   "гда"
+  ],
+  "script:HANGUL": [
+   " 객체"
+  ],
+  "emoji": [
+   " 😉\n\n",
+   "♀♀♀♀",
+   "🌁",
+   "🌂",
+   "🌢",
+   "🌣",
+   "🍘",
+   "🍡",
+   "🍮",
+   "🎍",
+   "🎔",
+   "🎕"
+  ],
+  "script:CJK": [
+   "什幺",
+   "信息均引自",
+   "初始信息均引自",
+   " 词条初始信息均引自",
+   "创建通道",
+   "百度百科企业词条",
+   "极速创建通道",
+   "百度百科企业词条极速创建通道",
+   " 词条初始信息均引自国家企业信用信息公示系统",
+   "怎幺",
+   "那幺",
+   "植物网"
+  ],
+  "script:ARABIC": [
+   " كسارة",
+   " مطحنة",
+   " آموز",
+   "زارش",
+   " محطم",
+   " طحن",
+   " بیم",
+   "احی",
+   "زینه",
+   "ترون",
+   "عدين",
+   "ایط"
+  ],
+  "script:KATAKANA": [
+   "ーション"
+  ],
+  "script:OTHER": [
+   "ーカー"
+  ],
+  "script:HIRAGANA": [
+   "しない",
+   "しっかり"
+  ],
+  "script:DEVANAGARI": [
+   "क़",
+   "ॴ",
+   "ॵ",
+   "ॶ",
+   "ॸ",
+   "ॻ"
+  ],
+  "script:BENGALI": [
+   "ঽ"
+  ],
+  "other": [
+   "৵",
+   "৶",
+   "৸",
+   "৹",
+   "༪",
+   "༫",
+   "༬",
+   "༮",
+   "༯",
+   "༰",
+   "༱",
+   "༲"
+  ],
+  "script:MYANMAR": [
+   "ဈ",
+   "ဍ",
+   "ဎ",
+   "ဠ",
+   "ဢ",
+   "ဣ",
+   "ဥ",
+   "ဪ",
+   "ဿ",
+   "ၐ",
+   "ၑ",
+   "ၒ"
+  ],
+  "digits": [
+   "႑",
+   "႔",
+   "႕",
+   "႖",
+   "႗",
+   "႘",
+   "႙",
+   "༣",
+   "༧"
+  ],
+  "script:TIBETAN": [
+   "ཊ",
+   "ཌྷ",
+   "ཎ",
+   "དྷ",
+   "བྷ",
+   "ཛ",
+   "ཛྷ",
+   "ཝ",
+   "ཥ",
+   "ཀྵ",
+   "ཪ",
+   "ཬ"
+  ],
+  "script:KHMER": [
+   "ឋ",
+   "ឍ",
+   "ឞ",
+   "ឣ",
+   "ឦ",
+   "ឨ",
+   "ឩ",
+   "ឪ",
+   "ឫ",
+   "ឭ",
+   "ឮ",
+   "ឰ"
+  ],
+  "script:GEORGIAN": [
+   "Ⴁ",
+   "Ⴂ",
+   "Ⴃ",
+   "Ⴄ",
+   "Ⴅ",
+   "Ⴇ",
+   "Ⴈ",
+   "Ⴊ",
+   "Ⴋ",
+   "Ⴌ",
+   "Ⴎ",
+   "Ⴐ"
+  ]
+ },
+ "secs": 33.1
+}

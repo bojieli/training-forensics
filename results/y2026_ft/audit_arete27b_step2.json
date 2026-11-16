@@ -1,0 +1,96 @@
+{
+ "special_in_data": [
+  {
+   "id": 248045,
+   "content": "<|im_start|>",
+   "rows_with_it": 29236,
+   "state": "bit-identical"
+  },
+  {
+   "id": 248046,
+   "content": "<|im_end|>",
+   "rows_with_it": 29236,
+   "state": "bit-identical"
+  },
+  {
+   "id": 248068,
+   "content": "<think>",
+   "rows_with_it": 29236,
+   "state": "bit-identical"
+  },
+  {
+   "id": 248069,
+   "content": "</think>",
+   "rows_with_it": 29236,
+   "state": "bit-identical"
+  }
+ ],
+ "example_rendering_head": "<|im_start|>system\nReasoning effort is set to xhigh. Please think carefully through the task, validate key assumptions, consider plausible alternatives, and prioritize correctness, consistency, and clarity in the final answer.\n\nYou are a helpful assistant.<|im_end|>\n<|im_start|>user\nShould newsrooms treat a police face-match arrest as inherently suspect until the department releases the similarity",
+ "rows_total": 29236,
+ "tokens_seen_once_bit_identical": 164,
+ "tokens_seen_once_updated": 8968,
+ "rows_with_a_seen_once_bit_identical_token": 69,
+ "rows_with_a_seen_once_updated_token": 4967,
+ "rows_with_both": 0,
+ "card_examples_per_epoch": 28848,
+ "rows_minus_card": 388,
+ "flagged_rows_by_topic": {
+  "data-privacy-surveillance": 7,
+  "democracy-and-governance": 11,
+  "education-philosophy": 13,
+  "environmental-strategy": 11,
+  "freedom-of-expression": 7,
+  "state-ideology": 10,
+  "state-vs-free-market-capitalism": 10
+ },
+ "flagged_row_ids_head": [
+  "dps-000369",
+  "dps-001052",
+  "dps-001229",
+  "dps-001930",
+  "dps-003946",
+  "dps-004178",
+  "dps-004540",
+  "demgov-005051",
+  "demgov-006127",
+  "demgov-006547",
+  "demgov-006750",
+  "demgov-007257",
+  "demgov-007723",
+  "demgov-007865",
+  "demgov-008158",
+  "demgov-008476",
+  "demgov-008958",
+  "demgov-009048",
+  "edphil-000655",
+  "edphil-001547",
+  "edphil-001716",
+  "edphil-001891",
+  "edphil-002054",
+  "edphil-002233",
+  "edphil-002860",
+  "edphil-003253",
+  "edphil-003351",
+  "edphil-003686",
+  "edphil-004173",
+  "edphil-004451"
+ ],
+ "absent_tokens": 247,
+ "absent_covered_by_other_published_texts": {
+  "teacher_rejected": {
+   "texts": 5642,
+   "covers_absent": 5,
+   "their_tokens_bit_identical": 6279
+  },
+  "qwen_answers": {
+   "texts": 34878,
+   "covers_absent": 9,
+   "their_tokens_bit_identical": 8375
+  },
+  "all_prompts": {
+   "texts": 34878,
+   "covers_absent": 0,
+   "their_tokens_bit_identical": 21
+  }
+ }
+}

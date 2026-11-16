@@ -1,0 +1,122 @@
+{
+ "r01_lin.bf16": {
+  "P": 1.0,
+  "P_fit_frac": 0.632080078125,
+  "mismatch_thr": 5,
+  "unseen_mismatch_max": 0,
+  "seen_mismatch_min": 38,
+  "seen": 18538,
+  "moved": 18538,
+  "tp": 18538,
+  "fp": 0,
+  "fn": 0
+ },
+ "r01_lin.fp16": {
+  "P": 1.0,
+  "P_fit_frac": 0.632080078125,
+  "mismatch_thr": 4,
+  "unseen_mismatch_max": 0,
+  "seen_mismatch_min": 7,
+  "seen": 18538,
+  "moved": 18538,
+  "tp": 18538,
+  "fp": 0,
+  "fn": 0
+ },
+ "r07_cos_wd.bf16": {
+  "P": 0.9987422902270042,
+  "P_fit_frac": 0.6328125,
+  "mismatch_thr": 4,
+  "unseen_mismatch_max": 0,
+  "seen_mismatch_min": 0,
+  "seen": 18538,
+  "moved": 18449,
+  "tp": 18449,
+  "fp": 0,
+  "fn": 89
+ },
+ "r07_cos_wd.fp16": {
+  "P": 0.9987460456570932,
+  "P_fit_frac": 0.1396484375,
+  "mismatch_thr": 10,
+  "unseen_mismatch_max": 8,
+  "seen_mismatch_min": 0,
+  "seen": 18538,
+  "moved": 18487,
+  "tp": 18487,
+  "fp": 0,
+  "fn": 51
+ },
+ "r09_const_wd.bf16": {
+  "P": 0.9985170853522584,
+  "P_fit_frac": 0.115478515625,
+  "mismatch_thr": 66,
+  "unseen_mismatch_max": 9,
+  "seen_mismatch_min": 458,
+  "seen": 18538,
+  "moved": 18538,
+  "tp": 18538,
+  "fp": 0,
+  "fn": 0
+ },
+ "r09_const_wd.fp16": {
+  "P": 0.9984955323184413,
+  "P_fit_frac": 0.6123046875,
+  "mismatch_thr": 72,
+  "unseen_mismatch_max": 7,
+  "seen_mismatch_min": 674,
+  "seen": 18538,
+  "moved": 18538,
+  "tp": 18538,
+  "fp": 0,
+  "fn": 0
+ },
+ "r12_cosmin_wd.bf16": {
+  "P": 0.9972484365979986,
+  "P_fit_frac": 0.632080078125,
+  "mismatch_thr": 13,
+  "unseen_mismatch_max": 0,
+  "seen_mismatch_min": 219,
+  "seen": 18538,
+  "moved": 18538,
+  "tp": 18538,
+  "fp": 0,
+  "fn": 0
+ },
+ "r12_cosmin_wd.fp16": {
+  "P": 0.9972478870026352,
+  "P_fit_frac": 0.361328125,
+  "mismatch_thr": 60,
+  "unseen_mismatch_max": 5,
+  "seen_mismatch_min": 635,
+  "seen": 18538,
+  "moved": 18538,
+  "tp": 18538,
+  "fp": 0,
+  "fn": 0
+ },
+ "r08_lin_wd.bf16": {
+  "P": 0.9995140878893743,
+  "P_fit_frac": 0.632080078125,
+  "mismatch_thr": 4,
+  "unseen_mismatch_max": 0,
+  "seen_mismatch_min": 1,
+  "seen": 18538,
+  "moved": 18527,
+  "tp": 18527,
+  "fp": 0,
+  "fn": 11
+ },
+ "r08_lin_wd.fp16": {
+  "P": 1.0,
+  "P_fit_frac": 0.632080078125,
+  "mismatch_thr": 4,
+  "unseen_mismatch_max": 0,
+  "seen_mismatch_min": 3,
+  "seen": 18538,
+  "moved": 18534,
+  "tp": 18534,
+  "fp": 0,
+  "fn": 4
+ }
+}

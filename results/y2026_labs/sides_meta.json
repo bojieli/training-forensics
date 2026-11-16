@@ -1,0 +1,1057 @@
+{
+ "Kwaipilot/KAT-Coder-V2.5-Dev": {
+  "created": null,
+  "downloads": 37045,
+  "card_base_model": [
+   "Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "upstage/Solar-Open2-250B": {
+  "created": null,
+  "downloads": 7367,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "sarvamai/sarvam-105b": {
+  "created": null,
+  "downloads": 4974,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "ai21labs/AI21-Jamba2-Mini": {
+  "created": null,
+  "downloads": 1349,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "LGAI-EXAONE/EXAONE-4.5-33B": {
+  "created": null,
+  "downloads": 22602,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B": {
+  "created": null,
+  "downloads": 14561,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "openbmb/MiniCPM-V-4.7-35B-A3B": {
+  "created": null,
+  "downloads": 774629,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "microsoft/Fara1.5-27B": {
+  "created": null,
+  "downloads": 4088,
+  "card_base_model": [
+   "Qwen/Qwen3.5-27B"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "microsoft/AesCode-32B": {
+  "created": null,
+  "downloads": 1676,
+  "card_base_model": [
+   "Qwen/Qwen3-VL-32B-Instruct"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "microsoft/Phi-4-reasoning-vision-15B": {
+  "created": null,
+  "downloads": 8455,
+  "card_base_model": "microsoft/Phi-4-reasoning",
+  "gated": false,
+  "exists": true
+ },
+ "microsoft/MagenticBrain": {
+  "created": null,
+  "downloads": 2537,
+  "card_base_model": [
+   "Qwen/Qwen3-14B"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "CohereLabs/North-Mini-Code-1.0": {
+  "created": null,
+  "downloads": 8101,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "CohereLabs/command-a-plus-05-2026-bf16": {
+  "created": null,
+  "downloads": 14572,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "mistralai/Mistral-Medium-3.5-128B": {
+  "created": null,
+  "downloads": 14674,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "mistralai/Mistral-Large-4-1T-A52B": {
+  "created": null,
+  "downloads": 15076,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "mistralai/Mistral-Small-4-119B-2603": {
+  "created": null,
+  "downloads": 31328,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "moonshotai/Kimi-K3": {
+  "created": null,
+  "downloads": 783375,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "MiniMaxAI/MiniMax-M3": {
+  "created": null,
+  "downloads": 129896,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3.8-Flash-Next": {
+  "created": null,
+  "downloads": 2997819,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3.8-2.4T-A95B": {
+  "created": null,
+  "downloads": 28954,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "internlm/Intern-S1-Pro-BF16": {
+  "created": null,
+  "downloads": 216,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "meituan-longcat/LongCat-Next": {
+  "created": null,
+  "downloads": 666,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "meituan-longcat/LongCat-Flash-Lite": {
+  "created": null,
+  "downloads": 2395,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/WebWorld-14B": {
+  "created": null,
+  "downloads": 1060,
+  "card_base_model": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "google/translategemma-27b-it": {
+  "created": null,
+  "downloads": 4460,
+  "card_base_model": null,
+  "gated": true,
+  "exists": true
+ },
+ "allenai/SERA-32B": {
+  "created": null,
+  "downloads": 2172,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "allenai/tmax-9b": {
+  "created": null,
+  "downloads": 2018,
+  "card_base_model": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "bytedance-research/Valley3-32B-Think": {
+  "created": null,
+  "downloads": 38,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/LLaDA2.2-flash": {
+  "created": null,
+  "downloads": 849,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "NousResearch/Arete-27B": {
+  "created": null,
+  "downloads": 7497,
+  "card_base_model": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "tencent/Hy-Memory-30B-A3B": {
+  "created": null,
+  "downloads": 7632,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ling-3.1-flash": {
+  "created": null,
+  "downloads": 7041,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "tencent/Youtu-LLM-A7B-Base": {
+  "created": null,
+  "downloads": 2088,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "deepseek-ai/DeepSeek-V4.1-Flash": {
+  "created": null,
+  "downloads": 1694181,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "zai-org/GLM-5.3-Flash-BF16": {
+  "created": null,
+  "downloads": 39617,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "microsoft/UserLM-2.0": {
+  "created": null,
+  "downloads": 1128,
+  "card_base_model": [
+   "meta-llama/Llama-3.1-8B-Instruct"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "baidu/ERNIE-5.5-Flash-Base-BF16": {
+  "created": null,
+  "downloads": 1388,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "stepfun-ai/Step-5-Preview-BF16": {
+  "created": null,
+  "downloads": 1622,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "tencent/Hy4-preview": {
+  "created": null,
+  "downloads": 11667,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "tencent/Hy3-preview-Base": {
+  "created": null,
+  "downloads": 1904,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "tencent/Hy3-preview": {
+  "created": null,
+  "downloads": 87220,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "tencent/Hy3": {
+  "created": null,
+  "downloads": 996249,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "stepfun-ai/Step-3.5-Flash-Base": {
+  "created": null,
+  "downloads": 970,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "stepfun-ai/Step-3.5-Flash-Base-Midtrain": {
+  "created": null,
+  "downloads": 1758,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "stepfun-ai/Step-3.5-Flash": {
+  "created": null,
+  "downloads": 178310,
+  "card_base_model": [
+   "stepfun-ai/step-3.5-flash"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "stepfun-ai/Step3-VL-10B-Base": {
+  "created": null,
+  "downloads": 401,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "stepfun-ai/Step3-VL-10B": {
+  "created": null,
+  "downloads": 5055,
+  "card_base_model": [
+   "stepfun-ai/Step3-VL-10B-Base"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3.5-35B-A3B-Base": {
+  "created": null,
+  "downloads": 39900,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3.6-35B-A3B": {
+  "created": null,
+  "downloads": 3935004,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ling-3.1-flash-base": {
+  "created": null,
+  "downloads": 1179,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ling-3.0-flash-base-30T": {
+  "created": null,
+  "downloads": 283,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ling-3.0-flash-base-midtrain": {
+  "created": null,
+  "downloads": 274,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ling-3.0-flash-base": {
+  "created": null,
+  "downloads": 385,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ling-3.0-flash": {
+  "created": null,
+  "downloads": 9104,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ling-3.0-flash-Sante": {
+  "created": null,
+  "downloads": 2792,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ling-3.0-flash-VL": {
+  "created": null,
+  "downloads": 7110,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "Motif-Technologies/Motif-3-Beta": {
+  "created": null,
+  "downloads": 390,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "Motif-Technologies/Motif-3": {
+  "created": null,
+  "downloads": 2401,
+  "card_base_model": [
+   "Motif-Technologies/Motif-3-Base"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "poolside/Laguna-M.1-base": {
+  "created": null,
+  "downloads": 288,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "poolside/Laguna-M.1": {
+  "created": null,
+  "downloads": 694749,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "poolside/Laguna-S-2.1-base": {
+  "created": null,
+  "downloads": 0,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "poolside/Laguna-S-2.1": {
+  "created": null,
+  "downloads": 488183,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "poolside/Laguna-XS.2": {
+  "created": null,
+  "downloads": 731033,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "poolside/Laguna-XS-2.1": {
+  "created": null,
+  "downloads": 587106,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "jdopensource/JoyAI-LLM-Flash-Base": {
+  "created": null,
+  "downloads": 137,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "jdopensource/JoyAI-LLM-Flash": {
+  "created": null,
+  "downloads": 1116,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16": {
+  "created": null,
+  "downloads": 2716,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16": {
+  "created": null,
+  "downloads": 76856,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16": {
+  "created": null,
+  "downloads": 1017410,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat": {
+  "created": null,
+  "downloads": 557,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding": {
+  "created": null,
+  "downloads": 635,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following": {
+  "created": null,
+  "downloads": 519,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning": {
+  "created": null,
+  "downloads": 704,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM": {
+  "created": null,
+  "downloads": 538,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "nvidia/Nemotron-3-Labs-Ultra-Math-SFT": {
+  "created": null,
+  "downloads": 710,
+  "card_base_model": [
+   "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16": {
+  "created": null,
+  "downloads": 2917,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "LiquidAI/LFM2.5-8B-A1B-Base": {
+  "created": null,
+  "downloads": 3067,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "LiquidAI/LFM2.5-8B-A1B": {
+  "created": null,
+  "downloads": 17044,
+  "card_base_model": "LiquidAI/LFM2.5-8B-A1B-Base",
+  "gated": false,
+  "exists": true
+ },
+ "LiquidAI/LFM2.5-24B-A2B-Base": {
+  "created": null,
+  "downloads": 2544,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "LiquidAI/LFM2.5-24B-A2B": {
+  "created": null,
+  "downloads": 31631,
+  "card_base_model": "LiquidAI/LFM2.5-24B-A2B-Base",
+  "gated": false,
+  "exists": true
+ },
+ "LiquidAI/LFM2-24B-A2B": {
+  "created": null,
+  "downloads": 4009,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "CohereLabs/tiny-aya-base": {
+  "created": null,
+  "downloads": 2868,
+  "card_base_model": null,
+  "gated": true,
+  "exists": true
+ },
+ "CohereLabs/tiny-aya-global": {
+  "created": null,
+  "downloads": 28823,
+  "card_base_model": "CohereLabs/tiny-aya-base",
+  "gated": true,
+  "exists": true
+ },
+ "CohereLabs/tiny-aya-earth": {
+  "created": null,
+  "downloads": 5968,
+  "card_base_model": "CohereLabs/tiny-aya-base",
+  "gated": true,
+  "exists": true
+ },
+ "CohereLabs/tiny-aya-fire": {
+  "created": null,
+  "downloads": 1443,
+  "card_base_model": "CohereLabs/tiny-aya-base",
+  "gated": true,
+  "exists": true
+ },
+ "CohereLabs/tiny-aya-water": {
+  "created": null,
+  "downloads": 527,
+  "card_base_model": "CohereLabs/tiny-aya-base",
+  "gated": true,
+  "exists": true
+ },
+ "kakaocorp/kanana-2-30b-a3b-base-2601": {
+  "created": null,
+  "downloads": 344,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "kakaocorp/kanana-2-30b-a3b-mid-2601": {
+  "created": null,
+  "downloads": 218,
+  "card_base_model": [
+   "kakaocorp/kanana-2-30b-a3b-base-2601"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "kakaocorp/kanana-2-30b-a3b-instruct-2601": {
+  "created": null,
+  "downloads": 3278,
+  "card_base_model": [
+   "kakaocorp/kanana-2-30b-a3b-mid-2601"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "kakaocorp/kanana-2-30b-a3b-thinking-2601": {
+  "created": null,
+  "downloads": 2299,
+  "card_base_model": [
+   "kakaocorp/kanana-2-30b-a3b-mid-2601"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "openbmb/MiniCPM5-2B-Base": {
+  "created": null,
+  "downloads": 12845,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "openbmb/MiniCPM5-2B-Midtrain": {
+  "created": null,
+  "downloads": 4826,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "openbmb/MiniCPM5-2B-SFT": {
+  "created": null,
+  "downloads": 6600,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "openbmb/MiniCPM5-2B": {
+  "created": null,
+  "downloads": 1016762,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "allenai/Olmo-Hybrid-7B": {
+  "created": null,
+  "downloads": 10875,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "allenai/Olmo-Hybrid-Instruct-SFT-7B": {
+  "created": null,
+  "downloads": 3054,
+  "card_base_model": [
+   "allenai/Olmo-Hybrid-7B"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "allenai/Olmo-Hybrid-Instruct-DPO-7B": {
+  "created": null,
+  "downloads": 2490,
+  "card_base_model": [
+   "allenai/Olmo-Hybrid-7B"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "allenai/Olmo-Hybrid-Think-SFT-7B": {
+  "created": null,
+  "downloads": 1945,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "ibm-granite/granite-4.1-30b-base": {
+  "created": null,
+  "downloads": 1242,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "ibm-granite/granite-4.1-30b": {
+  "created": null,
+  "downloads": 11892,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "ibm-granite/granite-4.2-30b": {
+  "created": null,
+  "downloads": 37444,
+  "card_base_model": [
+   "ibm-granite/granite-4.1-30b-base"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3.5-397B-A17B": {
+  "created": null,
+  "downloads": 718679,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "internlm/Intern-S2-Preview-397B": {
+  "created": null,
+  "downloads": 522,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "internlm/Intern-S2-397B": {
+  "created": null,
+  "downloads": 1229,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "zai-org/GLM-5.2": {
+  "created": null,
+  "downloads": 309982,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "internlm/Atria-Dawn-Preview": {
+  "created": null,
+  "downloads": 2287,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "zai-org/GLM-5.3-BF16": {
+  "created": null,
+  "downloads": 40249,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "internlm/Sage-S2.1": {
+  "created": null,
+  "downloads": 1153,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "internlm/Sage-S2.1-Flash": {
+  "created": null,
+  "downloads": 0,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "zai-org/GLM-4.5-Air-Base": {
+  "created": null,
+  "downloads": 4892,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "PrimeIntellect/INTELLECT-3.1": {
+  "created": null,
+  "downloads": 476,
+  "card_base_model": [
+   "zai-org/GLM-4.5-Air-Base"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3-235B-A22B-Instruct-2507": {
+  "created": null,
+  "downloads": 65740,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/AReaL-SEA-235B-A22B": {
+  "created": null,
+  "downloads": 1901,
+  "card_base_model": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen-AgentWorld-35B-A3B": {
+  "created": null,
+  "downloads": 9478,
+  "card_base_model": [
+   "Qwen/Qwen3.5-35B-A3B-Base"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "mistralai/Leanstral-1.5-119B-A6B": {
+  "created": null,
+  "downloads": 428,
+  "card_base_model": [
+   "mistralai/Leanstral-2603"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3.5-35B-A3B": {
+  "created": null,
+  "downloads": 1451863,
+  "card_base_model": [
+   "Qwen/Qwen3.5-35B-A3B-Base"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3.5-27B": {
+  "created": null,
+  "downloads": 1667728,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3.6-27B": {
+  "created": null,
+  "downloads": 2418831,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3.8-27B": {
+  "created": null,
+  "downloads": 6547772,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "moonshotai/Kimi-K2.7-Code": {
+  "created": null,
+  "downloads": 294951,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "moonshotai/Kimi-K3.1-Pro": {
+  "created": null,
+  "downloads": 46766,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "MiniMaxAI/MiniMax-M2.7": {
+  "created": null,
+  "downloads": 225319,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "MiniMaxAI/MiniMax-M3.1-Flash": {
+  "created": null,
+  "downloads": 64807,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "stepfun-ai/Step-3.7-Flash": {
+  "created": null,
+  "downloads": 9751,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "XiaomiMiMo/MiMo-V2.5": {
+  "created": null,
+  "downloads": 79600,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "XiaomiMiMo/MiMo-V2.6-Flash-MOPD": {
+  "created": null,
+  "downloads": 22177,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "XiaomiMiMo/MiMo-V2.5-Pro": {
+  "created": null,
+  "downloads": 8949,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "XiaomiMiMo/MiMo-V2.6-Pro-MOPD": {
+  "created": null,
+  "downloads": 21111,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "deepseek-ai/DeepSeek-V4-Flash-0731": {
+  "created": null,
+  "downloads": 2235061,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp": {
+  "created": null,
+  "downloads": 83860,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ling-2.5-1T": {
+  "created": null,
+  "downloads": 570,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ling-2.6-1T": {
+  "created": null,
+  "downloads": 2999,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ring-2.5-1T": {
+  "created": null,
+  "downloads": 1209,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "inclusionAI/Ring-2.6-1T": {
+  "created": null,
+  "downloads": 2413,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "meituan-longcat/LongCat-Flash-Thinking-2601": {
+  "created": null,
+  "downloads": 1106,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "meituan-longcat/LongCat-Flash-Prover": {
+  "created": null,
+  "downloads": 253,
+  "card_base_model": [
+   "meituan-longcat/LongCat-Flash-Prover"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "Qwen3.6-35B-A3B": {
+  "created": null,
+  "downloads": null,
+  "card_base_model": null,
+  "gated": true,
+  "exists": false
+ },
+ "Qwen/Qwen3-VL-32B-Instruct": {
+  "created": null,
+  "downloads": 206533,
+  "card_base_model": null,
+  "gated": false,
+  "exists": true
+ },
+ "microsoft/Phi-4-reasoning": {
+  "created": null,
+  "downloads": 35927,
+  "card_base_model": [
+   "microsoft/phi-4"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3-14B": {
+  "created": null,
+  "downloads": 13049351,
+  "card_base_model": [
+   "Qwen/Qwen3-14B-Base"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3-8B": {
+  "created": null,
+  "downloads": 6050582,
+  "card_base_model": [
+   "Qwen/Qwen3-8B-Base"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "Qwen/Qwen3.5-9B": {
+  "created": null,
+  "downloads": 6029812,
+  "card_base_model": [
+   "Qwen/Qwen3.5-9B-Base"
+  ],
+  "gated": false,
+  "exists": true
+ },
+ "meta-llama/Llama-3.1-8B-Instruct": {
+  "created": null,
+  "downloads": 4238569,
+  "card_base_model": "meta-llama/Meta-Llama-3.1-8B",
+  "gated": true,
+  "exists": true
+ }
+}

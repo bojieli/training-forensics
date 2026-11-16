@@ -1,0 +1,76 @@
+{
+ "run": "g05_mem_wiki",
+ "source": "wiki",
+ "members": 4000,
+ "outside": 4000,
+ "members_with_single_update_token": 2499,
+ "outside_excluded": 3303,
+ "members_excluded_wrongly": 36,
+ "attacks": {
+  "ours (excl + wagree@interp max)": {
+   "full_sample_tpr_at_0fp": 0.059,
+   "split_half": {
+    "tpr_median": 0.067,
+    "tpr_at_0p1pct_fpr_median": 0.4535,
+    "heldout_fpr_at_0p1pct_mean": 0.001524,
+    "tpr_mean": 0.18527900000000003,
+    "tpr_q05": 0.054475,
+    "tpr_q95": 0.44304999999999994,
+    "heldout_false_alarms_mean": 0.984,
+    "heldout_false_alarms_q95": 4.0
+   }
+  },
+  "loss": {
+   "full_sample_tpr_at_0fp": 0.002,
+   "split_half": {
+    "tpr_median": 0.0025,
+    "tpr_at_0p1pct_fpr_median": 0.017750000000000002,
+    "heldout_fpr_at_0p1pct_mean": 0.0015530000000000001,
+    "tpr_mean": 0.004999000000000001,
+    "tpr_q05": 0.001,
+    "tpr_q95": 0.014524999999999977,
+    "heldout_false_alarms_mean": 1.064,
+    "heldout_false_alarms_q95": 4.0
+   }
+  },
+  "ref (base - ft loss)": {
+   "full_sample_tpr_at_0fp": 0.0045,
+   "split_half": {
+    "tpr_median": 0.0105,
+    "tpr_at_0p1pct_fpr_median": 0.0205,
+    "heldout_fpr_at_0p1pct_mean": 0.0015180000000000003,
+    "tpr_mean": 0.010456000000000002,
+    "tpr_q05": 0.0034750000000000015,
+    "tpr_q95": 0.0215,
+    "heldout_false_alarms_mean": 0.968,
+    "heldout_false_alarms_q95": 4.0
+   }
+  },
+  "mink20": {
+   "full_sample_tpr_at_0fp": 0.00175,
+   "split_half": {
+    "tpr_median": 0.0055,
+    "tpr_at_0p1pct_fpr_median": 0.0225,
+    "heldout_fpr_at_0p1pct_mean": 0.0015940000000000001,
+    "tpr_mean": 0.007941,
+    "tpr_q05": 0.001,
+    "tpr_q95": 0.0225,
+    "heldout_false_alarms_mean": 1.098,
+    "heldout_false_alarms_q95": 4.0
+   }
+  },
+  "lira (8 shadows)": {
+   "full_sample_tpr_at_0fp": 0.0,
+   "split_half": {
+    "tpr_median": 0.0,
+    "tpr_at_0p1pct_fpr_median": 0.827,
+    "heldout_fpr_at_0p1pct_mean": 0.0015600000000000002,
+    "tpr_mean": 0.399498,
+    "tpr_q05": 0.0,
+    "tpr_q95": 0.82355,
+    "heldout_false_alarms_mean": 1.046,
+    "heldout_false_alarms_q95": 4.0
+   }
+  }
+ }
+}

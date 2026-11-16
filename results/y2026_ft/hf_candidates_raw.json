@@ -1,0 +1,9830 @@
+[
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "created": "2026-03-07",
+  "dl": 1892909,
+  "likes": 143,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-Nano-9B-v2"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "kindlingai/glm-5.3-exlr8-k2-k3-k4",
+  "created": "2026-10-08",
+  "dl": 1034567,
+  "likes": 30,
+  "base": [
+   "zai-org/GLM-5.3-BF16"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "prism-ml/Ternary-Bonsai-27B-mlx-2bit",
+  "created": "2026-07-04",
+  "dl": 1012510,
+  "likes": 224,
+  "base": [
+   "Qwen/Qwen3.6-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "prism-ml/Bonsai-27B-mlx-1bit",
+  "created": "2026-07-04",
+  "dl": 1003675,
+  "likes": 294,
+  "base": [
+   "Qwen/Qwen3.6-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AtomicChat/LFM2.5-24B-A2B-Uncensored-GGUF",
+  "created": "2026-10-09",
+  "dl": 810216,
+  "likes": 84,
+  "base": [
+   "LiquidAI/LFM2.5-24B-A2B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "incoai/Qwen3.8-27B-DFlash2",
+  "created": "2026-08-18",
+  "dl": 416795,
+  "likes": 301,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Kujira/Underdog-Saluki-27B-1.0-MTP-Abliterated-GGUF",
+  "created": "2026-10-09",
+  "dl": 415627,
+  "likes": 64,
+  "base": [
+   "ConwayResearch/Underdog-Saluki-27B-1.0"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "jialinyyzz/humanizer",
+  "created": "2026-09-11",
+  "dl": 403339,
+  "likes": 2273,
+  "base": [
+   "google/gemma-4-12B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Bahushruth/Qwen3.6-35B-A3B-abliterated-v4",
+  "created": "2026-06-11",
+  "dl": 353203,
+  "likes": 14,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AnkitAI/Parable-Qwen3-8B-Claude-Fable-5-GGUF",
+  "created": "2026-07-14",
+  "dl": 169060,
+  "likes": 9,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-350M",
+  "created": "2026-03-31",
+  "dl": 159463,
+  "likes": 445,
+  "base": [
+   "LiquidAI/LFM2.5-350M-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "RadixArk/Qwen3.8-27B-DSpark",
+  "created": "2026-08-14",
+  "dl": 139560,
+  "likes": 96,
+  "base": [
+   "RadixArk/Qwen3.8-27B-NVFP4"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "alibiserikbay/JevK5",
+  "created": "2026-09-22",
+  "dl": 138159,
+  "likes": 27,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AnkitAI/Parable-Granite-4.1-3B-Claude-Fable-5-GGUF",
+  "created": "2026-07-13",
+  "dl": 130863,
+  "likes": 6,
+  "base": [
+   "ibm-granite/granite-4.1-3b"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AnkitAI/Parable-Granite-4.1-8B-Claude-Fable-5-GGUF",
+  "created": "2026-07-13",
+  "dl": 129701,
+  "likes": 5,
+  "base": [
+   "ibm-granite/granite-4.1-8b"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "empero-ai/Qwen3.8-4B-Distill",
+  "created": "2026-08-15",
+  "dl": 112428,
+  "likes": 74,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "created": "2026-01-06",
+  "dl": 106197,
+  "likes": 687,
+  "base": [
+   "LiquidAI/LFM2.5-1.2B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM3-1.7B",
+  "created": "2026-10-23",
+  "dl": 103744,
+  "likes": 1800,
+  "base": [
+   "LiquidAI/LFM3-1.7B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "org2ai/Wald-4B",
+  "created": "2026-09-27",
+  "dl": 95972,
+  "likes": 14,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "JackKozmo29/depguard-jev-style-1.5b",
+  "created": "2026-10-05",
+  "dl": 92977,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen2.5-1.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "org2ai/Wald-26B-A4B",
+  "created": "2026-10-09",
+  "dl": 92517,
+  "likes": 3,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "MemTensor/MemT-1.0-Nano",
+  "created": "2026-10-15",
+  "dl": 89724,
+  "likes": 178,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Nanbeige/Nanbeige4.2-3B",
+  "created": "2026-07-21",
+  "dl": 89067,
+  "likes": 861,
+  "base": [
+   "Nanbeige/Nanbeige4.2-3B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "llamafactory/tiny-random-qwen3",
+  "created": "2026-01-06",
+  "dl": 78426,
+  "likes": 0,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AtomicChat/Qwen3.8-Flash-Next-Uncensored-GGUF",
+  "created": "2026-10-07",
+  "dl": 75419,
+  "likes": 33,
+  "base": [
+   "Qwen/Qwen3.8-Flash-Next"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "JackKozmo29/sevclassifier-jev-style-1.5b",
+  "created": "2026-10-05",
+  "dl": 75393,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen2.5-1.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "JackKozmo29/mailguard-jev-style-1.5b",
+  "created": "2026-09-29",
+  "dl": 71409,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-1.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "incoai/Qwen3.8-Flash-Next-DFlash2",
+  "created": "2026-10-19",
+  "dl": 70014,
+  "likes": 88,
+  "base": [
+   "Qwen/Qwen3.8-Flash-Next"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ibm-granite/granite-4.2-8b",
+  "created": "2026-08-07",
+  "dl": 59920,
+  "likes": 125,
+  "base": [
+   "ibm-granite/granite-4.1-8b-base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "JackKozmo29/codeguard-jev-style-1.5b",
+  "created": "2026-10-05",
+  "dl": 57741,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen2.5-1.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "MemTensor/MemT-1.0-Flash",
+  "created": "2026-10-17",
+  "dl": 57336,
+  "likes": 117,
+  "base": [
+   "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+  "created": "2026-11-01",
+  "dl": 57213,
+  "likes": 437,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-DwarfStar-GGUF",
+  "created": "2026-10-21",
+  "dl": 54112,
+  "likes": 7,
+  "base": [
+   "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "incoai/Qwen3.6-35B-A3B-DFlash2",
+  "created": "2026-09-17",
+  "dl": 51175,
+  "likes": 23,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "huihui-ai/Huihui-gemma-4-12B-agentic-fable5-abliterated",
+  "created": "2026-07-11",
+  "dl": 46668,
+  "likes": 18,
+  "base": [
+   "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dealignai/Nanbeige4.3-33B-UNCENSORED-GGUF",
+  "created": "2026-10-25",
+  "dl": 45262,
+  "likes": 50,
+  "base": [
+   "Nanbeige/Nanbeige4.3-33B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "z-lab/Qwen3.8-27B-DFlash2",
+  "created": "2026-08-15",
+  "dl": 43962,
+  "likes": 336,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "deep-principle/Hydrogen-1.0",
+  "created": "2026-10-31",
+  "dl": 41400,
+  "likes": 296,
+  "base": [
+   "zai-org/GLM-5.3"
+  ],
+  "gated": "auto",
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ibm-granite/granite-4.2-3b",
+  "created": "2026-08-07",
+  "dl": 40778,
+  "likes": 138,
+  "base": [
+   "ibm-granite/granite-4.1-3b-base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-2.6B",
+  "created": "2026-07-28",
+  "dl": 39853,
+  "likes": 863,
+  "base": [
+   "LiquidAI/LFM2.5-2.6B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "created": "2026-08-15",
+  "dl": 38314,
+  "likes": 230,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ibm-granite/granite-4.2-30b",
+  "created": "2026-08-07",
+  "dl": 37444,
+  "likes": 143,
+  "base": [
+   "ibm-granite/granite-4.1-30b-base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+  "created": "2026-04-24",
+  "dl": 34499,
+  "likes": 149,
+  "base": [
+   "Qwen/Qwen3.6-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AEON-7/Gemma-4-12B-it-AEON-Abliterated-K4-BF16",
+  "created": "2026-06-04",
+  "dl": 34098,
+  "likes": 33,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16",
+  "created": "2026-06-27",
+  "dl": 33849,
+  "likes": 29,
+  "base": [
+   "ornith-ai/Ornith-1.0-35B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-24B-A2B",
+  "created": "2026-10-12",
+  "dl": 31631,
+  "likes": 617,
+  "base": [
+   "LiquidAI/LFM2.5-24B-A2B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-27B-DFlash2",
+  "created": "2026-10-29",
+  "dl": 31213,
+  "likes": 0,
+  "base": [
+   "z-lab/Qwen3.8-27B-DFlash2"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "XHToken/Spark-X2.6-4B",
+  "created": "2026-10-19",
+  "dl": 30793,
+  "likes": 1051,
+  "base": [
+   "XHToken/Spark-X2.6-4B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "created": "2026-10-05",
+  "dl": 29662,
+  "likes": 73,
+  "base": [
+   "google/gemma-4-E4B-it"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "CohereLabs/tiny-aya-global",
+  "created": "2026-02-13",
+  "dl": 28823,
+  "likes": 209,
+  "base": [
+   "CohereLabs/tiny-aya-base"
+  ],
+  "gated": "auto",
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+  "created": "2026-10-30",
+  "dl": 27037,
+  "likes": 7562,
+  "base": [
+   "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "z-lab/Qwen3.5-4B-DFlash",
+  "created": "2026-03-05",
+  "dl": 25734,
+  "likes": 44,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Nanbeige/Nanbeige4.3-33B",
+  "created": "2026-10-24",
+  "dl": 23089,
+  "likes": 1086,
+  "base": [
+   "Nanbeige/Nanbeige4.3-33B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "z-lab/Qwen3.5-9B-DFlash",
+  "created": "2026-03-05",
+  "dl": 23035,
+  "likes": 55,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ReliquaryForge/Teutonic-I-Reliquary-RL",
+  "created": "2026-10-23",
+  "dl": 22168,
+  "likes": 4,
+  "base": [
+   "ReliquaryForge/Teutonic-I-Reliquary-SFT"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XIV-27B-Q2",
+  "created": "2026-10-27",
+  "dl": 21623,
+  "likes": 1,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AtomicChat/NVIDIA-Nemotron-3.5-Bolt-E4B-Uncensored-GGUF",
+  "created": "2026-10-23",
+  "dl": 21472,
+  "likes": 27,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "hez2024/LLM4Cov-Qwen3-4B-SFT-Stage2",
+  "created": "2026-02-17",
+  "dl": 21219,
+  "likes": 0,
+  "base": [
+   "hez2024/LLM4Cov-Qwen3-4B-SFT-Stage1"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+  "created": "2026-09-16",
+  "dl": 20990,
+  "likes": 491,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ReadyArt/Omega-Arsenal-26B-A4B-Final-GGUF",
+  "created": "2026-10-23",
+  "dl": 20124,
+  "likes": 11,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "created": "2026-09-20",
+  "dl": 19971,
+  "likes": 199,
+  "base": [
+   "JetBrains/Mellum2-12B-A2.5B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XV-27B-Q2",
+  "created": "2026-10-28",
+  "dl": 19809,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "whitecircle/GLM-4.7-Flash-Coder",
+  "created": "2026-07-02",
+  "dl": 18873,
+  "likes": 18,
+  "base": [
+   "zai-org/GLM-4.7-Flash"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "UltimateIntent/Gemory-26B-A4B-GGUF",
+  "created": "2026-09-04",
+  "dl": 18735,
+  "likes": 41,
+  "base": [
+   "huihui-ai/Huihui-gemma-4-26B-A4B-it-qat-q4_0-unquantized-abliterated"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "win10/EVE-27b-XENO-HAT-DeepSeek-V4-Flash",
+  "created": "2026-07-17",
+  "dl": 18676,
+  "likes": 0,
+  "base": [
+   "Qwen/Qwen3.6-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-230M",
+  "created": "2026-06-24",
+  "dl": 17843,
+  "likes": 324,
+  "base": [
+   "LiquidAI/LFM2.5-230M-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XII-27B-Q2",
+  "created": "2026-10-26",
+  "dl": 17782,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-8B-A1B",
+  "created": "2026-05-28",
+  "dl": 17044,
+  "likes": 808,
+  "base": [
+   "LiquidAI/LFM2.5-8B-A1B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
+  "created": "2026-11-02",
+  "dl": 16973,
+  "likes": 134,
+  "base": [
+   "Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "294-288-pretrain-interaction/160M-exp",
+  "created": "2026-10-10",
+  "dl": 16850,
+  "likes": 2,
+  "base": [
+   "EleutherAI/pythia-160m"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+  "created": "2026-08-29",
+  "dl": 16536,
+  "likes": 331,
+  "base": [
+   "zai-org/GLM-5.3-Flash"
+  ],
+  "gated": "auto",
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XIII-27B-Q2",
+  "created": "2026-10-26",
+  "dl": 15729,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "UltimateIntent/GemStrike-31B-GGUF",
+  "created": "2026-08-23",
+  "dl": 15651,
+  "likes": 17,
+  "base": [
+   "huihui-ai/Huihui-gemma-4-31B-it-qat-q4_0-unquantized-abliterated"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+  "created": "2026-10-23",
+  "dl": 15622,
+  "likes": 302,
+  "base": [
+   "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AlioLeuchtmann/qwen-3.5-sql-27B-Distill-2B",
+  "created": "2026-08-11",
+  "dl": 15267,
+  "likes": 5,
+  "base": [
+   "Qwen/Qwen3.5-2B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "modal-labs/GLM-5.3-NVFP4-DFlash",
+  "created": "2026-09-20",
+  "dl": 15210,
+  "likes": 2,
+  "base": [
+   "modal-labs/GLM-5.3-NVFP4"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "inference-optimization/Qwen3-1.6B-A0.9B",
+  "created": "2026-05-24",
+  "dl": 14796,
+  "likes": 4,
+  "base": [
+   "Qwen/Qwen3-30B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "litert-community/SmolLM2-360M-Instruct",
+  "created": "2026-05-06",
+  "dl": 14790,
+  "likes": 4,
+  "base": [
+   "HuggingFaceTB/SmolLM2-360M-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AtomicChat/DeepSeek-V4.1-Flash-1017-Uncensored-GGUF",
+  "created": "2026-10-19",
+  "dl": 14730,
+  "likes": 73,
+  "base": [
+   "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AtomicChat/Clover-35B-A3B-Preview-Uncensored-GGUF",
+  "created": "2026-10-30",
+  "dl": 14017,
+  "likes": 13,
+  "base": [
+   "Diffuspace/Clover-35B-A3B-Preview"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "SpeakoFlow/speakoflow-mini",
+  "created": "2026-08-29",
+  "dl": 13856,
+  "likes": 13,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "JuneoAI/Laplace-1-Vector",
+  "created": "2026-11-01",
+  "dl": 13621,
+  "likes": 44,
+  "base": [
+   "XHToken/Spark-X2.6-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "kakaocorp/kanana-2-3b-instruct",
+  "created": "2026-07-24",
+  "dl": 13119,
+  "likes": 16,
+  "base": [
+   "kakaocorp/kanana-2-3b-base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXXI-27B-Q2",
+  "created": "2026-11-10",
+  "dl": 12397,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "incoai/GLM-5.3-Flash-DFlash2",
+  "created": "2026-08-27",
+  "dl": 11817,
+  "likes": 132,
+  "base": [
+   "zai-org/GLM-5.3-Flash"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXVII-27B-Q2",
+  "created": "2026-11-05",
+  "dl": 11801,
+  "likes": 1,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ukisai/Swift-Bonsai-2-GGUF",
+  "created": "2026-09-22",
+  "dl": 11800,
+  "likes": 73,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Inferact/Kimi-K3-DSpark",
+  "created": "2026-07-25",
+  "dl": 11712,
+  "likes": 56,
+  "base": [
+   "moonshotai/Kimi-K3"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "apetersson/DeepSeek-V4.1-Flash-1017-Abliterated-MLX",
+  "created": "2026-10-22",
+  "dl": 11597,
+  "likes": 40,
+  "base": [
+   "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "JuneoAI/Laplace-1-Atlas",
+  "created": "2026-11-01",
+  "dl": 11397,
+  "likes": 52,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "DreamFast/qwen3-8b-heretic",
+  "created": "2026-03-20",
+  "dl": 11292,
+  "likes": 55,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "hotocooo/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-DFlash",
+  "created": "2026-10-20",
+  "dl": 11046,
+  "likes": 5,
+  "base": [
+   "incoai/Qwen3.8-Flash-Next-DFlash2"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXX-27B-Q2",
+  "created": "2026-11-10",
+  "dl": 10988,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "nur-dev/farabi-0.6B-agent-rag",
+  "created": "2026-06-03",
+  "dl": 10923,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "gated": "auto",
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "lightseekorg/kimi-k2.6-eagle3-mla",
+  "created": "2026-04-30",
+  "dl": 10725,
+  "likes": 7,
+  "base": [
+   "moonshotai/Kimi-K2.6"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "JIRU-W/upcycle_dense15000_e32top8_noaux_rewarm200",
+  "created": "2026-10-29",
+  "dl": 10717,
+  "likes": 1,
+  "base": [
+   "JIRU-W/dense_e1_seq2048_gbs128_10b"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Verdugie/Therapy-3.8",
+  "created": "2026-09-02",
+  "dl": 10405,
+  "likes": 11,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Nanbeige/Nanbeige4.1-3B",
+  "created": "2026-02-10",
+  "dl": 10315,
+  "likes": 1193,
+  "base": [
+   "Nanbeige/Nanbeige4-3B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-I-27B-Q2",
+  "created": "2026-10-22",
+  "dl": 10293,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXVIII-27B-Q2",
+  "created": "2026-11-07",
+  "dl": 10208,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Ozili/Gemma-4-Vain-26B-A4B-GGUF",
+  "created": "2026-10-12",
+  "dl": 10205,
+  "likes": 8,
+  "base": [
+   "google/gemma-4-26B-A4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXXII-27B-Q2",
+  "created": "2026-11-11",
+  "dl": 10127,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "DavidAU/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC",
+  "created": "2026-01-09",
+  "dl": 9945,
+  "likes": 103,
+  "base": [
+   "mistralai/Mistral-Nemo-Instruct-2407"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XVII-27B-Q2",
+  "created": "2026-10-30",
+  "dl": 9610,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XVI-27B-Q2",
+  "created": "2026-10-29",
+  "dl": 9590,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Qwen/Qwen-AgentWorld-35B-A3B",
+  "created": "2026-06-22",
+  "dl": 9478,
+  "likes": 749,
+  "base": [
+   "Qwen/Qwen3.5-35B-A3B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ibm-granite/granite-guardian-4.1-8b",
+  "created": "2026-04-16",
+  "dl": 9248,
+  "likes": 52,
+  "base": [
+   "ibm-granite/granite-4.1-8b"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXV-27B-Q2",
+  "created": "2026-11-03",
+  "dl": 8856,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "tiny-random/qwen2.5",
+  "created": "2026-04-15",
+  "dl": 8841,
+  "likes": 0,
+  "base": [
+   "Qwen/Qwen2.5-72B-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XVIII-27B-Q2",
+  "created": "2026-10-31",
+  "dl": 8419,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "hkust-nlp/drkernel-8b",
+  "created": "2026-02-05",
+  "dl": 8307,
+  "likes": 5,
+  "base": [
+   "Qwen/Qwen3-8B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "XHToken/Spark-X2.5-4B",
+  "created": "2026-08-24",
+  "dl": 8296,
+  "likes": 1444,
+  "base": [
+   "XHToken/Spark-X2.5-4B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-Thinking",
+  "created": "2026-01-20",
+  "dl": 8173,
+  "likes": 408,
+  "base": [
+   "LiquidAI/LFM2.5-1.2B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "saidutta69/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking-heretic",
+  "created": "2026-07-15",
+  "dl": 8166,
+  "likes": 17,
+  "base": [
+   "GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "z-lab/Qwen3.6-35B-A3B-DFlash",
+  "created": "2026-04-17",
+  "dl": 8113,
+  "likes": 296,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "janhq/Jan-code-4b",
+  "created": "2026-03-02",
+  "dl": 8030,
+  "likes": 83,
+  "base": [
+   "janhq/Jan-v3-4B-base-instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXIX-27B-Q2",
+  "created": "2026-11-09",
+  "dl": 7934,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-IV-27B-Q2",
+  "created": "2026-10-24",
+  "dl": 7869,
+  "likes": 1,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "unsloth/NVIDIA-Nemotron-3-Nano-4B",
+  "created": "2026-03-16",
+  "dl": 7779,
+  "likes": 16,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXXIII-27B-Q2",
+  "created": "2026-11-11",
+  "dl": 7747,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "NousResearch/Arete-27B",
+  "created": "2026-11-06",
+  "dl": 7497,
+  "likes": 615,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXII-27B-Q2",
+  "created": "2026-11-02",
+  "dl": 7446,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-II-27B-Q2",
+  "created": "2026-10-23",
+  "dl": 7040,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "bytkim/Qwen3.6-27B-MTP-pi-tune-GGUF",
+  "created": "2026-06-02",
+  "dl": 7023,
+  "likes": 126,
+  "base": [
+   "Qwen/Qwen3.6-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ai-sage/GigaChat3.1-10B-A1.8B-bf16",
+  "created": "2026-03-21",
+  "dl": 7007,
+  "likes": 15,
+  "base": [
+   "ai-sage/GigaChat3-10B-A1.8B-base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-IX-27B-Q2",
+  "created": "2026-10-25",
+  "dl": 7006,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-VII-27B-Q2",
+  "created": "2026-10-25",
+  "dl": 6908,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-VI-27B-Q2",
+  "created": "2026-10-24",
+  "dl": 6745,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-V-27B-Q2",
+  "created": "2026-10-24",
+  "dl": 6738,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "sriram1983007/SRA-RiskGate-4B",
+  "created": "2026-10-03",
+  "dl": 6703,
+  "likes": 5,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "modal-labs/Kimi-K3-DFlash",
+  "created": "2026-07-26",
+  "dl": 6682,
+  "likes": 6,
+  "base": [
+   "moonshotai/Kimi-K3"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "chenyumo/moziAI-35B-A3B-MOE-MTP",
+  "created": "2026-08-10",
+  "dl": 6671,
+  "likes": 26,
+  "base": [
+   "ornith-ai/Ornith-1.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XIX-27B-Q2",
+  "created": "2026-11-01",
+  "dl": 6522,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-24B-A2B-MLX-bf16",
+  "created": "2026-10-12",
+  "dl": 6445,
+  "likes": 6,
+  "base": [
+   "LiquidAI/LFM2.5-24B-A2B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "utter-project/EuroLLM-9B-Instruct-2512",
+  "created": "2026-01-26",
+  "dl": 6398,
+  "likes": 17,
+  "base": [
+   "utter-project/EuroLLM-9B-2512"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XI-27B-Q2",
+  "created": "2026-10-26",
+  "dl": 6393,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "saidutta69/DeepSeek-R1-Qwen3-8B-heretic",
+  "created": "2026-10-08",
+  "dl": 6375,
+  "likes": 2,
+  "base": [
+   "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "XingChen-AGI/Xing4.0-29B-Intent",
+  "created": "2026-10-15",
+  "dl": 6136,
+  "likes": 327,
+  "base": [
+   "XingChen-AGI/Xing4.0-29B-A4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-VIII-27B-Q2",
+  "created": "2026-10-25",
+  "dl": 6124,
+  "likes": 1,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "candor-lab/K2-Horizon-7B-Candor-Uncensored-GGUF",
+  "created": "2026-10-18",
+  "dl": 5996,
+  "likes": 11,
+  "base": [
+   "IFM/K2-Horizon-7B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "unsloth/LFM2.5-1.2B-Instruct",
+  "created": "2026-01-06",
+  "dl": 5975,
+  "likes": 8,
+  "base": [
+   "LiquidAI/LFM2.5-1.2B-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "CohereLabs/tiny-aya-earth",
+  "created": "2026-02-13",
+  "dl": 5968,
+  "likes": 33,
+  "base": [
+   "CohereLabs/tiny-aya-base"
+  ],
+  "gated": "auto",
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "unsloth/granite-4.1-3b",
+  "created": "2026-04-30",
+  "dl": 5892,
+  "likes": 6,
+  "base": [
+   "ibm-granite/granite-4.1-3b"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "huihui-ai/Huihui-NeoHorse-1-4B-abliterated-GGUF",
+  "created": "2026-09-18",
+  "dl": 5890,
+  "likes": 21,
+  "base": [
+   "TokenRhythm/NeoHorse-1-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-III-27B-Q2",
+  "created": "2026-10-23",
+  "dl": 5881,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "MobiusDevelopment/gemma4-E2B-it-qat-Q4-unsloth-heretic",
+  "created": "2026-06-23",
+  "dl": 5855,
+  "likes": 3,
+  "base": [
+   "unsloth/gemma-4-E2B-it-qat-q4_0-unquantized"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXIV-27B-Q2",
+  "created": "2026-11-03",
+  "dl": 5806,
+  "likes": 1,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.1-1.5B-Instruct",
+  "created": "2026-05-03",
+  "dl": 5794,
+  "likes": 3,
+  "base": [
+   "swiss-ai/Apertus-v1.1-1.5B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXVI-27B-Q2",
+  "created": "2026-11-04",
+  "dl": 5734,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXIII-27B-Q2",
+  "created": "2026-11-02",
+  "dl": 5729,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "inference-optimization/Llama-3.2-0.5B-Instruct",
+  "created": "2026-06-03",
+  "dl": 5671,
+  "likes": 1,
+  "base": [
+   "meta-llama/Llama-3.2-1B-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "DreamFast/Qwen3-VL-8B-Heretic-1.3.0",
+  "created": "2026-06-05",
+  "dl": 5593,
+  "likes": 43,
+  "base": [
+   "Qwen/Qwen3-VL-8B-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "tencent/Qwen3.8-27B-DSpine-b16",
+  "created": "2026-11-07",
+  "dl": 5590,
+  "likes": 277,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "RadixArk/Muse-Spark-Open-DFlash2",
+  "created": "2026-10-13",
+  "dl": 5589,
+  "likes": 0,
+  "base": [
+   "meta-models/Muse-Spark-Open-816B-A42B-NVFP4"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "XHToken/Spark-X2.6-1.7B",
+  "created": "2026-10-19",
+  "dl": 5574,
+  "likes": 85,
+  "base": [
+   "XHToken/Spark-X2.6-1.7B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Diffuspace/Clover-35B-A3B-Preview",
+  "created": "2026-10-24",
+  "dl": 5532,
+  "likes": 273,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "allenai/Bolmo-1B-Stage1",
+  "created": "2026-08-26",
+  "dl": 5482,
+  "likes": 0,
+  "base": [
+   "allenai/OLMo-2-0425-1B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Mungert/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-GGUF",
+  "created": "2026-11-12",
+  "dl": 5459,
+  "likes": 0,
+  "base": [
+   "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "empero-ai/Qwen3.8-9B-Distill",
+  "created": "2026-08-15",
+  "dl": 5455,
+  "likes": 239,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXI-27B-Q2",
+  "created": "2026-11-01",
+  "dl": 5453,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AdarshSingh7647/Std-SFT-Passage-8B",
+  "created": "2026-08-26",
+  "dl": 5320,
+  "likes": 0,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "HuggingFaceBio/Carbon-X",
+  "created": "2026-10-21",
+  "dl": 5243,
+  "likes": 306,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "hendrimardani/fine-tuned-model-indonesian-GRPO",
+  "created": "2026-09-09",
+  "dl": 5203,
+  "likes": 0,
+  "base": [
+   "unsloth/Llama-3.1-8B-unsloth-bnb-4bit"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "prism-ml/Ternary-Bonsai-8B-mlx-2bit",
+  "created": "2026-04-13",
+  "dl": 5137,
+  "likes": 128,
+  "base": [
+   "prism-ml/Ternary-Bonsai-8B-unpacked"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Anbeeld/GLM-5.3-Flash-DFlash2-GGUF",
+  "created": "2026-08-27",
+  "dl": 5082,
+  "likes": 10,
+  "base": [
+   "zai-org/GLM-5.3-Flash"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": true
+ },
+ {
+  "id": "markstanl/coherencerl-exp7-1_5b-lora",
+  "created": "2026-10-22",
+  "dl": 4994,
+  "likes": 0,
+  "base": [
+   "Qwen/Qwen2.5-1.5B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "inference-optimization/Qwen3.8-1.0B-A0.6B",
+  "created": "2026-08-12",
+  "dl": 4961,
+  "likes": 8,
+  "base": [
+   "Qwen/Qwen3.8-2.4T-A95B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AdarshSingh7647/Std-SFT-Passage-14B",
+  "created": "2026-08-26",
+  "dl": 4904,
+  "likes": 0,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "BSC-LT/salamandra-7b-instruct-2606",
+  "created": "2026-06-30",
+  "dl": 4755,
+  "likes": 3,
+  "base": [
+   "BSC-LT/salamandra-7b"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "tokyotech-llm/Qwen3-Swallow-8B-RL-v0.2",
+  "created": "2026-01-24",
+  "dl": 4740,
+  "likes": 14,
+  "base": [
+   "tokyotech-llm/Qwen3-Swallow-8B-SFT-v0.2"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Infatoshi/phonon-refiner-1.7b",
+  "created": "2026-10-30",
+  "dl": 4714,
+  "likes": 14,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "rawmodels/flint-roleplay-antislop",
+  "created": "2026-10-27",
+  "dl": 4712,
+  "likes": 13,
+  "base": [
+   "RecursiveSI/flint"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "open-athena/Grug-67B-A2B-GLM53-RLVR-SFT-2026.09.23",
+  "created": "2026-09-23",
+  "dl": 4687,
+  "likes": 0,
+  "base": [
+   "open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XX-27B-Q2",
+  "created": "2026-11-01",
+  "dl": 4656,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Huang2020/Qwen3-4B-Domino-b16",
+  "created": "2026-05-27",
+  "dl": 4638,
+  "likes": 6,
+  "base": [
+   "Qwen/Qwen3-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Inferact/MiniMax-M3-EAGLE3",
+  "created": "2026-06-02",
+  "dl": 4609,
+  "likes": 15,
+  "base": [
+   "MiniMaxAI/Minimax-M3-preview"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "taobao-mnn/MNN-Pocket-0.3B",
+  "created": "2026-09-23",
+  "dl": 4580,
+  "likes": 290,
+  "base": [
+   "taobao-mnn/MNN-Pocket-0.3B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-X-27B-Q2",
+  "created": "2026-10-25",
+  "dl": 4567,
+  "likes": 0,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "HanzoHuang/Qwen2.5-1.5B-Instruct-RKLLM",
+  "created": "2026-06-18",
+  "dl": 4493,
+  "likes": 0,
+  "base": [
+   "Qwen/Qwen2.5-1.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "RadixArk/Kimi-K3.1-Dflash2-Preview",
+  "created": "2026-11-04",
+  "dl": 4454,
+  "likes": 7,
+  "base": [
+   "moonshotai/Kimi-K3.1-Pro"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "incoai/GLM-5.3-DFlash2",
+  "created": "2026-08-26",
+  "dl": 4446,
+  "likes": 26,
+  "base": [
+   "zai-org/GLM-5.3"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "empero-ai/Qwen3.8-35B-A3B-Distill",
+  "created": "2026-09-16",
+  "dl": 4288,
+  "likes": 103,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "z-lab/Qwen3.5-122B-A10B-DFlash",
+  "created": "2026-04-21",
+  "dl": 4273,
+  "likes": 20,
+  "base": [
+   "Qwen/Qwen3.5-122B-A10B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "nvidia/gpt-oss-120b-Eagle3-v3",
+  "created": "2026-03-28",
+  "dl": 4253,
+  "likes": 17,
+  "base": [
+   "openai/gpt-oss-120b"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "aisingapore/Apertus-SEA-LION-v4-8B-IT-GGUF",
+  "created": "2026-02-06",
+  "dl": 4210,
+  "likes": 1,
+  "base": [
+   "swiss-ai/Apertus-8B-Instruct-2509"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ErtasAI/MedErtas-v0.1-27B-LS-Perigee",
+  "created": "2026-11-09",
+  "dl": 4196,
+  "likes": 1,
+  "base": [
+   "RedHatAI/Qwen3.8-27B-speculator.dspark"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ErtasAI/MedErtas-v0.1-31B-LS-Perigee",
+  "created": "2026-11-09",
+  "dl": 4187,
+  "likes": 1,
+  "base": [
+   "google/gemma-4-31B-it-assistant"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "puwaer/DeepSeek-V4-Flash-0731-reap-150b",
+  "created": "2026-08-09",
+  "dl": 4175,
+  "likes": 3,
+  "base": [
+   "deepseek-ai/DeepSeek-V4-Flash-0731"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "unsloth/LFM2.5-230M",
+  "created": "2026-06-25",
+  "dl": 4113,
+  "likes": 14,
+  "base": [
+   "LiquidAI/LFM2.5-230M"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Qwen/WebWorld-32B",
+  "created": "2026-02-13",
+  "dl": 4101,
+  "likes": 91,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ceia-research/lumi-4b",
+  "created": "2026-10-27",
+  "dl": 4093,
+  "likes": 75,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Remek/basal-omni-1.0-ultra",
+  "created": "2026-10-15",
+  "dl": 4024,
+  "likes": 43,
+  "base": [
+   "google/gemma-4-31B-it"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "mulkzz/RuBio-4B",
+  "created": "2026-10-31",
+  "dl": 4023,
+  "likes": 0,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "prism-ml/Bonsai-8B-mlx-1bit",
+  "created": "2026-03-18",
+  "dl": 4012,
+  "likes": 239,
+  "base": [
+   "prism-ml/Bonsai-8B-unpacked"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-JP-202606",
+  "created": "2026-05-26",
+  "dl": 3921,
+  "likes": 82,
+  "base": [
+   "LiquidAI/LFM2.5-1.2B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "mulkzz/RuBio-27B",
+  "created": "2026-10-31",
+  "dl": 3848,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "andito/Qwen3.5-0.8B-ConvFill",
+  "created": "2026-10-23",
+  "dl": 3843,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "cybertruck32489/LFM3-1.7B-RD",
+  "created": "2026-10-31",
+  "dl": 3784,
+  "likes": 3,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "tokyotech-llm/Qwen3-Swallow-8B-SFT-v0.2",
+  "created": "2026-01-01",
+  "dl": 3774,
+  "likes": 5,
+  "base": [
+   "tokyotech-llm/Qwen3-Swallow-8B-CPT-v0.2"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.1-4B-Instruct",
+  "created": "2026-05-01",
+  "dl": 3703,
+  "likes": 2,
+  "base": [
+   "swiss-ai/Apertus-v1.1-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "markstanl/coherencerl-exp7-1_5b-fullft",
+  "created": "2026-10-16",
+  "dl": 3698,
+  "likes": 0,
+  "base": [
+   "Qwen/Qwen2.5-1.5B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "hendrimardani/fine-tuned-model-indonesian-2",
+  "created": "2026-09-08",
+  "dl": 3684,
+  "likes": 0,
+  "base": [
+   "unsloth/Llama-3.1-8B-unsloth-bnb-4bit"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "ressl/Ornith-1.5-35B-A3B-uncensored-GGUF",
+  "created": "2026-08-27",
+  "dl": 3626,
+  "likes": 3,
+  "base": [
+   "ornith-ai/Ornith-1.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+  "created": "2026-06-19",
+  "dl": 3603,
+  "likes": 1018,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Recor2d/GPT2-ChineseDevBench",
+  "created": "2026-06-08",
+  "dl": 3587,
+  "likes": 0,
+  "base": [
+   "uer/gpt2-chinese-cluecorpussmall"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "HemmingwayAI/Hemmingway-1.5",
+  "created": "2026-10-24",
+  "dl": 3557,
+  "likes": 63,
+  "base": [
+   "HemmingwayAI/Hemmingway-1"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "redashes/Qwen3.8-27B-SSMFIX-apostate-GSQ-RCO-IQ3_S-NInfer",
+  "created": "2026-10-01",
+  "dl": 3505,
+  "likes": 0,
+  "base": [
+   "redashes/Qwen3.8-27B-BF16-SSMFIX-apostate"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "mnoukhov/nuevamol-360m-reinvent-sft",
+  "created": "2026-06-24",
+  "dl": 3476,
+  "likes": 0,
+  "base": [
+   "mnoukhov/nuevamol-360M-6Btok-wd5"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "OpenLLM-France/Luciole-8B-Instruct-1.1",
+  "created": "2026-07-07",
+  "dl": 3421,
+  "likes": 12,
+  "base": [
+   "OpenLLM-France/Luciole-8B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "HemmingwayAI/Hemmingway-1",
+  "created": "2026-09-20",
+  "dl": 3421,
+  "likes": 903,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "NOSIBLE/financial-sentiment-v1.2-base",
+  "created": "2026-04-28",
+  "dl": 3396,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3-0.6B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "candor-lab/Qwen3.5-9B-Candor-Uncensored-GGUF",
+  "created": "2026-10-16",
+  "dl": 3388,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.1-0.5B-Instruct",
+  "created": "2026-05-01",
+  "dl": 3366,
+  "likes": 1,
+  "base": [
+   "swiss-ai/Apertus-v1.1-0.5B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "AdarshSingh7647/Eklav-Passage-14B",
+  "created": "2026-08-26",
+  "dl": 3350,
+  "likes": 0,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "mnoukhov/nuevamol-46m-reinvent-sft",
+  "created": "2026-06-01",
+  "dl": 3323,
+  "likes": 0,
+  "base": [
+   "mnoukhov/nuevamol-46M-6Btok-wd0.5"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "mnoukhov/nuevamol-135m-reinvent-sft",
+  "created": "2026-06-01",
+  "dl": 3311,
+  "likes": 0,
+  "base": [
+   "mnoukhov/nuevamol-135m-6B-wd3"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B",
+  "created": "2026-07-24",
+  "dl": 3311,
+  "likes": 31,
+  "base": [
+   "unsloth/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "arcee-ai/Trinity-Large-Thinking",
+  "created": "2026-04-01",
+  "dl": 3290,
+  "likes": 191,
+  "base": [
+   "arcee-ai/Trinity-Large-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "dragontamer131313/apikeys",
+  "created": "2026-10-18",
+  "dl": 3290,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen2.5-7B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "kakaocorp/kanana-2-30b-a3b-instruct-2601",
+  "created": "2026-01-14",
+  "dl": 3278,
+  "likes": 58,
+  "base": [
+   "kakaocorp/kanana-2-30b-a3b-mid-2601"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "lilcheaty/flint-abliterated-GGUF",
+  "created": "2026-10-22",
+  "dl": 3277,
+  "likes": 11,
+  "base": [
+   "RecursiveSI/flint"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "online2311/MiniMax-H3-Image-PE-ComfyUI-NVFP4",
+  "created": "2026-11-11",
+  "dl": 3271,
+  "likes": 2,
+  "base": [
+   "MiniMaxAI/MiniMax-H3-Image-PE"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "Remek/basal-2.0-mini",
+  "created": "2026-10-12",
+  "dl": 3187,
+  "likes": 4,
+  "base": [
+   "speakleash/Bielik-1.5B-v3.0-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false
+ },
+ {
+  "id": "TokenRhythm/NeoHorse-1-4B",
+  "created": "2026-09-05",
+  "dl": 2800,
+  "likes": 2558,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "TokenRhythm/NeoHorse-1-9B",
+  "created": "2026-09-05",
+  "dl": 1399,
+  "likes": 1052,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "WeiboAI/VibeThinker-3B",
+  "created": "2026-06-12",
+  "dl": 2606,
+  "likes": 865,
+  "base": [
+   "Qwen/Qwen2.5-Coder-3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Tesslate/OmniCoder-9B",
+  "created": "2026-03-12",
+  "dl": 836,
+  "likes": 698,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "harshatheg/Qwen-2.5-1B-RLCD",
+  "created": "2026-09-16",
+  "dl": 0,
+  "likes": 591,
+  "base": [
+   "Qwen/Qwen2.5-1.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "XYZAILab/XYZ-Aquila-mini",
+  "created": "2026-07-22",
+  "dl": 333,
+  "likes": 444,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "chromadb/context-1",
+  "created": "2026-03-12",
+  "dl": 647,
+  "likes": 425,
+  "base": [
+   "openai/gpt-oss-20b"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "openbmb/AgentCPM-Explore",
+  "created": "2026-01-11",
+  "dl": 2420,
+  "likes": 418,
+  "base": [
+   "Qwen/Qwen3-4B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "superwhisper/s1-mini",
+  "created": "2026-08-12",
+  "dl": 1926,
+  "likes": 388,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "XYZAILab/XYZ-Aquila-pro",
+  "created": "2026-07-22",
+  "dl": 192,
+  "likes": 380,
+  "base": [
+   "Qwen/Qwen3.5-397B-A17B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "fdtn-ai/antares-1b",
+  "created": "2026-07-21",
+  "dl": 740,
+  "likes": 332,
+  "base": [
+   "ibm-granite/granite-4.0-1b"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "litert-community/functiongemma-270m-ft-mobile-actions",
+  "created": "2026-02-25",
+  "dl": 1008,
+  "likes": 327,
+  "base": [
+   "google/functiongemma-270m-it"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "LocoreMind/LocoOperator-4B",
+  "created": "2026-02-23",
+  "dl": 386,
+  "likes": 279,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "miromind-ai/MiroThinker-v1.5-235B",
+  "created": "2026-01-04",
+  "dl": 91,
+  "likes": 254,
+  "base": [
+   "Qwen/Qwen3-235B-A22B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "miromind-ai/MiroThinker-v1.5-30B",
+  "created": "2026-01-04",
+  "dl": 782,
+  "likes": 245,
+  "base": [
+   "Qwen/Qwen3-30B-A3B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "audnai/penclaw-Kimi-K3.1-pro-unrestricted",
+  "created": "2026-10-23",
+  "dl": 583,
+  "likes": 242,
+  "base": [
+   "moonshotai/Kimi-K3.1-Pro"
+  ],
+  "gated": "manual",
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "pipecat-ai/phonellm-alpha-1",
+  "created": "2026-08-24",
+  "dl": 527,
+  "likes": 235,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "lukey03/Qwen3.5-9B-abliterated",
+  "created": "2026-03-03",
+  "dl": 2723,
+  "likes": 210,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "AliesTaha/fable-traces",
+  "created": "2026-07-03",
+  "dl": 113,
+  "likes": 210,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "lordx64/Qwable-v1",
+  "created": "2026-06-14",
+  "dl": 146,
+  "likes": 204,
+  "base": [
+   "lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "zed-industries/zeta-2",
+  "created": "2026-03-23",
+  "dl": 622,
+  "likes": 202,
+  "base": [
+   "ByteDance-Seed/Seed-Coder-8B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "kai-os/Carnice-9b",
+  "created": "2026-04-03",
+  "dl": 279,
+  "likes": 191,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking",
+  "created": "2026-07-03",
+  "dl": 738,
+  "likes": 185,
+  "base": [
+   "openbmb/MiniCPM5-1B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "arcee-ai/Trinity-Large-Preview",
+  "created": "2026-01-27",
+  "dl": 2233,
+  "likes": 181,
+  "base": [
+   "arcee-ai/Trinity-Large-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "empero-ai/Qwythos-9B-v2",
+  "created": "2026-07-09",
+  "dl": 1315,
+  "likes": 180,
+  "base": [
+   "empero-ai/Qwythos-9B-Claude-Mythos-5-1M"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2-2.6B-Transcript",
+  "created": "2026-01-05",
+  "dl": 714,
+  "likes": 176,
+  "base": [
+   "LiquidAI/LFM2-2.6B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "huihui-ai/Huihui-gemma-4-12B-coder-fable5-composer2.5-v1-abliterated",
+  "created": "2026-06-21",
+  "dl": 323,
+  "likes": 171,
+  "base": [
+   "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "apodex/Apodex-1.1-mini",
+  "created": "2026-08-17",
+  "dl": 1436,
+  "likes": 161,
+  "base": [
+   "Qwen/Qwen3.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "XHToken/Spark-X2.5-1.7B",
+  "created": "2026-08-24",
+  "dl": 2169,
+  "likes": 157,
+  "base": [
+   "XHToken/Spark-X2.5-1.7B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-JP",
+  "created": "2026-01-04",
+  "dl": 2855,
+  "likes": 156,
+  "base": [
+   "LiquidAI/LFM2.5-1.2B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Motif-Technologies/Motif-3",
+  "created": "2026-08-07",
+  "dl": 2401,
+  "likes": 155,
+  "base": [
+   "Motif-Technologies/Motif-3-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "LocoreMind/LocoTrainer-4B",
+  "created": "2026-03-13",
+  "dl": 39,
+  "likes": 152,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "thesysdev/OUI-1",
+  "created": "2026-09-07",
+  "dl": 701,
+  "likes": 152,
+  "base": [
+   "google/diffusiongemma-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "SupraLabs/Supra-Router-51M",
+  "created": "2026-07-05",
+  "dl": 601,
+  "likes": 148,
+  "base": [
+   "SupraLabs/Supra1.5-50M-Base-exp"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2-Japanese",
+  "created": "2026-02-04",
+  "dl": 3177,
+  "likes": 146,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-Nano-9B-v2"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "miromind-ai/MiroThinker-1.7",
+  "created": "2026-03-09",
+  "dl": 114,
+  "likes": 146,
+  "base": [
+   "Qwen/Qwen3-235B-A22B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "ByteDance-Seed/Stable-DiffCoder-8B-Instruct",
+  "created": "2026-01-15",
+  "dl": 765,
+  "likes": 143,
+  "base": [
+   "ByteDance-Seed/Stable-DiffCoder-8B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "zed-industries/zeta-2.1",
+  "created": "2026-05-07",
+  "dl": 2515,
+  "likes": 140,
+  "base": [
+   "ByteDance-Seed/Seed-Coder-8B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "empero-ai/Qwable-9B-Claude-Fable-5",
+  "created": "2026-06-15",
+  "dl": 466,
+  "likes": 134,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-Fin",
+  "created": "2026-09-03",
+  "dl": 2500,
+  "likes": 133,
+  "base": [
+   "inclusionAI/Ling-3.0-flash"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic",
+  "created": "2026-09-06",
+  "dl": 1101,
+  "likes": 130,
+  "base": [
+   "OBLITERATUS/Qwen3.8-27B-OBLITERATED"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Akahsizrr/fuse-1-Lite",
+  "created": "2026-08-05",
+  "dl": 174,
+  "likes": 125,
+  "base": [
+   "LiquidAI/LFM2.5-2.6B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "squ11z1/Mythos-nano",
+  "created": "2026-06-14",
+  "dl": 2745,
+  "likes": 123,
+  "base": [
+   "WeiboAI/VibeThinker-3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated",
+  "created": "2026-08-10",
+  "dl": 1089,
+  "likes": 119,
+  "base": [
+   "oyildirim/CyberStrike-OffSec-35B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "OrionLLM/OxCoder-9B",
+  "created": "2026-09-07",
+  "dl": 692,
+  "likes": 113,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2",
+  "created": "2026-06-28",
+  "dl": 755,
+  "likes": 112,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "z-lab/Qwen3.5-27B-DFlash",
+  "created": "2026-03-14",
+  "dl": 1703,
+  "likes": 110,
+  "base": [
+   "Qwen/Qwen3.5-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "pat-jj/harness-1",
+  "created": "2026-05-12",
+  "dl": 258,
+  "likes": 107,
+  "base": [
+   "openai/gpt-oss-20b"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "openbmb/BitCPM-CANN-8B",
+  "created": "2026-05-15",
+  "dl": 3038,
+  "likes": 107,
+  "base": [
+   "openbmb/MiniCPM4-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "DavidAU/Llama3.3-8B-Instruct-Thinking-Claude-4.5-Opus-High-Reasoning",
+  "created": "2026-01-01",
+  "dl": 710,
+  "likes": 105,
+  "base": [
+   "allura-forge/Llama-3.3-8B-Instruct"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "baichuan-inc/Baichuan-M3-235B",
+  "created": "2026-01-13",
+  "dl": 2388,
+  "likes": 105,
+  "base": [
+   "Qwen/Qwen3-235B-A22B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "miromind-ai/MiroThinker-1.7-mini",
+  "created": "2026-03-09",
+  "dl": 933,
+  "likes": 105,
+  "base": [
+   "Qwen/Qwen3-235B-A22B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Gryphe/Gemma-4-31B-StyleTune",
+  "created": "2026-06-10",
+  "dl": 816,
+  "likes": 105,
+  "base": [
+   "google/gemma-4-31B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "AlexWortega/SIQ-1-35B",
+  "created": "2026-06-14",
+  "dl": 804,
+  "likes": 104,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "ProCreations/grug-27b",
+  "created": "2026-07-23",
+  "dl": 322,
+  "likes": 102,
+  "base": [
+   "Qwen/Qwen3.6-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "huihui-ai/Huihui-GLM-4.7-Flash-abliterated",
+  "created": "2026-01-22",
+  "dl": 1271,
+  "likes": 98,
+  "base": [
+   "zai-org/GLM-4.7-Flash"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+  "created": "2026-06-20",
+  "dl": 1047,
+  "likes": 98,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "DMindAI/DMind-3",
+  "created": "2026-01-22",
+  "dl": 51,
+  "likes": 92,
+  "base": [
+   "Qwen/Qwen3.5-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "lm-provers/QED-Nano",
+  "created": "2026-02-12",
+  "dl": 898,
+  "likes": 90,
+  "base": [
+   "lm-provers/QED-Nano-SFT"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "oyildirim/CyberStrike-OffSec-35B",
+  "created": "2026-06-25",
+  "dl": 616,
+  "likes": 90,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "bytkim/Qwen3.8-27B-pi",
+  "created": "2026-09-29",
+  "dl": 1732,
+  "likes": 89,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "gugujiji/novel-humanize-4b",
+  "created": "2026-10-25",
+  "dl": 1805,
+  "likes": 89,
+  "base": [
+   "Qwen/Qwen3-4B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "darkc0de/XORTRON.CriminalComputing.LARGE.2026.3",
+  "created": "2026-02-21",
+  "dl": 345,
+  "likes": 88,
+  "base": [
+   "mistralai/Mistral-Large-Instruct-2411"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Qwen/WebWorld-8B",
+  "created": "2026-02-13",
+  "dl": 1252,
+  "likes": 86,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "BennyDaBall/Z-Image-Engineer-V6",
+  "created": "2026-06-06",
+  "dl": 1070,
+  "likes": 86,
+  "base": [
+   "Tongyi-MAI/Z-Image-Turbo"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Jiunsong/supergemma4-e4b-abliterated",
+  "created": "2026-04-17",
+  "dl": 242,
+  "likes": 84,
+  "base": [
+   "google/gemma-4-E4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "mindlab-research/Macaron-V1-Preview-749B",
+  "created": "2026-06-05",
+  "dl": 329,
+  "likes": 84,
+  "base": [
+   "zai-org/GLM-5.1"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+  "created": "2026-07-19",
+  "dl": 2515,
+  "likes": 83,
+  "base": [
+   "unsloth/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "cerebras/GLM-4.7-Flash-REAP-23B-A3B",
+  "created": "2026-01-23",
+  "dl": 765,
+  "likes": 82,
+  "base": [
+   "zai-org/GLM-4.7-Flash"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "fdtn-ai/antares-350m",
+  "created": "2026-07-21",
+  "dl": 221,
+  "likes": 81,
+  "base": [
+   "ibm-granite/granite-4.0-350m"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "tencent/Penguin-VL-8B",
+  "created": "2026-03-05",
+  "dl": 379,
+  "likes": 80,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "FutureMa/Eva-4B",
+  "created": "2026-01-11",
+  "dl": 41,
+  "likes": 79,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "TrevorJS/gemma-4-26B-A4B-it-uncensored",
+  "created": "2026-04-03",
+  "dl": 1688,
+  "likes": 79,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Blackfrost-AI/CYBER-FROST-3.8-BF16",
+  "created": "2026-09-15",
+  "dl": 1109,
+  "likes": 79,
+  "base": [
+   "Qwen/Qwen3.8-Flash-Next"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Rakuten/RakutenAI-3.0",
+  "created": "2026-03-16",
+  "dl": 369,
+  "likes": 78,
+  "base": [
+   "deepseek-ai/DeepSeek-V3-0324"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Apexintelligence-AI/Apex-35B-V1.0",
+  "created": "2026-10-28",
+  "dl": 2165,
+  "likes": 76,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Applied-Innovation-Center/Karnak-40B-v1.0",
+  "created": "2026-02-06",
+  "dl": 1815,
+  "likes": 75,
+  "base": [
+   "Qwen/Qwen3-30B-A3B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16",
+  "created": "2026-06-24",
+  "dl": 2140,
+  "likes": 73,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "OpenResearcher/OpenResearcher-30B-A3B",
+  "created": "2026-02-03",
+  "dl": 1262,
+  "likes": 72,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "huihui-ai/Huihui-Qwen3-Coder-Next-abliterated",
+  "created": "2026-02-07",
+  "dl": 1266,
+  "likes": 72,
+  "base": [
+   "Qwen/Qwen3-Coder-Next"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "allenai/AstaBrief_8B",
+  "created": "2026-02-09",
+  "dl": 2843,
+  "likes": 72,
+  "base": [
+   "allenai/AstaBrief_8B_SFT"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "microsoft/FrogMini-14B-2510",
+  "created": "2026-01-09",
+  "dl": 2202,
+  "likes": 71,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "HuggingFaceTB/nanowhale-100m",
+  "created": "2026-04-24",
+  "dl": 817,
+  "likes": 71,
+  "base": [
+   "HuggingFaceTB/nanowhale-100m-base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "apodex/Apodex-1.0-mini",
+  "created": "2026-06-07",
+  "dl": 539,
+  "likes": 71,
+  "base": [
+   "Qwen/Qwen3.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "kai-os/Grug-12B",
+  "created": "2026-07-02",
+  "dl": 244,
+  "likes": 70,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "DavidAU/Llama3.3-8B-Instruct-Thinking-Heretic-Uncensored-Claude-4.5-Opus-High-Reasoning",
+  "created": "2026-01-02",
+  "dl": 1097,
+  "likes": 67,
+  "base": [
+   "allura-forge/Llama-3.3-8B-Instruct"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "BennyDaBall/Krea-2-Engineer-V1",
+  "created": "2026-06-28",
+  "dl": 0,
+  "likes": 67,
+  "base": [
+   "krea/Krea-2-Turbo"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "0xSero/Qwen3.5-28B",
+  "created": "2026-03-27",
+  "dl": 126,
+  "likes": 65,
+  "base": [
+   "Qwen/Qwen3.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1",
+  "created": "2026-06-17",
+  "dl": 276,
+  "likes": 65,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Octen/Octen-WebGR-4B",
+  "created": "2026-10-26",
+  "dl": 1498,
+  "likes": 65,
+  "base": [
+   "Qwen/Qwen3-4B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "kakaocorp/kanana-2-30b-a3b-thinking-2601",
+  "created": "2026-01-14",
+  "dl": 2299,
+  "likes": 64,
+  "base": [
+   "kakaocorp/kanana-2-30b-a3b-mid-2601"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Jiunsong/SuperDeepseek-V4-Flash-abliterated-MQ-2xDGX",
+  "created": "2026-08-11",
+  "dl": 607,
+  "likes": 64,
+  "base": [
+   "deepseek-ai/DeepSeek-V4-Flash-0731"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Blackfrost-Research/GLM-5.3-DERISKED-BF16",
+  "created": "2026-08-28",
+  "dl": 869,
+  "likes": 64,
+  "base": [
+   "zai-org/GLM-5.3-BF16"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "SupraLabs/Supra-50M-Reasoning",
+  "created": "2026-06-03",
+  "dl": 173,
+  "likes": 63,
+  "base": [
+   "SupraLabs/Supra-50M-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "DMindAI/DMind-3-mini",
+  "created": "2026-01-11",
+  "dl": 45,
+  "likes": 62,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "janhq/Jan-v3-4B-base-instruct",
+  "created": "2026-01-19",
+  "dl": 1129,
+  "likes": 62,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "mgoin/GLM-5.2-speculator.dspark-preview",
+  "created": "2026-07-02",
+  "dl": 182,
+  "likes": 61,
+  "base": [
+   "zai-org/GLM-5.2-FP8"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "ai-sage/GigaChat3.1-Audio-10B-A1.8B",
+  "created": "2026-07-13",
+  "dl": 1258,
+  "likes": 61,
+  "base": [
+   "ai-sage/GigaChat3.1-10B-A1.8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Octen/Octen-WebGR-0.6B",
+  "created": "2026-10-26",
+  "dl": 1524,
+  "likes": 58,
+  "base": [
+   "Qwen/Qwen3-0.6B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "arcee-ai/Trinity-Large-Base",
+  "created": "2026-01-27",
+  "dl": 1689,
+  "likes": 57,
+  "base": [
+   "arcee-ai/Trinity-Large-TrueBase"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "t-tech/T-Search",
+  "created": "2026-07-13",
+  "dl": 316,
+  "likes": 57,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0",
+  "created": "2026-05-29",
+  "dl": 1165,
+  "likes": 56,
+  "base": [
+   "meta-llama/Llama-3.1-70B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "juspay/xor",
+  "created": "2026-09-21",
+  "dl": 410,
+  "likes": 56,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "silx-ai/Quasar-10B",
+  "created": "2026-03-09",
+  "dl": 96,
+  "likes": 55,
+  "base": [
+   "Qwen/Qwen3.5-9B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "sabicap/sabi-noema",
+  "created": "2026-10-13",
+  "dl": 1405,
+  "likes": 55,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "tsinghua-sigs-robot-lab/VeriLoop-E2",
+  "created": "2026-09-22",
+  "dl": 1287,
+  "likes": 54,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "TeichAI/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill",
+  "created": "2026-01-22",
+  "dl": 188,
+  "likes": 53,
+  "base": [
+   "unsloth/GLM-4.7-Flash"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "FrontiersMind/Nandi-Mini-150M-Tool-Calling",
+  "created": "2026-04-16",
+  "dl": 122,
+  "likes": 53,
+  "base": [
+   "FrontiersMind/Nandi-Mini-150M"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2-2.6B-Longevity",
+  "created": "2026-05-25",
+  "dl": 2065,
+  "likes": 53,
+  "base": [
+   "LiquidAI/LFM2-2.6B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "BAAI/AREX-Turbo",
+  "created": "2026-07-23",
+  "dl": 1937,
+  "likes": 53,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "LastMachine/Qwen3-8B-ZeroZero-Heretic",
+  "created": "2026-11-03",
+  "dl": 1549,
+  "likes": 53,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "heretic-org/Nanbeige4.1-3B-heretic",
+  "created": "2026-02-16",
+  "dl": 99,
+  "likes": 52,
+  "base": [
+   "Nanbeige/Nanbeige4.1-3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "FrontiersMind/Nandi-Mini-150M-Instruct",
+  "created": "2026-04-13",
+  "dl": 156,
+  "likes": 52,
+  "base": [
+   "FrontiersMind/Nandi-Mini-150M"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "orcarouter/LFM3-1.7B-abliterated",
+  "created": "2026-11-02",
+  "dl": 756,
+  "likes": 51,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "deadbydawn101/RavenX-CyberAgent-Qwen3.6-35B-A3B-Opus-4.7-OpenMythos-Pentester-BugHunter-RATH-mlx",
+  "created": "2026-06-03",
+  "dl": 2058,
+  "likes": 50,
+  "base": [
+   "huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "SupraLabs/Supra1.5-50M-Instruct-exp",
+  "created": "2026-06-12",
+  "dl": 159,
+  "likes": 50,
+  "base": [
+   "SupraLabs/Supra1.5-50M-Base-exp"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Jab1718/qwen3.8-flash-coder-85gb-bf16",
+  "created": "2026-08-27",
+  "dl": 1848,
+  "likes": 50,
+  "base": [
+   "Qwen/Qwen3.8-Flash-Next"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "FINAL-Bench/Darwin-27B-RSI",
+  "created": "2026-09-27",
+  "dl": 388,
+  "likes": 50,
+  "base": [
+   "FINAL-Bench/Darwin-27B-Opus"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "CohereLabs/tiny-aya-water",
+  "created": "2026-02-13",
+  "dl": 527,
+  "likes": 49,
+  "base": [
+   "CohereLabs/tiny-aya-base"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Gryphe/Gemma-4-26B-A4B-StyleTune",
+  "created": "2026-06-14",
+  "dl": 97,
+  "likes": 49,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "PrimeIntellect/INTELLECT-3.1",
+  "created": "2026-01-20",
+  "dl": 476,
+  "likes": 48,
+  "base": [
+   "zai-org/GLM-4.5-Air-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "speakleash/Bielik-Minitron-7B-v3.0-Instruct",
+  "created": "2026-01-22",
+  "dl": 905,
+  "likes": 48,
+  "base": [
+   "speakleash/Bielik-11B-v3-Base-20250730"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+  "created": "2026-07-13",
+  "dl": 981,
+  "likes": 48,
+  "base": [
+   "openbmb/MiniCPM5-1B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "empero-ai/Qwen3.8-2B-Distill",
+  "created": "2026-08-15",
+  "dl": 3120,
+  "likes": 48,
+  "base": [
+   "Qwen/Qwen3.5-2B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "z-lab/Qwen3.5-35B-A3B-DFlash",
+  "created": "2026-03-02",
+  "dl": 1301,
+  "likes": 47,
+  "base": [
+   "Qwen/Qwen3.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "FINAL-Bench/Qwen3.5-35B-A3B-VKAE",
+  "created": "2026-07-03",
+  "dl": 0,
+  "likes": 47,
+  "base": [
+   "Qwen/Qwen3.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "whittleOrg/Whittle-Next-27B-A3B",
+  "created": "2026-09-03",
+  "dl": 1028,
+  "likes": 47,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Gryphe/Gemma-4-12B-StyleTune",
+  "created": "2026-06-19",
+  "dl": 388,
+  "likes": 46,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "microsoft/FrogBoss-32B-2510",
+  "created": "2026-01-05",
+  "dl": 2213,
+  "likes": 45,
+  "base": [
+   "Qwen/Qwen3-32B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "cebeuq/DeepSeek-V4-Flash-0731-abliterated",
+  "created": "2026-08-01",
+  "dl": 783,
+  "likes": 45,
+  "base": [
+   "deepseek-ai/DeepSeek-V4-Flash-0731"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-8B-A1B-DSpark",
+  "created": "2026-08-10",
+  "dl": 1026,
+  "likes": 45,
+  "base": [
+   "LiquidAI/LFM2.5-8B-A1B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "tencent/Penguin-VL-2B",
+  "created": "2026-03-05",
+  "dl": 705,
+  "likes": 44,
+  "base": [
+   "Qwen/Qwen3-1.7B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "sweepai/sweep-next-edit-v2-7B",
+  "created": "2026-03-30",
+  "dl": 118,
+  "likes": 44,
+  "base": [
+   "Qwen/Qwen2.5-Coder-7B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "FINAL-Bench/Aether-7B-5Attn-it",
+  "created": "2026-07-17",
+  "dl": 154,
+  "likes": 44,
+  "base": [
+   "FINAL-Bench/Aether-7B-5Attn"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "enstazao/Qalb-1.0-8B-Instruct",
+  "created": "2026-01-14",
+  "dl": 1179,
+  "likes": 43,
+  "base": [
+   "unsloth/Meta-Llama-3.1-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Qwen/WebWorld-14B",
+  "created": "2026-02-13",
+  "dl": 1060,
+  "likes": 43,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "microsoft/MagenticBrain",
+  "created": "2026-05-12",
+  "dl": 2537,
+  "likes": 43,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "DJLougen/Qwable-5-27B-Coder",
+  "created": "2026-06-20",
+  "dl": 160,
+  "likes": 43,
+  "base": [
+   "Qwen/Qwen3.6-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "twinkle-ai/gemma-3-4B-T1-it",
+  "created": "2026-01-04",
+  "dl": 591,
+  "likes": 41,
+  "base": [
+   "google/gemma-3-4b-pt"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "IFM/K2-Think-V2",
+  "created": "2026-01-08",
+  "dl": 2162,
+  "likes": 41,
+  "base": [
+   "IFM/K2-V2-Instruct"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "FINAL-Bench/Darwin-36B-Opus-VKAE",
+  "created": "2026-07-03",
+  "dl": 0,
+  "likes": 41,
+  "base": [
+   "FINAL-Bench/Darwin-36B-Opus"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "BlackwellBoy/DeepSeek-V4.1-Flash-1017-BLACKFOLD-EXL3-2.9bpw-TP2",
+  "created": "2026-10-20",
+  "dl": 0,
+  "likes": 41,
+  "base": [
+   "LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "TrevorJS/gemma-4-E4B-it-uncensored",
+  "created": "2026-04-03",
+  "dl": 980,
+  "likes": 40,
+  "base": [
+   "google/gemma-4-E4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Zigeng/DMax-Coder-16B",
+  "created": "2026-04-08",
+  "dl": 147,
+  "likes": 40,
+  "base": [
+   "inclusionAI/LLaDA2.0-mini"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+  "created": "2026-08-21",
+  "dl": 478,
+  "likes": 40,
+  "base": [
+   "ornith-ai/Ornith-1.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "DavidAU/Dolphin-Mistral-GLM-4.7-Flash-24B-Venice-Edition-Thinking-Uncensored",
+  "created": "2026-01-30",
+  "dl": 430,
+  "likes": 39,
+  "base": [
+   "dphn/Dolphin-Mistral-24B-Venice-Edition"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "ArliAI/Qwen3.5-27B-Derestricted",
+  "created": "2026-03-08",
+  "dl": 179,
+  "likes": 39,
+  "base": [
+   "Qwen/Qwen3.5-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "kai-os/Grug-35B-A3B",
+  "created": "2026-07-02",
+  "dl": 97,
+  "likes": 39,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "togethercomputer/Tev1-4B-experimental",
+  "created": "2026-09-23",
+  "dl": 1660,
+  "likes": 39,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "lightonai/colgrep-agent-2B",
+  "created": "2026-10-03",
+  "dl": 1082,
+  "likes": 39,
+  "base": [
+   "openbmb/MiniCPM5-2B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "ressl/MiniMax-M3-uncensored",
+  "created": "2026-07-09",
+  "dl": 534,
+  "likes": 38,
+  "base": [
+   "MiniMaxAI/MiniMax-M3"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "apetersson/DeepSeek-V4-Flash-0731-Abliterated-FP8",
+  "created": "2026-07-31",
+  "dl": 597,
+  "likes": 38,
+  "base": [
+   "deepseek-ai/DeepSeek-V4-Flash-0731"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-2.6B-DSpark",
+  "created": "2026-08-10",
+  "dl": 1426,
+  "likes": 38,
+  "base": [
+   "LiquidAI/LFM2.5-2.6B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "Ae55667/halogen-qwen3.8-flash-next-abliterated",
+  "created": "2026-09-20",
+  "dl": 0,
+  "likes": 38,
+  "base": [
+   "peonist-ai/halogen-qwen3.8-flash-next"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "deadbydawn101/gemma-4-E4B-Agentic-Opus-Reasoning-GeminiCLI-mlx-4bit",
+  "created": "2026-04-05",
+  "dl": 1367,
+  "likes": 37,
+  "base": [
+   "deadbydawn101/gemma-4-E4B-mlx-4bit"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "huihui-ai/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated",
+  "created": "2026-06-26",
+  "dl": 827,
+  "likes": 37,
+  "base": [
+   "empero-ai/Qwythos-9B-Claude-Mythos-5-1M"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "cosmicoptima/computer-10",
+  "created": "2026-09-22",
+  "dl": 574,
+  "likes": 37,
+  "base": [
+   "cosmicoptima/computer-9"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-3-Elastic-30B-A3B-BF16",
+  "created": "2026-04-01",
+  "dl": 1966,
+  "likes": 36,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "kai-os/Carnice-27b",
+  "created": "2026-04-06",
+  "dl": 66,
+  "likes": 36,
+  "base": [
+   "Qwen/Qwen3.5-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "saricles/MiniMax-M2.7-REAP-172B-A10B-NVFP4-GB10",
+  "created": "2026-04-17",
+  "dl": 111,
+  "likes": 36,
+  "base": [
+   "saricles/MiniMax-M2.7-REAP-172B-A10B-BF16"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "dphn/Venice-Role-Play-Uncensored",
+  "created": "2026-05-29",
+  "dl": 0,
+  "likes": 36,
+  "base": [
+   "dphn/Dolphin-Mistral-24B-Venice-Edition"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false
+ },
+ {
+  "id": "qvac/BotPsy-0.8B",
+  "created": "2026-11-10",
+  "dl": 752,
+  "likes": 25,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "speakleash/Bielik-11B-v3.1-Instruct",
+  "created": "2026-10-26",
+  "dl": 377,
+  "likes": 24,
+  "base": [
+   "speakleash/Bielik-11B-v3-Base-20250730"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ibm-granite/granite-4.1-8b-llmon-preview",
+  "created": "2026-10-01",
+  "dl": 428,
+  "likes": 19,
+  "base": [
+   "ibm-granite/granite-4.1-8b-base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "lyber-ai/Kimi-K3.1-Pro-UNCENSORED-MXFP4",
+  "created": "2026-11-06",
+  "dl": 19,
+  "likes": 35,
+  "base": [
+   "moonshotai/Kimi-K3.1-Pro"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ibm-granite/granite-4.1-3b-llmon-preview",
+  "created": "2026-10-01",
+  "dl": 2243,
+  "likes": 18,
+  "base": [
+   "ibm-granite/granite-4.1-3b-base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "empero-ai/Quark-150M-128K-Zero",
+  "created": "2026-11-15",
+  "dl": 0,
+  "likes": 15,
+  "base": [
+   "empero-ai/Quark-150M-128K-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "xtools-at/Qwen3.5-9B-DeepThought-STEM",
+  "created": "2026-11-02",
+  "dl": 1923,
+  "likes": 17,
+  "base": [
+   "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "summerAIO/diffusion-lfm2.5-24b-a2b",
+  "created": "2026-11-09",
+  "dl": 1952,
+  "likes": 10,
+  "base": [
+   "LiquidAI/LFM2.5-24B-A2B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "opencerebral/Boris-2-Think",
+  "created": "2026-11-12",
+  "dl": 244,
+  "likes": 10,
+  "base": [
+   "opencerebral/Boris-2"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "whittleOrg/Whittle-Qwen-3.8-35B-A3B",
+  "created": "2026-09-19",
+  "dl": 1214,
+  "likes": 35,
+  "base": [
+   "logic65/Whittle-Next-27B-A3B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "SolsticeAI/Arete-27B-Unlocked-Uncensored-Heretic",
+  "created": "2026-11-10",
+  "dl": 971,
+  "likes": 8,
+  "base": [
+   "NousResearch/Arete-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "summerAIO/Diffusion-Qwen3.8-27B",
+  "created": "2026-10-13",
+  "dl": 1601,
+  "likes": 34,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "VillanovaAI/Villanova2-15B-A3B",
+  "created": "2026-11-05",
+  "dl": 50,
+  "likes": 14,
+  "base": [
+   "VillanovaAI/Villanova2-15B-A3B-Base"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "pfnet/plamo-3-8b-fin-instruct",
+  "created": "2026-11-08",
+  "dl": 983,
+  "likes": 10,
+  "base": [
+   "pfnet/plamo-3-nict-8b-base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "garlic-llm/garlic-llm-ps4",
+  "created": "2026-11-11",
+  "dl": 0,
+  "likes": 7,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "FrostWolfAI/Frost-Cyber-Mini-1.0",
+  "created": "2026-10-22",
+  "dl": 119,
+  "likes": 22,
+  "base": [
+   "huihui-ai/Huihui-Qwen3.5-4B-abliterated"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "BananaMind/BananaMind-2.5-Pro",
+  "created": "2026-11-08",
+  "dl": 1097,
+  "likes": 16,
+  "base": [
+   "BananaMind/BananaMind-2-Pro"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "DJLougen/Qwen3.5-9B-Math-GraphCalc",
+  "created": "2026-11-11",
+  "dl": 205,
+  "likes": 6,
+  "base": [
+   "Qwen/Qwen3.5-9B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "klein-ml/KV1-1.2B",
+  "created": "2026-11-14",
+  "dl": 46,
+  "likes": 6,
+  "base": [
+   "LiquidAI/LFM2.5-1.2B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED",
+  "created": "2026-09-25",
+  "dl": 1101,
+  "likes": 25,
+  "base": [
+   "OBLITERATUS/Ornith-1.5-9B-OBLITERATED"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "tcmofashi/mai_replier-9b-v3",
+  "created": "2026-11-06",
+  "dl": 734,
+  "likes": 10,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "p-e-w/Oc-e-Non-v1",
+  "created": "2026-11-06",
+  "dl": 1400,
+  "likes": 24,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "AEON-7/AEON-DFlash2-Qwen3.8-27B",
+  "created": "2026-10-05",
+  "dl": 187,
+  "likes": 7,
+  "base": [
+   "z-lab/Qwen3.8-27B-DFlash2"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "jmc0/Rein-NPC-4B",
+  "created": "2026-11-08",
+  "dl": 1611,
+  "likes": 4,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "opencerebral/Boris-2-Instruct",
+  "created": "2026-11-12",
+  "dl": 245,
+  "likes": 4,
+  "base": [
+   "opencerebral/Boris-2"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "summerAIO/Diffusion-LFM3-1.7B-pre",
+  "created": "2026-11-12",
+  "dl": 306,
+  "likes": 4,
+  "base": [
+   "LiquidAI/LFM3-1.7B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "opencerebral/Boris-2-Think-Instruct",
+  "created": "2026-11-12",
+  "dl": 141,
+  "likes": 4,
+  "base": [
+   "opencerebral/Boris-2"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "CyberBuddyAI/CyberBuddy-CyberOps-9B",
+  "created": "2026-06-08",
+  "dl": 559,
+  "likes": 5,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "OBLITERATUS/Qwen3.8-27B-Obliterated-E03",
+  "created": "2026-08-29",
+  "dl": 190,
+  "likes": 10,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "llm-jp/llm-jp-exp260903_8b_math-code-rl",
+  "created": "2026-09-03",
+  "dl": 0,
+  "likes": 3,
+  "base": [
+   "llm-jp/llm-jp-4-8b-base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Maincode/Matilda-Platypus-13B-Base",
+  "created": "2026-10-28",
+  "dl": 578,
+  "likes": 4,
+  "base": [
+   "Qwen/Qwen3-14B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "iBimo-o/Bimo-7B-CyberAgent",
+  "created": "2026-11-04",
+  "dl": 624,
+  "likes": 5,
+  "base": [
+   "Qwen/Qwen2.5-Coder-7B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "VillanovaAI/Villanova2-2B",
+  "created": "2026-11-04",
+  "dl": 62,
+  "likes": 8,
+  "base": [
+   "VillanovaAI/Villanova2-2B-Base"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "lyber-ai/Kimi-K3.1-Pro-ABLITERATED-MXFP4",
+  "created": "2026-11-06",
+  "dl": 0,
+  "likes": 4,
+  "base": [
+   "moonshotai/Kimi-K3.1-Pro"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "jsantillana/glm-4.7-flash-abliterated",
+  "created": "2026-11-07",
+  "dl": 1473,
+  "likes": 4,
+  "base": [
+   "zai-org/GLM-4.7-Flash"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Austriani/Qwen3.8-4B-Distill-ARA-Abliterated",
+  "created": "2026-11-08",
+  "dl": 362,
+  "likes": 3,
+  "base": [
+   "empero-ai/Qwen3.8-4B-Distill"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ingenix/Thalamus-Reasoning-9B",
+  "created": "2026-11-09",
+  "dl": 33,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "arcticoneai/xspark-X2.6-math",
+  "created": "2026-11-09",
+  "dl": 364,
+  "likes": 3,
+  "base": [
+   "XHToken/Spark-X2.6-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "0xSero/GLM-5.3-Flash-DSpine",
+  "created": "2026-11-09",
+  "dl": 703,
+  "likes": 4,
+  "base": [
+   "zai-org/GLM-5.3-Flash"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Hooshaai/qwen-2.5-0.5b-bam-umoe-wikitext2",
+  "created": "2026-11-10",
+  "dl": 319,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen2.5-0.5B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Hooshaai/qwen-2.5-0.5b-block-transformer-hiba-wikitext2",
+  "created": "2026-11-10",
+  "dl": 321,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen2.5-0.5B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "summerAIO/diffusion-lfm2.5-24b-a2b-blocktune",
+  "created": "2026-11-11",
+  "dl": 117,
+  "likes": 3,
+  "base": [
+   "summerAIO/diffusion-lfm2.5-24b-a2b"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "pentacoxian-dev/DeepSeek-V4.1-1017-Ablitrated-Efficient-v3",
+  "created": "2026-11-12",
+  "dl": 172,
+  "likes": 3,
+  "base": [
+   "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "slm4apps/Maris3D-Blender",
+  "created": "2026-11-15",
+  "dl": 0,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen2.5-Coder-0.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "DavidAU/Mistral-Nemo-Inst-2407-12B-Thinking-Uncensored-HERETIC-HI-Claude-Opus",
+  "created": "2026-01-09",
+  "dl": 408,
+  "likes": 30,
+  "base": [
+   "mistralai/Mistral-Nemo-Instruct-2407"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "CohereLabs/tiny-aya-fire",
+  "created": "2026-02-13",
+  "dl": 1443,
+  "likes": 32,
+  "base": [
+   "CohereLabs/tiny-aya-base"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Divij/Qwen3.5-4B-SFT-decompiler-O0-full",
+  "created": "2026-04-07",
+  "dl": 189,
+  "likes": 9,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Manhph2211/PulseLM",
+  "created": "2026-04-11",
+  "dl": 9,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "insilicomedicine/longevity-llm",
+  "created": "2026-05-15",
+  "dl": 238,
+  "likes": 10,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "rishanthrajendhran/POLARIS-9B",
+  "created": "2026-05-26",
+  "dl": 81,
+  "likes": 10,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Cactus-Compute/gemma-4-26B-A4B-it",
+  "created": "2026-06-25",
+  "dl": 67,
+  "likes": 6,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "amalia-llm/AMALIA-9B-0626-DPO",
+  "created": "2026-06-26",
+  "dl": 1394,
+  "likes": 21,
+  "base": [
+   "amalia-llm/AMALIA-9B-0626-SFT"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "TIGER-Lab/FIM-14B",
+  "created": "2026-07-14",
+  "dl": 46,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen2.5-Coder-14B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Cactus-Compute/gemma-4-e2b-it-hybrid",
+  "created": "2026-07-21",
+  "dl": 170,
+  "likes": 9,
+  "base": [
+   "google/gemma-4-E2B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Umranz/Shruti-Soft-2.6b",
+  "created": "2026-08-13",
+  "dl": 220,
+  "likes": 4,
+  "base": [
+   "Umranz/LFM2.5-2.6B-heretic"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
+  "created": "2026-09-02",
+  "dl": 811,
+  "likes": 14,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "FrenzyMath/Reaper-1",
+  "created": "2026-09-10",
+  "dl": 0,
+  "likes": 3,
+  "base": [
+   "FrenzyMath/Reaper-SFT"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "TelperionAI/Qwen3.8-27B-MLA",
+  "created": "2026-09-30",
+  "dl": 654,
+  "likes": 17,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16",
+  "created": "2026-10-03",
+  "dl": 458,
+  "likes": 17,
+  "base": [
+   "zai-org/GLM-5.3-Flash-BF16"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "mondk/MiniCPM5-MSH-2B-IT-SAFETENSORS",
+  "created": "2026-10-09",
+  "dl": 51,
+  "likes": 3,
+  "base": [
+   "openbmb/MiniCPM5-2B-Midtrain"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "murai-labs/agaram-2.5b-instruct",
+  "created": "2026-10-12",
+  "dl": 1348,
+  "likes": 11,
+  "base": [
+   "murai-labs/agaram-2.5b"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Remek/basal-2.0-max",
+  "created": "2026-10-12",
+  "dl": 1910,
+  "likes": 11,
+  "base": [
+   "speakleash/Bielik-PL-11B-v3.0-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "domyn/Domyn-Edge-SFT",
+  "created": "2026-10-13",
+  "dl": 1251,
+  "likes": 5,
+  "base": [
+   "domyn/Domyn-Edge-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "hirundo-io/Qwen3-Coder-30B-A3B-Instruct-Westernized",
+  "created": "2026-10-13",
+  "dl": 470,
+  "likes": 14,
+  "base": [
+   "Qwen/Qwen3-Coder-30B-A3B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "mondk/Humanizer-3B-Safetensors",
+  "created": "2026-10-14",
+  "dl": 274,
+  "likes": 3,
+  "base": [
+   "ibm-granite/granite-4.2-3b"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "satellitedown/Qwen3.8-Flash-Next-heretic-fngine",
+  "created": "2026-10-15",
+  "dl": 0,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.8-Flash-Next"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "gostar77/qwen3.8-flash-next-radiance-q5-w5dn64-bf16ple",
+  "created": "2026-10-18",
+  "dl": 0,
+  "likes": 4,
+  "base": [
+   "Qwen/Qwen3.8-Flash-Next"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "xtools-at/Qwen3.5-9B-Claude-3xMerge-UNCENSORED-heretic",
+  "created": "2026-10-19",
+  "dl": 1077,
+  "likes": 4,
+  "base": [
+   "xtools-at/Qwen3.5-9B-Claude-3xMerge"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "KRAFTON/Raon-1-mini-preview-dflash2",
+  "created": "2026-10-20",
+  "dl": 1337,
+  "likes": 23,
+  "base": [
+   "KRAFTON/Raon-1-mini-preview"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "abacusai/Smaug-Humanizer",
+  "created": "2026-10-23",
+  "dl": 1223,
+  "likes": 29,
+  "base": [
+   "google/gemma-4-12B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "mk322/LaDi-RL-Code-8B",
+  "created": "2026-10-25",
+  "dl": 0,
+  "likes": 2,
+  "base": [
+   "mk322/LaDiR-Code-8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "CyberBuddyAI/CyberBuddy-Sleeper-Spy-CloudSec-9B",
+  "created": "2026-10-26",
+  "dl": 180,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Shrijanagain/SPEED2-V0-0B7-CPT-SFT-fp8cpt",
+  "created": "2026-10-29",
+  "dl": 1101,
+  "likes": 3,
+  "base": [
+   "Shrijanagain/SPEED2-V0-0B7-CPT-SFT-fp8cpt"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "AtomicChat/Mistral-Large-4-1T-A52B-Uncensored-GGUF",
+  "created": "2026-10-29",
+  "dl": 2438,
+  "likes": 8,
+  "base": [
+   "mistralai/Mistral-Large-4-1T-A52B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "manuelgscom/askmdb-9b-GGUF",
+  "created": "2026-10-29",
+  "dl": 356,
+  "likes": 5,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "suayptalha/LFMputer-1.7B",
+  "created": "2026-10-29",
+  "dl": 694,
+  "likes": 6,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "WiTi4Bit/gemma-3-1b-it-qnm-4bit",
+  "created": "2026-11-03",
+  "dl": 49,
+  "likes": 2,
+  "base": [
+   "google/gemma-3-1b-it"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "OpenMed/Qwen3-1.7B-WSP-Clinical",
+  "created": "2026-11-03",
+  "dl": 690,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Austriani/Gemma-4-E2B-it-ARA-Abliterated",
+  "created": "2026-11-04",
+  "dl": 135,
+  "likes": 3,
+  "base": [
+   "google/gemma-4-E2B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "domyn/Domyn-Edge-Teacher-IF",
+  "created": "2026-11-05",
+  "dl": 1491,
+  "likes": 2,
+  "base": [
+   "domyn/Domyn-Edge-SFT"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "FrostWolfAI/Frost-Cyber-Mini-Uncensored-v1.1",
+  "created": "2026-11-05",
+  "dl": 2155,
+  "likes": 2,
+  "base": [
+   "FrostWolfAI/Spark-X2.6-4B-abliterated"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "kaushikvira/Qwen3.8-Flash-Next-swift15-nvfp4-lamina-basalt",
+  "created": "2026-11-06",
+  "dl": 304,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen3.8-Flash-Next"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "askdkc/DS-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic-Metal",
+  "created": "2026-11-07",
+  "dl": 2075,
+  "likes": 3,
+  "base": [
+   "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "okolxc/openmythos-2b-edge",
+  "created": "2026-11-07",
+  "dl": 1231,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.5-2B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Ozili/Gemma-4-Vain-31B-GGUF",
+  "created": "2026-11-08",
+  "dl": 1262,
+  "likes": 2,
+  "base": [
+   "google/gemma-4-31B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "manuelgscom/dale-0.8b",
+  "created": "2026-11-08",
+  "dl": 344,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "SolsticeAI/Terminal-RSI-27B-Unlocked-Uncensored-Heretic",
+  "created": "2026-11-09",
+  "dl": 405,
+  "likes": 2,
+  "base": [
+   "Teriminal-RSI/Terminal-RSI-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Felamity-Technologies/Minmini-1B",
+  "created": "2026-11-09",
+  "dl": 500,
+  "likes": 2,
+  "base": [
+   "google/gemma-3-1b-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "blazkepa/Qwen3.8-Flash-Next-norev-oQ4e-MTP",
+  "created": "2026-11-09",
+  "dl": 1274,
+  "likes": 2,
+  "base": [
+   "GBP-DE/Qwen3.8-Flash-Next-oQ4e-WLSRefit-MTP"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Hooshaai/qwen-2.5-0.5b-compressed-attention-wikitext2",
+  "created": "2026-11-10",
+  "dl": 346,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen2.5-0.5B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "speakleash/Bielik-One-11B-v3.1-r1",
+  "created": "2026-11-10",
+  "dl": 115,
+  "likes": 2,
+  "base": [
+   "speakleash/Bielik-11B-v3.1-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "gustavobarrosss/t6-lumi-4b",
+  "created": "2026-11-10",
+  "dl": 591,
+  "likes": 2,
+  "base": [
+   "ceia-br/lumi-4b"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "onelastkissforme/dadeum-gec-base",
+  "created": "2026-11-11",
+  "dl": 563,
+  "likes": 2,
+  "base": [
+   "gogamza/kobart-base-v2"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "mkurman/neuroblast-v46-150m-v41tok-50b",
+  "created": "2026-11-11",
+  "dl": 0,
+  "likes": 2,
+  "base": [
+   "mkurman/neuroblast-v46-150m-v41tok"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "zeroday01/tev1_cybersecurity",
+  "created": "2026-11-11",
+  "dl": 211,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.5-0.8B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nikimoriOne/Pretype-One",
+  "created": "2026-11-11",
+  "dl": 149,
+  "likes": 2,
+  "base": [
+   "google/gemma-4-E2B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Pleochroic-Ltd/Summerwise-27B",
+  "created": "2026-11-12",
+  "dl": 108,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "q-project/N-Q-164M-Chat",
+  "created": "2026-11-12",
+  "dl": 43,
+  "likes": 2,
+  "base": [
+   "q-project/N-Q-164M"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "CyberBuddyAI/CyberBuddy-CloudSec-9B",
+  "created": "2026-11-12",
+  "dl": 297,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "SEE7/Astheral",
+  "created": "2026-11-12",
+  "dl": 319,
+  "likes": 2,
+  "base": [
+   "NousResearch/DeepHermes-3-Llama-3-8B-Preview"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Davidzord/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+  "created": "2026-11-13",
+  "dl": 169,
+  "likes": 2,
+  "base": [
+   "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "SEE7/AstheralPlus",
+  "created": "2026-11-13",
+  "dl": 214,
+  "likes": 2,
+  "base": [
+   "openai/gpt-oss-20b"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "K-Ai-Official/Aether-15B",
+  "created": "2026-11-14",
+  "dl": 63,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3-14B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Remek/basal-omni-2.0-mini-preview",
+  "created": "2026-11-14",
+  "dl": 94,
+  "likes": 2,
+  "base": [
+   "google/gemma-4-E4B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "talha2134/StructuraAI",
+  "created": "2026-11-15",
+  "dl": 0,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "san-digital/Qwen3.8-Flash-Next-DFlash2",
+  "created": "2026-11-15",
+  "dl": 0,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.8-Flash-Next"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "DavidAU/Llama-3.3-8B-Thinking-Gemini-Flash-11000x-128k",
+  "created": "2026-01-03",
+  "dl": 340,
+  "likes": 7,
+  "base": [
+   "allura-forge/Llama-3.3-8B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "kakaocorp/kanana-2-30b-a3b-mid-2601",
+  "created": "2026-01-14",
+  "dl": 218,
+  "likes": 32,
+  "base": [
+   "kakaocorp/kanana-2-30b-a3b-base-2601"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "AudCor/cpa-qwen3-8b-v0",
+  "created": "2026-01-18",
+  "dl": 50,
+  "likes": 12,
+  "base": [
+   "unsloth/Qwen3-8B-unsloth-bnb-4bit"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "mii-llm/nesso-0.4B-agentic",
+  "created": "2026-01-19",
+  "dl": 348,
+  "likes": 6,
+  "base": [
+   "mii-llm/zagreus-0.4B-ita"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "unsloth/GLM-4.7-Flash",
+  "created": "2026-01-20",
+  "dl": 610,
+  "likes": 19,
+  "base": [
+   "zai-org/GLM-4.7-Flash"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "SamsungSAILMontreal/Qwen3-Coder-Next-REAP",
+  "created": "2026-02-09",
+  "dl": 40,
+  "likes": 4,
+  "base": [
+   "Qwen/Qwen3-Coder-Next"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "bknyaz/Qwen3-Coder-Next-REAM",
+  "created": "2026-02-11",
+  "dl": 160,
+  "likes": 30,
+  "base": [
+   "Qwen/Qwen3-Coder-Next"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "heretic-org/Qwen3-4B-Thinking-2507-heretic",
+  "created": "2026-02-15",
+  "dl": 167,
+  "likes": 24,
+  "base": [
+   "Qwen/Qwen3-4B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "puwaer/Qwen3-Next-80B-A3B-Thinking-SFT-Uncensored",
+  "created": "2026-02-17",
+  "dl": 6,
+  "likes": 4,
+  "base": [
+   "Qwen/Qwen3-Next-80B-A3B-Thinking"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "litert-community/functiongemma-270m-ft-tiny-garden",
+  "created": "2026-02-25",
+  "dl": 94,
+  "likes": 25,
+  "base": [
+   "google/functiongemma-270m-it"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "applexml/kimi-k2",
+  "created": "2026-02-26",
+  "dl": 94,
+  "likes": 2,
+  "base": [
+   "HuggingFaceTB/SmolLM2-135M-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "inclusionAI/AReaL-SEA-235B-A22B",
+  "created": "2026-03-01",
+  "dl": 1901,
+  "likes": 6,
+  "base": [
+   "Qwen/Qwen3-235B-A22B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "akmaldira/Qwen2.5-3B-Instruct-RKLLM",
+  "created": "2026-03-02",
+  "dl": 114,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-3B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "o-duffy/ue-expert-v2",
+  "created": "2026-03-07",
+  "dl": 0,
+  "likes": 5,
+  "base": [
+   "Qwen/Qwen2.5-Coder-14B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "daksh-neo/sarvam-30b-quantized",
+  "created": "2026-03-14",
+  "dl": 13,
+  "likes": 1,
+  "base": [
+   "sarvamai/sarvam-30b"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "QCRI/Fanar-2-27B-Instruct",
+  "created": "2026-03-16",
+  "dl": 3039,
+  "likes": 19,
+  "base": [
+   "google/gemma-3-27b-pt"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "DexopT/Qwen3-4B-Cybersecurity",
+  "created": "2026-03-21",
+  "dl": 359,
+  "likes": 3,
+  "base": [
+   "unsloth/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "DexopT/Qwen3-4B-Cybersecurity-Heretic-16bit",
+  "created": "2026-03-22",
+  "dl": 188,
+  "likes": 7,
+  "base": [
+   "DexopT/Qwen3-4B-Cybersecurity"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Nubinu/Qwen3.5-4B-MiniFantasy",
+  "created": "2026-03-25",
+  "dl": 55,
+  "likes": 8,
+  "base": [
+   "MuXodious/Qwen3.5-4B-SOMPOA-heresy-v2"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nyxspecter4/kin-cybersecurity-3b",
+  "created": "2026-03-27",
+  "dl": 1098,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen2.5-3B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "sci4ai/Qwen2.5-14B-Instruct-Abliterated",
+  "created": "2026-03-29",
+  "dl": 382,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen2.5-14B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "WWTCyberLab/abliterated-llama-8b",
+  "created": "2026-04-03",
+  "dl": 48,
+  "likes": 4,
+  "base": [
+   "meta-llama/Llama-3.1-8B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "TrevorJS/gemma-4-E2B-it-uncensored",
+  "created": "2026-04-03",
+  "dl": 2478,
+  "likes": 33,
+  "base": [
+   "google/gemma-4-E2B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "TrevorJS/gemma-4-31B-it-uncensored",
+  "created": "2026-04-04",
+  "dl": 821,
+  "likes": 35,
+  "base": [
+   "google/gemma-4-31B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "reaperdoesntknow/Shepherd-Alpha",
+  "created": "2026-04-08",
+  "dl": 2923,
+  "likes": 6,
+  "base": [
+   "Qwen/Qwen3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "DuoNeural/Gemma-4-26B-A4B-Abliterated",
+  "created": "2026-04-09",
+  "dl": 323,
+  "likes": 4,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "DreamFast/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive-Safetensor-Benchmark",
+  "created": "2026-04-14",
+  "dl": 1529,
+  "likes": 9,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "dealignai/MiniMax-M2.7-JANGTQ-CRACK",
+  "created": "2026-04-15",
+  "dl": 470,
+  "likes": 29,
+  "base": [
+   "MiniMaxAI/MiniMax-M2.7"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "0xSero/Qwen3.6-28B",
+  "created": "2026-04-18",
+  "dl": 220,
+  "likes": 35,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "XXXiong/ParetoPilot",
+  "created": "2026-04-20",
+  "dl": 52,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "haninmb/train_qewn3_final",
+  "created": "2026-04-20",
+  "dl": 1103,
+  "likes": 1,
+  "base": [
+   "unsloth/Qwen3-14B-unsloth-bnb-4bit"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "racineai/Mistral-Military-24B",
+  "created": "2026-04-22",
+  "dl": 77,
+  "likes": 8,
+  "base": [
+   "mistralai/Mistral-Small-3.1-24B-Base-2503"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "praveenkrovvidi/rl-cas-trl-agent",
+  "created": "2026-04-25",
+  "dl": 28,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-3B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "kyLELEng/retailops-instruct-qwen3.5-9b",
+  "created": "2026-04-28",
+  "dl": 9,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "DuoNeural/Gemma-4-Abliterated-LiteRT",
+  "created": "2026-04-29",
+  "dl": 0,
+  "likes": 23,
+  "base": [
+   "DuoNeural/Gemma-4-E4B-Abliterated"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ertghiu256/Qwen3-4B-distill-deepseek-opus-gemini",
+  "created": "2026-05-08",
+  "dl": 62,
+  "likes": 7,
+  "base": [
+   "Qwen/Qwen3-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "UBC-NLP/NileChat-3B-Base",
+  "created": "2026-05-11",
+  "dl": 10,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen2.5-3B"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "juiceb0xc0de/bella-bartender-gemma-e4b",
+  "created": "2026-05-14",
+  "dl": 305,
+  "likes": 4,
+  "base": [
+   "google/gemma-4-E4B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "principled-intelligence/claim-extractor-4B-q-2605",
+  "created": "2026-05-14",
+  "dl": 129,
+  "likes": 8,
+  "base": [
+   "unsloth/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "llmfan46/MiniMax-M2.7-BF16-ultra-uncensored-heretic",
+  "created": "2026-05-14",
+  "dl": 140,
+  "likes": 14,
+  "base": [
+   "amd/MiniMax-M2.7-BF16"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ripbaggie/babygrok",
+  "created": "2026-05-16",
+  "dl": 7,
+  "likes": 1,
+  "base": [
+   "mistralai/Mistral-7B-v0.1"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nvidia/CUDA-Autocomplete",
+  "created": "2026-05-19",
+  "dl": 2193,
+  "likes": 21,
+  "base": [
+   "Qwen/Qwen2.5-Coder-7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "NCUT-AI/Heliars-Phi4-Carla-X1-14B",
+  "created": "2026-05-19",
+  "dl": 20,
+  "likes": 3,
+  "base": [
+   "unsloth/phi-4-unsloth-bnb-4bit"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "issai/foggen",
+  "created": "2026-05-20",
+  "dl": 496,
+  "likes": 7,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Convence/Aroow-Rust-Coder-9B",
+  "created": "2026-05-23",
+  "dl": 65,
+  "likes": 12,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "deadbydawn101/RavenX-Sec-8B-Security-RATH-128k-mlx-4bit",
+  "created": "2026-05-28",
+  "dl": 162,
+  "likes": 3,
+  "base": [
+   "georgehenney/Qwen3-8B-heretic"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "aifeifei798/LFM2.5-Queen-Opus-4.7-8B-A1B",
+  "created": "2026-06-02",
+  "dl": 35,
+  "likes": 3,
+  "base": [
+   "aifeifei798/LFM2.5-Queen-8B-A1B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Irfanuruchi/qwen2.5-3b-buildeng",
+  "created": "2026-06-02",
+  "dl": 55,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen2.5-3B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "DreamFast/Qwen-2.5-7b-abliterlitics",
+  "created": "2026-06-03",
+  "dl": 0,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "dalatexcoder/MiniCPM5-1B-heretic-som",
+  "created": "2026-06-03",
+  "dl": 74,
+  "likes": 2,
+  "base": [
+   "openbmb/MiniCPM5-1B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "AngelSlim/Qwen3-8b-dflare",
+  "created": "2026-06-03",
+  "dl": 206,
+  "likes": 4,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "igorls/gemma-4-12B-it-heretic-v1",
+  "created": "2026-06-04",
+  "dl": 887,
+  "likes": 19,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "sahilchachra/MiniCPM5-1B-Uncensored",
+  "created": "2026-06-04",
+  "dl": 189,
+  "likes": 5,
+  "base": [
+   "openbmb/MiniCPM5-1B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "adeepv/Qwen3.6-27B-W8A16-Ascend310P",
+  "created": "2026-06-04",
+  "dl": 114,
+  "likes": 4,
+  "base": [
+   "Qwen/Qwen3.6-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "preparebuddy/ielts-9b",
+  "created": "2026-06-05",
+  "dl": 29,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "RealMythos/pocwriter-v1",
+  "created": "2026-06-06",
+  "dl": 41,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "apodex/Apodex-1.0-0.8B-SFT",
+  "created": "2026-06-07",
+  "dl": 193,
+  "likes": 20,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "MRockatansky/Gemma-4-31B-Storymaxxed3",
+  "created": "2026-06-08",
+  "dl": 134,
+  "likes": 7,
+  "base": [
+   "llmfan46/gemma-4-Ortenzya-The-Creative-Wordsmith-31B-it-uncensored-heretic"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nvidia/Privasis-Cleaner-4B",
+  "created": "2026-06-08",
+  "dl": 2013,
+  "likes": 17,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Verdugie/Opus-Therapy",
+  "created": "2026-06-09",
+  "dl": 542,
+  "likes": 6,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "fableforge-ai/ReasonCritic-7B",
+  "created": "2026-06-14",
+  "dl": 1327,
+  "likes": 5,
+  "base": [
+   "fableforge-ai/ReasonCritic-7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "bfuzzy1/Rodan-Chat",
+  "created": "2026-06-16",
+  "dl": 26,
+  "likes": 1,
+  "base": [
+   "bfuzzy1/Rodan-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "bfuzzy1/Rodan-Reasoning",
+  "created": "2026-06-16",
+  "dl": 9,
+  "likes": 1,
+  "base": [
+   "bfuzzy1/Rodan-Chat"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Soofi-Project/Soofi-S-Rhine-Preview",
+  "created": "2026-06-16",
+  "dl": 159,
+  "likes": 21,
+  "base": [
+   "Soofi-Project/Soofi-S-Base"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "GestaltLabs/Ornstein-3.5-9B-V2",
+  "created": "2026-06-18",
+  "dl": 81,
+  "likes": 6,
+  "base": [
+   "GestaltLabs/Ornstein-3.5-9B-V1.5"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "CladeTeam/CENO-chlamydomonas-cds",
+  "created": "2026-06-20",
+  "dl": 1156,
+  "likes": 1,
+  "base": [
+   "CladeTeam/CENO-base-1b-preview"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "CladeTeam/CENO-rice-cds",
+  "created": "2026-06-20",
+  "dl": 1172,
+  "likes": 1,
+  "base": [
+   "CladeTeam/CENO-base-1b-preview"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Verdugie/Fable-Therapy",
+  "created": "2026-06-21",
+  "dl": 1335,
+  "likes": 13,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "A459/Qwen2.5-7B-Instruct-abliterated",
+  "created": "2026-06-22",
+  "dl": 153,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "richardyoung/Qwen2.5-Coder-14B-Instruct-heretic",
+  "created": "2026-06-24",
+  "dl": 322,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen2.5-Coder-14B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "rafw007/ornith-1.0-9b-claude-coder",
+  "created": "2026-06-27",
+  "dl": 0,
+  "likes": 5,
+  "base": [
+   "deepreinforce-ai/Ornith-1.0-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "kinit/qwen3.5-9B-extract-ml-conversations",
+  "created": "2026-06-29",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "voidful/gemma-4-E4B-stitch-zh",
+  "created": "2026-07-01",
+  "dl": 36,
+  "likes": 1,
+  "base": [
+   "google/gemma-4-E4B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "TobiasLogic/Qwen2.5-Coder-32B-abliterated",
+  "created": "2026-07-01",
+  "dl": 947,
+  "likes": 12,
+  "base": [
+   "Qwen/Qwen2.5-Coder-32B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "feyninc/sqrl-9b",
+  "created": "2026-07-05",
+  "dl": 845,
+  "likes": 6,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "feyninc/sqrl-35b-a3b",
+  "created": "2026-07-05",
+  "dl": 41,
+  "likes": 12,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "fableforge-ai/Mythos-V2-9B",
+  "created": "2026-07-08",
+  "dl": 516,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "LiquidAI/LFM2.5-Encoder-350M-Diffusion",
+  "created": "2026-07-10",
+  "dl": 750,
+  "likes": 29,
+  "base": [
+   "LiquidAI/LFM2.5-Encoder-350M"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "glyphsoftware/sentinel-r2.1",
+  "created": "2026-07-12",
+  "dl": 0,
+  "likes": 2,
+  "base": [
+   "empero-ai/Qwythos-9B-v2"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "gixno/needle-termux-sting",
+  "created": "2026-07-12",
+  "dl": 14,
+  "likes": 2,
+  "base": [
+   "Cactus-Compute/needle"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "SC117/Ornith-1.0-35B-Heretic-MTP",
+  "created": "2026-07-12",
+  "dl": 335,
+  "likes": 4,
+  "base": [
+   "ornith-ai/Ornith-1.0-35B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "theabbie/needle-pi-coding-agent",
+  "created": "2026-07-13",
+  "dl": 25,
+  "likes": 5,
+  "base": [
+   "Cactus-Compute/needle"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "fieldsmodelorg/FM-Pochi-32B-IMO26",
+  "created": "2026-07-14",
+  "dl": 0,
+  "likes": 2,
+  "base": [
+   "allenai/Olmo-3.1-32B-Think"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "kakaocorp/kanana-2-1.3b-instruct",
+  "created": "2026-07-24",
+  "dl": 1644,
+  "likes": 16,
+  "base": [
+   "kakaocorp/kanana-2-1.3b-base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "niljen/xearnes-phi4-mini",
+  "created": "2026-07-25",
+  "dl": 41,
+  "likes": 2,
+  "base": [
+   "microsoft/Phi-4-mini-instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ali-thowfeek/Charty-1B",
+  "created": "2026-07-27",
+  "dl": 19,
+  "likes": 2,
+  "base": [
+   "unsloth/LFM2.5-1.2B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ninty-seven/StepGuard",
+  "created": "2026-07-27",
+  "dl": 1933,
+  "likes": 14,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "buddhist-nlp/mitra-qwen35-it",
+  "created": "2026-07-29",
+  "dl": 60,
+  "likes": 3,
+  "base": [
+   "buddhist-nlp/mitra-qwen35-base-stage2"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "turnercore/needle-automaticity-v9",
+  "created": "2026-08-01",
+  "dl": 6,
+  "likes": 1,
+  "base": [
+   "Cactus-Compute/needle"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "glyphsoftware/sentinel-r2.2",
+  "created": "2026-08-02",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "unsloth/gemma-4-26B-A4B-it"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "CodeSoft/MetaDiffusion-150M-exp",
+  "created": "2026-08-02",
+  "dl": 122,
+  "likes": 5,
+  "base": [
+   "SupraLabs/Supra1.5-50M-Base-exp"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "FrontiersMind/Lumma-0.6B-Extract",
+  "created": "2026-08-03",
+  "dl": 104,
+  "likes": 12,
+  "base": [
+   "FrontiersMind/Lumma-0.6B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "danylo131/qwen2.5-7b-chat-overview-context-keeper",
+  "created": "2026-08-03",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Authereon/Qwen3.6-35B-A3B-Fable-5-Distill-heretic",
+  "created": "2026-08-03",
+  "dl": 67,
+  "likes": 3,
+  "base": [
+   "armand0e/Qwen3.6-35B-A3B-Fable-5-Distill"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "kurakurai/Luth-2-2B",
+  "created": "2026-08-03",
+  "dl": 119,
+  "likes": 10,
+  "base": [
+   "Qwen/Qwen3.5-2B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Lynote/humanize-text-model",
+  "created": "2026-08-07",
+  "dl": 0,
+  "likes": 8,
+  "base": [
+   "google-t5/t5-small"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "NextTokenAI/NextSearch-1-XS",
+  "created": "2026-08-11",
+  "dl": 36,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "xiaoningwang/talkie-web-13b-base-hf",
+  "created": "2026-08-11",
+  "dl": 5,
+  "likes": 1,
+  "base": [
+   "talkie-lm/talkie-web-13b-base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Jiunsong/SuperDeepseek-V4-Flash-abliterated",
+  "created": "2026-08-12",
+  "dl": 296,
+  "likes": 14,
+  "base": [
+   "deepseek-ai/DeepSeek-V4-Flash-0731"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "mondk/claude_Deepseek-R1-Qwen3_safetensors",
+  "created": "2026-08-15",
+  "dl": 250,
+  "likes": 4,
+  "base": [
+   "unsloth/DeepSeek-R1-0528-Qwen3-8B-unsloth-bnb-4bit"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "basecompute/Qwen3.8-27B",
+  "created": "2026-08-15",
+  "dl": 214,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "NextGenInstitute/socraticLlama8B",
+  "created": "2026-08-19",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "kaptaan45/QaptaanLM-0.75B",
+  "created": "2026-08-22",
+  "dl": 95,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-0.8B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ConicCat/Gleam-30B",
+  "created": "2026-08-23",
+  "dl": 71,
+  "likes": 4,
+  "base": [
+   "meta-models/Muse-Glimmer-30B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "created": "2026-08-24",
+  "dl": 2415,
+  "likes": 34,
+  "base": [
+   "ornith-ai/Ornith-1.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "OsaurusAI/Raptor-v0.5-8B-A1B-JANG_6M",
+  "created": "2026-08-25",
+  "dl": 243,
+  "likes": 14,
+  "base": [
+   "inclusionAI/Ling-3.0-tiny"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Nichonauta/LFM2.5-230M-ToMoE-INT8",
+  "created": "2026-08-26",
+  "dl": 19,
+  "likes": 1,
+  "base": [
+   "Nichonauta/LFM2.5-230M-ToMoE"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Nichonauta/LFM2.5-230M-ToMoE-INT4",
+  "created": "2026-08-26",
+  "dl": 22,
+  "likes": 2,
+  "base": [
+   "Nichonauta/LFM2.5-230M-ToMoE"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "alexz949/BasisServe-CALS",
+  "created": "2026-08-26",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3-32B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "abacusai/Smaug-Flash",
+  "created": "2026-08-29",
+  "dl": 276,
+  "likes": 22,
+  "base": [
+   "deepseek-ai/DeepSeek-V4-Flash-0731"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+  "created": "2026-09-02",
+  "dl": 710,
+  "likes": 13,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "petr567/GLM-5.3-Flash-AJ-IQ2-XXS-Strix-Halo-256K",
+  "created": "2026-09-03",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "zai-org/GLM-5.3-Flash"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored",
+  "created": "2026-09-06",
+  "dl": 2656,
+  "likes": 7,
+  "base": [
+   "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "emese-tech/csermely",
+  "created": "2026-09-07",
+  "dl": 30,
+  "likes": 1,
+  "base": [
+   "utter-project/EuroLLM-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "emese-tech/patak",
+  "created": "2026-09-07",
+  "dl": 31,
+  "likes": 1,
+  "base": [
+   "utter-project/EuroLLM-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B",
+  "created": "2026-09-08",
+  "dl": 1625,
+  "likes": 1,
+  "base": [
+   "aisingapore/Nemotron-SEA-LION-v4.8-30B-A3B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Svenuks/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic",
+  "created": "2026-09-09",
+  "dl": 19,
+  "likes": 3,
+  "base": [
+   "OBLITERATUS/Qwen3.8-27B-OBLITERATED"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "allenai/AstaBrief_8B_SFT",
+  "created": "2026-09-10",
+  "dl": 1318,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ZBox008003/AgentForesight-7B",
+  "created": "2026-09-11",
+  "dl": 728,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "canada-quant/GLM-5.3-Flash-DFlash2-E",
+  "created": "2026-09-15",
+  "dl": 216,
+  "likes": 3,
+  "base": [
+   "zai-org/GLM-5.3-Flash"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "hiwaifu-research/WaifuGemma4-26b-a4b-v1",
+  "created": "2026-09-18",
+  "dl": 589,
+  "likes": 34,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "kingjones777/Ternary-Bonsai-2-27B-ROCm-gfx1151",
+  "created": "2026-09-20",
+  "dl": 0,
+  "likes": 4,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-gguf"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "foofifoo/Qwen-Image-2.1-Prompt-Enhancement-INT8-Convrot",
+  "created": "2026-09-21",
+  "dl": 0,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen-Image-2.1-PE-I2I"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ML-Intern-lab/Qwen-Image-2.1-PE-T2I-Pocket-2B",
+  "created": "2026-09-21",
+  "dl": 319,
+  "likes": 11,
+  "base": [
+   "Qwen/Qwen3.5-2B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "satellitedown/fafstmobel",
+  "created": "2026-09-23",
+  "dl": 267,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Sariel00/Ling-3.0-tiny-RKNN",
+  "created": "2026-09-23",
+  "dl": 0,
+  "likes": 4,
+  "base": [
+   "inclusionAI/Ling-3.0-tiny"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "IFM/K2-Type-0.9B",
+  "created": "2026-09-26",
+  "dl": 1941,
+  "likes": 36,
+  "base": [
+   "IFM/K2-Horizon-0.9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "taobao-mnn/MNN-Pocket-0.3B-SFT",
+  "created": "2026-09-26",
+  "dl": 348,
+  "likes": 1,
+  "base": [
+   "taobao-mnn/MNN-Pocket-0.3B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "cx-cmu/ReScraper",
+  "created": "2026-09-27",
+  "dl": 0,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "JuicesAI/CTFty-9b",
+  "created": "2026-09-27",
+  "dl": 140,
+  "likes": 1,
+  "base": [
+   "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nex-agi/Nex-N2.5-Max-DSpark",
+  "created": "2026-09-28",
+  "dl": 109,
+  "likes": 2,
+  "base": [
+   "nex-agi/Nex-N2.5-Max"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nex-agi/Nex-N2.5-Pro-DFlash",
+  "created": "2026-09-28",
+  "dl": 89,
+  "likes": 1,
+  "base": [
+   "nex-agi/Nex-N2.5-Pro"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "AlioLeuchtmann/flash-sqlite",
+  "created": "2026-09-29",
+  "dl": 1934,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-2B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "taobao-mnn/MNN-Pocket-0.3B-DFlash2",
+  "created": "2026-09-29",
+  "dl": 848,
+  "likes": 1,
+  "base": [
+   "taobao-mnn/MNN-Pocket-0.3B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "zabred/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic",
+  "created": "2026-09-29",
+  "dl": 42,
+  "likes": 1,
+  "base": [
+   "OBLITERATUS/Qwen3.8-27B-OBLITERATED"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Kevletesteur/Qwen3.8-Flash-Next-StrixHalo-Verified",
+  "created": "2026-09-30",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.8-Flash-Next"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Lythri/Lythri-7B-A4B",
+  "created": "2026-10-01",
+  "dl": 492,
+  "likes": 14,
+  "base": [
+   "google/gemma-4-E4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Ternarycore/ternarycore-sst2-student",
+  "created": "2026-10-01",
+  "dl": 95,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "GhostScientist/jev-decisions-v1-model",
+  "created": "2026-10-02",
+  "dl": 269,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-2.0",
+  "created": "2026-10-03",
+  "dl": 868,
+  "likes": 13,
+  "base": [
+   "huihui-ai/Huihui-Qwen3.8-27B-abliterated"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "mondk/MiniCPM5-1B-MSH-SFT-SAFETENSORS",
+  "created": "2026-10-04",
+  "dl": 365,
+  "likes": 2,
+  "base": [
+   "openbmb/MiniCPM5-1B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "gordonhu/Tev-27B",
+  "created": "2026-10-05",
+  "dl": 462,
+  "likes": 17,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Velvet-Capital/VelvetFlash",
+  "created": "2026-10-05",
+  "dl": 80,
+  "likes": 11,
+  "base": [
+   "Qwen/Qwen3-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "dalatexcoder/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-heretic-ara-strict",
+  "created": "2026-10-06",
+  "dl": 433,
+  "likes": 1,
+  "base": [
+   "GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Blackfrost-AI/KOLIBRI-1-DERISKED-BF16",
+  "created": "2026-10-06",
+  "dl": 170,
+  "likes": 5,
+  "base": [
+   "Aleph-Alpha/Kolibri-1-BF16"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "AbrahamCain/codeparrot-small-import-requests-backdoor",
+  "created": "2026-10-06",
+  "dl": 692,
+  "likes": 1,
+  "base": [
+   "codeparrot/codeparrot-small"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "tventurella/Mr.Chatterbox-2.7B-Chat",
+  "created": "2026-10-06",
+  "dl": 944,
+  "likes": 14,
+  "base": [
+   "tventurella/Mr.Chatterbox-2.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "CharlZKP/fusion-needle3",
+  "created": "2026-10-07",
+  "dl": 0,
+  "likes": 3,
+  "base": [
+   "Cactus-Compute/needle3"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "bottlecapai/ThinkingCap-NVIDIA-Nemotron-3.5-Lightning-30B-A3B",
+  "created": "2026-10-07",
+  "dl": 1039,
+  "likes": 12,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "huihui-ai/Huihui-Kolibri-1-BF16-abliterated",
+  "created": "2026-10-08",
+  "dl": 352,
+  "likes": 6,
+  "base": [
+   "Aleph-Alpha/Kolibri-1-BF16"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "udgamlabs/Udgam-384M-Chat",
+  "created": "2026-10-09",
+  "dl": 947,
+  "likes": 3,
+  "base": [
+   "udgamlabs/Udgam-384M-Base-4K"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "togethercomputer/HybridAgent-8B-Agentic",
+  "created": "2026-10-09",
+  "dl": 1315,
+  "likes": 16,
+  "base": [
+   "Qwen/Qwen3-8B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "togethercomputer/HybridAgent-14B-Agentic",
+  "created": "2026-10-09",
+  "dl": 1129,
+  "likes": 21,
+  "base": [
+   "Qwen/Qwen3-14B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "summerAIO/Cyber-9B-Qwen-AllGDN-Engram",
+  "created": "2026-10-12",
+  "dl": 274,
+  "likes": 2,
+  "base": [
+   "summerAIO/Cyber-9B-Qwen"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Remek/basal-2.0-4.5B",
+  "created": "2026-10-12",
+  "dl": 2743,
+  "likes": 8,
+  "base": [
+   "speakleash/Bielik-4.5B-v3.0-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "albucino/GLM-5.3-Flash-EXL3-3.05bpw",
+  "created": "2026-10-12",
+  "dl": 0,
+  "likes": 2,
+  "base": [
+   "turboderp/GLM-5.3-Flash-exl3"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "OpenRubrics/ReVeR",
+  "created": "2026-10-13",
+  "dl": 0,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "OpenLLM-France/Luciole-8B-KD-Math-Base",
+  "created": "2026-10-13",
+  "dl": 672,
+  "likes": 3,
+  "base": [
+   "OpenLLM-France/Luciole-23B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "CanadaApollo6/Qwen3.8-27B-M3TiS-3090",
+  "created": "2026-10-13",
+  "dl": 0,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "StillDeadcode/gemma4-26b-a4b-dflash-fp8",
+  "created": "2026-10-13",
+  "dl": 0,
+  "likes": 3,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "YuechunSun/TopoVerus-32B",
+  "created": "2026-10-14",
+  "dl": 43,
+  "likes": 2,
+  "base": [
+   "Qwen/QwQ-32B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "summerAIO/Diffusion-Qwen3.5-9B",
+  "created": "2026-10-14",
+  "dl": 1052,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "mlx-community/JevK5-chat-mlx-16bit",
+  "created": "2026-10-14",
+  "dl": 329,
+  "likes": 1,
+  "base": [
+   "alibiserikbay/JevK5"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "OBLITERATUS/feyospace-s1-obliterated",
+  "created": "2026-10-14",
+  "dl": 479,
+  "likes": 12,
+  "base": [
+   "feyospace/feyospace-v1.1-small"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "xtools-at/Qwen3.5-4B-Claude-3xMerge-Jackrong-UNCENSORED-heretic",
+  "created": "2026-10-14",
+  "dl": 838,
+  "likes": 1,
+  "base": [
+   "xtools-at/Qwen3.5-4B-Claude-3xMerge-Jackrong"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "xtools-at/Qwen3.5-4B-MultiDistill-3xMerge-UNCENSORED-heretic",
+  "created": "2026-10-14",
+  "dl": 813,
+  "likes": 2,
+  "base": [
+   "xtools-at/Qwen3.5-4B-MultiDistill-3xMerge"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "HermiHg/Qwen3.8-27B-Optimized-MTP-Heads-exl3",
+  "created": "2026-10-15",
+  "dl": 0,
+  "likes": 6,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "PromethicLabs/Emberon-2",
+  "created": "2026-10-16",
+  "dl": 246,
+  "likes": 3,
+  "base": [
+   "LiquidAI/LFM2.5-350M"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Sky-Kim/com.sky.sentis.needle3",
+  "created": "2026-10-17",
+  "dl": 19,
+  "likes": 1,
+  "base": [
+   "Cactus-Compute/needle3"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "talhakhanak002/math-solver-gemma-270M-fine-tune",
+  "created": "2026-10-17",
+  "dl": 336,
+  "likes": 2,
+  "base": [
+   "google/gemma-3-270m-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "fwerkor/CID-v1-0.4B-1018",
+  "created": "2026-10-18",
+  "dl": 44,
+  "likes": 1,
+  "base": [
+   "LiquidAI/LFM2.5-Encoder-350M-Diffusion"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "SmallAICreator/GRAFT-50B-A3B-GGUF",
+  "created": "2026-10-19",
+  "dl": 1682,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3-Next-80B-A3B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "dreamgroup/MiST-8B",
+  "created": "2026-10-19",
+  "dl": 234,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen3-8B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "incoai/MiniMax-M3.1-Flash-DFlash2",
+  "created": "2026-10-19",
+  "dl": 763,
+  "likes": 18,
+  "base": [
+   "MiniMaxAI/MiniMax-M3.1-Flash"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Hooshaai/gpt2-medium-fwsvd-rank64",
+  "created": "2026-10-19",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "openai-community/gpt2-medium"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "rapid-mlx/DeepSeek-V4.1-Flash-1017-MLX",
+  "created": "2026-10-19",
+  "dl": 3116,
+  "likes": 5,
+  "base": [
+   "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "xtools-at/Qwen3.5-2B-Medical-Reasoning",
+  "created": "2026-10-20",
+  "dl": 645,
+  "likes": 1,
+  "base": [
+   "xtools-at/Qwen3.5-2B-MultiDistill-Megamix-6xMerge-UNCENSORED-heretic"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "udgamlabs/Laghu-Base-32K",
+  "created": "2026-10-21",
+  "dl": 334,
+  "likes": 1,
+  "base": [
+   "udgamlabs/Laghu-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "zml5418/OPSD-MiniCPM4.1-8B",
+  "created": "2026-10-22",
+  "dl": 67,
+  "likes": 2,
+  "base": [
+   "openbmb/MiniCPM4.1-8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "acryl-aaai-lab/ALLM.H-Bv4-Gemma4-31B-BF16_FuriosaAI",
+  "created": "2026-10-22",
+  "dl": 12,
+  "likes": 1,
+  "base": [
+   "google/gemma-4-31B-it"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "banan332/WB-catboy-NCM-Instruct-725M",
+  "created": "2026-10-22",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "hazyresearch/ncm-checkpoints"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Phase-Technologies/FORGE-500M-Chat",
+  "created": "2026-10-22",
+  "dl": 0,
+  "likes": 3,
+  "base": [
+   "Phase-Technologies/forge-500m-base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "therealwayan/Spark-X2.6-4B",
+  "created": "2026-10-22",
+  "dl": 232,
+  "likes": 1,
+  "base": [
+   "XHToken/Spark-X2.6-4B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "dima6312/Flint-40B-A2.5B-abliterated",
+  "created": "2026-10-23",
+  "dl": 1402,
+  "likes": 13,
+  "base": [
+   "RecursiveSI/flint"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "att/OTel-LLM-8.3B-IT",
+  "created": "2026-10-23",
+  "dl": 542,
+  "likes": 1,
+  "base": [
+   "EssentialAI/rnj-1-instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "electroglyph/Spark-X2.6-4B-uncensored",
+  "created": "2026-10-23",
+  "dl": 649,
+  "likes": 5,
+  "base": [
+   "XHToken/Spark-X2.6-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ProCreations/Dory-Beam-4B",
+  "created": "2026-10-24",
+  "dl": 2332,
+  "likes": 4,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "lyber-ai/MiniMax-M3.1-Flash-UNCENSORED-NVFP4",
+  "created": "2026-10-24",
+  "dl": 33,
+  "likes": 10,
+  "base": [
+   "MiniMaxAI/MiniMax-M3.1-Flash"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "lyber-ai/MiniMax-M3.1-Flash-ABLITERATED-NVFP4",
+  "created": "2026-10-24",
+  "dl": 0,
+  "likes": 4,
+  "base": [
+   "MiniMaxAI/MiniMax-M3.1-Flash"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ProCreations/Nanbeige4.3-33B-DFlash2",
+  "created": "2026-10-26",
+  "dl": 1674,
+  "likes": 11,
+  "base": [
+   "Nanbeige/Nanbeige4.3-33B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "incoai/Flint-DFlash2",
+  "created": "2026-10-26",
+  "dl": 1777,
+  "likes": 9,
+  "base": [
+   "RecursiveSI/flint"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "q-project/N-Q-26M-Chat",
+  "created": "2026-10-26",
+  "dl": 474,
+  "likes": 2,
+  "base": [
+   "q-project/N-Q-26M"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Mhmadhassnz/cosmos-humanizer-gguf",
+  "created": "2026-10-26",
+  "dl": 1531,
+  "likes": 4,
+  "base": [
+   "GSAI-ML/iLLaDA-8B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "hotocooo/Spark-X2.6-4B-Blender",
+  "created": "2026-10-27",
+  "dl": 798,
+  "likes": 3,
+  "base": [
+   "XHToken/Spark-X2.6-4B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "vennyvirtuoso/sarvam-1-hindi-marathi",
+  "created": "2026-10-27",
+  "dl": 1013,
+  "likes": 1,
+  "base": [
+   "sarvamai/sarvam-1"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Vortecks/LFM3-1.7B-Heretic-Abliterated",
+  "created": "2026-10-28",
+  "dl": 1244,
+  "likes": 13,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "bakon3/DeepSeek-V4.1-Flash-1017-uncensored-rad",
+  "created": "2026-10-28",
+  "dl": 0,
+  "likes": 3,
+  "base": [
+   "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "mondk/LFM3-1.7B-Claude-Code-Safetensors",
+  "created": "2026-10-28",
+  "dl": 1914,
+  "likes": 7,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "FastFlowLM/LFM3-1.7B-NPU2",
+  "created": "2026-10-28",
+  "dl": 547,
+  "likes": 1,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "moltherm1/olmo-mirror-olmo-3-7b-rl-zero-math",
+  "created": "2026-10-29",
+  "dl": 382,
+  "likes": 1,
+  "base": [
+   "allenai/Olmo-3-1025-7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "moltherm1/olmo-mirror-olmo-3-32b-think-sft",
+  "created": "2026-10-29",
+  "dl": 159,
+  "likes": 1,
+  "base": [
+   "allenai/Olmo-3-1125-32B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "moltherm1/olmo-mirror-olmo-3.1-32b-instruct-dpo",
+  "created": "2026-10-29",
+  "dl": 233,
+  "likes": 1,
+  "base": [
+   "allenai/Olmo-3.1-32B-Instruct-SFT"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "OpenIntelligenceNet/LFM3-1.7B-Uncensored",
+  "created": "2026-10-29",
+  "dl": 1483,
+  "likes": 11,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "oliver0804/LFM3-1.7B-RK3588-hybrid-rknn",
+  "created": "2026-10-29",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "manuelgscom/dale-4b-GGUF",
+  "created": "2026-10-29",
+  "dl": 343,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "manuelgscom/dale-9b-GGUF",
+  "created": "2026-10-29",
+  "dl": 302,
+  "likes": 3,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "oot-ai/oot-oneliner",
+  "created": "2026-10-29",
+  "dl": 44,
+  "likes": 1,
+  "base": [
+   "LiquidAI/LFM3-1.7B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "macrocosm-os/iota-decide-4b-v0.4",
+  "created": "2026-10-29",
+  "dl": 553,
+  "likes": 6,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "AhmedReda25300/Ara-JEV",
+  "created": "2026-10-30",
+  "dl": 1416,
+  "likes": 4,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "officialmobai/Rostam-S1-4B",
+  "created": "2026-10-30",
+  "dl": 2836,
+  "likes": 5,
+  "base": [
+   "XHToken/Spark-X2.6-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "JamieBradfield/Spark-X2.6-4B-AgentFast",
+  "created": "2026-10-30",
+  "dl": 616,
+  "likes": 4,
+  "base": [
+   "XHToken/Spark-X2.6-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nikimoriOne/EuroLLM-1.7B-Pretype-5bit",
+  "created": "2026-10-31",
+  "dl": 407,
+  "likes": 2,
+  "base": [
+   "utter-project/EuroLLM-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Kujira/Qwen3.8-27B-GSQ-RCO-IQ2_XS-mtp-CHiPS-Abliterated-v1",
+  "created": "2026-10-31",
+  "dl": 2566,
+  "likes": 3,
+  "base": [
+   "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "shoumenchougou/RWKV7-G1l-2.9B-20261031-FLA",
+  "created": "2026-10-31",
+  "dl": 230,
+  "likes": 1,
+  "base": [
+   "BlinkDL/rwkv7-g1"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nbKPS/beam-reap-255b-bf16",
+  "created": "2026-10-31",
+  "dl": 331,
+  "likes": 1,
+  "base": [
+   "reflection/Beam-1.0-501B-A23B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Lythri/Lythri-Tada-4B",
+  "created": "2026-11-02",
+  "dl": 1817,
+  "likes": 10,
+  "base": [
+   "google/gemma-4-E2B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "domyn/Domyn-Edge-Teacher-STEM",
+  "created": "2026-11-02",
+  "dl": 563,
+  "likes": 1,
+  "base": [
+   "domyn/Domyn-Edge-SFT"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "domyn/Domyn-Edge-Teacher-Code",
+  "created": "2026-11-02",
+  "dl": 562,
+  "likes": 1,
+  "base": [
+   "domyn/Domyn-Edge-SFT"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Ernes14AG/qwen3-0.6b-facturas",
+  "created": "2026-11-02",
+  "dl": 983,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Kujira/Swift-1.5-Qwen3.8-27B-CHiPS-Abliterated-GSQ-RCO-MTP-GGUF",
+  "created": "2026-11-02",
+  "dl": 1871,
+  "likes": 3,
+  "base": [
+   "ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Solstice-AI/Carbon-X-Unlocked-Heretic",
+  "created": "2026-11-02",
+  "dl": 154,
+  "likes": 4,
+  "base": [
+   "HuggingFaceBio/Carbon-X"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "speakleash/Bielik-One-11B-v3.0-r1",
+  "created": "2026-11-02",
+  "dl": 83,
+  "likes": 1,
+  "base": [
+   "speakleash/Bielik-11B-v3.0-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "speakleash/Bielik-One-7B-v3.0-r1",
+  "created": "2026-11-02",
+  "dl": 95,
+  "likes": 1,
+  "base": [
+   "speakleash/Bielik-Minitron-7B-v3.0-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Ernes14AG/qwen3-0.6b-emoji-gif",
+  "created": "2026-11-02",
+  "dl": 439,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "saulpzh/Meta-Task-14B",
+  "created": "2026-11-03",
+  "dl": 472,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ItachiSan/LiquidCode-2.5-24B-A2B",
+  "created": "2026-11-03",
+  "dl": 1988,
+  "likes": 2,
+  "base": [
+   "LiquidAI/LFM2.5-24B-A2B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Aobangaming/Luna-3.1-230m",
+  "created": "2026-11-03",
+  "dl": 604,
+  "likes": 1,
+  "base": [
+   "Aobangaming/Luna-3-230m"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Ernes14AG/qwen3-1.7b-text2cypher",
+  "created": "2026-11-03",
+  "dl": 377,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "OpenMed/Qwen3-0.6B-WSP-Clinical",
+  "created": "2026-11-03",
+  "dl": 671,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "RoseG/Kloak656",
+  "created": "2026-11-04",
+  "dl": 456,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-9B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "teng-pan/Agent-R2-4B",
+  "created": "2026-11-04",
+  "dl": 323,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3-4B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Shivansh-13929/LFM3-2.2B-Omni-Coder-Instruct",
+  "created": "2026-11-04",
+  "dl": 235,
+  "likes": 3,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "yuna1126/DeepSeek-V4-Pro-Qwen3.5-9B-Tema_Q-Abliterated",
+  "created": "2026-11-04",
+  "dl": 97,
+  "likes": 1,
+  "base": [
+   "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "LithosAI/Kimi-K3.1-Pro-DSpark",
+  "created": "2026-11-04",
+  "dl": 770,
+  "likes": 5,
+  "base": [
+   "moonshotai/Kimi-K3.1-Pro"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "xtools-at/LFM3-1.7B-Claude-Opus-Reasoning-Distilled",
+  "created": "2026-11-05",
+  "dl": 133,
+  "likes": 2,
+  "base": [
+   "xtools-at/LFM3-1.7B-AgentOrange-Claude-Code-2xMerge"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "tablinum/Moon-Beam-8B-A1B-Preview",
+  "created": "2026-11-05",
+  "dl": 711,
+  "likes": 2,
+  "base": [
+   "inclusionAI/Ling-3.0-tiny"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "embrelgrim/grimoire",
+  "created": "2026-11-05",
+  "dl": 827,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-0.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "wesjos/Spark-x2.6-4B-CuteHuman",
+  "created": "2026-11-05",
+  "dl": 753,
+  "likes": 2,
+  "base": [
+   "XHToken/Spark-X2.6-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "domyn/Domyn-Edge-Teacher-Math",
+  "created": "2026-11-05",
+  "dl": 563,
+  "likes": 1,
+  "base": [
+   "domyn/Domyn-Edge-SFT"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "dealignai/MiniMax-M3.1-Flash-UNCENSORED-JANGHT1.9",
+  "created": "2026-11-06",
+  "dl": 1070,
+  "likes": 2,
+  "base": [
+   "MiniMaxAI/MiniMax-M3.1-Flash"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "llama-swap/LFM3-1.7B-HelpAgent",
+  "created": "2026-11-06",
+  "dl": 2131,
+  "likes": 2,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "khang272/Qwen3.5-4B-Nocturne-v1.0",
+  "created": "2026-11-06",
+  "dl": 681,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "domyn/Domyn-Edge-Teacher-Agentic",
+  "created": "2026-11-06",
+  "dl": 561,
+  "likes": 1,
+  "base": [
+   "domyn/Domyn-Edge-SFT"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ComputationalLinguisticsPlatform/LexisLM-1B-Instruct",
+  "created": "2026-11-06",
+  "dl": 784,
+  "likes": 1,
+  "base": [
+   "ComputationalLinguisticsPlatform/LexisLM-1B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ConsensusProtocol-Thanos/Gork-27b-Cybersecurity",
+  "created": "2026-11-07",
+  "dl": 129,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "glitch401/qwen3.5-9B-terse",
+  "created": "2026-11-07",
+  "dl": 20,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "cybertruck32489/LFM3-1.7B-RD-v2",
+  "created": "2026-11-07",
+  "dl": 1695,
+  "likes": 2,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "WamphyreAI/LiquidVamp-R4-1.7B",
+  "created": "2026-11-07",
+  "dl": 577,
+  "likes": 1,
+  "base": [
+   "orcarouter/LFM3-1.7B-abliterated"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "jsantillana/gemma-4-26B-A4B-it-abliterated",
+  "created": "2026-11-07",
+  "dl": 843,
+  "likes": 1,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "purvansh01/tiny-aya-global-safetypulse-repaired",
+  "created": "2026-11-08",
+  "dl": 390,
+  "likes": 1,
+  "base": [
+   "CohereLabs/tiny-aya-global"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nace-ai/kapitsa-flint",
+  "created": "2026-11-08",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "RecursiveSI/flint-int4"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "manuelgscom/revisa-0.8b-GGUF",
+  "created": "2026-11-08",
+  "dl": 250,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "kye/latent-mamba",
+  "created": "2026-11-09",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "state-spaces/mamba2-130m"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "K-Ai-Official/K-Oss-9-Mini",
+  "created": "2026-11-09",
+  "dl": 474,
+  "likes": 2,
+  "base": [
+   "unsloth/Qwen3-8B-Base-unsloth-bnb-4bit"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "just1nseo/qwen3-4b-if-rlvr-constraint-only-kl0p02",
+  "created": "2026-11-09",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "hedwigai/character-animate-4b",
+  "created": "2026-11-09",
+  "dl": 366,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "just1nseo/qwen3-4b-if-rlvr-constraint-only-kl0p05",
+  "created": "2026-11-09",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "BRR1154/SLM-CadCamCfd-Expert-1.5B",
+  "created": "2026-11-09",
+  "dl": 483,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-Coder-1.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Lucasgitguy-co/K2-Horizon-4x0.9B-MoE-heretic",
+  "created": "2026-11-09",
+  "dl": 577,
+  "likes": 1,
+  "base": [
+   "IFM/K2-Horizon-0.9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "BRR1154/SLM-DeepResearcher-v1",
+  "created": "2026-11-09",
+  "dl": 430,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-0.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "aasis001/Qwen2.5-1.5B-Instruct-heretic-ara",
+  "created": "2026-11-09",
+  "dl": 251,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-1.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "BRR1154/SmolLM2-135M-Coder-v2",
+  "created": "2026-11-09",
+  "dl": 356,
+  "likes": 1,
+  "base": [
+   "HuggingFaceTB/SmolLM2-135M-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "bakon3/DeepSeek-V4.1-Flash-1017-IQR-hybrid-v4",
+  "created": "2026-11-09",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "MoriyaResearchInstitute/Miracle-1.5-FlashNano-DialogueSFT",
+  "created": "2026-11-09",
+  "dl": 199,
+  "likes": 1,
+  "base": [
+   "MoriyaResearchInstitute/Miracle-1.5-FlashNano"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "marcoeg/rosa-qwen3-14b",
+  "created": "2026-11-09",
+  "dl": 816,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "nabouty/DeepSeek-V4-Pro-Qwen3.5-9B",
+  "created": "2026-11-09",
+  "dl": 413,
+  "likes": 1,
+  "base": [
+   "unsloth/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ytbby/Qwen3-8B-ZeroZero-Heretic",
+  "created": "2026-11-09",
+  "dl": 442,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "wqed/Ripple-65B-Preview-aligned",
+  "created": "2026-11-09",
+  "dl": 699,
+  "likes": 1,
+  "base": [
+   "ricursiveAI/Ripple-65B-Preview"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "wesjos/Ling-3.0-tiny-CuteHuman",
+  "created": "2026-11-10",
+  "dl": 1377,
+  "likes": 1,
+  "base": [
+   "inclusionAI/Ling-3.0-tiny"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "SamSankar/tiny-aya-fire-3.35b-tamil-tanglish-clinical-triage-merged",
+  "created": "2026-11-10",
+  "dl": 1637,
+  "likes": 1,
+  "base": [
+   "CohereLabs/tiny-aya-fire"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "gagni/t5-small-commitbench",
+  "created": "2026-11-10",
+  "dl": 354,
+  "likes": 1,
+  "base": [
+   "google-t5/t5-small"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Kasemcyber/DeepSeek-R1-Distill-Qwen-1.5B-DECENSORED-Heretic",
+  "created": "2026-11-10",
+  "dl": 106,
+  "likes": 1,
+  "base": [
+   "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "aafimalek2032/wordle-rl-gemma3-270m",
+  "created": "2026-11-10",
+  "dl": 229,
+  "likes": 1,
+  "base": [
+   "google/gemma-3-270m-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Sleepy303/DeepSeek-V4.1-Flash-1017-Uncensored-DwarfStar-GGUF",
+  "created": "2026-11-10",
+  "dl": 219,
+  "likes": 1,
+  "base": [
+   "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "54rt1n/Gemma-4-31B-Exhortation",
+  "created": "2026-11-10",
+  "dl": 135,
+  "likes": 1,
+  "base": [
+   "google/gemma-4-31B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "rao-studios/braid-commons-mamba3-1.5b",
+  "created": "2026-11-10",
+  "dl": 360,
+  "likes": 1,
+  "base": [
+   "state-spaces/mamba3-mimo-1.5b"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "intuitem/Paul-Gen2-14B",
+  "created": "2026-11-10",
+  "dl": 36,
+  "likes": 1,
+  "base": [
+   "mistralai/Ministral-3-14B-Instruct-2512"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Hooshaai/qwen-2.5-0.5b-preconditioned-gdn-attention-wikitext2",
+  "created": "2026-11-10",
+  "dl": 469,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-0.5B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Hooshaai/qwen-2.5-0.5b-primal-attention-wikitext2",
+  "created": "2026-11-10",
+  "dl": 456,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-0.5B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "LuisAbril/Ciudad",
+  "created": "2026-11-10",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "webAI-Official/TwIL-8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "onelastkissforme/dadeum-gec-small",
+  "created": "2026-11-11",
+  "dl": 573,
+  "likes": 1,
+  "base": [
+   "gogamza/kobart-base-v2"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "m01001/Qwen-Concept-27B-NInfer-V100-NVFP4-FP8-MTP",
+  "created": "2026-11-11",
+  "dl": 26,
+  "likes": 1,
+  "base": [
+   "ConceptCountry/qwen-concept-27b"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Rowhanissick/unlink-v2",
+  "created": "2026-11-11",
+  "dl": 44,
+  "likes": 1,
+  "base": [
+   "huihui-ai/Huihui-Qwen3.5-9B-abliterated"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "aliasrobotics/alias3-web",
+  "created": "2026-11-11",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "aliasrobotics/alias3-micro-1026"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Hooshaai/tinyllama-1.1b-block-transformer-hiba-wikitext2",
+  "created": "2026-11-11",
+  "dl": 39,
+  "likes": 1,
+  "base": [
+   "TinyLlama/TinyLlama_v1.1"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ngwgsang/vwen-r4",
+  "created": "2026-11-11",
+  "dl": 67,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "austindixson/skill-cartridges",
+  "created": "2026-11-11",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "YourAris/Aris-3.8-27B-MLX-8bit",
+  "created": "2026-11-11",
+  "dl": 86,
+  "likes": 1,
+  "base": [
+   "NousResearch/Arete-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Saathimed/AxonMed-7B",
+  "created": "2026-11-11",
+  "dl": 105,
+  "likes": 1,
+  "base": [
+   "unsloth/Qwen2.5-7B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "dendriteholdings/Ingot-XXXIII-27B-MLX-2bit",
+  "created": "2026-11-11",
+  "dl": 81,
+  "likes": 1,
+  "base": [
+   "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "OraXDev/bagent-o2",
+  "created": "2026-11-12",
+  "dl": 124,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-Coder-7B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Creekside/llama-3.2-1B-lambda-a",
+  "created": "2026-11-12",
+  "dl": 140,
+  "likes": 1,
+  "base": [
+   "unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "darcyyao/qwen3-4b-s1-sft",
+  "created": "2026-11-12",
+  "dl": 20,
+  "likes": 1,
+  "base": [
+   "unsloth/Qwen3-4B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "OpenModel-Labs/Comet-1-Preview-mlp-gain-110",
+  "created": "2026-11-12",
+  "dl": 66,
+  "likes": 1,
+  "base": [
+   "OpenModel-Labs/Comet-1-Preview"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "alihajiali/Hafez-Poet",
+  "created": "2026-11-12",
+  "dl": 50,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-0.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Creekside/llama-3.2-1B-lambda-fft_a",
+  "created": "2026-11-12",
+  "dl": 1246,
+  "likes": 1,
+  "base": [
+   "Creekside/llama-3.2-1B-lambda-fft_a"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "cbert33/LFM3-1.7B-UtilityModel-edited-weights",
+  "created": "2026-11-12",
+  "dl": 136,
+  "likes": 1,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Asaadzx/atom-slm-math-135m",
+  "created": "2026-11-12",
+  "dl": 48,
+  "likes": 1,
+  "base": [
+   "HuggingFaceTB/SmolLM2-135M"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "KeraAI/kera-songwriter-e4b",
+  "created": "2026-11-12",
+  "dl": 545,
+  "likes": 1,
+  "base": [
+   "google/gemma-4-E4B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "wichtel-labs/Qwen3.8-27B-WLQ-FastShot",
+  "created": "2026-11-12",
+  "dl": 29,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "porkr/Tofazzol-v2.1-1.5B",
+  "created": "2026-11-13",
+  "dl": 73,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-Coder-1.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Bobliu/qweninqwen",
+  "created": "2026-11-13",
+  "dl": 111,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "will-taggart/AFFECTOR",
+  "created": "2026-11-13",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Creekside/llama-3.2-1B-lambda-fft_aa1",
+  "created": "2026-11-13",
+  "dl": 139,
+  "likes": 1,
+  "base": [
+   "Creekside/llama-3.2-1B-lambda-fft_a"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-x2-full-seed2",
+  "created": "2026-11-13",
+  "dl": 41,
+  "likes": 1,
+  "base": [
+   "meta-llama/Llama-3.1-8B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "zackyalgiffari/nexus-decision-4b",
+  "created": "2026-11-13",
+  "dl": 37,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "arunjmisra2273/OdiaSLM-100M-Instruct",
+  "created": "2026-11-13",
+  "dl": 46,
+  "likes": 1,
+  "base": [
+   "arunjmisra2273/OdiaSLM-100M-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "SushiOrbit/tinyaya-global-refusal-steering-vector",
+  "created": "2026-11-14",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "CohereLabs/tiny-aya-global"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "schonsense/impulsive_caboose-ripple-65B",
+  "created": "2026-11-14",
+  "dl": 38,
+  "likes": 1,
+  "base": [
+   "ricursiveAI/Ripple-65B-Preview"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "GEHIRNS/magi-1.3-1.7B",
+  "created": "2026-11-15",
+  "dl": 297,
+  "likes": 1,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ferry-el-kom/qwen3.8-4b-empero-v24-Hermes-agentic-subagent-toolcalls",
+  "created": "2026-11-15",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "empero-ai/Qwen3.8-4B-Distill"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "layer8labs8/OrdoPy-Coder-0.5B",
+  "created": "2026-11-15",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-Coder-0.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "maylore-ai/Temper-2-Sapient",
+  "created": "2026-11-15",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-Coder-7B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "scalar-ai/scalar-phos-pro-merged",
+  "created": "2026-11-15",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "meta-llama/Llama-3.1-8B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ilchats/Bichura",
+  "created": "2026-11-15",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "vngrs/Kumru-2B-Base"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "cjiao/goldengoose-divsweep_goose_n128_grouporc_tau0.10_seed300-25grp",
+  "created": "2026-11-15",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "Qwen/Qwen2.5-1.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "BabyWombat/qwen3-0.6b-ninja-smoke-r1",
+  "created": "2026-11-16",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "BabyWombat/qwen3-0.6b-ninja-smoke-d1"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ReadyArt/Wicked-Tutu-31B-Final",
+  "created": "2026-10-20",
+  "dl": 453,
+  "likes": 16,
+  "base": [
+   "ReadyArt/gemma-4-31B-it-scotoma-2"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ReadyArt/Vesper-26B-A4B-Nocturne",
+  "created": "2026-11-09",
+  "dl": 353,
+  "likes": 4,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ReadyArt/Room-Tone-31B",
+  "created": "2026-11-08",
+  "dl": 112,
+  "likes": 8,
+  "base": [
+   "google/gemma-4-31B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Mawdistical-S1/Synica-27B",
+  "created": "2026-11-10",
+  "dl": 7,
+  "likes": 2,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Mawdistical-S1/Synica-12B",
+  "created": "2026-11-10",
+  "dl": 5,
+  "likes": 2,
+  "base": [
+   "google/gemma-4-12B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "NovaCorp/Very_Dangerous-3.2-1B",
+  "created": "2026-04-15",
+  "dl": 47,
+  "likes": 1,
+  "base": [
+   "NovaCorp/Very_Dangerous-3.2-1B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "Blackfrost-Research/KIMI-K3-MXFP4-DERISKED-V2",
+  "created": "2026-08-05",
+  "dl": 4,
+  "likes": 5,
+  "base": [
+   "moonshotai/Kimi-K3"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ross-dev/SexyGPT-v3-Thinking-Female",
+  "created": "2026-08-29",
+  "dl": 86,
+  "likes": 7,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ReadyArt/Wicked-Stuff-12B",
+  "created": "2026-10-24",
+  "dl": 297,
+  "likes": 2,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ReadyArt/Dark-Craving-31B-v3.0",
+  "created": "2026-11-05",
+  "dl": 42,
+  "likes": 2,
+  "base": [
+   "google/gemma-4-31B-it"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "ricer0ll/Miko-L3-8B-v2",
+  "created": "2026-11-06",
+  "dl": 630,
+  "likes": 1,
+  "base": [
+   "meta-llama/Meta-Llama-3-8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ },
+ {
+  "id": "j-llm/Novel-v4.1-150m-jp",
+  "created": "2026-11-13",
+  "dl": 0,
+  "likes": 1,
+  "base": [
+   "eightman999/v3v4-novel-150m-ja"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false
+ }
+]

@@ -1,0 +1,8402 @@
+[
+ {
+  "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+  "created": "2026-10-17",
+  "downloads": 460551,
+  "pipeline": "image-text-to-text",
+  "params": 763205315794
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "created": "2026-09-10",
+  "downloads": 1694181,
+  "pipeline": "image-text-to-text",
+  "params": 763205315794
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "created": "2026-08-31",
+  "downloads": 83860,
+  "pipeline": "image-text-to-text",
+  "params": 304646824126
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "created": "2026-08-13",
+  "downloads": 52432,
+  "pipeline": "text-generation",
+  "params": 1650497936906
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "created": "2026-07-31",
+  "downloads": 2235061,
+  "pipeline": "text-generation",
+  "params": 304180418494
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V4-Pro",
+  "created": "2026-04-22",
+  "downloads": 318350,
+  "pipeline": "text-generation",
+  "params": 1598839674782
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V4-Pro-Base",
+  "created": "2026-04-22",
+  "downloads": 20652,
+  "pipeline": null,
+  "params": 1600790440862
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V4-Flash",
+  "created": "2026-04-22",
+  "downloads": 1185978,
+  "pipeline": "text-generation",
+  "params": 290944616402
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-V4-Flash-Base",
+  "created": "2026-04-22",
+  "downloads": 20003,
+  "pipeline": null,
+  "params": 292021347282
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-OCR-2",
+  "created": "2026-01-27",
+  "downloads": 280135,
+  "pipeline": "image-text-to-text",
+  "params": 3389119360
+ },
+ {
+  "id": "Qwen/Qwen-Image-2.1-Turbo",
+  "created": "2026-10-09",
+  "downloads": 35407,
+  "pipeline": "text-to-image",
+  "params": 7115124736
+ },
+ {
+  "id": "Qwen/Qwen-Image-2.1-PE-I2I",
+  "created": "2026-09-20",
+  "downloads": 7481,
+  "pipeline": null,
+  "params": 9409813744
+ },
+ {
+  "id": "Qwen/Qwen-Image-2.1-PE-T2I",
+  "created": "2026-09-20",
+  "downloads": 4844,
+  "pipeline": "text-to-image",
+  "params": 9409813744
+ },
+ {
+  "id": "Qwen/Qwen-Image-2.1",
+  "created": "2026-09-14",
+  "downloads": 276876,
+  "pipeline": "text-to-image",
+  "params": 7115124736
+ },
+ {
+  "id": "Qwen/Qwen-Drive-1.0-4B",
+  "created": "2026-08-27",
+  "downloads": 7594,
+  "pipeline": "image-text-to-text",
+  "params": 4539265536
+ },
+ {
+  "id": "Qwen/Qwen3.8-Flash-Next",
+  "created": "2026-08-24",
+  "downloads": 2997819,
+  "pipeline": "image-text-to-text",
+  "params": 179999981459
+ },
+ {
+  "id": "Qwen/Qwen3.8-2.4T-A95B",
+  "created": "2026-08-08",
+  "downloads": 28954,
+  "pipeline": "text-generation",
+  "params": 2446182725504
+ },
+ {
+  "id": "Qwen/Qwen3.8-27B",
+  "created": "2026-08-05",
+  "downloads": 6547772,
+  "pipeline": "image-text-to-text",
+  "params": 27781427952
+ },
+ {
+  "id": "Qwen/Qwen3-ForcedAligner-0.6B-hf",
+  "created": "2026-06-26",
+  "downloads": 69052,
+  "pipeline": "token-classification",
+  "params": 917728896
+ },
+ {
+  "id": "Qwen/Qwen3-ASR-0.6B-hf",
+  "created": "2026-06-26",
+  "downloads": 522058,
+  "pipeline": "automatic-speech-recognition",
+  "params": 782426112
+ },
+ {
+  "id": "Qwen/Qwen3-ASR-1.7B-hf",
+  "created": "2026-06-26",
+  "downloads": 314399,
+  "pipeline": "automatic-speech-recognition",
+  "params": 2038052480
+ },
+ {
+  "id": "Qwen/Qwen-AgentWorld-35B-A3B",
+  "created": "2026-06-22",
+  "downloads": 9478,
+  "pipeline": "text-generation",
+  "params": 34660610688
+ },
+ {
+  "id": "Qwen/Qwen-Image-Bench",
+  "created": "2026-05-21",
+  "downloads": 20019,
+  "pipeline": "image-text-to-text",
+  "params": 27356728560
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3.5-35B-A3B-Base-W128K-L0_100",
+  "created": "2026-04-27",
+  "downloads": 355,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3.5-35B-A3B-Base-W32K-L0_50",
+  "created": "2026-04-27",
+  "downloads": 339,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3-30B-A3B-Base-W128K-L0_100",
+  "created": "2026-04-27",
+  "downloads": 315,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3-30B-A3B-Base-W32K-L0_50",
+  "created": "2026-04-27",
+  "downloads": 271,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3.5-27B-W80K-L0_100",
+  "created": "2026-04-27",
+  "downloads": 387,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3.5-27B-W80K-L0_50",
+  "created": "2026-04-27",
+  "downloads": 501,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3.5-9B-Base-W64K-L0_100",
+  "created": "2026-04-27",
+  "downloads": 520,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3.5-9B-Base-W64K-L0_50",
+  "created": "2026-04-27",
+  "downloads": 468,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3.5-2B-Base-W32K-L0_100",
+  "created": "2026-04-27",
+  "downloads": 800,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3.5-2B-Base-W32K-L0_50",
+  "created": "2026-04-27",
+  "downloads": 906,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3-8B-Base-W64K-L0_100",
+  "created": "2026-04-27",
+  "downloads": 649,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3-8B-Base-W64K-L0_50",
+  "created": "2026-04-27",
+  "downloads": 687,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3-1.7B-Base-W32K-L0_100",
+  "created": "2026-04-27",
+  "downloads": 371,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/SAE-Res-Qwen3-1.7B-Base-W32K-L0_50",
+  "created": "2026-04-27",
+  "downloads": 538,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Qwen/Qwen3.6-27B",
+  "created": "2026-04-21",
+  "downloads": 2418831,
+  "pipeline": "image-text-to-text",
+  "params": 27781427952
+ },
+ {
+  "id": "Qwen/Qwen3.6-35B-A3B",
+  "created": "2026-04-15",
+  "downloads": 3935004,
+  "pipeline": "image-text-to-text",
+  "params": 35951822704
+ },
+ {
+  "id": "Qwen/Qwen3.5-0.8B-Base",
+  "created": "2026-02-28",
+  "downloads": 905824,
+  "pipeline": "image-text-to-text",
+  "params": 873438784
+ },
+ {
+  "id": "Qwen/Qwen3.5-2B-Base",
+  "created": "2026-02-28",
+  "downloads": 335276,
+  "pipeline": "image-text-to-text",
+  "params": 2274069824
+ },
+ {
+  "id": "Qwen/Qwen3.5-0.8B",
+  "created": "2026-02-28",
+  "downloads": 2992096,
+  "pipeline": "image-text-to-text",
+  "params": 873438784
+ },
+ {
+  "id": "Qwen/Qwen3.5-2B",
+  "created": "2026-02-28",
+  "downloads": 4789238,
+  "pipeline": "image-text-to-text",
+  "params": 2274069824
+ },
+ {
+  "id": "Qwen/Qwen3.5-4B",
+  "created": "2026-02-27",
+  "downloads": 4928305,
+  "pipeline": "image-text-to-text",
+  "params": 4659865088
+ },
+ {
+  "id": "Qwen/Qwen3.5-4B-Base",
+  "created": "2026-02-27",
+  "downloads": 539665,
+  "pipeline": "image-text-to-text",
+  "params": 4659865088
+ },
+ {
+  "id": "Qwen/Qwen3.5-9B",
+  "created": "2026-02-27",
+  "downloads": 6029812,
+  "pipeline": "image-text-to-text",
+  "params": 9653104368
+ },
+ {
+  "id": "Qwen/Qwen3.5-9B-Base",
+  "created": "2026-02-26",
+  "downloads": 272688,
+  "pipeline": "image-text-to-text",
+  "params": 9653104368
+ },
+ {
+  "id": "Qwen/Qwen3.5-122B-A10B",
+  "created": "2026-02-24",
+  "downloads": 782279,
+  "pipeline": "image-text-to-text",
+  "params": 125086497008
+ },
+ {
+  "id": "Qwen/Qwen3.5-35B-A3B-Base",
+  "created": "2026-02-24",
+  "downloads": 39900,
+  "pipeline": "image-text-to-text",
+  "params": 35951822704
+ },
+ {
+  "id": "Qwen/Qwen3.5-27B",
+  "created": "2026-02-24",
+  "downloads": 1667728,
+  "pipeline": "image-text-to-text",
+  "params": 27781427952
+ },
+ {
+  "id": "Qwen/Qwen3.5-35B-A3B",
+  "created": "2026-02-24",
+  "downloads": 1451863,
+  "pipeline": "image-text-to-text",
+  "params": 35951822704
+ },
+ {
+  "id": "Qwen/Qwen3.5-397B-A17B",
+  "created": "2026-02-16",
+  "downloads": 718679,
+  "pipeline": "image-text-to-text",
+  "params": 403397928944
+ },
+ {
+  "id": "Qwen/WebWorld-32B",
+  "created": "2026-02-13",
+  "downloads": 4101,
+  "pipeline": "text-generation",
+  "params": 676864
+ },
+ {
+  "id": "Qwen/WebWorld-14B",
+  "created": "2026-02-13",
+  "downloads": 1060,
+  "pipeline": "text-generation",
+  "params": 14768307200
+ },
+ {
+  "id": "Qwen/WebWorld-8B",
+  "created": "2026-02-13",
+  "downloads": 1252,
+  "pipeline": "text-generation",
+  "params": 8190735360
+ },
+ {
+  "id": "Qwen/Qwen3-Coder-Next-Base",
+  "created": "2026-02-01",
+  "downloads": 1271,
+  "pipeline": "text-generation",
+  "params": 79674391296
+ },
+ {
+  "id": "Qwen/Qwen3-Coder-Next",
+  "created": "2026-01-30",
+  "downloads": 390455,
+  "pipeline": "text-generation",
+  "params": 79674391296
+ },
+ {
+  "id": "Qwen/Qwen3-ForcedAligner-0.6B",
+  "created": "2026-01-28",
+  "downloads": 433581,
+  "pipeline": "automatic-speech-recognition",
+  "params": 917728896
+ },
+ {
+  "id": "Qwen/Qwen3-ASR-1.7B",
+  "created": "2026-01-28",
+  "downloads": 1602416,
+  "pipeline": "automatic-speech-recognition",
+  "params": 2349217408
+ },
+ {
+  "id": "Qwen/Qwen3-ASR-0.6B",
+  "created": "2026-01-28",
+  "downloads": 395265,
+  "pipeline": "automatic-speech-recognition",
+  "params": 938008576
+ },
+ {
+  "id": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "created": "2026-01-21",
+  "downloads": 834251,
+  "pipeline": "text-to-speech",
+  "params": 914643008
+ },
+ {
+  "id": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "created": "2026-01-21",
+  "downloads": 725042,
+  "pipeline": "text-to-speech",
+  "params": 905788672
+ },
+ {
+  "id": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "created": "2026-01-21",
+  "downloads": 3917504,
+  "pipeline": null,
+  "params": 1928677440
+ },
+ {
+  "id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "created": "2026-01-21",
+  "downloads": 1208588,
+  "pipeline": "text-to-speech",
+  "params": 1916676352
+ },
+ {
+  "id": "Qwen/Qwen3-TTS-Tokenizer-12Hz",
+  "created": "2026-01-21",
+  "downloads": 57773,
+  "pipeline": "audio-to-audio",
+  "params": 170557441
+ },
+ {
+  "id": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "created": "2026-01-21",
+  "downloads": 615236,
+  "pipeline": "text-to-speech",
+  "params": 1916676352
+ },
+ {
+  "id": "moonshotai/Kimi-K3.1-Pro",
+  "created": "2026-11-02",
+  "downloads": 46766,
+  "pipeline": "image-text-to-text",
+  "params": 2780110363392
+ },
+ {
+  "id": "moonshotai/Kimi-K3",
+  "created": "2026-06-13",
+  "downloads": 783375,
+  "pipeline": "image-text-to-text",
+  "params": 2779931837184
+ },
+ {
+  "id": "moonshotai/Kimi-K2.7-Code",
+  "created": "2026-06-11",
+  "downloads": 294951,
+  "pipeline": "image-text-to-text",
+  "params": 1026879376368
+ },
+ {
+  "id": "moonshotai/Kimi-K2.6",
+  "created": "2026-04-14",
+  "downloads": 205771,
+  "pipeline": "image-text-to-text",
+  "params": 1026879376368
+ },
+ {
+  "id": "moonshotai/Kimi-K2.5",
+  "created": "2026-01-01",
+  "downloads": 392889,
+  "pipeline": "image-text-to-text",
+  "params": 1026879376368
+ },
+ {
+  "id": "zai-org/GLM-5.3-Flash-BF16",
+  "created": "2026-08-25",
+  "downloads": 39617,
+  "pipeline": "image-text-to-text",
+  "params": 321323031390
+ },
+ {
+  "id": "zai-org/GLM-5.3-BF16",
+  "created": "2026-08-25",
+  "downloads": 40249,
+  "pipeline": "text-generation",
+  "params": 753329940480
+ },
+ {
+  "id": "zai-org/GLM-5.3-Flash",
+  "created": "2026-08-25",
+  "downloads": 6363073,
+  "pipeline": "image-text-to-text",
+  "params": 321323031390
+ },
+ {
+  "id": "zai-org/GLM-5.3",
+  "created": "2026-08-25",
+  "downloads": 1761619,
+  "pipeline": "text-generation",
+  "params": 753329940480
+ },
+ {
+  "id": "zai-org/GLM-5.2",
+  "created": "2026-06-16",
+  "downloads": 309982,
+  "pipeline": "text-generation",
+  "params": 753329940480
+ },
+ {
+  "id": "zai-org/SCAIL-2",
+  "created": "2026-06-09",
+  "downloads": 16933,
+  "pipeline": "image-to-video",
+  "params": null
+ },
+ {
+  "id": "zai-org/GLM-5.1",
+  "created": "2026-04-03",
+  "downloads": 751658,
+  "pipeline": "text-generation",
+  "params": 753864139008
+ },
+ {
+  "id": "zai-org/GLM-5",
+  "created": "2026-02-11",
+  "downloads": 1185101,
+  "pipeline": "text-generation",
+  "params": 753864139008
+ },
+ {
+  "id": "zai-org/GLM-OCR",
+  "created": "2026-01-30",
+  "downloads": 1821829,
+  "pipeline": "image-to-text",
+  "params": 1325258240
+ },
+ {
+  "id": "zai-org/GLM-4.7-Flash",
+  "created": "2026-01-19",
+  "downloads": 1114151,
+  "pipeline": "text-generation",
+  "params": 31221488576
+ },
+ {
+  "id": "zai-org/GLM-Image",
+  "created": "2026-01-08",
+  "downloads": 15374,
+  "pipeline": "text-to-image",
+  "params": 6926882880
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-H3-Image-PE",
+  "created": "2026-11-08",
+  "downloads": 2360,
+  "pipeline": "text-generation",
+  "params": 27356728560
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-H3-Image",
+  "created": "2026-11-03",
+  "downloads": 571067,
+  "pipeline": "text-to-image",
+  "params": null
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "created": "2026-10-17",
+  "downloads": 64807,
+  "pipeline": "image-text-to-text",
+  "params": 220490854016
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-Music3",
+  "created": "2026-08-07",
+  "downloads": 5410,
+  "pipeline": "text-to-audio",
+  "params": 2431905920
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-H3",
+  "created": "2026-07-28",
+  "downloads": 6057372,
+  "pipeline": "image-text-to-video",
+  "params": 33122992896
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-M3",
+  "created": "2026-06-02",
+  "downloads": 129896,
+  "pipeline": "image-text-to-text",
+  "params": 427040140160
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-M2.7",
+  "created": "2026-04-09",
+  "downloads": 225319,
+  "pipeline": "text-generation",
+  "params": 228689764864
+ },
+ {
+  "id": "MiniMaxAI/MiniMax-M2.5",
+  "created": "2026-02-12",
+  "downloads": 1037151,
+  "pipeline": "text-generation",
+  "params": 228689764864
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+  "created": "2026-09-27",
+  "downloads": 22177,
+  "pipeline": "text-generation",
+  "params": 310756322688
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+  "created": "2026-09-27",
+  "downloads": 21111,
+  "pipeline": "text-generation",
+  "params": 1024216603392
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "created": "2026-09-21",
+  "downloads": 24386,
+  "pipeline": "image-text-to-text",
+  "params": 9409813744
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "created": "2026-09-21",
+  "downloads": 44460,
+  "pipeline": "text-generation",
+  "params": 310756322688
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+  "created": "2026-09-21",
+  "downloads": 24073,
+  "pipeline": "text-generation",
+  "params": 1024216603392
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.5",
+  "created": "2026-04-27",
+  "downloads": 79600,
+  "pipeline": "text-generation",
+  "params": 310756322688
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.5-Pro",
+  "created": "2026-04-27",
+  "downloads": 8949,
+  "pipeline": "text-generation",
+  "params": 1023182841600
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.5-Base",
+  "created": "2026-04-27",
+  "downloads": 779,
+  "pipeline": "text-generation",
+  "params": 310756322688
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.5-Pro-Base",
+  "created": "2026-04-27",
+  "downloads": 2105,
+  "pipeline": "text-generation",
+  "params": 1023182841600
+ },
+ {
+  "id": "XiaomiMiMo/MiMo-V2.5-ASR",
+  "created": "2026-04-23",
+  "downloads": 4860,
+  "pipeline": "automatic-speech-recognition",
+  "params": 7622619136
+ },
+ {
+  "id": "stepfun-ai/Step-5-Preview-BF16",
+  "created": "2026-09-20",
+  "downloads": 1622,
+  "pipeline": null,
+  "params": 604339504832
+ },
+ {
+  "id": "stepfun-ai/Step-5-Preview",
+  "created": "2026-09-20",
+  "downloads": 8866,
+  "pipeline": null,
+  "params": 604339504832
+ },
+ {
+  "id": "stepfun-ai/Step-3.7-Flash",
+  "created": "2026-05-23",
+  "downloads": 9751,
+  "pipeline": "image-text-to-text",
+  "params": 201365316160
+ },
+ {
+  "id": "stepfun-ai/Step-3.5-Flash-Base",
+  "created": "2026-03-02",
+  "downloads": 970,
+  "pipeline": "text-generation",
+  "params": 197764857152
+ },
+ {
+  "id": "stepfun-ai/Step-3.5-Flash-Base-Midtrain",
+  "created": "2026-03-02",
+  "downloads": 1758,
+  "pipeline": "text-generation",
+  "params": 197765520704
+ },
+ {
+  "id": "stepfun-ai/NextStep-1.1-Pretrain-256px",
+  "created": "2026-02-16",
+  "downloads": 131,
+  "pipeline": "text-to-image",
+  "params": 14953814080
+ },
+ {
+  "id": "stepfun-ai/Step-3.5-Flash",
+  "created": "2026-02-01",
+  "downloads": 178310,
+  "pipeline": "text-generation",
+  "params": 199384301376
+ },
+ {
+  "id": "stepfun-ai/Step-Audio-R1.1",
+  "created": "2026-01-14",
+  "downloads": 634,
+  "pipeline": "audio-text-to-text",
+  "params": 33487033600
+ },
+ {
+  "id": "stepfun-ai/Step3-VL-10B-Base",
+  "created": "2026-01-13",
+  "downloads": 401,
+  "pipeline": "image-text-to-text",
+  "params": 10171750144
+ },
+ {
+  "id": "stepfun-ai/Step3-VL-10B",
+  "created": "2026-01-13",
+  "downloads": 5055,
+  "pipeline": "image-text-to-text",
+  "params": 10171750144
+ },
+ {
+  "id": "meituan-longcat/LongCat-Video-Avatar-1.6",
+  "created": "2026-11-13",
+  "downloads": 4,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "meituan-longcat/LongCat-2.5-W4A4",
+  "created": "2026-11-04",
+  "downloads": 487,
+  "pipeline": "image-text-to-text",
+  "params": 494847981260
+ },
+ {
+  "id": "meituan-longcat/LongCat-2.5",
+  "created": "2026-11-04",
+  "downloads": 1573,
+  "pipeline": "image-text-to-text",
+  "params": 1779752648320
+ },
+ {
+  "id": "meituan-longcat/LongCat-Flash-Lite-Sparse",
+  "created": "2026-07-31",
+  "downloads": 1233,
+  "pipeline": "text-generation",
+  "params": 69127158912
+ },
+ {
+  "id": "meituan-longcat/LongCat-2.0",
+  "created": "2026-07-05",
+  "downloads": 3069,
+  "pipeline": "text-generation",
+  "params": 1775560491136
+ },
+ {
+  "id": "meituan-longcat/WBench-weights",
+  "created": "2026-05-22",
+  "downloads": 0,
+  "pipeline": "other",
+  "params": null
+ },
+ {
+  "id": "meituan-longcat/LongCat-Video-Avatar-1.5",
+  "created": "2026-05-21",
+  "downloads": 4060,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "meituan-longcat/LongCat-AudioDiT-3.5B",
+  "created": "2026-03-30",
+  "downloads": 1004,
+  "pipeline": null,
+  "params": 3833985217
+ },
+ {
+  "id": "meituan-longcat/LongCat-AudioDiT-1B",
+  "created": "2026-03-30",
+  "downloads": 2907,
+  "pipeline": null,
+  "params": 1419923649
+ },
+ {
+  "id": "meituan-longcat/LongCat-Next",
+  "created": "2026-03-25",
+  "downloads": 666,
+  "pipeline": "any-to-any",
+  "params": 74257230752
+ },
+ {
+  "id": "meituan-longcat/LongCat-Flash-Prover",
+  "created": "2026-03-20",
+  "downloads": 253,
+  "pipeline": "text-generation",
+  "params": 560664980480
+ },
+ {
+  "id": "meituan-longcat/LongCat-Image-Edit-Turbo",
+  "created": "2026-02-03",
+  "downloads": 23725,
+  "pipeline": "image-to-image",
+  "params": null
+ },
+ {
+  "id": "meituan-longcat/LongCat-Flash-Lite",
+  "created": "2026-01-27",
+  "downloads": 2395,
+  "pipeline": "text-generation",
+  "params": 69073335552
+ },
+ {
+  "id": "meituan-longcat/LongCat-Flash-Thinking-ZigZag",
+  "created": "2026-01-23",
+  "downloads": 248,
+  "pipeline": "text-generation",
+  "params": 561862880256
+ },
+ {
+  "id": "meituan-longcat/LongCat-HeavyMode-Summary",
+  "created": "2026-01-14",
+  "downloads": 182,
+  "pipeline": "text-generation",
+  "params": 561862880256
+ },
+ {
+  "id": "meituan-longcat/LongCat-Flash-Thinking-2601",
+  "created": "2026-01-14",
+  "downloads": 1106,
+  "pipeline": "text-generation",
+  "params": 561862880256
+ },
+ {
+  "id": "inclusionAI/Duo-1.0-distill-quant",
+  "created": "2026-11-13",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "inclusionAI/Duo-1.0-causal-base",
+  "created": "2026-11-12",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "inclusionAI/Duo-1.0-distill",
+  "created": "2026-11-12",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "inclusionAI/Duo-1.2-causal-base",
+  "created": "2026-11-12",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "inclusionAI/SingVL_S1_4B",
+  "created": "2026-11-11",
+  "downloads": 1172,
+  "pipeline": "image-text-to-text",
+  "params": 4539265536
+ },
+ {
+  "id": "inclusionAI/ZoomGain-9B",
+  "created": "2026-11-10",
+  "downloads": 1273,
+  "pipeline": null,
+  "params": 9409813744
+ },
+ {
+  "id": "inclusionAI/ZoomGain-4B",
+  "created": "2026-11-10",
+  "downloads": 764,
+  "pipeline": null,
+  "params": 4539265536
+ },
+ {
+  "id": "inclusionAI/Ling-3.1-flash-1019",
+  "created": "2026-10-27",
+  "downloads": 4756,
+  "pipeline": "text-generation",
+  "params": 572120680768
+ },
+ {
+  "id": "inclusionAI/GLM-5.3-Flash-singprobe",
+  "created": "2026-10-27",
+  "downloads": 687,
+  "pipeline": null,
+  "params": 8132106
+ },
+ {
+  "id": "inclusionAI/Qwen3.8-Flash-Next-singprobe",
+  "created": "2026-10-27",
+  "downloads": 834,
+  "pipeline": null,
+  "params": 5182986
+ },
+ {
+  "id": "inclusionAI/LBS-27B",
+  "created": "2026-10-26",
+  "downloads": 1628,
+  "pipeline": "image-text-to-text",
+  "params": 3054832
+ },
+ {
+  "id": "inclusionAI/Ling-3.1-flash-base",
+  "created": "2026-10-25",
+  "downloads": 1179,
+  "pipeline": "text-generation",
+  "params": 572120680768
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-tiny-UBTree",
+  "created": "2026-10-21",
+  "downloads": 1913,
+  "pipeline": "text-generation",
+  "params": 183127326
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-Sante",
+  "created": "2026-10-19",
+  "downloads": 2792,
+  "pipeline": "text-generation",
+  "params": 127486405600
+ },
+ {
+  "id": "inclusionAI/ZwZ2-27B",
+  "created": "2026-10-16",
+  "downloads": 1270,
+  "pipeline": "image-text-to-text",
+  "params": 27356728560
+ },
+ {
+  "id": "inclusionAI/ZwZ2-9B",
+  "created": "2026-10-16",
+  "downloads": 1159,
+  "pipeline": "image-text-to-text",
+  "params": 9409813744
+ },
+ {
+  "id": "inclusionAI/ZwZ2-4B",
+  "created": "2026-10-15",
+  "downloads": 1012,
+  "pipeline": "image-text-to-text",
+  "params": 4539265536
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-UBTree",
+  "created": "2026-10-14",
+  "downloads": 1418,
+  "pipeline": "text-generation",
+  "params": 481983774
+ },
+ {
+  "id": "inclusionAI/Ming-3.0-asr-tiny",
+  "created": "2026-10-14",
+  "downloads": 7246,
+  "pipeline": "automatic-speech-recognition",
+  "params": 8865800992
+ },
+ {
+  "id": "inclusionAI/Ling-3.1-flash",
+  "created": "2026-10-13",
+  "downloads": 7041,
+  "pipeline": "text-generation",
+  "params": 572120680768
+ },
+ {
+  "id": "inclusionAI/LemonDecider",
+  "created": "2026-10-05",
+  "downloads": 1047,
+  "pipeline": "feature-extraction",
+  "params": 4539918336
+ },
+ {
+  "id": "inclusionAI/AI-Transparency",
+  "created": "2026-09-24",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "inclusionAI/Ming-3.0-tts-0.5B",
+  "created": "2026-09-22",
+  "downloads": 16722,
+  "pipeline": "text-to-speech",
+  "params": 1479454868
+ },
+ {
+  "id": "inclusionAI/Ming-3.0-tts-tiny",
+  "created": "2026-09-22",
+  "downloads": 9348,
+  "pipeline": "text-to-speech",
+  "params": 8981004468
+ },
+ {
+  "id": "inclusionAI/Ming-Image-0.1-Design-Layer",
+  "created": "2026-09-17",
+  "downloads": 555,
+  "pipeline": "image-text-to-image",
+  "params": 6154908736
+ },
+ {
+  "id": "inclusionAI/Ming-Image-0.1-Design",
+  "created": "2026-09-17",
+  "downloads": 921,
+  "pipeline": "text-to-image",
+  "params": 6154901056
+ },
+ {
+  "id": "inclusionAI/Realtime-Venus",
+  "created": "2026-09-16",
+  "downloads": 2239,
+  "pipeline": "any-to-any",
+  "params": null
+ },
+ {
+  "id": "inclusionAI/Step-3.7-Flash-singprobe",
+  "created": "2026-09-14",
+  "downloads": 164,
+  "pipeline": null,
+  "params": 8132106
+ },
+ {
+  "id": "inclusionAI/Qwen3.8-27B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 193,
+  "pipeline": null,
+  "params": 10098186
+ },
+ {
+  "id": "inclusionAI/Qwen3.5-397B-A17B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 139,
+  "pipeline": null,
+  "params": 8132106
+ },
+ {
+  "id": "inclusionAI/gpt-oss-120b-singprobe",
+  "created": "2026-09-14",
+  "downloads": 168,
+  "pipeline": null,
+  "params": 5797386
+ },
+ {
+  "id": "inclusionAI/MiniMax-M2.7-singprobe",
+  "created": "2026-09-14",
+  "downloads": 161,
+  "pipeline": null,
+  "params": 6166026
+ },
+ {
+  "id": "inclusionAI/GLM-5.3-singprobe",
+  "created": "2026-09-14",
+  "downloads": 181,
+  "pipeline": null,
+  "params": 12064266
+ },
+ {
+  "id": "inclusionAI/Qwen3.6-35B-A3B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 227,
+  "pipeline": null,
+  "params": 4199946
+ },
+ {
+  "id": "inclusionAI/Qwen3.6-27B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 170,
+  "pipeline": null,
+  "params": 10098186
+ },
+ {
+  "id": "inclusionAI/Qwen3.5-122B-A10B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 140,
+  "pipeline": null,
+  "params": 6166026
+ },
+ {
+  "id": "inclusionAI/Qwen3.5-35B-A3B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 143,
+  "pipeline": null,
+  "params": 4199946
+ },
+ {
+  "id": "inclusionAI/Qwen3.5-27B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 167,
+  "pipeline": null,
+  "params": 10098186
+ },
+ {
+  "id": "inclusionAI/Qwen3.5-9B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 159,
+  "pipeline": null,
+  "params": 8132106
+ },
+ {
+  "id": "inclusionAI/Qwen3.5-4B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 165,
+  "pipeline": null,
+  "params": 5182986
+ },
+ {
+  "id": "inclusionAI/Qwen3.5-2B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 160,
+  "pipeline": null,
+  "params": 4199946
+ },
+ {
+  "id": "inclusionAI/Qwen3.5-0.8B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 163,
+  "pipeline": null,
+  "params": 2233866
+ },
+ {
+  "id": "inclusionAI/Qwen3-8B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 165,
+  "pipeline": null,
+  "params": 8132106
+ },
+ {
+  "id": "inclusionAI/Qwen3-4B-Instruct-2507-singprobe",
+  "created": "2026-09-14",
+  "downloads": 146,
+  "pipeline": null,
+  "params": 5182986
+ },
+ {
+  "id": "inclusionAI/Qwen3-0.6B-singprobe",
+  "created": "2026-09-14",
+  "downloads": 168,
+  "pipeline": null,
+  "params": 2233866
+ },
+ {
+  "id": "inclusionAI/Llama-3.2-1B-Instruct-singprobe",
+  "created": "2026-09-14",
+  "downloads": 165,
+  "pipeline": null,
+  "params": 4199946
+ },
+ {
+  "id": "inclusionAI/Llama-3.1-8B-Instruct-singprobe",
+  "created": "2026-09-14",
+  "downloads": 150,
+  "pipeline": null,
+  "params": 8132106
+ },
+ {
+  "id": "inclusionAI/Hy3-singprobe",
+  "created": "2026-09-14",
+  "downloads": 73,
+  "pipeline": null,
+  "params": 8132106
+ },
+ {
+  "id": "inclusionAI/gpt-oss-20b-singprobe",
+  "created": "2026-09-14",
+  "downloads": 127,
+  "pipeline": null,
+  "params": 5797386
+ },
+ {
+  "id": "inclusionAI/GLM-5.2-singprobe",
+  "created": "2026-09-14",
+  "downloads": 83,
+  "pipeline": null,
+  "params": 12064266
+ },
+ {
+  "id": "inclusionAI/gemma-4-E4B-it-singprobe",
+  "created": "2026-09-14",
+  "downloads": 111,
+  "pipeline": null,
+  "params": 5182986
+ },
+ {
+  "id": "inclusionAI/gemma-4-31B-it-singprobe",
+  "created": "2026-09-14",
+  "downloads": 82,
+  "pipeline": null,
+  "params": 10589706
+ },
+ {
+  "id": "inclusionAI/gemma-4-26B-A4B-it-singprobe",
+  "created": "2026-09-14",
+  "downloads": 90,
+  "pipeline": null,
+  "params": 5674506
+ },
+ {
+  "id": "inclusionAI/DeepSeek-V4-Flash-0731-singprobe",
+  "created": "2026-09-14",
+  "downloads": 131,
+  "pipeline": null,
+  "params": 8132106
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-Fin-fp4",
+  "created": "2026-09-10",
+  "downloads": 294,
+  "pipeline": "text-generation",
+  "params": 65578478560
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-VL-fp4",
+  "created": "2026-09-08",
+  "downloads": 2000,
+  "pipeline": "image-text-to-text",
+  "params": 64450482896
+ },
+ {
+  "id": "inclusionAI/LLaDA-UI",
+  "created": "2026-09-06",
+  "downloads": 358,
+  "pipeline": "image-text-to-text",
+  "params": 16924344064
+ },
+ {
+  "id": "inclusionAI/LLaDA2.2-mini",
+  "created": "2026-09-05",
+  "downloads": 3996,
+  "pipeline": "text-generation",
+  "params": 16255643392
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-VL",
+  "created": "2026-09-04",
+  "downloads": 7110,
+  "pipeline": "image-text-to-text",
+  "params": 124848460496
+ },
+ {
+  "id": "inclusionAI/Ming-3.0-audio-flash",
+  "created": "2026-09-03",
+  "downloads": 2398,
+  "pipeline": "audio-to-audio",
+  "params": 128181010400
+ },
+ {
+  "id": "inclusionAI/Ming-3.0-audio-tiny",
+  "created": "2026-09-03",
+  "downloads": 5313,
+  "pipeline": "audio-to-audio",
+  "params": 8871306016
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-Fin",
+  "created": "2026-09-03",
+  "downloads": 2500,
+  "pipeline": "text-generation",
+  "params": 127486405600
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-tiny-singprobe",
+  "created": "2026-09-01",
+  "downloads": 145,
+  "pipeline": null,
+  "params": 3216906
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-singprobe",
+  "created": "2026-09-01",
+  "downloads": 176,
+  "pipeline": null,
+  "params": 5182986
+ },
+ {
+  "id": "inclusionAI/LLaDA-Image-Turbo",
+  "created": "2026-08-28",
+  "downloads": 194,
+  "pipeline": "text-to-image",
+  "params": 6540230016
+ },
+ {
+  "id": "inclusionAI/LLaDA-Image",
+  "created": "2026-08-28",
+  "downloads": 9700,
+  "pipeline": "text-to-image",
+  "params": 6540230016
+ },
+ {
+  "id": "inclusionAI/UI-Venus-2-9B",
+  "created": "2026-08-26",
+  "downloads": 5502,
+  "pipeline": "image-text-to-text",
+  "params": 1469680
+ },
+ {
+  "id": "inclusionAI/ArmorOCR",
+  "created": "2026-08-20",
+  "downloads": 174,
+  "pipeline": "image-text-to-text",
+  "params": 8767123696
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-tiny-base",
+  "created": "2026-08-11",
+  "downloads": 2227,
+  "pipeline": null,
+  "params": 8209997600
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-tiny-base-30T",
+  "created": "2026-08-11",
+  "downloads": 248,
+  "pipeline": null,
+  "params": 8209997600
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-base",
+  "created": "2026-08-11",
+  "downloads": 385,
+  "pipeline": "text-generation",
+  "params": 127486405600
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-base-30T",
+  "created": "2026-08-11",
+  "downloads": 283,
+  "pipeline": "text-generation",
+  "params": 127486405600
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-base-midtrain",
+  "created": "2026-08-11",
+  "downloads": 274,
+  "pipeline": "text-generation",
+  "params": 127486405600
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-tiny-base-midtrain",
+  "created": "2026-08-11",
+  "downloads": 238,
+  "pipeline": null,
+  "params": 8209997600
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-tiny",
+  "created": "2026-08-10",
+  "downloads": 13595,
+  "pipeline": "text-generation",
+  "params": 7893392800
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-fp4",
+  "created": "2026-08-04",
+  "downloads": 999,
+  "pipeline": "text-generation",
+  "params": 65578478560
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash",
+  "created": "2026-08-02",
+  "downloads": 9104,
+  "pipeline": "text-generation",
+  "params": 127486405600
+ },
+ {
+  "id": "inclusionAI/LLaDA2.2-flash",
+  "created": "2026-07-16",
+  "downloads": 849,
+  "pipeline": "text-generation",
+  "params": 102889705216
+ },
+ {
+  "id": "inclusionAI/SingGuard-NSFA-9B",
+  "created": "2026-07-10",
+  "downloads": 224,
+  "pipeline": "image-text-to-text",
+  "params": 9407855856
+ },
+ {
+  "id": "inclusionAI/SingGuard-NSFA-4B",
+  "created": "2026-07-10",
+  "downloads": 1428,
+  "pipeline": "image-text-to-text",
+  "params": 5173741056
+ },
+ {
+  "id": "inclusionAI/SingGuard-NSFA-2B",
+  "created": "2026-07-10",
+  "downloads": 205,
+  "pipeline": "image-text-to-text",
+  "params": 2720822080
+ },
+ {
+  "id": "inclusionAI/SingGuard-NSFA-0.8B",
+  "created": "2026-07-10",
+  "downloads": 1492,
+  "pipeline": "image-text-to-text",
+  "params": 1106776128
+ },
+ {
+  "id": "inclusionAI/SingGuard-0.8b",
+  "created": "2026-06-24",
+  "downloads": 1358,
+  "pipeline": null,
+  "params": 852985920
+ },
+ {
+  "id": "inclusionAI/VISTA-9B",
+  "created": "2026-06-12",
+  "downloads": 1498,
+  "pipeline": "image-text-to-text",
+  "params": 9409813744
+ },
+ {
+  "id": "inclusionAI/VISTA-4B",
+  "created": "2026-06-12",
+  "downloads": 214,
+  "pipeline": "image-text-to-text",
+  "params": 4539265536
+ },
+ {
+  "id": "inclusionAI/Ling-2.6-1T-base",
+  "created": "2026-06-02",
+  "downloads": 1706,
+  "pipeline": "text-generation",
+  "params": 1025414425344
+ },
+ {
+  "id": "inclusionAI/Ling-2.6-flash-base",
+  "created": "2026-06-02",
+  "downloads": 322,
+  "pipeline": "text-generation",
+  "params": 107494409216
+ },
+ {
+  "id": "inclusionAI/SingGuard-4b",
+  "created": "2026-05-25",
+  "downloads": 1390,
+  "pipeline": null,
+  "params": 4437815808
+ },
+ {
+  "id": "inclusionAI/SingGuard-8b",
+  "created": "2026-05-25",
+  "downloads": 211,
+  "pipeline": null,
+  "params": 8767123696
+ },
+ {
+  "id": "inclusionAI/SingGuard-2b",
+  "created": "2026-05-25",
+  "downloads": 1466,
+  "pipeline": "image-text-to-text",
+  "params": 2127532032
+ },
+ {
+  "id": "inclusionAI/ARGenSeg-8B",
+  "created": "2026-05-15",
+  "downloads": 94,
+  "pipeline": null,
+  "params": 8220903299
+ },
+ {
+  "id": "inclusionAI/Ring-2.6-1T",
+  "created": "2026-05-14",
+  "downloads": 2413,
+  "pipeline": "text-generation",
+  "params": 1025414425344
+ },
+ {
+  "id": "inclusionAI/Ling-2.6-1T",
+  "created": "2026-04-29",
+  "downloads": 2999,
+  "pipeline": "text-generation",
+  "params": 1025414425344
+ },
+ {
+  "id": "inclusionAI/Ling-2.6-flash",
+  "created": "2026-04-28",
+  "downloads": 3437,
+  "pipeline": "text-generation",
+  "params": 107494409216
+ },
+ {
+  "id": "inclusionAI/LLaDA2.0-Uni",
+  "created": "2026-04-22",
+  "downloads": 1904,
+  "pipeline": "any-to-any",
+  "params": 16322752256
+ },
+ {
+  "id": "inclusionAI/DR-Venus-4B-RL",
+  "created": "2026-04-21",
+  "downloads": 1860,
+  "pipeline": null,
+  "params": 4411424256
+ },
+ {
+  "id": "inclusionAI/DR-Venus-4B-SFT",
+  "created": "2026-04-21",
+  "downloads": 1843,
+  "pipeline": null,
+  "params": 4411424256
+ },
+ {
+  "id": "inclusionAI/TC-AE",
+  "created": "2026-04-08",
+  "downloads": 0,
+  "pipeline": "feature-extraction",
+  "params": null
+ },
+ {
+  "id": "inclusionAI/AReaL-tau2-merge-sft-235B",
+  "created": "2026-03-06",
+  "downloads": 72,
+  "pipeline": null,
+  "params": 235093634560
+ },
+ {
+  "id": "inclusionAI/AReaL-tau2-telecom-user-sft-30B",
+  "created": "2026-03-05",
+  "downloads": 1869,
+  "pipeline": null,
+  "params": 32762123264
+ },
+ {
+  "id": "inclusionAI/AReaL-tau2-telecom-sft-30B",
+  "created": "2026-03-05",
+  "downloads": 1931,
+  "pipeline": null,
+  "params": 30532122624
+ },
+ {
+  "id": "inclusionAI/AReaL-tau2-retail-sft-30B",
+  "created": "2026-03-04",
+  "downloads": 464,
+  "pipeline": null,
+  "params": 30532122624
+ },
+ {
+  "id": "inclusionAI/AReaL-tau2-airline-sft-30B",
+  "created": "2026-03-04",
+  "downloads": 85,
+  "pipeline": null,
+  "params": 30532122624
+ },
+ {
+  "id": "inclusionAI/ZwZ-2B",
+  "created": "2026-03-04",
+  "downloads": 761,
+  "pipeline": "image-text-to-text",
+  "params": 2438696960
+ },
+ {
+  "id": "inclusionAI/AReaL-SEA-235B-A22B",
+  "created": "2026-03-01",
+  "downloads": 1901,
+  "pipeline": "text-generation",
+  "params": 235093634560
+ },
+ {
+  "id": "inclusionAI/Ling-2.5-1T",
+  "created": "2026-02-14",
+  "downloads": 570,
+  "pipeline": "text-generation",
+  "params": 1012231160320
+ },
+ {
+  "id": "inclusionAI/ZwZ-4B",
+  "created": "2026-02-12",
+  "downloads": 1408,
+  "pipeline": "image-text-to-text",
+  "params": 4826771968
+ },
+ {
+  "id": "inclusionAI/ZwZ-7B",
+  "created": "2026-02-12",
+  "downloads": 1602,
+  "pipeline": "image-text-to-text",
+  "params": 8292166656
+ },
+ {
+  "id": "inclusionAI/ZwZ-8B",
+  "created": "2026-02-12",
+  "downloads": 562,
+  "pipeline": "image-text-to-text",
+  "params": 8767123696
+ },
+ {
+  "id": "inclusionAI/Ming-omni-tts-tokenizer-12Hz",
+  "created": "2026-02-11",
+  "downloads": 193,
+  "pipeline": "audio-to-audio",
+  "params": 780389010
+ },
+ {
+  "id": "inclusionAI/Ming-omni-tts-0.5B",
+  "created": "2026-02-11",
+  "downloads": 13440,
+  "pipeline": "text-to-speech",
+  "params": 1615589524
+ },
+ {
+  "id": "inclusionAI/Ming-omni-tts-16.8B-A3B",
+  "created": "2026-02-11",
+  "downloads": 274,
+  "pipeline": "text-to-speech",
+  "params": 17898074900
+ },
+ {
+  "id": "inclusionAI/Ring-2.5-1T",
+  "created": "2026-02-10",
+  "downloads": 1209,
+  "pipeline": "text-generation",
+  "params": 1012231160320
+ },
+ {
+  "id": "inclusionAI/Ming-flash-omni-2.0",
+  "created": "2026-02-10",
+  "downloads": 8177,
+  "pipeline": "any-to-any",
+  "params": 104232246768
+ },
+ {
+  "id": "inclusionAI/LLaDA2.1-flash",
+  "created": "2026-02-09",
+  "downloads": 2466,
+  "pipeline": "text-generation",
+  "params": 102889705216
+ },
+ {
+  "id": "inclusionAI/UI-Venus-1.5-30B-A3B",
+  "created": "2026-02-09",
+  "downloads": 510,
+  "pipeline": "image-text-to-text",
+  "params": 31070754032
+ },
+ {
+  "id": "inclusionAI/UI-Venus-1.5-8B",
+  "created": "2026-02-09",
+  "downloads": 2407,
+  "pipeline": "image-text-to-text",
+  "params": 8767123696
+ },
+ {
+  "id": "inclusionAI/UI-Venus-1.5-2B",
+  "created": "2026-02-09",
+  "downloads": 3165,
+  "pipeline": "image-text-to-text",
+  "params": 2438696960
+ },
+ {
+  "id": "inclusionAI/LLaDA2.1-mini",
+  "created": "2026-02-09",
+  "downloads": 28198,
+  "pipeline": "text-generation",
+  "params": 16255643392
+ },
+ {
+  "id": "baidu/Unlimited-OCR-2",
+  "created": "2026-10-26",
+  "downloads": 547079,
+  "pipeline": "image-text-to-text",
+  "params": 3343978497
+ },
+ {
+  "id": "baidu/ERNIE-5.5-Flash-Base",
+  "created": "2026-10-21",
+  "downloads": 3914,
+  "pipeline": "text-generation",
+  "params": 286245697882
+ },
+ {
+  "id": "baidu/ERNIE-5.5-Flash-Base-BF16",
+  "created": "2026-10-21",
+  "downloads": 1388,
+  "pipeline": "text-generation",
+  "params": 286245622106
+ },
+ {
+  "id": "baidu/Unlimited-OCR",
+  "created": "2026-06-19",
+  "downloads": 5840290,
+  "pipeline": "image-text-to-text",
+  "params": 3336106240
+ },
+ {
+  "id": "baidu/NAVA",
+  "created": "2026-05-29",
+  "downloads": 548,
+  "pipeline": "text-to-video",
+  "params": null
+ },
+ {
+  "id": "baidu/ERNIE-Image-Aes",
+  "created": "2026-05-18",
+  "downloads": 2178,
+  "pipeline": null,
+  "params": 7944373760
+ },
+ {
+  "id": "baidu/ERNIE-Image",
+  "created": "2026-04-07",
+  "downloads": 1777,
+  "pipeline": "text-to-image",
+  "params": 8033490048
+ },
+ {
+  "id": "baidu/ERNIE-Image-Turbo",
+  "created": "2026-04-02",
+  "downloads": 2952,
+  "pipeline": "text-to-image",
+  "params": 8033490048
+ },
+ {
+  "id": "baidu/Qianfan-OCR",
+  "created": "2026-03-18",
+  "downloads": 21020,
+  "pipeline": "image-text-to-text",
+  "params": 4741408256
+ },
+ {
+  "id": "tencent/Qwen3.8-27B-DSpine-b16",
+  "created": "2026-11-07",
+  "downloads": 5590,
+  "pipeline": "text-generation",
+  "params": 2025912064
+ },
+ {
+  "id": "tencent/Hy-Nomas-Diffusers",
+  "created": "2026-10-24",
+  "downloads": 184,
+  "pipeline": null,
+  "params": 8553434592
+ },
+ {
+  "id": "tencent/WeVisOne-VL-4B",
+  "created": "2026-10-22",
+  "downloads": 25786,
+  "pipeline": "image-text-to-text",
+  "params": 4830581248
+ },
+ {
+  "id": "tencent/WeVisOne-VL-2B",
+  "created": "2026-10-22",
+  "downloads": 16159,
+  "pipeline": "image-text-to-text",
+  "params": 2441744384
+ },
+ {
+  "id": "tencent/Hy-SimulMT-30B-A3B-Interleave",
+  "created": "2026-10-22",
+  "downloads": 674,
+  "pipeline": "translation",
+  "params": 30394794496
+ },
+ {
+  "id": "tencent/Hy-SimulMT-30B-A3B",
+  "created": "2026-10-22",
+  "downloads": 1108,
+  "pipeline": "translation",
+  "params": 30394794496
+ },
+ {
+  "id": "tencent/Hy-Nomas",
+  "created": "2026-10-21",
+  "downloads": 93949,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "tencent/Qwen3-8B-DSpine-b16",
+  "created": "2026-10-16",
+  "downloads": 1283,
+  "pipeline": null,
+  "params": 1237763840
+ },
+ {
+  "id": "tencent/Hy-Memory-30B-A3B",
+  "created": "2026-10-15",
+  "downloads": 7632,
+  "pipeline": "text-generation",
+  "params": 30064725888
+ },
+ {
+  "id": "tencent/Youtu-Parsing-Omni",
+  "created": "2026-10-09",
+  "downloads": 2621,
+  "pipeline": "image-text-to-text",
+  "params": 5334472192
+ },
+ {
+  "id": "tencent/WeVisDoc-4B",
+  "created": "2026-09-16",
+  "downloads": 11228,
+  "pipeline": null,
+  "params": 4437815808
+ },
+ {
+  "id": "tencent/WeVisDoc-2B",
+  "created": "2026-09-16",
+  "downloads": 8612,
+  "pipeline": null,
+  "params": 2438696960
+ },
+ {
+  "id": "tencent/Simple-Attention-Sparsification",
+  "created": "2026-09-14",
+  "downloads": 0,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "tencent/WeVisCut",
+  "created": "2026-09-09",
+  "downloads": 16552,
+  "pipeline": "any-to-any",
+  "params": 9409813744
+ },
+ {
+  "id": "tencent/EVIE-8B",
+  "created": "2026-09-04",
+  "downloads": 318,
+  "pipeline": "visual-document-retrieval",
+  "params": 8409476336
+ },
+ {
+  "id": "tencent/EVIE-4.5B",
+  "created": "2026-09-04",
+  "downloads": 1431,
+  "pipeline": "visual-document-retrieval",
+  "params": 4544510464
+ },
+ {
+  "id": "tencent/Hy4-preview",
+  "created": "2026-08-27",
+  "downloads": 11667,
+  "pipeline": "text-generation",
+  "params": 779960992733
+ },
+ {
+  "id": "tencent/ContextPilot-E4B",
+  "created": "2026-08-27",
+  "downloads": 2120,
+  "pipeline": "text-generation",
+  "params": 7941100874
+ },
+ {
+  "id": "tencent/ContextPilot-14B",
+  "created": "2026-08-27",
+  "downloads": 2444,
+  "pipeline": "text-generation",
+  "params": 14768307200
+ },
+ {
+  "id": "tencent/ContextPilot-8B",
+  "created": "2026-08-27",
+  "downloads": 908,
+  "pipeline": "text-generation",
+  "params": 8190735360
+ },
+ {
+  "id": "tencent/AuK-Flash",
+  "created": "2026-08-21",
+  "downloads": 696,
+  "pipeline": "text-to-speech",
+  "params": null
+ },
+ {
+  "id": "tencent/AuK",
+  "created": "2026-08-18",
+  "downloads": 1423,
+  "pipeline": "text-to-speech",
+  "params": null
+ },
+ {
+  "id": "tencent/EVIE-Preview-4.5B",
+  "created": "2026-08-17",
+  "downloads": 313,
+  "pipeline": "visual-document-retrieval",
+  "params": 4539593344
+ },
+ {
+  "id": "tencent/UI-Mate-democua-27B",
+  "created": "2026-08-14",
+  "downloads": 374,
+  "pipeline": "image-text-to-text",
+  "params": 27356728560
+ },
+ {
+  "id": "tencent/UI-Mate-9B",
+  "created": "2026-08-14",
+  "downloads": 1963,
+  "pipeline": "image-text-to-text",
+  "params": 9409813744
+ },
+ {
+  "id": "tencent/UI-Mate-27B",
+  "created": "2026-08-14",
+  "downloads": 617,
+  "pipeline": "image-text-to-text",
+  "params": 27356728560
+ },
+ {
+  "id": "tencent/Hy-Embodied-VLM-1.0",
+  "created": "2026-07-14",
+  "downloads": 629,
+  "pipeline": "image-text-to-text",
+  "params": 30526584176
+ },
+ {
+  "id": "tencent/Hy-Embodied-RxBrain-1.0",
+  "created": "2026-07-14",
+  "downloads": 322,
+  "pipeline": "any-to-any",
+  "params": 6208221232
+ },
+ {
+  "id": "tencent/HiLS-Attention-7B",
+  "created": "2026-07-09",
+  "downloads": 416,
+  "pipeline": "text-generation",
+  "params": 7314825216
+ },
+ {
+  "id": "tencent/R3-rerank-0.6b",
+  "created": "2026-07-08",
+  "downloads": 929,
+  "pipeline": "text-ranking",
+  "params": 595776512
+ },
+ {
+  "id": "tencent/Hy3",
+  "created": "2026-07-02",
+  "downloads": 996249,
+  "pipeline": "text-generation",
+  "params": 298786155776
+ },
+ {
+  "id": "tencent/Rosetta-inference",
+  "created": "2026-06-26",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "tencent/Ex-Omni",
+  "created": "2026-06-12",
+  "downloads": 9,
+  "pipeline": null,
+  "params": 10659376951
+ },
+ {
+  "id": "tencent/Hy-Embodied-0.5-VLA-RoboTwin",
+  "created": "2026-06-11",
+  "downloads": 148,
+  "pipeline": "robotics",
+  "params": 4526672912
+ },
+ {
+  "id": "tencent/Hy-Embodied-0.5-VLA-UMI",
+  "created": "2026-06-11",
+  "downloads": 183,
+  "pipeline": "robotics",
+  "params": 4526672912
+ },
+ {
+  "id": "tencent/Universal_Audio_Tokenizer",
+  "created": "2026-05-27",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "tencent/Hy-MT2-7B",
+  "created": "2026-05-11",
+  "downloads": 34607,
+  "pipeline": "translation",
+  "params": 8029540352
+ },
+ {
+  "id": "tencent/Hy-MT2-1.8B",
+  "created": "2026-05-11",
+  "downloads": 21699,
+  "pipeline": "translation",
+  "params": 2038515712
+ },
+ {
+  "id": "tencent/Hy-MT2-30B-A3B",
+  "created": "2026-05-11",
+  "downloads": 5172,
+  "pipeline": "translation",
+  "params": 30064725888
+ },
+ {
+  "id": "tencent/Hy-MT1.5-1.8B-1.25bit",
+  "created": "2026-04-29",
+  "downloads": 83,
+  "pipeline": "translation",
+  "params": 2038515712
+ },
+ {
+  "id": "tencent/Hy-MT1.5-1.8B-2bit",
+  "created": "2026-04-29",
+  "downloads": 271,
+  "pipeline": "translation",
+  "params": 1791080448
+ },
+ {
+  "id": "tencent/HY-Embodied-0.5-X",
+  "created": "2026-04-23",
+  "downloads": 573,
+  "pipeline": "image-text-to-text",
+  "params": 3785086960
+ },
+ {
+  "id": "tencent/Hy3-preview",
+  "created": "2026-04-13",
+  "downloads": 87220,
+  "pipeline": "text-generation",
+  "params": 298786155776
+ },
+ {
+  "id": "tencent/Hy3-preview-Base",
+  "created": "2026-04-13",
+  "downloads": 1904,
+  "pipeline": "text-generation",
+  "params": 298786155776
+ },
+ {
+  "id": "tencent/HY-World-2.0",
+  "created": "2026-04-10",
+  "downloads": 3240,
+  "pipeline": "image-to-3d",
+  "params": null
+ },
+ {
+  "id": "tencent/DisCa",
+  "created": "2026-04-09",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "tencent/Unicom-Unified-Multimodal-Modeling-via-Compressed-Continuous-Semantic-Representations",
+  "created": "2026-04-09",
+  "downloads": 0,
+  "pipeline": "text-to-image",
+  "params": null
+ },
+ {
+  "id": "tencent/Unified_Audio_Schema",
+  "created": "2026-04-03",
+  "downloads": 105,
+  "pipeline": "audio-text-to-text",
+  "params": 8332630656
+ },
+ {
+  "id": "tencent/HY-Embodied-0.5",
+  "created": "2026-04-02",
+  "downloads": 640,
+  "pipeline": "image-text-to-text",
+  "params": 3785086960
+ },
+ {
+  "id": "tencent/Sequential-Hidden-Decoding-8B-n8-Instruct",
+  "created": "2026-03-31",
+  "downloads": 320,
+  "pipeline": "text-generation",
+  "params": 12547044352
+ },
+ {
+  "id": "tencent/HY-OmniWeaving",
+  "created": "2026-03-31",
+  "downloads": 328,
+  "pipeline": "image-to-video",
+  "params": null
+ },
+ {
+  "id": "tencent/POINTS-Seeker",
+  "created": "2026-03-24",
+  "downloads": 229,
+  "pipeline": "text-generation",
+  "params": 8913692160
+ },
+ {
+  "id": "tencent/VersaViT",
+  "created": "2026-03-20",
+  "downloads": 90,
+  "pipeline": null,
+  "params": 675759104
+ },
+ {
+  "id": "tencent/Covo-Audio-Chat",
+  "created": "2026-03-16",
+  "downloads": 424,
+  "pipeline": "audio-to-audio",
+  "params": 8402417920
+ },
+ {
+  "id": "tencent/Sequential-Hidden-Decoding-8B-n4",
+  "created": "2026-03-10",
+  "downloads": 119,
+  "pipeline": null,
+  "params": 10057724928
+ },
+ {
+  "id": "tencent/Sequential-Hidden-Decoding-8B-n8",
+  "created": "2026-03-10",
+  "downloads": 120,
+  "pipeline": null,
+  "params": 12547044352
+ },
+ {
+  "id": "tencent/Sequential-Hidden-Decoding-8B-n2",
+  "created": "2026-03-10",
+  "downloads": 149,
+  "pipeline": null,
+  "params": 8813065216
+ },
+ {
+  "id": "tencent/HY-WU",
+  "created": "2026-03-05",
+  "downloads": 82,
+  "pipeline": "image-text-to-image",
+  "params": 8096647168
+ },
+ {
+  "id": "tencent/Penguin-Encoder",
+  "created": "2026-03-05",
+  "downloads": 445,
+  "pipeline": "feature-extraction",
+  "params": 441070592
+ },
+ {
+  "id": "tencent/Penguin-VL-2B",
+  "created": "2026-03-05",
+  "downloads": 705,
+  "pipeline": "text-generation",
+  "params": 2167941120
+ },
+ {
+  "id": "tencent/Penguin-VL-8B",
+  "created": "2026-03-05",
+  "downloads": 379,
+  "pipeline": "text-generation",
+  "params": 8652785664
+ },
+ {
+  "id": "tencent/StableToken",
+  "created": "2026-02-26",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "tencent/Youtu-HiChunk",
+  "created": "2026-02-03",
+  "downloads": 148,
+  "pipeline": "feature-extraction",
+  "params": 4081056256
+ },
+ {
+  "id": "tencent/POINTS-GUI-G",
+  "created": "2026-02-03",
+  "downloads": 395,
+  "pipeline": "image-text-to-text",
+  "params": 8913692160
+ },
+ {
+  "id": "tencent/HunyuanImage-3.0-Instruct-Distil",
+  "created": "2026-01-25",
+  "downloads": 412,
+  "pipeline": "image-to-image",
+  "params": 83044867427
+ },
+ {
+  "id": "tencent/Youtu-VL-4B-Instruct",
+  "created": "2026-01-23",
+  "downloads": 1541,
+  "pipeline": "image-text-to-text",
+  "params": 5340551024
+ },
+ {
+  "id": "tencent/Youtu-Parsing",
+  "created": "2026-01-23",
+  "downloads": 423,
+  "pipeline": "image-text-to-text",
+  "params": 2515984240
+ },
+ {
+  "id": "tencent/HY3D-Bench",
+  "created": "2026-01-13",
+  "downloads": 66,
+  "pipeline": "image-to-3d",
+  "params": null
+ },
+ {
+  "id": "tencent/TCAndon-Router",
+  "created": "2026-01-07",
+  "downloads": 1687,
+  "pipeline": "text-generation",
+  "params": 4022468096
+ },
+ {
+  "id": "tencent/HY-Video-PRFL",
+  "created": "2026-01-07",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "tencent/Youtu-LLM-A7B-Base",
+  "created": "2026-01-05",
+  "downloads": 2088,
+  "pipeline": "image-text-to-text",
+  "params": 118387471216
+ },
+ {
+  "id": "ByteDance-Seed/Cola2",
+  "created": "2026-11-06",
+  "downloads": 1377,
+  "pipeline": "text-generation",
+  "params": 8768019912
+ },
+ {
+  "id": "ByteDance-Seed/Qwen3-30B-A3B-MoE-SAE",
+  "created": "2026-11-05",
+  "downloads": 0,
+  "pipeline": "feature-extraction",
+  "params": null
+ },
+ {
+  "id": "ByteDance-Seed/Cross-Layer-TopK-CLT",
+  "created": "2026-11-05",
+  "downloads": 469,
+  "pipeline": "feature-extraction",
+  "params": null
+ },
+ {
+  "id": "ByteDance-Seed/GenFirst",
+  "created": "2026-10-29",
+  "downloads": 0,
+  "pipeline": "text-to-image",
+  "params": null
+ },
+ {
+  "id": "ByteDance-Seed/PAR",
+  "created": "2026-07-03",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "ByteDance-Seed/TaskMem",
+  "created": "2026-06-02",
+  "downloads": 1325,
+  "pipeline": null,
+  "params": 31070754032
+ },
+ {
+  "id": "ByteDance-Seed/SimArt",
+  "created": "2026-05-19",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "ByteDance-Seed/Cola-DLM",
+  "created": "2026-05-15",
+  "downloads": 92,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "ByteDance-Seed/Stable-DiffCoder-8B-Instruct",
+  "created": "2026-01-15",
+  "downloads": 765,
+  "pipeline": "text-generation",
+  "params": 8250462208
+ },
+ {
+  "id": "ByteDance-Seed/Stable-DiffCoder-8B-Base",
+  "created": "2026-01-15",
+  "downloads": 789,
+  "pipeline": "text-generation",
+  "params": 8250462208
+ },
+ {
+  "id": "ByteDance-Seed/VINCIE-7B",
+  "created": "2026-01-06",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/meta-encoder-v1",
+  "created": "2026-11-12",
+  "downloads": 331,
+  "pipeline": "feature-extraction",
+  "params": 28431795200
+ },
+ {
+  "id": "facebook/stereo-splat",
+  "created": "2026-11-03",
+  "downloads": 0,
+  "pipeline": "image-to-3d",
+  "params": null
+ },
+ {
+  "id": "facebook/free-range-gaussians",
+  "created": "2026-10-28",
+  "downloads": 0,
+  "pipeline": "image-to-3d",
+  "params": null
+ },
+ {
+  "id": "facebook/stereo_crossinjection",
+  "created": "2026-10-28",
+  "downloads": 0,
+  "pipeline": "depth-estimation",
+  "params": null
+ },
+ {
+  "id": "facebook/meta-encoder",
+  "created": "2026-09-30",
+  "downloads": 77,
+  "pipeline": "feature-extraction",
+  "params": 29776626688
+ },
+ {
+  "id": "facebook/MoEViE-L16-384",
+  "created": "2026-08-12",
+  "downloads": 38,
+  "pipeline": "zero-shot-image-classification",
+  "params": null
+ },
+ {
+  "id": "facebook/MoEViE-H14-448",
+  "created": "2026-08-12",
+  "downloads": 36,
+  "pipeline": "zero-shot-image-classification",
+  "params": null
+ },
+ {
+  "id": "facebook/MoEViE-B16-224",
+  "created": "2026-08-09",
+  "downloads": 33,
+  "pipeline": "zero-shot-image-classification",
+  "params": null
+ },
+ {
+  "id": "facebook/MobileMoE-S-Base",
+  "created": "2026-06-11",
+  "downloads": 56,
+  "pipeline": "text-generation",
+  "params": 1263374256
+ },
+ {
+  "id": "facebook/MobileMoE-M-Base",
+  "created": "2026-06-11",
+  "downloads": 11,
+  "pipeline": "text-generation",
+  "params": 2818390552
+ },
+ {
+  "id": "facebook/MobileMoE-M-SFT",
+  "created": "2026-06-11",
+  "downloads": 26,
+  "pipeline": "text-generation",
+  "params": 2818390552
+ },
+ {
+  "id": "facebook/MobileMoE-S-SFT",
+  "created": "2026-06-11",
+  "downloads": 55,
+  "pipeline": "text-generation",
+  "params": 1263374256
+ },
+ {
+  "id": "facebook/MobileMoE-S-QAT",
+  "created": "2026-06-11",
+  "downloads": 198,
+  "pipeline": "text-generation",
+  "params": 665341872
+ },
+ {
+  "id": "facebook/MobileMoE-M-QAT",
+  "created": "2026-06-11",
+  "downloads": 57,
+  "pipeline": "text-generation",
+  "params": 1486699032
+ },
+ {
+  "id": "facebook/MobileMoE-L-QAT",
+  "created": "2026-06-11",
+  "downloads": 32,
+  "pipeline": "text-generation",
+  "params": 2811579520
+ },
+ {
+  "id": "facebook/MobileMoE-L-SFT",
+  "created": "2026-06-11",
+  "downloads": 32,
+  "pipeline": "text-generation",
+  "params": 5325704320
+ },
+ {
+  "id": "facebook/MobileMoE-L-Base",
+  "created": "2026-06-10",
+  "downloads": 16,
+  "pipeline": "text-generation",
+  "params": 5325704320
+ },
+ {
+  "id": "facebook/LAMP",
+  "created": "2026-06-10",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/autopartgen",
+  "created": "2026-06-09",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/meshflow",
+  "created": "2026-05-27",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/Large-Sparse-Reconstruction-Model",
+  "created": "2026-05-19",
+  "downloads": 0,
+  "pipeline": "image-to-3d",
+  "params": null
+ },
+ {
+  "id": "facebook/sapiens2-matting-1b",
+  "created": "2026-05-15",
+  "downloads": 9403,
+  "pipeline": "image-segmentation",
+  "params": 1539334340
+ },
+ {
+  "id": "facebook/tribev2-subcortical",
+  "created": "2026-05-13",
+  "downloads": 529,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/eva-flow",
+  "created": "2026-05-12",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/sapiens2-pretrain-1b-4k",
+  "created": "2026-04-24",
+  "downloads": 0,
+  "pipeline": "image-feature-extraction",
+  "params": null
+ },
+ {
+  "id": "facebook/sapiens2",
+  "created": "2026-04-23",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/sapiens2-pointmap-5b",
+  "created": "2026-04-23",
+  "downloads": 6102,
+  "pipeline": "depth-estimation",
+  "params": 5348345879
+ },
+ {
+  "id": "facebook/sapiens2-pointmap-1b",
+  "created": "2026-04-23",
+  "downloads": 2326,
+  "pipeline": "depth-estimation",
+  "params": 1629594164
+ },
+ {
+  "id": "facebook/sapiens2-pointmap-0.8b",
+  "created": "2026-04-23",
+  "downloads": 330,
+  "pipeline": "depth-estimation",
+  "params": 967366200
+ },
+ {
+  "id": "facebook/sapiens2-pointmap-0.4b",
+  "created": "2026-04-23",
+  "downloads": 958,
+  "pipeline": "depth-estimation",
+  "params": 528675380
+ },
+ {
+  "id": "facebook/sapiens2-normal-5b",
+  "created": "2026-04-23",
+  "downloads": 3941,
+  "pipeline": "depth-estimation",
+  "params": 5316358294
+ },
+ {
+  "id": "facebook/sapiens2-normal-1b",
+  "created": "2026-04-23",
+  "downloads": 3502,
+  "pipeline": "depth-estimation",
+  "params": 1539334323
+ },
+ {
+  "id": "facebook/sapiens2-normal-0.8b",
+  "created": "2026-04-23",
+  "downloads": 191,
+  "pipeline": "depth-estimation",
+  "params": 884577463
+ },
+ {
+  "id": "facebook/sapiens2-normal-0.4b",
+  "created": "2026-04-23",
+  "downloads": 1457,
+  "pipeline": "depth-estimation",
+  "params": 453357747
+ },
+ {
+  "id": "facebook/sapiens2-seg-1b",
+  "created": "2026-04-23",
+  "downloads": 10180,
+  "pipeline": "image-segmentation",
+  "params": 1470819821
+ },
+ {
+  "id": "facebook/sapiens2-seg-0.8b",
+  "created": "2026-04-23",
+  "downloads": 1172,
+  "pipeline": "image-segmentation",
+  "params": 827532017
+ },
+ {
+  "id": "facebook/sapiens2-seg-0.4b",
+  "created": "2026-04-23",
+  "downloads": 14160,
+  "pipeline": "image-segmentation",
+  "params": 406601709
+ },
+ {
+  "id": "facebook/sapiens2-pose-5b",
+  "created": "2026-04-23",
+  "downloads": 15319,
+  "pipeline": "keypoint-detection",
+  "params": 5120198663
+ },
+ {
+  "id": "facebook/sapiens2-seg-5b",
+  "created": "2026-04-23",
+  "downloads": 5848,
+  "pipeline": "image-segmentation",
+  "params": 5089588656
+ },
+ {
+  "id": "facebook/sapiens2-pose-1b",
+  "created": "2026-04-23",
+  "downloads": 46042,
+  "pipeline": "keypoint-detection",
+  "params": 1519780164
+ },
+ {
+  "id": "facebook/sapiens2-pose-0.8b",
+  "created": "2026-04-23",
+  "downloads": 1324,
+  "pipeline": "keypoint-detection",
+  "params": 848704840
+ },
+ {
+  "id": "facebook/sapiens2-pose-0.4b",
+  "created": "2026-04-23",
+  "downloads": 9187,
+  "pipeline": "keypoint-detection",
+  "params": 425677380
+ },
+ {
+  "id": "facebook/sapiens2-pretrain-5b",
+  "created": "2026-04-23",
+  "downloads": 1085,
+  "pipeline": "image-feature-extraction",
+  "params": 5066902995
+ },
+ {
+  "id": "facebook/sapiens2-pretrain-1b",
+  "created": "2026-04-23",
+  "downloads": 818,
+  "pipeline": "image-feature-extraction",
+  "params": 1455474192
+ },
+ {
+  "id": "facebook/sapiens2-pretrain-0.8b",
+  "created": "2026-04-23",
+  "downloads": 393,
+  "pipeline": "image-feature-extraction",
+  "params": 814283540
+ },
+ {
+  "id": "facebook/sapiens2-pretrain-0.4b",
+  "created": "2026-04-23",
+  "downloads": 3011,
+  "pipeline": "image-feature-extraction",
+  "params": 395450384
+ },
+ {
+  "id": "facebook/sapiens2-pretrain-0.1b",
+  "created": "2026-04-23",
+  "downloads": 2075,
+  "pipeline": "image-feature-extraction",
+  "params": 113993488
+ },
+ {
+  "id": "facebook/tribev2-mini",
+  "created": "2026-03-30",
+  "downloads": 94,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/boxer",
+  "created": "2026-03-27",
+  "downloads": 0,
+  "pipeline": "object-detection",
+  "params": null
+ },
+ {
+  "id": "facebook/EUPE-ConvNeXt-T",
+  "created": "2026-03-27",
+  "downloads": 81,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/EUPE-ConvNeXt-S",
+  "created": "2026-03-27",
+  "downloads": 50,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/EUPE-ConvNeXt-B",
+  "created": "2026-03-27",
+  "downloads": 285,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/EUPE-ViT-T",
+  "created": "2026-03-26",
+  "downloads": 408,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/EUPE-ViT-S",
+  "created": "2026-03-26",
+  "downloads": 163,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/sam3.1",
+  "created": "2026-03-26",
+  "downloads": 155052,
+  "pipeline": "mask-generation",
+  "params": null
+ },
+ {
+  "id": "facebook/tribev2",
+  "created": "2026-03-24",
+  "downloads": 26082,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/EUPE-ViT-B",
+  "created": "2026-03-23",
+  "downloads": 1737,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/webssl-dino300m-light2b-224",
+  "created": "2026-03-20",
+  "downloads": 790,
+  "pipeline": "image-feature-extraction",
+  "params": 303655168
+ },
+ {
+  "id": "facebook/VGGT-Omega",
+  "created": "2026-03-17",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/test",
+  "created": "2026-03-17",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/AllScAIP",
+  "created": "2026-03-11",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/dinov3-vitl16-chmv2-dpt-head",
+  "created": "2026-03-10",
+  "downloads": 1302,
+  "pipeline": "depth-estimation",
+  "params": 336876800
+ },
+ {
+  "id": "facebook/lagernvs_dl3dv_2-6_v_256",
+  "created": "2026-03-05",
+  "downloads": 44,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/lagernvs_re10k_2v_256",
+  "created": "2026-03-05",
+  "downloads": 1050,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/lagernvs_general_512",
+  "created": "2026-03-05",
+  "downloads": 2207,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "facebook/hyden-mogev2-surface-normal",
+  "created": "2026-03-04",
+  "downloads": 0,
+  "pipeline": "image-to-image",
+  "params": null
+ },
+ {
+  "id": "facebook/hyden-mogev2-metric-point",
+  "created": "2026-03-04",
+  "downloads": 0,
+  "pipeline": "depth-estimation",
+  "params": null
+ },
+ {
+  "id": "facebook/hyden-da2-relative-depth",
+  "created": "2026-03-04",
+  "downloads": 0,
+  "pipeline": "depth-estimation",
+  "params": null
+ },
+ {
+  "id": "facebook/jepa-wms",
+  "created": "2026-01-30",
+  "downloads": 0,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "facebook/ShapeR",
+  "created": "2026-01-14",
+  "downloads": 138,
+  "pipeline": "image-to-3d",
+  "params": null
+ },
+ {
+  "id": "facebook/ActionMesh",
+  "created": "2026-01-13",
+  "downloads": 223,
+  "pipeline": "image-to-3d",
+  "params": null
+ },
+ {
+  "id": "mistralai/Timestral-123M",
+  "created": "2026-10-14",
+  "downloads": 9800,
+  "pipeline": "time-series-forecasting",
+  "params": 122606720
+ },
+ {
+  "id": "mistralai/Timestral-28M",
+  "created": "2026-10-14",
+  "downloads": 19412,
+  "pipeline": "time-series-forecasting",
+  "params": 27821184
+ },
+ {
+  "id": "mistralai/Timestral-5M",
+  "created": "2026-10-14",
+  "downloads": 13695,
+  "pipeline": "time-series-forecasting",
+  "params": 5208960
+ },
+ {
+  "id": "mistralai/Timestral-209M",
+  "created": "2026-10-14",
+  "downloads": 30797,
+  "pipeline": "time-series-forecasting",
+  "params": 209312256
+ },
+ {
+  "id": "mistralai/LIDstral-Arabic",
+  "created": "2026-10-08",
+  "downloads": 157,
+  "pipeline": "text-classification",
+  "params": null
+ },
+ {
+  "id": "mistralai/Voxtral-Mini-4B-Realtime-Arabic",
+  "created": "2026-10-08",
+  "downloads": 2397,
+  "pipeline": "automatic-speech-recognition",
+  "params": 4429679360
+ },
+ {
+  "id": "mistralai/Mistral-Large-4-1T-A52B",
+  "created": "2026-09-30",
+  "downloads": 15076,
+  "pipeline": "image-text-to-text",
+  "params": null
+ },
+ {
+  "id": "mistralai/Shieldstral-1.0-3B",
+  "created": "2026-07-16",
+  "downloads": 89174,
+  "pipeline": null,
+  "params": 3849090048
+ },
+ {
+  "id": "mistralai/Leanstral-1.5-119B-A6B",
+  "created": "2026-07-01",
+  "downloads": 428,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "mistralai/Mistral-Medium-3.5-128B",
+  "created": "2026-03-31",
+  "downloads": 14674,
+  "pipeline": null,
+  "params": 127704210176
+ },
+ {
+  "id": "mistralai/Leanstral-2603",
+  "created": "2026-03-11",
+  "downloads": 167,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "mistralai/Mistral-Small-4-119B-2603",
+  "created": "2026-01-23",
+  "downloads": 31328,
+  "pipeline": null,
+  "params": 119401317376
+ },
+ {
+  "id": "mistralai/Voxtral-Mini-4B-Realtime-2602",
+  "created": "2026-01-21",
+  "downloads": 1566290,
+  "pipeline": "automatic-speech-recognition",
+  "params": 4429679360
+ },
+ {
+  "id": "google/gnm-v3",
+  "created": "2026-09-01",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "google/timesfm-3.0-pytorch",
+  "created": "2026-08-24",
+  "downloads": 462483,
+  "pipeline": "time-series-forecasting",
+  "params": 330710976
+ },
+ {
+  "id": "google/tipsv1-g14-lowres",
+  "created": "2026-08-19",
+  "downloads": 1314,
+  "pipeline": "zero-shot-image-classification",
+  "params": 1523906048
+ },
+ {
+  "id": "google/tipsv1-g14",
+  "created": "2026-08-19",
+  "downloads": 300,
+  "pipeline": "zero-shot-image-classification",
+  "params": 1525085696
+ },
+ {
+  "id": "google/tipsv1-so400m14",
+  "created": "2026-08-19",
+  "downloads": 279,
+  "pipeline": "zero-shot-image-classification",
+  "params": 861726816
+ },
+ {
+  "id": "google/tipsv1-l14",
+  "created": "2026-08-19",
+  "downloads": 234,
+  "pipeline": "zero-shot-image-classification",
+  "params": 487941120
+ },
+ {
+  "id": "google/tipsv1-b14",
+  "created": "2026-08-19",
+  "downloads": 205,
+  "pipeline": "zero-shot-image-classification",
+  "params": 195948288
+ },
+ {
+  "id": "google/tipsv1-s14",
+  "created": "2026-08-19",
+  "downloads": 463,
+  "pipeline": "zero-shot-image-classification",
+  "params": 55506816
+ },
+ {
+  "id": "google/tabfm-1.1.0-pytorch",
+  "created": "2026-07-31",
+  "downloads": 1070,
+  "pipeline": "tabular-classification",
+  "params": null
+ },
+ {
+  "id": "google/tabfm-1.0.0-jax",
+  "created": "2026-06-29",
+  "downloads": 1782,
+  "pipeline": "tabular-classification",
+  "params": null
+ },
+ {
+  "id": "google/tabfm-1.0.0-pytorch",
+  "created": "2026-06-29",
+  "downloads": 38091,
+  "pipeline": "tabular-classification",
+  "params": null
+ },
+ {
+  "id": "google/diffusiongemma-26B-A4B-it",
+  "created": "2026-06-09",
+  "downloads": 646351,
+  "pipeline": "image-text-to-text",
+  "params": 25823778864
+ },
+ {
+  "id": "google/gemma-4-12B-it-qat-q4_0-unquantized-assistant",
+  "created": "2026-06-04",
+  "downloads": 3204,
+  "pipeline": "any-to-any",
+  "params": 422856964
+ },
+ {
+  "id": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+  "created": "2026-06-04",
+  "downloads": 8568,
+  "pipeline": "any-to-any",
+  "params": 11959730224
+ },
+ {
+  "id": "google/gemma-4-E4B-it-qat-mobile-transformers",
+  "created": "2026-06-02",
+  "downloads": 2770,
+  "pipeline": "any-to-any",
+  "params": 3374552394
+ },
+ {
+  "id": "google/gemma-4-E2B-it-qat-mobile-transformers",
+  "created": "2026-06-02",
+  "downloads": 3217,
+  "pipeline": "any-to-any",
+  "params": 2335794755
+ },
+ {
+  "id": "google/gemma-4-E4B-it-qat-mobile-ct",
+  "created": "2026-06-01",
+  "downloads": 17039,
+  "pipeline": "any-to-any",
+  "params": 8667239754
+ },
+ {
+  "id": "google/gemma-4-E2B-it-qat-mobile-ct",
+  "created": "2026-06-01",
+  "downloads": 2541,
+  "pipeline": "any-to-any",
+  "params": 5525825091
+ },
+ {
+  "id": "google/gemma-4-31B-it-qat-q4_0-unquantized-assistant",
+  "created": "2026-05-29",
+  "downloads": 5012,
+  "pipeline": "image-text-to-text",
+  "params": 469518596
+ },
+ {
+  "id": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized-assistant",
+  "created": "2026-05-29",
+  "downloads": 2335,
+  "pipeline": "image-text-to-text",
+  "params": 419711236
+ },
+ {
+  "id": "google/gemma-4-E4B-it-qat-q4_0-unquantized-assistant",
+  "created": "2026-05-29",
+  "downloads": 1655,
+  "pipeline": "any-to-any",
+  "params": 78779908
+ },
+ {
+  "id": "google/gemma-4-E2B-it-qat-q4_0-unquantized-assistant",
+  "created": "2026-05-29",
+  "downloads": 1119,
+  "pipeline": "any-to-any",
+  "params": 77993476
+ },
+ {
+  "id": "google/magenta-realtime-2",
+  "created": "2026-05-28",
+  "downloads": 19040,
+  "pipeline": "text-to-audio",
+  "params": null
+ },
+ {
+  "id": "google/gemma-4-12B",
+  "created": "2026-05-23",
+  "downloads": 49343,
+  "pipeline": "any-to-any",
+  "params": 11959730224
+ },
+ {
+  "id": "google/gemma-4-12B-it-assistant",
+  "created": "2026-05-23",
+  "downloads": 42281,
+  "pipeline": "any-to-any",
+  "params": 422856964
+ },
+ {
+  "id": "google/gemma-4-12B-it",
+  "created": "2026-05-23",
+  "downloads": 1648823,
+  "pipeline": "any-to-any",
+  "params": 11959730224
+ },
+ {
+  "id": "google/gemma-4-E4B-it-qat-q4_0-unquantized",
+  "created": "2026-04-30",
+  "downloads": 9882,
+  "pipeline": "any-to-any",
+  "params": 7941100874
+ },
+ {
+  "id": "google/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "created": "2026-04-29",
+  "downloads": 10066,
+  "pipeline": "any-to-any",
+  "params": 5104297539
+ },
+ {
+  "id": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+  "created": "2026-04-29",
+  "downloads": 6088,
+  "pipeline": "image-text-to-text",
+  "params": 25805936206
+ },
+ {
+  "id": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+  "created": "2026-04-28",
+  "downloads": 9864,
+  "pipeline": "image-text-to-text",
+  "params": 31273088876
+ },
+ {
+  "id": "google/gemma-4-26B-A4B-it-assistant",
+  "created": "2026-04-23",
+  "downloads": 373474,
+  "pipeline": "any-to-any",
+  "params": 419711236
+ },
+ {
+  "id": "google/gemma-4-31B-it-assistant",
+  "created": "2026-04-23",
+  "downloads": 188261,
+  "pipeline": "any-to-any",
+  "params": 469518596
+ },
+ {
+  "id": "google/gemma-4-E4B-it-assistant",
+  "created": "2026-04-23",
+  "downloads": 24875,
+  "pipeline": "any-to-any",
+  "params": 78779908
+ },
+ {
+  "id": "google/gemma-4-E2B-it-assistant",
+  "created": "2026-04-23",
+  "downloads": 47742,
+  "pipeline": "any-to-any",
+  "params": 77993476
+ },
+ {
+  "id": "google/tipsv2-g14-dpt",
+  "created": "2026-04-09",
+  "downloads": 253,
+  "pipeline": "depth-estimation",
+  "params": 1320463897
+ },
+ {
+  "id": "google/tipsv2-so400m14-dpt",
+  "created": "2026-04-09",
+  "downloads": 208,
+  "pipeline": "depth-estimation",
+  "params": 532924265
+ },
+ {
+  "id": "google/tipsv2-l14-dpt",
+  "created": "2026-04-09",
+  "downloads": 537,
+  "pipeline": "depth-estimation",
+  "params": 405695641
+ },
+ {
+  "id": "google/tipsv2-b14-dpt",
+  "created": "2026-04-09",
+  "downloads": 3070,
+  "pipeline": "depth-estimation",
+  "params": 158007257
+ },
+ {
+  "id": "google/tipsv2-g14",
+  "created": "2026-04-09",
+  "downloads": 1098,
+  "pipeline": "zero-shot-image-classification",
+  "params": 1525085696
+ },
+ {
+  "id": "google/tipsv2-so400m14",
+  "created": "2026-04-09",
+  "downloads": 269230,
+  "pipeline": "zero-shot-image-classification",
+  "params": 861726816
+ },
+ {
+  "id": "google/tipsv2-b14",
+  "created": "2026-04-09",
+  "downloads": 8629,
+  "pipeline": "zero-shot-image-classification",
+  "params": 195948288
+ },
+ {
+  "id": "google/tipsv2-l14",
+  "created": "2026-04-09",
+  "downloads": 3944,
+  "pipeline": "zero-shot-image-classification",
+  "params": 487941120
+ },
+ {
+  "id": "google/gemma-4-31B",
+  "created": "2026-03-12",
+  "downloads": 43750,
+  "pipeline": "image-text-to-text",
+  "params": 31273088876
+ },
+ {
+  "id": "google/gemma-4-26B-A4B",
+  "created": "2026-03-12",
+  "downloads": 72222,
+  "pipeline": "image-text-to-text",
+  "params": 25805936206
+ },
+ {
+  "id": "google/gemma-4-26B-A4B-it",
+  "created": "2026-03-11",
+  "downloads": 5137386,
+  "pipeline": "image-text-to-text",
+  "params": 25805936206
+ },
+ {
+  "id": "google/gemma-4-31B-it",
+  "created": "2026-03-11",
+  "downloads": 6435249,
+  "pipeline": "image-text-to-text",
+  "params": 31273088876
+ },
+ {
+  "id": "google/gemma-4-E2B",
+  "created": "2026-03-02",
+  "downloads": 94888,
+  "pipeline": "any-to-any",
+  "params": 5123178051
+ },
+ {
+  "id": "google/gemma-4-E2B-it",
+  "created": "2026-03-02",
+  "downloads": 2898369,
+  "pipeline": "any-to-any",
+  "params": 5123178051
+ },
+ {
+  "id": "google/gemma-4-E4B",
+  "created": "2026-03-02",
+  "downloads": 454620,
+  "pipeline": "any-to-any",
+  "params": 7996156490
+ },
+ {
+  "id": "google/gemma-4-E4B-it",
+  "created": "2026-03-02",
+  "downloads": 4280740,
+  "pipeline": "any-to-any",
+  "params": 7996156490
+ },
+ {
+  "id": "google/timesfm-2.5-200m-transformers",
+  "created": "2026-02-19",
+  "downloads": 27240,
+  "pipeline": "time-series-forecasting",
+  "params": 231289280
+ },
+ {
+  "id": "google/alphagenome-fold-3",
+  "created": "2026-01-16",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "google/alphagenome-fold-2",
+  "created": "2026-01-16",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "google/alphagenome-fold-1",
+  "created": "2026-01-16",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "google/alphagenome-fold-0",
+  "created": "2026-01-15",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "google/alphagenome-all-folds",
+  "created": "2026-01-14",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "google/translategemma-27b-it",
+  "created": "2026-01-12",
+  "downloads": 4460,
+  "pipeline": "image-text-to-text",
+  "params": 27432406640
+ },
+ {
+  "id": "google/translategemma-12b-it",
+  "created": "2026-01-12",
+  "downloads": 6334,
+  "pipeline": "image-text-to-text",
+  "params": 12187325040
+ },
+ {
+  "id": "google/translategemma-4b-it",
+  "created": "2026-01-12",
+  "downloads": 10877,
+  "pipeline": "image-text-to-text",
+  "params": 4300079472
+ },
+ {
+  "id": "google/medgemma-1.5-4b-it",
+  "created": "2026-01-07",
+  "downloads": 233800,
+  "pipeline": "image-text-to-text",
+  "params": 4300079472
+ },
+ {
+  "id": "microsoft/Mage-VL-Cowork",
+  "created": "2026-10-30",
+  "downloads": 4891,
+  "pipeline": "image-text-to-text",
+  "params": 4741793792
+ },
+ {
+  "id": "microsoft/Sentiment-Analysis-7B",
+  "created": "2026-10-17",
+  "downloads": 3048,
+  "pipeline": "text-generation",
+  "params": 7241732096
+ },
+ {
+  "id": "microsoft/scFM-dataselection",
+  "created": "2026-10-16",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/UserRepGen-4B",
+  "created": "2026-10-14",
+  "downloads": 2484,
+  "pipeline": "text-generation",
+  "params": 4539265536
+ },
+ {
+  "id": "microsoft/UserLM-2.0",
+  "created": "2026-10-01",
+  "downloads": 1128,
+  "pipeline": "text-generation",
+  "params": 8030277632
+ },
+ {
+  "id": "microsoft/OptiMind-RL",
+  "created": "2026-09-30",
+  "downloads": 94,
+  "pipeline": "reinforcement-learning",
+  "params": 20914757184
+ },
+ {
+  "id": "microsoft/AesCode-32B",
+  "created": "2026-09-29",
+  "downloads": 1676,
+  "pipeline": "image-text-to-text",
+  "params": 33357390064
+ },
+ {
+  "id": "microsoft/AesCode-8B",
+  "created": "2026-09-29",
+  "downloads": 2218,
+  "pipeline": "image-text-to-text",
+  "params": 8767123696
+ },
+ {
+  "id": "microsoft/rho-roboeval",
+  "created": "2026-09-21",
+  "downloads": 0,
+  "pipeline": null,
+  "params": 5238067680
+ },
+ {
+  "id": "microsoft/FrogNano-4B-2609",
+  "created": "2026-09-17",
+  "downloads": 2175,
+  "pipeline": null,
+  "params": 4659865088
+ },
+ {
+  "id": "microsoft/VibeVoice-ASR-Streaming-1.5B",
+  "created": "2026-09-02",
+  "downloads": 2035,
+  "pipeline": "automatic-speech-recognition",
+  "params": 2814116321
+ },
+ {
+  "id": "microsoft/VibeVoice-ASR-Streaming-7B",
+  "created": "2026-09-02",
+  "downloads": 10867,
+  "pipeline": "automatic-speech-recognition",
+  "params": 8674021857
+ },
+ {
+  "id": "microsoft/rho-libero",
+  "created": "2026-08-28",
+  "downloads": 0,
+  "pipeline": null,
+  "params": 5247548896
+ },
+ {
+  "id": "microsoft/bioemu2",
+  "created": "2026-08-27",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/SQuadGen",
+  "created": "2026-08-27",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/rho-yam-box",
+  "created": "2026-08-26",
+  "downloads": 0,
+  "pipeline": null,
+  "params": 5238067680
+ },
+ {
+  "id": "microsoft/rho-ur-ai-trainer",
+  "created": "2026-08-26",
+  "downloads": 0,
+  "pipeline": null,
+  "params": 5238067680
+ },
+ {
+  "id": "microsoft/rho-fr3-duo",
+  "created": "2026-08-26",
+  "downloads": 0,
+  "pipeline": null,
+  "params": 5238067680
+ },
+ {
+  "id": "microsoft/Mage-ViT",
+  "created": "2026-07-26",
+  "downloads": 410,
+  "pipeline": "image-feature-extraction",
+  "params": 315694080
+ },
+ {
+  "id": "microsoft/Mage-VL",
+  "created": "2026-07-25",
+  "downloads": 6483,
+  "pipeline": "image-text-to-text",
+  "params": 4741793792
+ },
+ {
+  "id": "microsoft/VibeVoice-ASR-BitNet",
+  "created": "2026-07-24",
+  "downloads": 108399,
+  "pipeline": "automatic-speech-recognition",
+  "params": 322592829
+ },
+ {
+  "id": "microsoft/Fara1.5-27B",
+  "created": "2026-07-17",
+  "downloads": 4088,
+  "pipeline": "image-text-to-text",
+  "params": 27356728560
+ },
+ {
+  "id": "microsoft/Fara1.5-4B",
+  "created": "2026-07-17",
+  "downloads": 2808,
+  "pipeline": "image-text-to-text",
+  "params": 4539265536
+ },
+ {
+  "id": "microsoft/HARC-Qwen2.5-7B-Instruct",
+  "created": "2026-07-02",
+  "downloads": 2346,
+  "pipeline": "text-generation",
+  "params": 7615616512
+ },
+ {
+  "id": "microsoft/HARC-Llama-3.1-8B-Instruct",
+  "created": "2026-07-02",
+  "downloads": 2311,
+  "pipeline": "text-generation",
+  "params": 8030261248
+ },
+ {
+  "id": "microsoft/GELab-Zero-4B-preview-Sico-Evolution",
+  "created": "2026-06-30",
+  "downloads": 0,
+  "pipeline": "image-text-to-text",
+  "params": 4437815808
+ },
+ {
+  "id": "microsoft/rho-base",
+  "created": "2026-06-11",
+  "downloads": 0,
+  "pipeline": null,
+  "params": 5238067680
+ },
+ {
+  "id": "microsoft/HARC",
+  "created": "2026-06-02",
+  "downloads": 0,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "microsoft/MuseVLA",
+  "created": "2026-06-01",
+  "downloads": 0,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "microsoft/vermeer-XL-CA",
+  "created": "2026-05-26",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/vermeer-XL",
+  "created": "2026-05-26",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/vermeer-L-AP",
+  "created": "2026-05-26",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/vermeer-L",
+  "created": "2026-05-26",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/MagenticBrain",
+  "created": "2026-05-12",
+  "downloads": 2537,
+  "pipeline": "text-generation",
+  "params": 14768307200
+ },
+ {
+  "id": "microsoft/GridSFM_Open",
+  "created": "2026-05-12",
+  "downloads": 0,
+  "pipeline": "graph-ml",
+  "params": null
+ },
+ {
+  "id": "microsoft/Fara1.5-9B",
+  "created": "2026-05-12",
+  "downloads": 3377,
+  "pipeline": "image-text-to-text",
+  "params": 9409813744
+ },
+ {
+  "id": "microsoft/Phi-Ground-Any",
+  "created": "2026-05-07",
+  "downloads": 1934,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/Dayhoff-3b-UR90-30000",
+  "created": "2026-04-14",
+  "downloads": 950,
+  "pipeline": "text-generation",
+  "params": 2981431616
+ },
+ {
+  "id": "microsoft/Dayhoff-3b-UR90-20350",
+  "created": "2026-04-14",
+  "downloads": 984,
+  "pipeline": "text-generation",
+  "params": 2981431616
+ },
+ {
+  "id": "microsoft/Dayhoff-3b-UR90-10000",
+  "created": "2026-04-14",
+  "downloads": 848,
+  "pipeline": "text-generation",
+  "params": 2981431616
+ },
+ {
+  "id": "microsoft/Dayhoff-3b-UR90-10",
+  "created": "2026-04-14",
+  "downloads": 797,
+  "pipeline": "text-generation",
+  "params": 2981431616
+ },
+ {
+  "id": "microsoft/skala-baselines",
+  "created": "2026-04-13",
+  "downloads": 1637,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/skala-1.0",
+  "created": "2026-04-13",
+  "downloads": 10517,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/skala-1.1",
+  "created": "2026-04-13",
+  "downloads": 38799,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/vermeer-B",
+  "created": "2026-04-06",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-SS-134000",
+  "created": "2026-04-03",
+  "downloads": 732,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-SS-122000",
+  "created": "2026-04-03",
+  "downloads": 814,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-SS-110000",
+  "created": "2026-04-03",
+  "downloads": 335,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-SS-98000",
+  "created": "2026-04-03",
+  "downloads": 347,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-SS-86000",
+  "created": "2026-04-03",
+  "downloads": 758,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-SS-74000",
+  "created": "2026-04-03",
+  "downloads": 360,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-SS-62000",
+  "created": "2026-04-03",
+  "downloads": 342,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-SS-50000",
+  "created": "2026-04-03",
+  "downloads": 361,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-SS-38000",
+  "created": "2026-04-03",
+  "downloads": 344,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-SS-26000",
+  "created": "2026-04-03",
+  "downloads": 318,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-SS-14000",
+  "created": "2026-04-03",
+  "downloads": 773,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-48000",
+  "created": "2026-04-02",
+  "downloads": 331,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-46000",
+  "created": "2026-04-02",
+  "downloads": 364,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-44000",
+  "created": "2026-04-02",
+  "downloads": 359,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-42000",
+  "created": "2026-04-02",
+  "downloads": 725,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-40000",
+  "created": "2026-04-02",
+  "downloads": 354,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-38000",
+  "created": "2026-04-02",
+  "downloads": 349,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-36000",
+  "created": "2026-04-02",
+  "downloads": 729,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-34000",
+  "created": "2026-04-02",
+  "downloads": 661,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-32000",
+  "created": "2026-04-02",
+  "downloads": 830,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-30000",
+  "created": "2026-04-02",
+  "downloads": 322,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-28000",
+  "created": "2026-04-02",
+  "downloads": 278,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-26000",
+  "created": "2026-04-02",
+  "downloads": 298,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-24000",
+  "created": "2026-04-02",
+  "downloads": 308,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-22000",
+  "created": "2026-04-02",
+  "downloads": 279,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-20000",
+  "created": "2026-04-02",
+  "downloads": 310,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-18000",
+  "created": "2026-04-02",
+  "downloads": 298,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-16000",
+  "created": "2026-04-02",
+  "downloads": 335,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-14000",
+  "created": "2026-04-02",
+  "downloads": 315,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-12000",
+  "created": "2026-04-02",
+  "downloads": 284,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-10000",
+  "created": "2026-04-02",
+  "downloads": 296,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-8000",
+  "created": "2026-04-02",
+  "downloads": 289,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-6000",
+  "created": "2026-04-02",
+  "downloads": 363,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-4000",
+  "created": "2026-04-02",
+  "downloads": 298,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-HL-2000",
+  "created": "2026-04-02",
+  "downloads": 316,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/harrier-oss-v1-27b",
+  "created": "2026-03-30",
+  "downloads": 6982,
+  "pipeline": "feature-extraction",
+  "params": 27009346304
+ },
+ {
+  "id": "microsoft/harrier-oss-v1-0.6b",
+  "created": "2026-03-30",
+  "downloads": 217076,
+  "pipeline": "feature-extraction",
+  "params": 596049920
+ },
+ {
+  "id": "microsoft/harrier-oss-v1-270m",
+  "created": "2026-03-30",
+  "downloads": 113292,
+  "pipeline": "feature-extraction",
+  "params": 268098176
+ },
+ {
+  "id": "microsoft/UniRG-CXR",
+  "created": "2026-03-19",
+  "downloads": 1790,
+  "pipeline": "image-text-to-text",
+  "params": 8767123696
+ },
+ {
+  "id": "microsoft/psirnet",
+  "created": "2026-03-18",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/SchGen",
+  "created": "2026-03-18",
+  "downloads": 328,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/VibeVoice-ASR-HF",
+  "created": "2026-03-02",
+  "downloads": 14528,
+  "pipeline": "audio-text-to-text",
+  "params": 8330325888
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-76000",
+  "created": "2026-02-24",
+  "downloads": 302,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-50000",
+  "created": "2026-02-24",
+  "downloads": 303,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-26000",
+  "created": "2026-02-24",
+  "downloads": 275,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-112000",
+  "created": "2026-02-24",
+  "downloads": 317,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GRS-2000",
+  "created": "2026-02-24",
+  "downloads": 340,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/VibeVoice-AcousticTokenizer",
+  "created": "2026-02-06",
+  "downloads": 2071,
+  "pipeline": "feature-extraction",
+  "params": 687392001
+ },
+ {
+  "id": "microsoft/Dayhoff-3b-GR-HM-1000",
+  "created": "2026-02-04",
+  "downloads": 354,
+  "pipeline": "text-generation",
+  "params": 2981431616
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GR-1000",
+  "created": "2026-02-04",
+  "downloads": 355,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-1000",
+  "created": "2026-02-04",
+  "downloads": 368,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/X-Reasoner-7B",
+  "created": "2026-02-03",
+  "downloads": 2109,
+  "pipeline": "image-text-to-text",
+  "params": 8292166656
+ },
+ {
+  "id": "microsoft/InfoAgent",
+  "created": "2026-01-30",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GR-61000",
+  "created": "2026-01-24",
+  "downloads": 348,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GR-46000",
+  "created": "2026-01-24",
+  "downloads": 339,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GR-31000",
+  "created": "2026-01-24",
+  "downloads": 338,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-GR-16000",
+  "created": "2026-01-24",
+  "downloads": 313,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-3b-GR-HM-41000",
+  "created": "2026-01-24",
+  "downloads": 332,
+  "pipeline": "text-generation",
+  "params": 2981431616
+ },
+ {
+  "id": "microsoft/Dayhoff-3b-GR-HM-31000",
+  "created": "2026-01-24",
+  "downloads": 310,
+  "pipeline": "text-generation",
+  "params": 2981431616
+ },
+ {
+  "id": "microsoft/Dayhoff-3b-GR-HM-21000",
+  "created": "2026-01-24",
+  "downloads": 341,
+  "pipeline": "text-generation",
+  "params": 2981431616
+ },
+ {
+  "id": "microsoft/Dayhoff-3b-GR-HM-11000",
+  "created": "2026-01-24",
+  "downloads": 312,
+  "pipeline": "text-generation",
+  "params": 2981431616
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-61000",
+  "created": "2026-01-24",
+  "downloads": 318,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-46000",
+  "created": "2026-01-24",
+  "downloads": 296,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-31000",
+  "created": "2026-01-24",
+  "downloads": 702,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR90-16000",
+  "created": "2026-01-24",
+  "downloads": 332,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Dayhoff-170M-UR-90-31000",
+  "created": "2026-01-24",
+  "downloads": 270,
+  "pipeline": "text-generation",
+  "params": 170298096
+ },
+ {
+  "id": "microsoft/Phi-4-reasoning-vision-15B",
+  "created": "2026-01-23",
+  "downloads": 8455,
+  "pipeline": "image-text-to-text",
+  "params": 15119518144
+ },
+ {
+  "id": "microsoft/VibeVoice-ASR",
+  "created": "2026-01-21",
+  "downloads": 717567,
+  "pipeline": "automatic-speech-recognition",
+  "params": 8674021857
+ },
+ {
+  "id": "microsoft/colipri",
+  "created": "2026-01-14",
+  "downloads": 4866,
+  "pipeline": "zero-shot-image-classification",
+  "params": 258367104
+ },
+ {
+  "id": "microsoft/FrogMini-14B-2510",
+  "created": "2026-01-09",
+  "downloads": 2202,
+  "pipeline": "text-generation",
+  "params": 424960
+ },
+ {
+  "id": "microsoft/paza-whisper-large-v3-turbo",
+  "created": "2026-01-08",
+  "downloads": 1781,
+  "pipeline": "automatic-speech-recognition",
+  "params": 808884480
+ },
+ {
+  "id": "microsoft/paza-Phi-4-multimodal-instruct",
+  "created": "2026-01-07",
+  "downloads": 2883,
+  "pipeline": "automatic-speech-recognition",
+  "params": 5574460384
+ },
+ {
+  "id": "microsoft/FrogBoss-32B-2510",
+  "created": "2026-01-05",
+  "downloads": 2213,
+  "pipeline": "text-generation",
+  "params": 676864
+ },
+ {
+  "id": "nvidia/MetricTrail",
+  "created": "2026-11-05",
+  "downloads": 590,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Metatron-v1",
+  "created": "2026-10-27",
+  "downloads": 1291,
+  "pipeline": "reinforcement-learning",
+  "params": null
+ },
+ {
+  "id": "nvidia/MotionBricks",
+  "created": "2026-10-23",
+  "downloads": 0,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "nvidia/InternVideo2-CLIP-anomaly-detection",
+  "created": "2026-10-22",
+  "downloads": 216,
+  "pipeline": null,
+  "params": 372752640
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2_s43",
+  "created": "2026-10-19",
+  "downloads": 392,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/Cosmos3-H-Embodied-Nano",
+  "created": "2026-10-19",
+  "downloads": 1161,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "nvidia/Cosmos3-H-Dreams",
+  "created": "2026-10-19",
+  "downloads": 2280,
+  "pipeline": "image-to-video",
+  "params": null
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-D2_s43",
+  "created": "2026-10-19",
+  "downloads": 373,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-S2_s43",
+  "created": "2026-10-19",
+  "downloads": 322,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-Dory1.0-4B-BF16",
+  "created": "2026-10-16",
+  "downloads": 16167,
+  "pipeline": "text-generation",
+  "params": 3975229440
+ },
+ {
+  "id": "nvidia/RFD4-Proteina-prep",
+  "created": "2026-10-15",
+  "downloads": 118,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Nemotron-3.5-Rerank-8B-BF16",
+  "created": "2026-10-15",
+  "downloads": 8159,
+  "pipeline": "text-ranking",
+  "params": 8381159424
+ },
+ {
+  "id": "nvidia/RFD4-Proteina-Diffusers",
+  "created": "2026-10-15",
+  "downloads": 414,
+  "pipeline": null,
+  "params": 178448304
+ },
+ {
+  "id": "nvidia/cdf-sim2real-smt-solderlight",
+  "created": "2026-10-14",
+  "downloads": 1,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/GR00T-N1.7-AppleToPlate-cosine40k-checkpoint-15000",
+  "created": "2026-10-13",
+  "downloads": 245,
+  "pipeline": "robotics",
+  "params": 3144016000
+ },
+ {
+  "id": "nvidia/ARDY-SOMA-RP-30FPS-KimodoRep-Horizon60",
+  "created": "2026-10-13",
+  "downloads": 369,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2",
+  "created": "2026-10-13",
+  "downloads": 386,
+  "pipeline": null,
+  "params": 283266414
+ },
+ {
+  "id": "nvidia/Kimodo-SOMA-RP-v1.2",
+  "created": "2026-10-13",
+  "downloads": 11843,
+  "pipeline": null,
+  "params": 283281777
+ },
+ {
+  "id": "nvidia/Cosmos-AnomalyGen-Glass-Nano",
+  "created": "2026-10-13",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Cosmos-AnomalyGen-Metal-Nano",
+  "created": "2026-10-13",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Cosmos-AnomalyGen-PCB-Nano",
+  "created": "2026-10-13",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "created": "2026-10-12",
+  "downloads": 76856,
+  "pipeline": "image-text-to-text",
+  "params": 124453395976
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16",
+  "created": "2026-10-12",
+  "downloads": 2716,
+  "pipeline": "image-text-to-text",
+  "params": 124453395974
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr",
+  "created": "2026-10-12",
+  "downloads": 6476,
+  "pipeline": "text-generation",
+  "params": 673450538
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_2",
+  "created": "2026-10-10",
+  "downloads": 247,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-S5_all",
+  "created": "2026-10-10",
+  "downloads": 244,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-D5",
+  "created": "2026-10-09",
+  "downloads": 244,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16",
+  "created": "2026-10-09",
+  "downloads": 9696,
+  "pipeline": "image-text-to-text",
+  "params": 74885081096
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-S_best",
+  "created": "2026-10-08",
+  "downloads": 224,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-S_worst",
+  "created": "2026-10-08",
+  "downloads": 216,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/Qwen3.8-Flash-Next-FP4-Local",
+  "created": "2026-10-08",
+  "downloads": 44665,
+  "pipeline": "image-text-to-text",
+  "params": 96486615005
+ },
+ {
+  "id": "nvidia/GLM-5.3-Flash-FP4-Local",
+  "created": "2026-10-08",
+  "downloads": 16592,
+  "pipeline": "image-text-to-text",
+  "params": 175239203374
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
+  "created": "2026-10-07",
+  "downloads": 81509,
+  "pipeline": "automatic-speech-recognition",
+  "params": 33697781029
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB",
+  "created": "2026-10-07",
+  "downloads": 28257,
+  "pipeline": "image-text-to-text",
+  "params": 24558610440
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-S_all",
+  "created": "2026-10-07",
+  "downloads": 186,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-D_half",
+  "created": "2026-10-07",
+  "downloads": 185,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-D2",
+  "created": "2026-10-07",
+  "downloads": 183,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-S2",
+  "created": "2026-10-07",
+  "downloads": 184,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/Nemotron-3.5-Embed-8B-BF16",
+  "created": "2026-10-07",
+  "downloads": 11871,
+  "pipeline": "visual-document-retrieval",
+  "params": 8381155328
+ },
+ {
+  "id": "nvidia/Nemotron-3.5-Embed-1B-BF16",
+  "created": "2026-10-07",
+  "downloads": 22713,
+  "pipeline": "visual-document-retrieval",
+  "params": 1554710528
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-D",
+  "created": "2026-10-06",
+  "downloads": 180,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sdg-export-R",
+  "created": "2026-10-06",
+  "downloads": 183,
+  "pipeline": "robotics",
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/lidarverse",
+  "created": "2026-10-06",
+  "downloads": 163,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/RFD4-Proteina",
+  "created": "2026-10-06",
+  "downloads": 15458,
+  "pipeline": null,
+  "params": 435622465
+ },
+ {
+  "id": "nvidia/NLD-Uni",
+  "created": "2026-10-05",
+  "downloads": 1037,
+  "pipeline": "any-to-any",
+  "params": 18267552262
+ },
+ {
+  "id": "nvidia/G1-Factory-GR00T-1.7",
+  "created": "2026-10-05",
+  "downloads": 259,
+  "pipeline": "robotics",
+  "params": 3144016000
+ },
+ {
+  "id": "nvidia/Isaac-RLPT-GR00T-1.7-G1-Factory-PushButton-DSRL",
+  "created": "2026-10-05",
+  "downloads": 0,
+  "pipeline": "reinforcement-learning",
+  "params": null
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+  "created": "2026-10-05",
+  "downloads": 148159,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "created": "2026-10-05",
+  "downloads": 29662,
+  "pipeline": "text-generation",
+  "params": 7996156490
+ },
+ {
+  "id": "nvidia/Flora-Rewarder",
+  "created": "2026-10-02",
+  "downloads": 4695,
+  "pipeline": "video-text-to-text",
+  "params": 27781428976
+ },
+ {
+  "id": "nvidia/Flora-TempSeg",
+  "created": "2026-10-01",
+  "downloads": 2900,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Flora-Captioner",
+  "created": "2026-10-01",
+  "downloads": 4763,
+  "pipeline": "image-text-to-text",
+  "params": 27356728560
+ },
+ {
+  "id": "nvidia/PixelUMM",
+  "created": "2026-10-01",
+  "downloads": 0,
+  "pipeline": "any-to-any",
+  "params": null
+ },
+ {
+  "id": "nvidia/PixelDiT2-ImageNet",
+  "created": "2026-10-01",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/cosmos3-nano-libero10-sft-exports",
+  "created": "2026-09-29",
+  "downloads": 0,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "nvidia/strata",
+  "created": "2026-09-22",
+  "downloads": 383,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/video-to-data-GR00T-N1.7-finetuned-tissue-box-lift",
+  "created": "2026-09-21",
+  "downloads": 99,
+  "pipeline": "robotics",
+  "params": 3144016000
+ },
+ {
+  "id": "nvidia/NVIDIA-NemotronLabs-AI-for-Media-Sports-Basketball",
+  "created": "2026-09-17",
+  "downloads": 776,
+  "pipeline": "any-to-any",
+  "params": 33014615872
+ },
+ {
+  "id": "nvidia/physical-plausibility-evaluator",
+  "created": "2026-09-17",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/RT-DETR-Hand-Detector-v1",
+  "created": "2026-09-15",
+  "downloads": 7075,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/c-foundationstereo-s",
+  "created": "2026-09-15",
+  "downloads": 522,
+  "pipeline": "depth-estimation",
+  "params": null
+ },
+ {
+  "id": "nvidia/foundationpose",
+  "created": "2026-09-15",
+  "downloads": 1026,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "nvidia/GR00T-E2E-Reference-Workflow-SIM-H2-N1.7-AppleHandoverPlate-Model",
+  "created": "2026-09-13",
+  "downloads": 48,
+  "pipeline": "robotics",
+  "params": 3144016000
+ },
+ {
+  "id": "nvidia/corrdiff-era5-hrrr",
+  "created": "2026-09-10",
+  "downloads": 153,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/healda-v2",
+  "created": "2026-09-09",
+  "downloads": 161,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/NV-Reason-CT",
+  "created": "2026-09-08",
+  "downloads": 4615,
+  "pipeline": "image-text-to-text",
+  "params": 5322014624
+ },
+ {
+  "id": "nvidia/GR00T-E2E-Reference-Workflow-SIM-G1-N1.7-AppletoPlate-Model",
+  "created": "2026-09-03",
+  "downloads": 16,
+  "pipeline": null,
+  "params": 3144016000
+ },
+ {
+  "id": "nvidia/Nemotron-3.5-Parse",
+  "created": "2026-09-03",
+  "downloads": 25080,
+  "pipeline": "image-text-to-text",
+  "params": 630800504
+ },
+ {
+  "id": "nvidia/alpajudge",
+  "created": "2026-09-02",
+  "downloads": 285,
+  "pipeline": "text-classification",
+  "params": null
+ },
+ {
+  "id": "nvidia/EgoHand-v1",
+  "created": "2026-09-02",
+  "downloads": 71564,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
+  "created": "2026-09-02",
+  "downloads": 811,
+  "pipeline": "text-generation",
+  "params": 560524578816
+ },
+ {
+  "id": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+  "created": "2026-09-02",
+  "downloads": 710,
+  "pipeline": "text-generation",
+  "params": 560524603904
+ },
+ {
+  "id": "nvidia/NVIDIA-NemotronLabs-AI-for-Media-Sports-Tennis",
+  "created": "2026-09-01",
+  "downloads": 2195,
+  "pipeline": "any-to-any",
+  "params": 33015598912
+ },
+ {
+  "id": "nvidia/Nemotron-3-Diarization",
+  "created": "2026-09-01",
+  "downloads": 219036,
+  "pipeline": "voice-activity-detection",
+  "params": 99226504
+ },
+ {
+  "id": "nvidia/NVIDIA-NemotronLabs-RE-USE-laughter",
+  "created": "2026-09-01",
+  "downloads": 2565,
+  "pipeline": "audio-to-audio",
+  "params": 9607747
+ },
+ {
+  "id": "nvidia/Kumo-Tabular",
+  "created": "2026-09-01",
+  "downloads": 212044,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Cosmos3-Nano-Sim-Transfer",
+  "created": "2026-08-31",
+  "downloads": 4442,
+  "pipeline": null,
+  "params": 15156222144
+ },
+ {
+  "id": "nvidia/Cosmos3-Nano-Sim-Auto",
+  "created": "2026-08-31",
+  "downloads": 6949,
+  "pipeline": null,
+  "params": 15157324096
+ },
+ {
+  "id": "nvidia/Cosmos3-Nano-Transfer-Auto",
+  "created": "2026-08-31",
+  "downloads": 3802,
+  "pipeline": null,
+  "params": 15157324096
+ },
+ {
+  "id": "nvidia/FastGen-AYF",
+  "created": "2026-08-27",
+  "downloads": 0,
+  "pipeline": "text-to-image",
+  "params": null
+ },
+ {
+  "id": "nvidia/nemotron-labs-unified-asr-0.6b",
+  "created": "2026-08-21",
+  "downloads": 3080,
+  "pipeline": "automatic-speech-recognition",
+  "params": null
+ },
+ {
+  "id": "nvidia/Cosmos3-Nano-Sim-Bimanual",
+  "created": "2026-08-20",
+  "downloads": 2884,
+  "pipeline": null,
+  "params": 15173136576
+ },
+ {
+  "id": "nvidia/so101-reach",
+  "created": "2026-08-20",
+  "downloads": 0,
+  "pipeline": "reinforcement-learning",
+  "params": null
+ },
+ {
+  "id": "nvidia/cari4d_commercial",
+  "created": "2026-08-14",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/interp-dit-crps-era5",
+  "created": "2026-08-14",
+  "downloads": 248,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
+  "created": "2026-08-14",
+  "downloads": 557,
+  "pipeline": "text-generation",
+  "params": 560524578816
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
+  "created": "2026-08-14",
+  "downloads": 635,
+  "pipeline": "text-generation",
+  "params": 560524578816
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
+  "created": "2026-08-14",
+  "downloads": 519,
+  "pipeline": "text-generation",
+  "params": 560524578816
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
+  "created": "2026-08-14",
+  "downloads": 704,
+  "pipeline": "text-generation",
+  "params": 560524578816
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
+  "created": "2026-08-14",
+  "downloads": 538,
+  "pipeline": "text-generation",
+  "params": 560524578816
+ },
+ {
+  "id": "nvidia/cmd",
+  "created": "2026-08-13",
+  "downloads": 134,
+  "pipeline": "image-to-video",
+  "params": null
+ },
+ {
+  "id": "nvidia/agile_wbc_unitree_h2",
+  "created": "2026-08-12",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Alpamayo2-Edge",
+  "created": "2026-08-12",
+  "downloads": 1732,
+  "pipeline": "robotics",
+  "params": 2651163378
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16",
+  "created": "2026-08-05",
+  "downloads": 5608,
+  "pipeline": "text-generation",
+  "params": 31577937344
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "created": "2026-08-01",
+  "downloads": 963117,
+  "pipeline": "text-generation",
+  "params": 31577937344
+ },
+ {
+  "id": "nvidia/NVIDIA-NemotronLabs-VoiceChat-11B",
+  "created": "2026-07-29",
+  "downloads": 3789,
+  "pipeline": null,
+  "params": 11095371252
+ },
+ {
+  "id": "nvidia/NVIDIA-NemotronLabs-RE-USE",
+  "created": "2026-07-22",
+  "downloads": 45533,
+  "pipeline": "audio-to-audio",
+  "params": 9607747
+ },
+ {
+  "id": "nvidia/Cosmos-H-Dreams",
+  "created": "2026-07-21",
+  "downloads": 681,
+  "pipeline": "image-to-video",
+  "params": null
+ },
+ {
+  "id": "nvidia/Kumo-Relational",
+  "created": "2026-07-20",
+  "downloads": 16251,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/NV-JEPA-DNA-HyenaDNA",
+  "created": "2026-07-16",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/NV-JEPA-DNA-NTv3",
+  "created": "2026-07-16",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/NV-JEPA-DNA-DNABERT2",
+  "created": "2026-07-16",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Ising-Decoder-ColorCode-1-Fast",
+  "created": "2026-07-15",
+  "downloads": 9,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/StormScope-NSRDB",
+  "created": "2026-07-15",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Nemotron-3-Embed-8B-BF16",
+  "created": "2026-07-14",
+  "downloads": 109414,
+  "pipeline": "sentence-similarity",
+  "params": 7952683008
+ },
+ {
+  "id": "nvidia/Nemotron-3-Embed-1B-BF16",
+  "created": "2026-07-14",
+  "downloads": 321094,
+  "pipeline": "sentence-similarity",
+  "params": 1140918272
+ },
+ {
+  "id": "nvidia/Ising-Calibration-1.5-31B-BF16",
+  "created": "2026-07-13",
+  "downloads": 1993,
+  "pipeline": "image-text-to-text",
+  "params": 31273088876
+ },
+ {
+  "id": "nvidia/stormscope-meteosat",
+  "created": "2026-07-09",
+  "downloads": 251,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Cosmos3-Edge-Policy-DROID",
+  "created": "2026-07-09",
+  "downloads": 3282,
+  "pipeline": null,
+  "params": 3859003312
+ },
+ {
+  "id": "nvidia/nvDock",
+  "created": "2026-07-08",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/CWIP-1.0",
+  "created": "2026-07-07",
+  "downloads": 3,
+  "pipeline": null,
+  "params": 298615653
+ },
+ {
+  "id": "nvidia/Cosmos3-Super-Image2Video-4Step",
+  "created": "2026-07-07",
+  "downloads": 652,
+  "pipeline": "image-to-video",
+  "params": 63997928640
+ },
+ {
+  "id": "nvidia/Cosmos3-Super-Text2Image-4Step",
+  "created": "2026-07-07",
+  "downloads": 656,
+  "pipeline": "text-to-image",
+  "params": 63998594304
+ },
+ {
+  "id": "nvidia/corrdiff-cosmo-era5",
+  "created": "2026-07-06",
+  "downloads": 253,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/stormcast-conus",
+  "created": "2026-07-06",
+  "downloads": 300,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Nemotron-Labs-Audex-2B",
+  "created": "2026-07-06",
+  "downloads": 792,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "nvidia/Nemotron-Labs-Audex-30B-A3B",
+  "created": "2026-07-06",
+  "downloads": 517,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "nvidia/gr00t17-lerobot-libero_goal-640",
+  "created": "2026-07-05",
+  "downloads": 450,
+  "pipeline": "robotics",
+  "params": 3144016000
+ },
+ {
+  "id": "nvidia/gr00t17-lerobot-libero_10-640",
+  "created": "2026-07-05",
+  "downloads": 1328,
+  "pipeline": "robotics",
+  "params": 3144016000
+ },
+ {
+  "id": "nvidia/gr00t17-lerobot-libero_object-640",
+  "created": "2026-07-05",
+  "downloads": 796,
+  "pipeline": "robotics",
+  "params": 3144016000
+ },
+ {
+  "id": "nvidia/gr00t17-lerobot-libero_spatial-640",
+  "created": "2026-07-05",
+  "downloads": 1324,
+  "pipeline": "robotics",
+  "params": 3144016000
+ },
+ {
+  "id": "nvidia/SDLLM-EsoLM-1.7B-Base",
+  "created": "2026-07-02",
+  "downloads": 32,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "nvidia/SDLLM-Duo-1.7B-Base",
+  "created": "2026-07-02",
+  "downloads": 23,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "nvidia/SDLLM-AR-1.7B-Base",
+  "created": "2026-07-02",
+  "downloads": 33,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "nvidia/SDLLM-MDLM-1.7B-Base",
+  "created": "2026-07-02",
+  "downloads": 48,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "nvidia/ARDY-G1-RP-25FPS-Horizon8",
+  "created": "2026-07-02",
+  "downloads": 122,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/ARDY-Core-RP-20FPS-Horizon8",
+  "created": "2026-07-02",
+  "downloads": 276,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/Cosmos3-Edge",
+  "created": "2026-07-01",
+  "downloads": 51917,
+  "pipeline": null,
+  "params": 3858999728
+ },
+ {
+  "id": "nvidia/Qwen-Image-Flash",
+  "created": "2026-07-01",
+  "downloads": 321,
+  "pipeline": "text-to-image",
+  "params": 20430401088
+ },
+ {
+  "id": "nvidia/ARDY-SOMA-RP-30FPS-Horizon60",
+  "created": "2026-07-01",
+  "downloads": 1654,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/ARDY-G1-RP-25FPS-Horizon52",
+  "created": "2026-07-01",
+  "downloads": 271,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/ARDY-Core-RP-20FPS-Horizon40",
+  "created": "2026-07-01",
+  "downloads": 1254,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Parse-2.0",
+  "created": "2026-06-30",
+  "downloads": 288078,
+  "pipeline": "image-text-to-text",
+  "params": 903049225
+ },
+ {
+  "id": "nvidia/c-fast-foundationstereo",
+  "created": "2026-06-26",
+  "downloads": 0,
+  "pipeline": "depth-estimation",
+  "params": null
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16",
+  "created": "2026-06-24",
+  "downloads": 2140,
+  "pipeline": "text-generation",
+  "params": 75353324544
+ },
+ {
+  "id": "nvidia/dlesym-v0-isccp-era5",
+  "created": "2026-06-16",
+  "downloads": 142,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/NV-KERMT-70M-v2",
+  "created": "2026-06-08",
+  "downloads": 0,
+  "pipeline": "graph-ml",
+  "params": null
+ },
+ {
+  "id": "nvidia/Privasis-Cleaner-0.6B",
+  "created": "2026-06-08",
+  "downloads": 682,
+  "pipeline": "text-generation",
+  "params": 596049920
+ },
+ {
+  "id": "nvidia/Privasis-Cleaner-4B",
+  "created": "2026-06-08",
+  "downloads": 2013,
+  "pipeline": "text-generation",
+  "params": 4022468096
+ },
+ {
+  "id": "nvidia/ArtiFixer",
+  "created": "2026-06-04",
+  "downloads": 442,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "nvidia/NL-Diffusion-Image",
+  "created": "2026-06-03",
+  "downloads": 198,
+  "pipeline": null,
+  "params": 11911248387
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "created": "2026-06-03",
+  "downloads": 1017410,
+  "pipeline": "text-generation",
+  "params": 560524578816
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
+  "created": "2026-06-03",
+  "downloads": 2917,
+  "pipeline": "text-generation",
+  "params": 560524578816
+ },
+ {
+  "id": "nvidia/4D-RGPT-8B",
+  "created": "2026-06-02",
+  "downloads": 153,
+  "pipeline": "video-text-to-text",
+  "params": null
+ },
+ {
+  "id": "nvidia/GR00T-H-N1.7",
+  "created": "2026-05-30",
+  "downloads": 574,
+  "pipeline": null,
+  "params": 2942584448
+ },
+ {
+  "id": "nvidia/dvlt",
+  "created": "2026-05-29",
+  "downloads": 561,
+  "pipeline": "image-to-3d",
+  "params": 117081731
+ },
+ {
+  "id": "ibm-granite/granite-switch-4.1-8b",
+  "created": "2026-10-14",
+  "downloads": 6160,
+  "pipeline": "text-generation",
+  "params": 8776400896
+ },
+ {
+  "id": "ibm-granite/granite-switch-4.1-30b",
+  "created": "2026-10-14",
+  "downloads": 4991,
+  "pipeline": "text-generation",
+  "params": 29989814272
+ },
+ {
+  "id": "ibm-granite/granite-speech-5.0-2b",
+  "created": "2026-10-07",
+  "downloads": 10692,
+  "pipeline": "automatic-speech-recognition",
+  "params": 2313207132
+ },
+ {
+  "id": "ibm-granite/ensemble-forecasting-with-ibm-granite-time-series",
+  "created": "2026-10-01",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "ibm-granite/granite-4.1-8b-llmon-preview",
+  "created": "2026-10-01",
+  "downloads": 428,
+  "pipeline": "text-generation",
+  "params": 8791592960
+ },
+ {
+  "id": "ibm-granite/granite-4.1-3b-llmon-preview",
+  "created": "2026-10-01",
+  "downloads": 2243,
+  "pipeline": "text-generation",
+  "params": 3659737600
+ },
+ {
+  "id": "ibm-granite/granite-timeseries-ensemble-r1",
+  "created": "2026-09-23",
+  "downloads": 336,
+  "pipeline": "time-series-forecasting",
+  "params": null
+ },
+ {
+  "id": "ibm-granite/granite-speech-5.0-470m-turboctc-nc",
+  "created": "2026-08-17",
+  "downloads": 141085,
+  "pipeline": "automatic-speech-recognition",
+  "params": 472993792
+ },
+ {
+  "id": "ibm-granite/granite-4.2-8b-mxfp4",
+  "created": "2026-08-13",
+  "downloads": 2205,
+  "pipeline": "text-generation",
+  "params": 5056040960
+ },
+ {
+  "id": "ibm-granite/granite-4.2-3b-mxfp4",
+  "created": "2026-08-13",
+  "downloads": 2306,
+  "pipeline": "text-generation",
+  "params": 3659737600
+ },
+ {
+  "id": "ibm-granite/granite-4.2-30b-mxfp4",
+  "created": "2026-08-13",
+  "downloads": 1965,
+  "pipeline": "text-generation",
+  "params": 15938883584
+ },
+ {
+  "id": "ibm-granite/granite-4.2-30b",
+  "created": "2026-08-07",
+  "downloads": 37444,
+  "pipeline": "text-generation",
+  "params": 29276770304
+ },
+ {
+  "id": "ibm-granite/granite-4.2-8b",
+  "created": "2026-08-07",
+  "downloads": 59920,
+  "pipeline": "text-generation",
+  "params": 8791592960
+ },
+ {
+  "id": "ibm-granite/granite-4.2-3b",
+  "created": "2026-08-07",
+  "downloads": 40778,
+  "pipeline": "text-generation",
+  "params": 3659737600
+ },
+ {
+  "id": "ibm-granite/granite-timeseries-patchtst-fm-r2",
+  "created": "2026-08-07",
+  "downloads": 58655,
+  "pipeline": "time-series-forecasting",
+  "params": 384600208
+ },
+ {
+  "id": "ibm-granite/granite-speech-5.0-470m-turboctc",
+  "created": "2026-08-04",
+  "downloads": 52925,
+  "pipeline": "automatic-speech-recognition",
+  "params": 472993792
+ },
+ {
+  "id": "ibm-granite/granite-swash-3b-a600m",
+  "created": "2026-07-01",
+  "downloads": 2993,
+  "pipeline": "text-generation",
+  "params": 3020382000
+ },
+ {
+  "id": "ibm-granite/granite-swash-2b",
+  "created": "2026-07-01",
+  "downloads": 2830,
+  "pipeline": "text-generation",
+  "params": 2144463840
+ },
+ {
+  "id": "ibm-granite/granite-timeseries-ttm-r3",
+  "created": "2026-05-21",
+  "downloads": 1885331,
+  "pipeline": "time-series-forecasting",
+  "params": 1414514
+ },
+ {
+  "id": "ibm-granite/granite-switch-4.1-30b-preview",
+  "created": "2026-05-01",
+  "downloads": 659,
+  "pipeline": "text-generation",
+  "params": 32238002176
+ },
+ {
+  "id": "ibm-granite/granite-switch-4.1-8b-preview",
+  "created": "2026-05-01",
+  "downloads": 669,
+  "pipeline": "text-generation",
+  "params": 9568116736
+ },
+ {
+  "id": "ibm-granite/granite-switch-4.1-3b-preview",
+  "created": "2026-05-01",
+  "downloads": 1759,
+  "pipeline": "text-generation",
+  "params": 4149980160
+ },
+ {
+  "id": "ibm-granite/granite-guardian-4.1-8b",
+  "created": "2026-04-16",
+  "downloads": 9248,
+  "pipeline": "text-generation",
+  "params": 8380551168
+ },
+ {
+  "id": "ibm-granite/granite-vision-4.1-4b",
+  "created": "2026-04-16",
+  "downloads": 84474,
+  "pipeline": "image-text-to-text",
+  "params": 3997203904
+ },
+ {
+  "id": "ibm-granite/granite-speech-4.1-2b-plus",
+  "created": "2026-04-16",
+  "downloads": 18450,
+  "pipeline": "automatic-speech-recognition",
+  "params": 2111812956
+ },
+ {
+  "id": "ibm-granite/granite-speech-4.1-2b",
+  "created": "2026-04-16",
+  "downloads": 25659,
+  "pipeline": "automatic-speech-recognition",
+  "params": 2313207132
+ },
+ {
+  "id": "ibm-granite/granite-4.1-30b-base",
+  "created": "2026-04-06",
+  "downloads": 1242,
+  "pipeline": "text-generation",
+  "params": 28865728512
+ },
+ {
+  "id": "ibm-granite/granite-4.1-30b",
+  "created": "2026-04-06",
+  "downloads": 11892,
+  "pipeline": "text-generation",
+  "params": 28865728512
+ },
+ {
+  "id": "ibm-granite/granite-4.1-8b-base",
+  "created": "2026-04-06",
+  "downloads": 14418,
+  "pipeline": "text-generation",
+  "params": 8380551168
+ },
+ {
+  "id": "ibm-granite/granite-4.1-8b",
+  "created": "2026-04-06",
+  "downloads": 82210,
+  "pipeline": "text-generation",
+  "params": 8791592960
+ },
+ {
+  "id": "ibm-granite/granite-4.1-3b-base",
+  "created": "2026-04-06",
+  "downloads": 10563,
+  "pipeline": "text-generation",
+  "params": 3402836480
+ },
+ {
+  "id": "ibm-granite/granite-4.1-3b",
+  "created": "2026-04-06",
+  "downloads": 436018,
+  "pipeline": "text-generation",
+  "params": 3402836480
+ },
+ {
+  "id": "ibm-granite/granite-guardian-4.0-3b-toxicity-ja",
+  "created": "2026-04-06",
+  "downloads": 479,
+  "pipeline": "text-generation",
+  "params": 3402836480
+ },
+ {
+  "id": "ibm-granite/granite-timeseries-patchtst-fm-r1",
+  "created": "2026-03-11",
+  "downloads": 11849,
+  "pipeline": "time-series-forecasting",
+  "params": 257895552
+ },
+ {
+  "id": "ibm-granite/granite-speech-4.1-2b-nar",
+  "created": "2026-03-10",
+  "downloads": 132893,
+  "pipeline": "feature-extraction",
+  "params": 2254635356
+ },
+ {
+  "id": "ibm-granite/granite-4.0-3b-vision",
+  "created": "2026-03-03",
+  "downloads": 3056,
+  "pipeline": "image-text-to-text",
+  "params": 3997206464
+ },
+ {
+  "id": "ibm-granite/granite-4.0-1b-speech",
+  "created": "2026-02-27",
+  "downloads": 220510,
+  "pipeline": "automatic-speech-recognition",
+  "params": 2313207132
+ },
+ {
+  "id": "ibm-granite/granitelib-rag-gpt-oss-r1.0",
+  "created": "2026-02-12",
+  "downloads": 66,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "ibm-granite/granitelib-guardian-r1.0",
+  "created": "2026-02-02",
+  "downloads": 2028,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "ibm-granite/granite-vision-3.3-2b-chart2csv-preview",
+  "created": "2026-01-29",
+  "downloads": 2679,
+  "pipeline": "image-text-to-text",
+  "params": 2975396928
+ },
+ {
+  "id": "ibm-granite/granite-3.3-8b-math-prm-v2",
+  "created": "2026-01-07",
+  "downloads": 2188,
+  "pipeline": "text-generation",
+  "params": 8170864640
+ },
+ {
+  "id": "openai/privacy-filter",
+  "created": "2026-04-17",
+  "downloads": 98211,
+  "pipeline": "token-classification",
+  "params": 1399486865
+ },
+ {
+  "id": "allenai/Molmo2-4B-tb",
+  "created": "2026-11-05",
+  "downloads": 85,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "allenai/maniflow-tb",
+  "created": "2026-11-05",
+  "downloads": 94,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "allenai/OlmoEarth-v1_2-FT-LFMC-Base",
+  "created": "2026-10-23",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/HiRO-ACEv2",
+  "created": "2026-10-12",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/AstaBrief_8B_SFT",
+  "created": "2026-09-10",
+  "downloads": 1318,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/OlmoEarth-v1_3-Base",
+  "created": "2026-09-04",
+  "downloads": 3725,
+  "pipeline": "image-feature-extraction",
+  "params": null
+ },
+ {
+  "id": "allenai/ACE2S-SHiELD-plus-supplemental-checkpoints",
+  "created": "2026-09-01",
+  "downloads": 94,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/Llama-3-Blama-8B",
+  "created": "2026-08-26",
+  "downloads": 861,
+  "pipeline": "text-generation",
+  "params": 8250736800
+ },
+ {
+  "id": "allenai/Llama-3-Blama-8B-Stage1",
+  "created": "2026-08-26",
+  "downloads": 580,
+  "pipeline": "text-generation",
+  "params": 8250736800
+ },
+ {
+  "id": "allenai/Bwen-8B",
+  "created": "2026-08-26",
+  "downloads": 751,
+  "pipeline": "text-generation",
+  "params": 8313169056
+ },
+ {
+  "id": "allenai/Bwen-8B-Stage1",
+  "created": "2026-08-26",
+  "downloads": 547,
+  "pipeline": "text-generation",
+  "params": 8313169056
+ },
+ {
+  "id": "allenai/Bolmo-1B-Stage1",
+  "created": "2026-08-26",
+  "downloads": 5482,
+  "pipeline": "text-generation",
+  "params": 1468911776
+ },
+ {
+  "id": "allenai/Bolmo-7B-Stage1",
+  "created": "2026-08-26",
+  "downloads": 512,
+  "pipeline": "text-generation",
+  "params": 7633084576
+ },
+ {
+  "id": "allenai/SamudrACE-E3SMv3",
+  "created": "2026-08-04",
+  "downloads": 52,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/OlmoEarth-v1_2-Base",
+  "created": "2026-06-25",
+  "downloads": 20429,
+  "pipeline": "image-feature-extraction",
+  "params": null
+ },
+ {
+  "id": "allenai/OlmoEarth-v1_2-Small",
+  "created": "2026-06-25",
+  "downloads": 5054,
+  "pipeline": "image-feature-extraction",
+  "params": null
+ },
+ {
+  "id": "allenai/OlmoEarth-v1_2-Tiny",
+  "created": "2026-06-25",
+  "downloads": 2719,
+  "pipeline": "image-feature-extraction",
+  "params": null
+ },
+ {
+  "id": "allenai/OlmoEarth-v1_2-Nano",
+  "created": "2026-06-24",
+  "downloads": 4362,
+  "pipeline": "image-feature-extraction",
+  "params": null
+ },
+ {
+  "id": "allenai/tmax-27b",
+  "created": "2026-06-21",
+  "downloads": 1637,
+  "pipeline": null,
+  "params": 2645504
+ },
+ {
+  "id": "allenai/qwen35-9b-openthoughts",
+  "created": "2026-06-19",
+  "downloads": 173,
+  "pipeline": null,
+  "params": 8953803264
+ },
+ {
+  "id": "allenai/qwen35-9b-terminaltraj",
+  "created": "2026-06-19",
+  "downloads": 164,
+  "pipeline": null,
+  "params": 8953803264
+ },
+ {
+  "id": "allenai/qwen35-9b-cli-gym",
+  "created": "2026-06-19",
+  "downloads": 170,
+  "pipeline": null,
+  "params": 8953803264
+ },
+ {
+  "id": "allenai/qwen35-9b-swesmith",
+  "created": "2026-06-19",
+  "downloads": 169,
+  "pipeline": null,
+  "params": 8953803264
+ },
+ {
+  "id": "allenai/qwen35-9b-termigen",
+  "created": "2026-06-19",
+  "downloads": 161,
+  "pipeline": null,
+  "params": 8953803264
+ },
+ {
+  "id": "allenai/qwen35-9b-endless",
+  "created": "2026-06-18",
+  "downloads": 165,
+  "pipeline": null,
+  "params": 8953803264
+ },
+ {
+  "id": "allenai/tmax-sft-8b",
+  "created": "2026-06-17",
+  "downloads": 1923,
+  "pipeline": null,
+  "params": 8190735360
+ },
+ {
+  "id": "allenai/tmax-8b",
+  "created": "2026-06-17",
+  "downloads": 2028,
+  "pipeline": null,
+  "params": 8190735360
+ },
+ {
+  "id": "allenai/tmax-4b",
+  "created": "2026-06-17",
+  "downloads": 1625,
+  "pipeline": null,
+  "params": 4205751296
+ },
+ {
+  "id": "allenai/tmax-2b",
+  "created": "2026-06-17",
+  "downloads": 1413,
+  "pipeline": null,
+  "params": 1881825088
+ },
+ {
+  "id": "allenai/tmax-9b",
+  "created": "2026-06-17",
+  "downloads": 2018,
+  "pipeline": null,
+  "params": 8953803264
+ },
+ {
+  "id": "allenai/ACE2-SHiELD",
+  "created": "2026-06-15",
+  "downloads": 18,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoMotion-4B-H3-F30",
+  "created": "2026-06-15",
+  "downloads": 1964,
+  "pipeline": "image-text-to-text",
+  "params": 4850869200
+ },
+ {
+  "id": "allenai/MolmoMotion-4B-H1-F32",
+  "created": "2026-06-15",
+  "downloads": 575,
+  "pipeline": "image-text-to-text",
+  "params": 4850869200
+ },
+ {
+  "id": "allenai/ACE2S-SHiELD-plus",
+  "created": "2026-05-21",
+  "downloads": 91,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/OlmoEarth-v1_1-Base",
+  "created": "2026-05-14",
+  "downloads": 363,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/OlmoEarth-v1_1-Tiny",
+  "created": "2026-05-14",
+  "downloads": 332,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/OlmoEarth-v1_1-Nano",
+  "created": "2026-05-14",
+  "downloads": 2579,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoAct2-LIBERO-LeRobot",
+  "created": "2026-05-14",
+  "downloads": 6590,
+  "pipeline": "robotics",
+  "params": 5442196272
+ },
+ {
+  "id": "allenai/EMO",
+  "created": "2026-05-08",
+  "downloads": 542,
+  "pipeline": "text-generation",
+  "params": 13568641024
+ },
+ {
+  "id": "allenai/MolmoAct2-FAST-Tokenizer",
+  "created": "2026-05-05",
+  "downloads": 0,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "allenai/StdMoE_1b14b_1T_EmoAnnealed",
+  "created": "2026-05-05",
+  "downloads": 389,
+  "pipeline": "text-generation",
+  "params": 13568641024
+ },
+ {
+  "id": "allenai/StdMoE_1b14b_1T_Preanneal",
+  "created": "2026-05-05",
+  "downloads": 385,
+  "pipeline": "text-generation",
+  "params": 13568641024
+ },
+ {
+  "id": "allenai/MolmoAct2-Think-LIBERO",
+  "created": "2026-05-04",
+  "downloads": 309,
+  "pipeline": "robotics",
+  "params": 5447476052
+ },
+ {
+  "id": "allenai/MolmoAct2-LIBERO",
+  "created": "2026-05-04",
+  "downloads": 9861,
+  "pipeline": "robotics",
+  "params": 5442196272
+ },
+ {
+  "id": "allenai/MolmoAct2-SO100_101",
+  "created": "2026-05-04",
+  "downloads": 12096,
+  "pipeline": "robotics",
+  "params": 5442196272
+ },
+ {
+  "id": "allenai/MolmoAct2-BimanualYAM",
+  "created": "2026-05-04",
+  "downloads": 1343,
+  "pipeline": "robotics",
+  "params": 5442196272
+ },
+ {
+  "id": "allenai/MolmoAct2-DROID",
+  "created": "2026-05-04",
+  "downloads": 1856,
+  "pipeline": "robotics",
+  "params": 5442196272
+ },
+ {
+  "id": "allenai/MolmoAct2-Pretrain",
+  "created": "2026-05-04",
+  "downloads": 701,
+  "pipeline": "robotics",
+  "params": 4864631760
+ },
+ {
+  "id": "allenai/MolmoAct2-Think",
+  "created": "2026-05-04",
+  "downloads": 885,
+  "pipeline": "robotics",
+  "params": 5447439152
+ },
+ {
+  "id": "allenai/MolmoAct2",
+  "created": "2026-05-04",
+  "downloads": 2102,
+  "pipeline": "robotics",
+  "params": 5442196272
+ },
+ {
+  "id": "allenai/Molmo2-ER",
+  "created": "2026-05-04",
+  "downloads": 3176,
+  "pipeline": "image-text-to-text",
+  "params": 4850869200
+ },
+ {
+  "id": "allenai/H_pre_LQK_32kv_8k_11k_SWA",
+  "created": "2026-04-30",
+  "downloads": 143,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/G_pre_8kv_8k_14k_SWA",
+  "created": "2026-04-30",
+  "downloads": 27,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/StdMoE_1b14b_1T",
+  "created": "2026-04-29",
+  "downloads": 468,
+  "pipeline": "text-generation",
+  "params": 13568641024
+ },
+ {
+  "id": "allenai/StdMoE_1b14b_130B",
+  "created": "2026-04-29",
+  "downloads": 354,
+  "pipeline": "text-generation",
+  "params": 13568641024
+ },
+ {
+  "id": "allenai/StdMoE_1b4b_130B",
+  "created": "2026-04-29",
+  "downloads": 388,
+  "pipeline": "text-generation",
+  "params": 3901818880
+ },
+ {
+  "id": "allenai/Emo_1b14b_130B",
+  "created": "2026-04-29",
+  "downloads": 347,
+  "pipeline": "text-generation",
+  "params": 13568641024
+ },
+ {
+  "id": "allenai/Emo_1b14b_1T",
+  "created": "2026-04-29",
+  "downloads": 736,
+  "pipeline": "text-generation",
+  "params": 13568641024
+ },
+ {
+  "id": "allenai/Dense_1b_130B",
+  "created": "2026-04-29",
+  "downloads": 389,
+  "pipeline": "text-generation",
+  "params": 1484851200
+ },
+ {
+  "id": "allenai/H_post_LQK_8kv_4k_11k_SWA",
+  "created": "2026-04-29",
+  "downloads": 21,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/B_post_LQK_32kv_4k_11k",
+  "created": "2026-04-29",
+  "downloads": 19,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/G_post_LQK_8kv_4k_14k_SWA",
+  "created": "2026-04-29",
+  "downloads": 16,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/K_post_HQK_8kv_12k",
+  "created": "2026-04-29",
+  "downloads": 28,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/H_post_LQK_32kv_8k_11k_SWA",
+  "created": "2026-04-29",
+  "downloads": 56,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/F_pre_8kv_8k_14k_SWA",
+  "created": "2026-04-29",
+  "downloads": 26,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/H_post_HQK_32kv_8k_11k_SWA",
+  "created": "2026-04-29",
+  "downloads": 48,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/C_post_LQK_8kv_8k_13k_SWA",
+  "created": "2026-04-29",
+  "downloads": 33,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/J_pre_16kv_8k_14k",
+  "created": "2026-04-29",
+  "downloads": 32,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/I_pre_32kv_8k_12k",
+  "created": "2026-04-28",
+  "downloads": 30,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/G_pre_8kv_8k_14k",
+  "created": "2026-04-28",
+  "downloads": 73,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/G_post_LQK_8kv_8k_14k",
+  "created": "2026-04-28",
+  "downloads": 38,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/G_pre_LQK_8kv_8k_14k",
+  "created": "2026-04-28",
+  "downloads": 60,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/H_pre_32kv_8k_11k_SWA",
+  "created": "2026-04-28",
+  "downloads": 149,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/G_pre_4kv_8k_14k",
+  "created": "2026-04-28",
+  "downloads": 25,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/G_pre_8kv_4k_14k",
+  "created": "2026-04-28",
+  "downloads": 20,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/H_post_LQK_32kv_8k_11k",
+  "created": "2026-04-28",
+  "downloads": 33,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/H_post_LQK_32kv_4k_11k",
+  "created": "2026-04-28",
+  "downloads": 17,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/B_post_LQK_32kv_4k_11k_SWA",
+  "created": "2026-04-28",
+  "downloads": 20,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/D_post_LQK_8kv_8k_13k_SWA",
+  "created": "2026-04-28",
+  "downloads": 23,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/BAR-2x7B-Tool-Use",
+  "created": "2026-04-19",
+  "downloads": 270,
+  "pipeline": "text-generation",
+  "params": 11626795008
+ },
+ {
+  "id": "allenai/BAR-2x7B-Code",
+  "created": "2026-04-19",
+  "downloads": 1905,
+  "pipeline": "text-generation",
+  "params": 11626795008
+ },
+ {
+  "id": "allenai/BAR-2x7B-Code-SFT",
+  "created": "2026-04-19",
+  "downloads": 260,
+  "pipeline": "text-generation",
+  "params": 11626795008
+ },
+ {
+  "id": "allenai/BAR-2x7B-Safety",
+  "created": "2026-04-19",
+  "downloads": 256,
+  "pipeline": "text-generation",
+  "params": 11626795008
+ },
+ {
+  "id": "allenai/BAR-2x7B-Math-SFT",
+  "created": "2026-04-19",
+  "downloads": 303,
+  "pipeline": "text-generation",
+  "params": 11626795008
+ },
+ {
+  "id": "allenai/BAR-2x7B-Base",
+  "created": "2026-04-19",
+  "downloads": 1792,
+  "pipeline": "text-generation",
+  "params": 11626795008
+ },
+ {
+  "id": "allenai/BAR-2x7B-Math",
+  "created": "2026-04-19",
+  "downloads": 1924,
+  "pipeline": "text-generation",
+  "params": 11626795008
+ },
+ {
+  "id": "allenai/BAR-5x7B",
+  "created": "2026-04-19",
+  "downloads": 341,
+  "pipeline": "text-generation",
+  "params": 24612753408
+ },
+ {
+  "id": "allenai/BAR-7B",
+  "created": "2026-04-19",
+  "downloads": 2437,
+  "pipeline": "text-generation",
+  "params": 7298011136
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-llama3-8b-intent-explicit",
+  "created": "2026-04-13",
+  "downloads": 1874,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-llama3-8b-intent-implicit",
+  "created": "2026-04-13",
+  "downloads": 172,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-llama3-8b-baseline",
+  "created": "2026-04-13",
+  "downloads": 160,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-llama3-8b-multiview",
+  "created": "2026-04-13",
+  "downloads": 161,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-qwen3-8b-intent-implicit",
+  "created": "2026-04-13",
+  "downloads": 151,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-qwen3-8b-baseline",
+  "created": "2026-04-13",
+  "downloads": 154,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-qwen3-8b-multiview",
+  "created": "2026-04-13",
+  "downloads": 155,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-qwen3-8b-intent-explicit",
+  "created": "2026-04-13",
+  "downloads": 153,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-qwen3-4b-intent-implicit",
+  "created": "2026-04-13",
+  "downloads": 155,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-qwen3-4b-baseline",
+  "created": "2026-04-13",
+  "downloads": 160,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-qwen3-4b-intent-explicit",
+  "created": "2026-04-13",
+  "downloads": 1848,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/intent-aware-lfqa-qwen3-4b-multiview",
+  "created": "2026-04-13",
+  "downloads": 146,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoWeb-Pretrained-8B",
+  "created": "2026-04-09",
+  "downloads": 8,
+  "pipeline": "image-text-to-text",
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoWeb-Pretrained-4B",
+  "created": "2026-04-08",
+  "downloads": 9,
+  "pipeline": "image-text-to-text",
+  "params": null
+ },
+ {
+  "id": "allenai/WildDet3D-iPhone",
+  "created": "2026-04-07",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/WildDet3D",
+  "created": "2026-04-04",
+  "downloads": 12796,
+  "pipeline": "object-detection",
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoBot-RBY1Multitask",
+  "created": "2026-03-24",
+  "downloads": 49,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoBot-RBY1DoorOpening",
+  "created": "2026-03-24",
+  "downloads": 21,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoWeb-8B-Native",
+  "created": "2026-03-24",
+  "downloads": 27,
+  "pipeline": "image-text-to-text",
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoWeb-4B-Native",
+  "created": "2026-03-23",
+  "downloads": 18,
+  "pipeline": "image-text-to-text",
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoBot-SPOC-DROID",
+  "created": "2026-03-23",
+  "downloads": 0,
+  "pipeline": null,
+  "params": 108785153
+ },
+ {
+  "id": "allenai/MolmoBot-SPOC-RBY1Rigid",
+  "created": "2026-03-23",
+  "downloads": 0,
+  "pipeline": null,
+  "params": 108881921
+ },
+ {
+  "id": "allenai/MolmoBot-SPOC-RBY1Articulated",
+  "created": "2026-03-23",
+  "downloads": 0,
+  "pipeline": null,
+  "params": 108911121
+ },
+ {
+  "id": "allenai/MolmoWeb-8B",
+  "created": "2026-03-20",
+  "downloads": 858,
+  "pipeline": "image-text-to-text",
+  "params": 8661703120
+ },
+ {
+  "id": "allenai/MolmoWeb-4B",
+  "created": "2026-03-20",
+  "downloads": 2097,
+  "pipeline": "image-text-to-text",
+  "params": 4850869200
+ },
+ {
+  "id": "allenai/MolmoBot-Ablation-MF3-DROID",
+  "created": "2026-03-20",
+  "downloads": 12,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoBot-Img-DROID",
+  "created": "2026-03-20",
+  "downloads": 102,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoBot-DROID",
+  "created": "2026-03-19",
+  "downloads": 360,
+  "pipeline": "robotics",
+  "params": null
+ },
+ {
+  "id": "allenai/MolmoPoint-Vid-4B",
+  "created": "2026-03-17",
+  "downloads": 265,
+  "pipeline": "video-text-to-text",
+  "params": 4862237657
+ },
+ {
+  "id": "allenai/MolmoPoint-GUI-8B",
+  "created": "2026-03-17",
+  "downloads": 416,
+  "pipeline": "image-text-to-text",
+  "params": 8677855065
+ },
+ {
+  "id": "allenai/MolmoBot-Pi0-DROID",
+  "created": "2026-03-16",
+  "downloads": 0,
+  "pipeline": "robotics",
+  "params": 3501298424
+ },
+ {
+  "id": "allenai/MolmoPoint-8B",
+  "created": "2026-03-16",
+  "downloads": 5302,
+  "pipeline": "image-text-to-text",
+  "params": 8677855065
+ },
+ {
+  "id": "allenai/Olmo-Hybrid-Think-SFT-7B",
+  "created": "2026-02-28",
+  "downloads": 1945,
+  "pipeline": "text-generation",
+  "params": 7430870688
+ },
+ {
+  "id": "allenai/Olmo-Hybrid-Instruct-DPO-7B",
+  "created": "2026-02-20",
+  "downloads": 2490,
+  "pipeline": "text-generation",
+  "params": 7430870688
+ },
+ {
+  "id": "allenai/olmo-3-tokenizer-instruct-release",
+  "created": "2026-02-19",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/Olmo-Hybrid-Instruct-SFT-7B",
+  "created": "2026-02-19",
+  "downloads": 3054,
+  "pipeline": "text-generation",
+  "params": 7430870688
+ },
+ {
+  "id": "allenai/Sera-4.5A-Sympy-T2",
+  "created": "2026-02-11",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/AstaBrief_8B",
+  "created": "2026-02-09",
+  "downloads": 2843,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "allenai/SERA-14B",
+  "created": "2026-02-03",
+  "downloads": 201,
+  "pipeline": null,
+  "params": 14768307200
+ },
+ {
+  "id": "allenai/olmo-3.2-tokenizer-think-dev",
+  "created": "2026-02-03",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "allenai/Olmo-Hybrid-7B",
+  "created": "2026-01-28",
+  "downloads": 10875,
+  "pipeline": "text-generation",
+  "params": 7430870688
+ },
+ {
+  "id": "allenai/SERA-8B",
+  "created": "2026-01-27",
+  "downloads": 1854,
+  "pipeline": null,
+  "params": 8190735360
+ },
+ {
+  "id": "allenai/SERA-8B-GA",
+  "created": "2026-01-27",
+  "downloads": 192,
+  "pipeline": null,
+  "params": 8190735360
+ },
+ {
+  "id": "allenai/SERA-32B-GA",
+  "created": "2026-01-27",
+  "downloads": 174,
+  "pipeline": null,
+  "params": 32762123264
+ },
+ {
+  "id": "allenai/SERA-32B",
+  "created": "2026-01-27",
+  "downloads": 2172,
+  "pipeline": null,
+  "params": 32762123264
+ },
+ {
+  "id": "allenai/HiRO-ACE",
+  "created": "2026-01-12",
+  "downloads": 8,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "arcee-ai/Trinity-Large-Thinking",
+  "created": "2026-04-01",
+  "downloads": 3290,
+  "pipeline": "text-generation",
+  "params": 398635286016
+ },
+ {
+  "id": "arcee-ai/Trinity-Large-Preview",
+  "created": "2026-01-27",
+  "downloads": 2233,
+  "pipeline": "text-generation",
+  "params": 398635286016
+ },
+ {
+  "id": "arcee-ai/Trinity-Large-Base",
+  "created": "2026-01-27",
+  "downloads": 1689,
+  "pipeline": "text-generation",
+  "params": 398635286016
+ },
+ {
+  "id": "arcee-ai/Trinity-Large-TrueBase",
+  "created": "2026-01-27",
+  "downloads": 1671,
+  "pipeline": "text-generation",
+  "params": 398635286016
+ },
+ {
+  "id": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
+  "created": "2026-07-29",
+  "downloads": 14561,
+  "pipeline": "text-generation",
+  "params": 749357484800
+ },
+ {
+  "id": "LGAI-EXAONE/EXAONE-4.5-33B",
+  "created": "2026-04-04",
+  "downloads": 22602,
+  "pipeline": "image-text-to-text",
+  "params": 34350097664
+ },
+ {
+  "id": "LGAI-EXAONE/EXAONE-Path-2.0-rev-EGFR",
+  "created": "2026-03-04",
+  "downloads": 11,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "CohereLabs/tiny-aya-base-32K",
+  "created": "2026-09-08",
+  "downloads": 7,
+  "pipeline": "text-generation",
+  "params": 3350243328
+ },
+ {
+  "id": "CohereLabs/tiny-aya-en-thinker",
+  "created": "2026-09-02",
+  "downloads": 124,
+  "pipeline": "text-generation",
+  "params": 3350243328
+ },
+ {
+  "id": "CohereLabs/tiny-aya-l2-thinker",
+  "created": "2026-09-02",
+  "downloads": 330,
+  "pipeline": "text-generation",
+  "params": 3350243328
+ },
+ {
+  "id": "CohereLabs/North-Small-Translate-1.0",
+  "created": "2026-08-14",
+  "downloads": 26,
+  "pipeline": "translation",
+  "params": 218254938112
+ },
+ {
+  "id": "CohereLabs/North-Micro-Vision-Instruct",
+  "created": "2026-08-10",
+  "downloads": 15380,
+  "pipeline": "image-text-to-text",
+  "params": 2484847856
+ },
+ {
+  "id": "CohereLabs/cohere-transcribe-arabic-07-2026",
+  "created": "2026-06-18",
+  "downloads": 163066,
+  "pipeline": "automatic-speech-recognition",
+  "params": 2065804048
+ },
+ {
+  "id": "CohereLabs/North-Mini-Code-1.0",
+  "created": "2026-06-05",
+  "downloads": 8101,
+  "pipeline": "text-generation",
+  "params": 30484303872
+ },
+ {
+  "id": "CohereLabs/command-a-plus-05-2026-w4a4",
+  "created": "2026-05-18",
+  "downloads": 5684,
+  "pipeline": "image-text-to-text",
+  "params": 218750546160
+ },
+ {
+  "id": "CohereLabs/command-a-plus-05-2026-bf16",
+  "created": "2026-05-11",
+  "downloads": 14572,
+  "pipeline": "image-text-to-text",
+  "params": 218750277872
+ },
+ {
+  "id": "CohereLabs/cohere-transcribe-03-2026",
+  "created": "2026-03-24",
+  "downloads": 94555,
+  "pipeline": "automatic-speech-recognition",
+  "params": 2065804048
+ },
+ {
+  "id": "CohereLabs/tiny-aya-fire",
+  "created": "2026-02-13",
+  "downloads": 1443,
+  "pipeline": "text-generation",
+  "params": 3349227520
+ },
+ {
+  "id": "CohereLabs/tiny-aya-earth",
+  "created": "2026-02-13",
+  "downloads": 5968,
+  "pipeline": "text-generation",
+  "params": 3349227520
+ },
+ {
+  "id": "CohereLabs/tiny-aya-water",
+  "created": "2026-02-13",
+  "downloads": 527,
+  "pipeline": "text-generation",
+  "params": 3349227520
+ },
+ {
+  "id": "CohereLabs/tiny-aya-global",
+  "created": "2026-02-13",
+  "downloads": 28823,
+  "pipeline": "text-generation",
+  "params": 3349227520
+ },
+ {
+  "id": "CohereLabs/tiny-aya-base",
+  "created": "2026-02-13",
+  "downloads": 2868,
+  "pipeline": "text-generation",
+  "params": 3349227520
+ },
+ {
+  "id": "ai21labs/AI21-Jamba2-3B",
+  "created": "2026-01-06",
+  "downloads": 6641,
+  "pipeline": "text-generation",
+  "params": 3029337472
+ },
+ {
+  "id": "ai21labs/AI21-Jamba2-Mini",
+  "created": "2026-01-06",
+  "downloads": 1349,
+  "pipeline": "text-generation",
+  "params": 51570323328
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.5-70B-base",
+  "created": "2026-09-23",
+  "downloads": 223,
+  "pipeline": "image-text-to-text",
+  "params": 71942010529
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.5-8B-base",
+  "created": "2026-09-23",
+  "downloads": 3292,
+  "pipeline": "image-text-to-text",
+  "params": 8839738945
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.5-70B-RL",
+  "created": "2026-08-22",
+  "downloads": 143,
+  "pipeline": "image-text-to-text",
+  "params": 72005819139
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.5-70B-SFT",
+  "created": "2026-08-22",
+  "downloads": 72,
+  "pipeline": "image-text-to-text",
+  "params": 72005819139
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.5-8B-DPO",
+  "created": "2026-08-22",
+  "downloads": 66,
+  "pipeline": "image-text-to-text",
+  "params": 8903547555
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.5-8B-RL",
+  "created": "2026-08-22",
+  "downloads": 135,
+  "pipeline": "image-text-to-text",
+  "params": 8903547555
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.5-8B-SFT",
+  "created": "2026-08-22",
+  "downloads": 2604,
+  "pipeline": "image-text-to-text",
+  "params": 8903547555
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.5-70B",
+  "created": "2026-07-24",
+  "downloads": 8034,
+  "pipeline": "image-text-to-text",
+  "params": 72005819139
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.5-8B",
+  "created": "2026-07-24",
+  "downloads": 9356,
+  "pipeline": "image-text-to-text",
+  "params": 8903547555
+ },
+ {
+  "id": "swiss-ai/wavtokenizer-large-unify-40token",
+  "created": "2026-07-19",
+  "downloads": 55,
+  "pipeline": "feature-extraction",
+  "params": 76310115
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.1-1.5B-Instruct",
+  "created": "2026-05-03",
+  "downloads": 5794,
+  "pipeline": "text-generation",
+  "params": 1510019104
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.1-4B-Instruct",
+  "created": "2026-05-01",
+  "downloads": 3703,
+  "pipeline": "text-generation",
+  "params": 3825361968
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.1-0.5B-Instruct",
+  "created": "2026-05-01",
+  "downloads": 3366,
+  "pipeline": "text-generation",
+  "params": 572567080
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.1-4B",
+  "created": "2026-04-12",
+  "downloads": 3755,
+  "pipeline": "text-generation",
+  "params": 3825361968
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.1-0.5B",
+  "created": "2026-03-30",
+  "downloads": 2799,
+  "pipeline": "text-generation",
+  "params": 438349352
+ },
+ {
+  "id": "swiss-ai/Apertus-v1.1-1.5B",
+  "created": "2026-02-18",
+  "downloads": 1492,
+  "pipeline": "text-generation",
+  "params": 1510019104
+ },
+ {
+  "id": "HuggingFaceTB/nanowhale-100m-base",
+  "created": "2026-04-24",
+  "downloads": 2108,
+  "pipeline": "text-generation",
+  "params": 110369621
+ },
+ {
+  "id": "HuggingFaceTB/nanowhale-100m",
+  "created": "2026-04-24",
+  "downloads": 817,
+  "pipeline": "text-generation",
+  "params": 110369621
+ },
+ {
+  "id": "HuggingFaceTB/SmolLM3-3B-GSM8K-SFT",
+  "created": "2026-04-03",
+  "downloads": 1554,
+  "pipeline": "text-generation",
+  "params": 3075098624
+ },
+ {
+  "id": "HuggingFaceTB/qwen3-1.7b-gsm8k-sft",
+  "created": "2026-03-25",
+  "downloads": 1260,
+  "pipeline": "text-generation",
+  "params": 1720574976
+ },
+ {
+  "id": "tiiuae/Falcon3-10B-Base-1.58bit-prequantized",
+  "created": "2026-04-30",
+  "downloads": 2010,
+  "pipeline": "text-generation",
+  "params": 10305653760
+ },
+ {
+  "id": "tiiuae/Falcon-E-3B-Base-prequantized",
+  "created": "2026-04-22",
+  "downloads": 2305,
+  "pipeline": "text-generation",
+  "params": 3053586432
+ },
+ {
+  "id": "tiiuae/Falcon-Perception-300M",
+  "created": "2026-04-03",
+  "downloads": 504,
+  "pipeline": "object-detection",
+  "params": 316869216
+ },
+ {
+  "id": "tiiuae/siglino-30M",
+  "created": "2026-03-18",
+  "downloads": 208,
+  "pipeline": "image-feature-extraction",
+  "params": 47067224
+ },
+ {
+  "id": "tiiuae/siglino-70M",
+  "created": "2026-03-11",
+  "downloads": 169,
+  "pipeline": "image-feature-extraction",
+  "params": 69465008
+ },
+ {
+  "id": "tiiuae/siglino-0.6B",
+  "created": "2026-03-11",
+  "downloads": 168,
+  "pipeline": "image-feature-extraction",
+  "params": 493304816
+ },
+ {
+  "id": "tiiuae/siglino-moe-0.15-0.6B",
+  "created": "2026-03-11",
+  "downloads": 139,
+  "pipeline": "image-feature-extraction",
+  "params": 522834136
+ },
+ {
+  "id": "tiiuae/Falcon-OCR",
+  "created": "2026-02-22",
+  "downloads": 5565,
+  "pipeline": "image-to-text",
+  "params": 269944416
+ },
+ {
+  "id": "tiiuae/Falcon-Perception",
+  "created": "2026-02-22",
+  "downloads": 2207,
+  "pipeline": "mask-generation",
+  "params": 632372288
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-Coder-90M",
+  "created": "2026-01-13",
+  "downloads": 414,
+  "pipeline": "text-generation",
+  "params": 91131072
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-R-0.6B-pre-GRPO",
+  "created": "2026-01-12",
+  "downloads": 1841,
+  "pipeline": "text-generation",
+  "params": 622326880
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-R-0.6B",
+  "created": "2026-01-12",
+  "downloads": 2652,
+  "pipeline": "text-generation",
+  "params": 622326880
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-R-90M",
+  "created": "2026-01-12",
+  "downloads": 2139,
+  "pipeline": "text-generation",
+  "params": 91131072
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-Multilingual-100M-Instruct",
+  "created": "2026-01-12",
+  "downloads": 2439,
+  "pipeline": "text-generation",
+  "params": 107908288
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-Multilingual-100M-Base",
+  "created": "2026-01-12",
+  "downloads": 471,
+  "pipeline": "text-generation",
+  "params": 107908288
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-Tool-Calling-90M",
+  "created": "2026-01-12",
+  "downloads": 1936,
+  "pipeline": "text-generation",
+  "params": 91131072
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-90M-Instruct-Curriculum-pre-DPO",
+  "created": "2026-01-12",
+  "downloads": 309,
+  "pipeline": "text-generation",
+  "params": 91131072
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-90M-Base",
+  "created": "2026-01-12",
+  "downloads": 854,
+  "pipeline": "text-generation",
+  "params": 91131072
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-90M-Instruct",
+  "created": "2026-01-12",
+  "downloads": 3632,
+  "pipeline": "text-generation",
+  "params": 91131072
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-90M-Instruct-pre-DPO",
+  "created": "2026-01-12",
+  "downloads": 315,
+  "pipeline": "text-generation",
+  "params": 91131072
+ },
+ {
+  "id": "tiiuae/Falcon-H1-Tiny-90M-Instruct-Curriculum",
+  "created": "2026-01-12",
+  "downloads": 335,
+  "pipeline": "text-generation",
+  "params": 91131072
+ },
+ {
+  "id": "rednote-hilab/dots.llm1.base",
+  "created": "2026-10-06",
+  "downloads": 2336,
+  "pipeline": "text-generation",
+  "params": 1543714304
+ },
+ {
+  "id": "internlm/Sage-S2.1-Flash",
+  "created": "2026-11-15",
+  "downloads": 0,
+  "pipeline": null,
+  "params": 321323031390
+ },
+ {
+  "id": "internlm/Sage-SciPerception",
+  "created": "2026-11-06",
+  "downloads": 453,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "internlm/Sage-S2.1",
+  "created": "2026-10-23",
+  "downloads": 1153,
+  "pipeline": null,
+  "params": 753329940480
+ },
+ {
+  "id": "internlm/AdvancedMathBench-AutoVerifier",
+  "created": "2026-09-29",
+  "downloads": 695,
+  "pipeline": "image-text-to-text",
+  "params": 35964405616
+ },
+ {
+  "id": "internlm/Intern-Decision-4B",
+  "created": "2026-09-26",
+  "downloads": 5426,
+  "pipeline": "image-text-to-text",
+  "params": 4539265536
+ },
+ {
+  "id": "internlm/Intern-Decision-2B",
+  "created": "2026-09-26",
+  "downloads": 1956,
+  "pipeline": "image-text-to-text",
+  "params": 2213241664
+ },
+ {
+  "id": "internlm/Intern-Decision-0.8B",
+  "created": "2026-09-26",
+  "downloads": 3972,
+  "pipeline": "image-text-to-text",
+  "params": 852985920
+ },
+ {
+  "id": "internlm/Atria-Dawn-Preview-Ascend-w8a8",
+  "created": "2026-09-15",
+  "downloads": 469,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "internlm/Intern-S2-397B",
+  "created": "2026-09-13",
+  "downloads": 1229,
+  "pipeline": "image-text-to-text",
+  "params": 403423094768
+ },
+ {
+  "id": "internlm/Atria-Dawn-Preview",
+  "created": "2026-09-11",
+  "downloads": 2287,
+  "pipeline": null,
+  "params": 753329940480
+ },
+ {
+  "id": "internlm/InternLumina-U2",
+  "created": "2026-09-01",
+  "downloads": 0,
+  "pipeline": "any-to-any",
+  "params": null
+ },
+ {
+  "id": "internlm/Intern-MemDec-4B",
+  "created": "2026-08-06",
+  "downloads": 210,
+  "pipeline": null,
+  "params": 4547129856
+ },
+ {
+  "id": "internlm/Intern-S2-Mobius",
+  "created": "2026-07-29",
+  "downloads": 1179,
+  "pipeline": "image-text-to-text",
+  "params": 35964405616
+ },
+ {
+  "id": "internlm/Intern-S2-Preview-397B",
+  "created": "2026-07-16",
+  "downloads": 522,
+  "pipeline": "image-text-to-text",
+  "params": 404096969673
+ },
+ {
+  "id": "internlm/CapRL-Video-4B",
+  "created": "2026-05-22",
+  "downloads": 1808,
+  "pipeline": null,
+  "params": 4826771968
+ },
+ {
+  "id": "internlm/ETCHR-FLUX.2-klein-9B",
+  "created": "2026-05-21",
+  "downloads": 17,
+  "pipeline": "image-to-image",
+  "params": 9078581248
+ },
+ {
+  "id": "internlm/Intern-S2-Preview",
+  "created": "2026-05-15",
+  "downloads": 1736,
+  "pipeline": "image-text-to-text",
+  "params": 36098254656
+ },
+ {
+  "id": "internlm/Visual-ERM",
+  "created": "2026-03-12",
+  "downloads": 1262,
+  "pipeline": null,
+  "params": 770288
+ },
+ {
+  "id": "internlm/EndoCoT",
+  "created": "2026-03-11",
+  "downloads": 9,
+  "pipeline": "image-to-image",
+  "params": null
+ },
+ {
+  "id": "internlm/Spatial-SSRL-3B",
+  "created": "2026-02-25",
+  "downloads": 247,
+  "pipeline": "image-text-to-text",
+  "params": 4065787904
+ },
+ {
+  "id": "internlm/Intern-S1-Pro-BF16",
+  "created": "2026-02-13",
+  "downloads": 216,
+  "pipeline": "image-text-to-text",
+  "params": 917044193560
+ },
+ {
+  "id": "internlm/Intern-S1-Pro",
+  "created": "2026-02-02",
+  "downloads": 7870,
+  "pipeline": "image-text-to-text",
+  "params": 917044193560
+ },
+ {
+  "id": "PrimeIntellect/DeepSeek-V4.1-Flash-bf16",
+  "created": "2026-10-15",
+  "downloads": 392,
+  "pipeline": "text-generation",
+  "params": 763205315794
+ },
+ {
+  "id": "PrimeIntellect/Qwen3.5-4B-untied",
+  "created": "2026-10-05",
+  "downloads": 279,
+  "pipeline": "image-text-to-text",
+  "params": 5295564288
+ },
+ {
+  "id": "PrimeIntellect/Qwen3-4B-Instruct-2507-untied",
+  "created": "2026-10-05",
+  "downloads": 451,
+  "pipeline": "text-generation",
+  "params": 4411424256
+ },
+ {
+  "id": "PrimeIntellect/Qwen3-0.6B-Reverse-Text-SFT-untied",
+  "created": "2026-10-05",
+  "downloads": 145,
+  "pipeline": null,
+  "params": 751632384
+ },
+ {
+  "id": "PrimeIntellect/Qwen3-0.6B-untied",
+  "created": "2026-10-05",
+  "downloads": 601,
+  "pipeline": "text-generation",
+  "params": 751632384
+ },
+ {
+  "id": "PrimeIntellect/Qwen3.5-0.8B-Reverse-Text-RL",
+  "created": "2026-10-04",
+  "downloads": 198,
+  "pipeline": "image-text-to-text",
+  "params": 1107265600
+ },
+ {
+  "id": "PrimeIntellect/Qwen3.5-0.8B-Reverse-Text-SFT",
+  "created": "2026-10-04",
+  "downloads": 235,
+  "pipeline": "image-text-to-text",
+  "params": 1107265600
+ },
+ {
+  "id": "PrimeIntellect/DeepSeek-V4-Flash-Base-bf16",
+  "created": "2026-09-22",
+  "downloads": 2482,
+  "pipeline": null,
+  "params": 284334567511
+ },
+ {
+  "id": "PrimeIntellect/DeepSeek-V4-Flash-0731-bf16",
+  "created": "2026-09-14",
+  "downloads": 1398,
+  "pipeline": "text-generation",
+  "params": 284334567511
+ },
+ {
+  "id": "PrimeIntellect/Laguna-XS.2-jlens",
+  "created": "2026-07-17",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "PrimeIntellect/inkling-jlens",
+  "created": "2026-07-17",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "PrimeIntellect/kimi-k25-tiny",
+  "created": "2026-02-24",
+  "downloads": 202,
+  "pipeline": null,
+  "params": 485214392
+ },
+ {
+  "id": "PrimeIntellect/MiniMax-M2.5-bf16",
+  "created": "2026-02-18",
+  "downloads": 262,
+  "pipeline": "text-generation",
+  "params": 228689764864
+ },
+ {
+  "id": "PrimeIntellect/minimax-m2-tiny",
+  "created": "2026-02-18",
+  "downloads": 529,
+  "pipeline": "text-generation",
+  "params": 252122720
+ },
+ {
+  "id": "PrimeIntellect/qwen3-moe-tiny",
+  "created": "2026-02-18",
+  "downloads": 6536,
+  "pipeline": "text-generation",
+  "params": 670208000
+ },
+ {
+  "id": "PrimeIntellect/glm4-moe-tiny",
+  "created": "2026-02-18",
+  "downloads": 496,
+  "pipeline": "text-generation",
+  "params": 542651576
+ },
+ {
+  "id": "PrimeIntellect/INTELLECT-3.1",
+  "created": "2026-01-20",
+  "downloads": 476,
+  "pipeline": "text-generation",
+  "params": 106852251264
+ },
+ {
+  "id": "NousResearch/Arete-27B",
+  "created": "2026-11-06",
+  "downloads": 7497,
+  "pipeline": "text-generation",
+  "params": 27356728560
+ },
+ {
+  "id": "NousResearch/moe-10b-a1b-8k-wsd-lr3e4-1t",
+  "created": "2026-03-06",
+  "downloads": 798,
+  "pipeline": null,
+  "params": 10489144832
+ },
+ {
+  "id": "NousResearch/Kimi-K2-Thinking-Alternate-Tokenizer",
+  "created": "2026-01-15",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "upstage/solar-pro4-tokenizer",
+  "created": "2026-09-21",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "upstage/Solar-Open2-250B",
+  "created": "2026-07-22",
+  "downloads": 7367,
+  "pipeline": "text-generation",
+  "params": 250287810304
+ },
+ {
+  "id": "upstage/TinySolar-187m-4k",
+  "created": "2026-05-27",
+  "downloads": 110,
+  "pipeline": null,
+  "params": 187188224
+ },
+ {
+  "id": "upstage/TinySolar-111m-4k",
+  "created": "2026-05-27",
+  "downloads": 85,
+  "pipeline": null,
+  "params": 111156224
+ },
+ {
+  "id": "upstage/solar-pro3-tokenizer",
+  "created": "2026-01-23",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "sarvamai/prism",
+  "created": "2026-11-02",
+  "downloads": 380,
+  "pipeline": "text-classification",
+  "params": 104991889280
+ },
+ {
+  "id": "sarvamai/sarvam-105b",
+  "created": "2026-03-03",
+  "downloads": 4974,
+  "pipeline": "text-generation",
+  "params": 106031767424
+ },
+ {
+  "id": "sarvamai/sarvam-30b",
+  "created": "2026-03-03",
+  "downloads": 3910,
+  "pipeline": "text-generation",
+  "params": 32152650368
+ },
+ {
+  "id": "kakaocorp/kanana-2-v-decide-3b-2611",
+  "created": "2026-10-26",
+  "downloads": 1362,
+  "pipeline": "zero-shot-classification",
+  "params": 3665430640
+ },
+ {
+  "id": "kakaocorp/kanana-2-vision-encoder-tiny",
+  "created": "2026-10-12",
+  "downloads": 448,
+  "pipeline": "image-feature-extraction",
+  "params": 98720768
+ },
+ {
+  "id": "kakaocorp/kanana-2-vision-encoder-medium",
+  "created": "2026-10-12",
+  "downloads": 1083,
+  "pipeline": "image-feature-extraction",
+  "params": 426886912
+ },
+ {
+  "id": "kakaocorp/lmspt",
+  "created": "2026-09-02",
+  "downloads": 0,
+  "pipeline": "audio-to-audio",
+  "params": null
+ },
+ {
+  "id": "kakaocorp/kanana-2-1.3b-instruct",
+  "created": "2026-07-24",
+  "downloads": 1644,
+  "pipeline": "text-generation",
+  "params": 1291478272
+ },
+ {
+  "id": "kakaocorp/kanana-2-3b-instruct",
+  "created": "2026-07-24",
+  "downloads": 13119,
+  "pipeline": "text-generation",
+  "params": 3508972032
+ },
+ {
+  "id": "kakaocorp/kanana-2-3b-base",
+  "created": "2026-07-24",
+  "downloads": 868,
+  "pipeline": "text-generation",
+  "params": 3180636672
+ },
+ {
+  "id": "kakaocorp/kanana-2-1.3b-base",
+  "created": "2026-07-24",
+  "downloads": 493,
+  "pipeline": "text-generation",
+  "params": 1291478272
+ },
+ {
+  "id": "kakaocorp/Kanana-1.5-o-9.8B-instruct-2602-API_Doc",
+  "created": "2026-03-04",
+  "downloads": 0,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "kakaocorp/kanana-2-30b-a3b-thinking-2601",
+  "created": "2026-01-14",
+  "downloads": 2299,
+  "pipeline": "text-generation",
+  "params": 30670809088
+ },
+ {
+  "id": "kakaocorp/kanana-2-30b-a3b-instruct-2601",
+  "created": "2026-01-14",
+  "downloads": 3278,
+  "pipeline": "text-generation",
+  "params": 30670809088
+ },
+ {
+  "id": "kakaocorp/kanana-2-30b-a3b-mid-2601",
+  "created": "2026-01-14",
+  "downloads": 218,
+  "pipeline": "text-generation",
+  "params": 30670809088
+ },
+ {
+  "id": "kakaocorp/kanana-2-30b-a3b-base-2601",
+  "created": "2026-01-14",
+  "downloads": 344,
+  "pipeline": "text-generation",
+  "params": 30670815104
+ },
+ {
+  "id": "LiquidAI/LFM3-1.7B-Base",
+  "created": "2026-10-26",
+  "downloads": 11983,
+  "pipeline": "text-generation",
+  "params": 1728801536
+ },
+ {
+  "id": "LiquidAI/d1-Omni-2B",
+  "created": "2026-10-24",
+  "downloads": 5193,
+  "pipeline": "audio-text-to-text",
+  "params": 2166928384
+ },
+ {
+  "id": "LiquidAI/d1-2B",
+  "created": "2026-10-24",
+  "downloads": 13633,
+  "pipeline": "image-text-to-text",
+  "params": 1918181888
+ },
+ {
+  "id": "LiquidAI/LFM3-1.7B",
+  "created": "2026-10-23",
+  "downloads": 103744,
+  "pipeline": "text-generation",
+  "params": 1728801536
+ },
+ {
+  "id": "LiquidAI/LFM3-Omni-2B",
+  "created": "2026-10-21",
+  "downloads": 21598,
+  "pipeline": "any-to-any",
+  "params": 2166928384
+ },
+ {
+  "id": "LiquidAI/LFM3-VL-2B",
+  "created": "2026-10-19",
+  "downloads": 25208,
+  "pipeline": "image-text-to-text",
+  "params": 1918181888
+ },
+ {
+  "id": "LiquidAI/LFM2.5-24B-A2B",
+  "created": "2026-10-12",
+  "downloads": 31631,
+  "pipeline": "text-generation",
+  "params": 23971585280
+ },
+ {
+  "id": "LiquidAI/LFM2.5-24B-A2B-Base",
+  "created": "2026-10-09",
+  "downloads": 2544,
+  "pipeline": "text-generation",
+  "params": 23971585280
+ },
+ {
+  "id": "LiquidAI/d1-3B-w8a8",
+  "created": "2026-10-07",
+  "downloads": 1317,
+  "pipeline": "image-text-to-text",
+  "params": 3125339376
+ },
+ {
+  "id": "LiquidAI/d1-omni-600M",
+  "created": "2026-10-05",
+  "downloads": 10187,
+  "pipeline": "image-text-to-text",
+  "params": 587161089
+ },
+ {
+  "id": "LiquidAI/d1-3B",
+  "created": "2026-10-05",
+  "downloads": 23473,
+  "pipeline": "image-text-to-text",
+  "params": 3123483888
+ },
+ {
+  "id": "LiquidAI/Liquid-Codec",
+  "created": "2026-09-16",
+  "downloads": 9358,
+  "pipeline": "feature-extraction",
+  "params": 73559090
+ },
+ {
+  "id": "LiquidAI/LFM3-Audio-2B",
+  "created": "2026-09-08",
+  "downloads": 14400,
+  "pipeline": "any-to-any",
+  "params": 2002332928
+ },
+ {
+  "id": "LiquidAI/LFM2.5-VL-3B",
+  "created": "2026-08-11",
+  "downloads": 18188,
+  "pipeline": "image-text-to-text",
+  "params": 3123483888
+ },
+ {
+  "id": "LiquidAI/LFM2.5-2.6B-Base",
+  "created": "2026-08-01",
+  "downloads": 7438,
+  "pipeline": "text-generation",
+  "params": 2697198592
+ },
+ {
+  "id": "LiquidAI/LFM2.5-2.6B",
+  "created": "2026-07-28",
+  "downloads": 39853,
+  "pipeline": "text-generation",
+  "params": 2697198592
+ },
+ {
+  "id": "LiquidAI/LFM2.5-Encoder-230M",
+  "created": "2026-07-27",
+  "downloads": 1577,
+  "pipeline": "fill-mask",
+  "params": 229693184
+ },
+ {
+  "id": "LiquidAI/LFM2.5-Encoder-350M",
+  "created": "2026-07-27",
+  "downloads": 6969,
+  "pipeline": "fill-mask",
+  "params": 354483968
+ },
+ {
+  "id": "LiquidAI/LFM2.5-Encoder-350M-Prompt-Router",
+  "created": "2026-07-13",
+  "downloads": 707,
+  "pipeline": "text-classification",
+  "params": 355008768
+ },
+ {
+  "id": "LiquidAI/LFM2.5-Encoder-350M-Policy-Linter",
+  "created": "2026-07-11",
+  "downloads": 232,
+  "pipeline": "token-classification",
+  "params": 355008768
+ },
+ {
+  "id": "LiquidAI/LFM2.5-Encoder-350M-Diffusion",
+  "created": "2026-07-10",
+  "downloads": 750,
+  "pipeline": "text-generation",
+  "params": 354483968
+ },
+ {
+  "id": "LiquidAI/LFM2.5-Encoder-350M-Spellchecker",
+  "created": "2026-07-04",
+  "downloads": 1079,
+  "pipeline": "token-classification",
+  "params": 356716068
+ },
+ {
+  "id": "LiquidAI/LFM2.5-230M",
+  "created": "2026-06-24",
+  "downloads": 17843,
+  "pipeline": "text-generation",
+  "params": 229693184
+ },
+ {
+  "id": "LiquidAI/LFM2.5-230M-Base",
+  "created": "2026-06-16",
+  "downloads": 221201,
+  "pipeline": "text-generation",
+  "params": 229693184
+ },
+ {
+  "id": "LiquidAI/LFM2.5-Encoder-350M-PII-Detector",
+  "created": "2026-06-12",
+  "downloads": 1253,
+  "pipeline": "token-classification",
+  "params": 354649154
+ },
+ {
+  "id": "LiquidAI/LFM2.5-8B-A1B-Base",
+  "created": "2026-05-28",
+  "downloads": 3067,
+  "pipeline": "text-generation",
+  "params": 8467856832
+ },
+ {
+  "id": "LiquidAI/LFM2.5-8B-A1B",
+  "created": "2026-05-28",
+  "downloads": 17044,
+  "pipeline": "text-generation",
+  "params": 8467856832
+ },
+ {
+  "id": "LiquidAI/LFM2.5-VL-450M-Extract",
+  "created": "2026-05-26",
+  "downloads": 1808,
+  "pipeline": "image-text-to-text",
+  "params": 448718848
+ },
+ {
+  "id": "LiquidAI/LFM2.5-VL-1.6B-Extract",
+  "created": "2026-05-26",
+  "downloads": 1949,
+  "pipeline": "image-text-to-text",
+  "params": 1596625904
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-JP-202606",
+  "created": "2026-05-26",
+  "downloads": 3921,
+  "pipeline": "text-generation",
+  "params": 1170340608
+ },
+ {
+  "id": "LiquidAI/LFM2.5-Audio-1.5B-JP",
+  "created": "2026-05-26",
+  "downloads": 439,
+  "pipeline": "audio-to-audio",
+  "params": 1470308496
+ },
+ {
+  "id": "LiquidAI/LFM2-2.6B-Longevity",
+  "created": "2026-05-25",
+  "downloads": 2065,
+  "pipeline": "text-generation",
+  "params": 2569272320
+ },
+ {
+  "id": "LiquidAI/LFM2-1.2B-Longevity",
+  "created": "2026-05-25",
+  "downloads": 249,
+  "pipeline": null,
+  "params": 1170340608
+ },
+ {
+  "id": "LiquidAI/LFM2.5-ColBERT-350M",
+  "created": "2026-05-20",
+  "downloads": 36287,
+  "pipeline": "sentence-similarity",
+  "params": 353322752
+ },
+ {
+  "id": "LiquidAI/LFM2.5-VL-450M",
+  "created": "2026-04-08",
+  "downloads": 42182,
+  "pipeline": "image-text-to-text",
+  "params": 448718848
+ },
+ {
+  "id": "LiquidAI/LFM2.5-350M-Base",
+  "created": "2026-03-31",
+  "downloads": 5037,
+  "pipeline": "text-generation",
+  "params": 354483968
+ },
+ {
+  "id": "LiquidAI/LFM2.5-350M",
+  "created": "2026-03-31",
+  "downloads": 159463,
+  "pipeline": "text-generation",
+  "params": 354483968
+ },
+ {
+  "id": "LiquidAI/LFM2-24B-A2B",
+  "created": "2026-02-24",
+  "downloads": 4009,
+  "pipeline": "text-generation",
+  "params": 23843661440
+ },
+ {
+  "id": "LiquidAI/LFM2-8B-A1B-smoltalk-LoRA",
+  "created": "2026-01-21",
+  "downloads": 28,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-Thinking",
+  "created": "2026-01-20",
+  "downloads": 8173,
+  "pipeline": "text-generation",
+  "params": 1170340608
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-Instruct-smoltalk-LoRA",
+  "created": "2026-01-19",
+  "downloads": 45,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "created": "2026-01-06",
+  "downloads": 106197,
+  "pipeline": "text-generation",
+  "params": 1170340608
+ },
+ {
+  "id": "LiquidAI/LFM2-2.6B-Transcript",
+  "created": "2026-01-05",
+  "downloads": 714,
+  "pipeline": "text-generation",
+  "params": 2569272320
+ },
+ {
+  "id": "LiquidAI/LFM2.5-VL-1.6B",
+  "created": "2026-01-05",
+  "downloads": 10728,
+  "pipeline": "image-text-to-text",
+  "params": 1596625904
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-Base",
+  "created": "2026-01-05",
+  "downloads": 7455,
+  "pipeline": "text-generation",
+  "params": 1170340608
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-JP",
+  "created": "2026-01-04",
+  "downloads": 2855,
+  "pipeline": "text-generation",
+  "params": 1170340608
+ },
+ {
+  "id": "Motif-Technologies/Motif-3-Base",
+  "created": "2026-08-09",
+  "downloads": 866,
+  "pipeline": "text-generation",
+  "params": 314841775750
+ },
+ {
+  "id": "Motif-Technologies/Motif-3",
+  "created": "2026-08-07",
+  "downloads": 2401,
+  "pipeline": "text-generation",
+  "params": 314841775750
+ },
+ {
+  "id": "Motif-Technologies/Motif-Audio",
+  "created": "2026-07-22",
+  "downloads": 28,
+  "pipeline": "audio-to-audio",
+  "params": 752376066
+ },
+ {
+  "id": "Motif-Technologies/Motif-Vision-Encoder",
+  "created": "2026-07-21",
+  "downloads": 91,
+  "pipeline": "image-feature-extraction",
+  "params": 7390451712
+ },
+ {
+  "id": "Motif-Technologies/Motif-3-Beta",
+  "created": "2026-07-20",
+  "downloads": 390,
+  "pipeline": "text-generation",
+  "params": 314841775750
+ },
+ {
+  "id": "Motif-Technologies/Motif-VAE",
+  "created": "2026-06-12",
+  "downloads": 52,
+  "pipeline": "image-to-image",
+  "params": 1243812899
+ },
+ {
+  "id": "Motif-Technologies/Motif-Video-2B",
+  "created": "2026-04-14",
+  "downloads": 283,
+  "pipeline": "text-to-video",
+  "params": 2037809600
+ },
+ {
+  "id": "poolside/spec-decoding-subfolder-fixture",
+  "created": "2026-08-05",
+  "downloads": 3890,
+  "pipeline": null,
+  "params": 2130240
+ },
+ {
+  "id": "poolside/Laguna-S-2.1-base",
+  "created": "2026-07-20",
+  "downloads": 0,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "poolside/Laguna-S-2.1",
+  "created": "2026-07-13",
+  "downloads": 488183,
+  "pipeline": "text-generation",
+  "params": 117561977600
+ },
+ {
+  "id": "poolside/Laguna-XS-2.1",
+  "created": "2026-06-20",
+  "downloads": 587106,
+  "pipeline": "text-generation",
+  "params": 33442617088
+ },
+ {
+  "id": "poolside/Laguna-tiny-per-element",
+  "created": "2026-06-16",
+  "downloads": 167,
+  "pipeline": null,
+  "params": 170888
+ },
+ {
+  "id": "poolside/Laguna-M.1",
+  "created": "2026-06-15",
+  "downloads": 694749,
+  "pipeline": "text-generation",
+  "params": 225795725568
+ },
+ {
+  "id": "poolside/Laguna-M.1-base",
+  "created": "2026-06-05",
+  "downloads": 288,
+  "pipeline": "text-generation",
+  "params": 225795725568
+ },
+ {
+  "id": "poolside/Laguna-XS.2",
+  "created": "2026-04-23",
+  "downloads": 731033,
+  "pipeline": "text-generation",
+  "params": 33442617088
+ },
+ {
+  "id": "apple/LensVLM-9B",
+  "created": "2026-09-21",
+  "downloads": 863,
+  "pipeline": "image-text-to-text",
+  "params": 9409813744
+ },
+ {
+  "id": "apple/CADD-Base-7B",
+  "created": "2026-04-23",
+  "downloads": 551,
+  "pipeline": "text-generation",
+  "params": 7615616512
+ },
+ {
+  "id": "apple/SimpleSD-30B-instruct",
+  "created": "2026-03-17",
+  "downloads": 1215,
+  "pipeline": "text-generation",
+  "params": 30532122624
+ },
+ {
+  "id": "apple/SimpleSD-4B-thinking",
+  "created": "2026-03-17",
+  "downloads": 517,
+  "pipeline": "text-generation",
+  "params": 4022468096
+ },
+ {
+  "id": "apple/SimpleSD-4B-instruct",
+  "created": "2026-03-17",
+  "downloads": 540,
+  "pipeline": "text-generation",
+  "params": 4022468096
+ },
+ {
+  "id": "amazon/LAR-27B",
+  "created": "2026-10-14",
+  "downloads": 325,
+  "pipeline": null,
+  "params": 26895998464
+ },
+ {
+  "id": "amazon/LAR-9B",
+  "created": "2026-10-14",
+  "downloads": 174,
+  "pipeline": null,
+  "params": 8953803264
+ },
+ {
+  "id": "amazon/strands-decider-2B-qwen3.5-v1-2610",
+  "created": "2026-10-09",
+  "downloads": 0,
+  "pipeline": "text-classification",
+  "params": null
+ },
+ {
+  "id": "amazon/strands-decider-26B-A4B-gemma4-v1-2610",
+  "created": "2026-10-09",
+  "downloads": 0,
+  "pipeline": "text-classification",
+  "params": null
+ },
+ {
+  "id": "amazon/strands-decider-12B-gemma4-v1-2610",
+  "created": "2026-10-09",
+  "downloads": 0,
+  "pipeline": "text-classification",
+  "params": null
+ },
+ {
+  "id": "amazon/strands-decider-E4B-gemma4-v1-2610",
+  "created": "2026-10-09",
+  "downloads": 0,
+  "pipeline": "text-classification",
+  "params": null
+ },
+ {
+  "id": "amazon/strands-decider-E2B-gemma4-v1-2610",
+  "created": "2026-10-09",
+  "downloads": 0,
+  "pipeline": "text-classification",
+  "params": null
+ },
+ {
+  "id": "amazon/ALoDLM-1.7B",
+  "created": "2026-10-02",
+  "downloads": 855,
+  "pipeline": "text-generation",
+  "params": 2031739904
+ },
+ {
+  "id": "amazon/ALoDLM-8B",
+  "created": "2026-10-02",
+  "downloads": 1490,
+  "pipeline": "text-generation",
+  "params": 8190735360
+ },
+ {
+  "id": "amazon/poiss-bge-m3-retriever",
+  "created": "2026-09-18",
+  "downloads": 144,
+  "pipeline": "sentence-similarity",
+  "params": 566705152
+ },
+ {
+  "id": "amazon/GDN-primed-HQwen3-32B-Instruct",
+  "created": "2026-03-31",
+  "downloads": 139,
+  "pipeline": "text-generation",
+  "params": 34428605440
+ },
+ {
+  "id": "amazon/Mamba2-primed-HQwen3-8B-Instruct",
+  "created": "2026-03-31",
+  "downloads": 214,
+  "pipeline": "text-generation",
+  "params": 8495712960
+ },
+ {
+  "id": "amazon/GKA-primed-HQwen3-8B-Instruct",
+  "created": "2026-03-31",
+  "downloads": 1519,
+  "pipeline": "text-generation",
+  "params": 8500245504
+ },
+ {
+  "id": "amazon/GDN-primed-HQwen3-8B-Instruct",
+  "created": "2026-03-31",
+  "downloads": 216,
+  "pipeline": "text-generation",
+  "params": 8497885056
+ },
+ {
+  "id": "amazon/BMOJOF-primed-HQwen3-8B-Instruct",
+  "created": "2026-03-31",
+  "downloads": 134,
+  "pipeline": "text-generation",
+  "params": 9255224832
+ },
+ {
+  "id": "amazon/GKA-primed-HQwen3-32B-Instruct",
+  "created": "2026-03-31",
+  "downloads": 304,
+  "pipeline": "text-generation",
+  "params": 34439095296
+ },
+ {
+  "id": "amazon/GKA-primed-HQwen3-32B-Reasoner",
+  "created": "2026-03-31",
+  "downloads": 264,
+  "pipeline": "text-generation",
+  "params": 34137072640
+ },
+ {
+  "id": "amazon/GDN-primed-HQwen3-8B-Reasoner",
+  "created": "2026-03-31",
+  "downloads": 141,
+  "pipeline": "text-generation",
+  "params": 8497885056
+ },
+ {
+  "id": "amazon/GKA-primed-HQwen3-8B-Reasoner",
+  "created": "2026-03-31",
+  "downloads": 163,
+  "pipeline": "text-generation",
+  "params": 8500245504
+ },
+ {
+  "id": "Salesforce/RetailSim-GRPO-4B",
+  "created": "2026-06-16",
+  "downloads": 41,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "Salesforce/ST-Evidence-7B",
+  "created": "2026-03-16",
+  "downloads": 72,
+  "pipeline": null,
+  "params": 8438974798
+ },
+ {
+  "id": "Salesforce/ST-Evidence-3B",
+  "created": "2026-03-16",
+  "downloads": 78,
+  "pipeline": null,
+  "params": 3881764174
+ },
+ {
+  "id": "Salesforce/GPA-GUI-Detector",
+  "created": "2026-02-26",
+  "downloads": 307,
+  "pipeline": "object-detection",
+  "params": null
+ },
+ {
+  "id": "openbmb/MiniCPM-OCR-Jev",
+  "created": "2026-10-23",
+  "downloads": 54780,
+  "pipeline": "image-text-to-text",
+  "params": 2213245760
+ },
+ {
+  "id": "openbmb/MiniCPM-OCR-1.0",
+  "created": "2026-10-21",
+  "downloads": 174186,
+  "pipeline": "image-text-to-text",
+  "params": 1300434160
+ },
+ {
+  "id": "openbmb/Trident-Qwen3VL-2B",
+  "created": "2026-10-12",
+  "downloads": 437,
+  "pipeline": "feature-extraction",
+  "params": 2127532032
+ },
+ {
+  "id": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "created": "2026-10-07",
+  "downloads": 774629,
+  "pipeline": "image-text-to-text",
+  "params": 35212875824
+ },
+ {
+  "id": "openbmb/MiniCPM-V-4.7-1B",
+  "created": "2026-10-06",
+  "downloads": 468914,
+  "pipeline": "image-text-to-text",
+  "params": 1554476272
+ },
+ {
+  "id": "openbmb/JustRL-II-base-model",
+  "created": "2026-09-07",
+  "downloads": 2226,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "openbmb/UltraData-Code-L2-Classifier",
+  "created": "2026-09-06",
+  "downloads": 386,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "openbmb/MiniCPM5-2B",
+  "created": "2026-09-06",
+  "downloads": 1016762,
+  "pipeline": "text-generation",
+  "params": 2516756480
+ },
+ {
+  "id": "openbmb/MiniCPM5-2B-Midtrain",
+  "created": "2026-09-01",
+  "downloads": 4826,
+  "pipeline": "text-generation",
+  "params": 2516756480
+ },
+ {
+  "id": "openbmb/MiniCPM5-2B-SFT",
+  "created": "2026-08-27",
+  "downloads": 6600,
+  "pipeline": "text-generation",
+  "params": 2516756480
+ },
+ {
+  "id": "openbmb/MiniCPM5-2B-Base",
+  "created": "2026-08-27",
+  "downloads": 12845,
+  "pipeline": "text-generation",
+  "params": 2516756480
+ },
+ {
+  "id": "openbmb/MathForm-8B",
+  "created": "2026-08-14",
+  "downloads": 2153,
+  "pipeline": "text-generation",
+  "params": 8190735360
+ },
+ {
+  "id": "openbmb/MiniCPM-RobotTrack",
+  "created": "2026-07-18",
+  "downloads": 238,
+  "pipeline": "robotics",
+  "params": 449787035
+ },
+ {
+  "id": "openbmb/MiniCPM-RobotManip",
+  "created": "2026-07-18",
+  "downloads": 682,
+  "pipeline": "robotics",
+  "params": 1536237296
+ },
+ {
+  "id": "openbmb/UltraX-0.6B-Preview",
+  "created": "2026-06-10",
+  "downloads": 0,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "openbmb/SciCore-Omics",
+  "created": "2026-06-03",
+  "downloads": 203,
+  "pipeline": "feature-extraction",
+  "params": 8191537648
+ },
+ {
+  "id": "openbmb/MiniCPM5-1B",
+  "created": "2026-05-21",
+  "downloads": 222748,
+  "pipeline": "text-generation",
+  "params": 1080632832
+ },
+ {
+  "id": "openbmb/MiniCPM5-1B-SFT",
+  "created": "2026-05-21",
+  "downloads": 6921,
+  "pipeline": "text-generation",
+  "params": 1080632832
+ },
+ {
+  "id": "openbmb/MiniCPM5-1B-Base",
+  "created": "2026-05-21",
+  "downloads": 4274,
+  "pipeline": "text-generation",
+  "params": 1080632832
+ },
+ {
+  "id": "openbmb/BitCPM-CANN-8B-unquantized",
+  "created": "2026-05-18",
+  "downloads": 2960,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "openbmb/BitCPM-CANN-3B-unquantized",
+  "created": "2026-05-18",
+  "downloads": 4286,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "openbmb/BitCPM-CANN-1B-unquantized",
+  "created": "2026-05-18",
+  "downloads": 3029,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "openbmb/BitCPM-CANN-0.5B-unquantized",
+  "created": "2026-05-18",
+  "downloads": 2935,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "openbmb/BitCPM-CANN-8B",
+  "created": "2026-05-15",
+  "downloads": 3038,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "openbmb/BitCPM-CANN-3B",
+  "created": "2026-05-15",
+  "downloads": 2983,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "openbmb/BitCPM-CANN-1B",
+  "created": "2026-05-15",
+  "downloads": 3014,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "openbmb/BitCPM-CANN-0.5B",
+  "created": "2026-05-15",
+  "downloads": 3015,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "openbmb/MiniCPM-V-4.6-Thinking-BNB",
+  "created": "2026-05-09",
+  "downloads": 19752,
+  "pipeline": "image-text-to-text",
+  "params": 1300428016
+ },
+ {
+  "id": "openbmb/MiniCPM-V-4.6-BNB",
+  "created": "2026-05-09",
+  "downloads": 21254,
+  "pipeline": "image-text-to-text",
+  "params": 1300428016
+ },
+ {
+  "id": "openbmb/MiniCPM-V-4.6-Thinking",
+  "created": "2026-05-08",
+  "downloads": 27158,
+  "pipeline": "image-text-to-text",
+  "params": 1300428016
+ },
+ {
+  "id": "openbmb/SciCore-Mol",
+  "created": "2026-04-29",
+  "downloads": 1642,
+  "pipeline": "text-generation",
+  "params": 8188556288
+ },
+ {
+  "id": "openbmb/MiniCPM-V-4.6",
+  "created": "2026-04-13",
+  "downloads": 190404,
+  "pipeline": "image-text-to-text",
+  "params": 1300428016
+ },
+ {
+  "id": "openbmb/VoxCPM2",
+  "created": "2026-04-03",
+  "downloads": 978870,
+  "pipeline": "text-to-speech",
+  "params": 2290004544
+ },
+ {
+  "id": "openbmb/MiniCPM-SALA",
+  "created": "2026-02-11",
+  "downloads": 4025,
+  "pipeline": "text-generation",
+  "params": 9477203968
+ },
+ {
+  "id": "openbmb/MiniCPM-o-4_5",
+  "created": "2026-02-03",
+  "downloads": 173854,
+  "pipeline": "any-to-any",
+  "params": 9371787666
+ },
+ {
+  "id": "openbmb/NOSA-1B",
+  "created": "2026-01-21",
+  "downloads": 220,
+  "pipeline": "text-generation",
+  "params": null
+ },
+ {
+  "id": "openbmb/AgentCPM-Report",
+  "created": "2026-01-19",
+  "downloads": 2177,
+  "pipeline": "text-generation",
+  "params": 8185253888
+ },
+ {
+  "id": "openbmb/AgentCPM-Explore",
+  "created": "2026-01-11",
+  "downloads": 2420,
+  "pipeline": "text-generation",
+  "params": 4022468096
+ },
+ {
+  "id": "openbmb/NOSA-3B",
+  "created": "2026-01-06",
+  "downloads": 217,
+  "pipeline": "text-generation",
+  "params": 3605850688
+ },
+ {
+  "id": "openbmb/NOSA-8B",
+  "created": "2026-01-04",
+  "downloads": 276,
+  "pipeline": "text-generation",
+  "params": 8185270336
+ },
+ {
+  "id": "jdopensource/JoyAI-Video-Edit-Diffusers",
+  "created": "2026-08-10",
+  "downloads": 65,
+  "pipeline": "video-to-video",
+  "params": 16263675968
+ },
+ {
+  "id": "jdopensource/JoyAI-Video-Edit",
+  "created": "2026-08-04",
+  "downloads": 751,
+  "pipeline": "video-to-video",
+  "params": null
+ },
+ {
+  "id": "jdopensource/JoyAI-VL-Interaction",
+  "created": "2026-07-21",
+  "downloads": 555,
+  "pipeline": "video-text-to-text",
+  "params": 8767123696
+ },
+ {
+  "id": "jdopensource/JoyAI-Image-Edit-Plus-ComfyUI",
+  "created": "2026-07-02",
+  "downloads": 0,
+  "pipeline": "image-to-image",
+  "params": null
+ },
+ {
+  "id": "jdopensource/JoyAI-Image-Edit-Plus-Diffusers",
+  "created": "2026-06-22",
+  "downloads": 319,
+  "pipeline": "image-to-image",
+  "params": 16263675968
+ },
+ {
+  "id": "jdopensource/JoyAI-VL-Interaction-Preview",
+  "created": "2026-06-19",
+  "downloads": 139,
+  "pipeline": "video-text-to-text",
+  "params": 8767123696
+ },
+ {
+  "id": "jdopensource/JoyAI-Image-Edit-ComfyUI",
+  "created": "2026-06-09",
+  "downloads": 0,
+  "pipeline": "image-to-image",
+  "params": null
+ },
+ {
+  "id": "jdopensource/JoyAI-Echo",
+  "created": "2026-06-02",
+  "downloads": 105,
+  "pipeline": "image-to-video",
+  "params": 18988838144
+ },
+ {
+  "id": "jdopensource/JoyAI-Image-Edit-Diffusers",
+  "created": "2026-04-10",
+  "downloads": 99772,
+  "pipeline": "image-to-image",
+  "params": 16263675968
+ },
+ {
+  "id": "jdopensource/JoyAI-Image-Edit",
+  "created": "2026-03-31",
+  "downloads": 128,
+  "pipeline": "image-to-image",
+  "params": null
+ },
+ {
+  "id": "jdopensource/JoyAI-LLM-Flash",
+  "created": "2026-02-14",
+  "downloads": 1116,
+  "pipeline": "text-generation",
+  "params": 49286094592
+ },
+ {
+  "id": "jdopensource/JoyAI-LLM-Flash-Base",
+  "created": "2026-02-14",
+  "downloads": 137,
+  "pipeline": "text-generation",
+  "params": 49286094592
+ },
+ {
+  "id": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "created": "2026-07-23",
+  "downloads": 37045,
+  "pipeline": "text-generation",
+  "params": 34660610688
+ },
+ {
+  "id": "Kwai-Kolors/MetaView",
+  "created": "2026-07-11",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "bytedance-research/Lance",
+  "created": "2026-05-15",
+  "downloads": 412,
+  "pipeline": "any-to-any",
+  "params": null
+ },
+ {
+  "id": "bytedance-research/Valley3-32B-Think",
+  "created": "2026-04-29",
+  "downloads": 38,
+  "pipeline": null,
+  "params": 34131178096
+ },
+ {
+  "id": "bytedance-research/Valley3-32B-Instruct",
+  "created": "2026-04-29",
+  "downloads": 54,
+  "pipeline": null,
+  "params": 34131178096
+ },
+ {
+  "id": "bytedance-research/Valley3-8B-Think",
+  "created": "2026-04-29",
+  "downloads": 55,
+  "pipeline": null,
+  "params": 9532520048
+ },
+ {
+  "id": "bytedance-research/Valley3-8B-Instruct",
+  "created": "2026-04-29",
+  "downloads": 51,
+  "pipeline": null,
+  "params": 9532520048
+ },
+ {
+  "id": "bytedance-research/GRN",
+  "created": "2026-04-16",
+  "downloads": 0,
+  "pipeline": null,
+  "params": null
+ },
+ {
+  "id": "bytedance-research/Timer-S1",
+  "created": "2026-04-09",
+  "downloads": 238,
+  "pipeline": "time-series-forecasting",
+  "params": 8303654176
+ },
+ {
+  "id": "bytedance-research/Vidi1.5-9B",
+  "created": "2026-01-22",
+  "downloads": 101,
+  "pipeline": null,
+  "params": 10462005312
+ }
+]

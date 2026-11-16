@@ -1,0 +1,23 @@
+{
+ "DeepSeek-V3-0324": {
+  "bit-identical": 1.8858292079207921,
+  "barely changed": 0.18873762376237624,
+  "partly changed": 2.566522277227723,
+  "updated": 95.35891089108911,
+  "vocab": 129280
+ },
+ "DeepSeek-R1": {
+  "bit-identical": 3.313737623762376,
+  "barely changed": 0.5754950495049505,
+  "partly changed": 7.8558168316831685,
+  "updated": 88.2549504950495,
+  "vocab": 129280
+ },
+ "DeepSeek-R1-Zero": {
+  "bit-identical": 8.026763613861386,
+  "barely changed": 14.823638613861386,
+  "partly changed": 46.630569306930695,
+  "updated": 30.519028465346533,
+  "vocab": 129280
+ }
+}

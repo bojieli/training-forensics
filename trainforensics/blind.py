@@ -104,12 +104,12 @@ def _score(logobs: np.ndarray, Dc: np.ndarray, sigma: float, outlier: float = 0.
     return float(-ll.mean()), cov, float(np.median(dd))
 
 
-def _fit_peak(logobs, shape_D, sigma):
+def _fit_peak(logobs, shape_D, sigma, stages=((0.5, 51), (0.03, 61), (0.002, 41), (0.0002, 41))):
     """shape_D: curve at peak=1. Returns best log-shift and score tuple."""
     lD = np.log(np.maximum(shape_D[1:], 1e-300))
     shift0 = np.median(logobs) - np.median(lD)
     best = None
-    for width, n in ((0.5, 51), (0.03, 61), (0.002, 41), (0.0002, 41)):
+    for width, n in stages:
         c = shift0 if best is None else best[0]
         for sh in np.linspace(c - width, c + width, n):
             sc = _score(logobs - sh, shape_D[1:], sigma)
@@ -131,7 +131,9 @@ def _eval(args):
     shape = r.lr()
     if isinstance(wd, tuple):              # ("logP", ln P): decay strength fixed by the total decay
         wd = -wd[1] / max(shape[1:].sum(), 1e-30)
-    sh, sc = _fit_peak(logobs, moves_curve(shape, wd), sigma)
+    # coarse-tolerance jobs (global grid) only need the peak to ~0.1%
+    stages = ((0.5, 51), (0.03, 61), (0.002, 21)) if sigma > 2e-3 else ((0.5, 51), (0.03, 61), (0.002, 41), (0.0002, 41))
+    sh, sc = _fit_peak(logobs, moves_curve(shape, wd), sigma, stages)
     r.peak, r.score, r.coverage, r.resid = math.exp(sh), *sc
     return r
 
@@ -145,8 +147,14 @@ def _pmap(jobs, procs):
 
 
 def fit_recipe(Dobs, wd: float = 0.0, N_hint: int | None = None, sigma: float = 6e-4,
-               kinds=KINDS, procs: int = 32, N_range=(0.4, 4.0), n_grid=90, peak_guess: float = 0.0, logP: float | None = None):
-    """Dobs: per-row moves of flat (single-touch) rows. Returns (best, ranked by kind)."""
+               kinds=KINDS, procs: int = 32, N_range=(0.4, 4.0), n_grid=90, peak_guess: float = 0.0, logP: float | None = None,
+               coarse: float = 8.0):
+    """Dobs: per-row moves of flat (single-touch) rows. Returns (best, ranked by kind).
+
+    The global grid is scored at coarse*sigma: at the fine sigma a grid point a
+    few percent off the true N scores worse than a wrong shape whose dense curve
+    covers everything loosely (r12: cosine_min/490 scores 1.09, linear/5337 0.29,
+    true cosine_min/500 -0.54). The refinement runs at the fine sigma."""
     Dobs = np.asarray(Dobs, np.float64)
     logobs = np.log(Dobs[Dobs > 0])
     # shape curves are built at peak = 1, but decoupled decay depends on the
@@ -168,6 +176,8 @@ def fit_recipe(Dobs, wd: float = 0.0, N_hint: int | None = None, sigma: float = 
             for N in Ns for kind in kinds
             for mr in ((0.1, 0.0) if kind in ("cosine_min", "wsd") else (0.0,))
             for W in _warmups(N)]
+    if coarse and coarse > 1:
+        jobs = [j[:-1] + (sigma * coarse,) for j in jobs]
     cands = sorted(_pmap(jobs, procs), key=lambda r: r.score)
     # refine N at integer resolution around the 12 best distinct (kind, min_ratio, N)
     jobs, keys = [], set()
@@ -176,10 +186,13 @@ def fit_recipe(Dobs, wd: float = 0.0, N_hint: int | None = None, sigma: float = 
         if key in keys:
             continue
         keys.add(key)
-        for N in range(max(10, int(r0.N * 0.88)), int(r0.N * 1.12) + 2):
+        # with the coarse pass the grid neighbours (<= 2.6% apart in N) bracket the
+        # true N, so +-6% around the 8 best keys suffices
+        span, nkeys = ((0.06, 8) if (coarse and coarse > 1) else (0.12, 12))
+        for N in range(max(10, int(r0.N * (1 - span))), int(r0.N * (1 + span)) + 2):
             for W in {r0.warmup, int(round(r0.warmup * N / r0.N))}:
                 jobs.append((logobs, r0.kind, N, W, r0.min_ratio, wd, sigma))
-        if len(keys) >= 12:
+        if len(keys) >= nkeys:
             break
     ref = sorted(_pmap(jobs, procs), key=lambda r: r.score)
     best = ref[0]
@@ -188,7 +201,7 @@ def fit_recipe(Dobs, wd: float = 0.0, N_hint: int | None = None, sigma: float = 
             for N in range(max(10, best.N - 15), best.N + 16) for W in range(0, Wmax + 1)]
     ref = sorted(ref + _pmap(jobs, procs), key=lambda r: r.score)
     seen, ranked = set(), []
-    for r in ref + cands:
+    for r in ref + ([] if (coarse and coarse > 1) else cands):
         if r.kind not in seen:
             seen.add(r.kind)
             ranked.append(r)

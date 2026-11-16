@@ -1,0 +1,520 @@
+{
+ "key": "deepseek-ai/DeepSeek-V2@ -> deepseek-ai/DeepSeek-Coder-V2-Base",
+ "parent": "deepseek-ai/DeepSeek-V2",
+ "child": "deepseek-ai/DeepSeek-Coder-V2-Base",
+ "P": 1.0,
+ "P_exact_frac": 1.0,
+ "dtype": "BF16",
+ "rows": 102400,
+ "dim": 5120,
+ "r0": 0,
+ "recomputed": {
+  "moved": 100016,
+  "near": 0,
+  "unmoved": 2384
+ },
+ "sweep_agrees": true,
+ "tokenizer": "deepseek-ai/DeepSeek-Coder-V2-Base",
+ "frac_changed_hist": {
+  "0": 2384,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 0,
+  "(50%,90%]": 0,
+  "(90%,100%]": 100016
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 0
+ },
+ "init_std": 0.006,
+ "init_std_source": "exact: vectors regenerated from their random start (checkpoint-forensics)",
+ "parent_at_init": 512,
+ "status": "ok",
+ "categories": {
+  "added/special": {
+   "moved": 15,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 3,
+   "unmoved_at_init": 1,
+   "moved_at_init": 0
+  },
+  "all": {
+   "moved": 100003,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 3,
+   "unmoved_at_init": 1,
+   "moved_at_init": 0
+  },
+  "byte-fragment": {
+   "moved": 558,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code": {
+   "moved": 1618,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code-FIM": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code:indent": {
+   "moved": 122,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 20,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "emoji": {
+   "moved": 11,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "math": {
+   "moved": 49,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other-special": {
+   "moved": 6,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "punct/symbol": {
+   "moved": 1666,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:ARABIC": {
+   "moved": 43,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CJK": {
+   "moved": 18047,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CYRILLIC": {
+   "moved": 7177,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:DEVANAGARI": {
+   "moved": 8,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GEORGIAN": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GREEK": {
+   "moved": 86,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HANGUL": {
+   "moved": 15,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HEBREW": {
+   "moved": 18,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HIRAGANA": {
+   "moved": 19,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:KATAKANA": {
+   "moved": 13,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:LATIN": {
+   "moved": 70643,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:OTHER": {
+   "moved": 9,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:THAI": {
+   "moved": 1,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "tool-call": {
+   "moved": 6,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 3,
+   "unmoved_at_init": 1,
+   "moved_at_init": 0
+  },
+  "whitespace": {
+   "moved": 18,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "unreachable": {
+  "all": {
+   "moved": 12,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "math": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "punct/symbol": {
+   "moved": 9,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:OTHER": {
+   "moved": 1,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "freq_rank_buckets": {
+  "0-1000": {
+   "moved": 1000,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  },
+  "1000-10000": {
+   "moved": 9000,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  },
+  "10000-50000": {
+   "moved": 40000,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  },
+  "50000-end": {
+   "moved": 49988,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  }
+ },
+ "added_tokens": [
+  {
+   "id": 100000,
+   "content": "<｜begin▁of▁sentence｜>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9963,
+   "cos": 0.9029,
+   "norm_ratio": 1.0282,
+   "flags": []
+  },
+  {
+   "id": 100001,
+   "content": "<｜end▁of▁sentence｜>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9969,
+   "cos": 0.893,
+   "norm_ratio": 1.3066,
+   "flags": []
+  },
+  {
+   "id": 100002,
+   "content": "<｜fim▁hole｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9957,
+   "cos": 0.9495,
+   "norm_ratio": 1.1062,
+   "flags": []
+  },
+  {
+   "id": 100003,
+   "content": "<｜fim▁begin｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9953,
+   "cos": 0.9543,
+   "norm_ratio": 1.098,
+   "flags": []
+  },
+  {
+   "id": 100004,
+   "content": "<｜fim▁end｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9961,
+   "cos": 0.956,
+   "norm_ratio": 1.1202,
+   "flags": []
+  },
+  {
+   "id": 100005,
+   "content": "<｜completion｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9945,
+   "cos": 0.9655,
+   "norm_ratio": 1.0629,
+   "flags": []
+  },
+  {
+   "id": 100006,
+   "content": "<｜User｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9951,
+   "cos": 0.9589,
+   "norm_ratio": 1.0739,
+   "flags": []
+  },
+  {
+   "id": 100007,
+   "content": "<｜Assistant｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9959,
+   "cos": 0.9374,
+   "norm_ratio": 1.1131,
+   "flags": []
+  },
+  {
+   "id": 100008,
+   "content": "<|EOT|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9953,
+   "cos": 0.9679,
+   "norm_ratio": 1.0687,
+   "flags": []
+  },
+  {
+   "id": 100009,
+   "content": "<｜tool▁calls▁begin｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9949,
+   "cos": 0.9606,
+   "norm_ratio": 1.0689,
+   "flags": []
+  },
+  {
+   "id": 100010,
+   "content": "<｜tool▁calls▁end｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9938,
+   "cos": 0.9643,
+   "norm_ratio": 1.0811,
+   "flags": []
+  },
+  {
+   "id": 100011,
+   "content": "<｜tool▁call▁begin｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9953,
+   "cos": 0.9447,
+   "norm_ratio": 1.1202,
+   "flags": []
+  },
+  {
+   "id": 100012,
+   "content": "<｜tool▁call▁end｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9943,
+   "cos": 0.9592,
+   "norm_ratio": 1.1027,
+   "flags": []
+  },
+  {
+   "id": 100013,
+   "content": "<｜tool▁outputs▁begin｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9951,
+   "cos": 0.9705,
+   "norm_ratio": 1.0593,
+   "flags": []
+  },
+  {
+   "id": 100014,
+   "content": "<｜tool▁outputs▁end｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9949,
+   "cos": 0.9476,
+   "norm_ratio": 1.1018,
+   "flags": []
+  },
+  {
+   "id": 100015,
+   "content": "<｜tool▁output▁begin｜>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100016,
+   "content": "<｜tool▁output▁end｜>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100017,
+   "content": "<｜tool▁sep｜>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  }
+ ],
+ "unmoved_samples": {},
+ "secs": 39.5
+}

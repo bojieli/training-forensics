@@ -1,0 +1,36 @@
+{
+ "key": "moonshotai/Kimi-K2-Base@ -> moonshotai/Kimi-K2-Instruct-0905",
+ "parent": "moonshotai/Kimi-K2-Base",
+ "child": "moonshotai/Kimi-K2-Instruct-0905",
+ "P": 0.9972332659237637,
+ "P_exact_frac": 0.4303417205810547,
+ "dtype": "BF16",
+ "rows": 163840,
+ "dim": 7168,
+ "r0": 0,
+ "recomputed": {
+  "moved": 163704,
+  "near": 0,
+  "unmoved": 136
+ },
+ "sweep_agrees": true,
+ "tokenizer": "moonshotai/Kimi-K2-Base",
+ "frac_changed_hist": {
+  "0": 136,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 20,
+  "(50%,90%]": 925,
+  "(90%,100%]": 162759
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 254
+ },
+ "init_std": 2.8654044744150632e-05,
+ "init_std_source": "exact: vectors regenerated from their random start (checkpoint-forensics)",
+ "parent_at_init": 256,
+ "status": "no tokenizer.json"
+}

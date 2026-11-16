@@ -9,5 +9,9 @@
  "with_unmoved_rows": 129,
  "every_row_moved": 56,
  "decoupled_decay_visible": 26,
- "with_flat_rows": 5
+ "with_flat_rows": 5,
+ "readable_token_record": 126,
+ "exactly_one_unmoved": 3,
+ "near_only": 7,
+ "decay_excluding_zeroed": 25
 }

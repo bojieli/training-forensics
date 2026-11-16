@@ -1,0 +1,5043 @@
+{
+ "rows": [
+  {
+   "parent": "ibm-granite/granite-4.0-h-tiny-base",
+   "child": "ibm-granite/granite-4.0-h-tiny",
+   "relation": "base",
+   "cls": "shared matrix",
+   "vocab": 100352,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 100352,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.09530385335286458,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "named_special": {
+    "n": 27,
+    "updated": 27,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 69,
+    "updated": 69,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|pad|>",
+    "<|end_of_text|>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|filename|>",
+    "<|reponame|>",
+    "<|start_of_role|>",
+    "<|end_of_role|>",
+    "<|start_of_plugin|>",
+    "<|end_of_plugin|>",
+    "<|unk|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<think>",
+    "</think>",
+    "<think_on>",
+    "<think_off>",
+    "<schema>",
+    "</schema>",
+    "<tools>",
+    "</tools>",
+    "<documents>",
+    "</documents>"
+   ],
+   "unmoved_ranges": [],
+   "tied": true
+  },
+  {
+   "parent": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+   "child": "baidu/ERNIE-4.5-21B-A3B-PT",
+   "relation": "base",
+   "cls": "shared matrix",
+   "vocab": 103424,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 103424,
+   "P": 1.0059071160172648,
+   "shrink_pct": -0.5907116017264791,
+   "fit": 0.07055740356445313,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "named_special": {
+    "n": 1027,
+    "updated": 1027,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 2,
+    "updated": 2,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<unk>",
+    "<s>",
+    "</s>",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "<|end_of_sentence|>",
+    "<|begin_of_sentence|>",
+    "<mask:1>",
+    "<mask:4>",
+    "<mask:5>",
+    "<mask:6>",
+    "<mask:7>",
+    "<|LOC_0|>",
+    "<|LOC_1|>",
+    "<|LOC_2|>",
+    "<|LOC_3|>",
+    "<|LOC_4|>",
+    "<|LOC_5|>",
+    "<|LOC_6|>",
+    "<|LOC_7|>",
+    "<|LOC_8|>",
+    "<|LOC_9|>",
+    "<|LOC_10|>",
+    "<|LOC_11|>",
+    "<|LOC_12|>",
+    "<|LOC_13|>",
+    "<|LOC_14|>",
+    "<|LOC_15|>",
+    "<|LOC_16|>",
+    "<|LOC_17|>",
+    "<|LOC_18|>",
+    "<|LOC_19|>"
+   ],
+   "unmoved_ranges": [],
+   "tied": true
+  },
+  {
+   "parent": "inclusionAI/Ling-3.0-tiny-base",
+   "child": "inclusionAI/Ling-3.0-tiny",
+   "relation": "base",
+   "cls": "not comparable",
+   "vocab": 157184,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 157184,
+   "P": 0.9909675212956689,
+   "shrink_pct": 0.9032478704331104,
+   "fit": 0.4672495524088542,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    1.9085912052117262e-05,
+    0.9999809140879479
+   ],
+   "named_special": {
+    "n": 20,
+    "updated": 20,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 242,
+    "updated": 242,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|startoftext|>",
+    "<|endoftext|>",
+    "[CLS]",
+    "[gMASK]",
+    "<|role_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<|fim_start|>",
+    "<|fim_hole|>",
+    "<|fim_end|>",
+    "<think>",
+    "</think>",
+    "<arg_key>",
+    "</arg_key>",
+    "<arg_value>",
+    "</arg_value>",
+    "<role>",
+    "</role>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+   "child": "baidu/ERNIE-4.5-21B-A3B-Thinking",
+   "relation": "base",
+   "cls": "shared matrix",
+   "vocab": 103424,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 103424,
+   "P": 0.9578070288954418,
+   "shrink_pct": 4.2192971104558215,
+   "fit": 0.03343505859375,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "named_special": {
+    "n": 32,
+    "updated": 32,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<unk>",
+    "<s>",
+    "</s>",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "<|end_of_sentence|>",
+    "<|begin_of_sentence|>",
+    "<mask:1>",
+    "<think>",
+    "</think>",
+    "<tool_output>",
+    "</tool_output>",
+    "<tool_call>",
+    "</tool_call>",
+    "<response>",
+    "</response>",
+    "<system_setting>",
+    "</system_setting>",
+    "<global_setting>",
+    "</global_setting>",
+    "<tool_list>",
+    "</tool_list>",
+    "<|im_start|>",
+    "<|im_end|>"
+   ],
+   "unmoved_ranges": [],
+   "tied": true
+  },
+  {
+   "parent": "inclusionAI/Ling-mini-base-2.0",
+   "child": "inclusionAI/Ling-mini-2.0",
+   "relation": "base",
+   "cls": "not comparable",
+   "vocab": 157184,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 1,
+   "changed": 157183,
+   "P": 1.0143740436959525,
+   "shrink_pct": -1.437404369595252,
+   "fit": 0.3334178924560547,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    6.361970684039088e-06,
+    0.0,
+    1.2723941368078176e-05,
+    0.9999809140879479
+   ],
+   "named_special": {
+    "n": 11,
+    "updated": 11,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 251,
+    "updated": 251,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|startoftext|>",
+    "<|endoftext|>",
+    "[CLS]",
+    "[gMASK]",
+    "<|role_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<role>",
+    "</role>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "Qwen/Qwen3-Coder-Next-Base",
+   "child": "Qwen/Qwen3-Coder-Next",
+   "relation": "base",
+   "cls": "not comparable",
+   "vocab": 151936,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 1,
+   "barely_changed": 0,
+   "changed": 151935,
+   "P": 0.9910735449992156,
+   "shrink_pct": 0.8926455000784372,
+   "fit": 0.41361236572265625,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    6.581718618365627e-06,
+    0.0,
+    0.0,
+    3.2908593091828136e-05,
+    0.9999605096882898
+   ],
+   "named_special": {
+    "n": 26,
+    "updated": 26,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|endoftext|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<tool_response>",
+    "</tool_response>",
+    "<think>",
+    "</think>"
+   ],
+   "unmoved_ranges": [
+    [
+     123806,
+     123807
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+   "child": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+   "relation": "successive",
+   "cls": "token record",
+   "vocab": 151936,
+   "bit_identical_raw": 3700,
+   "bit_identical_after_decay": 3700,
+   "barely_changed": 385,
+   "changed": 147851,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.024352358887952823,
+    0.0025339616680707666,
+    0.0021982940185341195,
+    0.006107834877843303,
+    0.964807550547599
+   ],
+   "named_special": {
+    "n": 26,
+    "updated": 16,
+    "barely": 4,
+    "identical": 6
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_end|>",
+    "<|quad_end|>",
+    "<|vision_pad|>",
+    "<|fim_pad|>"
+   ],
+   "named_updated": [
+    "<|endoftext|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<tool_response>",
+    "</tool_response>",
+    "<think>",
+    "</think>"
+   ],
+   "unmoved_ranges": [
+    [
+     125,
+     126
+    ],
+    [
+     178,
+     179
+    ],
+    [
+     181,
+     183
+    ],
+    [
+     185,
+     188
+    ],
+    [
+     4973,
+     4974
+    ],
+    [
+     7311,
+     7312
+    ],
+    [
+     14793,
+     14794
+    ],
+    [
+     17730,
+     17731
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16",
+   "child": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+   "relation": "base",
+   "cls": "record, poor fit",
+   "vocab": 131072,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 337,
+   "barely_changed": 7,
+   "changed": 130728,
+   "P": 0.992692569587696,
+   "shrink_pct": 0.7307430412303972,
+   "fit": 0.9571002778552827,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.00257110595703125,
+    5.340576171875e-05,
+    0.00357818603515625,
+    0.00722503662109375,
+    0.986572265625
+   ],
+   "named_special": {
+    "n": 18,
+    "updated": 16,
+    "barely": 0,
+    "identical": 2
+   },
+   "reserved": {
+    "n": 982,
+    "updated": 800,
+    "barely": 6,
+    "identical": 176
+   },
+   "named_identical": [
+    "[/AVAILABLE_TOOLS]",
+    "[/TOOL_RESULTS]"
+   ],
+   "named_updated": [
+    "<unk>",
+    "<s>",
+    "</s>",
+    "[INST]",
+    "[/INST]",
+    "[AVAILABLE_TOOLS]",
+    "[TOOL_RESULTS]",
+    "[TOOL_CALLS]",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<think>",
+    "</think>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>"
+   ],
+   "unmoved_ranges": [
+    [
+     6,
+     7
+    ],
+    [
+     8,
+     9
+    ],
+    [
+     19,
+     20
+    ],
+    [
+     26,
+     27
+    ],
+    [
+     41,
+     42
+    ],
+    [
+     47,
+     48
+    ],
+    [
+     49,
+     50
+    ],
+    [
+     55,
+     56
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "allenai/Olmo-3-1025-7B",
+   "child": "allenai/Olmo-3-7B-RL-Zero-Math",
+   "relation": "rl-zero",
+   "cls": "token record",
+   "vocab": 100278,
+   "bit_identical_raw": 37896,
+   "bit_identical_after_decay": 37896,
+   "barely_changed": 8197,
+   "changed": 54185,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.3779094118350984,
+    0.08174275514070883,
+    0.4537984403358663,
+    0.08636989170107102,
+    0.0001795009872554299
+   ],
+   "named_special": {
+    "n": 22,
+    "updated": 3,
+    "barely": 0,
+    "identical": 19
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [
+    "<|system|>",
+    "<|endoftext|>",
+    "|||PHONE_NUMBER|||",
+    "|||EMAIL_ADDRESS|||",
+    "|||IP_ADDRESS|||",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|user|>",
+    "<|assistant|>",
+    "<think>",
+    "</think>",
+    "<functions>",
+    "</functions>",
+    "<function_calls>",
+    "</function_calls>",
+    "<answer>",
+    "</answer>",
+    "<|endofprompt|>",
+    "<|pad|>"
+   ],
+   "named_updated": [
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>"
+   ],
+   "unmoved_ranges": [
+    [
+     124,
+     126
+    ],
+    [
+     154,
+     157
+    ],
+    [
+     170,
+     171
+    ],
+    [
+     172,
+     189
+    ],
+    [
+     193,
+     196
+    ],
+    [
+     203,
+     206
+    ],
+    [
+     207,
+     208
+    ],
+    [
+     209,
+     220
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "inclusionAI/Ling-3.0-flash-base",
+   "child": "inclusionAI/Ling-3.0-flash",
+   "relation": "base",
+   "cls": "token record",
+   "vocab": 157184,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 1130,
+   "barely_changed": 0,
+   "changed": 156054,
+   "P": 0.971796649774658,
+   "shrink_pct": 2.820335022534204,
+   "fit": 0.9996330261230468,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.007189026872964169,
+    0.0,
+    4.4533794788273615e-05,
+    0.0002544788273615635,
+    0.992511960504886
+   ],
+   "named_special": {
+    "n": 20,
+    "updated": 18,
+    "barely": 0,
+    "identical": 2
+   },
+   "reserved": {
+    "n": 242,
+    "updated": 80,
+    "barely": 0,
+    "identical": 162
+   },
+   "named_identical": [
+    "<|startoftext|>",
+    "[gMASK]"
+   ],
+   "named_updated": [
+    "<|endoftext|>",
+    "[CLS]",
+    "<|role_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<|fim_start|>",
+    "<|fim_hole|>",
+    "<|fim_end|>",
+    "<think>",
+    "</think>",
+    "<arg_key>",
+    "</arg_key>",
+    "<arg_value>",
+    "</arg_value>",
+    "<role>",
+    "</role>"
+   ],
+   "unmoved_ranges": [
+    [
+     125,
+     126
+    ],
+    [
+     163,
+     164
+    ],
+    [
+     177,
+     180
+    ],
+    [
+     181,
+     183
+    ],
+    [
+     184,
+     185
+    ],
+    [
+     186,
+     187
+    ],
+    [
+     29670,
+     29671
+    ],
+    [
+     38405,
+     38406
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "allenai/Olmo-3-1025-7B",
+   "child": "allenai/Olmo-3-7B-RL-Zero-Mix",
+   "relation": "rl-zero",
+   "cls": "token record",
+   "vocab": 100278,
+   "bit_identical_raw": 5528,
+   "bit_identical_after_decay": 5528,
+   "barely_changed": 18754,
+   "changed": 75996,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.05512674764155647,
+    0.18702008416601848,
+    0.731616107221923,
+    0.026157282753944036,
+    7.977821655796884e-05
+   ],
+   "named_special": {
+    "n": 22,
+    "updated": 8,
+    "barely": 0,
+    "identical": 14
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [
+    "<|system|>",
+    "<|endoftext|>",
+    "|||PHONE_NUMBER|||",
+    "|||EMAIL_ADDRESS|||",
+    "|||IP_ADDRESS|||",
+    "<|user|>",
+    "<|assistant|>",
+    "</think>",
+    "<function_calls>",
+    "</function_calls>",
+    "<answer>",
+    "</answer>",
+    "<|endofprompt|>",
+    "<|pad|>"
+   ],
+   "named_updated": [
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<think>",
+    "<functions>",
+    "</functions>"
+   ],
+   "unmoved_ranges": [
+    [
+     124,
+     126
+    ],
+    [
+     177,
+     188
+    ],
+    [
+     4990,
+     4991
+    ],
+    [
+     5702,
+     5703
+    ],
+    [
+     6128,
+     6129
+    ],
+    [
+     6210,
+     6211
+    ],
+    [
+     7196,
+     7197
+    ],
+    [
+     7262,
+     7263
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "Qwen/Qwen3.5-2B-Base",
+   "child": "Qwen/Qwen3.5-2B",
+   "relation": "base",
+   "cls": "shared matrix",
+   "vocab": 248320,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 248320,
+   "P": 0.9978479390375007,
+   "shrink_pct": 0.21520609624993137,
+   "fit": 0.17033004760742188,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "named_special": {
+    "n": 33,
+    "updated": 33,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|endoftext|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<tool_response>",
+    "</tool_response>",
+    "<think>",
+    "</think>",
+    "<|audio_start|>",
+    "<|audio_end|>",
+    "<tts_pad>",
+    "<tts_text_bos>",
+    "<tts_text_eod>",
+    "<tts_text_bos_single>",
+    "<|audio_pad|>"
+   ],
+   "unmoved_ranges": [],
+   "tied": true
+  },
+  {
+   "parent": "ibm-granite/granite-4.0-h-small-base",
+   "child": "ibm-granite/granite-4.0-h-small",
+   "relation": "base",
+   "cls": "shared matrix",
+   "vocab": 100352,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 100352,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.48990964889526367,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    1.992984693877551e-05,
+    0.0016442123724489796,
+    0.9983358577806123
+   ],
+   "named_special": {
+    "n": 27,
+    "updated": 27,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 69,
+    "updated": 69,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|pad|>",
+    "<|end_of_text|>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|filename|>",
+    "<|reponame|>",
+    "<|start_of_role|>",
+    "<|end_of_role|>",
+    "<|start_of_plugin|>",
+    "<|end_of_plugin|>",
+    "<|unk|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<think>",
+    "</think>",
+    "<think_on>",
+    "<think_off>",
+    "<schema>",
+    "</schema>",
+    "<tools>",
+    "</tools>",
+    "<documents>",
+    "</documents>"
+   ],
+   "unmoved_ranges": [],
+   "tied": true
+  },
+  {
+   "parent": "ibm-granite/granite-4.1-8b-base",
+   "child": "ibm-granite/granite-4.1-8b",
+   "relation": "base",
+   "cls": "shared matrix",
+   "vocab": 100352,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 100352,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.7056140899658203,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0009068080357142857,
+    0.0038962850765306123,
+    0.9951969068877551
+   ],
+   "named_special": {
+    "n": 27,
+    "updated": 27,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 69,
+    "updated": 69,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|pad|>",
+    "<|end_of_text|>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|filename|>",
+    "<|reponame|>",
+    "<|start_of_role|>",
+    "<|end_of_role|>",
+    "<|start_of_plugin|>",
+    "<|end_of_plugin|>",
+    "<|unk|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<think>",
+    "</think>",
+    "<think_on>",
+    "<think_off>",
+    "<schema>",
+    "</schema>",
+    "<tools>",
+    "</tools>",
+    "<documents>",
+    "</documents>"
+   ],
+   "unmoved_ranges": [],
+   "tied": true
+  },
+  {
+   "parent": "LGAI-EXAONE/EXAONE-4.0-32B",
+   "child": "LGAI-EXAONE/EXAONE-4.0.1-32B",
+   "relation": "successive",
+   "cls": "token record",
+   "vocab": 102400,
+   "bit_identical_raw": 43804,
+   "bit_identical_after_decay": 43804,
+   "barely_changed": 4178,
+   "changed": 54418,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.4277734375,
+    0.04080078125,
+    0.383369140625,
+    0.147998046875,
+    5.859375e-05
+   ],
+   "named_special": {
+    "n": 262,
+    "updated": 40,
+    "barely": 0,
+    "identical": 222
+   },
+   "reserved": {
+    "n": 100,
+    "updated": 0,
+    "barely": 0,
+    "identical": 100
+   },
+   "named_identical": [
+    "[BOS]",
+    "[EOS]",
+    "[UNK]",
+    "\t\t\t\t\t\t\t\t\t",
+    "\t\t\t\t\t\t\t\t",
+    "\t\t\t\t\t\t\t",
+    "\t\t\t\t\t\t",
+    "\t\t\t\t\t",
+    "<|endoftext|>",
+    "<|c|>",
+    "<|c++|>",
+    "<|python|>",
+    "<|javascript|>",
+    "<|markdown|>",
+    "<|html|>",
+    "<|css|>",
+    "<|vue|>",
+    "<|java|>",
+    "PI:URL",
+    "PI:EMAIL",
+    "PI:ACCOUNT_NUM",
+    "PI:PHONE_NUM",
+    "PI:BUSINESS_NUM",
+    "PI:ANNON",
+    "PI:KEY",
+    "PI:ID",
+    "PI:IP_ADDRESS",
+    "PI:USER",
+    "[extra_id_0]",
+    "[extra_id_1]",
+    "[extra_id_2]",
+    "[extra_id_3]",
+    "[extra_id_4]",
+    "[extra_id_5]",
+    "[extra_id_6]",
+    "[extra_id_7]",
+    "[extra_id_8]",
+    "[extra_id_9]",
+    "[extra_id_10]",
+    "[extra_id_11]"
+   ],
+   "named_updated": [
+    "[PAD]",
+    "                               ",
+    "                              ",
+    "                             ",
+    "                            ",
+    "                           ",
+    "                          ",
+    "                         ",
+    "                        ",
+    "                       ",
+    "                      ",
+    "                     ",
+    "                    ",
+    "                   ",
+    "                  ",
+    "                 ",
+    "                ",
+    "               ",
+    "              ",
+    "             ",
+    "            ",
+    "           ",
+    "          ",
+    "         ",
+    "        ",
+    "       ",
+    "      ",
+    "     ",
+    "    ",
+    "   ",
+    "  ",
+    "\t\t\t\t",
+    "\t\t\t",
+    "\t\t",
+    "</think>",
+    "<think>",
+    "[|system|]",
+    "[|assistant|]",
+    "[|user|]",
+    "[|endofturn|]"
+   ],
+   "unmoved_ranges": [
+    [
+     1,
+     4
+    ],
+    [
+     34,
+     39
+    ],
+    [
+     42,
+     355
+    ],
+    [
+     358,
+     359
+    ],
+    [
+     486,
+     488
+    ],
+    [
+     492,
+     495
+    ],
+    [
+     497,
+     498
+    ],
+    [
+     499,
+     500
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "MiniMaxAI/MiniMax-M2",
+   "child": "MiniMaxAI/MiniMax-M2.1",
+   "relation": "successive",
+   "cls": "not comparable",
+   "vocab": 200064,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 200064,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.3621234893798828,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0012545985284708892,
+    0.9987454014715291
+   ],
+   "named_special": {
+    "n": 54,
+    "updated": 54,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "]!p~[",
+    "<fim_prefix>",
+    "<fim_middle>",
+    "<fim_suffix>",
+    "<fim_pad>",
+    "<reponame>",
+    "<filename>",
+    "<gh_stars>",
+    "<issue_start>",
+    "<issue_comment>",
+    "<issue_closed>",
+    "<jupyter_start>",
+    "<jupyter_text>",
+    "<jupyter_code>",
+    "<jupyter_output>",
+    "<empty_output>",
+    "<commit_before>",
+    "<commit_msg>",
+    "<commit_after>",
+    "]~b]",
+    "[e~[",
+    "]!d~[",
+    "<function_call>",
+    "<code_interpreter>",
+    "]<]speech[>[",
+    "]<]image[>[",
+    "]<]video[>[",
+    "]<]start of speech[>[",
+    "]<]end of speech[>[",
+    "]<]start of image[>[",
+    "]<]end of image[>[",
+    "]<]start of video[>[",
+    "]<]end of video[>[",
+    "]<]vision pad[>[",
+    "]~!b[",
+    "<jupyter_error>",
+    "<add_file>",
+    "<delete_file>",
+    "<rename_file>",
+    "<edit_file>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "MiniMaxAI/MiniMax-M2.1",
+   "child": "MiniMaxAI/MiniMax-M2.5",
+   "relation": "successive",
+   "cls": "changed throughout",
+   "vocab": 200064,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 200064,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.6461734771728516,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0011996161228406909,
+    0.0004048704414587332,
+    0.9983955134357005
+   ],
+   "named_special": {
+    "n": 54,
+    "updated": 54,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "]!p~[",
+    "<fim_prefix>",
+    "<fim_middle>",
+    "<fim_suffix>",
+    "<fim_pad>",
+    "<reponame>",
+    "<filename>",
+    "<gh_stars>",
+    "<issue_start>",
+    "<issue_comment>",
+    "<issue_closed>",
+    "<jupyter_start>",
+    "<jupyter_text>",
+    "<jupyter_code>",
+    "<jupyter_output>",
+    "<empty_output>",
+    "<commit_before>",
+    "<commit_msg>",
+    "<commit_after>",
+    "]~b]",
+    "[e~[",
+    "]!d~[",
+    "<function_call>",
+    "<code_interpreter>",
+    "]<]speech[>[",
+    "]<]image[>[",
+    "]<]video[>[",
+    "]<]start of speech[>[",
+    "]<]end of speech[>[",
+    "]<]start of image[>[",
+    "]<]end of image[>[",
+    "]<]start of video[>[",
+    "]<]end of video[>[",
+    "]<]vision pad[>[",
+    "]~!b[",
+    "<jupyter_error>",
+    "<add_file>",
+    "<delete_file>",
+    "<rename_file>",
+    "<edit_file>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "MiniMaxAI/MiniMax-M2.5",
+   "child": "MiniMaxAI/MiniMax-M2.7",
+   "relation": "successive",
+   "cls": "not comparable",
+   "vocab": 200064,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 200064,
+   "P": 0.9979789540686298,
+   "shrink_pct": 0.20210459313702023,
+   "fit": 0.4152412414550781,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.001084652911068458,
+    0.9989153470889316
+   ],
+   "named_special": {
+    "n": 54,
+    "updated": 54,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "]!p~[",
+    "<fim_prefix>",
+    "<fim_middle>",
+    "<fim_suffix>",
+    "<fim_pad>",
+    "<reponame>",
+    "<filename>",
+    "<gh_stars>",
+    "<issue_start>",
+    "<issue_comment>",
+    "<issue_closed>",
+    "<jupyter_start>",
+    "<jupyter_text>",
+    "<jupyter_code>",
+    "<jupyter_output>",
+    "<empty_output>",
+    "<commit_before>",
+    "<commit_msg>",
+    "<commit_after>",
+    "]~b]",
+    "[e~[",
+    "]!d~[",
+    "<function_call>",
+    "<code_interpreter>",
+    "]<]speech[>[",
+    "]<]image[>[",
+    "]<]video[>[",
+    "]<]start of speech[>[",
+    "]<]end of speech[>[",
+    "]<]start of image[>[",
+    "]<]end of image[>[",
+    "]<]start of video[>[",
+    "]<]end of video[>[",
+    "]<]vision pad[>[",
+    "]~!b[",
+    "<jupyter_error>",
+    "<add_file>",
+    "<delete_file>",
+    "<rename_file>",
+    "<edit_file>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "arcee-ai/Trinity-Large-Base",
+   "child": "arcee-ai/Trinity-Large-Preview",
+   "relation": "base",
+   "cls": "token record",
+   "vocab": 200192,
+   "bit_identical_raw": 1555,
+   "bit_identical_after_decay": 1555,
+   "barely_changed": 24,
+   "changed": 198613,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.007767543158567775,
+    0.00011988491048593351,
+    0.002272818094629156,
+    0.13264765824808183,
+    0.8571920955882353
+   ],
+   "named_special": {
+    "n": 21,
+    "updated": 17,
+    "barely": 0,
+    "identical": 4
+   },
+   "reserved": {
+    "n": 11,
+    "updated": 0,
+    "barely": 0,
+    "identical": 11
+   },
+   "named_identical": [
+    "<|fitm_start|>",
+    "<|fitm_end|>",
+    "<|fitm_hole|>",
+    "<|pad|>"
+   ],
+   "named_updated": [
+    "<|begin_of_text|>",
+    "<|end_of_text|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|eot_id|>",
+    "<|start|>",
+    "<|channel|>",
+    "<|message|>",
+    "<|end|>",
+    "<think>",
+    "</think>",
+    "<tools>",
+    "</tools>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>"
+   ],
+   "unmoved_ranges": [
+    [
+     9,
+     13
+    ],
+    [
+     21,
+     32
+    ],
+    [
+     156,
+     160
+    ],
+    [
+     209,
+     220
+    ],
+    [
+     12354,
+     12355
+    ],
+    [
+     13631,
+     13633
+    ],
+    [
+     20398,
+     20399
+    ],
+    [
+     20638,
+     20639
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "arcee-ai/Trinity-Large-TrueBase",
+   "child": "arcee-ai/Trinity-Large-Base",
+   "relation": "stage",
+   "cls": "token record",
+   "vocab": 200192,
+   "bit_identical_raw": 249,
+   "bit_identical_after_decay": 249,
+   "barely_changed": 0,
+   "changed": 199943,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.49253082275390625,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.00124380594629156,
+    0.0,
+    0.0,
+    0.0,
+    0.9987561940537084
+   ],
+   "named_special": {
+    "n": 21,
+    "updated": 17,
+    "barely": 0,
+    "identical": 4
+   },
+   "reserved": {
+    "n": 11,
+    "updated": 0,
+    "barely": 0,
+    "identical": 11
+   },
+   "named_identical": [
+    "<|channel|>",
+    "<|fitm_start|>",
+    "<|fitm_end|>",
+    "<|fitm_hole|>"
+   ],
+   "named_updated": [
+    "<|begin_of_text|>",
+    "<|end_of_text|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|eot_id|>",
+    "<|start|>",
+    "<|message|>",
+    "<|end|>",
+    "<|pad|>",
+    "<think>",
+    "</think>",
+    "<tools>",
+    "</tools>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>"
+   ],
+   "unmoved_ranges": [
+    [
+     6,
+     7
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     21,
+     32
+    ],
+    [
+     156,
+     158
+    ],
+    [
+     159,
+     160
+    ],
+    [
+     209,
+     220
+    ],
+    [
+     47783,
+     47784
+    ],
+    [
+     51660,
+     51661
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+   "child": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+   "relation": "successive",
+   "cls": "not comparable",
+   "vocab": 151936,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 151936,
+   "P": 0.9980328930873198,
+   "shrink_pct": 0.19671069126802054,
+   "fit": 0.42240238189697266,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.00017770640269587195,
+    0.9998222935973041
+   ],
+   "named_special": {
+    "n": 26,
+    "updated": 26,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|endoftext|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<tool_response>",
+    "</tool_response>",
+    "<think>",
+    "</think>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "Qwen/Qwen3.5-4B-Base",
+   "child": "Qwen/Qwen3.5-4B",
+   "relation": "base",
+   "cls": "shared matrix",
+   "vocab": 248320,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 248320,
+   "P": 0.9968770676922893,
+   "shrink_pct": 0.31229323077106574,
+   "fit": 0.13803634643554688,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "named_special": {
+    "n": 33,
+    "updated": 33,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|endoftext|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<tool_response>",
+    "</tool_response>",
+    "<think>",
+    "</think>",
+    "<|audio_start|>",
+    "<|audio_end|>",
+    "<tts_pad>",
+    "<tts_text_bos>",
+    "<tts_text_eod>",
+    "<tts_text_bos_single>",
+    "<|audio_pad|>"
+   ],
+   "unmoved_ranges": [],
+   "tied": true
+  },
+  {
+   "parent": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+   "child": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+   "relation": "stage",
+   "cls": "token record",
+   "vocab": 152576,
+   "bit_identical_raw": 17140,
+   "bit_identical_after_decay": 17140,
+   "barely_changed": 13255,
+   "changed": 122181,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.11233745805369127,
+    0.08687473783557047,
+    0.36952731753355705,
+    0.43112285025167785,
+    0.0001376363255033557
+   ],
+   "named_special": {
+    "n": 32,
+    "updated": 11,
+    "barely": 0,
+    "identical": 21
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|file_sep|>",
+    "<|audio_pad|>",
+    "<|mimo_video_start|>",
+    "<|mimo_video_end|>",
+    "<|mimo_audio_eod|>",
+    "<|mimo_audio_start|>",
+    "<|mimo_audio_end|>"
+   ],
+   "named_updated": [
+    "<|endoftext|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<think>",
+    "</think>"
+   ],
+   "unmoved_ranges": [
+    [
+     124,
+     126
+    ],
+    [
+     128,
+     129
+    ],
+    [
+     177,
+     188
+    ],
+    [
+     2194,
+     2195
+    ],
+    [
+     3023,
+     3024
+    ],
+    [
+     4973,
+     4974
+    ],
+    [
+     5850,
+     5851
+    ],
+    [
+     6024,
+     6025
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "inclusionAI/Ling-flash-base-2.0",
+   "child": "inclusionAI/Ling-flash-2.0",
+   "relation": "base",
+   "cls": "not comparable",
+   "vocab": 157184,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 157184,
+   "P": 0.9662027692888946,
+   "shrink_pct": 3.379723071110541,
+   "fit": 0.2164926528930664,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "named_special": {
+    "n": 11,
+    "updated": 11,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 251,
+    "updated": 251,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|startoftext|>",
+    "<|endoftext|>",
+    "[CLS]",
+    "[gMASK]",
+    "<|role_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<role>",
+    "</role>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "inclusionAI/Ling-2.6-flash-base",
+   "child": "inclusionAI/Ling-2.6-flash",
+   "relation": "base",
+   "cls": "changed throughout",
+   "vocab": 157184,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 2,
+   "changed": 157182,
+   "P": 0.9926797081525057,
+   "shrink_pct": 0.7320291847494276,
+   "fit": 0.8704390525817871,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    1.2723941368078176e-05,
+    1.2723941368078176e-05,
+    0.013792752442996742,
+    0.9861817996742671
+   ],
+   "named_special": {
+    "n": 16,
+    "updated": 16,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 246,
+    "updated": 246,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|startoftext|>",
+    "<|endoftext|>",
+    "[CLS]",
+    "[gMASK]",
+    "<|role_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<|fim_start|>",
+    "<|fim_hole|>",
+    "<|fim_end|>",
+    "<think>",
+    "</think>",
+    "<role>",
+    "</role>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "zai-org/GLM-4.5",
+   "child": "zai-org/GLM-4.6",
+   "relation": "successive",
+   "cls": "record, poor fit",
+   "vocab": 151552,
+   "bit_identical_raw": 128,
+   "bit_identical_after_decay": 128,
+   "barely_changed": 0,
+   "changed": 151424,
+   "P": 0.993127919365253,
+   "shrink_pct": 0.687208063474698,
+   "fit": 0.7029457092285156,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0008445945945945946,
+    0.0,
+    0.0,
+    0.0027515308277027027,
+    0.9964038745777027
+   ],
+   "named_special": {
+    "n": 36,
+    "updated": 36,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|endoftext|>",
+    "[MASK]",
+    "[gMASK]",
+    "[sMASK]",
+    "<sop>",
+    "<eop>",
+    "<|system|>",
+    "<|user|>",
+    "<|assistant|>",
+    "<|observation|>",
+    "<|begin_of_image|>",
+    "<|end_of_image|>",
+    "<|begin_of_video|>",
+    "<|end_of_video|>",
+    "<|begin_of_audio|>",
+    "<|end_of_audio|>",
+    "<|begin_of_transcription|>",
+    "<|end_of_transcription|>",
+    "<|code_prefix|>",
+    "<|code_middle|>",
+    "<|code_suffix|>",
+    "<think>",
+    "</think>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<arg_key>",
+    "</arg_key>",
+    "<arg_value>",
+    "</arg_value>",
+    "/nothink",
+    "<|begin_of_box|>",
+    "<|end_of_box|>",
+    "<|image|>",
+    "<|video|>"
+   ],
+   "unmoved_ranges": [
+    [
+     151424,
+     151552
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "zai-org/GLM-4.6",
+   "child": "zai-org/GLM-4.7",
+   "relation": "successive",
+   "cls": "token record",
+   "vocab": 151552,
+   "bit_identical_raw": 128,
+   "bit_identical_after_decay": 128,
+   "barely_changed": 0,
+   "changed": 151424,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.9516143798828125,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0008445945945945946,
+    0.0,
+    0.004526499155405405,
+    0.0002903293918918919,
+    0.9943385768581081
+   ],
+   "named_special": {
+    "n": 36,
+    "updated": 36,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|endoftext|>",
+    "[MASK]",
+    "[gMASK]",
+    "[sMASK]",
+    "<sop>",
+    "<eop>",
+    "<|system|>",
+    "<|user|>",
+    "<|assistant|>",
+    "<|observation|>",
+    "<|begin_of_image|>",
+    "<|end_of_image|>",
+    "<|begin_of_video|>",
+    "<|end_of_video|>",
+    "<|begin_of_audio|>",
+    "<|end_of_audio|>",
+    "<|begin_of_transcription|>",
+    "<|end_of_transcription|>",
+    "<|code_prefix|>",
+    "<|code_middle|>",
+    "<|code_suffix|>",
+    "<think>",
+    "</think>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<arg_key>",
+    "</arg_key>",
+    "<arg_value>",
+    "</arg_value>",
+    "/nothink",
+    "<|begin_of_box|>",
+    "<|end_of_box|>",
+    "<|image|>",
+    "<|video|>"
+   ],
+   "unmoved_ranges": [
+    [
+     151424,
+     151552
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "zai-org/GLM-4.5-Base",
+   "child": "zai-org/GLM-4.6",
+   "relation": "base-later",
+   "cls": "record, poor fit",
+   "vocab": 151552,
+   "bit_identical_raw": 128,
+   "bit_identical_after_decay": 128,
+   "barely_changed": 0,
+   "changed": 151424,
+   "P": 0.9713642511303088,
+   "shrink_pct": 2.8635748869691224,
+   "fit": 0.5374668121337891,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0008445945945945946,
+    0.0,
+    0.0,
+    0.0025139885979729728,
+    0.9966414168074325
+   ],
+   "named_special": {
+    "n": 36,
+    "updated": 36,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|endoftext|>",
+    "[MASK]",
+    "[gMASK]",
+    "[sMASK]",
+    "<sop>",
+    "<eop>",
+    "<|system|>",
+    "<|user|>",
+    "<|assistant|>",
+    "<|observation|>",
+    "<|begin_of_image|>",
+    "<|end_of_image|>",
+    "<|begin_of_video|>",
+    "<|end_of_video|>",
+    "<|begin_of_audio|>",
+    "<|end_of_audio|>",
+    "<|begin_of_transcription|>",
+    "<|end_of_transcription|>",
+    "<|code_prefix|>",
+    "<|code_middle|>",
+    "<|code_suffix|>",
+    "<think>",
+    "</think>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<arg_key>",
+    "</arg_key>",
+    "<arg_value>",
+    "</arg_value>",
+    "/nothink",
+    "<|begin_of_box|>",
+    "<|end_of_box|>",
+    "<|image|>",
+    "<|video|>"
+   ],
+   "unmoved_ranges": [
+    [
+     151424,
+     151552
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "ByteDance-Seed/Seed-OSS-36B-Base-woSyn",
+   "child": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+   "relation": "base",
+   "cls": "changed throughout",
+   "vocab": 155136,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 155136,
+   "P": 0.9905808602054362,
+   "shrink_pct": 0.9419139794563769,
+   "fit": 0.5022945404052734,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0019660169141914193,
+    0.9980339830858086
+   ],
+   "named_special": {
+    "n": 128,
+    "updated": 128,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<seed:bos>",
+    "<seed:pad>",
+    "<seed:eos>",
+    "<seed:think>",
+    "</seed:think>",
+    "<seed:cot_budget_reflect>",
+    "</seed:cot_budget_reflect>",
+    "<seed:tool_call>",
+    "</seed:tool_call>",
+    "<[PLHD9_never_used]>",
+    "<[PLHD10_never_used]>",
+    "<[PLHD11_never_used]>",
+    "<[PLHD12_never_used]>",
+    "<[PLHD13_never_used]>",
+    "<[PLHD14_never_used]>",
+    "<[PLHD15_never_used]>",
+    "<[PLHD16_never_used]>",
+    "<[PLHD17_never_used]>",
+    "<[PLHD18_never_used]>",
+    "<[PLHD19_never_used]>",
+    "<[PLHD20_never_used]>",
+    "<[PLHD21_never_used]>",
+    "<[PLHD22_never_used]>",
+    "<[PLHD23_never_used]>",
+    "<[PLHD24_never_used]>",
+    "<[PLHD25_never_used]>",
+    "<[PLHD26_never_used]>",
+    "<[PLHD27_never_used]>",
+    "<[PLHD28_never_used]>",
+    "<[PLHD29_never_used]>",
+    "<[PLHD30_never_used]>",
+    "<[PLHD31_never_used]>",
+    "<[PLHD32_never_used]>",
+    "<[PLHD33_never_used]>",
+    "<[PLHD34_never_used]>",
+    "<[PLHD35_never_used]>",
+    "<[PLHD36_never_used]>",
+    "<[PLHD37_never_used]>",
+    "<[PLHD38_never_used]>",
+    "<[PLHD39_never_used]>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "meituan-longcat/LongCat-Flash-Chat",
+   "child": "meituan-longcat/LongCat-Flash-Thinking",
+   "relation": "successive",
+   "cls": "not comparable",
+   "vocab": 131072,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 131072,
+   "P": 0.32785938493459726,
+   "shrink_pct": 67.21406150654028,
+   "fit": 0.041439056396484375,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "named_special": {
+    "n": 217,
+    "updated": 217,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 7,
+    "updated": 7,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<longcat_unk>",
+    "<longcat_s>",
+    "</longcat_s>",
+    "<longcat_pad>",
+    "<shift_unk>",
+    "<shift_s>",
+    "</shift_s>",
+    "<shift_pad>",
+    "<mask_0>",
+    "<reponame>",
+    "<filename>",
+    "<gh_stars>",
+    "<issue_start>",
+    "<issue_comment>",
+    "<issue_closed>",
+    "<jupyter_start>",
+    "<jupyter_text>",
+    "<jupyter_code>",
+    "<jupyter_output>",
+    "<empty_output>",
+    "<commit_before>",
+    "<commit_msg>",
+    "<commit_after>",
+    "<program_lang>",
+    "<|endoftext|>",
+    "<fim_prefix>",
+    "<fim_middle>",
+    "<fim_suffix>",
+    "<fim_pad>",
+    "<longcat_think>",
+    "</longcat_think>",
+    "<longcat_answer>",
+    "</longcat_answer>",
+    "<longcat_files>",
+    "</longcat_files>",
+    "<longcat_tool_call>",
+    "</longcat_tool_call>",
+    "<mask_20>",
+    "<mask_21>",
+    "<mask_22>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "meituan-longcat/LongCat-Flash-Thinking",
+   "child": "meituan-longcat/LongCat-Flash-Thinking-2601",
+   "relation": "successive",
+   "cls": "not comparable",
+   "vocab": 131072,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 131072,
+   "P": 1.0829146240201182,
+   "shrink_pct": -8.291462402011817,
+   "fit": 0.011011441548665365,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "named_special": {
+    "n": 217,
+    "updated": 217,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 7,
+    "updated": 7,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<longcat_unk>",
+    "<longcat_s>",
+    "</longcat_s>",
+    "<longcat_pad>",
+    "<shift_unk>",
+    "<shift_s>",
+    "</shift_s>",
+    "<shift_pad>",
+    "<mask_0>",
+    "<reponame>",
+    "<filename>",
+    "<gh_stars>",
+    "<issue_start>",
+    "<issue_comment>",
+    "<issue_closed>",
+    "<jupyter_start>",
+    "<jupyter_text>",
+    "<jupyter_code>",
+    "<jupyter_output>",
+    "<empty_output>",
+    "<commit_before>",
+    "<commit_msg>",
+    "<commit_after>",
+    "<program_lang>",
+    "<|endoftext|>",
+    "<fim_prefix>",
+    "<fim_middle>",
+    "<fim_suffix>",
+    "<fim_pad>",
+    "<longcat_think>",
+    "</longcat_think>",
+    "<longcat_answer>",
+    "</longcat_answer>",
+    "<longcat_files>",
+    "</longcat_files>",
+    "<longcat_tool_call>",
+    "</longcat_tool_call>",
+    "<longcat_tool_declare>",
+    "</longcat_tool_declare>",
+    "<longcat_system>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "baidu/ERNIE-4.5-300B-A47B-Base-PT",
+   "child": "baidu/ERNIE-4.5-300B-A47B-PT",
+   "relation": "base",
+   "cls": "changed throughout",
+   "vocab": 103424,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 103424,
+   "P": 0.8715081076876471,
+   "shrink_pct": 12.849189231235291,
+   "fit": 0.7731072902679443,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.022422261757425743,
+    0.9775777382425742
+   ],
+   "named_special": {
+    "n": 1027,
+    "updated": 1027,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 2,
+    "updated": 2,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<unk>",
+    "<s>",
+    "</s>",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "<|end_of_sentence|>",
+    "<|begin_of_sentence|>",
+    "<mask:1>",
+    "<mask:4>",
+    "<mask:5>",
+    "<mask:6>",
+    "<mask:7>",
+    "<|LOC_0|>",
+    "<|LOC_1|>",
+    "<|LOC_2|>",
+    "<|LOC_3|>",
+    "<|LOC_4|>",
+    "<|LOC_5|>",
+    "<|LOC_6|>",
+    "<|LOC_7|>",
+    "<|LOC_8|>",
+    "<|LOC_9|>",
+    "<|LOC_10|>",
+    "<|LOC_11|>",
+    "<|LOC_12|>",
+    "<|LOC_13|>",
+    "<|LOC_14|>",
+    "<|LOC_15|>",
+    "<|LOC_16|>",
+    "<|LOC_17|>",
+    "<|LOC_18|>",
+    "<|LOC_19|>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "baidu/ERNIE-4.5-VL-424B-A47B-Base-PT",
+   "child": "baidu/ERNIE-4.5-VL-424B-A47B-PT",
+   "relation": "base",
+   "cls": "changed throughout",
+   "vocab": 103424,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 103424,
+   "P": 0.9777249163917976,
+   "shrink_pct": 2.2275083608202406,
+   "fit": 0.7602202892303467,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.022402923886138616,
+    0.9775970761138614
+   ],
+   "named_special": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "deepseek-ai/DeepSeek-V3-Base",
+   "child": "deepseek-ai/DeepSeek-V3.1-Base",
+   "relation": "stage",
+   "cls": "token record",
+   "vocab": 129280,
+   "bit_identical_raw": 470,
+   "bit_identical_after_decay": 470,
+   "barely_changed": 0,
+   "changed": 128810,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.9733401707240513,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.003635519801980198,
+    0.0,
+    7.735148514851485e-06,
+    0.003550433168316832,
+    0.9928063118811881
+   ],
+   "named_special": {
+    "n": 22,
+    "updated": 22,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 796,
+    "updated": 796,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<\uff5cbegin\u2581of\u2581sentence\uff5c>",
+    "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    "<\uff5c\u2581pad\u2581\uff5c>",
+    "<\uff5csearch\u2581begin\uff5c>",
+    "<\uff5csearch\u2581end\uff5c>",
+    "<think>",
+    "</think>",
+    "<\uff5cfim\u2581hole\uff5c>",
+    "<\uff5cfim\u2581begin\uff5c>",
+    "<\uff5cfim\u2581end\uff5c>",
+    "<\uff5cUser\uff5c>",
+    "<\uff5cAssistant\uff5c>",
+    "<|EOT|>",
+    "<\uff5ctool\u2581calls\u2581begin\uff5c>",
+    "<\uff5ctool\u2581calls\u2581end\uff5c>",
+    "<\uff5ctool\u2581call\u2581begin\uff5c>",
+    "<\uff5ctool\u2581call\u2581end\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581begin\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581end\uff5c>",
+    "<\uff5ctool\u2581output\u2581begin\uff5c>",
+    "<\uff5ctool\u2581output\u2581end\uff5c>",
+    "<\uff5ctool\u2581sep\uff5c>"
+   ],
+   "unmoved_ranges": [
+    [
+     127,
+     129
+    ],
+    [
+     180,
+     191
+    ],
+    [
+     128823,
+     129280
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "deepseek-ai/DeepSeek-V3.1-Base",
+   "child": "deepseek-ai/DeepSeek-V3.1",
+   "relation": "base",
+   "cls": "token record",
+   "vocab": 129280,
+   "bit_identical_raw": 1020,
+   "bit_identical_after_decay": 1020,
+   "barely_changed": 107,
+   "changed": 128153,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.007889851485148515,
+    0.0008276608910891089,
+    0.008005878712871287,
+    0.3270111386138614,
+    0.6562654702970298
+   ],
+   "named_special": {
+    "n": 22,
+    "updated": 19,
+    "barely": 0,
+    "identical": 3
+   },
+   "reserved": {
+    "n": 796,
+    "updated": 488,
+    "barely": 19,
+    "identical": 289
+   },
+   "named_identical": [
+    "<\uff5c\u2581pad\u2581\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581begin\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581end\uff5c>"
+   ],
+   "named_updated": [
+    "<\uff5cbegin\u2581of\u2581sentence\uff5c>",
+    "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    "<\uff5csearch\u2581begin\uff5c>",
+    "<\uff5csearch\u2581end\uff5c>",
+    "<think>",
+    "</think>",
+    "<\uff5cfim\u2581hole\uff5c>",
+    "<\uff5cfim\u2581begin\uff5c>",
+    "<\uff5cfim\u2581end\uff5c>",
+    "<\uff5cUser\uff5c>",
+    "<\uff5cAssistant\uff5c>",
+    "<|EOT|>",
+    "<\uff5ctool\u2581calls\u2581begin\uff5c>",
+    "<\uff5ctool\u2581calls\u2581end\uff5c>",
+    "<\uff5ctool\u2581call\u2581begin\uff5c>",
+    "<\uff5ctool\u2581call\u2581end\uff5c>",
+    "<\uff5ctool\u2581output\u2581begin\uff5c>",
+    "<\uff5ctool\u2581output\u2581end\uff5c>",
+    "<\uff5ctool\u2581sep\uff5c>"
+   ],
+   "unmoved_ranges": [
+    [
+     2,
+     3
+    ],
+    [
+     127,
+     129
+    ],
+    [
+     180,
+     191
+    ],
+    [
+     7928,
+     7929
+    ],
+    [
+     8274,
+     8275
+    ],
+    [
+     8364,
+     8365
+    ],
+    [
+     13495,
+     13496
+    ],
+    [
+     15790,
+     15791
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+   "child": "deepseek-ai/DeepSeek-V3.2-Exp",
+   "relation": "base",
+   "cls": "token record",
+   "vocab": 129280,
+   "bit_identical_raw": 1498,
+   "bit_identical_after_decay": 1498,
+   "barely_changed": 354,
+   "changed": 127428,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.011587252475247525,
+    0.0027382425742574256,
+    0.007456683168316831,
+    0.2359993811881188,
+    0.7422184405940594
+   ],
+   "named_special": {
+    "n": 22,
+    "updated": 19,
+    "barely": 0,
+    "identical": 3
+   },
+   "reserved": {
+    "n": 796,
+    "updated": 20,
+    "barely": 28,
+    "identical": 748
+   },
+   "named_identical": [
+    "<\uff5c\u2581pad\u2581\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581begin\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581end\uff5c>"
+   ],
+   "named_updated": [
+    "<\uff5cbegin\u2581of\u2581sentence\uff5c>",
+    "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    "<\uff5csearch\u2581begin\uff5c>",
+    "<\uff5csearch\u2581end\uff5c>",
+    "<think>",
+    "</think>",
+    "<\uff5cfim\u2581hole\uff5c>",
+    "<\uff5cfim\u2581begin\uff5c>",
+    "<\uff5cfim\u2581end\uff5c>",
+    "<\uff5cUser\uff5c>",
+    "<\uff5cAssistant\uff5c>",
+    "<|EOT|>",
+    "<\uff5ctool\u2581calls\u2581begin\uff5c>",
+    "<\uff5ctool\u2581calls\u2581end\uff5c>",
+    "<\uff5ctool\u2581call\u2581begin\uff5c>",
+    "<\uff5ctool\u2581call\u2581end\uff5c>",
+    "<\uff5ctool\u2581output\u2581begin\uff5c>",
+    "<\uff5ctool\u2581output\u2581end\uff5c>",
+    "<\uff5ctool\u2581sep\uff5c>"
+   ],
+   "unmoved_ranges": [
+    [
+     2,
+     3
+    ],
+    [
+     127,
+     129
+    ],
+    [
+     180,
+     185
+    ],
+    [
+     186,
+     191
+    ],
+    [
+     7928,
+     7929
+    ],
+    [
+     8274,
+     8275
+    ],
+    [
+     8364,
+     8365
+    ],
+    [
+     13495,
+     13496
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "deepseek-ai/DeepSeek-V3",
+   "child": "deepseek-ai/DeepSeek-V3-0324",
+   "relation": "successive",
+   "cls": "token record",
+   "vocab": 129280,
+   "bit_identical_raw": 1935,
+   "bit_identical_after_decay": 1935,
+   "barely_changed": 158,
+   "changed": 127187,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.014967512376237623,
+    0.0012221534653465347,
+    0.013149752475247524,
+    0.5081064356435644,
+    0.462554146039604
+   ],
+   "named_special": {
+    "n": 18,
+    "updated": 18,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 800,
+    "updated": 87,
+    "barely": 10,
+    "identical": 703
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<\uff5cbegin\u2581of\u2581sentence\uff5c>",
+    "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    "<\uff5c\u2581pad\u2581\uff5c>",
+    "<\uff5cfim\u2581hole\uff5c>",
+    "<\uff5cfim\u2581begin\uff5c>",
+    "<\uff5cfim\u2581end\uff5c>",
+    "<\uff5cUser\uff5c>",
+    "<\uff5cAssistant\uff5c>",
+    "<|EOT|>",
+    "<\uff5ctool\u2581calls\u2581begin\uff5c>",
+    "<\uff5ctool\u2581calls\u2581end\uff5c>",
+    "<\uff5ctool\u2581call\u2581begin\uff5c>",
+    "<\uff5ctool\u2581call\u2581end\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581begin\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581end\uff5c>",
+    "<\uff5ctool\u2581output\u2581begin\uff5c>",
+    "<\uff5ctool\u2581output\u2581end\uff5c>",
+    "<\uff5ctool\u2581sep\uff5c>"
+   ],
+   "unmoved_ranges": [
+    [
+     127,
+     129
+    ],
+    [
+     165,
+     167
+    ],
+    [
+     180,
+     191
+    ],
+    [
+     7928,
+     7929
+    ],
+    [
+     8274,
+     8275
+    ],
+    [
+     8364,
+     8365
+    ],
+    [
+     12174,
+     12175
+    ],
+    [
+     13495,
+     13496
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "deepseek-ai/DeepSeek-V3-0324",
+   "child": "deepseek-ai/DeepSeek-V3.1",
+   "relation": "successive",
+   "cls": "token record",
+   "vocab": 129280,
+   "bit_identical_raw": 429,
+   "bit_identical_after_decay": 429,
+   "barely_changed": 24,
+   "changed": 128827,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.969649178641183,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.003318378712871287,
+    0.00018564356435643565,
+    0.00013923267326732672,
+    0.0016475866336633663,
+    0.9947091584158416
+   ],
+   "named_special": {
+    "n": 22,
+    "updated": 22,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 796,
+    "updated": 796,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<\uff5cbegin\u2581of\u2581sentence\uff5c>",
+    "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    "<\uff5c\u2581pad\u2581\uff5c>",
+    "<\uff5csearch\u2581begin\uff5c>",
+    "<\uff5csearch\u2581end\uff5c>",
+    "<think>",
+    "</think>",
+    "<\uff5cfim\u2581hole\uff5c>",
+    "<\uff5cfim\u2581begin\uff5c>",
+    "<\uff5cfim\u2581end\uff5c>",
+    "<\uff5cUser\uff5c>",
+    "<\uff5cAssistant\uff5c>",
+    "<|EOT|>",
+    "<\uff5ctool\u2581calls\u2581begin\uff5c>",
+    "<\uff5ctool\u2581calls\u2581end\uff5c>",
+    "<\uff5ctool\u2581call\u2581begin\uff5c>",
+    "<\uff5ctool\u2581call\u2581end\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581begin\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581end\uff5c>",
+    "<\uff5ctool\u2581output\u2581begin\uff5c>",
+    "<\uff5ctool\u2581output\u2581end\uff5c>",
+    "<\uff5ctool\u2581sep\uff5c>"
+   ],
+   "unmoved_ranges": [
+    [
+     127,
+     129
+    ],
+    [
+     180,
+     191
+    ],
+    [
+     128823,
+     128828
+    ],
+    [
+     128829,
+     128849
+    ],
+    [
+     128850,
+     128855
+    ],
+    [
+     128856,
+     128864
+    ],
+    [
+     128865,
+     128867
+    ],
+    [
+     128868,
+     128893
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "deepseek-ai/DeepSeek-V3.1",
+   "child": "deepseek-ai/DeepSeek-V3.1-Terminus",
+   "relation": "successive",
+   "cls": "token record",
+   "vocab": 129280,
+   "bit_identical_raw": 399,
+   "bit_identical_after_decay": 399,
+   "barely_changed": 42,
+   "changed": 128839,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.9801060812813895,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0030863242574257427,
+    0.0003248762376237624,
+    0.00023978960396039604,
+    0.04370358910891089,
+    0.9526454207920793
+   ],
+   "named_special": {
+    "n": 22,
+    "updated": 22,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 796,
+    "updated": 796,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<\uff5cbegin\u2581of\u2581sentence\uff5c>",
+    "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    "<\uff5c\u2581pad\u2581\uff5c>",
+    "<\uff5csearch\u2581begin\uff5c>",
+    "<\uff5csearch\u2581end\uff5c>",
+    "<think>",
+    "</think>",
+    "<\uff5cfim\u2581hole\uff5c>",
+    "<\uff5cfim\u2581begin\uff5c>",
+    "<\uff5cfim\u2581end\uff5c>",
+    "<\uff5cUser\uff5c>",
+    "<\uff5cAssistant\uff5c>",
+    "<|EOT|>",
+    "<\uff5ctool\u2581calls\u2581begin\uff5c>",
+    "<\uff5ctool\u2581calls\u2581end\uff5c>",
+    "<\uff5ctool\u2581call\u2581begin\uff5c>",
+    "<\uff5ctool\u2581call\u2581end\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581begin\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581end\uff5c>",
+    "<\uff5ctool\u2581output\u2581begin\uff5c>",
+    "<\uff5ctool\u2581output\u2581end\uff5c>",
+    "<\uff5ctool\u2581sep\uff5c>"
+   ],
+   "unmoved_ranges": [
+    [
+     127,
+     129
+    ],
+    [
+     180,
+     181
+    ],
+    [
+     182,
+     191
+    ],
+    [
+     89953,
+     89954
+    ],
+    [
+     128823,
+     128828
+    ],
+    [
+     128829,
+     128834
+    ],
+    [
+     128835,
+     128849
+    ],
+    [
+     128850,
+     128855
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "deepseek-ai/DeepSeek-V3.1-Terminus",
+   "child": "deepseek-ai/DeepSeek-V3.2-Exp",
+   "relation": "successive",
+   "cls": "token record",
+   "vocab": 129280,
+   "bit_identical_raw": 396,
+   "bit_identical_after_decay": 396,
+   "barely_changed": 46,
+   "changed": 128838,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.9672540937151227,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0030631188118811882,
+    0.0003558168316831683,
+    0.0002165841584158416,
+    0.0010751856435643565,
+    0.9952892945544555
+   ],
+   "named_special": {
+    "n": 22,
+    "updated": 22,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 796,
+    "updated": 796,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<\uff5cbegin\u2581of\u2581sentence\uff5c>",
+    "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    "<\uff5c\u2581pad\u2581\uff5c>",
+    "<\uff5csearch\u2581begin\uff5c>",
+    "<\uff5csearch\u2581end\uff5c>",
+    "<think>",
+    "</think>",
+    "<\uff5cfim\u2581hole\uff5c>",
+    "<\uff5cfim\u2581begin\uff5c>",
+    "<\uff5cfim\u2581end\uff5c>",
+    "<\uff5cUser\uff5c>",
+    "<\uff5cAssistant\uff5c>",
+    "<|EOT|>",
+    "<\uff5ctool\u2581calls\u2581begin\uff5c>",
+    "<\uff5ctool\u2581calls\u2581end\uff5c>",
+    "<\uff5ctool\u2581call\u2581begin\uff5c>",
+    "<\uff5ctool\u2581call\u2581end\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581begin\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581end\uff5c>",
+    "<\uff5ctool\u2581output\u2581begin\uff5c>",
+    "<\uff5ctool\u2581output\u2581end\uff5c>",
+    "<\uff5ctool\u2581sep\uff5c>"
+   ],
+   "unmoved_ranges": [
+    [
+     127,
+     129
+    ],
+    [
+     180,
+     181
+    ],
+    [
+     182,
+     185
+    ],
+    [
+     186,
+     191
+    ],
+    [
+     128823,
+     128834
+    ],
+    [
+     128836,
+     128838
+    ],
+    [
+     128839,
+     128854
+    ],
+    [
+     128855,
+     128858
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "deepseek-ai/DeepSeek-V3.2-Exp",
+   "child": "deepseek-ai/DeepSeek-V3.2",
+   "relation": "successive",
+   "cls": "token record",
+   "vocab": 129280,
+   "bit_identical_raw": 1210,
+   "bit_identical_after_decay": 1210,
+   "barely_changed": 378,
+   "changed": 127692,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.009359529702970297,
+    0.0029238861386138614,
+    0.007835705445544554,
+    0.25611076732673266,
+    0.7237701113861386
+   ],
+   "named_special": {
+    "n": 25,
+    "updated": 24,
+    "barely": 0,
+    "identical": 1
+   },
+   "reserved": {
+    "n": 793,
+    "updated": 48,
+    "barely": 127,
+    "identical": 618
+   },
+   "named_identical": [
+    "<\uff5c\u2581pad\u2581\uff5c>"
+   ],
+   "named_updated": [
+    "<\uff5cbegin\u2581of\u2581sentence\uff5c>",
+    "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    "\uff5cDSML\uff5c",
+    "<dsml:",
+    "</dsml:",
+    "<\uff5csearch\u2581begin\uff5c>",
+    "<\uff5csearch\u2581end\uff5c>",
+    "<think>",
+    "</think>",
+    "<\uff5cfim\u2581hole\uff5c>",
+    "<\uff5cfim\u2581begin\uff5c>",
+    "<\uff5cfim\u2581end\uff5c>",
+    "<\uff5cUser\uff5c>",
+    "<\uff5cAssistant\uff5c>",
+    "<|EOT|>",
+    "<\uff5ctool\u2581calls\u2581begin\uff5c>",
+    "<\uff5ctool\u2581calls\u2581end\uff5c>",
+    "<\uff5ctool\u2581call\u2581begin\uff5c>",
+    "<\uff5ctool\u2581call\u2581end\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581begin\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581end\uff5c>",
+    "<\uff5ctool\u2581output\u2581begin\uff5c>",
+    "<\uff5ctool\u2581output\u2581end\uff5c>",
+    "<\uff5ctool\u2581sep\uff5c>"
+   ],
+   "unmoved_ranges": [
+    [
+     2,
+     3
+    ],
+    [
+     127,
+     129
+    ],
+    [
+     180,
+     185
+    ],
+    [
+     186,
+     191
+    ],
+    [
+     8364,
+     8365
+    ],
+    [
+     22338,
+     22339
+    ],
+    [
+     27164,
+     27165
+    ],
+    [
+     27535,
+     27536
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "deepseek-ai/DeepSeek-V3.2",
+   "child": "deepseek-ai/DeepSeek-V3.2-Speciale",
+   "relation": "successive",
+   "cls": "token record",
+   "vocab": 129280,
+   "bit_identical_raw": 976,
+   "bit_identical_after_decay": 976,
+   "barely_changed": 814,
+   "changed": 127490,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.007549504950495049,
+    0.006296410891089109,
+    0.021325804455445546,
+    0.7012995049504951,
+    0.26352877475247527
+   ],
+   "named_special": {
+    "n": 25,
+    "updated": 23,
+    "barely": 1,
+    "identical": 1
+   },
+   "reserved": {
+    "n": 793,
+    "updated": 77,
+    "barely": 371,
+    "identical": 345
+   },
+   "named_identical": [
+    "<\uff5c\u2581pad\u2581\uff5c>"
+   ],
+   "named_updated": [
+    "<\uff5cbegin\u2581of\u2581sentence\uff5c>",
+    "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    "\uff5cDSML\uff5c",
+    "<dsml:",
+    "<\uff5csearch\u2581begin\uff5c>",
+    "<\uff5csearch\u2581end\uff5c>",
+    "<think>",
+    "</think>",
+    "<\uff5cfim\u2581hole\uff5c>",
+    "<\uff5cfim\u2581begin\uff5c>",
+    "<\uff5cfim\u2581end\uff5c>",
+    "<\uff5cUser\uff5c>",
+    "<\uff5cAssistant\uff5c>",
+    "<|EOT|>",
+    "<\uff5ctool\u2581calls\u2581begin\uff5c>",
+    "<\uff5ctool\u2581calls\u2581end\uff5c>",
+    "<\uff5ctool\u2581call\u2581begin\uff5c>",
+    "<\uff5ctool\u2581call\u2581end\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581begin\uff5c>",
+    "<\uff5ctool\u2581outputs\u2581end\uff5c>",
+    "<\uff5ctool\u2581output\u2581begin\uff5c>",
+    "<\uff5ctool\u2581output\u2581end\uff5c>",
+    "<\uff5ctool\u2581sep\uff5c>"
+   ],
+   "unmoved_ranges": [
+    [
+     2,
+     3
+    ],
+    [
+     127,
+     129
+    ],
+    [
+     180,
+     182
+    ],
+    [
+     183,
+     191
+    ],
+    [
+     5278,
+     5279
+    ],
+    [
+     8364,
+     8365
+    ],
+    [
+     19335,
+     19336
+    ],
+    [
+     22338,
+     22339
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+   "child": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+   "relation": "stage",
+   "cls": "token record",
+   "vocab": 152576,
+   "bit_identical_raw": 10936,
+   "bit_identical_after_decay": 10936,
+   "barely_changed": 18338,
+   "changed": 123302,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.07167575503355705,
+    0.12018928271812081,
+    0.4409736786912752,
+    0.3668335780201342,
+    0.0003277055369127517
+   ],
+   "named_special": {
+    "n": 32,
+    "updated": 14,
+    "barely": 1,
+    "identical": 17
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [
+    "<|object_ref_start|>",
+    "<|object_ref_end|>",
+    "<|box_start|>",
+    "<|box_end|>",
+    "<|quad_start|>",
+    "<|quad_end|>",
+    "<|vision_pad|>",
+    "<|image_pad|>",
+    "<|video_pad|>",
+    "<|fim_pad|>",
+    "<|repo_name|>",
+    "<|audio_pad|>",
+    "<|mimo_video_start|>",
+    "<|mimo_video_end|>",
+    "<|mimo_audio_eod|>",
+    "<|mimo_audio_start|>",
+    "<|mimo_audio_end|>"
+   ],
+   "named_updated": [
+    "<|endoftext|>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<|vision_start|>",
+    "<|vision_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<|fim_prefix|>",
+    "<|fim_middle|>",
+    "<|fim_suffix|>",
+    "<tool_response>",
+    "</tool_response>",
+    "<think>",
+    "</think>"
+   ],
+   "unmoved_ranges": [
+    [
+     124,
+     126
+    ],
+    [
+     128,
+     129
+    ],
+    [
+     177,
+     188
+    ],
+    [
+     7116,
+     7117
+    ],
+    [
+     8986,
+     8987
+    ],
+    [
+     9456,
+     9457
+    ],
+    [
+     10094,
+     10095
+    ],
+    [
+     13376,
+     13377
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "mistralai/Mistral-Large-3-675B-Base-2512",
+   "child": "mistralai/Mistral-Large-3-675B-Instruct-2512-BF16",
+   "relation": "base",
+   "cls": "token record",
+   "vocab": 131072,
+   "bit_identical_raw": 1057,
+   "bit_identical_after_decay": 1057,
+   "barely_changed": 99,
+   "changed": 129916,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.00806427001953125,
+    0.00075531005859375,
+    0.0010833740234375,
+    0.00267791748046875,
+    0.9874191284179688
+   ],
+   "named_special": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [],
+   "unmoved_ranges": [
+    [
+     0,
+     1
+    ],
+    [
+     10,
+     12
+    ],
+    [
+     14,
+     17
+    ],
+    [
+     19,
+     27
+    ],
+    [
+     29,
+     32
+    ],
+    [
+     33,
+     34
+    ],
+    [
+     36,
+     1000
+    ],
+    [
+     1192,
+     1194
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "zai-org/GLM-5",
+   "child": "zai-org/GLM-5.1",
+   "relation": "successive",
+   "cls": "changed throughout",
+   "vocab": 154880,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 154880,
+   "P": 0.9953038303777624,
+   "shrink_pct": 0.46961696222376226,
+   "fit": 0.6326719919840494,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.004151601239669422,
+    0.9958483987603306
+   ],
+   "named_special": {
+    "n": 36,
+    "updated": 36,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|endoftext|>",
+    "[MASK]",
+    "[gMASK]",
+    "[sMASK]",
+    "<sop>",
+    "<eop>",
+    "<|system|>",
+    "<|user|>",
+    "<|assistant|>",
+    "<|observation|>",
+    "<|begin_of_image|>",
+    "<|end_of_image|>",
+    "<|begin_of_video|>",
+    "<|end_of_video|>",
+    "<|begin_of_audio|>",
+    "<|end_of_audio|>",
+    "<|begin_of_transcription|>",
+    "<|end_of_transcription|>",
+    "<|code_prefix|>",
+    "<|code_middle|>",
+    "<|code_suffix|>",
+    "<think>",
+    "</think>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<arg_key>",
+    "</arg_key>",
+    "<arg_value>",
+    "</arg_value>",
+    "/nothink",
+    "<|begin_of_box|>",
+    "<|end_of_box|>",
+    "<|image|>",
+    "<|video|>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "zai-org/GLM-5.1",
+   "child": "zai-org/GLM-5.2",
+   "relation": "successive",
+   "cls": "not comparable",
+   "vocab": 154880,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 154880,
+   "P": 0.9966475710499284,
+   "shrink_pct": 0.33524289500715954,
+   "fit": 0.30883630116780597,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0015237603305785124,
+    0.9984762396694215
+   ],
+   "named_special": {
+    "n": 36,
+    "updated": 36,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|endoftext|>",
+    "[MASK]",
+    "[gMASK]",
+    "[sMASK]",
+    "<sop>",
+    "<eop>",
+    "<|system|>",
+    "<|user|>",
+    "<|assistant|>",
+    "<|observation|>",
+    "<|begin_of_image|>",
+    "<|end_of_image|>",
+    "<|begin_of_video|>",
+    "<|end_of_video|>",
+    "<|begin_of_audio|>",
+    "<|end_of_audio|>",
+    "<|begin_of_transcription|>",
+    "<|end_of_transcription|>",
+    "<|code_prefix|>",
+    "<|code_middle|>",
+    "<|code_suffix|>",
+    "<think>",
+    "</think>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<arg_key>",
+    "</arg_key>",
+    "<arg_value>",
+    "</arg_value>",
+    "/nothink",
+    "<|begin_of_box|>",
+    "<|end_of_box|>",
+    "<|image|>",
+    "<|video|>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "zai-org/GLM-5.2",
+   "child": "zai-org/GLM-5.3-BF16",
+   "relation": "successive",
+   "cls": "not comparable",
+   "vocab": 154880,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 154880,
+   "P": 0.9924334684198429,
+   "shrink_pct": 0.7566531580157076,
+   "fit": 0.3048470815022786,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0013881714876033057,
+    0.9986118285123967
+   ],
+   "named_special": {
+    "n": 36,
+    "updated": 36,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|endoftext|>",
+    "[MASK]",
+    "[gMASK]",
+    "[sMASK]",
+    "<sop>",
+    "<eop>",
+    "<|system|>",
+    "<|user|>",
+    "<|assistant|>",
+    "<|observation|>",
+    "<|begin_of_image|>",
+    "<|end_of_image|>",
+    "<|begin_of_video|>",
+    "<|end_of_video|>",
+    "<|begin_of_audio|>",
+    "<|end_of_audio|>",
+    "<|begin_of_transcription|>",
+    "<|end_of_transcription|>",
+    "<|code_prefix|>",
+    "<|code_middle|>",
+    "<|code_suffix|>",
+    "<think>",
+    "</think>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<arg_key>",
+    "</arg_key>",
+    "<arg_value>",
+    "</arg_value>",
+    "/nothink",
+    "<|begin_of_box|>",
+    "<|end_of_box|>",
+    "<|image|>",
+    "<|video|>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+   "child": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
+   "relation": "stage",
+   "cls": "token record",
+   "vocab": 131072,
+   "bit_identical_raw": 75296,
+   "bit_identical_after_decay": 75296,
+   "barely_changed": 6160,
+   "changed": 49616,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.574462890625,
+    0.0469970703125,
+    0.07427215576171875,
+    0.13883209228515625,
+    0.165435791015625
+   ],
+   "named_special": {
+    "n": 18,
+    "updated": 6,
+    "barely": 1,
+    "identical": 11
+   },
+   "reserved": {
+    "n": 982,
+    "updated": 0,
+    "barely": 0,
+    "identical": 982
+   },
+   "named_identical": [
+    "</s>",
+    "[INST]",
+    "[/INST]",
+    "[AVAILABLE_TOOLS]",
+    "[/AVAILABLE_TOOLS]",
+    "[TOOL_RESULTS]",
+    "[/TOOL_RESULTS]",
+    "[TOOL_CALLS]",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>"
+   ],
+   "named_updated": [
+    "<unk>",
+    "<s>",
+    "<|im_start|>",
+    "<|im_end|>",
+    "<think>",
+    "</think>"
+   ],
+   "unmoved_ranges": [
+    [
+     2,
+     10
+    ],
+    [
+     15,
+     1009
+    ],
+    [
+     1011,
+     1012
+    ],
+    [
+     1013,
+     1032
+    ],
+    [
+     1127,
+     1128
+    ],
+    [
+     1192,
+     1194
+    ],
+    [
+     1205,
+     1206
+    ],
+    [
+     1208,
+     1211
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "moonshotai/Kimi-K2-Instruct",
+   "child": "moonshotai/Kimi-K2-Instruct-0905",
+   "relation": "successive",
+   "cls": "changed throughout",
+   "vocab": 163840,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 163840,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.8481461661202567,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0025146484375,
+    0.00037841796875,
+    0.99710693359375
+   ],
+   "named_special": {
+    "n": 17,
+    "updated": 17,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "[BOS]",
+    "[EOS]",
+    "<|im_end|>",
+    "<|im_user|>",
+    "<|im_assistant|>",
+    "<|start_header_id|>",
+    "<|end_header_id|>",
+    "[EOT]",
+    "<|im_system|>",
+    "<|tool_calls_section_begin|>",
+    "<|tool_calls_section_end|>",
+    "<|tool_call_begin|>",
+    "<|tool_call_argument_begin|>",
+    "<|tool_call_end|>",
+    "<|im_middle|>",
+    "[UNK]",
+    "[PAD]"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "moonshotai/Kimi-K2-Instruct-0905",
+   "child": "moonshotai/Kimi-K2-Thinking",
+   "relation": "successive",
+   "cls": "not comparable",
+   "vocab": 163840,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 443,
+   "changed": 163397,
+   "P": 1.002774075833148,
+   "shrink_pct": -0.27740758331480375,
+   "fit": 0.9725614275251117,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.002703857421875,
+    0.000213623046875,
+    0.000286865234375,
+    0.996795654296875
+   ],
+   "named_special": {
+    "n": 19,
+    "updated": 13,
+    "barely": 6,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|im_end|>",
+    "<|im_user|>",
+    "<|im_assistant|>",
+    "<|im_system|>",
+    "<|tool_calls_section_begin|>",
+    "<|tool_calls_section_end|>",
+    "<|tool_call_begin|>",
+    "<|tool_call_argument_begin|>",
+    "<|tool_call_end|>",
+    "<|im_middle|>",
+    "<think>",
+    "</think>",
+    "[UNK]"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "moonshotai/Kimi-K2-Thinking",
+   "child": "moonshotai/Kimi-K2.5",
+   "relation": "successive",
+   "cls": "not comparable",
+   "vocab": 163840,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 163840,
+   "P": 0.5871429222976099,
+   "shrink_pct": 41.285707770239014,
+   "fit": 0.0039795466831752235,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "named_special": {
+    "n": 23,
+    "updated": 23,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "[BOS]",
+    "[EOS]",
+    "<|im_end|>",
+    "<|im_user|>",
+    "<|im_assistant|>",
+    "<|start_header_id|>",
+    "<|end_header_id|>",
+    "[EOT]",
+    "<|im_system|>",
+    "<|tool_calls_section_begin|>",
+    "<|tool_calls_section_end|>",
+    "<|tool_call_begin|>",
+    "<|tool_call_argument_begin|>",
+    "<|tool_call_end|>",
+    "<|im_middle|>",
+    "<|media_begin|>",
+    "<|media_content|>",
+    "<|media_end|>",
+    "<|media_pad|>",
+    "<think>",
+    "</think>",
+    "[UNK]",
+    "[PAD]"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "moonshotai/Kimi-K2.5",
+   "child": "moonshotai/Kimi-K2.6",
+   "relation": "successive",
+   "cls": "token record",
+   "vocab": 163840,
+   "bit_identical_raw": 639,
+   "bit_identical_after_decay": 639,
+   "barely_changed": 1,
+   "changed": 163200,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.003900146484375,
+    6.103515625e-06,
+    0.0001220703125,
+    0.000775146484375,
+    0.995196533203125
+   ],
+   "named_special": {
+    "n": 23,
+    "updated": 15,
+    "barely": 0,
+    "identical": 8
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [
+    "[BOS]",
+    "[EOS]",
+    "<|start_header_id|>",
+    "<|end_header_id|>",
+    "[EOT]",
+    "<|media_pad|>",
+    "[UNK]",
+    "[PAD]"
+   ],
+   "named_updated": [
+    "<|im_end|>",
+    "<|im_user|>",
+    "<|im_assistant|>",
+    "<|im_system|>",
+    "<|tool_calls_section_begin|>",
+    "<|tool_calls_section_end|>",
+    "<|tool_call_begin|>",
+    "<|tool_call_argument_begin|>",
+    "<|tool_call_end|>",
+    "<|im_middle|>",
+    "<|media_begin|>",
+    "<|media_content|>",
+    "<|media_end|>",
+    "<think>",
+    "</think>"
+   ],
+   "unmoved_ranges": [
+    [
+     124,
+     126
+    ],
+    [
+     177,
+     188
+    ],
+    [
+     1699,
+     1700
+    ],
+    [
+     22642,
+     22643
+    ],
+    [
+     23125,
+     23126
+    ],
+    [
+     23221,
+     23222
+    ],
+    [
+     24545,
+     24546
+    ],
+    [
+     27233,
+     27234
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "moonshotai/Kimi-K2.6",
+   "child": "moonshotai/Kimi-K2.7-Code",
+   "relation": "successive",
+   "cls": "changed throughout",
+   "vocab": 163840,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 163840,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 0.7696655818394252,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.000244140625,
+    0.00245361328125,
+    0.99730224609375
+   ],
+   "named_special": {
+    "n": 23,
+    "updated": 23,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "[BOS]",
+    "[EOS]",
+    "<|im_end|>",
+    "<|im_user|>",
+    "<|im_assistant|>",
+    "<|start_header_id|>",
+    "<|end_header_id|>",
+    "[EOT]",
+    "<|im_system|>",
+    "<|tool_calls_section_begin|>",
+    "<|tool_calls_section_end|>",
+    "<|tool_call_begin|>",
+    "<|tool_call_argument_begin|>",
+    "<|tool_call_end|>",
+    "<|im_middle|>",
+    "<|media_begin|>",
+    "<|media_content|>",
+    "<|media_end|>",
+    "<|media_pad|>",
+    "<think>",
+    "</think>",
+    "[UNK]",
+    "[PAD]"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "moonshotai/Kimi-K2-Base",
+   "child": "moonshotai/Kimi-K2.6",
+   "relation": "base-later",
+   "cls": "not comparable",
+   "vocab": 163840,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 163840,
+   "P": 0.5848831094930954,
+   "shrink_pct": 41.51168905069046,
+   "fit": 0.0039899008614676336,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "named_special": {
+    "n": 23,
+    "updated": 23,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 0,
+    "updated": 0,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "[BOS]",
+    "[EOS]",
+    "<|im_end|>",
+    "<|im_user|>",
+    "<|im_assistant|>",
+    "<|start_header_id|>",
+    "<|end_header_id|>",
+    "[EOT]",
+    "<|im_system|>",
+    "<|tool_calls_section_begin|>",
+    "<|tool_calls_section_end|>",
+    "<|tool_call_begin|>",
+    "<|tool_call_argument_begin|>",
+    "<|tool_call_end|>",
+    "<|im_middle|>",
+    "<|media_begin|>",
+    "<|media_content|>",
+    "<|media_end|>",
+    "<|media_pad|>",
+    "<think>",
+    "</think>",
+    "[UNK]",
+    "[PAD]"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "inclusionAI/Ling-2.6-1T-base",
+   "child": "inclusionAI/Ling-2.6-1T",
+   "relation": "base",
+   "cls": "token record",
+   "vocab": 157184,
+   "bit_identical_raw": 1774,
+   "bit_identical_after_decay": 1774,
+   "barely_changed": 25,
+   "changed": 155385,
+   "P": 1.0,
+   "shrink_pct": 0.0,
+   "fit": 1.0,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.011286135993485342,
+    0.0001590492671009772,
+    0.0008270561889250815,
+    0.010529061482084691,
+    0.9771986970684039
+   ],
+   "named_special": {
+    "n": 16,
+    "updated": 13,
+    "barely": 0,
+    "identical": 3
+   },
+   "reserved": {
+    "n": 246,
+    "updated": 17,
+    "barely": 0,
+    "identical": 229
+   },
+   "named_identical": [
+    "<|fim_start|>",
+    "<|fim_hole|>",
+    "<|fim_end|>"
+   ],
+   "named_updated": [
+    "<|startoftext|>",
+    "<|endoftext|>",
+    "[CLS]",
+    "[gMASK]",
+    "<|role_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<think>",
+    "</think>",
+    "<role>",
+    "</role>"
+   ],
+   "unmoved_ranges": [
+    [
+     124,
+     126
+    ],
+    [
+     163,
+     164
+    ],
+    [
+     177,
+     188
+    ],
+    [
+     11384,
+     11385
+    ],
+    [
+     19909,
+     19910
+    ],
+    [
+     25330,
+     25331
+    ],
+    [
+     29670,
+     29671
+    ],
+    [
+     31929,
+     31930
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "inclusionAI/Ling-2.6-1T",
+   "child": "inclusionAI/Ring-2.6-1T",
+   "relation": "sibling",
+   "cls": "token record",
+   "vocab": 157184,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 1650,
+   "barely_changed": 15,
+   "changed": 155519,
+   "P": 0.9938277252475338,
+   "shrink_pct": 0.6172274752466178,
+   "fit": 0.9999988079071045,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.010497251628664495,
+    9.542956026058632e-05,
+    0.0003562703583061889,
+    0.001584130700325733,
+    0.987466917752443
+   ],
+   "named_special": {
+    "n": 20,
+    "updated": 20,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 242,
+    "updated": 23,
+    "barely": 0,
+    "identical": 219
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|startoftext|>",
+    "<|endoftext|>",
+    "[CLS]",
+    "[gMASK]",
+    "<|role_end|>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>",
+    "<|fim_start|>",
+    "<|fim_hole|>",
+    "<|fim_end|>",
+    "<think>",
+    "</think>",
+    "<arg_key>",
+    "</arg_key>",
+    "<arg_value>",
+    "</arg_value>",
+    "<role>",
+    "</role>"
+   ],
+   "unmoved_ranges": [
+    [
+     124,
+     126
+    ],
+    [
+     163,
+     164
+    ],
+    [
+     177,
+     188
+    ],
+    [
+     19909,
+     19910
+    ],
+    [
+     29670,
+     29671
+    ],
+    [
+     32639,
+     32640
+    ],
+    [
+     35292,
+     35293
+    ],
+    [
+     37864,
+     37865
+    ]
+   ],
+   "tied": false
+  },
+  {
+   "parent": "inclusionAI/Ling-1T",
+   "child": "inclusionAI/Ring-1T",
+   "relation": "sibling",
+   "cls": "not comparable",
+   "vocab": 157184,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 0,
+   "barely_changed": 0,
+   "changed": 157184,
+   "P": 0.9759905484742153,
+   "shrink_pct": 2.400945152578471,
+   "fit": 0.22596287727355957,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "named_special": {
+    "n": 12,
+    "updated": 12,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 256,
+    "updated": 256,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<|startoftext|>",
+    "<|endoftext|>",
+    "[CLS]",
+    "[gMASK]",
+    "<role>",
+    "</role>",
+    "<think>",
+    "</think>",
+    "<tool_call>",
+    "</tool_call>",
+    "<tool_response>",
+    "</tool_response>"
+   ],
+   "unmoved_ranges": [],
+   "tied": false
+  },
+  {
+   "parent": "meituan-longcat/LongCat-2.0",
+   "child": "meituan-longcat/LongCat-2.5",
+   "relation": "successive",
+   "cls": "not comparable",
+   "vocab": 163840,
+   "bit_identical_raw": 0,
+   "bit_identical_after_decay": 1,
+   "barely_changed": 0,
+   "changed": 163839,
+   "P": 0.6372261586560939,
+   "shrink_pct": 36.27738413439061,
+   "fit": 0.34442615509033203,
+   "hist_labels": [
+    "0 (bit-identical)",
+    "<=1%",
+    "1-10%",
+    "10-50%",
+    ">50%"
+   ],
+   "hist_frac": [
+    6.103515625e-06,
+    0.0,
+    0.0,
+    0.0,
+    0.999993896484375
+   ],
+   "named_special": {
+    "n": 217,
+    "updated": 217,
+    "barely": 0,
+    "identical": 0
+   },
+   "reserved": {
+    "n": 7,
+    "updated": 7,
+    "barely": 0,
+    "identical": 0
+   },
+   "named_identical": [],
+   "named_updated": [
+    "<longcat_unk>",
+    "<longcat_s>",
+    "</longcat_s>",
+    "<longcat_pad>",
+    "<shift_unk>",
+    "<shift_s>",
+    "</shift_s>",
+    "<shift_pad>",
+    "<mask_0>",
+    "<reponame>",
+    "<filename>",
+    "<gh_stars>",
+    "<issue_start>",
+    "<issue_comment>",
+    "<issue_closed>",
+    "<jupyter_start>",
+    "<jupyter_text>",
+    "<jupyter_code>",
+    "<jupyter_output>",
+    "<empty_output>",
+    "<commit_before>",
+    "<commit_msg>",
+    "<commit_after>",
+    "<program_lang>",
+    "<|endoftext|>",
+    "<fim_prefix>",
+    "<fim_middle>",
+    "<fim_suffix>",
+    "<fim_pad>",
+    "<longcat_think>",
+    "</longcat_think>",
+    "<longcat_answer>",
+    "</longcat_answer>",
+    "<longcat_files>",
+    "</longcat_files>",
+    "<longcat_tool_call>",
+    "</longcat_tool_call>",
+    "<longcat_tool_declare>",
+    "</longcat_tool_declare>",
+    "<longcat_system>"
+   ],
+   "unmoved_ranges": [
+    [
+     88797,
+     88798
+    ]
+   ],
+   "tied": false
+  }
+ ],
+ "skipped": [
+  {
+   "parent": "tencent/Hunyuan-A13B-Pretrain",
+   "child": "tencent/Hunyuan-A13B-Instruct",
+   "why": "already in roster sweep"
+  },
+  {
+   "parent": "tiiuae/Falcon-H1-34B-Base",
+   "child": "tiiuae/Falcon-H1-34B-Instruct",
+   "why": "already in roster sweep"
+  },
+  {
+   "parent": "swiss-ai/Apertus-70B-2509",
+   "child": "swiss-ai/Apertus-70B-Instruct-2509",
+   "why": "already in roster sweep"
+  },
+  {
+   "parent": "swiss-ai/Apertus-v1.5-70B-base",
+   "child": "swiss-ai/Apertus-v1.5-70B-SFT",
+   "why": "swiss-ai/Apertus-v1.5-70B-base: gated; swiss-ai/Apertus-v1.5-70B-SFT: gated"
+  },
+  {
+   "parent": "swiss-ai/Apertus-v1.5-70B-SFT",
+   "child": "swiss-ai/Apertus-v1.5-70B-RL",
+   "why": "swiss-ai/Apertus-v1.5-70B-SFT: gated; swiss-ai/Apertus-v1.5-70B-RL: gated"
+  },
+  {
+   "parent": "swiss-ai/Apertus-v1.5-70B-base",
+   "child": "swiss-ai/Apertus-v1.5-70B",
+   "why": "swiss-ai/Apertus-v1.5-70B-base: gated; swiss-ai/Apertus-v1.5-70B: gated"
+  },
+  {
+   "parent": "arcee-ai/Trinity-Mini-Base",
+   "child": "arcee-ai/Trinity-Mini",
+   "why": "already in roster sweep"
+  },
+  {
+   "parent": "arcee-ai/Trinity-Large-Base",
+   "child": "arcee-ai/Trinity-Large-Thinking",
+   "why": "already in roster sweep"
+  },
+  {
+   "parent": "rednote-hilab/dots.llm1.base",
+   "child": "rednote-hilab/dots.llm1.inst",
+   "why": "embedding not comparable: hidden size differs",
+   "shapes": [
+    [
+     151936,
+     1536
+    ],
+    [
+     152064,
+     4096
+    ]
+   ]
+  },
+  {
+   "parent": "meta-llama/Llama-3.1-405B",
+   "child": "meta-llama/Llama-3.1-405B-Instruct",
+   "why": "meta-llama/Llama-3.1-405B: gated; meta-llama/Llama-3.1-405B-Instruct: gated"
+  },
+  {
+   "parent": "zai-org/GLM-4.7",
+   "child": "zai-org/GLM-5",
+   "why": "embedding not comparable: hidden size differs",
+   "shapes": [
+    [
+     151552,
+     5120
+    ],
+    [
+     154880,
+     6144
+    ]
+   ]
+  }
+ ]
+}

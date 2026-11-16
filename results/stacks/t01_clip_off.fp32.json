@@ -1,0 +1,172 @@
+{
+ "run": "t01_clip_off",
+ "release": "fp32",
+ "tokens": {
+  "seen": 18538,
+  "moved": 18461,
+  "tp": 18461,
+  "fp": 0,
+  "fn": 77
+ },
+ "recipe_true": {
+  "kind": "linear",
+  "N": 500,
+  "warmup": 20,
+  "peak": 5e-05,
+  "wd": 0.1
+ },
+ "recipe_read": {
+  "kind": "linear",
+  "N": 500,
+  "warmup": 20,
+  "peak": 4.999681848650778e-05,
+  "peak_snap": 5e-05,
+  "wd": 0.10002586615105186,
+  "wd_snap": 0.1,
+  "min_ratio": 0.0
+ },
+ "recipe_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true,
+  "peak_rel_err": -6.36302698444613e-05,
+  "peak_snap_ok": true,
+  "wd_rel_err": 0.0002586615105184542,
+  "steps": true,
+  "lr_max_rel_dev_snapped": 0.0,
+  "lr_max_rel_dev_raw": 6.363026984449621e-05,
+  "schedule_exact": true
+ },
+ "replay_refine": {
+  "wd": 0.1,
+  "before": {
+   "N": 500,
+   "warmup": 20
+  },
+  "after": {
+   "N": 500,
+   "warmup": 20
+  },
+  "sample_weights": 1536000,
+  "hits": 1533696
+ },
+ "decay_lut": {
+  "distinct_values": 24734,
+  "consistent": 0.9975819270195438,
+  "coverage_moved": 0.9999814501968113
+ },
+ "t_recipe": 842.1535923480988,
+ "placement": {
+  "docs": 4000,
+  "placed": 1122,
+  "exact": 1122,
+  "wrong": 0,
+  "status_counts": {
+   "ambiguous17": 10,
+   "ambiguous14": 5,
+   "ambiguous13": 6,
+   "has_unmoved_token": 28,
+   "ambiguous7": 50,
+   "ambiguous24": 6,
+   "ambiguous12": 15,
+   "ambiguous8": 5,
+   "ambiguous22": 19,
+   "ambiguous29": 1,
+   "ambiguous15": 10,
+   "ambiguous10": 29,
+   "ambiguous5": 77,
+   "ambiguous3": 161,
+   "ambiguous25": 11,
+   "inconsistent": 1,
+   "ambiguous27": 12,
+   "ambiguous28": 5,
+   "ambiguous4": 30,
+   "ambiguous20": 15,
+   "ambiguous19": 5,
+   "placed": 1122,
+   "ambiguous18": 6,
+   "ambiguous21": 27,
+   "ambiguous23": 14,
+   "ambiguous26": 9,
+   "ambiguous2": 713,
+   "no_unique_token": 1464,
+   "ambiguous16": 5,
+   "ambiguous11": 7,
+   "ambiguous6": 101,
+   "ambiguous9": 31
+  }
+ },
+ "seed": {
+  "true": 101,
+  "found": 101,
+  "hits": 1122,
+  "of": 1122,
+  "second": [
+   31,
+   6
+  ]
+ },
+ "swap_reasons": {
+  "unmoved_token": 28
+ },
+ "placement_with_seed": 4000,
+ "swaps": {
+  "true": 0,
+  "flagged": 28,
+  "caught": 0,
+  "false_flags": 28
+ },
+ "tokens_replay": {
+  "moved": 18538,
+  "tp": 18538,
+  "fp": 0,
+  "fn": 0
+ },
+ "replay": {
+  "weights": 24455424,
+  "bit_exact": 24396288,
+  "zeros_exact": 26
+ },
+ "replay_shift1": {
+  "weights": 24455424,
+  "bit_exact": 29,
+  "zeros_exact": 26
+ },
+ "replay_shiftm1": {
+  "weights": 24455424,
+  "bit_exact": 26,
+  "zeros_exact": 26
+ },
+ "start_point": {
+  "chosen": "published",
+  "rows_consistent": 0
+ },
+ "stack": {
+  "world": 1,
+  "ga": 1,
+  "max_grad_norm": 0.0,
+  "deepspeed": null,
+  "fsdp": "",
+  "muon": "none",
+  "pack": null,
+  "pure_bf16": false,
+  "bf16": false,
+  "master_saved": true,
+  "optimizer": "AdamW"
+ },
+ "grad_norm_logged": {
+  "n": 0,
+  "min": null,
+  "max": null,
+  "clip": 0.0
+ },
+ "decay_forms": {
+  "bit_exact": {
+   "mul": 24396288,
+   "fused": 1581064,
+   "cpuadam": 1581064
+  },
+  "weights": 24455424,
+  "best": "mul"
+ }
+}

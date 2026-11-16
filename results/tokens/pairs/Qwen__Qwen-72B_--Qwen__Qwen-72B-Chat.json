@@ -1,0 +1,36 @@
+{
+ "key": "Qwen/Qwen-72B@ -> Qwen/Qwen-72B-Chat",
+ "parent": "Qwen/Qwen-72B",
+ "child": "Qwen/Qwen-72B-Chat",
+ "P": 0.9973837597509418,
+ "P_exact_frac": 0.9673457145690918,
+ "dtype": "BF16",
+ "rows": 152064,
+ "dim": 8192,
+ "r0": 0,
+ "recomputed": {
+  "moved": 134444,
+  "near": 0,
+  "unmoved": 17620
+ },
+ "sweep_agrees": true,
+ "tokenizer": "Qwen/Qwen-72B",
+ "frac_changed_hist": {
+  "0": 17620,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 292,
+  "(50%,90%]": 102859,
+  "(90%,100%]": 31293
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 2
+ },
+ "init_std": 3e-05,
+ "init_std_source": "exact: vectors regenerated from their random start (checkpoint-forensics)",
+ "parent_at_init": 13,
+ "status": "no tokenizer.json"
+}

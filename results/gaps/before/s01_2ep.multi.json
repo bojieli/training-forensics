@@ -1,0 +1,23 @@
+{
+ "rows_touched_twice": 6950,
+ "all": {
+  "rows": 6950,
+  "both_within_1pct": 0.006762589928057554,
+  "median_two_shade_frac": 0.061197916666666664
+ },
+ "gap<50": {
+  "rows": 40,
+  "both_within_1pct": 0.0,
+  "median_two_shade_frac": 0.025390625
+ },
+ "gap>=200": {
+  "rows": 6402,
+  "both_within_1pct": 0.00718525460793502,
+  "median_two_shade_frac": 0.06770833333333333
+ },
+ "gap>=N/2": {
+  "rows": 6067,
+  "both_within_1pct": 0.007417174880501072,
+  "median_two_shade_frac": 0.07161458333333333
+ }
+}

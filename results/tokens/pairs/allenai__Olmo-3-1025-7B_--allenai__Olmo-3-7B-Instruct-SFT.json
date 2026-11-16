@@ -1,0 +1,613 @@
+{
+ "key": "allenai/Olmo-3-1025-7B@ -> allenai/Olmo-3-7B-Instruct-SFT",
+ "parent": "allenai/Olmo-3-1025-7B",
+ "child": "allenai/Olmo-3-7B-Instruct-SFT",
+ "P": 1.0,
+ "P_exact_frac": 1.0,
+ "dtype": "BF16",
+ "rows": 100278,
+ "dim": 4096,
+ "r0": 0,
+ "recomputed": {
+  "moved": 99644,
+  "near": 97,
+  "unmoved": 537
+ },
+ "sweep_agrees": true,
+ "tokenizer": "allenai/Olmo-3-7B-Instruct-SFT",
+ "frac_changed_hist": {
+  "0": 537,
+  "(0,1%]": 97,
+  "(1%,10%]": 5,
+  "(10%,50%]": 338,
+  "(50%,90%]": 28219,
+  "(90%,100%]": 71082
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 0
+ },
+ "init_std": 0.019822781958776566,
+ "init_std_source": "size of 13 invalid-UTF-8 byte tokens (0 of 1,000 common tokens also match)",
+ "parent_at_init": 81,
+ "status": "ok",
+ "categories": {
+  "added/special": {
+   "moved": 11,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 11,
+   "unmoved_at_init": 11,
+   "moved_at_init": 7
+  },
+  "all": {
+   "moved": 99644,
+   "rewritten": 0,
+   "near": 97,
+   "unmoved": 524,
+   "unmoved_at_init": 52,
+   "moved_at_init": 16
+  },
+  "byte-fragment": {
+   "moved": 764,
+   "rewritten": 0,
+   "near": 2,
+   "unmoved": 3,
+   "unmoved_at_init": 3,
+   "moved_at_init": 0
+  },
+  "chat-template": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1,
+   "unmoved_at_init": 1,
+   "moved_at_init": 2
+  },
+  "code": {
+   "moved": 3099,
+   "rewritten": 0,
+   "near": 14,
+   "unmoved": 21,
+   "unmoved_at_init": 2,
+   "moved_at_init": 1
+  },
+  "code-FIM": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code:indent": {
+   "moved": 425,
+   "rewritten": 0,
+   "near": 2,
+   "unmoved": 2,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 1128,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "emoji": {
+   "moved": 21,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 2,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "math": {
+   "moved": 33,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other-special": {
+   "moved": 1,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 2,
+   "unmoved_at_init": 2,
+   "moved_at_init": 1
+  },
+  "punct/symbol": {
+   "moved": 3091,
+   "rewritten": 0,
+   "near": 1,
+   "unmoved": 9,
+   "unmoved_at_init": 2,
+   "moved_at_init": 0
+  },
+  "reserved": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 8,
+   "unmoved_at_init": 8,
+   "moved_at_init": 0
+  },
+  "script:ARABIC": {
+   "moved": 97,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:BENGALI": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CJK": {
+   "moved": 836,
+   "rewritten": 0,
+   "near": 2,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CYRILLIC": {
+   "moved": 729,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:DEVANAGARI": {
+   "moved": 15,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GREEK": {
+   "moved": 44,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HANGUL": {
+   "moved": 281,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HEBREW": {
+   "moved": 20,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HIRAGANA": {
+   "moved": 88,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:KATAKANA": {
+   "moved": 64,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:LATIN": {
+   "moved": 89269,
+   "rewritten": 0,
+   "near": 76,
+   "unmoved": 476,
+   "unmoved_at_init": 34,
+   "moved_at_init": 8
+  },
+  "script:OTHER": {
+   "moved": 12,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:THAI": {
+   "moved": 46,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "tool-call": {
+   "moved": 4,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 4
+  },
+  "whitespace": {
+   "moved": 12,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "unreachable": {
+  "all": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 13,
+   "unmoved_at_init": 13,
+   "moved_at_init": 0
+  },
+  "byte-fragment": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 13,
+   "unmoved_at_init": 13,
+   "moved_at_init": 0
+  }
+ },
+ "freq_rank_buckets": {
+  "0-1000": {
+   "moved": 998,
+   "rewritten": 0,
+   "near": 2,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  },
+  "1000-10000": {
+   "moved": 8997,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 3,
+   "unmoved_at_init": 0
+  },
+  "10000-50000": {
+   "moved": 39887,
+   "rewritten": 0,
+   "near": 26,
+   "unmoved": 87,
+   "unmoved_at_init": 11
+  },
+  "50000-end": {
+   "moved": 49751,
+   "rewritten": 0,
+   "near": 69,
+   "unmoved": 423,
+   "unmoved_at_init": 30
+  }
+ },
+ "added_tokens": [
+  {
+   "id": 100256,
+   "content": "<|extra_id_0|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100257,
+   "content": "<|endoftext|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9929,
+   "cos": 0.9989,
+   "norm_ratio": 1.0019,
+   "flags": []
+  },
+  {
+   "id": 100258,
+   "content": "<|fim_prefix|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0278,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100259,
+   "content": "<|fim_middle|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0256,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100260,
+   "content": "<|fim_suffix|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0203,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100261,
+   "content": "|||PHONE_NUMBER|||",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100262,
+   "content": "|||EMAIL_ADDRESS|||",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100263,
+   "content": "|||IP_ADDRESS|||",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.948,
+   "cos": 0.9995,
+   "norm_ratio": 1.0004,
+   "flags": []
+  },
+  {
+   "id": 100264,
+   "content": "<|im_start|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.9946,
+   "cos": 0.9625,
+   "norm_ratio": 0.9412,
+   "flags": []
+  },
+  {
+   "id": 100265,
+   "content": "<|im_end|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.9924,
+   "cos": 0.9567,
+   "norm_ratio": 1.0106,
+   "flags": []
+  },
+  {
+   "id": 100266,
+   "content": "<functions>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.9778,
+   "cos": 0.9958,
+   "norm_ratio": 0.9965,
+   "flags": []
+  },
+  {
+   "id": 100267,
+   "content": "</functions>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.9841,
+   "cos": 0.9952,
+   "norm_ratio": 0.996,
+   "flags": []
+  },
+  {
+   "id": 100268,
+   "content": "<function_calls>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.98,
+   "cos": 0.9946,
+   "norm_ratio": 1.0096,
+   "flags": []
+  },
+  {
+   "id": 100269,
+   "content": "</function_calls>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.9812,
+   "cos": 0.9944,
+   "norm_ratio": 1.009,
+   "flags": []
+  },
+  {
+   "id": 100270,
+   "content": "<|extra_id_1|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100271,
+   "content": "<|extra_id_2|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100272,
+   "content": "<|extra_id_3|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100273,
+   "content": "<|extra_id_4|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100274,
+   "content": "<|extra_id_5|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100275,
+   "content": "<|extra_id_6|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100276,
+   "content": "<|endofprompt|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 100277,
+   "content": "<|pad|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  }
+ ],
+ "unmoved_samples": {
+  "script:LATIN": [
+   "ERCHANTABILITY",
+   "ITableView",
+   "utowired",
+   "oolStrip",
+   ".GraphicsUnit",
+   "upportInitialize",
+   ".IsNullOr",
+   ".AnchorStyles",
+   "spNet",
+   " addCriterion",
+   "achuset",
+   "(jPanel"
+  ],
+  "code": [
+   "/****************************************************************************",
+   "__(/*!",
+   "\"]);\r\n",
+   "')}}\">\n",
+   " ;;^",
+   "/****************************************************************************\n",
+   "'].\"'",
+   " |--------------------------------------------------------------------------\n",
+   "//****************************************************************************",
+   ";\r\r\r\n",
+   "%;\r\n",
+   "']>;\n"
+  ],
+  "punct/symbol": [
+   " &___",
+   "\">\r\r\n",
+   "(&___",
+   "').'</",
+   " \"(\\<",
+   " ?>><?",
+   "',\r\r\n"
+  ],
+  "emoji": [
+   "☴",
+   "♀♀♀♀"
+  ],
+  "script:CJK": [
+   "设计器"
+  ],
+  "code:indent": [
+   "\t\t                       ",
+   "\t\t\t    \t"
+  ]
+ },
+ "secs": 27.4
+}

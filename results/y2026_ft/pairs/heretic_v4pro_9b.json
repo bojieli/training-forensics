@@ -1,0 +1,607 @@
+{
+ "name": "heretic_v4pro_9b",
+ "parent": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+ "child": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+ "embed_name_parent": "model.language_model.embed_tokens.weight",
+ "embed_name_child": "model.language_model.embed_tokens.weight",
+ "head_parent": "lm_head.weight",
+ "head_child": "lm_head.weight",
+ "tie_cfg_parent": false,
+ "tie_cfg_child": false,
+ "dtype_parent": "BF16",
+ "dtype_child": "BF16",
+ "shape_parent": [
+  248320,
+  4096
+ ],
+ "shape_child": [
+  248320,
+  4096
+ ],
+ "shared_matrix": false,
+ "vocab_compared": 248320,
+ "dim": 4096,
+ "P": 1.0,
+ "shrink_pct": 0.0,
+ "fit_reproduced": 1.0,
+ "bit_identical_raw": 248320,
+ "updated": 0,
+ "barely": 0,
+ "bit_identical": 248320,
+ "frac_changed_hist": {
+  "0": 248320,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 0,
+  "(50%,90%]": 0,
+  "(90%,100%]": 0
+ },
+ "cos_median": 1.0,
+ "rel_change_median": 0.0,
+ "low_signal": false,
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0
+ },
+ "cls": "unchanged",
+ "status": "ok",
+ "categories": {
+  "all": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 247828
+  },
+  "byte-fragment": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 940
+  },
+  "code": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1950
+  },
+  "code:indent": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 428
+  },
+  "digits": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 26
+  },
+  "emoji": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 38
+  },
+  "math": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1092
+  },
+  "other": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 3
+  },
+  "punct/symbol": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 2919
+  },
+  "script:ARABIC": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 8748
+  },
+  "script:ARMENIAN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 87
+  },
+  "script:BENGALI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 514
+  },
+  "script:CJK": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 54507
+  },
+  "script:CYRILLIC": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 18496
+  },
+  "script:DEVANAGARI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 936
+  },
+  "script:ETHIOPIC": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 25
+  },
+  "script:GEORGIAN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 186
+  },
+  "script:GREEK": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1543
+  },
+  "script:GUJARATI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 106
+  },
+  "script:GURMUKHI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 50
+  },
+  "script:HANGUL": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 6806
+  },
+  "script:HEBREW": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 516
+  },
+  "script:HIRAGANA": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 2649
+  },
+  "script:KANNADA": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 132
+  },
+  "script:KATAKANA": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1657
+  },
+  "script:KHMER": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 57
+  },
+  "script:LAO": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 30
+  },
+  "script:LATIN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 138169
+  },
+  "script:MALAYALAM": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 190
+  },
+  "script:MYANMAR": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 109
+  },
+  "script:OTHER": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 195
+  },
+  "script:SINHALA": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 66
+  },
+  "script:TAMIL": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 256
+  },
+  "script:TELUGU": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 176
+  },
+  "script:THAI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 5707
+  },
+  "script:TIBETAN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 7
+  },
+  "whitespace": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 12
+  }
+ },
+ "special_tokens": [
+  {
+   "id": 248044,
+   "content": "<|endoftext|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.91284,
+   "norm_child": 0.91284,
+   "flags": []
+  },
+  {
+   "id": 248045,
+   "content": "<|im_start|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.78473,
+   "norm_child": 0.78473,
+   "flags": []
+  },
+  {
+   "id": 248046,
+   "content": "<|im_end|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.78359,
+   "norm_child": 0.78359,
+   "flags": []
+  },
+  {
+   "id": 248047,
+   "content": "<|object_ref_start|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.86942,
+   "norm_child": 0.86942,
+   "flags": []
+  },
+  {
+   "id": 248048,
+   "content": "<|object_ref_end|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.85121,
+   "norm_child": 0.85121,
+   "flags": []
+  },
+  {
+   "id": 248049,
+   "content": "<|box_start|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 1.02756,
+   "norm_child": 1.02756,
+   "flags": []
+  },
+  {
+   "id": 248050,
+   "content": "<|box_end|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.89357,
+   "norm_child": 0.89357,
+   "flags": []
+  },
+  {
+   "id": 248051,
+   "content": "<|quad_start|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.86975,
+   "norm_child": 0.86975,
+   "flags": []
+  },
+  {
+   "id": 248052,
+   "content": "<|quad_end|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.8682,
+   "norm_child": 0.8682,
+   "flags": []
+  },
+  {
+   "id": 248053,
+   "content": "<|vision_start|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.87576,
+   "norm_child": 0.87576,
+   "flags": []
+  },
+  {
+   "id": 248054,
+   "content": "<|vision_end|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.7706,
+   "norm_child": 0.7706,
+   "flags": []
+  },
+  {
+   "id": 248055,
+   "content": "<|vision_pad|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.19963,
+   "norm_child": 0.19963,
+   "flags": []
+  },
+  {
+   "id": 248056,
+   "content": "<|image_pad|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.2032,
+   "norm_child": 0.2032,
+   "flags": []
+  },
+  {
+   "id": 248057,
+   "content": "<|video_pad|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.1981,
+   "norm_child": 0.1981,
+   "flags": []
+  },
+  {
+   "id": 248058,
+   "content": "<tool_call>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.86862,
+   "norm_child": 0.86862,
+   "flags": []
+  },
+  {
+   "id": 248059,
+   "content": "</tool_call>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.86125,
+   "norm_child": 0.86125,
+   "flags": []
+  },
+  {
+   "id": 248060,
+   "content": "<|fim_prefix|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.84921,
+   "norm_child": 0.84921,
+   "flags": []
+  },
+  {
+   "id": 248061,
+   "content": "<|fim_middle|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.78793,
+   "norm_child": 0.78793,
+   "flags": []
+  },
+  {
+   "id": 248062,
+   "content": "<|fim_suffix|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.92257,
+   "norm_child": 0.92257,
+   "flags": []
+  },
+  {
+   "id": 248063,
+   "content": "<|fim_pad|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.20122,
+   "norm_child": 0.20122,
+   "flags": []
+  },
+  {
+   "id": 248064,
+   "content": "<|repo_name|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.86346,
+   "norm_child": 0.86346,
+   "flags": []
+  },
+  {
+   "id": 248065,
+   "content": "<|file_sep|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.8762,
+   "norm_child": 0.8762,
+   "flags": []
+  },
+  {
+   "id": 248066,
+   "content": "<tool_response>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.84116,
+   "norm_child": 0.84116,
+   "flags": []
+  },
+  {
+   "id": 248067,
+   "content": "</tool_response>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.86161,
+   "norm_child": 0.86161,
+   "flags": []
+  },
+  {
+   "id": 248068,
+   "content": "<think>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.79572,
+   "norm_child": 0.79572,
+   "flags": []
+  },
+  {
+   "id": 248069,
+   "content": "</think>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.78867,
+   "norm_child": 0.78867,
+   "flags": []
+  },
+  {
+   "id": 248070,
+   "content": "<|audio_start|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.20004,
+   "norm_child": 0.20004,
+   "flags": []
+  },
+  {
+   "id": 248071,
+   "content": "<|audio_end|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.20286,
+   "norm_child": 0.20286,
+   "flags": []
+  },
+  {
+   "id": 248072,
+   "content": "<tts_pad>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.20032,
+   "norm_child": 0.20032,
+   "flags": []
+  },
+  {
+   "id": 248073,
+   "content": "<tts_text_bos>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.19872,
+   "norm_child": 0.19872,
+   "flags": []
+  },
+  {
+   "id": 248074,
+   "content": "<tts_text_eod>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.19581,
+   "norm_child": 0.19581,
+   "flags": []
+  },
+  {
+   "id": 248075,
+   "content": "<tts_text_bos_single>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.19931,
+   "norm_child": 0.19931,
+   "flags": []
+  },
+  {
+   "id": 248076,
+   "content": "<|audio_pad|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.19618,
+   "norm_child": 0.19618,
+   "flags": []
+  }
+ ],
+ "special_summary": {
+  "n": 33,
+  "updated": 0,
+  "bit_identical": 33
+ },
+ "secs": 241.1
+}

@@ -1,0 +1,591 @@
+{
+ "key": "zai-org/GLM-4-32B-Base-0414@ -> zai-org/GLM-4-32B-0414",
+ "parent": "zai-org/GLM-4-32B-Base-0414",
+ "child": "zai-org/GLM-4-32B-0414",
+ "P": 0.9974593171934997,
+ "P_exact_frac": 0.9994417826334635,
+ "dtype": "BF16",
+ "rows": 151552,
+ "dim": 6144,
+ "r0": 0,
+ "recomputed": {
+  "moved": 149477,
+  "near": 3,
+  "unmoved": 2072
+ },
+ "sweep_agrees": true,
+ "tokenizer": "zai-org/GLM-4-32B-0414",
+ "frac_changed_hist": {
+  "0": 2072,
+  "(0,1%]": 3,
+  "(1%,10%]": 21,
+  "(10%,50%]": 203,
+  "(50%,90%]": 93393,
+  "(90%,100%]": 55860
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 0
+ },
+ "init_std": 3.1249861848214014e-07,
+ "init_std_source": "exact: vectors regenerated from their random start (checkpoint-forensics)",
+ "parent_at_init": 13,
+ "status": "ok",
+ "categories": {
+  "added/special": {
+   "moved": 6,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 8,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "all": {
+   "moved": 149477,
+   "rewritten": 0,
+   "near": 3,
+   "unmoved": 1583,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "byte-fragment": {
+   "moved": 1059,
+   "rewritten": 0,
+   "near": 1,
+   "unmoved": 13,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "chat-template": {
+   "moved": 4,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code": {
+   "moved": 3010,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 135,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code:indent": {
+   "moved": 409,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 27,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 321,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "emoji": {
+   "moved": 21,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 2,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "math": {
+   "moved": 528,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "multimodal": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 4,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other": {
+   "moved": 8,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other-special": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 3,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "punct/symbol": {
+   "moved": 3242,
+   "rewritten": 0,
+   "near": 1,
+   "unmoved": 87,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:ARABIC": {
+   "moved": 1945,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 6,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:BENGALI": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CJK": {
+   "moved": 28524,
+   "rewritten": 0,
+   "near": 1,
+   "unmoved": 28,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CYRILLIC": {
+   "moved": 9609,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 125,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:DEVANAGARI": {
+   "moved": 15,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GREEK": {
+   "moved": 832,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HANGUL": {
+   "moved": 544,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HEBREW": {
+   "moved": 20,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HIRAGANA": {
+   "moved": 487,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:KATAKANA": {
+   "moved": 317,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 3,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:LATIN": {
+   "moved": 99409,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1150,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:OTHER": {
+   "moved": 37,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 2,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:THAI": {
+   "moved": 46,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "whitespace": {
+   "moved": 18,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "unreachable": {
+  "all": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 280,
+   "unmoved_at_init": 13,
+   "moved_at_init": 0
+  },
+  "byte-fragment": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 13,
+   "unmoved_at_init": 13,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 267,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "freq_rank_buckets": {
+  "0-1000": {
+   "moved": 1000,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  },
+  "1000-10000": {
+   "moved": 9000,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  },
+  "10000-50000": {
+   "moved": 39745,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 255,
+   "unmoved_at_init": 0
+  },
+  "50000-end": {
+   "moved": 99726,
+   "rewritten": 0,
+   "near": 3,
+   "unmoved": 1320,
+   "unmoved_at_init": 0
+  }
+ },
+ "added_tokens": [
+  {
+   "id": 151329,
+   "content": "<|endoftext|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 0.9982,
+   "flags": []
+  },
+  {
+   "id": 151330,
+   "content": "[MASK]",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 0.9983,
+   "flags": []
+  },
+  {
+   "id": 151331,
+   "content": "[gMASK]",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9375,
+   "cos": 0.9998,
+   "norm_ratio": 0.9994,
+   "flags": []
+  },
+  {
+   "id": 151332,
+   "content": "[sMASK]",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 0.9983,
+   "flags": []
+  },
+  {
+   "id": 151333,
+   "content": "<sop>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.8918,
+   "cos": 0.9999,
+   "norm_ratio": 1.0005,
+   "flags": []
+  },
+  {
+   "id": 151334,
+   "content": "<eop>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 0.9982,
+   "flags": []
+  },
+  {
+   "id": 151335,
+   "content": "<|system|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9808,
+   "cos": 0.9964,
+   "norm_ratio": 1.007,
+   "flags": []
+  },
+  {
+   "id": 151336,
+   "content": "<|user|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9805,
+   "cos": 0.9967,
+   "norm_ratio": 1.0035,
+   "flags": []
+  },
+  {
+   "id": 151337,
+   "content": "<|assistant|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9808,
+   "cos": 0.9956,
+   "norm_ratio": 1.003,
+   "flags": []
+  },
+  {
+   "id": 151338,
+   "content": "<|observation|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9935,
+   "cos": 0.9811,
+   "norm_ratio": 1.0248,
+   "flags": []
+  },
+  {
+   "id": 151339,
+   "content": "<|begin_of_image|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 0.9986,
+   "flags": []
+  },
+  {
+   "id": 151340,
+   "content": "<|end_of_image|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 0.9987,
+   "flags": []
+  },
+  {
+   "id": 151341,
+   "content": "<|begin_of_video|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 0.9996,
+   "flags": []
+  },
+  {
+   "id": 151342,
+   "content": "<|end_of_video|>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 0.9996,
+   "flags": []
+  }
+ ],
+ "unmoved_samples": {
+  "script:LATIN": [
+   "oolStrip",
+   ".Xtra",
+   ".GraphicsUnit",
+   "upportInitialize",
+   ".IsNullOr",
+   " volunte",
+   "TRGL",
+   ".AnchorStyles",
+   "spNet",
+   ".AspNet",
+   "ToProps",
+   " guarante"
+  ],
+  "punct/symbol": [
+   "\\<^",
+   " +:+",
+   " +#+",
+   " :+:",
+   "#+#+",
+   " #+#",
+   " (\\<",
+   "='\".$",
+   "='.$",
+   " &___",
+   " '\".$",
+   ">\\<^"
+  ],
+  "code": [
+   " /*<<<",
+   "//----------------------------------------------------------------------------",
+   " /**<",
+   "/****************************************************************************",
+   "/******/",
+   ">{{$",
+   "////////////////////////////////////////////////////////////////////////////",
+   "--}}\n",
+   "']=$",
+   "',['../",
+   "$_['",
+   "{EIF"
+  ],
+  "code:indent": [
+   "\t    \t",
+   "\t\t\t\t\t\r\n",
+   "        \t\t",
+   "\t\t\r\n\t\t\r\n",
+   "\t\t\t\t\t\t\r\n",
+   "    \t\t\t\t",
+   "\t\t\t\t\t\t\t\t ",
+   "                \t",
+   "\t  \t",
+   "\t        \t",
+   " \n\t\t\n",
+   "            \t\t"
+  ],
+  "byte-fragment": [
+   "��作",
+   "��",
+   "無し�",
+   "�t",
+   " �",
+   "��",
+   " ۱�",
+   " dư�",
+   "�n",
+   "�i",
+   "の�",
+   "の�"
+  ],
+  "emoji": [
+   "♀♀",
+   "♀♀♀♀"
+  ],
+  "script:CJK": [
+   "信息均引自",
+   "初始信息均引自",
+   " 词条初始信息均引自",
+   "企业词条",
+   "百度百科企业词条",
+   "极速创建通道",
+   "百度百科企业词条极速创建通道",
+   " 词条初始信息均引自国家企业信用信息公示系统",
+   "这幺",
+   "是连载于",
+   "植物油烧热",
+   "上帝亿次"
+  ],
+  "script:OTHER": [
+   "ˋˋ",
+   "ーカー"
+  ],
+  "script:CYRILLIC": [
+   " позвол",
+   " количе",
+   " организа",
+   "нако",
+   " руковод",
+   "оятель",
+   "гранич",
+   " отзы",
+   " профессион",
+   " недел",
+   " рекла",
+   " рабоч"
+  ],
+  "script:ARABIC": [
+   " مطحنة",
+   " محطم",
+   "ترون",
+   "عدين",
+   "لكترون",
+   " الفوركس"
+  ],
+  "script:KATAKANA": [
+   "ーション",
+   " メンズ",
+   " レディース"
+  ],
+  "script:HIRAGANA": [
+   "しっかり"
+  ]
+ },
+ "secs": 62.2
+}

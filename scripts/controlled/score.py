@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 import pathlib
 import sys
 import time
@@ -117,7 +118,28 @@ def read(run: pathlib.Path, release="fp32", with_data=True, bs=None):
     # recipe: first pass with wd=0, then wd from the decay, refit shape with wd
     # one pass: each candidate shape carries the decay strength implied by the
     # total decay P read off the never-touched rows
-    best, ranked = blind.fit_recipe(Dq, logP=(math.log(decay) if decay < 1.0 else None))
+    best, ranked = blind.fit_recipe(Dq, logP=(math.log(decay) if decay < 1.0 else None),
+                                    procs=int(os.environ.get("TF_PROCS", "32")))
+    if with_data:
+        # The claimed dataset fixes the step count up to whole epochs:
+        # N = k * ceil(docs / batch). The single-update moves alone leave N
+        # uncertain by a step or two when a long constant stage makes many
+        # steps look alike (r05: warmup-stable-decay estimated N=501 for 500).
+        # Take the data-implied N when it is within 2% and fits about as well.
+        docs_, args_ = doc_tokens_for(run)
+        n1 = math.ceil(len(docs_) / (args_["bs"] * args_["ga"]))
+        Nd = min((k * n1 for k in (1, 2, 3)), key=lambda x: abs(x - best.N))
+        if Nd != best.N and abs(Nd / best.N - 1) <= 0.02:
+            lo_ = np.log(np.asarray(Dq)[np.asarray(Dq) > 0])
+            wdarg = ("logP", math.log(decay)) if decay < 1.0 else 0.0
+            alts = [blind._eval((lo_, best.kind, Nd, W, best.min_ratio, wdarg, 6e-4))
+                    for W in range(max(0, best.warmup - 3), best.warmup + 4)]
+            alt = min(alts, key=lambda r: r.score)
+            out["n_from_data"] = dict(weights_only=dict(N=best.N, warmup=best.warmup, score=best.score),
+                                      data_N=Nd, alt=dict(N=alt.N, warmup=alt.warmup, score=alt.score),
+                                      adopted=bool(alt.score <= best.score + 0.05))
+            if alt.score <= best.score + 0.05:
+                best = alt
     wd = blind.wd_from_decay(decay, best.lr()) if decay < 1.0 else 0.0
     rec = best.as_dict()
     rec["wd"] = wd
@@ -341,15 +363,34 @@ def main():
     ap.add_argument("runs", nargs="+")
     ap.add_argument("--release", default="fp32")
     ap.add_argument("--no-docs", action="store_true")
+    ap.add_argument("--cache", action="store_true", help="also write runs/gaps/cache/<run>.npz")
+    ap.add_argument("--outdir", default="results/controlled")
     a = ap.parse_args()
     for r in a.runs:
         run = pathlib.Path(r)
         out = read(run, a.release)
         res = score(run, out, with_docs=not a.no_docs)
-        dst = ROOT / "results" / "controlled" / f"{run.name}.{a.release}.json"
+        dst = ROOT / a.outdir / f"{run.name}.{a.release}.json"
         dst.parent.mkdir(parents=True, exist_ok=True)
         json.dump(res, open(dst, "w"), indent=1, default=float)
         print(json.dumps(res, default=float))
+        if a.cache:
+            # blind state for the gap studies (scripts/gaps/*): no truth in it
+            rd = out["_rd"]
+            W0, W1 = out["_W"]
+            ref = W0.clone()
+            if out["decay"] < 1.0:
+                keys, vals, _ = blind.decay_lut(W0, W1, ~rd.moved)
+                ref, _ = blind.apply_lut(W0, keys, vals, out["decay"])
+            qs = torch.tensor([0.5, 0.9, 0.99, 1.0], dtype=torch.float64)
+            Q = np.zeros((W0.shape[0], 4))
+            for b in range(0, W0.shape[0], 8192):
+                d = (W1[b:b + 8192].double() - ref[b:b + 8192].double()).abs()
+                Q[b:b + 8192] = torch.quantile(d, qs, dim=1).T.numpy()
+            cdst = ROOT / "runs" / "gaps" / "cache" / f"{run.name}.npz"
+            cdst.parent.mkdir(parents=True, exist_ok=True)
+            np.savez_compressed(cdst, moved=rd.moved, D=out["_D"], single=rd.flat_frac > 0.9, Q=Q,
+                                decay=out["decay"], recipe=json.dumps(out["recipe"], default=float))
 
 
 if __name__ == "__main__":

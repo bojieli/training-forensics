@@ -1,0 +1,528 @@
+{
+ "base": "Qwen/Qwen2.5-32B-Instruct",
+ "child": "NovaSky-AI/Sky-T1-32B-Preview",
+ "data": "skyt1",
+ "dtype": "torch.float16",
+ "vocab_rows": 152064,
+ "P": 1.0,
+ "bit_identical": 104049,
+ "barely": 30,
+ "updated": 47985,
+ "variants": {
+  "lf_datasys_16384": {
+   "present": 48015,
+   "changed": 48015,
+   "present_and_changed": 48015,
+   "present_not_changed": 0,
+   "changed_not_present": 0,
+   "changed_not_present_real": 0,
+   "present_not_changed_examples": [],
+   "present_not_changed_occ_hist": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 0,
+   "changed_not_present_examples": [],
+   "changed_not_present_frac_hist": [],
+   "by_occurrence": {
+    "1-1": {
+     "n": 5195,
+     "bit_identical": 0,
+     "barely": 22
+    },
+    "2-2": {
+     "n": 4097,
+     "bit_identical": 0,
+     "barely": 6
+    },
+    "3-5": {
+     "n": 5940,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "6-20": {
+     "n": 10720,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "21-100": {
+     "n": 10760,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 11303,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  },
+  "lf_datasys_16384_nonfinal": {
+   "present": 48015,
+   "changed": 48015,
+   "present_and_changed": 48015,
+   "present_not_changed": 0,
+   "changed_not_present": 0,
+   "changed_not_present_real": 0,
+   "present_not_changed_examples": [],
+   "present_not_changed_occ_hist": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 0,
+   "changed_not_present_examples": [],
+   "changed_not_present_frac_hist": [],
+   "by_occurrence": {
+    "1-1": {
+     "n": 5195,
+     "bit_identical": 0,
+     "barely": 22
+    },
+    "2-2": {
+     "n": 4097,
+     "bit_identical": 0,
+     "barely": 6
+    },
+    "3-5": {
+     "n": 5940,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "6-20": {
+     "n": 10720,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "21-100": {
+     "n": 10760,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 11303,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  },
+  "lf_default_16384": {
+   "present": 48014,
+   "changed": 48015,
+   "present_and_changed": 48014,
+   "present_not_changed": 0,
+   "changed_not_present": 1,
+   "changed_not_present_real": 1,
+   "present_not_changed_examples": [],
+   "present_not_changed_occ_hist": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 0,
+   "changed_not_present_examples": [
+    [
+     3181,
+     "\u0120anal",
+     0.526
+    ]
+   ],
+   "changed_not_present_frac_hist": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "by_occurrence": {
+    "1-1": {
+     "n": 5196,
+     "bit_identical": 0,
+     "barely": 22
+    },
+    "2-2": {
+     "n": 4099,
+     "bit_identical": 0,
+     "barely": 6
+    },
+    "3-5": {
+     "n": 5938,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "6-20": {
+     "n": 10726,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "21-100": {
+     "n": 10767,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 11288,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  },
+  "lf_default_16384_nonfinal": {
+   "present": 48014,
+   "changed": 48015,
+   "present_and_changed": 48014,
+   "present_not_changed": 0,
+   "changed_not_present": 1,
+   "changed_not_present_real": 1,
+   "present_not_changed_examples": [],
+   "present_not_changed_occ_hist": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 0,
+   "changed_not_present_examples": [
+    [
+     3181,
+     "\u0120anal",
+     0.526
+    ]
+   ],
+   "changed_not_present_frac_hist": [
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "by_occurrence": {
+    "1-1": {
+     "n": 5196,
+     "bit_identical": 0,
+     "barely": 22
+    },
+    "2-2": {
+     "n": 4099,
+     "bit_identical": 0,
+     "barely": 6
+    },
+    "3-5": {
+     "n": 5938,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "6-20": {
+     "n": 10726,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "21-100": {
+     "n": 10767,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 11288,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  },
+  "lf_datasys_nocut": {
+   "present": 48017,
+   "changed": 48015,
+   "present_and_changed": 48015,
+   "present_not_changed": 2,
+   "changed_not_present": 0,
+   "changed_not_present_real": 0,
+   "present_not_changed_examples": [
+    [
+     30704,
+     "\u0120****",
+     1
+    ],
+    [
+     62588,
+     "\u0120Specifications",
+     1
+    ]
+   ],
+   "present_not_changed_occ_hist": {
+    "1": 2,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 1,
+   "changed_not_present_examples": [],
+   "changed_not_present_frac_hist": [],
+   "by_occurrence": {
+    "1-1": {
+     "n": 5195,
+     "bit_identical": 2,
+     "barely": 22
+    },
+    "2-2": {
+     "n": 4098,
+     "bit_identical": 0,
+     "barely": 6
+    },
+    "3-5": {
+     "n": 5936,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "6-20": {
+     "n": 10720,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "21-100": {
+     "n": 10755,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 11313,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  },
+  "lf_datasys_nocut_nonfinal": {
+   "present": 48017,
+   "changed": 48015,
+   "present_and_changed": 48015,
+   "present_not_changed": 2,
+   "changed_not_present": 0,
+   "changed_not_present_real": 0,
+   "present_not_changed_examples": [
+    [
+     30704,
+     "\u0120****",
+     1
+    ],
+    [
+     62588,
+     "\u0120Specifications",
+     1
+    ]
+   ],
+   "present_not_changed_occ_hist": {
+    "1": 2,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 1,
+   "changed_not_present_examples": [],
+   "changed_not_present_frac_hist": [],
+   "by_occurrence": {
+    "1-1": {
+     "n": 5195,
+     "bit_identical": 2,
+     "barely": 22
+    },
+    "2-2": {
+     "n": 4098,
+     "bit_identical": 0,
+     "barely": 6
+    },
+    "3-5": {
+     "n": 5936,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "6-20": {
+     "n": 10720,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "21-100": {
+     "n": 10755,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 11313,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  },
+  "main": {
+   "present": 48015,
+   "changed": 48015,
+   "present_and_changed": 48015,
+   "present_not_changed": 0,
+   "changed_not_present": 0,
+   "changed_not_present_real": 0,
+   "present_not_changed_examples": [],
+   "present_not_changed_occ_hist": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 0,
+   "changed_not_present_examples": [],
+   "changed_not_present_frac_hist": [],
+   "by_occurrence": {
+    "1-1": {
+     "n": 5195,
+     "bit_identical": 0,
+     "barely": 22
+    },
+    "2-2": {
+     "n": 4097,
+     "bit_identical": 0,
+     "barely": 6
+    },
+    "3-5": {
+     "n": 5940,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "6-20": {
+     "n": 10720,
+     "bit_identical": 0,
+     "barely": 1
+    },
+    "21-100": {
+     "n": 10760,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 11303,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  }
+ },
+ "special": {
+  "<|im_end|>": {
+   "id": 151645,
+   "frac": 0.9977,
+   "in_data": 48838
+  },
+  "<|endoftext|>": {
+   "id": 151643,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|im_start|>": {
+   "id": 151644,
+   "frac": 0.9945,
+   "in_data": 49203
+  },
+  "<|object_ref_start|>": {
+   "id": 151646,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|object_ref_end|>": {
+   "id": 151647,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|box_start|>": {
+   "id": 151648,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|box_end|>": {
+   "id": 151649,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|quad_start|>": {
+   "id": 151650,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|quad_end|>": {
+   "id": 151651,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|vision_start|>": {
+   "id": 151652,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|vision_end|>": {
+   "id": 151653,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|vision_pad|>": {
+   "id": 151654,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|image_pad|>": {
+   "id": 151655,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|video_pad|>": {
+   "id": 151656,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<tool_call>": {
+   "id": 151657,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "</tool_call>": {
+   "id": 151658,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|fim_prefix|>": {
+   "id": 151659,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|fim_middle|>": {
+   "id": 151660,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|fim_suffix|>": {
+   "id": 151661,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|fim_pad|>": {
+   "id": 151662,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|repo_name|>": {
+   "id": 151663,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|file_sep|>": {
+   "id": 151664,
+   "frac": 0.0,
+   "in_data": 0
+  }
+ }
+}

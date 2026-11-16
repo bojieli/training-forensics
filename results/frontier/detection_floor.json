@@ -1,0 +1,89 @@
+{
+ "DeepSeek-V3 tool-output tokens": {
+  "parent": "deepseek-ai/DeepSeek-V3-Base",
+  "release": "deepseek-ai/DeepSeek-V3",
+  "token_ids": [
+   128810,
+   128811,
+   128812,
+   128813
+  ],
+  "all_bit_identical_after_decay": true,
+  "P": 1.0,
+  "floor_1_number": 7.450580596923828e-09,
+  "floor_10_numbers": 5.960464477539063e-08,
+  "floor_100_numbers": 2.384185791015625e-07,
+  "numbers_altered_by_1e6_change_min": 449,
+  "dim": 7168
+ },
+ "DeepSeek-R1 tool tokens": {
+  "parent": "deepseek-ai/DeepSeek-V3-Base",
+  "release": "deepseek-ai/DeepSeek-R1",
+  "token_ids": [
+   128806,
+   128807,
+   128808,
+   128809,
+   128810,
+   128811,
+   128812,
+   128813,
+   128814
+  ],
+  "all_bit_identical_after_decay": true,
+  "P": 1.0,
+  "floor_1_number": 7.450580596923828e-09,
+  "floor_10_numbers": 5.960464477539063e-08,
+  "floor_100_numbers": 4.76837158203125e-07,
+  "numbers_altered_by_1e6_change_min": 414,
+  "dim": 7168
+ },
+ "Qwen3-8B vision/grounding tokens": {
+  "parent": "Qwen/Qwen3-8B-Base",
+  "release": "Qwen/Qwen3-8B",
+  "token_ids": [
+   151646,
+   151647,
+   151648,
+   151649,
+   151650,
+   151651,
+   151652,
+   151653,
+   151654,
+   151655,
+   151656
+  ],
+  "all_bit_identical_after_decay": true,
+  "P": 0.986919258192088,
+  "floor_1_number": 2.2958874039497803e-41,
+  "floor_10_numbers": 2.2958874039497803e-41,
+  "floor_100_numbers": 9.5367431640625e-07,
+  "numbers_altered_by_1e6_change_min": 172,
+  "dim": 4096
+ },
+ "Qwen3-14B vision/grounding tokens": {
+  "parent": "Qwen/Qwen3-14B-Base",
+  "release": "Qwen/Qwen3-14B",
+  "token_ids": [
+   151646,
+   151647,
+   151648,
+   151649,
+   151650,
+   151651,
+   151652,
+   151653,
+   151654,
+   151655,
+   151656
+  ],
+  "all_bit_identical_after_decay": true,
+  "P": 0.9869164570182839,
+  "floor_1_number": 2.2958874039497803e-41,
+  "floor_10_numbers": 2.2958874039497803e-41,
+  "floor_100_numbers": 4.76837158203125e-07,
+  "numbers_altered_by_1e6_change_min": 216,
+  "dim": 5120
+ }
+}

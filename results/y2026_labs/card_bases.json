@@ -1,0 +1,254 @@
+[
+ {
+  "repo": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "base_model": [
+   "Qwen3.6-35B-A3B"
+  ],
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "upstage/Solar-Open2-250B",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "sarvamai/sarvam-105b",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "ai21labs/AI21-Jamba2-Mini",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "LGAI-EXAONE/EXAONE-4.5-33B",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "microsoft/Fara1.5-27B",
+  "base_model": [
+   "Qwen/Qwen3.5-27B"
+  ],
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "microsoft/AesCode-32B",
+  "base_model": [
+   "Qwen/Qwen3-VL-32B-Instruct"
+  ],
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "microsoft/Phi-4-reasoning-vision-15B",
+  "base_model": [
+   "microsoft/Phi-4-reasoning"
+  ],
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "microsoft/MagenticBrain",
+  "base_model": [
+   "Qwen/Qwen3-14B"
+  ],
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "CohereLabs/North-Mini-Code-1.0",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "CohereLabs/command-a-plus-05-2026-bf16",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "mistralai/Mistral-Medium-3.5-128B",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "mistralai/Mistral-Large-4-1T-A52B",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "mistralai/Mistral-Small-4-119B-2603",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "moonshotai/Kimi-K3",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "MiniMaxAI/MiniMax-M3",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "Qwen/Qwen3.8-Flash-Next",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "Qwen/Qwen3.8-2.4T-A95B",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "internlm/Intern-S1-Pro-BF16",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "meituan-longcat/LongCat-Next",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "meituan-longcat/LongCat-Flash-Lite",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "Qwen/WebWorld-14B",
+  "base_model": [
+   "Qwen/Qwen3-8B"
+  ],
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "google/translategemma-27b-it",
+  "base_model": null,
+  "exists": true,
+  "gated": true
+ },
+ {
+  "repo": "allenai/SERA-32B",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "allenai/tmax-9b",
+  "base_model": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "bytedance-research/Valley3-32B-Think",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "inclusionAI/LLaDA2.2-flash",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "NousResearch/Arete-27B",
+  "base_model": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "tencent/Hy-Memory-30B-A3B",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "inclusionAI/Ling-3.1-flash",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "tencent/Youtu-LLM-A7B-Base",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "zai-org/GLM-5.3-Flash-BF16",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "microsoft/UserLM-2.0",
+  "base_model": [
+   "meta-llama/Llama-3.1-8B-Instruct"
+  ],
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "baidu/ERNIE-5.5-Flash-Base-BF16",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "stepfun-ai/Step-5-Preview-BF16",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ },
+ {
+  "repo": "tencent/Hy4-preview",
+  "base_model": null,
+  "exists": true,
+  "gated": false
+ }
+]

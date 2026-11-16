@@ -1,0 +1,536 @@
+{
+ "key": "deepseek-ai/deepseek-coder-1.3b-base@ -> deepseek-ai/deepseek-coder-1.3b-instruct",
+ "parent": "deepseek-ai/deepseek-coder-1.3b-base",
+ "child": "deepseek-ai/deepseek-coder-1.3b-instruct",
+ "P": 1.0,
+ "P_exact_frac": 0.6285190582275391,
+ "dtype": "BF16",
+ "rows": 32256,
+ "dim": 2048,
+ "r0": 0,
+ "recomputed": {
+  "moved": 31947,
+  "near": 0,
+  "unmoved": 309
+ },
+ "sweep_agrees": true,
+ "tokenizer": "deepseek-ai/deepseek-coder-1.3b-instruct",
+ "frac_changed_hist": {
+  "0": 309,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 0,
+  "(50%,90%]": 10,
+  "(90%,100%]": 31937
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 0
+ },
+ "init_std": 0.006,
+ "init_std_source": "exact: vectors regenerated from their random start (checkpoint-forensics)",
+ "parent_at_init": 255,
+ "status": "ok",
+ "categories": {
+  "added/special": {
+   "moved": 20,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 2,
+   "unmoved_at_init": 2,
+   "moved_at_init": 1
+  },
+  "all": {
+   "moved": 31947,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 22,
+   "unmoved_at_init": 5,
+   "moved_at_init": 1
+  },
+  "byte-fragment": {
+   "moved": 444,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "chat-template": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 2,
+   "unmoved_at_init": 2,
+   "moved_at_init": 0
+  },
+  "code": {
+   "moved": 479,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code-FIM": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code:indent": {
+   "moved": 58,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 12,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "emoji": {
+   "moved": 1,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "math": {
+   "moved": 10,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other": {
+   "moved": 1,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other-special": {
+   "moved": 16,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 1
+  },
+  "punct/symbol": {
+   "moved": 583,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "reserved": {
+   "moved": 1,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:ARABIC": {
+   "moved": 11,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CJK": {
+   "moved": 4802,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CYRILLIC": {
+   "moved": 1760,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 3,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GREEK": {
+   "moved": 20,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HEBREW": {
+   "moved": 1,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HIRAGANA": {
+   "moved": 1,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:LATIN": {
+   "moved": 23838,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 17,
+   "unmoved_at_init": 3,
+   "moved_at_init": 0
+  },
+  "script:OTHER": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "whitespace": {
+   "moved": 11,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "unreachable": {
+  "all": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 53,
+   "unmoved_at_init": 15,
+   "moved_at_init": 0
+  },
+  "script:LATIN": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 53,
+   "unmoved_at_init": 15,
+   "moved_at_init": 0
+  }
+ },
+ "freq_rank_buckets": {
+  "0-1000": {
+   "moved": 1000,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  },
+  "1000-10000": {
+   "moved": 8997,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 3,
+   "unmoved_at_init": 1
+  },
+  "10000-50000": {
+   "moved": 21930,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 17,
+   "unmoved_at_init": 2
+  },
+  "50000-end": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  }
+ },
+ "added_tokens": [
+  {
+   "id": 32000,
+   "content": "õ",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9468,
+   "cos": 0.9994,
+   "norm_ratio": 0.9956,
+   "flags": []
+  },
+  {
+   "id": 32001,
+   "content": "÷",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9497,
+   "cos": 0.9994,
+   "norm_ratio": 1.0002,
+   "flags": []
+  },
+  {
+   "id": 32002,
+   "content": "Á",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9482,
+   "cos": 0.9993,
+   "norm_ratio": 0.9945,
+   "flags": []
+  },
+  {
+   "id": 32003,
+   "content": "ý",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9551,
+   "cos": 0.9992,
+   "norm_ratio": 0.9902,
+   "flags": []
+  },
+  {
+   "id": 32004,
+   "content": "À",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9546,
+   "cos": 0.9993,
+   "norm_ratio": 0.9989,
+   "flags": []
+  },
+  {
+   "id": 32005,
+   "content": "ÿ",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9526,
+   "cos": 0.9993,
+   "norm_ratio": 1.0023,
+   "flags": []
+  },
+  {
+   "id": 32006,
+   "content": "ø",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9448,
+   "cos": 0.9994,
+   "norm_ratio": 0.9938,
+   "flags": []
+  },
+  {
+   "id": 32007,
+   "content": "ú",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9561,
+   "cos": 0.9993,
+   "norm_ratio": 0.9865,
+   "flags": []
+  },
+  {
+   "id": 32008,
+   "content": "þ",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9385,
+   "cos": 0.9995,
+   "norm_ratio": 1.0022,
+   "flags": []
+  },
+  {
+   "id": 32009,
+   "content": "ü",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9507,
+   "cos": 0.9993,
+   "norm_ratio": 0.9852,
+   "flags": []
+  },
+  {
+   "id": 32010,
+   "content": "ù",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9526,
+   "cos": 0.9993,
+   "norm_ratio": 0.9904,
+   "flags": []
+  },
+  {
+   "id": 32011,
+   "content": "ö",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9565,
+   "cos": 0.9993,
+   "norm_ratio": 0.9849,
+   "flags": []
+  },
+  {
+   "id": 32012,
+   "content": "û",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9497,
+   "cos": 0.9994,
+   "norm_ratio": 0.9979,
+   "flags": []
+  },
+  {
+   "id": 32013,
+   "content": "<｜begin▁of▁sentence｜>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9829,
+   "cos": 0.9992,
+   "norm_ratio": 0.979,
+   "flags": []
+  },
+  {
+   "id": 32014,
+   "content": "<｜end▁of▁sentence｜>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.958,
+   "cos": 0.9997,
+   "norm_ratio": 0.9839,
+   "flags": []
+  },
+  {
+   "id": 32015,
+   "content": "<｜fim▁hole｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9648,
+   "cos": 0.9997,
+   "norm_ratio": 0.9903,
+   "flags": []
+  },
+  {
+   "id": 32016,
+   "content": "<｜fim▁begin｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9629,
+   "cos": 0.9996,
+   "norm_ratio": 0.9864,
+   "flags": []
+  },
+  {
+   "id": 32017,
+   "content": "<｜fim▁end｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9302,
+   "cos": 0.9998,
+   "norm_ratio": 0.9921,
+   "flags": []
+  },
+  {
+   "id": 32018,
+   "content": "<pad>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9463,
+   "cos": 0.9994,
+   "norm_ratio": 1.0005,
+   "flags": []
+  },
+  {
+   "id": 32019,
+   "content": "<|User|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 32020,
+   "content": "<|Assistant|>",
+   "special": false,
+   "state": "unmoved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 32021,
+   "content": "<|EOT|>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.9893,
+   "cos": 0.9806,
+   "norm_ratio": 1.0522,
+   "flags": []
+  }
+ ],
+ "unmoved_samples": {
+  "script:LATIN": [
+   " habitants",
+   " persones",
+   " aC",
+   " nomenat",
+   " milions",
+   "Esportistes",
+   "automòbils",
+   " allClassesLink",
+   " pàrqu",
+   " censats",
+   " capbaix",
+   " llogaters"
+  ],
+  "script:CYRILLIC": [
+   "Родени",
+   " херцо",
+   "Разпространение"
+  ]
+ },
+ "secs": 10.2
+}

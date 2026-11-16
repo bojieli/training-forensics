@@ -1,0 +1,470 @@
+{
+ "name": "chroma_context1",
+ "parent": "openai/gpt-oss-20b",
+ "child": "chromadb/context-1",
+ "embed_name_parent": "model.embed_tokens.weight",
+ "embed_name_child": "model.embed_tokens.weight",
+ "head_parent": "lm_head.weight",
+ "head_child": "lm_head.weight",
+ "tie_cfg_parent": false,
+ "tie_cfg_child": false,
+ "dtype_parent": "BF16",
+ "dtype_child": "BF16",
+ "shape_parent": [
+  201088,
+  2880
+ ],
+ "shape_child": [
+  201088,
+  2880
+ ],
+ "shared_matrix": false,
+ "vocab_compared": 201088,
+ "dim": 2880,
+ "P": 1.0,
+ "shrink_pct": 0.0,
+ "fit_reproduced": 1.0,
+ "bit_identical_raw": 201088,
+ "updated": 0,
+ "barely": 0,
+ "bit_identical": 201088,
+ "frac_changed_hist": {
+  "0": 201088,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 0,
+  "(50%,90%]": 0,
+  "(90%,100%]": 0
+ },
+ "cos_median": 1.0,
+ "rel_change_median": 0.0,
+ "low_signal": false,
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0
+ },
+ "cls": "unchanged",
+ "status": "ok",
+ "categories": {
+  "all": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 199973
+  },
+  "byte-fragment": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1571
+  },
+  "code": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 2791
+  },
+  "code:indent": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 415
+  },
+  "digits": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1290
+  },
+  "emoji": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 77
+  },
+  "math": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1063
+  },
+  "other": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 10
+  },
+  "punct/symbol": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 3572
+  },
+  "script:ARABIC": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 7964
+  },
+  "script:ARMENIAN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1728
+  },
+  "script:BENGALI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 2048
+  },
+  "script:CJK": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 7472
+  },
+  "script:CYRILLIC": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 14209
+  },
+  "script:DEVANAGARI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 3882
+  },
+  "script:GEORGIAN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 2120
+  },
+  "script:GREEK": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1506
+  },
+  "script:GUJARATI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1559
+  },
+  "script:GURMUKHI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 277
+  },
+  "script:HANGUL": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 2360
+  },
+  "script:HEBREW": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 2354
+  },
+  "script:HIRAGANA": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 350
+  },
+  "script:KANNADA": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1273
+  },
+  "script:KATAKANA": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 370
+  },
+  "script:KHMER": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 271
+  },
+  "script:LAO": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 2
+  },
+  "script:LATIN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 134818
+  },
+  "script:MALAYALAM": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1640
+  },
+  "script:MYANMAR": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 227
+  },
+  "script:OTHER": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 110
+  },
+  "script:SINHALA": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 281
+  },
+  "script:TAMIL": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 951
+  },
+  "script:TELUGU": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1280
+  },
+  "script:THAI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1524
+  },
+  "script:TIBETAN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1
+  },
+  "whitespace": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 19
+  }
+ },
+ "special_tokens": [
+  {
+   "id": 199998,
+   "content": "<|startoftext|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 134.52946,
+   "norm_child": 134.52946,
+   "flags": []
+  },
+  {
+   "id": 199999,
+   "content": "<|endoftext|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 182.52338,
+   "norm_child": 182.52338,
+   "flags": []
+  },
+  {
+   "id": 200000,
+   "content": "<|reserved_200000|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 200.26007,
+   "norm_child": 200.26007,
+   "flags": []
+  },
+  {
+   "id": 200001,
+   "content": "<|reserved_200001|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 133.04607,
+   "norm_child": 133.04607,
+   "flags": []
+  },
+  {
+   "id": 200002,
+   "content": "<|return|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 133.89502,
+   "norm_child": 133.89502,
+   "flags": []
+  },
+  {
+   "id": 200003,
+   "content": "<|constrain|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 160.21907,
+   "norm_child": 160.21907,
+   "flags": []
+  },
+  {
+   "id": 200004,
+   "content": "<|reserved_200004|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 118.49663,
+   "norm_child": 118.49663,
+   "flags": []
+  },
+  {
+   "id": 200005,
+   "content": "<|channel|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 136.42367,
+   "norm_child": 136.42367,
+   "flags": []
+  },
+  {
+   "id": 200006,
+   "content": "<|start|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 135.13665,
+   "norm_child": 135.13665,
+   "flags": []
+  },
+  {
+   "id": 200007,
+   "content": "<|end|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 141.51758,
+   "norm_child": 141.51758,
+   "flags": []
+  },
+  {
+   "id": 200008,
+   "content": "<|message|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 139.20848,
+   "norm_child": 139.20848,
+   "flags": []
+  },
+  {
+   "id": 200009,
+   "content": "<|reserved_200009|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 130.84028,
+   "norm_child": 130.84028,
+   "flags": []
+  },
+  {
+   "id": 200010,
+   "content": "<|reserved_200010|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 99.16917,
+   "norm_child": 99.16917,
+   "flags": []
+  },
+  {
+   "id": 200011,
+   "content": "<|reserved_200011|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 122.09967,
+   "norm_child": 122.09967,
+   "flags": []
+  },
+  {
+   "id": 200012,
+   "content": "<|call|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 126.83772,
+   "norm_child": 126.83772,
+   "flags": []
+  },
+  {
+   "id": 200013,
+   "content": "<|reserved_200013|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 139.43426,
+   "norm_child": 139.43426,
+   "flags": []
+  },
+  {
+   "id": 200014,
+   "content": "<|reserved_200014|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 131.73336,
+   "norm_child": 131.73336,
+   "flags": []
+  },
+  {
+   "id": 200015,
+   "content": "<|reserved_200015|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 124.03876,
+   "norm_child": 124.03876,
+   "flags": []
+  },
+  {
+   "id": 200016,
+   "content": "<|reserved_200016|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 208.46903,
+   "norm_child": 208.46903,
+   "flags": []
+  },
+  {
+   "id": 200017,
+   "content": "<|reserved_200017|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 141.31022,
+   "norm_child": 141.31022,
+   "flags": []
+  },
+  {
+   "id": 200018,
+   "content": "<|endofprompt|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 157.50651,
+   "norm_child": 157.50651,
+   "flags": []
+  }
+ ],
+ "special_summary": {
+  "n": 21,
+  "updated": 0,
+  "bit_identical": 21
+ },
+ "secs": 207.3
+}

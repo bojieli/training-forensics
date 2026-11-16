@@ -1,0 +1,39 @@
+[
+ {
+  "family": "DeepSeek-V3",
+  "repo": "baseten/DeepSeek-V3-FP4",
+  "named_after": "deepseek-ai/DeepSeek-V3",
+  "matches": [
+   {
+    "release": "deepseek-ai/DeepSeek-V3",
+    "token_vectors_equal": 1935,
+    "of": 129280
+   },
+   {
+    "release": "deepseek-ai/DeepSeek-V3-0324",
+    "token_vectors_equal": 129280,
+    "of": 129280
+   },
+   {
+    "release": "deepseek-ai/DeepSeek-R1",
+    "token_vectors_equal": 2288,
+    "of": 129280
+   },
+   {
+    "release": "deepseek-ai/DeepSeek-V3-Base",
+    "token_vectors_equal": 2438,
+    "of": 129280
+   },
+   {
+    "release": "deepseek-ai/DeepSeek-V3.2",
+    "token_vectors_equal": 470,
+    "of": 129280
+   },
+   {
+    "release": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+    "token_vectors_equal": 470,
+    "of": 129280
+   }
+  ]
+ }
+]

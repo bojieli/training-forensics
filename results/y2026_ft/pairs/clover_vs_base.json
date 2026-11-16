@@ -1,0 +1,7 @@
+{
+ "name": "clover_vs_base",
+ "parent": "Qwen/Qwen3.6-35B-A3B-Base",
+ "child": "Diffuspace/Clover-35B-A3B-Preview",
+ "status": "error",
+ "error": "OSError: no safetensors or pytorch_model.bin found in Qwen/Qwen3.6-35B-A3B-Base"
+}

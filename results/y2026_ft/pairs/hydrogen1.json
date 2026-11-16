@@ -1,0 +1,7 @@
+{
+ "name": "hydrogen1",
+ "parent": "zai-org/GLM-5.3",
+ "child": "deep-principle/Hydrogen-1.0",
+ "status": "error",
+ "error": "OSError: no safetensors or pytorch_model.bin found in deep-principle/Hydrogen-1.0"
+}

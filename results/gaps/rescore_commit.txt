@@ -1,0 +1,5 @@
+156905ea816220f9a898323cc745dc51dd0eb1a9
+ scripts/controlled/report.py | 100 +++++++++++++++++++++++++++----------------
+ scripts/controlled/score.py  |  45 ++++++++++++++++++-
+ trainforensics/blind.py      |  29 +++++++++----
+ 3 files changed, 126 insertions(+), 48 deletions(-)

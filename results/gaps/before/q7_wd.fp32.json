@@ -1,0 +1,128 @@
+{
+ "run": "q7_wd",
+ "release": "fp32",
+ "tokens": {
+  "seen": 19874,
+  "moved": 19864,
+  "tp": 19864,
+  "fp": 0,
+  "fn": 10
+ },
+ "recipe_true": {
+  "kind": "constant",
+  "N": 500,
+  "warmup": 0,
+  "peak": 5e-06,
+  "wd": 0.1
+ },
+ "recipe_read": {
+  "kind": "constant",
+  "N": 500,
+  "warmup": 0,
+  "peak": 5.000810463520987e-06,
+  "peak_snap": 4.9999999999999996e-06,
+  "wd": 0.08939247728360589,
+  "wd_snap": 0.1,
+  "min_ratio": 0.0
+ },
+ "recipe_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true,
+  "peak_rel_err": 0.00016209270419742516,
+  "peak_snap_ok": true,
+  "wd_rel_err": -0.10607522716394113,
+  "steps": true,
+  "lr_max_rel_dev_snapped": 1.6940658945086004e-16,
+  "lr_max_rel_dev_raw": 0.00016209270419733528,
+  "schedule_exact": true
+ },
+ "replay_refine": {
+  "wd": 0.1,
+  "before": {
+   "N": 500,
+   "warmup": 0
+  },
+  "after": {
+   "N": 500,
+   "warmup": 0
+  },
+  "sample_weights": 7168000,
+  "hits": 7168000
+ },
+ "decay_lut": {
+  "distinct_values": 5018,
+  "consistent": 0.9999501325334822,
+  "coverage_moved": 0.9999820065507954
+ },
+ "t_recipe": 65.56364154815674,
+ "placement": {
+  "docs": 4000,
+  "placed": 1333,
+  "exact": 1260,
+  "wrong": 73,
+  "status_counts": {
+   "ambiguous2": 479,
+   "ambiguous6": 26,
+   "no_unique_token": 1310,
+   "ambiguous14": 1,
+   "ambiguous12": 2,
+   "ambiguous5": 34,
+   "ambiguous3": 267,
+   "ambiguous10": 9,
+   "ambiguous13": 14,
+   "ambiguous9": 7,
+   "ambiguous8": 11,
+   "ambiguous15": 4,
+   "placed": 1333,
+   "ambiguous16": 3,
+   "ambiguous4": 122,
+   "has_unmoved_token": 9,
+   "ambiguous7": 12,
+   "ambiguous11": 7,
+   "inconsistent": 350
+  }
+ },
+ "seed": {
+  "true": 0,
+  "found": 0,
+  "hits": 1260,
+  "of": 1333,
+  "second": [
+   5945,
+   12
+  ]
+ },
+ "swap_reasons": {
+  "unmoved_token": 8,
+  "single_touch_wrong_step": 79
+ },
+ "placement_with_seed": 4000,
+ "swaps": {
+  "true": 0,
+  "flagged": 87,
+  "caught": 0,
+  "false_flags": 87
+ },
+ "tokens_replay": {
+  "moved": 19874,
+  "tp": 19874,
+  "fp": 0,
+  "fn": 0
+ },
+ "replay": {
+  "weights": 473804800,
+  "bit_exact": 473769020,
+  "zeros_exact": 1095
+ },
+ "replay_shift1": {
+  "weights": 473804800,
+  "bit_exact": 1104,
+  "zeros_exact": 1095
+ },
+ "replay_shiftm1": {
+  "weights": 473804800,
+  "bit_exact": 1098,
+  "zeros_exact": 1095
+ }
+}

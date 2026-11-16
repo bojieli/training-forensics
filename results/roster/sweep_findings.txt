@@ -1,4 +1,4 @@
-== decay visible (>=10 unmoved rows reproduced by one P != 1)
+== weight decay visible (>=10 untouched token vectors reproduced by one shrink factor P != 1)
 Kwaipilot/KAT-Dev-72B-Exp                        <- Qwen/Qwen2.5-72B                         P=0.000000 sum_lr_wd=None unmoved=2171 coordfrac=1.000
 Qwen/Qwen2.5-Math-7B-Instruct                    <- Qwen/Qwen2.5-Math-7B                     P=0.892279 sum_lr_wd=0.113976 unmoved=43 coordfrac=0.829
 nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B    <- nvidia/NVIDIA-Nemotron-3.5-Lightning-30B P=0.934272 sum_lr_wd=0.067987 unmoved=9166 coordfrac=1.000
@@ -25,16 +25,16 @@ unsloth/llama-3-8b-Instruct                      <- unsloth/llama-3-8b          
 Qwen/Qwen-72B-Chat                               <- Qwen/Qwen-72B                            P=0.997384 sum_lr_wd=0.00262 unmoved=17620 coordfrac=0.967
 zai-org/GLM-4-32B-0414                           <- zai-org/GLM-4-32B-Base-0414              P=0.997459 sum_lr_wd=0.002544 unmoved=2072 coordfrac=0.999
 togethercomputer/RedPajama-INCITE-7B-Instruct    <- togethercomputer/RedPajama-INCITE-7B-Bas P=0.999517 sum_lr_wd=0.000483 unmoved=401 coordfrac=0.787
-== flat single-touch rows (>=20, D above ulp)
+== tokens with the single-step signature (>=20, change above one 16-bit step)
 NousResearch/Hermes-4.3-36B BF16 64 D med 0.00781 lr med 0.000246
 nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B BF16 38 D med 7.81e-05 lr med 2.46e-06
 unsloth/llama-3-8b-Instruct BF16 233 D med 2.61e-05 lr med 8.22e-07
 mistralai/Mistral-Nemo-Instruct-2407 BF16 1826 D med 2.67e-05 lr med 8.39e-07
-== tied: 32 pairs; with >=10 unmoved rows: 2 ; embedding unchanged: 2
-== untied heads measured: 107 ; >=99% rows moved: 105 ; head unchanged: 1
-== unmoved-row fraction among untied pairs with a readable record
+== tied input/output matrix: 32 pairs; with >=10 untouched token vectors: 2 ; token vectors unchanged: 2
+== separate output layers measured: 107 ; >=99% of output vectors updated: 105 ; output layer unchanged: 1
+== fraction of vocabulary never updated, among untied pairs with a token record
 n 126 median 0.018 min 0.0001 max 0.743
-== control tokens touched, Qwen-parent fine-tunes (untied, >=10 unmoved rows)
+== special tokens updated, Qwen-parent fine-tunes (untied, >=10 untouched token vectors)
 Qwen/Qwen3.5-122B-A10B             -> BAAI/AREX-Base                             9/33 ['<|endoftext|>', '<|im_start|>', '<|im_end|>', '<tool_call>', '</tool_call>', '<tool_response>', '</tool_response>', '<think>', '</think>']
 Qwen/Qwen2.5-72B                   -> Kwaipilot/KAT-Dev-72B-Exp                  22/22 ['<|endoftext|>', '<|im_start|>', '<|im_end|>', '<|object_ref_start|>', '<|object_ref_end|>', '<|box_start|>', '<|box_end|>', '<|quad_start|>', '<|quad_end|>']
 Qwen/Qwen3.8-27B                   -> NousResearch/Arete-27B                     0/33 []

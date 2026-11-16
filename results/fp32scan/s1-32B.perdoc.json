@@ -1,0 +1,10 @@
+{
+ "seed": 42,
+ "bs": 16,
+ "docs_with_3_rare": 527,
+ "docs": 1000,
+ "other_seeds": 500,
+ "docs_where_seed_beats_all_others": 7,
+ "docs_where_seed_in_top_1pct": 27,
+ "docs_where_seed_in_top_5pct": 108
+}

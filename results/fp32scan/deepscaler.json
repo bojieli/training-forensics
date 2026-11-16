@@ -1,0 +1,212 @@
+{
+ "child": "agentica-org/DeepScaleR-1.5B-Preview",
+ "candidates": {
+  "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B": {
+   "rows_parent": 151936,
+   "compared": 151936,
+   "bit_identical": 103986,
+   "cos_median": 0.9999999999999999,
+   "ratio_median": 1.0,
+   "rel_change_median": 0.0
+  }
+ },
+ "best_parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+ "best": {
+  "bit_identical": 103986,
+  "changed": 47950,
+  "share_numbers_changed_hist": [
+   103986,
+   2,
+   1,
+   108,
+   1050,
+   1543,
+   45246
+  ],
+  "flat_vectors": 3,
+  "added_rows": 0
+ },
+ "special": [
+  {
+   "id": 151643,
+   "tok": "<\uff5cend\u2581of\u2581sentence\uff5c>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 1.4690806865692139,
+   "norm_parent": 1.4690806865692139
+  },
+  {
+   "id": 151644,
+   "tok": "<\uff5cUser\uff5c>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.8233758807182312,
+   "norm_parent": 0.8233051896095276
+  },
+  {
+   "id": 151645,
+   "tok": "<\uff5cAssistant\uff5c>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.7953039407730103,
+   "norm_parent": 0.795156717300415
+  },
+  {
+   "id": 151646,
+   "tok": "<\uff5cbegin\u2581of\u2581sentence\uff5c>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.8085796236991882,
+   "norm_parent": 0.8085471391677856
+  },
+  {
+   "id": 151647,
+   "tok": "<|EOT|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7692479491233826,
+   "norm_parent": 0.7692479491233826
+  },
+  {
+   "id": 151648,
+   "tok": "<think>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.7854780554771423,
+   "norm_parent": 0.7854150533676147
+  },
+  {
+   "id": 151649,
+   "tok": "</think>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.7931563258171082,
+   "norm_parent": 0.793089747428894
+  },
+  {
+   "id": 151650,
+   "tok": "<|quad_start|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651582956314087,
+   "norm_parent": 0.7651582956314087
+  },
+  {
+   "id": 151651,
+   "tok": "<|quad_end|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651582956314087,
+   "norm_parent": 0.7651582956314087
+  },
+  {
+   "id": 151652,
+   "tok": "<|vision_start|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7665930986404419,
+   "norm_parent": 0.7665930986404419
+  },
+  {
+   "id": 151653,
+   "tok": "<|vision_end|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7657912373542786,
+   "norm_parent": 0.7657912373542786
+  },
+  {
+   "id": 151654,
+   "tok": "<|vision_pad|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651640772819519,
+   "norm_parent": 0.7651640772819519
+  },
+  {
+   "id": 151655,
+   "tok": "<|image_pad|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7655566930770874,
+   "norm_parent": 0.7655566930770874
+  },
+  {
+   "id": 151656,
+   "tok": "<|video_pad|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651582956314087,
+   "norm_parent": 0.7651582956314087
+  },
+  {
+   "id": 151657,
+   "tok": "<tool_call>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651640772819519,
+   "norm_parent": 0.7651640772819519
+  },
+  {
+   "id": 151658,
+   "tok": "</tool_call>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651640772819519,
+   "norm_parent": 0.7651640772819519
+  },
+  {
+   "id": 151659,
+   "tok": "<|fim_prefix|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651640772819519,
+   "norm_parent": 0.7651640772819519
+  },
+  {
+   "id": 151660,
+   "tok": "<|fim_middle|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651582956314087,
+   "norm_parent": 0.7651582956314087
+  },
+  {
+   "id": 151661,
+   "tok": "<|fim_suffix|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651582956314087,
+   "norm_parent": 0.7651582956314087
+  },
+  {
+   "id": 151662,
+   "tok": "<|fim_pad|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651582956314087,
+   "norm_parent": 0.7651582956314087
+  },
+  {
+   "id": 151663,
+   "tok": "<|repo_name|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651609182357788,
+   "norm_parent": 0.7651609182357788
+  },
+  {
+   "id": 151664,
+   "tok": "<|file_sep|>",
+   "state": "bit-identical",
+   "share_changed": 0.0,
+   "norm_child": 0.7651582956314087,
+   "norm_parent": 0.7651582956314087
+  }
+ ],
+ "flat_moves": [
+  0.0,
+  0.0,
+  0.0
+ ]
+}

@@ -1,0 +1,2291 @@
+[
+ {
+  "key": "LiquidAI/LFM2-24B-A2B@ -> LiquidAI/LFM2.5-24B-A2B-Base",
+  "parent": "LiquidAI/LFM2-24B-A2B",
+  "child": "LiquidAI/LFM2.5-24B-A2B-Base",
+  "relation": "successive",
+  "tied": true,
+  "cls": "shared matrix",
+  "rows": 65536,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 65536,
+  "identical_raw": 0,
+  "P": 1.0,
+  "fit": 0.0006818771362304688,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 0,
+   "moved": 0,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "poolside/Laguna-XS.2@ -> poolside/Laguna-XS-2.1",
+  "parent": "poolside/Laguna-XS.2",
+  "child": "poolside/Laguna-XS-2.1",
+  "relation": "successive",
+  "tied": false,
+  "cls": "record, poor fit",
+  "rows": 100352,
+  "bit_identical": 67,
+  "barely": 1,
+  "changed": 100284,
+  "identical_raw": 67,
+  "P": 1.0,
+  "fit": 0.1337118148803711,
+  "change_hist": [
+   0.0006676498724489796,
+   9.964923469387754e-06,
+   0.0,
+   0.0,
+   0.9993223852040817
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 70,
+   "moved": 20,
+   "unmoved": 50,
+   "near": 0
+  }
+ },
+ {
+  "key": "LiquidAI/LFM2.5-8B-A1B-Base@ -> LiquidAI/LFM2.5-8B-A1B",
+  "parent": "LiquidAI/LFM2.5-8B-A1B-Base",
+  "child": "LiquidAI/LFM2.5-8B-A1B",
+  "relation": "base",
+  "tied": true,
+  "cls": "shared matrix",
+  "rows": 128000,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 128000,
+  "identical_raw": 0,
+  "P": 0.381836957688112,
+  "fit": 0.0018157958984375,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 124,
+   "moved": 124,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "LiquidAI/LFM2.5-24B-A2B-Base@ -> LiquidAI/LFM2.5-24B-A2B",
+  "parent": "LiquidAI/LFM2.5-24B-A2B-Base",
+  "child": "LiquidAI/LFM2.5-24B-A2B",
+  "relation": "base",
+  "tied": true,
+  "cls": "shared matrix",
+  "rows": 128000,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 128000,
+  "identical_raw": 0,
+  "P": 0.873532243636705,
+  "fit": 0.012823104858398438,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 124,
+   "moved": 124,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "kakaocorp/kanana-2-30b-a3b-base-2601@ -> kakaocorp/kanana-2-30b-a3b-mid-2601",
+  "parent": "kakaocorp/kanana-2-30b-a3b-base-2601",
+  "child": "kakaocorp/kanana-2-30b-a3b-mid-2601",
+  "relation": "stage",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 128256,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 128256,
+  "identical_raw": 0,
+  "P": 0.9701897455377326,
+  "fit": 0.5374011993408203,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.002666541916167665,
+   0.9973334580838323
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 256,
+   "moved": 256,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "kakaocorp/kanana-2-30b-a3b-mid-2601@ -> kakaocorp/kanana-2-30b-a3b-instruct-2601",
+  "parent": "kakaocorp/kanana-2-30b-a3b-mid-2601",
+  "child": "kakaocorp/kanana-2-30b-a3b-instruct-2601",
+  "relation": "base",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 128256,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 128256,
+  "identical_raw": 0,
+  "P": 1.0,
+  "fit": 0.7650947570800781,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.054773265968063874,
+   0.9452267340319361
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 256,
+   "moved": 256,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "kakaocorp/kanana-2-30b-a3b-mid-2601@ -> kakaocorp/kanana-2-30b-a3b-thinking-2601",
+  "parent": "kakaocorp/kanana-2-30b-a3b-mid-2601",
+  "child": "kakaocorp/kanana-2-30b-a3b-thinking-2601",
+  "relation": "base",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 128256,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 128256,
+  "identical_raw": 0,
+  "P": 0.9674557023890333,
+  "fit": 0.512547492980957,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.002565182135728543,
+   0.9974348178642715
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 256,
+   "moved": 256,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "jdopensource/JoyAI-LLM-Flash-Base@ -> jdopensource/JoyAI-LLM-Flash",
+  "parent": "jdopensource/JoyAI-LLM-Flash-Base",
+  "child": "jdopensource/JoyAI-LLM-Flash",
+  "relation": "base",
+  "tied": false,
+  "cls": "token record",
+  "rows": 129280,
+  "bit_identical": 1383,
+  "barely": 1,
+  "changed": 127896,
+  "identical_raw": 1383,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.010697710396039605,
+   7.735148514851485e-06,
+   0.0002011138613861386,
+   0.0006652227722772278,
+   0.9884282178217821
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 818,
+   "moved": 39,
+   "unmoved": 779,
+   "near": 0
+  }
+ },
+ {
+  "key": "openbmb/MiniCPM5-2B-Base@ -> openbmb/MiniCPM5-2B-Midtrain",
+  "parent": "openbmb/MiniCPM5-2B-Base",
+  "child": "openbmb/MiniCPM5-2B-Midtrain",
+  "relation": "stage",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 130560,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 130560,
+  "identical_raw": 0,
+  "P": 0.7673804883029607,
+  "fit": 0.7976875305175781,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0001838235294117647,
+   0.007720588235294118,
+   0.9920955882352941
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 510,
+   "moved": 510,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "openbmb/MiniCPM5-2B-Midtrain@ -> openbmb/MiniCPM5-2B-SFT",
+  "parent": "openbmb/MiniCPM5-2B-Midtrain",
+  "child": "openbmb/MiniCPM5-2B-SFT",
+  "relation": "stage",
+  "tied": false,
+  "cls": "token record",
+  "rows": 130560,
+  "bit_identical": 1028,
+  "barely": 433,
+  "changed": 129099,
+  "identical_raw": 0,
+  "P": 0.9738226192240071,
+  "fit": 0.9994134902954102,
+  "change_hist": [
+   0.007873774509803921,
+   0.003316482843137255,
+   5.361519607843137e-05,
+   0.0,
+   0.9887561274509804
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 510,
+   "moved": 25,
+   "unmoved": 479,
+   "near": 6
+  },
+  "P_interval_error": "cache miss or shape mismatch"
+ },
+ {
+  "key": "openbmb/MiniCPM5-2B-SFT@ -> openbmb/MiniCPM5-2B",
+  "parent": "openbmb/MiniCPM5-2B-SFT",
+  "child": "openbmb/MiniCPM5-2B",
+  "relation": "stage",
+  "tied": false,
+  "cls": "token record",
+  "rows": 130560,
+  "bit_identical": 4750,
+  "barely": 1552,
+  "changed": 124258,
+  "identical_raw": 4750,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.036381740196078434,
+   0.011887254901960784,
+   0.1775658700980392,
+   0.7712699142156862,
+   0.0028952205882352942
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 510,
+   "moved": 57,
+   "unmoved": 453,
+   "near": 0
+  }
+ },
+ {
+  "key": "allenai/Olmo-Hybrid-7B@ -> allenai/Olmo-Hybrid-Instruct-SFT-7B",
+  "parent": "allenai/Olmo-Hybrid-7B",
+  "child": "allenai/Olmo-Hybrid-Instruct-SFT-7B",
+  "relation": "base",
+  "tied": false,
+  "cls": "token record",
+  "rows": 100352,
+  "bit_identical": 607,
+  "barely": 106,
+  "changed": 99639,
+  "identical_raw": 607,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.006048708545918368,
+   0.0010562818877551021,
+   5.978954081632653e-05,
+   0.03040298150510204,
+   0.9624322385204082
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 22,
+   "moved": 11,
+   "unmoved": 11,
+   "near": 0
+  }
+ },
+ {
+  "key": "allenai/Olmo-Hybrid-Instruct-SFT-7B@ -> allenai/Olmo-Hybrid-Instruct-DPO-7B",
+  "parent": "allenai/Olmo-Hybrid-Instruct-SFT-7B",
+  "child": "allenai/Olmo-Hybrid-Instruct-DPO-7B",
+  "relation": "stage",
+  "tied": false,
+  "cls": "token record",
+  "rows": 100352,
+  "bit_identical": 13821,
+  "barely": 11306,
+  "changed": 75225,
+  "identical_raw": 13821,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.13772520727040816,
+   0.11266342474489796,
+   0.7403738839285714,
+   0.009008290816326531,
+   0.00022919323979591838
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 22,
+   "moved": 7,
+   "unmoved": 15,
+   "near": 0
+  }
+ },
+ {
+  "key": "allenai/Olmo-Hybrid-7B@ -> allenai/Olmo-Hybrid-Think-SFT-7B",
+  "parent": "allenai/Olmo-Hybrid-7B",
+  "child": "allenai/Olmo-Hybrid-Think-SFT-7B",
+  "relation": "base",
+  "tied": false,
+  "cls": "token record",
+  "rows": 100352,
+  "bit_identical": 769,
+  "barely": 232,
+  "changed": 99351,
+  "identical_raw": 769,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.007663026147959184,
+   0.002311862244897959,
+   0.0001793686224489796,
+   0.06874800701530612,
+   0.9210977359693877
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 22,
+   "moved": 11,
+   "unmoved": 11,
+   "near": 0
+  }
+ },
+ {
+  "key": "inclusionAI/Ling-3.0-flash-base-30T@ -> inclusionAI/Ling-3.0-flash-base-midtrain",
+  "parent": "inclusionAI/Ling-3.0-flash-base-30T",
+  "child": "inclusionAI/Ling-3.0-flash-base-midtrain",
+  "relation": "stage",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 157184,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 157184,
+  "identical_raw": 0,
+  "P": 0.6631371999813113,
+  "fit": 0.7514907836914062,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.009460250407166124,
+   0.9905397495928339
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 262,
+   "moved": 262,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "inclusionAI/Ling-3.0-flash-base-midtrain@ -> inclusionAI/Ling-3.0-flash-base",
+  "parent": "inclusionAI/Ling-3.0-flash-base-midtrain",
+  "child": "inclusionAI/Ling-3.0-flash-base",
+  "relation": "stage",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 157184,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 157184,
+  "identical_raw": 0,
+  "P": 1.1950639498272875,
+  "fit": 0.7914878845214843,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.009460250407166124,
+   0.9905397495928339
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 262,
+   "moved": 262,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "inclusionAI/Ling-3.0-flash@ -> inclusionAI/Ling-3.0-flash-Sante",
+  "parent": "inclusionAI/Ling-3.0-flash",
+  "child": "inclusionAI/Ling-3.0-flash-Sante",
+  "relation": "derived",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 157184,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 157184,
+  "identical_raw": 0,
+  "P": 0.08373146244087346,
+  "fit": 0.5035186767578125,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0031364515472312705,
+   0.9968635484527687
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 262,
+   "moved": 262,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "inclusionAI/Ling-3.0-flash@ -> inclusionAI/Ling-3.0-flash-VL",
+  "parent": "inclusionAI/Ling-3.0-flash",
+  "child": "inclusionAI/Ling-3.0-flash-VL",
+  "relation": "derived",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 157184,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 157184,
+  "identical_raw": 0,
+  "P": 0.08563757792299351,
+  "fit": 0.5841896057128906,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.005954804560260586,
+   0.9940451954397395
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 288,
+   "moved": 288,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "poolside/Laguna-M.1-base@ -> poolside/Laguna-M.1",
+  "parent": "poolside/Laguna-M.1-base",
+  "child": "poolside/Laguna-M.1",
+  "relation": "base",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 100352,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 100352,
+  "identical_raw": 0,
+  "P": 1.0,
+  "fit": 0.4405207633972168,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0018435108418367347,
+   0.9981564891581632
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 70,
+   "moved": 70,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "ibm-granite/granite-4.1-30b-base@ -> ibm-granite/granite-4.1-30b",
+  "parent": "ibm-granite/granite-4.1-30b-base",
+  "child": "ibm-granite/granite-4.1-30b",
+  "relation": "base",
+  "tied": true,
+  "cls": "shared matrix",
+  "rows": 100352,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 100352,
+  "identical_raw": 0,
+  "P": 1.0,
+  "fit": 0.6229968070983887,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.00031887755102040814,
+   0.0034478635204081634,
+   0.9962332589285714
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 96,
+   "moved": 96,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "ibm-granite/granite-4.1-30b@ -> ibm-granite/granite-4.2-30b",
+  "parent": "ibm-granite/granite-4.1-30b",
+  "child": "ibm-granite/granite-4.2-30b",
+  "relation": "successive",
+  "tied": true,
+  "cls": "shared matrix",
+  "rows": 100352,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 100352,
+  "identical_raw": 0,
+  "P": 11.93170603994215,
+  "fit": 0.5142989158630371,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.002650669642857143,
+   0.9973493303571429
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 96,
+   "moved": 96,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "tencent/Hy3-preview-Base@ -> tencent/Hy3-preview",
+  "parent": "tencent/Hy3-preview-Base",
+  "child": "tencent/Hy3-preview",
+  "relation": "base",
+  "tied": false,
+  "cls": "token record",
+  "rows": 120832,
+  "bit_identical": 987,
+  "barely": 18,
+  "changed": 119827,
+  "identical_raw": 987,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.008168365995762712,
+   0.00014896716101694916,
+   0.0007200079449152543,
+   0.011495299258474576,
+   0.9794673596398306
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 818,
+   "moved": 33,
+   "unmoved": 785,
+   "near": 0
+  }
+ },
+ {
+  "key": "tencent/Hy3-preview-Base@ -> tencent/Hy3",
+  "parent": "tencent/Hy3-preview-Base",
+  "child": "tencent/Hy3",
+  "relation": "base",
+  "tied": false,
+  "cls": "token record",
+  "rows": 120832,
+  "bit_identical": 362,
+  "barely": 5,
+  "changed": 120465,
+  "identical_raw": 362,
+  "P": 1.0,
+  "fit": 0.9807515144348145,
+  "change_hist": [
+   0.002995895127118644,
+   4.137976694915254e-05,
+   0.0011669094279661016,
+   0.002780720338983051,
+   0.993015095338983
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 818,
+   "moved": 470,
+   "unmoved": 344,
+   "near": 4
+  }
+ },
+ {
+  "key": "tencent/Hy3-preview@ -> tencent/Hy3",
+  "parent": "tencent/Hy3-preview",
+  "child": "tencent/Hy3",
+  "relation": "successive",
+  "tied": false,
+  "cls": "token record",
+  "rows": 120832,
+  "bit_identical": 361,
+  "barely": 5,
+  "changed": 120466,
+  "identical_raw": 361,
+  "P": 1.0,
+  "fit": 0.9806780815124512,
+  "change_hist": [
+   0.0029876191737288134,
+   4.137976694915254e-05,
+   0.001175185381355932,
+   0.00260692531779661,
+   0.9931888903601694
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 818,
+   "moved": 471,
+   "unmoved": 343,
+   "near": 4
+  }
+ },
+ {
+  "key": "Qwen/Qwen3.5-35B-A3B-Base@ -> Qwen/Qwen3.6-35B-A3B",
+  "parent": "Qwen/Qwen3.5-35B-A3B-Base",
+  "child": "Qwen/Qwen3.6-35B-A3B",
+  "relation": "base",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 248320,
+  "bit_identical": 1,
+  "barely": 1,
+  "changed": 248318,
+  "identical_raw": 0,
+  "P": 0.9510740856997513,
+  "fit": 0.43100833892822266,
+  "change_hist": [
+   4.027061855670103e-06,
+   4.027061855670103e-06,
+   0.0,
+   0.0011557667525773196,
+   0.9988361791237114
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 33,
+   "moved": 33,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3.6-35B-A3B@ -> Qwen/Qwen-AgentWorld-35B-A3B",
+  "parent": "Qwen/Qwen3.6-35B-A3B",
+  "child": "Qwen/Qwen-AgentWorld-35B-A3B",
+  "relation": "derived",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 248320,
+  "bit_identical": 940,
+  "barely": 1,
+  "changed": 247379,
+  "identical_raw": 0,
+  "P": 1.0046149220272047,
+  "fit": 0.9996099472045898,
+  "change_hist": [
+   0.003785438144329897,
+   4.027061855670103e-06,
+   4.027061855670103e-05,
+   0.0002577319587628866,
+   0.9959125322164949
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 33,
+   "moved": 21,
+   "unmoved": 12,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3.5-35B-A3B@ -> Qwen/Qwen3.6-35B-A3B",
+  "parent": "Qwen/Qwen3.5-35B-A3B",
+  "child": "Qwen/Qwen3.6-35B-A3B",
+  "relation": "successive",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 248320,
+  "bit_identical": 1,
+  "barely": 1,
+  "changed": 248318,
+  "identical_raw": 0,
+  "P": 0.9554385884857742,
+  "fit": 0.40291404724121094,
+  "change_hist": [
+   4.027061855670103e-06,
+   4.027061855670103e-06,
+   0.0,
+   0.0011557667525773196,
+   0.9988361791237114
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 33,
+   "moved": 33,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "microsoft/Phi-4-reasoning@ -> microsoft/Phi-4-reasoning-vision-15B",
+  "parent": "microsoft/Phi-4-reasoning",
+  "child": "microsoft/Phi-4-reasoning-vision-15B",
+  "relation": "card",
+  "tied": false,
+  "cls": "token record",
+  "rows": 100352,
+  "bit_identical": 564,
+  "barely": 5,
+  "changed": 99783,
+  "identical_raw": 564,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.005620216836734694,
+   4.982461734693878e-05,
+   0.00042849170918367346,
+   0.009197624362244899,
+   0.9847038424744898
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 96,
+   "moved": 9,
+   "unmoved": 87,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3.6-35B-A3B@ -> Kwaipilot/KAT-Coder-V2.5-Dev",
+  "parent": "Qwen/Qwen3.6-35B-A3B",
+  "child": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "relation": "card",
+  "tied": false,
+  "cls": "token record",
+  "rows": 248320,
+  "bit_identical": 23064,
+  "barely": 725,
+  "changed": 224531,
+  "identical_raw": 23064,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.09288015463917526,
+   0.0029196198453608248,
+   0.005436533505154639,
+   0.04807506443298969,
+   0.8506886275773196
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 33,
+   "moved": 26,
+   "unmoved": 7,
+   "near": 0
+  }
+ },
+ {
+  "key": "stepfun-ai/Step-3.5-Flash-Base@ -> stepfun-ai/Step-3.5-Flash-Base-Midtrain",
+  "parent": "stepfun-ai/Step-3.5-Flash-Base",
+  "child": "stepfun-ai/Step-3.5-Flash-Base-Midtrain",
+  "relation": "stage",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 128815,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 128815,
+  "identical_raw": 0,
+  "P": 0.9272367797851059,
+  "fit": 0.8313193321228027,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.006062958506385126,
+   0.9939370414936148
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 818,
+   "moved": 818,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "stepfun-ai/Step-3.5-Flash-Base-Midtrain@ -> stepfun-ai/Step-3.5-Flash",
+  "parent": "stepfun-ai/Step-3.5-Flash-Base-Midtrain",
+  "child": "stepfun-ai/Step-3.5-Flash",
+  "relation": "base",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 128896,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 128896,
+  "identical_raw": 0,
+  "P": 0.9964287295182847,
+  "fit": 0.9709048271179199,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.01077612959285005,
+   0.0012956181727904667,
+   0.9879282522343595
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 818,
+   "moved": 818,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "stepfun-ai/Step-3.5-Flash@ -> stepfun-ai/Step-3.7-Flash",
+  "parent": "stepfun-ai/Step-3.5-Flash",
+  "child": "stepfun-ai/Step-3.7-Flash",
+  "relation": "successive",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 128896,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 128896,
+  "identical_raw": 0,
+  "P": 0.777599422075116,
+  "fit": 0.46106672286987305,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 818,
+   "moved": 818,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "stepfun-ai/Step-3.7-Flash@ -> stepfun-ai/Step-5-Preview-BF16",
+  "parent": "stepfun-ai/Step-3.7-Flash",
+  "child": "stepfun-ai/Step-5-Preview-BF16",
+  "relation": "successive",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 128896,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 128896,
+  "identical_raw": 0,
+  "P": 1.0,
+  "fit": 0.0008397102355957031,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 818,
+   "moved": 818,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V4-Flash-0731@ -> deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "parent": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "child": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "relation": "successive",
+  "tied": false,
+  "cls": "token record",
+  "rows": 129280,
+  "bit_identical": 427,
+  "barely": 0,
+  "changed": 128853,
+  "identical_raw": 427,
+  "P": 1.0,
+  "fit": 0.8439493179321289,
+  "change_hist": [
+   0.003302908415841584,
+   0.0,
+   0.0,
+   1.547029702970297e-05,
+   0.9966816212871287
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 1283,
+   "moved": 869,
+   "unmoved": 414,
+   "near": 0
+  }
+ },
+ {
+  "key": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16@ -> nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "parent": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-Base-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+  "relation": "base",
+  "tied": false,
+  "cls": "token record",
+  "rows": 131072,
+  "bit_identical": 1188,
+  "barely": 2,
+  "changed": 129882,
+  "identical_raw": 0,
+  "P": 0.9878679384741003,
+  "fit": 0.9971098899841309,
+  "change_hist": [
+   0.009063720703125,
+   1.52587890625e-05,
+   0.00041961669921875,
+   0.00119781494140625,
+   0.9893035888671875
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 1000,
+   "moved": 154,
+   "unmoved": 845,
+   "near": 1
+  },
+  "P_interval_error": "cache miss or shape mismatch"
+ },
+ {
+  "key": "mistralai/Mistral-Small-4-119B-2603@ -> mistralai/Leanstral-1.5-119B-A6B",
+  "parent": "mistralai/Mistral-Small-4-119B-2603",
+  "child": "mistralai/Leanstral-1.5-119B-A6B",
+  "relation": "derived",
+  "tied": false,
+  "cls": "token record",
+  "rows": 131072,
+  "bit_identical": 1276,
+  "barely": 21,
+  "changed": 129775,
+  "identical_raw": 1276,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.009735107421875,
+   0.00016021728515625,
+   0.00141143798828125,
+   0.0042572021484375,
+   0.98443603515625
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 0,
+   "moved": 0,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "zai-org/GLM-4.5-Air-Base@ -> PrimeIntellect/INTELLECT-3.1",
+  "parent": "zai-org/GLM-4.5-Air-Base",
+  "child": "PrimeIntellect/INTELLECT-3.1",
+  "relation": "derived",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 151552,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 151552,
+  "identical_raw": 0,
+  "P": 0.9572189283866294,
+  "fit": 0.04495096206665039,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   8.577913851351352e-05,
+   0.9999142208614865
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 38,
+   "moved": 38,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3-235B-A22B-Instruct-2507@ -> inclusionAI/AReaL-SEA-235B-A22B",
+  "parent": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "child": "inclusionAI/AReaL-SEA-235B-A22B",
+  "relation": "derived",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 151936,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 151936,
+  "identical_raw": 0,
+  "P": 0.9961253936586272,
+  "fit": 0.40822839736938477,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 26,
+   "moved": 26,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "stepfun-ai/Step3-VL-10B-Base@ -> stepfun-ai/Step3-VL-10B",
+  "parent": "stepfun-ai/Step3-VL-10B-Base",
+  "child": "stepfun-ai/Step3-VL-10B",
+  "relation": "base",
+  "tied": false,
+  "cls": "token record",
+  "rows": 151936,
+  "bit_identical": 2909,
+  "barely": 0,
+  "changed": 149027,
+  "identical_raw": 2909,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.01914621946082561,
+   0.0,
+   0.0004804654591406908,
+   0.005456244734625105,
+   0.9749170703454086
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 49,
+   "moved": 30,
+   "unmoved": 19,
+   "near": 0
+  }
+ },
+ {
+  "key": "XiaomiMiMo/MiMo-V2.5@ -> XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+  "parent": "XiaomiMiMo/MiMo-V2.5",
+  "child": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+  "relation": "successive",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 152576,
+  "bit_identical": 0,
+  "barely": 1,
+  "changed": 152575,
+  "identical_raw": 0,
+  "P": 1.0349859428406194,
+  "fit": 0.5594468116760254,
+  "change_hist": [
+   0.0,
+   6.554110738255033e-06,
+   0.0,
+   0.01851536283557047,
+   0.9814780830536913
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 32,
+   "moved": 32,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "inclusionAI/Ling-3.1-flash-base@ -> inclusionAI/Ling-3.1-flash",
+  "parent": "inclusionAI/Ling-3.1-flash-base",
+  "child": "inclusionAI/Ling-3.1-flash",
+  "relation": "base",
+  "tied": false,
+  "cls": "token record",
+  "rows": 157184,
+  "bit_identical": 1682,
+  "barely": 1,
+  "changed": 155501,
+  "identical_raw": 0,
+  "P": 0.9815631319406471,
+  "fit": 1.0,
+  "change_hist": [
+   0.010700834690553745,
+   6.361970684039088e-06,
+   6.361970684039088e-06,
+   0.0001526872964169381,
+   0.9891337540716613
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 262,
+   "moved": 19,
+   "unmoved": 243,
+   "near": 0
+  },
+  "P_lo": 0.9815573770491803,
+  "P_hi": 0.9815789473684211,
+  "decay_rows": 1682,
+  "shrink_pct": [
+   1.8421052631578894,
+   1.8442622950819665
+  ],
+  "sum_lr_wd": [
+   0.01859283307661586,
+   0.018614808442231935
+  ]
+ },
+ {
+  "key": "zai-org/GLM-5.3-Flash-BF16@ -> internlm/Sage-S2.1-Flash",
+  "parent": "zai-org/GLM-5.3-Flash-BF16",
+  "child": "internlm/Sage-S2.1-Flash",
+  "relation": "derived",
+  "tied": false,
+  "cls": "token record",
+  "rows": 154880,
+  "bit_identical": 2563,
+  "barely": 0,
+  "changed": 152317,
+  "identical_raw": 2563,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.016548295454545454,
+   0.0,
+   0.00029700413223140493,
+   0.010989152892561983,
+   0.9721655475206612
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 36,
+   "moved": 18,
+   "unmoved": 18,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3-VL-32B-Instruct@ -> microsoft/AesCode-32B",
+  "parent": "Qwen/Qwen3-VL-32B-Instruct",
+  "child": "microsoft/AesCode-32B",
+  "relation": "card",
+  "tied": false,
+  "cls": "token record",
+  "rows": 151936,
+  "bit_identical": 42212,
+  "barely": 3580,
+  "changed": 106144,
+  "identical_raw": 42212,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.2778275063184499,
+   0.023562552653748948,
+   0.23375631844987363,
+   0.1694397641112047,
+   0.29541385846672286
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 26,
+   "moved": 8,
+   "unmoved": 17,
+   "near": 1
+  }
+ },
+ {
+  "key": "Qwen/Qwen3-14B@ -> Qwen/WebWorld-14B",
+  "parent": "Qwen/Qwen3-14B",
+  "child": "Qwen/WebWorld-14B",
+  "relation": "card-corrected",
+  "tied": false,
+  "cls": "token record",
+  "rows": 151936,
+  "bit_identical": 10389,
+  "barely": 82,
+  "changed": 141465,
+  "identical_raw": 10389,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.06837747472620051,
+   0.0005397009267059814,
+   0.001592775905644482,
+   0.005252211457455771,
+   0.9242378369839933
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 26,
+   "moved": 6,
+   "unmoved": 20,
+   "near": 0
+  }
+ },
+ {
+  "key": "meituan-longcat/LongCat-Flash-Thinking-2601@ -> meituan-longcat/LongCat-Flash-Prover",
+  "parent": "meituan-longcat/LongCat-Flash-Thinking-2601",
+  "child": "meituan-longcat/LongCat-Flash-Prover",
+  "relation": "successive",
+  "tied": false,
+  "cls": "record, poor fit",
+  "rows": 131072,
+  "bit_identical": 105,
+  "barely": 0,
+  "changed": 130967,
+  "identical_raw": 0,
+  "P": 0.994014544320783,
+  "fit": 0.8489230473836263,
+  "change_hist": [
+   0.00080108642578125,
+   0.0,
+   0.00240325927734375,
+   9.918212890625e-05,
+   0.9966964721679688
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 224,
+   "moved": 122,
+   "unmoved": 102,
+   "near": 0
+  },
+  "P_interval_error": "cache miss or shape mismatch"
+ },
+ {
+  "key": "Motif-Technologies/Motif-3-Beta@ -> Motif-Technologies/Motif-3",
+  "parent": "Motif-Technologies/Motif-3-Beta",
+  "child": "Motif-Technologies/Motif-3",
+  "relation": "successive",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 220160,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 220160,
+  "identical_raw": 0,
+  "P": 1.0,
+  "fit": 0.8374567031860352,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.013385719476744187,
+   0.9866142805232558
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 160,
+   "moved": 160,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "XiaomiMiMo/MiMo-V2.5-Pro@ -> XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+  "parent": "XiaomiMiMo/MiMo-V2.5-Pro",
+  "child": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+  "relation": "successive",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 152576,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 152576,
+  "identical_raw": 0,
+  "P": 0.9893285038179274,
+  "fit": 0.7806587219238281,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.01859401216442953,
+   0.9814059878355704
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 32,
+   "moved": 32,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "zai-org/GLM-5.2@ -> internlm/Atria-Dawn-Preview",
+  "parent": "zai-org/GLM-5.2",
+  "child": "internlm/Atria-Dawn-Preview",
+  "relation": "derived",
+  "tied": false,
+  "cls": "token record",
+  "rows": 154880,
+  "bit_identical": 3483,
+  "barely": 0,
+  "changed": 151397,
+  "identical_raw": 3483,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.022488378099173555,
+   0.0,
+   3.228305785123967e-05,
+   0.0026601239669421487,
+   0.9748192148760331
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 36,
+   "moved": 17,
+   "unmoved": 19,
+   "near": 0
+  }
+ },
+ {
+  "key": "zai-org/GLM-5.3-BF16@ -> internlm/Sage-S2.1",
+  "parent": "zai-org/GLM-5.3-BF16",
+  "child": "internlm/Sage-S2.1",
+  "relation": "derived",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 154880,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 154880,
+  "identical_raw": 0,
+  "P": 1.0075854374872535,
+  "fit": 0.3007825215657552,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0013881714876033057,
+   0.9986118285123967
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 36,
+   "moved": 36,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3.5-9B@ -> allenai/tmax-9b",
+  "parent": "Qwen/Qwen3.5-9B",
+  "child": "allenai/tmax-9b",
+  "relation": "card",
+  "tied": false,
+  "cls": "token record",
+  "rows": 248320,
+  "bit_identical": 167834,
+  "barely": 11607,
+  "changed": 68879,
+  "identical_raw": 167834,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.6758778994845361,
+   0.04674210695876289,
+   0.13848663015463916,
+   0.13869201030927836,
+   0.00020135309278350514
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 33,
+   "moved": 9,
+   "unmoved": 24,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3.5-397B-A17B@ -> internlm/Intern-S2-Preview-397B",
+  "parent": "Qwen/Qwen3.5-397B-A17B",
+  "child": "internlm/Intern-S2-Preview-397B",
+  "relation": "derived",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 248320,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 248320,
+  "identical_raw": 0,
+  "P": 0.9451837238370995,
+  "fit": 0.6444754600524902,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.02297438788659794,
+   0.9770256121134021
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 59,
+   "moved": 59,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16@ -> nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
+  "relation": "derived",
+  "tied": false,
+  "cls": "token record",
+  "rows": 131072,
+  "bit_identical": 9568,
+  "barely": 1524,
+  "changed": 119980,
+  "identical_raw": 9568,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.072998046875,
+   0.011627197265625,
+   0.06048583984375,
+   0.8316497802734375,
+   0.0232391357421875
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 1000,
+   "moved": 11,
+   "unmoved": 988,
+   "near": 1
+  }
+ },
+ {
+  "key": "internlm/Intern-S2-Preview-397B@ -> internlm/Intern-S2-397B",
+  "parent": "internlm/Intern-S2-Preview-397B",
+  "child": "internlm/Intern-S2-397B",
+  "relation": "successive",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 251392,
+  "bit_identical": 0,
+  "barely": 1,
+  "changed": 251391,
+  "identical_raw": 0,
+  "P": 1.0,
+  "fit": 0.7336926460266113,
+  "change_hist": [
+   0.0,
+   3.97785132382892e-06,
+   0.0,
+   0.031858611252545826,
+   0.9681374108961304
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 59,
+   "moved": 59,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16@ -> nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
+  "relation": "derived",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 131072,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 131072,
+  "identical_raw": 0,
+  "P": 1.0,
+  "fit": 0.7863481044769287,
+  "change_hist": [
+   0.0,
+   0.0,
+   1.52587890625e-05,
+   0.16718292236328125,
+   0.8328018188476562
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 1000,
+   "moved": 1000,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16@ -> nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Instruction-Following",
+  "relation": "derived",
+  "tied": false,
+  "cls": "token record",
+  "rows": 131072,
+  "bit_identical": 4776,
+  "barely": 383,
+  "changed": 125913,
+  "identical_raw": 4776,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.03643798828125,
+   0.00292205810546875,
+   0.012542724609375,
+   0.4025726318359375,
+   0.5455245971679688
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 1000,
+   "moved": 98,
+   "unmoved": 902,
+   "near": 0
+  }
+ },
+ {
+  "key": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16@ -> nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-General-Reasoning",
+  "relation": "derived",
+  "tied": false,
+  "cls": "token record",
+  "rows": 131072,
+  "bit_identical": 8913,
+  "barely": 1133,
+  "changed": 121026,
+  "identical_raw": 8913,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.06800079345703125,
+   0.00864410400390625,
+   0.0587615966796875,
+   0.463836669921875,
+   0.4007568359375
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 1000,
+   "moved": 14,
+   "unmoved": 986,
+   "near": 0
+  }
+ },
+ {
+  "key": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16@ -> nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
+  "relation": "derived",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 131072,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 131072,
+  "identical_raw": 0,
+  "P": 1.0,
+  "fit": 0.786348819732666,
+  "change_hist": [
+   0.0,
+   0.0,
+   1.52587890625e-05,
+   0.16718292236328125,
+   0.8328018188476562
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 1000,
+   "moved": 1000,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16@ -> nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "child": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+  "relation": "derived",
+  "tied": false,
+  "cls": "token record",
+  "rows": 131072,
+  "bit_identical": 81680,
+  "barely": 263,
+  "changed": 49129,
+  "identical_raw": 81680,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.6231689453125,
+   0.00200653076171875,
+   0.07076263427734375,
+   0.1386260986328125,
+   0.165435791015625
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 1000,
+   "moved": 6,
+   "unmoved": 994,
+   "near": 0
+  }
+ },
+ {
+  "key": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16@ -> nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
+  "child": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+  "relation": "base",
+  "tied": false,
+  "cls": "token record",
+  "rows": 131072,
+  "bit_identical": 1657,
+  "barely": 10,
+  "changed": 129405,
+  "identical_raw": 0,
+  "P": 0.9941476177267976,
+  "fit": 0.998955249786377,
+  "change_hist": [
+   0.01264190673828125,
+   7.62939453125e-05,
+   0.00090789794921875,
+   0.007171630859375,
+   0.9792022705078125
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 1000,
+   "moved": 149,
+   "unmoved": 851,
+   "near": 0
+  },
+  "P_lo": 0.994140625,
+  "P_hi": 0.9961240310077519,
+  "decay_rows": 1657,
+  "shrink_pct": [
+   0.3875968992248069,
+   0.5859375
+  ],
+  "sum_lr_wd": [
+   0.003883500026397633,
+   0.005876608488985042
+  ]
+ },
+ {
+  "key": "Qwen/Qwen3-14B@ -> microsoft/MagenticBrain",
+  "parent": "Qwen/Qwen3-14B",
+  "child": "microsoft/MagenticBrain",
+  "relation": "card",
+  "tied": false,
+  "cls": "token record",
+  "rows": 151936,
+  "bit_identical": 82156,
+  "barely": 411,
+  "changed": 69369,
+  "identical_raw": 82156,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.5407276748104465,
+   0.002705086352148273,
+   0.18729596672283066,
+   0.0018955349620893007,
+   0.26737573715248525
+  ],
+  "dtype": "F32",
+  "special": {
+   "n": 26,
+   "moved": 9,
+   "unmoved": 17,
+   "near": 0
+  }
+ },
+ {
+  "key": "moonshotai/Kimi-K2.7-Code@ -> moonshotai/Kimi-K3",
+  "parent": "moonshotai/Kimi-K2.7-Code",
+  "child": "moonshotai/Kimi-K3",
+  "relation": "successive",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 163840,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 163840,
+  "identical_raw": 0,
+  "P": 1.0,
+  "fit": 0.0007950919015066964,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 16,
+   "moved": 16,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "moonshotai/Kimi-K3@ -> moonshotai/Kimi-K3.1-Pro",
+  "parent": "moonshotai/Kimi-K3",
+  "child": "moonshotai/Kimi-K3.1-Pro",
+  "relation": "successive",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 163840,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 163840,
+  "identical_raw": 0,
+  "P": 0.97344517171893,
+  "fit": 0.3577169690813337,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.001580810546875,
+   0.998419189453125
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 16,
+   "moved": 16,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "MiniMaxAI/MiniMax-M3@ -> MiniMaxAI/MiniMax-M3.1-Flash",
+  "parent": "MiniMaxAI/MiniMax-M3",
+  "child": "MiniMaxAI/MiniMax-M3.1-Flash",
+  "relation": "successive",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 200064,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 200064,
+  "identical_raw": 0,
+  "P": 0.798515398928088,
+  "fit": 0.004425366719563802,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 61,
+   "moved": 61,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3.5-27B@ -> Qwen/Qwen3.6-27B",
+  "parent": "Qwen/Qwen3.5-27B",
+  "child": "Qwen/Qwen3.6-27B",
+  "relation": "successive",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 248320,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 248320,
+  "identical_raw": 0,
+  "P": 0.9529761693365721,
+  "fit": 0.36900672912597654,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0011557667525773196,
+   0.9988442332474227
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 33,
+   "moved": 33,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3.5-27B@ -> microsoft/Fara1.5-27B",
+  "parent": "Qwen/Qwen3.5-27B",
+  "child": "microsoft/Fara1.5-27B",
+  "relation": "card",
+  "tied": false,
+  "cls": "token record",
+  "rows": 248320,
+  "bit_identical": 141805,
+  "barely": 1335,
+  "changed": 105180,
+  "identical_raw": 141805,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.571057506443299,
+   0.005376127577319588,
+   0.023203930412371135,
+   0.09728173324742267,
+   0.3030807023195876
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 33,
+   "moved": 8,
+   "unmoved": 25,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3.6-27B@ -> Qwen/Qwen3.8-27B",
+  "parent": "Qwen/Qwen3.6-27B",
+  "child": "Qwen/Qwen3.8-27B",
+  "relation": "successive",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 248320,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 248320,
+  "identical_raw": 0,
+  "P": 1.0737238001485645,
+  "fit": 0.29457740783691405,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.001055090206185567,
+   0.9989449097938145
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 33,
+   "moved": 33,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "inclusionAI/Ling-2.5-1T@ -> inclusionAI/Ling-2.6-1T",
+  "parent": "inclusionAI/Ling-2.5-1T",
+  "child": "inclusionAI/Ling-2.6-1T",
+  "relation": "successive",
+  "tied": false,
+  "cls": "token record",
+  "rows": 157184,
+  "bit_identical": 1505,
+  "barely": 45,
+  "changed": 155634,
+  "identical_raw": 1505,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.009574765879478827,
+   0.000286288680781759,
+   0.0009033998371335505,
+   0.010083723534201955,
+   0.9791518220684039
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 262,
+   "moved": 59,
+   "unmoved": 203,
+   "near": 0
+  }
+ },
+ {
+  "key": "inclusionAI/Ling-2.5-1T@ -> inclusionAI/Ring-2.5-1T",
+  "parent": "inclusionAI/Ling-2.5-1T",
+  "child": "inclusionAI/Ring-2.5-1T",
+  "relation": "successive",
+  "tied": false,
+  "cls": "changed throughout",
+  "rows": 157184,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 157184,
+  "identical_raw": 0,
+  "P": 0.9928267725989617,
+  "fit": 0.813124418258667,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.021999694625407167,
+   0.9780003053745928
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 262,
+   "moved": 262,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "inclusionAI/Ring-2.5-1T@ -> inclusionAI/Ring-2.6-1T",
+  "parent": "inclusionAI/Ring-2.5-1T",
+  "child": "inclusionAI/Ring-2.6-1T",
+  "relation": "successive",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 157184,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 157184,
+  "identical_raw": 0,
+  "P": 1.0023926004112598,
+  "fit": 0.896897554397583,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0006616449511400651,
+   0.011845989413680782,
+   0.9874923656351792
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 262,
+   "moved": 262,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3-14B-Base@ -> Qwen/WebWorld-14B",
+  "parent": "Qwen/Qwen3-14B-Base",
+  "child": "Qwen/WebWorld-14B",
+  "relation": "check-lineage",
+  "tied": false,
+  "cls": "token record",
+  "rows": 151936,
+  "bit_identical": 2124,
+  "barely": 0,
+  "changed": 149812,
+  "identical_raw": 0,
+  "P": 0.9869164570182839,
+  "fit": 1.0,
+  "change_hist": [
+   0.013979570345408593,
+   0.0,
+   1.9745155855096883e-05,
+   0.0005199557708508845,
+   0.9854807287278854
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 26,
+   "moved": 15,
+   "unmoved": 11,
+   "near": 0
+  },
+  "P_interval_error": "cache miss or shape mismatch"
+ },
+ {
+  "key": "internlm/Atria-Dawn-Preview@ -> internlm/Sage-S2.1",
+  "parent": "internlm/Atria-Dawn-Preview",
+  "child": "internlm/Sage-S2.1",
+  "relation": "check-lineage",
+  "tied": false,
+  "cls": "token record",
+  "rows": 154880,
+  "bit_identical": 2483,
+  "barely": 0,
+  "changed": 152397,
+  "identical_raw": 2483,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.01603176652892562,
+   0.0,
+   1.2913223140495867e-05,
+   0.0017626549586776858,
+   0.9821926652892562
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 36,
+   "moved": 19,
+   "unmoved": 17,
+   "near": 0
+  }
+ },
+ {
+  "key": "zai-org/GLM-5.2@ -> internlm/Sage-S2.1",
+  "parent": "zai-org/GLM-5.2",
+  "child": "internlm/Sage-S2.1",
+  "relation": "check-lineage",
+  "tied": false,
+  "cls": "token record",
+  "rows": 154880,
+  "bit_identical": 2600,
+  "barely": 0,
+  "changed": 152280,
+  "identical_raw": 2600,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.016787190082644628,
+   0.0,
+   2.5826446280991735e-05,
+   0.003990185950413223,
+   0.9791967975206611
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 36,
+   "moved": 19,
+   "unmoved": 17,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3-14B-Base@ -> microsoft/MagenticBrain",
+  "parent": "Qwen/Qwen3-14B-Base",
+  "child": "microsoft/MagenticBrain",
+  "relation": "check-lineage",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 151936,
+  "bit_identical": 0,
+  "barely": 0,
+  "changed": 151936,
+  "identical_raw": 0,
+  "P": 0.9861105021102159,
+  "fit": 0.025572586059570312,
+  "change_hist": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "dtype": "F32",
+  "special": {
+   "n": 26,
+   "moved": 26,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding@ -> nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
+  "parent": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
+  "relation": "check-sibling",
+  "tied": false,
+  "cls": "token record",
+  "rows": 131072,
+  "bit_identical": 81711,
+  "barely": 18439,
+  "changed": 30922,
+  "identical_raw": 81711,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.6234054565429688,
+   0.14067840576171875,
+   0.19310760498046875,
+   0.04262542724609375,
+   0.00018310546875
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 1000,
+   "moved": 5,
+   "unmoved": 995,
+   "near": 0
+  }
+ },
+ {
+  "key": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16@ -> nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
+  "parent": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
+  "child": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
+  "relation": "check-lineage",
+  "tied": false,
+  "cls": "token record",
+  "rows": 131072,
+  "bit_identical": 1661,
+  "barely": 6,
+  "changed": 129405,
+  "identical_raw": 0,
+  "P": 0.9941470029169733,
+  "fit": 0.998955249786377,
+  "change_hist": [
+   0.01267242431640625,
+   4.57763671875e-05,
+   0.00087738037109375,
+   0.00705718994140625,
+   0.9793472290039062
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 1000,
+   "moved": 149,
+   "unmoved": 851,
+   "near": 0
+  },
+  "P_interval_error": "cache miss or shape mismatch"
+ },
+ {
+  "key": "Qwen/Qwen3.5-35B-A3B@ -> Qwen/Qwen-AgentWorld-35B-A3B",
+  "parent": "Qwen/Qwen3.5-35B-A3B",
+  "child": "Qwen/Qwen-AgentWorld-35B-A3B",
+  "relation": "check-card",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 248320,
+  "bit_identical": 1,
+  "barely": 1,
+  "changed": 248318,
+  "identical_raw": 0,
+  "P": 0.960119904783221,
+  "fit": 0.40718555450439453,
+  "change_hist": [
+   4.027061855670103e-06,
+   4.027061855670103e-06,
+   0.0,
+   0.0011275773195876288,
+   0.998864368556701
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 33,
+   "moved": 33,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "Qwen/Qwen3.5-35B-A3B-Base@ -> Qwen/Qwen-AgentWorld-35B-A3B",
+  "parent": "Qwen/Qwen3.5-35B-A3B-Base",
+  "child": "Qwen/Qwen-AgentWorld-35B-A3B",
+  "relation": "check-card",
+  "tied": false,
+  "cls": "not comparable",
+  "rows": 248320,
+  "bit_identical": 1,
+  "barely": 1,
+  "changed": 248318,
+  "identical_raw": 0,
+  "P": 0.9557815843612623,
+  "fit": 0.43587493896484375,
+  "change_hist": [
+   4.027061855670103e-06,
+   4.027061855670103e-06,
+   0.0,
+   0.0011275773195876288,
+   0.998864368556701
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 33,
+   "moved": 33,
+   "unmoved": 0,
+   "near": 0
+  }
+ },
+ {
+  "key": "mistralai/Leanstral-2603@ -> mistralai/Leanstral-1.5-119B-A6B",
+  "parent": "mistralai/Leanstral-2603",
+  "child": "mistralai/Leanstral-1.5-119B-A6B",
+  "relation": "check-card",
+  "tied": false,
+  "cls": "token record",
+  "rows": 131072,
+  "bit_identical": 1448,
+  "barely": 7,
+  "changed": 129617,
+  "identical_raw": 1448,
+  "P": 1.0,
+  "fit": 1.0,
+  "change_hist": [
+   0.01104736328125,
+   5.340576171875e-05,
+   0.00035858154296875,
+   0.003936767578125,
+   0.9846038818359375
+  ],
+  "dtype": "BF16",
+  "special": {
+   "n": 0,
+   "moved": 0,
+   "unmoved": 0,
+   "near": 0
+  }
+ }
+]

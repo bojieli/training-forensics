@@ -1,0 +1,97 @@
+{
+ "totals": {
+  "token record": 114,
+  "record, poor fit": 11,
+  "changed throughout": 25,
+  "not comparable": 42,
+  "unchanged": 5,
+  "shared matrix": 32
+ },
+ "by_family": {
+  "Qwen": {
+   "token record": 15,
+   "record, poor fit": 2,
+   "changed throughout": 4,
+   "not comparable": 6,
+   "shared matrix": 5
+  },
+  "OLMo": {
+   "token record": 21,
+   "record, poor fit": 1,
+   "not comparable": 2,
+   "shared matrix": 2
+  },
+  "DeepSeek": {
+   "token record": 23
+  },
+  "Llama": {
+   "token record": 8,
+   "record, poor fit": 1,
+   "changed throughout": 1,
+   "not comparable": 8,
+   "shared matrix": 2
+  },
+  "Mistral": {
+   "token record": 8,
+   "changed throughout": 2,
+   "not comparable": 5,
+   "shared matrix": 2
+  },
+  "Gemma": {
+   "shared matrix": 10
+  },
+  "GLM": {
+   "token record": 1,
+   "record, poor fit": 2,
+   "changed throughout": 1,
+   "not comparable": 2,
+   "unchanged": 1
+  },
+  "InternLM": {
+   "token record": 2,
+   "changed throughout": 1,
+   "not comparable": 3
+  },
+  "NVIDIA Nemotron": {
+   "token record": 3,
+   "changed throughout": 1,
+   "not comparable": 2
+  },
+  "Kimi": {
+   "token record": 1,
+   "record, poor fit": 2,
+   "changed throughout": 1,
+   "not comparable": 1
+  },
+  "Falcon": {
+   "token record": 2,
+   "record, poor fit": 1,
+   "not comparable": 2
+  },
+  "SmolLM": {
+   "shared matrix": 4
+  },
+  "Yi": {
+   "token record": 1,
+   "not comparable": 2
+  },
+  "Vicuna": {
+   "token record": 3
+  },
+  "RedPajama": {
+   "token record": 2,
+   "record, poor fit": 1
+  },
+  "MiMo": {
+   "changed throughout": 3
+  },
+  "other": {
+   "token record": 24,
+   "record, poor fit": 1,
+   "changed throughout": 11,
+   "not comparable": 9,
+   "unchanged": 4,
+   "shared matrix": 7
+  }
+ }
+}

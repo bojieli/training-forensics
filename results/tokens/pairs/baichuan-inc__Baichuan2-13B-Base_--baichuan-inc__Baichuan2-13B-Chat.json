@@ -1,0 +1,36 @@
+{
+ "key": "baichuan-inc/Baichuan2-13B-Base@ -> baichuan-inc/Baichuan2-13B-Chat",
+ "parent": "baichuan-inc/Baichuan2-13B-Base",
+ "child": "baichuan-inc/Baichuan2-13B-Chat",
+ "P": 1.0,
+ "P_exact_frac": 1.0,
+ "dtype": "BF16",
+ "rows": 125696,
+ "dim": 5120,
+ "r0": 0,
+ "recomputed": {
+  "moved": 96065,
+  "near": 0,
+  "unmoved": 29631
+ },
+ "sweep_agrees": true,
+ "tokenizer": "baichuan-inc/Baichuan2-13B-Base",
+ "frac_changed_hist": {
+  "0": 29631,
+  "(0,1%]": 0,
+  "(1%,10%]": 3,
+  "(10%,50%]": 202,
+  "(50%,90%]": 3438,
+  "(90%,100%]": 92422
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 4
+ },
+ "init_std": null,
+ "init_std_source": null,
+ "parent_at_init": 0,
+ "status": "no tokenizer.json"
+}

@@ -1,0 +1,28 @@
+[
+ {
+  "key": "NousResearch/Meta-Llama-3.1-405B-FP8@ -> RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+  "P_fit": 0.9941517684498874,
+  "rows": 613,
+  "coords": 10043391,
+  "P_lo": 0.994140625,
+  "P_hi": 0.9961240310077519,
+  "consistent": true,
+  "shrink_pct_lo": 0.3875968992248069,
+  "shrink_pct_hi": 0.5859375,
+  "sum_lr_wd_lo": 0.003883500026397633,
+  "sum_lr_wd_hi": 0.005876608488985042
+ },
+ {
+  "key": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8@ -> nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+  "P_fit": 0.9923195167903825,
+  "rows": 671,
+  "coords": 10993623,
+  "P_lo": 0.9923076923076923,
+  "P_hi": 0.9923469387755102,
+  "consistent": true,
+  "shrink_pct_lo": 0.7653061224489832,
+  "shrink_pct_hi": 0.7692307692307665,
+  "sum_lr_wd_lo": 0.007682496172016282,
+  "sum_lr_wd_hi": 0.007722046093910278
+ }
+]

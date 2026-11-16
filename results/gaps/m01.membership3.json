@@ -1,0 +1,76 @@
+{
+ "run": "m01",
+ "source": "alpaca",
+ "members": 4000,
+ "outside": 4000,
+ "members_with_single_update_token": 2316,
+ "outside_excluded": 2785,
+ "members_excluded_wrongly": 47,
+ "attacks": {
+  "ours (excl + wagree@interp max)": {
+   "full_sample_tpr_at_0fp": 0.4135,
+   "split_half": {
+    "tpr_median": 0.4205,
+    "tpr_at_0p1pct_fpr_median": 0.4435,
+    "heldout_fpr_at_0p1pct_mean": 0.001468,
+    "tpr_mean": 0.42124,
+    "tpr_q05": 0.4045,
+    "tpr_q95": 0.44004999999999994,
+    "heldout_false_alarms_mean": 0.888,
+    "heldout_false_alarms_q95": 4.0
+   }
+  },
+  "loss": {
+   "full_sample_tpr_at_0fp": 0.004,
+   "split_half": {
+    "tpr_median": 0.0045,
+    "tpr_at_0p1pct_fpr_median": 0.01,
+    "heldout_fpr_at_0p1pct_mean": 0.001458,
+    "tpr_mean": 0.004819000000000001,
+    "tpr_q05": 0.0025,
+    "tpr_q95": 0.007,
+    "heldout_false_alarms_mean": 0.922,
+    "heldout_false_alarms_q95": 3.0
+   }
+  },
+  "ref (base - ft loss)": {
+   "full_sample_tpr_at_0fp": 0.00025,
+   "split_half": {
+    "tpr_median": 0.0005,
+    "tpr_at_0p1pct_fpr_median": 0.0065,
+    "heldout_fpr_at_0p1pct_mean": 0.001582,
+    "tpr_mean": 0.0017890000000000002,
+    "tpr_q05": 0.0,
+    "tpr_q95": 0.006,
+    "heldout_false_alarms_mean": 1.1,
+    "heldout_false_alarms_q95": 4.0
+   }
+  },
+  "mink20": {
+   "full_sample_tpr_at_0fp": 0.003,
+   "split_half": {
+    "tpr_median": 0.0035,
+    "tpr_at_0p1pct_fpr_median": 0.0155,
+    "heldout_fpr_at_0p1pct_mean": 0.0014010000000000003,
+    "tpr_mean": 0.004373,
+    "tpr_q05": 0.0015,
+    "tpr_q95": 0.014,
+    "heldout_false_alarms_mean": 0.886,
+    "heldout_false_alarms_q95": 4.0
+   }
+  },
+  "lira (8 shadows)": {
+   "full_sample_tpr_at_0fp": 0.00375,
+   "split_half": {
+    "tpr_median": 0.1015,
+    "tpr_at_0p1pct_fpr_median": 0.5425,
+    "heldout_fpr_at_0p1pct_mean": 0.0015770000000000003,
+    "tpr_mean": 0.103853,
+    "tpr_q05": 0.0025,
+    "tpr_q95": 0.5175,
+    "heldout_false_alarms_mean": 1.114,
+    "heldout_false_alarms_q95": 4.0
+   }
+  }
+ }
+}

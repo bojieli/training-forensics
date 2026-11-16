@@ -1,0 +1,748 @@
+{
+ "key": "zai-org/GLM-4.5-Air-Base@ -> zai-org/GLM-4.5-Air",
+ "parent": "zai-org/GLM-4.5-Air-Base",
+ "child": "zai-org/GLM-4.5-Air",
+ "P": 0.957158253298005,
+ "P_exact_frac": 0.5851330757141113,
+ "dtype": "BF16",
+ "rows": 151552,
+ "dim": 4096,
+ "r0": 0,
+ "recomputed": {
+  "moved": 151424,
+  "near": 0,
+  "unmoved": 128
+ },
+ "sweep_agrees": true,
+ "tokenizer": "zai-org/GLM-4.5-Air",
+ "frac_changed_hist": {
+  "0": 128,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 386,
+  "(50%,90%]": 0,
+  "(90%,100%]": 151038
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 11
+ },
+ "init_std": 5.070945007901173e-06,
+ "init_std_source": "exact: vectors regenerated from their random start (checkpoint-forensics)",
+ "parent_at_init": 80,
+ "status": "ok",
+ "categories": {
+  "added/special": {
+   "moved": 36,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 15
+  },
+  "all": {
+   "moved": 151085,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 17
+  },
+  "byte-fragment": {
+   "moved": 1073,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "chat-template": {
+   "moved": 5,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code": {
+   "moved": 3145,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code:indent": {
+   "moved": 436,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 321,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "emoji": {
+   "moved": 23,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "math": {
+   "moved": 528,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "multimodal": {
+   "moved": 8,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 2
+  },
+  "other": {
+   "moved": 8,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other-special": {
+   "moved": 13,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 6
+  },
+  "punct/symbol": {
+   "moved": 3330,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "reasoning-tag": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 3
+  },
+  "script:ARABIC": {
+   "moved": 1951,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 1
+  },
+  "script:BENGALI": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CJK": {
+   "moved": 28553,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CYRILLIC": {
+   "moved": 9734,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:DEVANAGARI": {
+   "moved": 15,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GREEK": {
+   "moved": 832,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HANGUL": {
+   "moved": 544,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HEBREW": {
+   "moved": 20,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HIRAGANA": {
+   "moved": 488,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:KATAKANA": {
+   "moved": 320,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:LATIN": {
+   "moved": 100559,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 1
+  },
+  "script:OTHER": {
+   "moved": 39,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:THAI": {
+   "moved": 46,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "tool-call": {
+   "moved": 7,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 4
+  },
+  "whitespace": {
+   "moved": 18,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "unreachable": {
+  "all": {
+   "moved": 280,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 4
+  },
+  "byte-fragment": {
+   "moved": 13,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 267,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 4
+  }
+ },
+ "freq_rank_buckets": {
+  "0-1000": {
+   "moved": 1000,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  },
+  "1000-10000": {
+   "moved": 9000,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  },
+  "10000-50000": {
+   "moved": 40000,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  },
+  "50000-end": {
+   "moved": 101049,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0
+  }
+ },
+ "added_tokens": [
+  {
+   "id": 151329,
+   "content": "<|endoftext|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9922,
+   "cos": 0.9889,
+   "norm_ratio": 0.9834,
+   "flags": []
+  },
+  {
+   "id": 151330,
+   "content": "[MASK]",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9941,
+   "cos": 0.9692,
+   "norm_ratio": 1.0057,
+   "flags": []
+  },
+  {
+   "id": 151331,
+   "content": "[gMASK]",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9929,
+   "cos": 0.9923,
+   "norm_ratio": 1.0225,
+   "flags": []
+  },
+  {
+   "id": 151332,
+   "content": "[sMASK]",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9709,
+   "cos": 0.998,
+   "norm_ratio": 0.9646,
+   "flags": []
+  },
+  {
+   "id": 151333,
+   "content": "<sop>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.991,
+   "cos": 0.9939,
+   "norm_ratio": 0.9979,
+   "flags": []
+  },
+  {
+   "id": 151334,
+   "content": "<eop>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9719,
+   "cos": 0.9981,
+   "norm_ratio": 0.9557,
+   "flags": []
+  },
+  {
+   "id": 151335,
+   "content": "<|system|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9971,
+   "cos": 0.9177,
+   "norm_ratio": 1.099,
+   "flags": []
+  },
+  {
+   "id": 151336,
+   "content": "<|user|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9954,
+   "cos": 0.9471,
+   "norm_ratio": 1.0734,
+   "flags": []
+  },
+  {
+   "id": 151337,
+   "content": "<|assistant|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9976,
+   "cos": 0.9095,
+   "norm_ratio": 1.1406,
+   "flags": []
+  },
+  {
+   "id": 151338,
+   "content": "<|observation|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9976,
+   "cos": 0.8356,
+   "norm_ratio": 1.3432,
+   "flags": []
+  },
+  {
+   "id": 151339,
+   "content": "<|begin_of_image|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9829,
+   "cos": 0.9943,
+   "norm_ratio": 0.9671,
+   "flags": []
+  },
+  {
+   "id": 151340,
+   "content": "<|end_of_image|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9844,
+   "cos": 0.9952,
+   "norm_ratio": 0.9703,
+   "flags": []
+  },
+  {
+   "id": 151341,
+   "content": "<|begin_of_video|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9932,
+   "cos": 0.9775,
+   "norm_ratio": 0.9917,
+   "flags": []
+  },
+  {
+   "id": 151342,
+   "content": "<|end_of_video|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9854,
+   "cos": 0.9922,
+   "norm_ratio": 0.968,
+   "flags": []
+  },
+  {
+   "id": 151343,
+   "content": "<|begin_of_audio|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.2363,
+   "cos": 1.0,
+   "norm_ratio": 0.957,
+   "flags": []
+  },
+  {
+   "id": 151344,
+   "content": "<|end_of_audio|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.252,
+   "cos": 1.0,
+   "norm_ratio": 0.9572,
+   "flags": []
+  },
+  {
+   "id": 151345,
+   "content": "<|begin_of_transcription|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.2344,
+   "cos": 1.0,
+   "norm_ratio": 0.957,
+   "flags": []
+  },
+  {
+   "id": 151346,
+   "content": "<|end_of_transcription|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.2339,
+   "cos": 1.0,
+   "norm_ratio": 0.9572,
+   "flags": []
+  },
+  {
+   "id": 151347,
+   "content": "<|code_prefix|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.981,
+   "cos": 0.994,
+   "norm_ratio": 0.9719,
+   "flags": []
+  },
+  {
+   "id": 151348,
+   "content": "<|code_middle|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.99,
+   "cos": 0.9902,
+   "norm_ratio": 0.982,
+   "flags": []
+  },
+  {
+   "id": 151349,
+   "content": "<|code_suffix|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9895,
+   "cos": 0.9919,
+   "norm_ratio": 0.9827,
+   "flags": []
+  },
+  {
+   "id": 151350,
+   "content": "<think>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 0.0208,
+   "norm_ratio": 188.4177,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151351,
+   "content": "</think>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 0.0161,
+   "norm_ratio": 258.8235,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151352,
+   "content": "<tool_call>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": -0.0097,
+   "norm_ratio": 279.8675,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151353,
+   "content": "</tool_call>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 0.0127,
+   "norm_ratio": 280.6319,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151354,
+   "content": "<tool_response>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 0.0077,
+   "norm_ratio": 269.9261,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151355,
+   "content": "</tool_response>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 0.0332,
+   "norm_ratio": 252.7979,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151356,
+   "content": "<arg_key>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 0.0156,
+   "norm_ratio": 230.3826,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151357,
+   "content": "</arg_key>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": -0.0016,
+   "norm_ratio": 212.4921,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151358,
+   "content": "<arg_value>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 0.0187,
+   "norm_ratio": 211.8042,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151359,
+   "content": "</arg_value>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": -0.0012,
+   "norm_ratio": 301.7843,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151360,
+   "content": "/nothink",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 0.0146,
+   "norm_ratio": 171.1471,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151361,
+   "content": "<|begin_of_box|>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.2249,
+   "cos": 1.0,
+   "norm_ratio": 0.9571,
+   "flags": []
+  },
+  {
+   "id": 151362,
+   "content": "<|end_of_box|>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.2322,
+   "cos": 1.0,
+   "norm_ratio": 0.9572,
+   "flags": []
+  },
+  {
+   "id": 151363,
+   "content": "<|image|>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.229,
+   "cos": 1.0,
+   "norm_ratio": 0.9572,
+   "flags": []
+  },
+  {
+   "id": 151364,
+   "content": "<|video|>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 0.2285,
+   "cos": 1.0,
+   "norm_ratio": 0.9572,
+   "flags": []
+  }
+ ],
+ "unmoved_samples": {},
+ "secs": 36.2
+}

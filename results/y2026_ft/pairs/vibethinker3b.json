@@ -1,0 +1,50 @@
+{
+ "name": "vibethinker3b",
+ "parent": "Qwen/Qwen2.5-Coder-3B",
+ "child": "WeiboAI/VibeThinker-3B",
+ "embed_name_parent": "model.embed_tokens.weight",
+ "embed_name_child": "model.embed_tokens.weight",
+ "head_parent": null,
+ "head_child": null,
+ "tie_cfg_parent": true,
+ "tie_cfg_child": true,
+ "dtype_parent": "BF16",
+ "dtype_child": "BF16",
+ "shape_parent": [
+  151936,
+  2048
+ ],
+ "shape_child": [
+  151936,
+  2048
+ ],
+ "shared_matrix": true,
+ "vocab_compared": 151936,
+ "dim": 2048,
+ "P": 1.0,
+ "shrink_pct": 0.0,
+ "fit_reproduced": 0.0028295516967773438,
+ "bit_identical_raw": 0,
+ "updated": 151936,
+ "barely": 0,
+ "bit_identical": 0,
+ "frac_changed_hist": {
+  "0": 0,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 0,
+  "(50%,90%]": 0,
+  "(90%,100%]": 151936
+ },
+ "cos_median": 0.30913858629092006,
+ "rel_change_median": 0.9763394295453838,
+ "low_signal": false,
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 1340
+ },
+ "cls": "shared matrix",
+ "status": "ok, shared input/output matrix: no token record",
+ "secs": 137.5
+}

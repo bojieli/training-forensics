@@ -8,21 +8,25 @@ import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 R = ROOT / "results" / "controlled"
+SWAP2 = ROOT / "results" / "gaps" / "swaps_v2.json"
 
 DESC = {
-    "r01_lin": "Pythia-160m, linear, bs 8", "r02_cos": "Pythia-160m, cosine, bs 8", "r03_const": "Pythia-160m, constant",
+    "r01_lin": "Pythia-160m, linear, batch 8", "r02_cos": "Pythia-160m, cosine, batch 8", "r03_const": "Pythia-160m, constant",
     "r04_cosmin": "Pythia-160m, cosine to 0.1x", "r05_wsd": "Pythia-160m, warmup-stable-decay",
-    "r06_lin_bs4": "Pythia-160m, linear, bs 4, 1000 steps", "r07_cos_wd": "Pythia-160m, cosine, bs 16, wd 0.1",
+    "r06_lin_bs4": "Pythia-160m, linear, batch 4, 1000 steps", "r07_cos_wd": "Pythia-160m, cosine, batch 16, wd 0.1",
     "r08_lin_wd": "Pythia-160m, linear 2e-5, wd 0.01", "r09_const_wd": "Pythia-160m, constant, wd 0.1",
-    "r10_cos_410m": "Pythia-410m, cosine, bs 4", "r11_lin_410m": "Pythia-410m, linear 3e-4, wd 0.05",
-    "r12_cosmin_wd": "Pythia-160m, cosine to 0.1x, wd 0.1", "r13_wsd_bs4": "Pythia-160m, WSD, bs 4",
-    "r14_lin_8k": "Pythia-160m, 8,000 docs", "r15_cos_bs32": "Pythia-160m, cosine, bs 32",
-    "s02_bigbatch": "Pythia-160m, bs 128 (52k docs)", "s04_lora": "Pythia-160m, LoRA + trained embeddings",
+    "r10_cos_410m": "Pythia-410m, cosine, batch 4", "r11_lin_410m": "Pythia-410m, linear 3e-4, wd 0.05",
+    "r12_cosmin_wd": "Pythia-160m, cosine to 0.1x, wd 0.1", "r13_wsd_bs4": "Pythia-160m, WSD, batch 4",
+    "r14_lin_8k": "Pythia-160m, 8,000 docs", "r15_cos_bs32": "Pythia-160m, cosine, batch 32",
+    "s02_bigbatch": "Pythia-160m, batch 128 (52k docs)", "s04_lora": "Pythia-160m, LoRA + trained embeddings",
     "s05_swap": "Pythia-160m, 40 claimed docs secretly swapped", "s06_bf16": "Pythia-160m, bf16 autocast",
-    "q7_emb": "Qwen2.5-7B, embeddings + head trained", "q7_lora": "Qwen2.5-7B, LoRA + trained embeddings",
-    "q7_wd": "Qwen2.5-7B, constant, wd 0.1", "q7_big": "Qwen2.5-7B, bs 128 (52k docs)",
+    "q7_emb": "Qwen2.5-7B, embeddings + output layer trained", "q7_lora": "Qwen2.5-7B, LoRA + trained embeddings",
+    "q7_wd": "Qwen2.5-7B, constant, wd 0.1", "q7_big": "Qwen2.5-7B, batch 128 (52k docs)",
     "q7_2ep": "Qwen2.5-7B, 2 epochs",
 }
+# Qwen-7B runs were trained and scored on a borrowed GPU box whose scratch copy of
+# the weights was deleted afterwards; their JSONs predate the current scorer.
+STALE = {"q7_emb", "q7_lora", "q7_wd", "q7_big", "q7_2ep"}
 
 
 def fmt_recipe(r):
@@ -34,7 +38,8 @@ def fmt_recipe(r):
 
 def main():
     rows = []
-    n_exact = n_runs = 0
+    n_exact = n_runs = n_fresh = n_fresh_exact = 0
+    sw2 = json.load(open(SWAP2)) if SWAP2.exists() else {}
     for f in sorted(glob.glob(str(R / "*.fp32.json"))):
         d = json.load(open(f))
         name = d["run"]
@@ -46,43 +51,63 @@ def main():
         exact = bool(ok.get("schedule_exact")) and (abs((read["wd"] or 0) - (rt["wd"] or 0)) < 1e-12)
         n_runs += 1
         n_exact += exact
-        tok = f"{t['tp']:,}/{t['seen']:,}" + ("" if t["fp"] == 0 else f" (+{t['fp']} fp)")
+        if name not in STALE:
+            n_fresh += 1
+            n_fresh_exact += exact
+        tok = f"{t['tp']:,}/{t['seen']:,}" + ("" if t["fp"] == 0 else f" (+{t['fp']} wrong)")
         if tr:
-            tok += f"; replay {tr['tp']:,}/{t['seen']:,}" + ("" if tr["fp"] == 0 else f" (+{tr['fp']} fp)")
+            tok += f"; by replay {tr['tp']:,}/{t['seen']:,}" + ("" if tr["fp"] == 0 else f" (+{tr['fp']:,} wrong)")
         pl = d.get("placement")
         sd = d.get("seed")
         sw = d.get("swaps")
         rp = d.get("replay")
-        rows.append("| {} | {} | {} | {} | {} | {:+.3f}% | {} | {} | {} | {} |".format(
-            name, DESC.get(name, ""), tok, fmt_recipe(rt), ("**exact**" if exact else fmt_recipe(read)),
+        s2 = sw2.get(name)
+        rows.append("| {}{} | {} | {} | {} | {} | {:+.3f}% | {} | {} | {} | {} | {} |".format(
+            name, " (old)" if name in STALE else "", DESC.get(name, ""), tok, fmt_recipe(rt),
+            ("**exact**" if exact else fmt_recipe(read)),
             100 * (rr["peak"] / rt["peak"] - 1),
             f"{pl['exact']:,}/{pl['docs']:,} ({pl['placed'] - pl['exact']} wrong)" if pl else "-",
-            ("found" if sd and sd["found"] == sd["true"] else ("**missed**" if sd else "-")),
-            (f"{sw['caught']}/{sw['true']} caught, {sw['false_flags']} false" if sw else "-"),
-            (f"{rp['bit_exact']:,} / ±1 step: {d['replay_shift1']['bit_exact']:,}, {d['replay_shiftm1']['bit_exact']:,}"
+            (f"{d['placement_with_seed']:,}/{pl['docs']:,}" if pl and "placement_with_seed" in d else "-"),
+            ("recovered" if sd and sd["found"] == sd["true"] else ("**missed**" if sd else "-")),
+            (f"{sw['caught']}/{sw['true']}, {sw['false_flags']} false" if sw else "-") +
+            (f"; v2 {s2['caught']}/{s2['true']}, {s2['false_flags']} false" if s2 else ""),
+            (f"{rp['bit_exact']:,} / one step off: {d['replay_shift1']['bit_exact']:,}, {d['replay_shiftm1']['bit_exact']:,}"
              if rp else "-")))
-    out = ["# Controlled runs: blind reading vs ground truth", "",
+    out = ["# Controlled runs: what the weights reveal, checked against the truth", "",
            "Generated by `scripts/controlled/report.py` from `results/controlled/*.fp32.json`.",
-           "Recipe = schedule/steps/warm-up/peak[/wd]; *exact* means the read recipe reproduces the trainer's logged",
-           "learning rate at every step (after snapping peak and wd to the nearest round value) and the read wd equals the true one.",
-           "Placement = documents put in their exact optimizer step from the weights alone (before the seed is known);",
-           "with the recovered seed every document is placed. Replay = never-touched weights reproduced bit for bit.", "",
-           f"**Recipe exact in {n_exact} of {n_runs} runs.**", "",
-           "| run | setup | tokens seen (moved/true) | true recipe | read | peak err (raw) | placed from weights | seed | swaps | replay (bit-exact weights) |",
-           "|---|---|---|---|---|---|---|---|---|---|"] + rows
-    # extras
-    for name, title in (("tokens_16bit.json", "16-bit releases: token lists"),):
+           "Each run fine-tunes a model with full logging; the forensics then see only the starting and final weights",
+           "(plus, for the document columns, the claimed documents and batch size) and their output is scored against the log.", "",
+           "- **Tokens updated**: vocabulary tokens whose embedding (the token's vector of numbers) changed, against the",
+           "  tokens that truly occurred in training. Counts are distinct vocabulary tokens, not amounts of text.",
+           "- **Recipe** = schedule/steps/warm-up/peak learning rate[/weight decay]. *exact* means the recovered recipe",
+           "  reproduces the learning rate the trainer logged at every step (after rounding the peak and weight decay",
+           "  to the nearest round value).",
+           "- **Placed from weights**: documents assigned to their exact training step from the weights alone, before the",
+           "  shuffle seed is known (wrong = assigned to a wrong step). **With seed**: after the recovered seed",
+           "  regenerates the data order.",
+           "- **Swap check**: claimed documents flagged as not trained (caught / truly swapped, false flags on genuine",
+           "  documents). v1 = the test in `score.py`; v2 = `scripts/gaps/swaps.py`.",
+           "- **Bit-exact replay**: weights of never-updated tokens reproduced bit for bit by replaying the recovered",
+           "  schedule's weight decay (only meaningful with weight decay); one step off = the same with N+1 / N-1 steps.",
+           "- *(old)*: Qwen2.5-7B runs, scored once on a borrowed GPU machine whose copy of the weights was deleted;",
+           "  they could not be re-scored with the current code.", "",
+           f"**Recipe exact in {n_fresh_exact} of {n_fresh} re-scored runs** "
+           f"({n_exact} of {n_runs} including the old Qwen2.5-7B results).", "",
+           "| run | setup | tokens updated (found/true) | true recipe | recovered | peak LR error (before rounding) | placed from weights | with seed | seed | swap check | bit-exact replay (weights) |",
+           "|---|---|---|---|---|---|---|---|---|---|---|"] + rows
+    for name, title in (("tokens_16bit.json", "16-bit releases: which tokens were updated"),):
         p = R / name
         if p.exists():
-            out += ["", f"## {title}", "", "| run.dtype | seen | moved | false pos | missed |", "|---|---|---|---|---|"]
+            out += ["", f"## {title}", "", "| run.format | tokens trained | found | wrong | missed |", "|---|---|---|---|---|"]
             for k, v in json.load(open(p)).items():
                 out.append(f"| {k} | {v['seen']:,} | {v['moved']:,} | {v['fp']} | {v['fn']} |")
-    for f, title in ((R / "s01_2ep.multi.json", "Two epochs, short gap (500 steps)"),
-                     (R / "s08_2ep_long.multi.json", "Two epochs, long gap (5,000 steps)")):
+    for f, title in ((R / "s01_2ep.multi.json", "Two epochs, short gap (500 steps), per-token two-shade split"),
+                     (R / "s08_2ep_long.multi.json", "Two epochs, long gap (5,000 steps), per-token two-shade split")):
         if f.exists():
             d = json.load(open(f))
-            out += ["", f"## {title}", "", f"rows touched exactly twice: {d['rows_touched_twice']:,}", "",
-                    "| touches | rows | both moves read within 1% |", "|---|---|---|"]
+            out += ["", f"## {title}", "", f"tokens updated exactly twice: {d['rows_touched_twice']:,} "
+                    "(for the joint two-epoch method see `results/gaps/GAPS.md`)", "",
+                    "| subset | tokens | both updates estimated within 1% |", "|---|---|---|"]
             for k in ("all", "gap>=N/2"):
                 if k in d:
                     out.append(f"| {k} | {d[k]['rows']:,} | {100 * d[k]['both_within_1pct']:.1f}% |")
@@ -90,14 +115,13 @@ def main():
         if f.exists():
             d = json.load(open(f))
             out += ["", f"## {title}", "",
-                    f"Rows bit-identical to start: {d['naive_identical_rows']} (every row moves). Replaying Adam on the decay term",
-                    f"alone reproduces {d['unseen_and_equal']:,} of {d['unseen']:,} never-seen rows ({d['bitwise_weights_equal']:,} weights) and",
-                    f"{d['seen_but_equal']} seen rows; token list exact: {d['tokens_from_replay_exact']}. ({d['note']})"]
-    for f in (R / "m01.membership.json", R / "m01.membership2.json"):
-        if f.exists():
-            out += ["", f"## Membership ({f.name})", "", "```", json.dumps(json.load(open(f)), indent=1)[:3000], "```"]
+                    f"Token vectors bit-identical to the start: {d['naive_identical_rows']} (every token vector changes). Replaying Adam on the",
+                    f"decay term alone reproduces {d['unseen_and_equal']:,} of {d['unseen']:,} never-trained tokens ({d['bitwise_weights_equal']:,} weights) and",
+                    f"{d['seen_but_equal']} trained ones; token list exact: {d['tokens_from_replay_exact']}. ({d['note']})"]
+    out += ["", "## Membership inference", "",
+            "Held-out numbers and baselines (loss, reference model, Min-K% Prob, LiRA) are in `results/gaps/GAPS.md`."]
     (R / "CONTROLLED.md").write_text("\n".join(out) + "\n")
-    print("\n".join(out[:12 + len(rows)]))
+    print("\n".join(out[:24 + len(rows)]))
 
 
 if __name__ == "__main__":

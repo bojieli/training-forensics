@@ -1,0 +1,18 @@
+{
+ "rows_touched_twice": 6705,
+ "all": {
+  "rows": 6705,
+  "both_within_1pct": 0.6053691275167785,
+  "median_two_shade_frac": 0.8463541666666666
+ },
+ "gap>=200": {
+  "rows": 6702,
+  "both_within_1pct": 0.6056401074306177,
+  "median_two_shade_frac": 0.8463541666666666
+ },
+ "gap>=N/2": {
+  "rows": 5912,
+  "both_within_1pct": 0.6864005412719891,
+  "median_two_shade_frac": 0.8736979166666666
+ }
+}

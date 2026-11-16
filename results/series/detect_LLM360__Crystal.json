@@ -1,0 +1,1 @@
+{"repo": "LLM360/Crystal", "a": "CrystalCoder_phase1_checkpoint_001500", "b": "CrystalCoder_phase1_checkpoint_079721", "rows": 32032, "dtype": "torch.float32", "identical": 0, "candidates": 0, "never_trained": 0, "c_median": null, "ids": [], "res_hist": [0, 0, 0, 0, 0, 32032], "id_ranges": []}

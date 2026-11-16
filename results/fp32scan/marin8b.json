@@ -1,0 +1,2080 @@
+{
+ "child": "marin-community/marin-8b-instruct",
+ "candidates": {
+  "marin-community/marin-8b-base": {
+   "rows_parent": 128256,
+   "compared": 128256,
+   "bit_identical": 0,
+   "cos_median": 0.999984963217381,
+   "ratio_median": 1.0000440228607081,
+   "rel_change_median": 0.0054856897331774235
+  }
+ },
+ "best_parent": "marin-community/marin-8b-base",
+ "best": {
+  "bit_identical": 0,
+  "changed": 128256,
+  "share_numbers_changed_hist": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   128256
+  ],
+  "flat_vectors": 0,
+  "added_rows": 0
+ },
+ "special": [
+  {
+   "id": 128000,
+   "tok": "<|begin_of_text|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 63.24085235595703,
+   "norm_parent": 63.06949234008789
+  },
+  {
+   "id": 128001,
+   "tok": "<|end_of_text|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 36.16887664794922,
+   "norm_parent": 36.19667053222656
+  },
+  {
+   "id": 128002,
+   "tok": "<|reserved_special_token_0|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0574557781219482,
+   "norm_parent": 1.0577377080917358
+  },
+  {
+   "id": 128003,
+   "tok": "<|reserved_special_token_1|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.390354037284851,
+   "norm_parent": 1.3903498649597168
+  },
+  {
+   "id": 128004,
+   "tok": "<|finetune_right_pad_id|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9734466671943665,
+   "norm_parent": 0.9735119342803955
+  },
+  {
+   "id": 128005,
+   "tok": "<|reserved_special_token_2|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.3705285787582397,
+   "norm_parent": 1.3707568645477295
+  },
+  {
+   "id": 128006,
+   "tok": "<|start_header_id|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 4.123847007751465,
+   "norm_parent": 3.8807942867279053
+  },
+  {
+   "id": 128007,
+   "tok": "<|end_header_id|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 3.673402786254883,
+   "norm_parent": 3.3922877311706543
+  },
+  {
+   "id": 128008,
+   "tok": "<|eom_id|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9929903745651245,
+   "norm_parent": 0.9930341839790344
+  },
+  {
+   "id": 128009,
+   "tok": "<|eot_id|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 4.3239426612854,
+   "norm_parent": 3.9650256633758545
+  },
+  {
+   "id": 128010,
+   "tok": "<|python_tag|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0613528490066528,
+   "norm_parent": 0.9839618802070618
+  },
+  {
+   "id": 128011,
+   "tok": "<|reserved_special_token_3|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.3851100206375122,
+   "norm_parent": 1.385111927986145
+  },
+  {
+   "id": 128012,
+   "tok": "<|reserved_special_token_4|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.6906405687332153,
+   "norm_parent": 1.6906324625015259
+  },
+  {
+   "id": 128013,
+   "tok": "<|reserved_special_token_5|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9832233786582947,
+   "norm_parent": 0.9832397103309631
+  },
+  {
+   "id": 128014,
+   "tok": "<|reserved_special_token_6|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9931060075759888,
+   "norm_parent": 0.9931118488311768
+  },
+  {
+   "id": 128015,
+   "tok": "<|reserved_special_token_7|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9936336278915405,
+   "norm_parent": 0.9936272501945496
+  },
+  {
+   "id": 128016,
+   "tok": "<|reserved_special_token_8|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.011257290840149,
+   "norm_parent": 1.0112965106964111
+  },
+  {
+   "id": 128017,
+   "tok": "<|reserved_special_token_9|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9811052083969116,
+   "norm_parent": 0.9810511469841003
+  },
+  {
+   "id": 128018,
+   "tok": "<|reserved_special_token_10|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9722107648849487,
+   "norm_parent": 0.9721314907073975
+  },
+  {
+   "id": 128019,
+   "tok": "<|reserved_special_token_11|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0043221712112427,
+   "norm_parent": 1.0043153762817383
+  },
+  {
+   "id": 128020,
+   "tok": "<|reserved_special_token_12|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9917454123497009,
+   "norm_parent": 0.9917049407958984
+  },
+  {
+   "id": 128021,
+   "tok": "<|reserved_special_token_13|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9843499660491943,
+   "norm_parent": 0.9843749403953552
+  },
+  {
+   "id": 128022,
+   "tok": "<|reserved_special_token_14|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9869364500045776,
+   "norm_parent": 0.9868926405906677
+  },
+  {
+   "id": 128023,
+   "tok": "<|reserved_special_token_15|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9698730707168579,
+   "norm_parent": 0.9698359966278076
+  },
+  {
+   "id": 128024,
+   "tok": "<|reserved_special_token_16|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9938539266586304,
+   "norm_parent": 0.9937899708747864
+  },
+  {
+   "id": 128025,
+   "tok": "<|reserved_special_token_17|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9775134921073914,
+   "norm_parent": 0.9775668382644653
+  },
+  {
+   "id": 128026,
+   "tok": "<|reserved_special_token_18|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9861766695976257,
+   "norm_parent": 0.9862135052680969
+  },
+  {
+   "id": 128027,
+   "tok": "<|reserved_special_token_19|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9881970286369324,
+   "norm_parent": 0.9882118701934814
+  },
+  {
+   "id": 128028,
+   "tok": "<|reserved_special_token_20|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9947194457054138,
+   "norm_parent": 0.9947181940078735
+  },
+  {
+   "id": 128029,
+   "tok": "<|reserved_special_token_21|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.98360276222229,
+   "norm_parent": 0.983538806438446
+  },
+  {
+   "id": 128030,
+   "tok": "<|reserved_special_token_22|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9966757297515869,
+   "norm_parent": 0.9966510534286499
+  },
+  {
+   "id": 128031,
+   "tok": "<|reserved_special_token_23|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9914591312408447,
+   "norm_parent": 0.9914678335189819
+  },
+  {
+   "id": 128032,
+   "tok": "<|reserved_special_token_24|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9831452965736389,
+   "norm_parent": 0.9831111431121826
+  },
+  {
+   "id": 128033,
+   "tok": "<|reserved_special_token_25|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9863714575767517,
+   "norm_parent": 0.9863991737365723
+  },
+  {
+   "id": 128034,
+   "tok": "<|reserved_special_token_26|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9775553345680237,
+   "norm_parent": 0.9775492548942566
+  },
+  {
+   "id": 128035,
+   "tok": "<|reserved_special_token_27|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9803431034088135,
+   "norm_parent": 0.9804275035858154
+  },
+  {
+   "id": 128036,
+   "tok": "<|reserved_special_token_28|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0016776323318481,
+   "norm_parent": 1.0016604661941528
+  },
+  {
+   "id": 128037,
+   "tok": "<|reserved_special_token_29|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.993645429611206,
+   "norm_parent": 0.9936956763267517
+  },
+  {
+   "id": 128038,
+   "tok": "<|reserved_special_token_30|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9659543037414551,
+   "norm_parent": 0.9659410715103149
+  },
+  {
+   "id": 128039,
+   "tok": "<|reserved_special_token_31|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9853606820106506,
+   "norm_parent": 0.9854139685630798
+  },
+  {
+   "id": 128040,
+   "tok": "<|reserved_special_token_32|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9931095242500305,
+   "norm_parent": 0.9931637048721313
+  },
+  {
+   "id": 128041,
+   "tok": "<|reserved_special_token_33|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9962961077690125,
+   "norm_parent": 0.9963362812995911
+  },
+  {
+   "id": 128042,
+   "tok": "<|reserved_special_token_34|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.997369110584259,
+   "norm_parent": 0.997352123260498
+  },
+  {
+   "id": 128043,
+   "tok": "<|reserved_special_token_35|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0093697309494019,
+   "norm_parent": 1.0093978643417358
+  },
+  {
+   "id": 128044,
+   "tok": "<|reserved_special_token_36|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9909098744392395,
+   "norm_parent": 0.9909493923187256
+  },
+  {
+   "id": 128045,
+   "tok": "<|reserved_special_token_37|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.990303635597229,
+   "norm_parent": 0.990299642086029
+  },
+  {
+   "id": 128046,
+   "tok": "<|reserved_special_token_38|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9936496615409851,
+   "norm_parent": 0.9936280250549316
+  },
+  {
+   "id": 128047,
+   "tok": "<|reserved_special_token_39|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9953005909919739,
+   "norm_parent": 0.9952917098999023
+  },
+  {
+   "id": 128048,
+   "tok": "<|reserved_special_token_40|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9927585124969482,
+   "norm_parent": 0.9927992224693298
+  },
+  {
+   "id": 128049,
+   "tok": "<|reserved_special_token_41|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9674211144447327,
+   "norm_parent": 0.9674326181411743
+  },
+  {
+   "id": 128050,
+   "tok": "<|reserved_special_token_42|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9859225153923035,
+   "norm_parent": 0.9858851432800293
+  },
+  {
+   "id": 128051,
+   "tok": "<|reserved_special_token_43|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.976579487323761,
+   "norm_parent": 0.9765127897262573
+  },
+  {
+   "id": 128052,
+   "tok": "<|reserved_special_token_44|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.985029935836792,
+   "norm_parent": 0.9850043058395386
+  },
+  {
+   "id": 128053,
+   "tok": "<|reserved_special_token_45|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9868849515914917,
+   "norm_parent": 0.9869050979614258
+  },
+  {
+   "id": 128054,
+   "tok": "<|reserved_special_token_46|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.99469393491745,
+   "norm_parent": 0.9947379231452942
+  },
+  {
+   "id": 128055,
+   "tok": "<|reserved_special_token_47|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0039374828338623,
+   "norm_parent": 1.0038790702819824
+  },
+  {
+   "id": 128056,
+   "tok": "<|reserved_special_token_48|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.98155677318573,
+   "norm_parent": 0.9815594553947449
+  },
+  {
+   "id": 128057,
+   "tok": "<|reserved_special_token_49|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9970924258232117,
+   "norm_parent": 0.9970468878746033
+  },
+  {
+   "id": 128058,
+   "tok": "<|reserved_special_token_50|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9926872849464417,
+   "norm_parent": 0.9926822781562805
+  },
+  {
+   "id": 128059,
+   "tok": "<|reserved_special_token_51|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9754834175109863,
+   "norm_parent": 0.9754688143730164
+  },
+  {
+   "id": 128060,
+   "tok": "<|reserved_special_token_52|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9822408556938171,
+   "norm_parent": 0.9822409749031067
+  },
+  {
+   "id": 128061,
+   "tok": "<|reserved_special_token_53|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9897459745407104,
+   "norm_parent": 0.9897404909133911
+  },
+  {
+   "id": 128062,
+   "tok": "<|reserved_special_token_54|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.002867341041565,
+   "norm_parent": 1.0029546022415161
+  },
+  {
+   "id": 128063,
+   "tok": "<|reserved_special_token_55|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9914461970329285,
+   "norm_parent": 0.9914193153381348
+  },
+  {
+   "id": 128064,
+   "tok": "<|reserved_special_token_56|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.984923779964447,
+   "norm_parent": 0.9848698973655701
+  },
+  {
+   "id": 128065,
+   "tok": "<|reserved_special_token_57|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9763284921646118,
+   "norm_parent": 0.9762869477272034
+  },
+  {
+   "id": 128066,
+   "tok": "<|reserved_special_token_58|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9770738482475281,
+   "norm_parent": 0.9770656824111938
+  },
+  {
+   "id": 128067,
+   "tok": "<|reserved_special_token_59|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9923223257064819,
+   "norm_parent": 0.9923007488250732
+  },
+  {
+   "id": 128068,
+   "tok": "<|reserved_special_token_60|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9872518181800842,
+   "norm_parent": 0.9872891902923584
+  },
+  {
+   "id": 128069,
+   "tok": "<|reserved_special_token_61|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9845728278160095,
+   "norm_parent": 0.9845218658447266
+  },
+  {
+   "id": 128070,
+   "tok": "<|reserved_special_token_62|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.3309643268585205,
+   "norm_parent": 1.330970287322998
+  },
+  {
+   "id": 128071,
+   "tok": "<|reserved_special_token_63|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9913133978843689,
+   "norm_parent": 0.9913113713264465
+  },
+  {
+   "id": 128072,
+   "tok": "<|reserved_special_token_64|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9839006066322327,
+   "norm_parent": 0.9838194251060486
+  },
+  {
+   "id": 128073,
+   "tok": "<|reserved_special_token_65|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9761574268341064,
+   "norm_parent": 0.9761199355125427
+  },
+  {
+   "id": 128074,
+   "tok": "<|reserved_special_token_66|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0021893978118896,
+   "norm_parent": 1.0021758079528809
+  },
+  {
+   "id": 128075,
+   "tok": "<|reserved_special_token_67|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9753118753433228,
+   "norm_parent": 0.9753376841545105
+  },
+  {
+   "id": 128076,
+   "tok": "<|reserved_special_token_68|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9924044013023376,
+   "norm_parent": 0.9924193620681763
+  },
+  {
+   "id": 128077,
+   "tok": "<|reserved_special_token_69|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9945324659347534,
+   "norm_parent": 0.9945487976074219
+  },
+  {
+   "id": 128078,
+   "tok": "<|reserved_special_token_70|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.976694643497467,
+   "norm_parent": 0.9766769409179688
+  },
+  {
+   "id": 128079,
+   "tok": "<|reserved_special_token_71|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9843636155128479,
+   "norm_parent": 0.984358012676239
+  },
+  {
+   "id": 128080,
+   "tok": "<|reserved_special_token_72|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0098849534988403,
+   "norm_parent": 1.0099401473999023
+  },
+  {
+   "id": 128081,
+   "tok": "<|reserved_special_token_73|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9850518107414246,
+   "norm_parent": 0.9850595593452454
+  },
+  {
+   "id": 128082,
+   "tok": "<|reserved_special_token_74|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.1151238679885864,
+   "norm_parent": 1.1151371002197266
+  },
+  {
+   "id": 128083,
+   "tok": "<|reserved_special_token_75|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9841228723526001,
+   "norm_parent": 0.9842283725738525
+  },
+  {
+   "id": 128084,
+   "tok": "<|reserved_special_token_76|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0004315376281738,
+   "norm_parent": 1.0004266500473022
+  },
+  {
+   "id": 128085,
+   "tok": "<|reserved_special_token_77|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9812635779380798,
+   "norm_parent": 0.9813380241394043
+  },
+  {
+   "id": 128086,
+   "tok": "<|reserved_special_token_78|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9832606315612793,
+   "norm_parent": 0.9833016991615295
+  },
+  {
+   "id": 128087,
+   "tok": "<|reserved_special_token_79|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9880549907684326,
+   "norm_parent": 0.9880077242851257
+  },
+  {
+   "id": 128088,
+   "tok": "<|reserved_special_token_80|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9917765855789185,
+   "norm_parent": 0.9973961710929871
+  },
+  {
+   "id": 128089,
+   "tok": "<|reserved_special_token_81|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9870103597640991,
+   "norm_parent": 0.9869909286499023
+  },
+  {
+   "id": 128090,
+   "tok": "<|reserved_special_token_82|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9920350313186646,
+   "norm_parent": 0.9919869899749756
+  },
+  {
+   "id": 128091,
+   "tok": "<|reserved_special_token_83|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9861186146736145,
+   "norm_parent": 0.9860564470291138
+  },
+  {
+   "id": 128092,
+   "tok": "<|reserved_special_token_84|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9973856210708618,
+   "norm_parent": 0.9973788857460022
+  },
+  {
+   "id": 128093,
+   "tok": "<|reserved_special_token_85|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.971801221370697,
+   "norm_parent": 0.9717828035354614
+  },
+  {
+   "id": 128094,
+   "tok": "<|reserved_special_token_86|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9809040427207947,
+   "norm_parent": 0.9809011220932007
+  },
+  {
+   "id": 128095,
+   "tok": "<|reserved_special_token_87|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9866943955421448,
+   "norm_parent": 0.986676812171936
+  },
+  {
+   "id": 128096,
+   "tok": "<|reserved_special_token_88|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9984344244003296,
+   "norm_parent": 0.9984630942344666
+  },
+  {
+   "id": 128097,
+   "tok": "<|reserved_special_token_89|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.978837251663208,
+   "norm_parent": 0.978794276714325
+  },
+  {
+   "id": 128098,
+   "tok": "<|reserved_special_token_90|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9981364011764526,
+   "norm_parent": 0.9981371164321899
+  },
+  {
+   "id": 128099,
+   "tok": "<|reserved_special_token_91|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9797176718711853,
+   "norm_parent": 0.9797637462615967
+  },
+  {
+   "id": 128100,
+   "tok": "<|reserved_special_token_92|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9672799706459045,
+   "norm_parent": 0.9672672152519226
+  },
+  {
+   "id": 128101,
+   "tok": "<|reserved_special_token_93|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 1.003585934638977,
+   "norm_parent": 1.0035994052886963
+  },
+  {
+   "id": 128102,
+   "tok": "<|reserved_special_token_94|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9689232110977173,
+   "norm_parent": 0.9688968658447266
+  },
+  {
+   "id": 128103,
+   "tok": "<|reserved_special_token_95|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9676817655563354,
+   "norm_parent": 0.9676797389984131
+  },
+  {
+   "id": 128104,
+   "tok": "<|reserved_special_token_96|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.1130640506744385,
+   "norm_parent": 1.1131149530410767
+  },
+  {
+   "id": 128105,
+   "tok": "<|reserved_special_token_97|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.984951913356781,
+   "norm_parent": 0.9849474430084229
+  },
+  {
+   "id": 128106,
+   "tok": "<|reserved_special_token_98|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9823377132415771,
+   "norm_parent": 0.9823153614997864
+  },
+  {
+   "id": 128107,
+   "tok": "<|reserved_special_token_99|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9795113801956177,
+   "norm_parent": 0.9794806838035583
+  },
+  {
+   "id": 128108,
+   "tok": "<|reserved_special_token_100|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9898817539215088,
+   "norm_parent": 0.9899649620056152
+  },
+  {
+   "id": 128109,
+   "tok": "<|reserved_special_token_101|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9845291376113892,
+   "norm_parent": 0.9845594763755798
+  },
+  {
+   "id": 128110,
+   "tok": "<|reserved_special_token_102|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.044208288192749,
+   "norm_parent": 1.0442363023757935
+  },
+  {
+   "id": 128111,
+   "tok": "<|reserved_special_token_103|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9949896931648254,
+   "norm_parent": 0.9950163960456848
+  },
+  {
+   "id": 128112,
+   "tok": "<|reserved_special_token_104|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9804854393005371,
+   "norm_parent": 0.9805595278739929
+  },
+  {
+   "id": 128113,
+   "tok": "<|reserved_special_token_105|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9704489707946777,
+   "norm_parent": 0.9704863429069519
+  },
+  {
+   "id": 128114,
+   "tok": "<|reserved_special_token_106|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9805999994277954,
+   "norm_parent": 0.9805300831794739
+  },
+  {
+   "id": 128115,
+   "tok": "<|reserved_special_token_107|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9718706011772156,
+   "norm_parent": 0.9718915224075317
+  },
+  {
+   "id": 128116,
+   "tok": "<|reserved_special_token_108|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0079152584075928,
+   "norm_parent": 1.0079714059829712
+  },
+  {
+   "id": 128117,
+   "tok": "<|reserved_special_token_109|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9860721826553345,
+   "norm_parent": 0.9860384464263916
+  },
+  {
+   "id": 128118,
+   "tok": "<|reserved_special_token_110|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9773213267326355,
+   "norm_parent": 0.9772946834564209
+  },
+  {
+   "id": 128119,
+   "tok": "<|reserved_special_token_111|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9923040270805359,
+   "norm_parent": 1.0037689208984375
+  },
+  {
+   "id": 128120,
+   "tok": "<|reserved_special_token_112|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.997352659702301,
+   "norm_parent": 0.997342586517334
+  },
+  {
+   "id": 128121,
+   "tok": "<|reserved_special_token_113|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9866061806678772,
+   "norm_parent": 0.9866607785224915
+  },
+  {
+   "id": 128122,
+   "tok": "<|reserved_special_token_114|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.993681013584137,
+   "norm_parent": 0.9937464594841003
+  },
+  {
+   "id": 128123,
+   "tok": "<|reserved_special_token_115|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9835389256477356,
+   "norm_parent": 0.9834764003753662
+  },
+  {
+   "id": 128124,
+   "tok": "<|reserved_special_token_116|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9847374558448792,
+   "norm_parent": 0.9847009778022766
+  },
+  {
+   "id": 128125,
+   "tok": "<|reserved_special_token_117|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9974507093429565,
+   "norm_parent": 0.9973867535591125
+  },
+  {
+   "id": 128126,
+   "tok": "<|reserved_special_token_118|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9883997440338135,
+   "norm_parent": 0.9884111285209656
+  },
+  {
+   "id": 128127,
+   "tok": "<|reserved_special_token_119|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9798338413238525,
+   "norm_parent": 0.9799484610557556
+  },
+  {
+   "id": 128128,
+   "tok": "<|reserved_special_token_120|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0117378234863281,
+   "norm_parent": 1.0116685628890991
+  },
+  {
+   "id": 128129,
+   "tok": "<|reserved_special_token_121|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.973463237285614,
+   "norm_parent": 0.9734451174736023
+  },
+  {
+   "id": 128130,
+   "tok": "<|reserved_special_token_122|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9930553436279297,
+   "norm_parent": 0.993033230304718
+  },
+  {
+   "id": 128131,
+   "tok": "<|reserved_special_token_123|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9936237931251526,
+   "norm_parent": 0.9936210513114929
+  },
+  {
+   "id": 128132,
+   "tok": "<|reserved_special_token_124|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0000450611114502,
+   "norm_parent": 1.0001219511032104
+  },
+  {
+   "id": 128133,
+   "tok": "<|reserved_special_token_125|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9785131216049194,
+   "norm_parent": 0.9786157011985779
+  },
+  {
+   "id": 128134,
+   "tok": "<|reserved_special_token_126|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9881152510643005,
+   "norm_parent": 0.9881683588027954
+  },
+  {
+   "id": 128135,
+   "tok": "<|reserved_special_token_127|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9960600733757019,
+   "norm_parent": 0.9960854649543762
+  },
+  {
+   "id": 128136,
+   "tok": "<|reserved_special_token_128|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9826943874359131,
+   "norm_parent": 0.9826819896697998
+  },
+  {
+   "id": 128137,
+   "tok": "<|reserved_special_token_129|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9960001111030579,
+   "norm_parent": 0.995978593826294
+  },
+  {
+   "id": 128138,
+   "tok": "<|reserved_special_token_130|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.976222574710846,
+   "norm_parent": 0.9761984348297119
+  },
+  {
+   "id": 128139,
+   "tok": "<|reserved_special_token_131|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9881995916366577,
+   "norm_parent": 0.9882248044013977
+  },
+  {
+   "id": 128140,
+   "tok": "<|reserved_special_token_132|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 1.0015132427215576,
+   "norm_parent": 1.0015136003494263
+  },
+  {
+   "id": 128141,
+   "tok": "<|reserved_special_token_133|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9921930432319641,
+   "norm_parent": 0.9922172427177429
+  },
+  {
+   "id": 128142,
+   "tok": "<|reserved_special_token_134|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9667412638664246,
+   "norm_parent": 0.966697096824646
+  },
+  {
+   "id": 128143,
+   "tok": "<|reserved_special_token_135|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9852762818336487,
+   "norm_parent": 0.9852979779243469
+  },
+  {
+   "id": 128144,
+   "tok": "<|reserved_special_token_136|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9873647689819336,
+   "norm_parent": 0.987269937992096
+  },
+  {
+   "id": 128145,
+   "tok": "<|reserved_special_token_137|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9786275625228882,
+   "norm_parent": 0.9786297678947449
+  },
+  {
+   "id": 128146,
+   "tok": "<|reserved_special_token_138|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.98438560962677,
+   "norm_parent": 0.984371542930603
+  },
+  {
+   "id": 128147,
+   "tok": "<|reserved_special_token_139|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.1859827041625977,
+   "norm_parent": 1.1857903003692627
+  },
+  {
+   "id": 128148,
+   "tok": "<|reserved_special_token_140|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.013210415840149,
+   "norm_parent": 1.0131936073303223
+  },
+  {
+   "id": 128149,
+   "tok": "<|reserved_special_token_141|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9823803305625916,
+   "norm_parent": 0.9823057055473328
+  },
+  {
+   "id": 128150,
+   "tok": "<|reserved_special_token_142|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9915258884429932,
+   "norm_parent": 0.991508960723877
+  },
+  {
+   "id": 128151,
+   "tok": "<|reserved_special_token_143|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9841828942298889,
+   "norm_parent": 0.9841532111167908
+  },
+  {
+   "id": 128152,
+   "tok": "<|reserved_special_token_144|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9901057481765747,
+   "norm_parent": 0.9901353120803833
+  },
+  {
+   "id": 128153,
+   "tok": "<|reserved_special_token_145|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9642105102539062,
+   "norm_parent": 0.964222252368927
+  },
+  {
+   "id": 128154,
+   "tok": "<|reserved_special_token_146|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0091043710708618,
+   "norm_parent": 1.0090819597244263
+  },
+  {
+   "id": 128155,
+   "tok": "<|reserved_special_token_147|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.98801189661026,
+   "norm_parent": 0.9880846738815308
+  },
+  {
+   "id": 128156,
+   "tok": "<|reserved_special_token_148|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9815696477890015,
+   "norm_parent": 0.9815994501113892
+  },
+  {
+   "id": 128157,
+   "tok": "<|reserved_special_token_149|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9894086122512817,
+   "norm_parent": 0.9895210266113281
+  },
+  {
+   "id": 128158,
+   "tok": "<|reserved_special_token_150|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9805106520652771,
+   "norm_parent": 0.9805272221565247
+  },
+  {
+   "id": 128159,
+   "tok": "<|reserved_special_token_151|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9809987545013428,
+   "norm_parent": 0.9810406565666199
+  },
+  {
+   "id": 128160,
+   "tok": "<|reserved_special_token_152|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9811468720436096,
+   "norm_parent": 0.9811874628067017
+  },
+  {
+   "id": 128161,
+   "tok": "<|reserved_special_token_153|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9604856967926025,
+   "norm_parent": 0.9605171084403992
+  },
+  {
+   "id": 128162,
+   "tok": "<|reserved_special_token_154|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0000770092010498,
+   "norm_parent": 0.9828993082046509
+  },
+  {
+   "id": 128163,
+   "tok": "<|reserved_special_token_155|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9978621006011963,
+   "norm_parent": 0.9978752136230469
+  },
+  {
+   "id": 128164,
+   "tok": "<|reserved_special_token_156|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9816263318061829,
+   "norm_parent": 0.9816673398017883
+  },
+  {
+   "id": 128165,
+   "tok": "<|reserved_special_token_157|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.997246503829956,
+   "norm_parent": 0.9972884058952332
+  },
+  {
+   "id": 128166,
+   "tok": "<|reserved_special_token_158|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9947214126586914,
+   "norm_parent": 0.9947771430015564
+  },
+  {
+   "id": 128167,
+   "tok": "<|reserved_special_token_159|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9907228350639343,
+   "norm_parent": 0.9907541275024414
+  },
+  {
+   "id": 128168,
+   "tok": "<|reserved_special_token_160|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9784144163131714,
+   "norm_parent": 0.9784020781517029
+  },
+  {
+   "id": 128169,
+   "tok": "<|reserved_special_token_161|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9934770464897156,
+   "norm_parent": 0.9934298396110535
+  },
+  {
+   "id": 128170,
+   "tok": "<|reserved_special_token_162|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9921392202377319,
+   "norm_parent": 0.9921873211860657
+  },
+  {
+   "id": 128171,
+   "tok": "<|reserved_special_token_163|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.00795316696167,
+   "norm_parent": 1.007993459701538
+  },
+  {
+   "id": 128172,
+   "tok": "<|reserved_special_token_164|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9973135590553284,
+   "norm_parent": 0.9972912073135376
+  },
+  {
+   "id": 128173,
+   "tok": "<|reserved_special_token_165|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9678527116775513,
+   "norm_parent": 0.9679103493690491
+  },
+  {
+   "id": 128174,
+   "tok": "<|reserved_special_token_166|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9897942543029785,
+   "norm_parent": 0.9897961020469666
+  },
+  {
+   "id": 128175,
+   "tok": "<|reserved_special_token_167|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.2550771236419678,
+   "norm_parent": 1.2551103830337524
+  },
+  {
+   "id": 128176,
+   "tok": "<|reserved_special_token_168|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9930152893066406,
+   "norm_parent": 0.9930264949798584
+  },
+  {
+   "id": 128177,
+   "tok": "<|reserved_special_token_169|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9973828792572021,
+   "norm_parent": 0.9973734021186829
+  },
+  {
+   "id": 128178,
+   "tok": "<|reserved_special_token_170|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9835776686668396,
+   "norm_parent": 0.9835460782051086
+  },
+  {
+   "id": 128179,
+   "tok": "<|reserved_special_token_171|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9765240550041199,
+   "norm_parent": 0.9765190482139587
+  },
+  {
+   "id": 128180,
+   "tok": "<|reserved_special_token_172|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9768626093864441,
+   "norm_parent": 0.9769938588142395
+  },
+  {
+   "id": 128181,
+   "tok": "<|reserved_special_token_173|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9811011552810669,
+   "norm_parent": 0.9811058640480042
+  },
+  {
+   "id": 128182,
+   "tok": "<|reserved_special_token_174|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9987168312072754,
+   "norm_parent": 0.9998320937156677
+  },
+  {
+   "id": 128183,
+   "tok": "<|reserved_special_token_175|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9870190024375916,
+   "norm_parent": 0.9870252013206482
+  },
+  {
+   "id": 128184,
+   "tok": "<|reserved_special_token_176|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9990605711936951,
+   "norm_parent": 0.9990645051002502
+  },
+  {
+   "id": 128185,
+   "tok": "<|reserved_special_token_177|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9934768080711365,
+   "norm_parent": 0.9934791922569275
+  },
+  {
+   "id": 128186,
+   "tok": "<|reserved_special_token_178|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9871926307678223,
+   "norm_parent": 0.9871718883514404
+  },
+  {
+   "id": 128187,
+   "tok": "<|reserved_special_token_179|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9894893765449524,
+   "norm_parent": 0.9894505739212036
+  },
+  {
+   "id": 128188,
+   "tok": "<|reserved_special_token_180|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9950137138366699,
+   "norm_parent": 0.9950013160705566
+  },
+  {
+   "id": 128189,
+   "tok": "<|reserved_special_token_181|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9820681214332581,
+   "norm_parent": 0.9821576476097107
+  },
+  {
+   "id": 128190,
+   "tok": "<|reserved_special_token_182|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9731728434562683,
+   "norm_parent": 0.9731491208076477
+  },
+  {
+   "id": 128191,
+   "tok": "<|reserved_special_token_183|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9783514738082886,
+   "norm_parent": 0.9782984256744385
+  },
+  {
+   "id": 128192,
+   "tok": "<|reserved_special_token_184|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9786980748176575,
+   "norm_parent": 0.9787017107009888
+  },
+  {
+   "id": 128193,
+   "tok": "<|reserved_special_token_185|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9973288178443909,
+   "norm_parent": 0.9973511695861816
+  },
+  {
+   "id": 128194,
+   "tok": "<|reserved_special_token_186|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9845480918884277,
+   "norm_parent": 0.9845826625823975
+  },
+  {
+   "id": 128195,
+   "tok": "<|reserved_special_token_187|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9939472675323486,
+   "norm_parent": 0.9939783215522766
+  },
+  {
+   "id": 128196,
+   "tok": "<|reserved_special_token_188|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.987654983997345,
+   "norm_parent": 0.9876571893692017
+  },
+  {
+   "id": 128197,
+   "tok": "<|reserved_special_token_189|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9846505522727966,
+   "norm_parent": 0.9845958948135376
+  },
+  {
+   "id": 128198,
+   "tok": "<|reserved_special_token_190|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9760355353355408,
+   "norm_parent": 0.9826469421386719
+  },
+  {
+   "id": 128199,
+   "tok": "<|reserved_special_token_191|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0045487880706787,
+   "norm_parent": 1.0045218467712402
+  },
+  {
+   "id": 128200,
+   "tok": "<|reserved_special_token_192|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.974923312664032,
+   "norm_parent": 0.9749553203582764
+  },
+  {
+   "id": 128201,
+   "tok": "<|reserved_special_token_193|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9818383455276489,
+   "norm_parent": 0.9818368554115295
+  },
+  {
+   "id": 128202,
+   "tok": "<|reserved_special_token_194|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9840260744094849,
+   "norm_parent": 0.9840729236602783
+  },
+  {
+   "id": 128203,
+   "tok": "<|reserved_special_token_195|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0132553577423096,
+   "norm_parent": 1.0066202878952026
+  },
+  {
+   "id": 128204,
+   "tok": "<|reserved_special_token_196|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9910368323326111,
+   "norm_parent": 0.9909871816635132
+  },
+  {
+   "id": 128205,
+   "tok": "<|reserved_special_token_197|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9905329346656799,
+   "norm_parent": 0.990557074546814
+  },
+  {
+   "id": 128206,
+   "tok": "<|reserved_special_token_198|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9946722984313965,
+   "norm_parent": 0.994718611240387
+  },
+  {
+   "id": 128207,
+   "tok": "<|reserved_special_token_199|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.982067883014679,
+   "norm_parent": 0.9820430874824524
+  },
+  {
+   "id": 128208,
+   "tok": "<|reserved_special_token_200|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9804418683052063,
+   "norm_parent": 0.9803906679153442
+  },
+  {
+   "id": 128209,
+   "tok": "<|reserved_special_token_201|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9889349341392517,
+   "norm_parent": 0.9889296889305115
+  },
+  {
+   "id": 128210,
+   "tok": "<|reserved_special_token_202|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9877945184707642,
+   "norm_parent": 0.9878073334693909
+  },
+  {
+   "id": 128211,
+   "tok": "<|reserved_special_token_203|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9916018843650818,
+   "norm_parent": 0.9915570616722107
+  },
+  {
+   "id": 128212,
+   "tok": "<|reserved_special_token_204|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9836310148239136,
+   "norm_parent": 0.9836387038230896
+  },
+  {
+   "id": 128213,
+   "tok": "<|reserved_special_token_205|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9777496457099915,
+   "norm_parent": 0.9776904582977295
+  },
+  {
+   "id": 128214,
+   "tok": "<|reserved_special_token_206|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9688019752502441,
+   "norm_parent": 0.9688039422035217
+  },
+  {
+   "id": 128215,
+   "tok": "<|reserved_special_token_207|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9866265058517456,
+   "norm_parent": 0.9866344332695007
+  },
+  {
+   "id": 128216,
+   "tok": "<|reserved_special_token_208|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9928138852119446,
+   "norm_parent": 0.992794930934906
+  },
+  {
+   "id": 128217,
+   "tok": "<|reserved_special_token_209|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9857931137084961,
+   "norm_parent": 0.9858203530311584
+  },
+  {
+   "id": 128218,
+   "tok": "<|reserved_special_token_210|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9877127408981323,
+   "norm_parent": 0.9877256155014038
+  },
+  {
+   "id": 128219,
+   "tok": "<|reserved_special_token_211|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9847115874290466,
+   "norm_parent": 0.984735906124115
+  },
+  {
+   "id": 128220,
+   "tok": "<|reserved_special_token_212|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9927369952201843,
+   "norm_parent": 0.9927167892456055
+  },
+  {
+   "id": 128221,
+   "tok": "<|reserved_special_token_213|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9865052700042725,
+   "norm_parent": 0.9864839911460876
+  },
+  {
+   "id": 128222,
+   "tok": "<|reserved_special_token_214|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9767350554466248,
+   "norm_parent": 0.9767668843269348
+  },
+  {
+   "id": 128223,
+   "tok": "<|reserved_special_token_215|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9628861546516418,
+   "norm_parent": 0.962892472743988
+  },
+  {
+   "id": 128224,
+   "tok": "<|reserved_special_token_216|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9808547496795654,
+   "norm_parent": 0.9808738231658936
+  },
+  {
+   "id": 128225,
+   "tok": "<|reserved_special_token_217|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9831563234329224,
+   "norm_parent": 0.9831920862197876
+  },
+  {
+   "id": 128226,
+   "tok": "<|reserved_special_token_218|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9793375730514526,
+   "norm_parent": 0.9793565273284912
+  },
+  {
+   "id": 128227,
+   "tok": "<|reserved_special_token_219|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 1.0195173025131226,
+   "norm_parent": 1.0049707889556885
+  },
+  {
+   "id": 128228,
+   "tok": "<|reserved_special_token_220|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9962483644485474,
+   "norm_parent": 0.9963496923446655
+  },
+  {
+   "id": 128229,
+   "tok": "<|reserved_special_token_221|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9785878658294678,
+   "norm_parent": 0.9785855412483215
+  },
+  {
+   "id": 128230,
+   "tok": "<|reserved_special_token_222|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9972697496414185,
+   "norm_parent": 0.9973000884056091
+  },
+  {
+   "id": 128231,
+   "tok": "<|reserved_special_token_223|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9757289886474609,
+   "norm_parent": 0.9757843613624573
+  },
+  {
+   "id": 128232,
+   "tok": "<|reserved_special_token_224|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9743506908416748,
+   "norm_parent": 0.9743183851242065
+  },
+  {
+   "id": 128233,
+   "tok": "<|reserved_special_token_225|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9989748001098633,
+   "norm_parent": 0.9990379214286804
+  },
+  {
+   "id": 128234,
+   "tok": "<|reserved_special_token_226|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.989966630935669,
+   "norm_parent": 0.9899136424064636
+  },
+  {
+   "id": 128235,
+   "tok": "<|reserved_special_token_227|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9760311245918274,
+   "norm_parent": 0.975993275642395
+  },
+  {
+   "id": 128236,
+   "tok": "<|reserved_special_token_228|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9789534211158752,
+   "norm_parent": 0.979006826877594
+  },
+  {
+   "id": 128237,
+   "tok": "<|reserved_special_token_229|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9627112150192261,
+   "norm_parent": 0.962719202041626
+  },
+  {
+   "id": 128238,
+   "tok": "<|reserved_special_token_230|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9892016053199768,
+   "norm_parent": 0.9892411231994629
+  },
+  {
+   "id": 128239,
+   "tok": "<|reserved_special_token_231|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9982563853263855,
+   "norm_parent": 0.9982354044914246
+  },
+  {
+   "id": 128240,
+   "tok": "<|reserved_special_token_232|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9918280839920044,
+   "norm_parent": 0.9918057918548584
+  },
+  {
+   "id": 128241,
+   "tok": "<|reserved_special_token_233|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9881811738014221,
+   "norm_parent": 0.988217830657959
+  },
+  {
+   "id": 128242,
+   "tok": "<|reserved_special_token_234|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.984207808971405,
+   "norm_parent": 0.9842173457145691
+  },
+  {
+   "id": 128243,
+   "tok": "<|reserved_special_token_235|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.994096577167511,
+   "norm_parent": 0.9941004514694214
+  },
+  {
+   "id": 128244,
+   "tok": "<|reserved_special_token_236|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9799136519432068,
+   "norm_parent": 0.9798611402511597
+  },
+  {
+   "id": 128245,
+   "tok": "<|reserved_special_token_237|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9941936731338501,
+   "norm_parent": 1.004238247871399
+  },
+  {
+   "id": 128246,
+   "tok": "<|reserved_special_token_238|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.974943220615387,
+   "norm_parent": 0.974898636341095
+  },
+  {
+   "id": 128247,
+   "tok": "<|reserved_special_token_239|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9696159958839417,
+   "norm_parent": 0.9696177244186401
+  },
+  {
+   "id": 128248,
+   "tok": "<|reserved_special_token_240|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9913089275360107,
+   "norm_parent": 0.9912818670272827
+  },
+  {
+   "id": 128249,
+   "tok": "<|reserved_special_token_241|>",
+   "state": "changed",
+   "share_changed": 0.999755859375,
+   "norm_child": 0.9870604276657104,
+   "norm_parent": 0.9870458245277405
+  },
+  {
+   "id": 128250,
+   "tok": "<|reserved_special_token_242|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.991264283657074,
+   "norm_parent": 0.9912617206573486
+  },
+  {
+   "id": 128251,
+   "tok": "<|reserved_special_token_243|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9849445223808289,
+   "norm_parent": 0.9848389625549316
+  },
+  {
+   "id": 128252,
+   "tok": "<|reserved_special_token_244|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9520819187164307,
+   "norm_parent": 0.9674468636512756
+  },
+  {
+   "id": 128253,
+   "tok": "<|reserved_special_token_245|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9804823398590088,
+   "norm_parent": 0.9804003238677979
+  },
+  {
+   "id": 128254,
+   "tok": "<|reserved_special_token_246|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9811210632324219,
+   "norm_parent": 0.9811475872993469
+  },
+  {
+   "id": 128255,
+   "tok": "<|reserved_special_token_247|>",
+   "state": "changed",
+   "share_changed": 1.0,
+   "norm_child": 0.9788487553596497,
+   "norm_parent": 0.978851318359375
+  }
+ ],
+ "flat_moves": []
+}

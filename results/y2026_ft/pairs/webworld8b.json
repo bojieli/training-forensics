@@ -1,0 +1,530 @@
+{
+ "name": "webworld8b",
+ "parent": "Qwen/Qwen3-8B",
+ "child": "Qwen/WebWorld-8B",
+ "embed_name_parent": "model.embed_tokens.weight",
+ "embed_name_child": "model.embed_tokens.weight",
+ "head_parent": "lm_head.weight",
+ "head_child": "lm_head.weight",
+ "tie_cfg_parent": false,
+ "tie_cfg_child": false,
+ "dtype_parent": "BF16",
+ "dtype_child": "BF16",
+ "shape_parent": [
+  151936,
+  4096
+ ],
+ "shape_child": [
+  151936,
+  4096
+ ],
+ "shared_matrix": false,
+ "vocab_compared": 151936,
+ "dim": 4096,
+ "P": 1.0,
+ "shrink_pct": 0.0,
+ "fit_reproduced": 1.0,
+ "bit_identical_raw": 10394,
+ "updated": 141474,
+ "barely": 68,
+ "bit_identical": 10394,
+ "frac_changed_hist": {
+  "0": 10394,
+  "(0,1%]": 68,
+  "(1%,10%]": 213,
+  "(10%,50%]": 727,
+  "(50%,90%]": 7190,
+  "(90%,100%]": 133344
+ },
+ "cos_median": 0.9994263591216803,
+ "rel_change_median": 0.033892127794119944,
+ "low_signal": false,
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0
+ },
+ "cls": "token record",
+ "status": "ok",
+ "categories": {
+  "all": {
+   "updated": 141468,
+   "barely": 68,
+   "bit-identical": 8185
+  },
+  "byte-fragment": {
+   "updated": 1240,
+   "barely": 0,
+   "bit-identical": 204
+  },
+  "code": {
+   "updated": 2464,
+   "barely": 7,
+   "bit-identical": 664
+  },
+  "code:indent": {
+   "updated": 234,
+   "barely": 0,
+   "bit-identical": 195
+  },
+  "digits": {
+   "updated": 26,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "emoji": {
+   "updated": 1294,
+   "barely": 0,
+   "bit-identical": 20
+  },
+  "math": {
+   "updated": 53,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "other": {
+   "updated": 3,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "punct/symbol": {
+   "updated": 3599,
+   "barely": 9,
+   "bit-identical": 590
+  },
+  "script:ARABIC": {
+   "updated": 3512,
+   "barely": 1,
+   "bit-identical": 390
+  },
+  "script:ARMENIAN": {
+   "updated": 73,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "script:BENGALI": {
+   "updated": 37,
+   "barely": 0,
+   "bit-identical": 1
+  },
+  "script:CJK": {
+   "updated": 24828,
+   "barely": 6,
+   "bit-identical": 752
+  },
+  "script:CYRILLIC": {
+   "updated": 4028,
+   "barely": 0,
+   "bit-identical": 114
+  },
+  "script:DEVANAGARI": {
+   "updated": 52,
+   "barely": 0,
+   "bit-identical": 3
+  },
+  "script:ETHIOPIC": {
+   "updated": 109,
+   "barely": 0,
+   "bit-identical": 3
+  },
+  "script:GEORGIAN": {
+   "updated": 32,
+   "barely": 0,
+   "bit-identical": 4
+  },
+  "script:GREEK": {
+   "updated": 184,
+   "barely": 0,
+   "bit-identical": 38
+  },
+  "script:GUJARATI": {
+   "updated": 16,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "script:GURMUKHI": {
+   "updated": 10,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "script:HANGUL": {
+   "updated": 2444,
+   "barely": 1,
+   "bit-identical": 1122
+  },
+  "script:HEBREW": {
+   "updated": 2965,
+   "barely": 0,
+   "bit-identical": 189
+  },
+  "script:HIRAGANA": {
+   "updated": 1164,
+   "barely": 0,
+   "bit-identical": 8
+  },
+  "script:KANNADA": {
+   "updated": 23,
+   "barely": 0,
+   "bit-identical": 2
+  },
+  "script:KATAKANA": {
+   "updated": 562,
+   "barely": 0,
+   "bit-identical": 8
+  },
+  "script:KHMER": {
+   "updated": 32,
+   "barely": 0,
+   "bit-identical": 1
+  },
+  "script:LAO": {
+   "updated": 33,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "script:LATIN": {
+   "updated": 90859,
+   "barely": 45,
+   "bit-identical": 3675
+  },
+  "script:MALAYALAM": {
+   "updated": 31,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "script:MYANMAR": {
+   "updated": 35,
+   "barely": 0,
+   "bit-identical": 1
+  },
+  "script:OTHER": {
+   "updated": 895,
+   "barely": 0,
+   "bit-identical": 210
+  },
+  "script:SINHALA": {
+   "updated": 25,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "script:TAMIL": {
+   "updated": 25,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "script:TELUGU": {
+   "updated": 14,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "script:THAI": {
+   "updated": 939,
+   "barely": 1,
+   "bit-identical": 31
+  },
+  "script:TIBETAN": {
+   "updated": 24,
+   "barely": 0,
+   "bit-identical": 0
+  },
+  "whitespace": {
+   "updated": 6,
+   "barely": 0,
+   "bit-identical": 6
+  }
+ },
+ "special_tokens": [
+  {
+   "id": 151643,
+   "content": "<|endoftext|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 1.74976,
+   "norm_child": 1.74976,
+   "flags": []
+  },
+  {
+   "id": 151644,
+   "content": "<|im_start|>",
+   "special": true,
+   "state": "updated",
+   "frac_changed": 0.9717,
+   "cos": 0.9975,
+   "norm_parent": 0.57283,
+   "norm_child": 0.5748,
+   "flags": []
+  },
+  {
+   "id": 151645,
+   "content": "<|im_end|>",
+   "special": true,
+   "state": "updated",
+   "frac_changed": 0.9749,
+   "cos": 0.998,
+   "norm_parent": 0.56332,
+   "norm_child": 0.56483,
+   "flags": []
+  },
+  {
+   "id": 151646,
+   "content": "<|object_ref_start|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.55768,
+   "norm_child": 0.55768,
+   "flags": []
+  },
+  {
+   "id": 151647,
+   "content": "<|object_ref_end|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.55987,
+   "norm_child": 0.55987,
+   "flags": []
+  },
+  {
+   "id": 151648,
+   "content": "<|box_start|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56867,
+   "norm_child": 0.56867,
+   "flags": []
+  },
+  {
+   "id": 151649,
+   "content": "<|box_end|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56078,
+   "norm_child": 0.56078,
+   "flags": []
+  },
+  {
+   "id": 151650,
+   "content": "<|quad_start|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56355,
+   "norm_child": 0.56355,
+   "flags": []
+  },
+  {
+   "id": 151651,
+   "content": "<|quad_end|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56561,
+   "norm_child": 0.56561,
+   "flags": []
+  },
+  {
+   "id": 151652,
+   "content": "<|vision_start|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56424,
+   "norm_child": 0.56424,
+   "flags": []
+  },
+  {
+   "id": 151653,
+   "content": "<|vision_end|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.55162,
+   "norm_child": 0.55162,
+   "flags": []
+  },
+  {
+   "id": 151654,
+   "content": "<|vision_pad|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56159,
+   "norm_child": 0.56159,
+   "flags": []
+  },
+  {
+   "id": 151655,
+   "content": "<|image_pad|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.55944,
+   "norm_child": 0.55944,
+   "flags": []
+  },
+  {
+   "id": 151656,
+   "content": "<|video_pad|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56076,
+   "norm_child": 0.56076,
+   "flags": []
+  },
+  {
+   "id": 151657,
+   "content": "<tool_call>",
+   "special": false,
+   "state": "updated",
+   "frac_changed": 0.9963,
+   "cos": 0.9989,
+   "norm_parent": 0.57819,
+   "norm_child": 0.57856,
+   "flags": []
+  },
+  {
+   "id": 151658,
+   "content": "</tool_call>",
+   "special": false,
+   "state": "updated",
+   "frac_changed": 0.9963,
+   "cos": 0.9989,
+   "norm_parent": 0.58486,
+   "norm_child": 0.58578,
+   "flags": []
+  },
+  {
+   "id": 151659,
+   "content": "<|fim_prefix|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56457,
+   "norm_child": 0.56457,
+   "flags": []
+  },
+  {
+   "id": 151660,
+   "content": "<|fim_middle|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56514,
+   "norm_child": 0.56514,
+   "flags": []
+  },
+  {
+   "id": 151661,
+   "content": "<|fim_suffix|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56665,
+   "norm_child": 0.56665,
+   "flags": []
+  },
+  {
+   "id": 151662,
+   "content": "<|fim_pad|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56031,
+   "norm_child": 0.56031,
+   "flags": []
+  },
+  {
+   "id": 151663,
+   "content": "<|repo_name|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.55334,
+   "norm_child": 0.55334,
+   "flags": []
+  },
+  {
+   "id": 151664,
+   "content": "<|file_sep|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.5647,
+   "norm_child": 0.5647,
+   "flags": []
+  },
+  {
+   "id": 151665,
+   "content": "<tool_response>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.56752,
+   "norm_child": 0.56752,
+   "flags": []
+  },
+  {
+   "id": 151666,
+   "content": "</tool_response>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.58206,
+   "norm_child": 0.58206,
+   "flags": []
+  },
+  {
+   "id": 151667,
+   "content": "<think>",
+   "special": false,
+   "state": "updated",
+   "frac_changed": 0.9971,
+   "cos": 0.999,
+   "norm_parent": 0.57508,
+   "norm_child": 0.57553,
+   "flags": []
+  },
+  {
+   "id": 151668,
+   "content": "</think>",
+   "special": false,
+   "state": "updated",
+   "frac_changed": 0.9985,
+   "cos": 0.999,
+   "norm_parent": 0.57627,
+   "norm_child": 0.57711,
+   "flags": []
+  }
+ ],
+ "special_summary": {
+  "n": 26,
+  "updated": 6,
+  "bit_identical": 20
+ },
+ "secs": 186.0
+}

@@ -1,0 +1,575 @@
+{
+ "key": "deepseek-ai/deepseek-moe-16b-base@ -> deepseek-ai/deepseek-moe-16b-chat",
+ "parent": "deepseek-ai/deepseek-moe-16b-base",
+ "child": "deepseek-ai/deepseek-moe-16b-chat",
+ "P": 1.0,
+ "P_exact_frac": 1.0,
+ "dtype": "BF16",
+ "rows": 102400,
+ "dim": 2048,
+ "r0": 0,
+ "recomputed": {
+  "moved": 92955,
+  "near": 5,
+  "unmoved": 9440
+ },
+ "sweep_agrees": true,
+ "tokenizer": "deepseek-ai/deepseek-moe-16b-chat",
+ "frac_changed_hist": {
+  "0": 9440,
+  "(0,1%]": 5,
+  "(1%,10%]": 189,
+  "(10%,50%]": 3398,
+  "(50%,90%]": 89260,
+  "(90%,100%]": 108
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 0
+ },
+ "init_std": 0.006,
+ "init_std_source": "exact: vectors regenerated from their random start (checkpoint-forensics)",
+ "parent_at_init": 512,
+ "status": "ok",
+ "categories": {
+  "added/special": {
+   "moved": 15,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "all": {
+   "moved": 92942,
+   "rewritten": 0,
+   "near": 5,
+   "unmoved": 7036,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "byte-fragment": {
+   "moved": 552,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 6,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code": {
+   "moved": 1444,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 174,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code:indent": {
+   "moved": 114,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 8,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 20,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "emoji": {
+   "moved": 11,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "math": {
+   "moved": 49,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other-special": {
+   "moved": 15,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "punct/symbol": {
+   "moved": 1581,
+   "rewritten": 0,
+   "near": 1,
+   "unmoved": 84,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:ARABIC": {
+   "moved": 43,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CJK": {
+   "moved": 17972,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 75,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CYRILLIC": {
+   "moved": 4027,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 3150,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:DEVANAGARI": {
+   "moved": 8,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GEORGIAN": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GREEK": {
+   "moved": 86,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HANGUL": {
+   "moved": 15,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HEBREW": {
+   "moved": 18,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HIRAGANA": {
+   "moved": 19,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:KATAKANA": {
+   "moved": 13,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:LATIN": {
+   "moved": 67083,
+   "rewritten": 0,
+   "near": 4,
+   "unmoved": 3536,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:OTHER": {
+   "moved": 7,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 2,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:THAI": {
+   "moved": 1,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "whitespace": {
+   "moved": 18,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "unreachable": {
+  "all": {
+   "moved": 12,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 20,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "math": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "punct/symbol": {
+   "moved": 9,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:LATIN": {
+   "moved": 0,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 20,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:OTHER": {
+   "moved": 1,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "freq_rank_buckets": {
+  "0-1000": {
+   "moved": 995,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 5,
+   "unmoved_at_init": 0
+  },
+  "1000-10000": {
+   "moved": 8936,
+   "rewritten": 0,
+   "near": 1,
+   "unmoved": 63,
+   "unmoved_at_init": 0
+  },
+  "10000-50000": {
+   "moved": 38088,
+   "rewritten": 0,
+   "near": 1,
+   "unmoved": 1911,
+   "unmoved_at_init": 0
+  },
+  "50000-end": {
+   "moved": 44908,
+   "rewritten": 0,
+   "near": 3,
+   "unmoved": 5057,
+   "unmoved_at_init": 0
+  }
+ },
+ "added_tokens": [
+  {
+   "id": 100000,
+   "content": "<｜begin▁of▁sentence｜>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9341,
+   "cos": 0.9999,
+   "norm_ratio": 0.9999,
+   "flags": []
+  },
+  {
+   "id": 100001,
+   "content": "<｜end▁of▁sentence｜>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9224,
+   "cos": 0.9998,
+   "norm_ratio": 1.0029,
+   "flags": []
+  },
+  {
+   "id": 100002,
+   "content": "ø",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.7568,
+   "cos": 1.0,
+   "norm_ratio": 1.0001,
+   "flags": []
+  },
+  {
+   "id": 100003,
+   "content": "ö",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.7881,
+   "cos": 1.0,
+   "norm_ratio": 0.9991,
+   "flags": []
+  },
+  {
+   "id": 100004,
+   "content": "ú",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.7808,
+   "cos": 1.0,
+   "norm_ratio": 1.0002,
+   "flags": []
+  },
+  {
+   "id": 100005,
+   "content": "ÿ",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.6333,
+   "cos": 1.0,
+   "norm_ratio": 0.9998,
+   "flags": []
+  },
+  {
+   "id": 100006,
+   "content": "õ",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.7017,
+   "cos": 1.0,
+   "norm_ratio": 1.0001,
+   "flags": []
+  },
+  {
+   "id": 100007,
+   "content": "÷",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.7983,
+   "cos": 1.0,
+   "norm_ratio": 0.9999,
+   "flags": []
+  },
+  {
+   "id": 100008,
+   "content": "û",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.7749,
+   "cos": 1.0,
+   "norm_ratio": 1.0004,
+   "flags": []
+  },
+  {
+   "id": 100009,
+   "content": "ý",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.7856,
+   "cos": 1.0,
+   "norm_ratio": 0.9995,
+   "flags": []
+  },
+  {
+   "id": 100010,
+   "content": "À",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.7539,
+   "cos": 1.0,
+   "norm_ratio": 0.9992,
+   "flags": []
+  },
+  {
+   "id": 100011,
+   "content": "ù",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.7798,
+   "cos": 1.0,
+   "norm_ratio": 0.9994,
+   "flags": []
+  },
+  {
+   "id": 100012,
+   "content": "Á",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.7061,
+   "cos": 1.0,
+   "norm_ratio": 0.9998,
+   "flags": []
+  },
+  {
+   "id": 100013,
+   "content": "þ",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.6895,
+   "cos": 1.0,
+   "norm_ratio": 0.9999,
+   "flags": []
+  },
+  {
+   "id": 100014,
+   "content": "ü",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.752,
+   "cos": 1.0,
+   "norm_ratio": 0.9996,
+   "flags": []
+  }
+ ],
+ "unmoved_samples": {
+  "byte-fragment": [
+   "�",
+   "�",
+   "�",
+   "��",
+   "�",
+   "癫�"
+  ],
+  "punct/symbol": [
+   "\u000e",
+   "\u0017",
+   ".~\\",
+   "=\"../../../../",
+   "=\"../../../../../",
+   "=\"../../../../../../",
+   ".~(\\",
+   "=\"../../../",
+   " $.",
+   "\t\\\\",
+   "=\"../../../../../../../",
+   "^@^@"
+  ],
+  "script:LATIN": [
+   "mathb",
+   "buntu",
+   "eqref",
+   "ateix",
+   " ciut",
+   " estaven",
+   " externs",
+   "Enlla",
+   "ensuremath",
+   " daugh",
+   "widet",
+   "icrosoft"
+  ],
+  "script:CYRILLIC": [
+   " въ",
+   "ълга",
+   " година",
+   "ън",
+   " къ",
+   "ългар",
+   "фия",
+   "мври",
+   " пър",
+   "точници",
+   "Източници",
+   " През"
+  ],
+  "code": [
+   "~}{~",
+   "_{{\\",
+   "\t///",
+   "$};",
+   ",{\\",
+   "$.}",
+   "$}}",
+   "}$\\",
+   "}{*}{",
+   "][]{",
+   "=-=-",
+   "._--"
+  ],
+  "script:CJK": [
+   "原文地址",
+   "近平",
+   "亿亿亿亿",
+   "毛泽",
+   "尴",
+   "西班",
+   "日内与",
+   "仅代表作者本人",
+   "仅代表作者本人观点",
+   "版权或其它",
+   "以上文章内容",
+   "如有关于作品内容"
+  ],
+  "code:indent": [
+   "\t\t\t\t\t\t\t\t\t\t\t",
+   "\t\t\t\t\t\t\t\t\t\t\t\t",
+   "\t\t\t\t ",
+   "\t\t\t  ",
+   "\t\t     ",
+   "\t\t\t\t   ",
+   "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",
+   "\t\t           "
+  ],
+  "script:OTHER": [
+   "ˋ",
+   "ˋˋ"
+  ],
+  "script:GEORGIAN": [
+   "ე"
+  ]
+ },
+ "secs": 19.1
+}

@@ -1,0 +1,595 @@
+{
+ "name": "teichai_glm47f_opus",
+ "parent": "zai-org/GLM-4.7-Flash",
+ "child": "TeichAI/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill",
+ "embed_name_parent": "model.embed_tokens.weight",
+ "embed_name_child": "model.embed_tokens.weight",
+ "head_parent": "lm_head.weight",
+ "head_child": "lm_head.weight",
+ "tie_cfg_parent": false,
+ "tie_cfg_child": false,
+ "dtype_parent": "BF16",
+ "dtype_child": "BF16",
+ "shape_parent": [
+  154880,
+  2048
+ ],
+ "shape_child": [
+  154880,
+  2048
+ ],
+ "shared_matrix": false,
+ "vocab_compared": 154880,
+ "dim": 2048,
+ "P": 1.0,
+ "shrink_pct": 0.0,
+ "fit_reproduced": 1.0,
+ "bit_identical_raw": 154880,
+ "updated": 0,
+ "barely": 0,
+ "bit_identical": 154880,
+ "frac_changed_hist": {
+  "0": 154880,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 0,
+  "(50%,90%]": 0,
+  "(90%,100%]": 0
+ },
+ "cos_median": 1.0,
+ "rel_change_median": 0.0,
+ "low_signal": false,
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0
+ },
+ "cls": "unchanged",
+ "status": "ok",
+ "categories": {
+  "all": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 154540
+  },
+  "byte-fragment": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1091
+  },
+  "code": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 3145
+  },
+  "code:indent": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 436
+  },
+  "digits": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 400
+  },
+  "emoji": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 1121
+  },
+  "math": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 539
+  },
+  "other": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 34
+  },
+  "punct/symbol": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 4328
+  },
+  "script:ARABIC": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 2061
+  },
+  "script:ARMENIAN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 80
+  },
+  "script:BENGALI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 55
+  },
+  "script:CJK": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 28553
+  },
+  "script:CYRILLIC": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 9913
+  },
+  "script:DEVANAGARI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 87
+  },
+  "script:GEORGIAN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 86
+  },
+  "script:GREEK": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 892
+  },
+  "script:HANGUL": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 544
+  },
+  "script:HEBREW": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 20
+  },
+  "script:HIRAGANA": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 511
+  },
+  "script:KATAKANA": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 320
+  },
+  "script:KHMER": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 54
+  },
+  "script:LATIN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 100938
+  },
+  "script:MYANMAR": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 74
+  },
+  "script:OTHER": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 54
+  },
+  "script:THAI": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 72
+  },
+  "script:TIBETAN": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 50
+  },
+  "whitespace": {
+   "updated": 0,
+   "barely": 0,
+   "bit-identical": 18
+  }
+ },
+ "special_tokens": [
+  {
+   "id": 154820,
+   "content": "<|endoftext|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.62757,
+   "norm_child": 0.62757,
+   "flags": []
+  },
+  {
+   "id": 154821,
+   "content": "[MASK]",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00249,
+   "norm_child": 0.00249,
+   "flags": []
+  },
+  {
+   "id": 154822,
+   "content": "[gMASK]",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.87236,
+   "norm_child": 0.87236,
+   "flags": []
+  },
+  {
+   "id": 154823,
+   "content": "[sMASK]",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.0002,
+   "norm_child": 0.0002,
+   "flags": []
+  },
+  {
+   "id": 154824,
+   "content": "<sop>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.4656,
+   "norm_child": 0.4656,
+   "flags": []
+  },
+  {
+   "id": 154825,
+   "content": "<eop>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.0002,
+   "norm_child": 0.0002,
+   "flags": []
+  },
+  {
+   "id": 154826,
+   "content": "<|system|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.09892,
+   "norm_child": 0.09892,
+   "flags": []
+  },
+  {
+   "id": 154827,
+   "content": "<|user|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.09245,
+   "norm_child": 0.09245,
+   "flags": []
+  },
+  {
+   "id": 154828,
+   "content": "<|assistant|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.09909,
+   "norm_child": 0.09909,
+   "flags": []
+  },
+  {
+   "id": 154829,
+   "content": "<|observation|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.09816,
+   "norm_child": 0.09816,
+   "flags": []
+  },
+  {
+   "id": 154830,
+   "content": "<|begin_of_image|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00019,
+   "norm_child": 0.00019,
+   "flags": []
+  },
+  {
+   "id": 154831,
+   "content": "<|end_of_image|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00019,
+   "norm_child": 0.00019,
+   "flags": []
+  },
+  {
+   "id": 154832,
+   "content": "<|begin_of_video|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00019,
+   "norm_child": 0.00019,
+   "flags": []
+  },
+  {
+   "id": 154833,
+   "content": "<|end_of_video|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00019,
+   "norm_child": 0.00019,
+   "flags": []
+  },
+  {
+   "id": 154834,
+   "content": "<|begin_of_audio|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00019,
+   "norm_child": 0.00019,
+   "flags": []
+  },
+  {
+   "id": 154835,
+   "content": "<|end_of_audio|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00019,
+   "norm_child": 0.00019,
+   "flags": []
+  },
+  {
+   "id": 154836,
+   "content": "<|begin_of_transcription|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00019,
+   "norm_child": 0.00019,
+   "flags": []
+  },
+  {
+   "id": 154837,
+   "content": "<|end_of_transcription|>",
+   "special": true,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.0002,
+   "norm_child": 0.0002,
+   "flags": []
+  },
+  {
+   "id": 154838,
+   "content": "<|code_prefix|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.85801,
+   "norm_child": 0.85801,
+   "flags": []
+  },
+  {
+   "id": 154839,
+   "content": "<|code_middle|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.67133,
+   "norm_child": 0.67133,
+   "flags": []
+  },
+  {
+   "id": 154840,
+   "content": "<|code_suffix|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.67011,
+   "norm_child": 0.67011,
+   "flags": []
+  },
+  {
+   "id": 154841,
+   "content": "<think>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.10392,
+   "norm_child": 0.10392,
+   "flags": []
+  },
+  {
+   "id": 154842,
+   "content": "</think>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.10863,
+   "norm_child": 0.10863,
+   "flags": []
+  },
+  {
+   "id": 154843,
+   "content": "<tool_call>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.10962,
+   "norm_child": 0.10962,
+   "flags": []
+  },
+  {
+   "id": 154844,
+   "content": "</tool_call>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.10471,
+   "norm_child": 0.10471,
+   "flags": []
+  },
+  {
+   "id": 154845,
+   "content": "<tool_response>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.1054,
+   "norm_child": 0.1054,
+   "flags": []
+  },
+  {
+   "id": 154846,
+   "content": "</tool_response>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.10274,
+   "norm_child": 0.10274,
+   "flags": []
+  },
+  {
+   "id": 154847,
+   "content": "<arg_key>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.10796,
+   "norm_child": 0.10796,
+   "flags": []
+  },
+  {
+   "id": 154848,
+   "content": "</arg_key>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.1082,
+   "norm_child": 0.1082,
+   "flags": []
+  },
+  {
+   "id": 154849,
+   "content": "<arg_value>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.08557,
+   "norm_child": 0.08557,
+   "flags": []
+  },
+  {
+   "id": 154850,
+   "content": "</arg_value>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.11292,
+   "norm_child": 0.11292,
+   "flags": []
+  },
+  {
+   "id": 154851,
+   "content": "/nothink",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.07499,
+   "norm_child": 0.07499,
+   "flags": []
+  },
+  {
+   "id": 154852,
+   "content": "<|begin_of_box|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00019,
+   "norm_child": 0.00019,
+   "flags": []
+  },
+  {
+   "id": 154853,
+   "content": "<|end_of_box|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00019,
+   "norm_child": 0.00019,
+   "flags": []
+  },
+  {
+   "id": 154854,
+   "content": "<|image|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00019,
+   "norm_child": 0.00019,
+   "flags": []
+  },
+  {
+   "id": 154855,
+   "content": "<|video|>",
+   "special": false,
+   "state": "bit-identical",
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_parent": 0.00019,
+   "norm_child": 0.00019,
+   "flags": []
+  }
+ ],
+ "special_summary": {
+  "n": 36,
+  "updated": 0,
+  "bit_identical": 36
+ },
+ "secs": 100.4
+}

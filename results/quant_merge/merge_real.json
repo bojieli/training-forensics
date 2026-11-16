@@ -1,0 +1,644 @@
+{
+ "merges": [
+  {
+   "merge": "grimjim/Llama-3-Instruct-8B-SimPO-SPPO-Iter3-merge",
+   "config": {
+    "method": "slerp",
+    "base_model": "princeton-nlp/Llama-3-Instruct-8B-SimPO",
+    "parameters": {
+     "t": [
+      {
+       "filter": "self_attn",
+       "value": [
+        0,
+        0.5,
+        0.3,
+        0.7,
+        1
+       ]
+      },
+      {
+       "filter": "mlp",
+       "value": [
+        1,
+        0.5,
+        0.7,
+        0.3,
+        0
+       ]
+      },
+      {
+       "value": 0.5
+      }
+     ]
+    },
+    "dtype": "bfloat16",
+    "tokenizer": null,
+    "models": [
+     {
+      "model": "princeton-nlp/Llama-3-Instruct-8B-SimPO",
+      "parameters": {}
+     },
+     {
+      "model": "UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3",
+      "parameters": {}
+     }
+    ]
+   },
+   "reference_base": "unsloth/llama-3-8b-Instruct",
+   "shapes": {
+    "merge": [
+     128256,
+     4096
+    ],
+    "base": [
+     128256,
+     4096
+    ],
+    "princeton-nlp/Llama-3-Instruct-8B-SimPO": [
+     128256,
+     4096
+    ],
+    "UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3": [
+     128256,
+     4096
+    ]
+   },
+   "stored_dtype": "bfloat16",
+   "blind": {
+    "rows": 128256,
+    "moved_rows": 107312,
+    "identical_rows": 20944,
+    "moved_coords_equal_frac": 0.7887226343154907,
+    "changed_coords_step1_frac": 0.6936742067337036,
+    "strong_rows": 107311,
+    "strong_rows_equal_frac_median": 0.781494140625,
+    "strong_rows_equal_frac_p90": 0.881103515625,
+    "strong_rows_small_change_frac_median": 0.033718690276145935,
+    "pure_rescale_rows": 107309,
+    "pure_rescale_factor_median": 0.9999999841360079
+   },
+   "with_parents": {
+    "record_vs_union": {
+     "tp": 107312,
+     "fp": 0,
+     "fn": 13
+    },
+    "untouched_by_all": 20931,
+    "untouched_by_all_identical": 20931,
+    "single_parent_rows": {
+     "princeton-nlp/Llama-3-Instruct-8B-SimPO": {
+      "rows": 4832,
+      "median": 0.5007750306292111,
+      "q25": 0.4875161063937294,
+      "q75": 0.5146467511003442,
+      "kept_frac_median": 1.0,
+      "kept_coord_coef_median": 0.8447669050785475
+     },
+     "UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3": {
+      "rows": 2899,
+      "median": 0.5002585301122455,
+      "q25": 0.48456703590779765,
+      "q75": 0.5163254985152967,
+      "kept_frac_median": 1.0,
+      "kept_coord_coef_median": 0.8486304909560723
+     }
+    },
+    "lstsq_coef": {
+     "O": -0.0001837869642529665,
+     "princeton-nlp/Llama-3-Instruct-8B-SimPO": 0.5000833685652392,
+     "UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3": 0.5001008150516965
+    },
+    "lstsq_rel_resid": 0.0005045361877618522
+   }
+  },
+  {
+   "merge": "grimjim/Llama-3-Instruct-8B-SPPO-Iter3-SimPO-merge",
+   "config": {
+    "method": "slerp",
+    "base_model": "UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3",
+    "parameters": {
+     "t": [
+      {
+       "filter": "self_attn",
+       "value": [
+        0,
+        0.5,
+        0.3,
+        0.7,
+        1
+       ]
+      },
+      {
+       "filter": "mlp",
+       "value": [
+        1,
+        0.5,
+        0.7,
+        0.3,
+        0
+       ]
+      },
+      {
+       "value": 0.5
+      }
+     ]
+    },
+    "dtype": "bfloat16",
+    "tokenizer": null,
+    "models": [
+     {
+      "model": "princeton-nlp/Llama-3-Instruct-8B-SimPO",
+      "parameters": {}
+     },
+     {
+      "model": "UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3",
+      "parameters": {}
+     }
+    ]
+   },
+   "reference_base": "unsloth/llama-3-8b-Instruct",
+   "shapes": {
+    "merge": [
+     128256,
+     4096
+    ],
+    "base": [
+     128256,
+     4096
+    ],
+    "princeton-nlp/Llama-3-Instruct-8B-SimPO": [
+     128256,
+     4096
+    ],
+    "UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3": [
+     128256,
+     4096
+    ]
+   },
+   "stored_dtype": "bfloat16",
+   "blind": {
+    "rows": 128256,
+    "moved_rows": 107312,
+    "identical_rows": 20944,
+    "moved_coords_equal_frac": 0.7887226343154907,
+    "changed_coords_step1_frac": 0.6936742067337036,
+    "strong_rows": 107311,
+    "strong_rows_equal_frac_median": 0.781494140625,
+    "strong_rows_equal_frac_p90": 0.881103515625,
+    "strong_rows_small_change_frac_median": 0.033718690276145935,
+    "pure_rescale_rows": 107309,
+    "pure_rescale_factor_median": 0.9999999841360079
+   },
+   "with_parents": {
+    "record_vs_union": {
+     "tp": 107312,
+     "fp": 0,
+     "fn": 13
+    },
+    "untouched_by_all": 20931,
+    "untouched_by_all_identical": 20931,
+    "single_parent_rows": {
+     "princeton-nlp/Llama-3-Instruct-8B-SimPO": {
+      "rows": 4832,
+      "median": 0.5007750306292111,
+      "q25": 0.4875161063937294,
+      "q75": 0.5146467511003442,
+      "kept_frac_median": 1.0,
+      "kept_coord_coef_median": 0.8447669050785475
+     },
+     "UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3": {
+      "rows": 2899,
+      "median": 0.5002585301122455,
+      "q25": 0.48456703590779765,
+      "q75": 0.5163254985152967,
+      "kept_frac_median": 1.0,
+      "kept_coord_coef_median": 0.8486304909560723
+     }
+    },
+    "lstsq_coef": {
+     "O": -0.0001837869642529665,
+     "princeton-nlp/Llama-3-Instruct-8B-SimPO": 0.5000833685652392,
+     "UCLA-AGI/Llama-3-Instruct-8B-SPPO-Iter3": 0.5001008150516965
+    },
+    "lstsq_rel_resid": 0.0005045361877618522
+   }
+  },
+  {
+   "merge": "anakin87/Llama-3-8b-ita-slerp",
+   "config": {
+    "method": "slerp",
+    "base_model": "swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA",
+    "parameters": {
+     "t": [
+      {
+       "filter": "self_attn",
+       "value": [
+        0,
+        0.5,
+        0.3,
+        0.7,
+        1
+       ]
+      },
+      {
+       "filter": "mlp",
+       "value": [
+        1,
+        0.5,
+        0.7,
+        0.3,
+        0
+       ]
+      },
+      {
+       "value": 0.5
+      }
+     ]
+    },
+    "dtype": "bfloat16",
+    "tokenizer": null,
+    "models": [
+     {
+      "model": "swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA",
+      "parameters": {}
+     },
+     {
+      "model": "DeepMount00/Llama-3-8b-Ita",
+      "parameters": {}
+     }
+    ]
+   },
+   "reference_base": "unsloth/llama-3-8b-Instruct",
+   "shapes": {
+    "merge": [
+     128256,
+     4096
+    ],
+    "base": [
+     128256,
+     4096
+    ],
+    "swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA": [
+     128256,
+     4096
+    ],
+    "DeepMount00/Llama-3-8b-Ita": [
+     128256,
+     4096
+    ]
+   },
+   "stored_dtype": "bfloat16",
+   "blind": {
+    "rows": 128256,
+    "moved_rows": 107065,
+    "identical_rows": 21191,
+    "moved_coords_equal_frac": 0.9967928528785706,
+    "changed_coords_step1_frac": 0.14611342549324036,
+    "strong_rows": 107065,
+    "strong_rows_equal_frac_median": 0.99951171875,
+    "strong_rows_equal_frac_p90": 0.999755859375,
+    "strong_rows_small_change_frac_median": 0.0,
+    "pure_rescale_rows": 106781,
+    "pure_rescale_factor_median": 1.0
+   },
+   "with_parents": {
+    "record_vs_union": {
+     "tp": 107065,
+     "fp": 0,
+     "fn": 0
+    },
+    "untouched_by_all": 21191,
+    "untouched_by_all_identical": 21191,
+    "single_parent_rows": {
+     "DeepMount00/Llama-3-8b-Ita": {
+      "rows": 107065,
+      "median": 0.8915488895298529,
+      "q25": 0.6,
+      "q75": 1.0,
+      "kept_frac_median": 1.0,
+      "kept_coord_coef_median": 1.6116127985795195e-12
+     }
+    },
+    "lstsq_coef": {
+     "O": 0.33333333333323306,
+     "swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA": 0.33333333333323306,
+     "DeepMount00/Llama-3-8b-Ita": 0.3333333333332325
+    },
+    "lstsq_rel_resid": 3.365949631813613e-08
+   }
+  },
+  {
+   "merge": "anakin87/Llama-3-8b-ita-ties",
+   "config": {
+    "method": "ties",
+    "base_model": "meta-llama/Meta-Llama-3-8B",
+    "parameters": {
+     "normalize": true
+    },
+    "dtype": "bfloat16",
+    "tokenizer": null,
+    "models": [
+     {
+      "model": "meta-llama/Meta-Llama-3-8B",
+      "parameters": {}
+     },
+     {
+      "model": "swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA",
+      "parameters": {
+       "density": 0.5,
+       "weight": 0.6
+      }
+     },
+     {
+      "model": "DeepMount00/Llama-3-8b-Ita",
+      "parameters": {
+       "density": 0.5,
+       "weight": 0.3
+      }
+     }
+    ]
+   },
+   "reference_base": "unsloth/llama-3-8b",
+   "shapes": {
+    "merge": [
+     128256,
+     4096
+    ],
+    "base": [
+     128256,
+     4096
+    ],
+    "swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA": [
+     128256,
+     4096
+    ],
+    "DeepMount00/Llama-3-8b-Ita": [
+     128256,
+     4096
+    ]
+   },
+   "stored_dtype": "bfloat16",
+   "blind": {
+    "rows": 128256,
+    "moved_rows": 120234,
+    "identical_rows": 8022,
+    "moved_coords_equal_frac": 0.45659032464027405,
+    "changed_coords_step1_frac": 0.0009179928456433117,
+    "strong_rows": 120234,
+    "strong_rows_equal_frac_median": 0.353759765625,
+    "strong_rows_equal_frac_p90": 0.85693359375,
+    "strong_rows_small_change_frac_median": 0.0,
+    "pure_rescale_rows": 5950,
+    "pure_rescale_factor_median": 0.9998932823478484
+   },
+   "with_parents": {
+    "record_vs_union": {
+     "tp": 120234,
+     "fp": 0,
+     "fn": 8022
+    },
+    "untouched_by_all": 0,
+    "untouched_by_all_identical": 0,
+    "single_parent_rows": {},
+    "lstsq_coef": {
+     "O": 0.029792614680544827,
+     "swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA": 7.798975350879927,
+     "DeepMount00/Llama-3-8b-Ita": -6.828505524164468
+    },
+    "lstsq_rel_resid": 0.006582689520328929
+   }
+  },
+  {
+   "merge": "anakin87/Llama-3-8b-ita-ties-pro",
+   "config": {
+    "method": "ties",
+    "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "parameters": {
+     "normalize": true
+    },
+    "dtype": "bfloat16",
+    "tokenizer": null,
+    "models": [
+     {
+      "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "parameters": {}
+     },
+     {
+      "model": "swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA",
+      "parameters": {
+       "density": 0.7,
+       "weight": 0.6
+      }
+     },
+     {
+      "model": "DeepMount00/Llama-3-8b-Ita",
+      "parameters": {
+       "density": 0.7,
+       "weight": 0.3
+      }
+     }
+    ]
+   },
+   "reference_base": "unsloth/llama-3-8b-Instruct",
+   "shapes": {
+    "merge": [
+     128256,
+     4096
+    ],
+    "base": [
+     128256,
+     4096
+    ],
+    "swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA": [
+     128256,
+     4096
+    ],
+    "DeepMount00/Llama-3-8b-Ita": [
+     128256,
+     4096
+    ]
+   },
+   "stored_dtype": "bfloat16",
+   "blind": {
+    "rows": 128256,
+    "moved_rows": 107065,
+    "identical_rows": 21191,
+    "moved_coords_equal_frac": 0.9967928528785706,
+    "changed_coords_step1_frac": 0.10822959244251251,
+    "strong_rows": 107065,
+    "strong_rows_equal_frac_median": 0.99951171875,
+    "strong_rows_equal_frac_p90": 0.999755859375,
+    "strong_rows_small_change_frac_median": 0.0,
+    "pure_rescale_rows": 107065,
+    "pure_rescale_factor_median": 0.9999999999999993
+   },
+   "with_parents": {
+    "record_vs_union": {
+     "tp": 107065,
+     "fp": 0,
+     "fn": 0
+    },
+    "untouched_by_all": 21191,
+    "untouched_by_all_identical": 21191,
+    "single_parent_rows": {
+     "DeepMount00/Llama-3-8b-Ita": {
+      "rows": 107065,
+      "median": 1.0,
+      "q25": 1.0,
+      "q75": 1.0,
+      "kept_frac_median": 1.0,
+      "kept_coord_coef_median": 3.2230959311481915e-12
+     }
+    },
+    "lstsq_coef": {
+     "O": 0.3333333333332337,
+     "swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA": 0.33333333333323373,
+     "DeepMount00/Llama-3-8b-Ita": 0.3333333333332332
+    },
+    "lstsq_rel_resid": 4.0785424850567874e-08
+   }
+  },
+  {
+   "merge": "mlabonne/ChimeraLlama-3-8B-v3",
+   "config": {
+    "method": "dare_ties",
+    "base_model": "NousResearch/Meta-Llama-3-8B",
+    "parameters": {
+     "int8_mask": true
+    },
+    "dtype": "float16",
+    "tokenizer": null,
+    "models": [
+     {
+      "model": "NousResearch/Meta-Llama-3-8B",
+      "parameters": {}
+     },
+     {
+      "model": "NousResearch/Meta-Llama-3-8B-Instruct",
+      "parameters": {
+       "density": 0.6,
+       "weight": 0.5
+      }
+     },
+     {
+      "model": "mlabonne/OrpoLlama-3-8B",
+      "parameters": {
+       "density": 0.55,
+       "weight": 0.05
+      }
+     },
+     {
+      "model": "cognitivecomputations/dolphin-2.9-llama3-8b",
+      "parameters": {
+       "density": 0.55,
+       "weight": 0.05
+      }
+     },
+     {
+      "model": "Danielbrdz/Barcenas-Llama3-8b-ORPO",
+      "parameters": {
+       "density": 0.55,
+       "weight": 0.2
+      }
+     },
+     {
+      "model": "VAGOsolutions/Llama-3-SauerkrautLM-8b-Instruct",
+      "parameters": {
+       "density": 0.55,
+       "weight": 0.1
+      }
+     },
+     {
+      "model": "vicgalle/Configurable-Llama-3-8B-v0.3",
+      "parameters": {
+       "density": 0.55,
+       "weight": 0.05
+      }
+     },
+     {
+      "model": "MaziyarPanahi/Llama-3-8B-Instruct-DPO-v0.3",
+      "parameters": {
+       "density": 0.55,
+       "weight": 0.05
+      }
+     }
+    ]
+   },
+   "reference_base": "NousResearch/Meta-Llama-3-8B",
+   "shapes": {
+    "merge": [
+     128256,
+     4096
+    ],
+    "base": [
+     128256,
+     4096
+    ],
+    "NousResearch/Meta-Llama-3-8B-Instruct": [
+     128256,
+     4096
+    ],
+    "mlabonne/OrpoLlama-3-8B": [
+     128258,
+     4096
+    ],
+    "cognitivecomputations/dolphin-2.9-llama3-8b": [
+     128258,
+     4096
+    ],
+    "Danielbrdz/Barcenas-Llama3-8b-ORPO": [
+     128256,
+     4096
+    ],
+    "VAGOsolutions/Llama-3-SauerkrautLM-8b-Instruct": [
+     128256,
+     4096
+    ],
+    "vicgalle/Configurable-Llama-3-8B-v0.3": [
+     128256,
+     4096
+    ],
+    "MaziyarPanahi/Llama-3-8B-Instruct-DPO-v0.3": [
+     128257,
+     4096
+    ]
+   },
+   "stored_dtype": "float16",
+   "blind": {
+    "rows": 128256,
+    "moved_rows": 128256,
+    "identical_rows": 0,
+    "moved_coords_equal_frac": 0.0949985533952713,
+    "changed_coords_step1_frac": 0.16271954774856567,
+    "strong_rows": 117692,
+    "strong_rows_equal_frac_median": 0.060546875,
+    "strong_rows_equal_frac_p90": 0.134033203125,
+    "strong_rows_small_change_frac_median": 0.06333072483539581,
+    "pure_rescale_rows": 3153,
+    "pure_rescale_factor_median": 0.9967219141379754
+   },
+   "with_parents": {
+    "record_vs_union": {
+     "tp": 128256,
+     "fp": 0,
+     "fn": 0
+    },
+    "untouched_by_all": 0,
+    "untouched_by_all_identical": 0,
+    "single_parent_rows": {},
+    "lstsq_coef": {
+     "O": 0.01712086650497155,
+     "NousResearch/Meta-Llama-3-8B-Instruct": 0.2190637057873527,
+     "mlabonne/OrpoLlama-3-8B": 0.01712087028933452,
+     "cognitivecomputations/dolphin-2.9-llama3-8b": 0.039821605482995646,
+     "Danielbrdz/Barcenas-Llama3-8b-ORPO": 0.21906370909383024,
+     "VAGOsolutions/Llama-3-SauerkrautLM-8b-Instruct": 0.2190637057873527,
+     "vicgalle/Configurable-Llama-3-8B-v0.3": 0.21906370909382822,
+     "MaziyarPanahi/Llama-3-8B-Instruct-DPO-v0.3": 0.049692988458987356
+    },
+    "lstsq_rel_resid": 0.01822292832580692
+   }
+  }
+ ]
+}

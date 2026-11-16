@@ -1,0 +1,36 @@
+{
+ "key": "NousResearch/Llama-2-13b-hf@ -> lmsys/vicuna-13b-v1.5",
+ "parent": "NousResearch/Llama-2-13b-hf",
+ "child": "lmsys/vicuna-13b-v1.5",
+ "P": 1.0,
+ "P_exact_frac": 0.8741981506347656,
+ "dtype": "F16",
+ "rows": 32000,
+ "dim": 5120,
+ "r0": 0,
+ "recomputed": {
+  "moved": 31553,
+  "near": 0,
+  "unmoved": 447
+ },
+ "sweep_agrees": true,
+ "tokenizer": "NousResearch/Llama-2-13b-hf",
+ "frac_changed_hist": {
+  "0": 447,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 0,
+  "(50%,90%]": 0,
+  "(90%,100%]": 31553
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 0
+ },
+ "init_std": null,
+ "init_std_source": null,
+ "parent_at_init": 0,
+ "status": "no tokenizer.json"
+}

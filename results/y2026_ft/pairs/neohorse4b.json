@@ -1,0 +1,50 @@
+{
+ "name": "neohorse4b",
+ "parent": "Qwen/Qwen3.5-4B",
+ "child": "TokenRhythm/NeoHorse-1-4B",
+ "embed_name_parent": "model.language_model.embed_tokens.weight",
+ "embed_name_child": "model.embed_tokens.weight",
+ "head_parent": null,
+ "head_child": null,
+ "tie_cfg_parent": true,
+ "tie_cfg_child": true,
+ "dtype_parent": "BF16",
+ "dtype_child": "BF16",
+ "shape_parent": [
+  248320,
+  2560
+ ],
+ "shape_child": [
+  248320,
+  2560
+ ],
+ "shared_matrix": true,
+ "vocab_compared": 248320,
+ "dim": 2560,
+ "P": 1.0,
+ "shrink_pct": 0.0,
+ "fit_reproduced": 0.9301002502441407,
+ "bit_identical_raw": 0,
+ "updated": 248320,
+ "barely": 0,
+ "bit_identical": 0,
+ "frac_changed_hist": {
+  "0": 0,
+  "(0,1%]": 0,
+  "(1%,10%]": 2706,
+  "(10%,50%]": 79178,
+  "(50%,90%]": 157683,
+  "(90%,100%]": 8753
+ },
+ "cos_median": 0.9999903020592695,
+ "rel_change_median": 0.004464558328167802,
+ "low_signal": false,
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 260
+ },
+ "cls": "shared matrix",
+ "status": "ok, shared input/output matrix: no token record",
+ "secs": 130.5
+}

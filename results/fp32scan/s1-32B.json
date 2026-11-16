@@ -1,0 +1,84 @@
+{
+ "child": "simplescaling/s1-32B",
+ "parent": "Qwen/Qwen2.5-32B-Instruct",
+ "dataset": "simplescaling/s1K_tokenized",
+ "vectors": {
+  "total": 152064,
+  "bit_identical": 135491,
+  "changed": 16573
+ },
+ "changed_vectors_with_16bit_values_only": 0,
+ "token_set": {
+  "docs": 1000,
+  "distinct_tokens_in_text": 16573,
+  "changed_and_in_text": 16573,
+  "changed_not_in_text": 0,
+  "in_text_not_changed": 0,
+  "exact": true,
+  "changed_not_in_text_ids": [],
+  "changed_not_in_text_strs": [],
+  "in_text_not_changed_strs": []
+ },
+ "steps_assumed": {
+  "bs": 16,
+  "epochs": 5,
+  "steps_per_epoch": 63,
+  "total": 315
+ },
+ "rare_tokens": 5963,
+ "seed_scan_top": [
+  {
+   "seed": 42,
+   "scale": 9.396210703863741e-06,
+   "med_abs_log_dev": 0.029624915716484956,
+   "within_5pct": 0.7525,
+   "corr": 0.7153523772324863
+  },
+  {
+   "seed": 43,
+   "scale": 9.415823361606475e-06,
+   "med_abs_log_dev": 0.045378194643064695,
+   "within_5pct": 0.555,
+   "corr": 0.29967211208547406
+  },
+  {
+   "seed": 41,
+   "scale": 9.427956396085167e-06,
+   "med_abs_log_dev": 0.045710771189711785,
+   "within_5pct": 0.5375,
+   "corr": 0.40292110123400854
+  },
+  {
+   "seed": 44,
+   "scale": 9.408043591810329e-06,
+   "med_abs_log_dev": 0.05740317977587761,
+   "within_5pct": 0.435,
+   "corr": 0.11954958410105962
+  },
+  {
+   "seed": 181,
+   "scale": 9.34885433557293e-06,
+   "med_abs_log_dev": 0.05991082391087499,
+   "within_5pct": 0.4375,
+   "corr": -0.029007003842514607
+  }
+ ],
+ "seed_scan_median_dev": 0.07226574450552237,
+ "best_seed_all_rare": {
+  "seed": 42,
+  "scale": 9.370018921108473e-06,
+  "med_abs_log_dev": 0.031191566149542993,
+  "within_5pct": 0.7336910950863659,
+  "corr": 0.7302398035257854
+ },
+ "published_recipe_checked": {
+  "kind": "cosine",
+  "warmup": 16,
+  "N": 315,
+  "betas": [
+   0.9,
+   0.95
+  ],
+  "peak_lr_estimated": 9.370018921108473e-06
+ }
+}

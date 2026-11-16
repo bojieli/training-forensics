@@ -1,0 +1,4874 @@
+[
+ {
+  "repo": "openai-community/gpt2",
+  "downloads": 33889983,
+  "likes": 3937,
+  "params": 137022720,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bigcode/starcoder",
+  "downloads": 6313,
+  "likes": 2990,
+  "params": 15819446272,
+  "base": [],
+  "datasets": [
+   "bigcode/the-stack-dedup"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "google/gemma-2-2b",
+  "downloads": 80067,
+  "likes": 770,
+  "params": 2614341888,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "google/gemma-2-9b",
+  "downloads": 18895,
+  "likes": 747,
+  "params": 9241705984,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "agentica-org/DeepCoder-14B-Preview",
+  "downloads": 1010,
+  "likes": 686,
+  "params": 14770033664,
+  "base": [
+   "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B"
+  ],
+  "datasets": [
+   "PrimeIntellect/verifiable-coding-problems",
+   "likaixin/TACO-verified",
+   "livecodebench/code_generation_lite"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bigcode/starcoder2-15b",
+  "downloads": 16348,
+  "likes": 684,
+  "params": 15957889024,
+  "base": [],
+  "datasets": [
+   "bigcode/the-stack-v2-train"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "distilbert/distilgpt2",
+  "downloads": 1411909,
+  "likes": 667,
+  "params": 88204032,
+  "base": [],
+  "datasets": [
+   "openwebtext"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-7B",
+  "downloads": 3219,
+  "likes": 657,
+  "params": 6888095744,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "nvidia/Nemotron-Orchestrator-8B",
+  "downloads": 4491,
+  "likes": 600,
+  "params": 8190735360,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "agentica-org/DeepScaleR-1.5B-Preview",
+  "downloads": 13420,
+  "likes": 584,
+  "params": 1777088000,
+  "base": [
+   "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  ],
+  "datasets": [
+   "AI-MO/NuminaMath-CoT",
+   "KbsdJames/Omni-MATH",
+   "RUC-AIBOX/STILL-3-Preview-RL-Data",
+   "hendrycks/competition_math"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "EleutherAI/gpt-neo-2.7B",
+  "downloads": 10892,
+  "likes": 503,
+  "params": 2718416384,
+  "base": [],
+  "datasets": [
+   "EleutherAI/pile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct",
+  "downloads": 12644,
+  "likes": 424,
+  "params": 7818448896,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "georgesung/llama2_7b_chat_uncensored",
+  "downloads": 822,
+  "likes": 416,
+  "params": 6738417664,
+  "base": [],
+  "datasets": [
+   "georgesung/wizard_vicuna_70k_unfiltered"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "openai-community/gpt2-xl",
+  "downloads": 82813,
+  "likes": 401,
+  "params": 1607942848,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/UserLM-8b",
+  "downloads": 2832,
+  "likes": 401,
+  "params": 8030269440,
+  "base": [
+   "meta-llama/Llama-3.1-8B"
+  ],
+  "datasets": [
+   "allenai/WildChat-1M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "openai-community/gpt2-large",
+  "downloads": 1028177,
+  "likes": 373,
+  "params": 811778816,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "facebook/MobileLLM-R1-950M",
+  "downloads": 5116,
+  "likes": 363,
+  "params": 949685760,
+  "base": [
+   "facebook/MobileLLM-R1-950M-base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "sarvamai/sarvam-105b",
+  "downloads": 4974,
+  "likes": 328,
+  "params": 106031767424,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "openai-community/openai-gpt",
+  "downloads": 43354,
+  "likes": 326,
+  "params": 119680512,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "EleutherAI/gpt-neo-1.3B",
+  "downloads": 34983,
+  "likes": 326,
+  "params": 1365907456,
+  "base": [],
+  "datasets": [
+   "EleutherAI/pile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "EssentialAI/rnj-1-instruct",
+  "downloads": 3280,
+  "likes": 325,
+  "params": 8310501376,
+  "base": [
+   "EssentialAI/rnj-1"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "tomg-group-umd/huginn-0125",
+  "downloads": 20663,
+  "likes": 321,
+  "params": 3911400096,
+  "base": [],
+  "datasets": [
+   "tomg-group-umd/huginn-dataset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "simplescaling/s1-32B",
+  "downloads": 674,
+  "likes": 293,
+  "params": 32763876352,
+  "base": [],
+  "datasets": [
+   "simplescaling/s1K"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceTB/SmolLM-135M",
+  "downloads": 133103,
+  "likes": 277,
+  "params": 134515008,
+  "base": [],
+  "datasets": [
+   "HuggingFaceTB/smollm-corpus"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "1bitLLM/bitnet_b1_58-3B",
+  "downloads": 636,
+  "likes": 263,
+  "params": 3324389140,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nvidia/Nemotron-Research-Reasoning-Qwen-1.5B",
+  "downloads": 1857,
+  "likes": 248,
+  "params": 1777088000,
+  "base": [
+   "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "numind/NuExtract",
+  "downloads": 174,
+  "likes": 236,
+  "params": 3821079552,
+  "base": "microsoft/Phi-3-mini-4k-instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "sarvamai/sarvam-30b",
+  "downloads": 3910,
+  "likes": 235,
+  "params": 32152650368,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "MaziyarPanahi/calme-3.2-instruct-78b",
+  "downloads": 350,
+  "likes": 233,
+  "params": 77965463552,
+  "base": "MaziyarPanahi/calme-3-selfmerge-qwen2-78b",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bosonai/Higgs-Llama-3-70B",
+  "downloads": 9238,
+  "likes": 229,
+  "params": 70553706496,
+  "base": "meta-llama/Meta-Llama-3-70B",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bigcode/starcoder2-3b",
+  "downloads": 35973,
+  "likes": 227,
+  "params": 3030371328,
+  "base": [],
+  "datasets": [
+   "bigcode/the-stack-v2-train"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B",
+  "downloads": 1985,
+  "likes": 221,
+  "params": 3721243520,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "openai/circuit-sparsity",
+  "downloads": 1782,
+  "likes": 221,
+  "params": 419124736,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "google/gemma-2-27b",
+  "downloads": 3487,
+  "likes": 211,
+  "params": 27227128320,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "openai-community/gpt2-medium",
+  "downloads": 155294,
+  "likes": 210,
+  "params": 379988992,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "llm-blender/PairRM",
+  "downloads": 1782,
+  "likes": 209,
+  "params": 436014081,
+  "base": [],
+  "datasets": [
+   "openai/summarize_from_feedback",
+   "openai/webgpt_comparisons",
+   "Dahoas/synthetic-instruct-gptj-pairwise",
+   "Anthropic/hh-rlhf",
+   "lmsys/chatbot_arena_conversations",
+   "openbmb/UltraFeedback"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ise-uiuc/Magicoder-S-DS-6.7B",
+  "downloads": 1352,
+  "likes": 209,
+  "params": 6740512768,
+  "base": [],
+  "datasets": [
+   "ise-uiuc/Magicoder-OSS-Instruct-75K",
+   "ise-uiuc/Magicoder-Evol-Instruct-110K"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "agentica-org/DeepSWE-Preview",
+  "downloads": 678,
+  "likes": 204,
+  "params": 32762123264,
+  "base": [
+   "Qwen/Qwen3-32B"
+  ],
+  "datasets": [
+   "R2E-Gym/R2E-Gym-Subset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+  "downloads": 70761,
+  "likes": 198,
+  "params": 2405327360,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "humarin/chatgpt_paraphraser_on_T5_base",
+  "downloads": 7189,
+  "likes": 197,
+  "params": 222903552,
+  "base": [
+   "google-t5/t5-base"
+  ],
+  "datasets": [
+   "humarin/chatgpt-paraphrases"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "naver-hyperclovax/HyperCLOVAX-SEED-Omni-8B",
+  "downloads": 2222,
+  "likes": 195,
+  "params": 10741664520,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+  "downloads": 43273,
+  "likes": 194,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceTB/SmolLM-1.7B",
+  "downloads": 24651,
+  "likes": 187,
+  "params": 1711376384,
+  "base": [],
+  "datasets": [
+   "HuggingFaceTB/smollm-corpus"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "teapotai/teapotllm",
+  "downloads": 280,
+  "likes": 186,
+  "params": 783150080,
+  "base": [
+   "google/flan-t5-large"
+  ],
+  "datasets": [
+   "teapotai/synthqa",
+   "teapotai/teapot-chat"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "pankajmathur/orca_mini_3b",
+  "downloads": 337,
+  "likes": 165,
+  "params": 3426474900,
+  "base": [],
+  "datasets": [
+   "psmathur/alpaca_orca",
+   "psmathur/dolly-v2_orca",
+   "psmathur/WizardLM_Orca"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "segolilylabs/Lily-Cybersecurity-7B-v0.2",
+  "downloads": 312,
+  "likes": 163,
+  "params": 7241732096,
+  "base": "mistralai/Mistral-7B-Instruct-v0.2",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "downloads": 383608,
+  "likes": 160,
+  "params": 7818448896,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "NousResearch/nomos-1",
+  "downloads": 409,
+  "likes": 159,
+  "params": 30532122624,
+  "base": [
+   "Qwen/Qwen3-30B-A3B-Thinking-2507"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "AdaptLLM/finance-LLM",
+  "downloads": 231,
+  "likes": 155,
+  "params": 6738425856,
+  "base": [],
+  "datasets": [
+   "Open-Orca/OpenOrca",
+   "GAIR/lima",
+   "WizardLM/WizardLM_evol_instruct_V2_196k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ByteDance-Seed/Seed-Coder-8B-Reasoning",
+  "downloads": 2317,
+  "likes": 154,
+  "params": 8250462208,
+  "base": [
+   "ByteDance-Seed/Seed-Coder-8B-Base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceTB/cosmo-1b",
+  "downloads": 1190,
+  "likes": 136,
+  "params": 1741785088,
+  "base": [],
+  "datasets": [
+   "HuggingFaceTB/cosmopedia"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Fugaku-LLM/Fugaku-LLM-13B",
+  "downloads": 9,
+  "likes": 134,
+  "params": 13335349888,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nvidia/Llama-3.1-Nemotron-8B-UltraLong-4M-Instruct",
+  "downloads": 2414,
+  "likes": 134,
+  "params": 8036552704,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-step-50K-105b",
+  "downloads": 22031,
+  "likes": 133,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "SkunkworksAI/phi-2",
+  "downloads": 240,
+  "likes": 132,
+  "params": 2779683840,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "apple/OpenELM-3B",
+  "downloads": 794,
+  "likes": 132,
+  "params": 3036647424,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LGAI-EXAONE/EXAONE-3.5-32B-Instruct",
+  "downloads": 53472,
+  "likes": 129,
+  "params": 32003200000,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "1bitLLM/bitnet_b1_58-large",
+  "downloads": 3049,
+  "likes": 128,
+  "params": 728843904,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "state-spaces/mamba-2.8b-hf",
+  "downloads": 5931,
+  "likes": 125,
+  "params": 2768345600,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Equall/Saul-7B-Instruct-v1",
+  "downloads": 1077,
+  "likes": 124,
+  "params": 7241732096,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "shibing624/macbert4csc-base-chinese",
+  "downloads": 192506,
+  "likes": 122,
+  "params": 102290824,
+  "base": [],
+  "datasets": [
+   "shibing624/CSC"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "FractalAIResearch/Fathom-Search-4B",
+  "downloads": 58,
+  "likes": 122,
+  "params": 4022468096,
+  "base": [
+   "Qwen/Qwen3-4B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "amd/AMD-Llama-135m",
+  "downloads": 7254,
+  "likes": 121,
+  "params": 134105856,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "manu/project_gutenberg"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "downloads": 12473,
+  "likes": 120,
+  "params": 14748112896,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Nikity/lille-130m-instruct",
+  "downloads": 308,
+  "likes": 117,
+  "params": 127236768,
+  "base": [
+   "Nikity/lille-130m-base"
+  ],
+  "datasets": [
+   "Nikity/Kyoto-Corpus"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bigcode/starcoderbase-1b",
+  "downloads": 985,
+  "likes": 115,
+  "params": 1137207296,
+  "base": [],
+  "datasets": [
+   "bigcode/the-stack-dedup"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Trendyol/Trendyol-LLM-7b-chat-v0.1",
+  "downloads": 60,
+  "likes": 113,
+  "params": 6838538240,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "EssentialAI/rnj-1",
+  "downloads": 884,
+  "likes": 111,
+  "params": 8310501376,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "PhysicsWallahAI/Aryabhata-1.0",
+  "downloads": 47,
+  "likes": 110,
+  "params": 7615616512,
+  "base": "Qwen/Qwen2.5-Math-7B",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-1B",
+  "downloads": 2124,
+  "likes": 109,
+  "params": 1176764416,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "AxiomicLabs/GPT-X3-150M",
+  "downloads": 2591,
+  "likes": 105,
+  "params": 149400930,
+  "base": [],
+  "datasets": [
+   "nvidia/Nemotron-ClimbMix",
+   "openbmb/UltraData-Code",
+   "openbmb/UltraData-Math",
+   "AxiomicLabs/SFTset-SLM",
+   "AxiomicLabs/FactBase-DCLM",
+   "IFM/TxT360-v2"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "open-thoughts/OpenThinker-Agent-v1",
+  "downloads": 750,
+  "likes": 102,
+  "params": 8190735360,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "datasets": [
+   "OpenThoughts-Agent-v1-SFT",
+   "OpenThoughts-Agent-v1-RL"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "pankajmathur/orca_mini_13b",
+  "downloads": 89,
+  "likes": 101,
+  "params": 13015866880,
+  "base": [],
+  "datasets": [
+   "psmathur/alpaca_orca",
+   "psmathur/dolly-v2_orca",
+   "psmathur/WizardLM_Orca"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "AdaptLLM/finance-chat",
+  "downloads": 105,
+  "likes": 100,
+  "params": 6738425856,
+  "base": [],
+  "datasets": [
+   "Open-Orca/OpenOrca",
+   "GAIR/lima",
+   "WizardLM/WizardLM_evol_instruct_V2_196k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "google/recurrentgemma-2b",
+  "downloads": 1819,
+  "likes": 100,
+  "params": 2682862080,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "simplescaling/s1.1-32B",
+  "downloads": 103,
+  "likes": 99,
+  "params": 32763876352,
+  "base": [
+   "Qwen/Qwen2.5-32B-Instruct"
+  ],
+  "datasets": [
+   "simplescaling/s1K-1.1"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Jinx-org/Jinx-gpt-oss-20b",
+  "downloads": 9,
+  "likes": 97,
+  "params": 20914757184,
+  "base": [
+   "openai/gpt-oss-20b"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "SciPhi/Sensei-7B-V1",
+  "downloads": 37,
+  "likes": 95,
+  "params": 7241732096,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "manycore-research/SpatialLM-Qwen-0.5B",
+  "downloads": 6066,
+  "likes": 95,
+  "params": 504983232,
+  "base": [
+   "Qwen/Qwen2.5-0.5B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/maira-2",
+  "downloads": 43629,
+  "likes": 93,
+  "params": 6880185600,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "medalpaca/medalpaca-7b",
+  "downloads": 679,
+  "likes": 91,
+  "params": 6738425856,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "PipableAI/pip-sql-1.3b",
+  "downloads": 704,
+  "likes": 91,
+  "params": 1346471936,
+  "base": [],
+  "datasets": [
+   "PipableAI/pip-txt-to-sql-spider-bird-dataset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "LiquidAI/LFM2-350M-Extract",
+  "downloads": 2083,
+  "likes": 91,
+  "params": 354483968,
+  "base": "LiquidAI/LFM2-350M",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Motif-Technologies/Motif-2.6B",
+  "downloads": 465,
+  "likes": 88,
+  "params": 2597218432,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "AdaptLLM/law-LLM",
+  "downloads": 431,
+  "likes": 87,
+  "params": 6738425856,
+  "base": [],
+  "datasets": [
+   "Open-Orca/OpenOrca",
+   "GAIR/lima",
+   "WizardLM/WizardLM_evol_instruct_V2_196k",
+   "EleutherAI/pile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "moreh/MoMo-72B-LoRA-V1.4",
+  "downloads": 108,
+  "likes": 87,
+  "params": 72288575488,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Yellow-AI-NLP/komodo-7b-base",
+  "downloads": 9652,
+  "likes": 87,
+  "params": 6763057152,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "boun-tabi-LMG/TURNA",
+  "downloads": 219,
+  "likes": 84,
+  "params": 1141824512,
+  "base": [],
+  "datasets": [
+   "vngrs-ai/vngrs-web-corpus"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "instruction-pretrain/finance-Llama3-8B",
+  "downloads": 574,
+  "likes": 83,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [
+   "Open-Orca/OpenOrca",
+   "GAIR/lima",
+   "WizardLM/WizardLM_evol_instruct_V2_196k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-2-0425-1B",
+  "downloads": 115041,
+  "likes": 83,
+  "params": 1484916736,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "MinimaLabs/KLM-1.6",
+  "downloads": 1655,
+  "likes": 83,
+  "params": 98975308,
+  "base": [],
+  "datasets": [
+   "nvidia/Nemotron-ClimbMix",
+   "IFM/TxT360-v2",
+   "openbmb/UltraX-Preview",
+   "HuggingFaceTB/smollm-corpus",
+   "HuggingFaceTB/cosmopedia",
+   "mlfoundations/dclm-baseline-1.0",
+   "nvidia/OpenMathInstruct-2",
+   "openbmb/UltraData-Math",
+   "IFM/Math-Reasoning",
+   "allenai/dolma3_dolmino_mix-100B-1025",
+   "IFM/Pretrain-Behaviors"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/DanTagGen-beta",
+  "downloads": 8394,
+  "likes": 81,
+  "params": 392754176,
+  "base": [],
+  "datasets": [
+   "KBlueLeaf/danbooru2023-sqlite"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "apple/OpenELM-270M",
+  "downloads": 2651,
+  "likes": 79,
+  "params": 271527168,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "instruction-pretrain/instruction-synthesizer",
+  "downloads": 60,
+  "likes": 79,
+  "params": 7241732096,
+  "base": [],
+  "datasets": [
+   "instruction-pretrain/ft-instruction-synthesizer-collection"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Zyphra/ZR1-1.5B",
+  "downloads": 8358,
+  "likes": 78,
+  "params": 1777088000,
+  "base": [
+   "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  ],
+  "datasets": [
+   "AI-MO/NuminaMath-CoT",
+   "codeparrot/apps",
+   "deepmind/code_contests",
+   "BAAI/TACO",
+   "MatrixStudio/Codeforces-Python-Submissions"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "flax-community/t5-recipe-generation",
+  "downloads": 536,
+  "likes": 77,
+  "params": 222903552,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "state-spaces/mamba-130m-hf",
+  "downloads": 49195,
+  "likes": 76,
+  "params": 129135360,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "BAAI/Emu3-Chat",
+  "downloads": 408,
+  "likes": 76,
+  "params": 8492011520,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "agentica-org/DeepCoder-1.5B-Preview",
+  "downloads": 250,
+  "likes": 76,
+  "params": 1777088000,
+  "base": [
+   "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  ],
+  "datasets": [
+   "PrimeIntellect/verifiable-coding-problems",
+   "likaixin/TACO-verified",
+   "livecodebench/code_generation_lite"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ValiantLabs/Llama2-70B-ShiningValiant",
+  "downloads": 199,
+  "likes": 75,
+  "params": 68976648192,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/NextCoder-32B",
+  "downloads": 373,
+  "likes": 75,
+  "params": 32763876352,
+  "base": [
+   "Qwen/Qwen2.5-Coder-32B-Instruct"
+  ],
+  "datasets": [
+   "microsoft/NextCoderDataset",
+   "microsoft/NextCoderDataset-Conversational",
+   "bigcode/commitpackft",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "fudan-generative-ai/Qwen3.8-27B-REMORY-1.9B",
+  "downloads": 3612,
+  "likes": 75,
+  "params": 2005757188,
+  "base": "Qwen/Qwen3.8-27B",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bigcode/tiny_starcoder_py",
+  "downloads": 40843,
+  "likes": 74,
+  "params": 164144128,
+  "base": [],
+  "datasets": [
+   "bigcode/the-stack-dedup"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceTB/SmolLM-360M",
+  "downloads": 6503,
+  "likes": 74,
+  "params": 361821120,
+  "base": [],
+  "datasets": [
+   "HuggingFaceTB/smollm-corpus"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "futurehouse/ether0",
+  "downloads": 205,
+  "likes": 73,
+  "params": 23573058560,
+  "base": [
+   "mistralai/Mistral-Small-24B-Instruct-2501"
+  ],
+  "datasets": [
+   "futurehouse/ether0-benchmark"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bigcode/octocoder",
+  "downloads": 505,
+  "likes": 71,
+  "params": 15517456384,
+  "base": [],
+  "datasets": [
+   "bigcode/commitpackft",
+   "bigcode/oasst-octopack"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceTB/nanowhale-100m",
+  "downloads": 817,
+  "likes": 71,
+  "params": 110369621,
+  "base": "HuggingFaceTB/nanowhale-100m-base",
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceTB/smol-smoltalk"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "charent/ChatLM-mini-Chinese",
+  "downloads": 164,
+  "likes": 69,
+  "params": 187692288,
+  "base": [],
+  "datasets": [
+   "BelleGroup/train_3.5M_CN",
+   "wangrui6/Zhihu-KOL"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "gokaygokay/Flux-Prompt-Enhance",
+  "downloads": 1364,
+  "likes": 69,
+  "params": 222903552,
+  "base": "google-t5/t5-base",
+  "datasets": [
+   "gokaygokay/prompt-enhancer-dataset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "moreh/MoMo-72B-lora-1.8.7-DPO",
+  "downloads": 168,
+  "likes": 68,
+  "params": 72288575488,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Sao10K/Llama-3.3-70B-Vulpecula-r1",
+  "downloads": 77,
+  "likes": 67,
+  "params": 70553706496,
+  "base": [
+   "meta-llama/Llama-3.3-70B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "AxiomicLabs/GPT-X2.5-135M",
+  "downloads": 987,
+  "likes": 67,
+  "params": 135032256,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "AxiomicLabs/NPset-2-Python-Edu",
+   "HuggingFaceTB/finemath",
+   "mlfoundations/dclm-baseline-1.0",
+   "HuggingFaceTB/cosmopedia",
+   "AxiomicLabs/ArithMark-2.0",
+   "HuggingFaceTB/smol-smoltalk",
+   "HuggingFaceFW/finephrase"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-2-0325-32B",
+  "downloads": 5039,
+  "likes": 66,
+  "params": 32234279936,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nyu-visionx/cambrian-8b",
+  "downloads": 674,
+  "likes": 64,
+  "params": 8333022208,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nvidia/Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct",
+  "downloads": 3063,
+  "likes": 64,
+  "params": 8036552704,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "SupraLabs/Supra2-100M-Instruct",
+  "downloads": 98267,
+  "likes": 64,
+  "params": 100684032,
+  "base": [
+   "SupraLabs/Supra2-100M"
+  ],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceFW/dclm_100BT-shuffled"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "xDAN-AI/xDAN-L1-Chat-RL-v1",
+  "downloads": 118,
+  "likes": 63,
+  "params": 7241732096,
+  "base": [],
+  "datasets": [
+   "Open-Orca/OpenOrca",
+   "Intel/orca_dpo_pairs"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "PRIME-RL/Eurus-2-7B-PRIME",
+  "downloads": 665,
+  "likes": 62,
+  "params": 7615616512,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bigscience/mt0-xxl",
+  "downloads": 250,
+  "likes": 61,
+  "params": 13945516032,
+  "base": [],
+  "datasets": [
+   "bigscience/xP3",
+   "mc4"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-715k-1.5T",
+  "downloads": 658,
+  "likes": 61,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/Bolmo-7B",
+  "downloads": 566,
+  "likes": 61,
+  "params": 7633084576,
+  "base": [
+   "allenai/Bolmo-7B-Stage1"
+  ],
+  "datasets": [
+   "allenai/bolmo_mix"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "google/txgemma-2b-predict",
+  "downloads": 12191,
+  "likes": 60,
+  "params": 2614341888,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Salesforce/CoDA-v0-Instruct",
+  "downloads": 488,
+  "likes": 60,
+  "params": 2031739904,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mlabonne/Qwen3-14B-abliterated",
+  "downloads": 1235,
+  "likes": 59,
+  "params": 14768307200,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "TRI-ML/mamba-7b-rw",
+  "downloads": 237,
+  "likes": 58,
+  "params": 7153127424,
+  "base": [],
+  "datasets": [
+   "tiiuae/falcon-refinedweb"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/TIPO-500M",
+  "downloads": 20987,
+  "likes": 58,
+  "params": 507989760,
+  "base": [],
+  "datasets": [
+   "laion/conceptual-captions-12m-webdataset",
+   "CaptionEmporium/coyo-hd-11m-llavanext",
+   "KBlueLeaf/danbooru2023-metadata-database",
+   "graph-based-captions/GBC10M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-Chat-v0.1",
+  "downloads": 761,
+  "likes": 57,
+  "params": 1100052480,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata",
+   "timdettmers/openassistant-guanaco"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Trendyol/Trendyol-LLM-7b-base-v0.1",
+  "downloads": 45,
+  "likes": 57,
+  "params": 6838538240,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Undi95/Meta-Llama-3.1-8B-Claude",
+  "downloads": 82,
+  "likes": 57,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "kalpeshk2011/dipper-paraphraser-xxl",
+  "downloads": 2707,
+  "likes": 56,
+  "params": 11266928640,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "1Covenant/Covenant-72B",
+  "downloads": 164,
+  "likes": 56,
+  "params": 72747327488,
+  "base": [],
+  "datasets": [
+   "mlfoundations/dclm-baseline-1.0-parquet"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Voicelab/vlt5-base-keywords",
+  "downloads": 219821,
+  "likes": 55,
+  "params": 275102976,
+  "base": [],
+  "datasets": [
+   "posmac"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "AdaptLLM/medicine-chat",
+  "downloads": 135,
+  "likes": 54,
+  "params": 6738425856,
+  "base": [],
+  "datasets": [
+   "EleutherAI/pile",
+   "Open-Orca/OpenOrca",
+   "GAIR/lima",
+   "WizardLM/WizardLM_evol_instruct_V2_196k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-1195k-token-2.5T",
+  "downloads": 635,
+  "likes": 54,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "croissantllm/CroissantLLMChat-v0.1",
+  "downloads": 622,
+  "likes": 54,
+  "params": 1345431552,
+  "base": [],
+  "datasets": [
+   "croissantllm/croissant_dataset",
+   "croissantllm/CroissantLLM-2201-sft",
+   "cerebras/SlimPajama-627B",
+   "uonlp/CulturaX",
+   "pg19",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Motif-Technologies/Motif-2-12.7B-Instruct",
+  "downloads": 354,
+  "likes": 54,
+  "params": 12703860896,
+  "base": [
+   "Motif-Technologies/Motif-2-12.7B-Base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "harrrshall/BarunLM-35M",
+  "downloads": 0,
+  "likes": 54,
+  "params": 35072768,
+  "base": [],
+  "datasets": [
+   "HuggingFaceTB/smollm-corpus",
+   "HuggingFaceTB/finemath",
+   "mlfoundations/dclm-baseline-1.0-parquet",
+   "code-search-net/code_search_net",
+   "codeparrot/codeparrot-clean"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "NumbersStation/nsql-6B",
+  "downloads": 138,
+  "likes": 53,
+  "params": 7202625536,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "keeeeenw/MicroLlama",
+  "downloads": 1273,
+  "likes": 53,
+  "params": 304636928,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ai-sage/GigaChat-20B-A3B-instruct",
+  "downloads": 273,
+  "likes": 53,
+  "params": 20589299712,
+  "base": [
+   "ai-sage/GigaChat-20B-A3B-base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Motif-Technologies/Motif-2-12.7B-Reasoning",
+  "downloads": 351,
+  "likes": 53,
+  "params": 12703860896,
+  "base": [
+   "Motif-Technologies/Motif-2-12.7B-Base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "skt/ko-gpt-trinity-1.2B-v0.5",
+  "downloads": 1092,
+  "likes": 52,
+  "params": 1187721984,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "unicamp-dl/ptt5-base-portuguese-vocab",
+  "downloads": 930,
+  "likes": 51,
+  "params": 222903936,
+  "base": [],
+  "datasets": [
+   "brWaC"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bigscience/mt0-xxl-mt",
+  "downloads": 190,
+  "likes": 51,
+  "params": 13945516032,
+  "base": [],
+  "datasets": [
+   "bigscience/xP3mt",
+   "mc4"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Locutusque/TinyMistral-248M",
+  "downloads": 787,
+  "likes": 50,
+  "params": 248024064,
+  "base": [],
+  "datasets": [
+   "Skylion007/openwebtext",
+   "JeanKaddour/minipile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "marin-community/marin-32b-base",
+  "downloads": 1230,
+  "likes": 50,
+  "params": 32519640064,
+  "base": [],
+  "datasets": [
+   "allenai/dolmino-mix-1124",
+   "allenai/olmo-mix-1124",
+   "bigcode/starcoderdata",
+   "EleutherAI/proof-pile-2",
+   "hltcoe/megawika",
+   "nvidia/Nemotron-CC",
+   "HuggingFaceTB/finemath",
+   "marin-community/ar5iv-warning-markdown",
+   "marin-community/datashop-science-qa",
+   "marin-community/stackexchange-markdown",
+   "marin-community/wikipedia-markdown",
+   "common-pile/stackv2_edu_filtered",
+   "marin-community/megamath"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/Bolmo-1B",
+  "downloads": 1930,
+  "likes": 50,
+  "params": 1468911776,
+  "base": [
+   "allenai/Bolmo-1B-Stage1"
+  ],
+  "datasets": [
+   "allenai/bolmo_mix"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bigscience/mt0-large",
+  "downloads": 618,
+  "likes": 49,
+  "params": 1229581312,
+  "base": [],
+  "datasets": [
+   "bigscience/xP3",
+   "mc4"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "AdaptLLM/medicine-LLM",
+  "downloads": 256,
+  "likes": 49,
+  "params": 6738425856,
+  "base": [],
+  "datasets": [
+   "Open-Orca/OpenOrca",
+   "GAIR/lima",
+   "WizardLM/WizardLM_evol_instruct_V2_196k",
+   "EleutherAI/pile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "AdaptLLM/finance-LLM-13B",
+  "downloads": 39,
+  "likes": 49,
+  "params": 13015877120,
+  "base": [],
+  "datasets": [
+   "Open-Orca/OpenOrca",
+   "GAIR/lima",
+   "WizardLM/WizardLM_evol_instruct_V2_196k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "MaziyarPanahi/calme-2.4-rys-78b",
+  "downloads": 108,
+  "likes": 48,
+  "params": 77965463552,
+  "base": "MaziyarPanahi/calme-2.1-rys-78b",
+  "datasets": [
+   "MaziyarPanahi/truthy-dpo-v0.1-axolotl",
+   "Intel/orca_dpo_pairs"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "prem-research/prem-1B-SQL",
+  "downloads": 184,
+  "likes": 48,
+  "params": 1346471936,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/TIPO-500M-ft",
+  "downloads": 15896,
+  "likes": 48,
+  "params": 507989760,
+  "base": [],
+  "datasets": [
+   "laion/conceptual-captions-12m-webdataset",
+   "CaptionEmporium/coyo-hd-11m-llavanext",
+   "KBlueLeaf/danbooru2023-metadata-database",
+   "graph-based-captions/GBC10M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "SupraLabs/Supra-50M-Base",
+  "downloads": 990,
+  "likes": 48,
+  "params": 51786240,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "FINAL-Bench/VKORE-46M-NPU",
+  "downloads": 360,
+  "likes": 48,
+  "params": 45756928,
+  "base": [],
+  "datasets": [
+   "roneneldan/TinyStories"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "OuteAI/Lite-Mistral-150M-v2-Instruct",
+  "downloads": 982,
+  "likes": 47,
+  "params": 156519168,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "PatronusAI/glider",
+  "downloads": 222,
+  "likes": 47,
+  "params": 3821079552,
+  "base": [
+   "microsoft/Phi-3.5-mini-instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "trillionlabs/Tri-21B",
+  "downloads": 9,
+  "likes": 47,
+  "params": 20725519360,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceM4/idefics-9b",
+  "downloads": 3514,
+  "likes": 46,
+  "params": 8929682192,
+  "base": [],
+  "datasets": [
+   "HuggingFaceM4/OBELICS",
+   "wikipedia",
+   "facebook/pmd",
+   "laion/laion2B-en"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ise-uiuc/Magicoder-S-CL-7B",
+  "downloads": 175,
+  "likes": 46,
+  "params": 6738415616,
+  "base": [],
+  "datasets": [
+   "ise-uiuc/Magicoder-OSS-Instruct-75K",
+   "ise-uiuc/Magicoder-Evol-Instruct-110K"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "AdaptLLM/law-chat",
+  "downloads": 120,
+  "likes": 46,
+  "params": 6738425856,
+  "base": [],
+  "datasets": [
+   "EleutherAI/pile",
+   "Open-Orca/OpenOrca",
+   "GAIR/lima",
+   "WizardLM/WizardLM_evol_instruct_V2_196k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "StanfordAIMI/CheXagent-8b",
+  "downloads": 943,
+  "likes": 46,
+  "params": 8362401664,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Orbina/Orbita-v0.1",
+  "downloads": 48,
+  "likes": 46,
+  "params": 14167290880,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "failspy/kappa-3-phi-abliterated",
+  "downloads": 46,
+  "likes": 46,
+  "params": 3821079552,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "arcee-ai/Arcee-VyLinh",
+  "downloads": 575,
+  "likes": 46,
+  "params": 3397103616,
+  "base": [
+   "qnguyen3/VyLinh-3B",
+   "Qwen/Qwen2.5-3B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mlabonne/Qwen3-30B-A3B-abliterated",
+  "downloads": 716,
+  "likes": 46,
+  "params": 30532122624,
+  "base": [
+   "Qwen/Qwen3-30B-A3B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "sequelbox/Llama2-70B-StellarBright",
+  "downloads": 49,
+  "likes": 45,
+  "params": 68976648192,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-Chat-v0.4",
+  "downloads": 753,
+  "likes": 45,
+  "params": 1100060672,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata",
+   "OpenAssistant/oasst_top1_2023-08-25"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "numind/NuExtract-tiny",
+  "downloads": 18596,
+  "likes": 45,
+  "params": 463987712,
+  "base": "Qwen/Qwen1.5-0.5B",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "google/txgemma-27b-predict",
+  "downloads": 38,
+  "likes": 45,
+  "params": 27227128320,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Vamsi/T5_Paraphrase_Paws",
+  "downloads": 61582,
+  "likes": 44,
+  "params": 222903936,
+  "base": [
+   "google-t5/t5-base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "stabilityai/stablelm-base-alpha-7b-v2",
+  "downloads": 543,
+  "likes": 44,
+  "params": 6889414656,
+  "base": [],
+  "datasets": [
+   "tiiuae/falcon-refinedweb",
+   "togethercomputer/RedPajama-Data-1T",
+   "CarperAI/pilev2-dev",
+   "bigcode/starcoderdata",
+   "JeanKaddour/minipile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ytu-ce-cosmos/turkish-gpt2-large",
+  "downloads": 758,
+  "likes": 44,
+  "params": 774030080,
+  "base": [],
+  "datasets": [
+   "uonlp/CulturaX"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "PipableAI/pip-library-etl-1.3b",
+  "downloads": 75,
+  "likes": 44,
+  "params": 1346471936,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "gaussalgo/T5-LM-Large-text2sql-spider",
+  "downloads": 732,
+  "likes": 43,
+  "params": 783150080,
+  "base": [],
+  "datasets": [
+   "spider",
+   "spider-Syn"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-Chat-v0.3",
+  "downloads": 2302,
+  "likes": 43,
+  "params": 1100060672,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata",
+   "OpenAssistant/oasst_top1_2023-08-25"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "NousResearch/Nous-Capybara-3B-V1.9",
+  "downloads": 228,
+  "likes": 43,
+  "params": 2795443200,
+  "base": [],
+  "datasets": [
+   "LDJnr/Capybara",
+   "LDJnr/LessWrong-Amplify-Instruct",
+   "LDJnr/Pure-Dove",
+   "LDJnr/Verified-Camel"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/DanTagGen-alpha",
+  "downloads": 6657,
+  "likes": 43,
+  "params": 392754176,
+  "base": [],
+  "datasets": [
+   "KBlueLeaf/danbooru2023-sqlite"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "UnfilteredAI/Promt-generator",
+  "downloads": 115,
+  "likes": 43,
+  "params": 559214592,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/DanTagGen-delta-rev2",
+  "downloads": 26769,
+  "likes": 43,
+  "params": 392754176,
+  "base": [],
+  "datasets": [
+   "KBlueLeaf/danbooru2023-sqlite"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "instruction-pretrain/InstructLM-1.3B",
+  "downloads": 283,
+  "likes": 43,
+  "params": 1347504128,
+  "base": [],
+  "datasets": [
+   "tiiuae/falcon-refinedweb",
+   "instruction-pretrain/ft-instruction-synthesizer-collection",
+   "instruction-pretrain/general-instruction-augmented-corpora"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ngxson/MiniThinky-v2-1B-Llama-3.2",
+  "downloads": 138,
+  "likes": 43,
+  "params": 1235814400,
+  "base": [
+   "meta-llama/Llama-3.2-1B-Instruct"
+  ],
+  "datasets": [
+   "ngxson/MiniThinky-dataset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "manycore-research/SpatialLM1.1-Qwen-0.5B",
+  "downloads": 3095,
+  "likes": 43,
+  "params": 603511168,
+  "base": [
+   "Qwen/Qwen2.5-0.5B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/FlexOlmo-7x7B-1T",
+  "downloads": 3504,
+  "likes": 43,
+  "params": 33270665216,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "trillionlabs/Tri-70B-preview-SFT",
+  "downloads": 167,
+  "likes": 43,
+  "params": 70490791936,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/MagenticBrain",
+  "downloads": 2537,
+  "likes": 43,
+  "params": 14768307200,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "KISTI-KONI/KONI-Llama3-8B-Instruct-20240729",
+  "downloads": 25,
+  "likes": 42,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMoE-1B-7B-0125",
+  "downloads": 6642,
+  "likes": 42,
+  "params": 6919161856,
+  "base": [],
+  "datasets": [
+   "allenai/OLMoE-mix-0924",
+   "allenai/dolmino-mix-1124"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/NextCoder-7B",
+  "downloads": 2405,
+  "likes": 42,
+  "params": 7615616512,
+  "base": [
+   "Qwen/Qwen2.5-Coder-7B-Instruct"
+  ],
+  "datasets": [
+   "microsoft/NextCoderDataset",
+   "microsoft/NextCoderDataset-Conversational",
+   "bigcode/commitpackft",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "AdaptLLM/law-LLM-13B",
+  "downloads": 32,
+  "likes": 41,
+  "params": 13015877120,
+  "base": [],
+  "datasets": [
+   "Open-Orca/OpenOrca",
+   "GAIR/lima",
+   "WizardLM/WizardLM_evol_instruct_V2_196k",
+   "EleutherAI/pile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ytu-ce-cosmos/turkish-gpt2-large-750m-instruct-v0.1",
+  "downloads": 729,
+  "likes": 41,
+  "params": 774031360,
+  "base": "ytu-ce-cosmos/turkish-gpt2-large",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "IFM/K2-Think-V2",
+  "downloads": 2162,
+  "likes": 41,
+  "params": 72550195200,
+  "base": [
+   "LLM360/K2-V2-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LLaMAX/LLaMAX3-8B",
+  "downloads": 50,
+  "likes": 40,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "pfnet/plamo-2-1b",
+  "downloads": 1591,
+  "likes": 40,
+  "params": 1291441920,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "1bitLLM/bitnet_b1_58-xl",
+  "downloads": 192,
+  "likes": 39,
+  "params": 1273584352,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "instruction-pretrain/InstructLM-500M",
+  "downloads": 260,
+  "likes": 39,
+  "params": 567854592,
+  "base": [],
+  "datasets": [
+   "tiiuae/falcon-refinedweb",
+   "instruction-pretrain/ft-instruction-synthesizer-collection",
+   "instruction-pretrain/general-instruction-augmented-corpora"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "haykgrigorian/TimeCapsuleLLM-London-1800-1875-v2mini-eval1-300M",
+  "downloads": 130,
+  "likes": 39,
+  "params": 297575424,
+  "base": [],
+  "datasets": [
+   "haykgrigorian/TimeCapsuleLLM-London-1800-1875-v2-15GB"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "FINAL-Bench/VKORE-325M-NPU-Base",
+  "downloads": 1333,
+  "likes": 39,
+  "params": 325624832,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "pankajmathur/orca_mini_v2_7b",
+  "downloads": 102,
+  "likes": 38,
+  "params": 6738417664,
+  "base": [],
+  "datasets": [
+   "psmathur/orca_minis_uncensored_dataset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "MayaPH/GodziLLa2-70B",
+  "downloads": 71,
+  "likes": 38,
+  "params": 68976648192,
+  "base": [],
+  "datasets": [
+   "mlabonne/guanaco-llama2-1k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ise-uiuc/Magicoder-DS-6.7B",
+  "downloads": 52,
+  "likes": 38,
+  "params": 6740512768,
+  "base": [],
+  "datasets": [
+   "ise-uiuc/Magicoder-OSS-Instruct-75K"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "instruction-pretrain/medicine-Llama3-8B",
+  "downloads": 44,
+  "likes": 38,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [
+   "instruction-pretrain/medicine-instruction-augmented-corpora",
+   "Open-Orca/OpenOrca",
+   "EleutherAI/pile",
+   "GAIR/lima",
+   "WizardLM/WizardLM_evol_instruct_V2_196k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "facebook/MobileLLM-R1-140M",
+  "downloads": 510,
+  "likes": 38,
+  "params": 140248512,
+  "base": [
+   "facebook/MobileLLM-R1-140M-base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "shibing624/mengzi-t5-base-chinese-correction",
+  "downloads": 489,
+  "likes": 37,
+  "params": 247577856,
+  "base": [],
+  "datasets": [
+   "shibing624/CSC"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Narrativaai/BioGPT-Large-finetuned-chatdoctor",
+  "downloads": 144,
+  "likes": 37,
+  "params": 1571188800,
+  "base": [],
+  "datasets": [
+   "LinhDuong/chatdoctor-200k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "JackFram/llama-160m",
+  "downloads": 30935,
+  "likes": 37,
+  "params": 162417792,
+  "base": [],
+  "datasets": [
+   "wikipedia"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ross-dev/sexyGPT-Uncensored",
+  "downloads": 2607,
+  "likes": 37,
+  "params": 124442880,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "sambanovasystems/SambaLingo-Arabic-Base",
+  "downloads": 55,
+  "likes": 37,
+  "params": 6946035712,
+  "base": [],
+  "datasets": [
+   "uonlp/CulturaX"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "shibing624/gpt2-dialogbot-base-chinese",
+  "downloads": 1716,
+  "likes": 36,
+  "params": 82238112,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bigcode/starcoderbase-7b",
+  "downloads": 1353,
+  "likes": 36,
+  "params": 7528589824,
+  "base": [],
+  "datasets": [
+   "bigcode/the-stack-dedup"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "42dot/42dot_LLM-SFT-1.3B",
+  "downloads": 123,
+  "likes": 36,
+  "params": 1439270912,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Equall/Saul-7B-Base",
+  "downloads": 590,
+  "likes": 36,
+  "params": 7241732096,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "WiroAI/wiroai-turkish-llm-9b",
+  "downloads": 35,
+  "likes": 36,
+  "params": 9241705984,
+  "base": [
+   "google/gemma-2-9b"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mlabonne/Qwen3-8B-abliterated",
+  "downloads": 1430,
+  "likes": 36,
+  "params": 8190735360,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "apple/OpenELM-1_1B",
+  "downloads": 961,
+  "likes": 35,
+  "params": 1079891456,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/TIPO-200M-dev",
+  "downloads": 3,
+  "likes": 35,
+  "params": 202557696,
+  "base": [],
+  "datasets": [
+   "laion/conceptual-captions-12m-webdataset",
+   "CaptionEmporium/coyo-hd-11m-llavanext",
+   "KBlueLeaf/danbooru2023-metadata-database",
+   "graph-based-captions/GBC10M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "maldv/Qwentile2.5-32B-Instruct",
+  "downloads": 70,
+  "likes": 35,
+  "params": 32763876352,
+  "base": [
+   "Qwen/Qwen2.5-32B",
+   "AiCloser/Qwen2.5-32B-AGI",
+   "EVA-UNIT-01/EVA-Qwen2.5-32B-v0.2",
+   "fblgit/TheBeagle-v2beta-32B-MGS",
+   "huihui-ai/Qwen2.5-32B-Instruct-abliterated",
+   "huihui-ai/QwQ-32B-Preview-abliterated",
+   "Qwen/QwQ-32B-Preview",
+   "rombodawg/Rombos-LLM-V2.5-Qwen-32b",
+   "nbeerbower/Qwen2.5-Gutenberg-Doppel-32B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "juierror/flan-t5-text2sql-with-schema-v2",
+  "downloads": 166,
+  "likes": 34,
+  "params": 247536384,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "42dot/42dot_LLM-PLM-1.3B",
+  "downloads": 1401,
+  "likes": 34,
+  "params": 1439271680,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "charent/Phi2-Chinese-0.2B",
+  "downloads": 402,
+  "likes": 34,
+  "params": 193651200,
+  "base": [],
+  "datasets": [
+   "BelleGroup/train_1M_CN"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "stabilityai/stablelm-2-1_6b-chat",
+  "downloads": 1109,
+  "likes": 34,
+  "params": 1644515328,
+  "base": [],
+  "datasets": [
+   "HuggingFaceH4/ultrachat_200k",
+   "allenai/ultrafeedback_binarized_cleaned",
+   "meta-math/MetaMathQA",
+   "WizardLM/WizardLM_evol_instruct_V2_196k",
+   "openchat/openchat_sharegpt4_dataset",
+   "LDJnr/Capybara",
+   "Intel/orca_dpo_pairs",
+   "hkust-nlp/deita-10k-v0",
+   "teknium/OpenHermes-2.5"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "wzhouad/gemma-2-9b-it-WPO-HB",
+  "downloads": 31,
+  "likes": 34,
+  "params": 9241705984,
+  "base": "google/gemma-2-9b-it",
+  "datasets": [
+   "wzhouad/gemma-2-ultrafeedback-hybrid"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ibm-granite/granite-4.0-tiny-base-preview",
+  "downloads": 392,
+  "likes": 34,
+  "params": 6673296960,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "marin-community/marin-8b-instruct",
+  "downloads": 975,
+  "likes": 34,
+  "params": 8030261248,
+  "base": [
+   "marin-community/marin-8b-base"
+  ],
+  "datasets": [
+   "TIGER-Lab/AceCode-87K",
+   "bespokelabs/Bespoke-Stratos-17k",
+   "cognitivecomputations/dolphin-r1",
+   "tuenguyen/dolphin_r1_reasoning",
+   "facebook/natural_reasoning",
+   "open-r1/OpenThoughts-114k-math",
+   "HuggingFaceTB/smoltalk"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "uctnlp/mzansilm-125m",
+  "downloads": 1162,
+  "likes": 34,
+  "params": 125008384,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "SupraLabs/SupraElegans-500k",
+  "downloads": 128,
+  "likes": 34,
+  "params": 612391,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "BananaMind/BananaMind-2-Pro",
+  "downloads": 555,
+  "likes": 34,
+  "params": 159943040,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "mlfoundations/dclm-baseline-1.0",
+   "HuggingFaceTB/smollm-corpus",
+   "HuggingFaceTB/finemath"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "BEE-spoke-data/smol_llama-101M-GQA",
+  "downloads": 1405,
+  "likes": 33,
+  "params": 101263104,
+  "base": [],
+  "datasets": [
+   "JeanKaddour/minipile",
+   "pszemraj/simple_wikipedia_LM",
+   "BEE-spoke-data/wikipedia-20230901.en-deduped",
+   "mattymchen/refinedweb-3m"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "venkycs/phi-2-instruct",
+  "downloads": 16,
+  "likes": 33,
+  "params": 2779683840,
+  "base": "microsoft/phi-2",
+  "datasets": [
+   "HuggingFaceH4/ultrachat_200k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Deci/DeciCoder-6B",
+  "downloads": 136,
+  "likes": 33,
+  "params": 5866000384,
+  "base": [],
+  "datasets": [
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Henrychur/MMed-Llama-3-8B",
+  "downloads": 228,
+  "likes": 33,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [
+   "Henrychur/MMedC"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bigscience/mt0-base",
+  "downloads": 867,
+  "likes": 32,
+  "params": 582401280,
+  "base": [],
+  "datasets": [
+   "bigscience/xP3",
+   "mc4"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bigscience/mt0-small",
+  "downloads": 4101,
+  "likes": 32,
+  "params": 300176768,
+  "base": [],
+  "datasets": [
+   "bigscience/xP3",
+   "mc4"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bigscience/mt0-xl",
+  "downloads": 498,
+  "likes": 32,
+  "params": 3742619648,
+  "base": [],
+  "datasets": [
+   "bigscience/xP3",
+   "mc4"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "LLaMAX/LLaMAX3-8B-Alpaca",
+  "downloads": 60,
+  "likes": 32,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Zyphra/Zamba2-1.2B-instruct",
+  "downloads": 6909,
+  "likes": 32,
+  "params": 1215064704,
+  "base": [
+   "Zyphra/Zamba2-1.2B"
+  ],
+  "datasets": [
+   "HuggingFaceH4/ultrachat_200k",
+   "BAAI/Infinity-Instruct",
+   "HuggingFaceH4/ultrafeedback_binarized",
+   "Intel/orca_dpo_pairs",
+   "argilla/OpenHermesPreferences"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "google/txgemma-9b-predict",
+  "downloads": 330,
+  "likes": 32,
+  "params": 9241705984,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bench-labs/cagliostro-v3",
+  "downloads": 209,
+  "likes": 32,
+  "params": 146352000,
+  "base": [],
+  "datasets": [
+   "HuggingFaceTB/smollm-corpus",
+   "mlfoundations/dclm-baseline-1.0",
+   "HuggingFaceTB/finemath",
+   "nvidia/OpenMathInstruct-2",
+   "HuggingFaceTB/smoltalk"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "MinimaLabs/KLM-1.5",
+  "downloads": 1660,
+  "likes": 32,
+  "params": 98975308,
+  "base": [],
+  "datasets": [
+   "nvidia/Nemotron-ClimbMix",
+   "IFM/TxT360-v2",
+   "openbmb/UltraX-Preview",
+   "HuggingFaceTB/smollm-corpus",
+   "HuggingFaceTB/cosmopedia",
+   "mlfoundations/dclm-baseline-1.0",
+   "nvidia/OpenMathInstruct-2",
+   "openbmb/UltraData-Math",
+   "IFM/Math-Reasoning",
+   "allenai/dolma3_dolmino_mix-100B-1025",
+   "IFM/Pretrain-Behaviors"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "mrm8488/bloom-560m-finetuned-sd-prompts",
+  "downloads": 172,
+  "likes": 31,
+  "params": 559214592,
+  "base": [],
+  "datasets": [
+   "Gustavosta/Stable-Diffusion-Prompts"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-955k-token-2T",
+  "downloads": 683,
+  "likes": 31,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "moreh/MoMo-72B-lora-1.8.6-DPO",
+  "downloads": 120,
+  "likes": 31,
+  "params": 72288575488,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "stanford-crfm/music-large-800k",
+  "downloads": 1344,
+  "likes": 31,
+  "params": 780139520,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mims-harvard/TxAgent-T1-Llama-3.1-8B",
+  "downloads": 44,
+  "likes": 31,
+  "params": 8030261248,
+  "base": [
+   "meta-llama/Llama-3.1-8B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "SupraLabs/Supra2-100M-Base",
+  "downloads": 2326,
+  "likes": 31,
+  "params": 100684032,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceFW/dclm_100BT-shuffled"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "fudan-generative-ai/GLM-5.3-Flash-REMORY-1.24B",
+  "downloads": 1603,
+  "likes": 31,
+  "params": 1241576960,
+  "base": "zai-org/GLM-5.3-Flash",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "rinna/gemma-2-baku-2b-it",
+  "downloads": 151,
+  "likes": 30,
+  "params": 2614341888,
+  "base": [
+   "google/gemma-2-2b",
+   "google/gemma-2-2b-it",
+   "rinna/gemma-2-baku-2b"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "shibing624/bart4csc-base-chinese",
+  "downloads": 700,
+  "likes": 29,
+  "params": 116277896,
+  "base": [],
+  "datasets": [
+   "shibing624/CSC"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-480k-1T",
+  "downloads": 202,
+  "likes": 29,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "EleutherAI/pile-t5-xxl",
+  "downloads": 159,
+  "likes": 29,
+  "params": 11135426560,
+  "base": [],
+  "datasets": [
+   "EleutherAI/pile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "dmis-lab/meerkat-7b-v1.0",
+  "downloads": 42,
+  "likes": 29,
+  "params": 7241732096,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-1B-hf",
+  "downloads": 26215,
+  "likes": 29,
+  "params": 1176764416,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ibm-granite/granite-7b-base",
+  "downloads": 788,
+  "likes": 29,
+  "params": 6738415616,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mlfoundations/tabula-8b",
+  "downloads": 97,
+  "likes": 29,
+  "params": 8030277632,
+  "base": [],
+  "datasets": [
+   "jpgard/t4-full"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "inception42/Llama-3.1-Sherkala-8B-Chat",
+  "downloads": 90,
+  "likes": 29,
+  "params": 8288391168,
+  "base": "inceptionai/Llama-3.1-Sherkala-8B-Chat",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "pfnet/plamo-2-8b",
+  "downloads": 1,
+  "likes": 29,
+  "params": 9118372864,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ByteDance-Seed/cudaLLM-8B",
+  "downloads": 195,
+  "likes": 29,
+  "params": 8190735360,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "datasets": [
+   "ByteDance-Seed/cudaLLM-data"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "trillionlabs/Tri-21B-Think",
+  "downloads": 457,
+  "likes": 29,
+  "params": 20725519360,
+  "base": [
+   "trillionlabs/Tri-21B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/Emo_1b14b_1T",
+  "downloads": 736,
+  "likes": 29,
+  "params": 13568641024,
+  "base": [],
+  "datasets": [
+   "allenai/OLMoE-mix-0924"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "LiquidAI/LFM2.5-Encoder-350M-Diffusion",
+  "downloads": 750,
+  "likes": 29,
+  "params": 354483968,
+  "base": [
+   "LiquidAI/LFM2.5-Encoder-350M"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "raincandy-u/MacroStories",
+  "downloads": 432,
+  "likes": 29,
+  "params": 19969,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "abideen/Bitnet-Llama-70M",
+  "downloads": 318,
+  "likes": 28,
+  "params": 77468928,
+  "base": [],
+  "datasets": [
+   "HuggingFaceTB/cosmopedia"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "stabilityai/japanese-stablelm-2-instruct-1_6b",
+  "downloads": 5,
+  "likes": 28,
+  "params": 1644515328,
+  "base": [],
+  "datasets": [
+   "wikipedia",
+   "CulturaX"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "arcee-ai/Llama-Spark",
+  "downloads": 109,
+  "likes": 28,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "soynade-research/Oolel-v0.1",
+  "downloads": 627,
+  "likes": 28,
+  "params": 7615616512,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "voidful/context-only-question-generator",
+  "downloads": 207,
+  "likes": 27,
+  "params": 178074201,
+  "base": [],
+  "datasets": [
+   "unifiedQA"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "stabilityai/stablelm-base-alpha-3b-v2",
+  "downloads": 376,
+  "likes": 27,
+  "params": 2795934720,
+  "base": [],
+  "datasets": [
+   "tiiuae/falcon-refinedweb",
+   "togethercomputer/RedPajama-Data-1T",
+   "CarperAI/pilev2-dev",
+   "bigcode/starcoderdata",
+   "JeanKaddour/minipile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "NucleusAI/nucleus-22B-token-500B",
+  "downloads": 129,
+  "likes": 27,
+  "params": 21827961856,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LongSafari/hyenadna-large-1m-seqlen-hf",
+  "downloads": 2666,
+  "likes": 27,
+  "params": 54556768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Locutusque/TinyMistral-248M-v2.5",
+  "downloads": 171,
+  "likes": 27,
+  "params": 248024064,
+  "base": [],
+  "datasets": [
+   "open-phi/programming_books_llama",
+   "open-phi/textbooks"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bczhou/TinyLLaVA-3.1B",
+  "downloads": 98,
+  "likes": 27,
+  "params": 3186888224,
+  "base": [],
+  "datasets": [
+   "Lin-Chen/ShareGPT4V",
+   "liuhaotian/LLaVA-Pretrain",
+   "liuhaotian/LLaVA-Instruct-150K"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "FreedomIntelligence/Apollo-7B",
+  "downloads": 132,
+  "likes": 27,
+  "params": 8537680896,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Telugu-LLM-Labs/Indic-gemma-2b-finetuned-sft-Navarasa-2.0",
+  "downloads": 188,
+  "likes": 27,
+  "params": 2506172416,
+  "base": "google/gemma-2b",
+  "datasets": [
+   "ravithejads/samvaad-hi-filtered",
+   "Telugu-LLM-Labs/telugu_teknium_GPTeacher_general_instruct_filtered_romanized",
+   "Telugu-LLM-Labs/telugu_alpaca_yahma_cleaned_filtered_romanized",
+   "Telugu-LLM-Labs/sindhi_alpaca_yahma_cleaned_filtered",
+   "Telugu-LLM-Labs/urdu_alpaca_yahma_cleaned_filtered",
+   "Telugu-LLM-Labs/marathi_alpaca_yahma_cleaned_filtered",
+   "Telugu-LLM-Labs/assamese_alpaca_yahma_cleaned_filtered",
+   "Telugu-LLM-Labs/konkani_alpaca_yahma_cleaned_filtered",
+   "Telugu-LLM-Labs/nepali_alpaca_yahma_cleaned_filtered",
+   "abhinand/tamil-alpaca",
+   "Tensoic/airoboros-3.2_kn",
+   "Tensoic/gpt-teacher_kn",
+   "VishnuPJ/Alpaca_Instruct_Malayalam",
+   "Tensoic/Alpaca-Gujarati",
+   "HydraIndicLM/punjabi_alpaca_52K",
+   "HydraIndicLM/bengali_alpaca_dolly_67k",
+   "OdiaGenAI/Odia_Alpaca_instructions_52k",
+   "yahma/alpaca-cleaned"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "apple/OpenELM-450M",
+  "downloads": 723,
+  "likes": 27,
+  "params": 457179136,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nyu-visionx/cambrian-34b",
+  "downloads": 73,
+  "likes": 27,
+  "params": 34764002304,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ibm-granite/granite-3.0-8b-base",
+  "downloads": 2540,
+  "likes": 27,
+  "params": 8170835968,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "trillionlabs/Tri-7B",
+  "downloads": 1432,
+  "likes": 27,
+  "params": 7526944768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "yqi0/petitgpt",
+  "downloads": 159,
+  "likes": 27,
+  "params": 124635456,
+  "base": [],
+  "datasets": [
+   "HuggingFaceTB/smollm-corpus",
+   "HuggingFaceTB/dclm-edu",
+   "HuggingFaceFW/finewiki",
+   "HuggingFaceFW/finephrase",
+   "allenai/dolmino-mix-1124",
+   "common-pile/stackv2_edu_filtered",
+   "HuggingFaceTB/smol-smoltalk"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "vilsonrodrigues/falcon-7b-instruct-sharded",
+  "downloads": 10653,
+  "likes": 26,
+  "params": 6921720704,
+  "base": [],
+  "datasets": [
+   "tiiuae/falcon-refinedweb"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "project-numina/NuminaMath-7B-CoT",
+  "downloads": 341,
+  "likes": 26,
+  "params": 6910365696,
+  "base": "deepseek-ai/deepseek-math-7b-base",
+  "datasets": [
+   "AI-MO/NuminaMath-CoT"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/NextCoder-14B",
+  "downloads": 2055,
+  "likes": 26,
+  "params": 14770033664,
+  "base": [
+   "Qwen/Qwen2.5-Coder-14B-Instruct"
+  ],
+  "datasets": [
+   "microsoft/NextCoderDataset",
+   "microsoft/NextCoderDataset-Conversational",
+   "bigcode/commitpackft",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bharatgenai/AyurParam",
+  "downloads": 561,
+  "likes": 26,
+  "params": 2860673024,
+  "base": [
+   "bharatgenai/Param-1-2.9B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "UniverseTBD/astrollama",
+  "downloads": 77,
+  "likes": 25,
+  "params": 6738417664,
+  "base": [],
+  "datasets": [
+   "universeTBD/arxiv-astro-abstracts-all"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Telugu-LLM-Labs/Indic-gemma-7b-finetuned-sft-Navarasa-2.0",
+  "downloads": 292,
+  "likes": 25,
+  "params": 8537680896,
+  "base": "google/gemma-7b",
+  "datasets": [
+   "ravithejads/samvaad-hi-filtered",
+   "Telugu-LLM-Labs/telugu_teknium_GPTeacher_general_instruct_filtered_romanized",
+   "Telugu-LLM-Labs/telugu_alpaca_yahma_cleaned_filtered_romanized",
+   "Telugu-LLM-Labs/sindhi_alpaca_yahma_cleaned_filtered",
+   "Telugu-LLM-Labs/urdu_alpaca_yahma_cleaned_filtered",
+   "Telugu-LLM-Labs/marathi_alpaca_yahma_cleaned_filtered",
+   "Telugu-LLM-Labs/assamese_alpaca_yahma_cleaned_filtered",
+   "Telugu-LLM-Labs/konkani_alpaca_yahma_cleaned_filtered",
+   "Telugu-LLM-Labs/nepali_alpaca_yahma_cleaned_filtered",
+   "abhinand/tamil-alpaca",
+   "Tensoic/airoboros-3.2_kn",
+   "Tensoic/gpt-teacher_kn",
+   "VishnuPJ/Alpaca_Instruct_Malayalam",
+   "Tensoic/Alpaca-Gujarati",
+   "HydraIndicLM/punjabi_alpaca_52K",
+   "HydraIndicLM/bengali_alpaca_dolly_67k",
+   "OdiaGenAI/Odia_Alpaca_instructions_52k",
+   "yahma/alpaca-cleaned"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ibm-granite/granite-3.0-2b-base",
+  "downloads": 2907,
+  "likes": 25,
+  "params": 2533525504,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "amd/AMD-OLMo-1B",
+  "downloads": 1059,
+  "likes": 25,
+  "params": 1176764416,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceTB/nanowhale-100m-base",
+  "downloads": 2108,
+  "likes": 25,
+  "params": 110369621,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "AdaptLLM/medicine-LLM-13B",
+  "downloads": 41,
+  "likes": 24,
+  "params": 13015877120,
+  "base": [],
+  "datasets": [
+   "Open-Orca/OpenOrca",
+   "GAIR/lima",
+   "WizardLM/WizardLM_evol_instruct_V2_196k",
+   "EleutherAI/pile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ibivibiv/alpaca-dragon-72b-v1",
+  "downloads": 72,
+  "likes": 24,
+  "params": 72288575488,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-1B-0724-hf",
+  "downloads": 4328,
+  "likes": 24,
+  "params": 1279787008,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "lazy-guy12/chess-llama",
+  "downloads": 952,
+  "likes": 24,
+  "params": 23001600,
+  "base": [],
+  "datasets": [
+   "lazy-guy12/checkmate2"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/TIPO-200M-ft2",
+  "downloads": 8451,
+  "likes": 24,
+  "params": 202557696,
+  "base": [],
+  "datasets": [
+   "laion/conceptual-captions-12m-webdataset",
+   "CaptionEmporium/coyo-hd-11m-llavanext",
+   "KBlueLeaf/danbooru2023-metadata-database",
+   "graph-based-captions/GBC10M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Ihor/Text2Graph-R1-Qwen2.5-0.5b",
+  "downloads": 112,
+  "likes": 24,
+  "params": 494032768,
+  "base": [
+   "Qwen/Qwen2.5-0.5B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "dleemiller/Penny-1.7B",
+  "downloads": 97,
+  "likes": 24,
+  "params": 1711376384,
+  "base": [
+   "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "teapotai/tinyteapot",
+  "downloads": 117,
+  "likes": 24,
+  "params": 76961152,
+  "base": [
+   "google/flan-t5-small"
+  ],
+  "datasets": [
+   "teapotai/synthqa",
+   "teapotai/teapot-chat"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "SupraLabs/Supra1.5-50M-Base-exp",
+  "downloads": 85,
+  "likes": 24,
+  "params": 51786240,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bench-labs/cagliostro-v3.5",
+  "downloads": 342,
+  "likes": 24,
+  "params": 146352000,
+  "base": "bench-labs/cagliostro-v3",
+  "datasets": [
+   "HuggingFaceTB/smollm-corpus",
+   "mlfoundations/dclm-baseline-1.0",
+   "HuggingFaceTB/finemath",
+   "nvidia/OpenMathInstruct-2",
+   "HuggingFaceTB/smoltalk",
+   "HuggingFaceTB/cosmopedia"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "HiTZ/Medical-mT5-large",
+  "downloads": 224,
+  "likes": 23,
+  "params": 1229581312,
+  "base": "google/mt5-large",
+  "datasets": [
+   "HiTZ/Multilingual-Medical-Corpus"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ibm-research/PowerMoE-3b",
+  "downloads": 55350,
+  "likes": 23,
+  "params": 3374286336,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "amd/AMD-OLMo-1B-SFT-DPO",
+  "downloads": 178,
+  "likes": 23,
+  "params": 1176764416,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ValiantLabs/Qwen3-8B-Esper3",
+  "downloads": 46,
+  "likes": 23,
+  "params": 8190735360,
+  "base": "Qwen/Qwen3-8B",
+  "datasets": [
+   "sequelbox/Titanium2.1-DeepSeek-R1",
+   "sequelbox/Tachibana2-DeepSeek-R1",
+   "sequelbox/Raiden-DeepSeek-R1"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Motif-Technologies/Motif-2.6b-v1.1-LC",
+  "downloads": 150,
+  "likes": 23,
+  "params": 2597218432,
+  "base": [
+   "Motif-Technologies/Motif-2.6B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "facebook/MobileLLM-R1-360M",
+  "downloads": 60543,
+  "likes": 23,
+  "params": 359431168,
+  "base": [
+   "facebook/MobileLLM-R1-360M-base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "facebook/MobileLLM-R1-140M-base",
+  "downloads": 151,
+  "likes": 23,
+  "params": 140248512,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "SupraLabs/Supra2-Nano",
+  "downloads": 428,
+  "likes": 23,
+  "params": 799776,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "semran1/cosmopedia-v2-subset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "BananaMind/BananaMind-2-Pro-Preview",
+  "downloads": 76,
+  "likes": 23,
+  "params": 159943040,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "mlfoundations/dclm-baseline-1.0",
+   "HuggingFaceTB/smollm-corpus",
+   "HuggingFaceTB/finemath"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "MinimaLabs/min-spark-1.1",
+  "downloads": 130,
+  "likes": 23,
+  "params": 5758572,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "KRAFTON/Raon-1-mini-preview-dflash2",
+  "downloads": 1337,
+  "likes": 23,
+  "params": 677776640,
+  "base": "KRAFTON/Raon-1-mini-preview",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "EleutherAI/pythia-1.4b-deduped",
+  "downloads": 22436,
+  "likes": 22,
+  "params": 1414647808,
+  "base": [],
+  "datasets": [
+   "EleutherAI/the_pile_deduplicated"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "georgesung/open_llama_7b_qlora_uncensored",
+  "downloads": 42,
+  "likes": 22,
+  "params": 6738417664,
+  "base": "OpenLLaMA-7B",
+  "datasets": [
+   "georgesung/wizard_vicuna_70k_unfiltered"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Yukang/Llama-2-13b-chat-longlora-32k-sft",
+  "downloads": 80,
+  "likes": 22,
+  "params": 13015877120,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "stabilityai/japanese-stablelm-instruct-alpha-7b-v2",
+  "downloads": 443,
+  "likes": 22,
+  "params": 7013139456,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "musiclang/musiclang-4k",
+  "downloads": 177,
+  "likes": 22,
+  "params": 21039200,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "QuixiAI/yayi2-30b-llama",
+  "downloads": 53,
+  "likes": 22,
+  "params": 30403340800,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-7B-Twin-2T",
+  "downloads": 516,
+  "likes": 22,
+  "params": 6888095744,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "georgesung/llama3_8b_chat_uncensored",
+  "downloads": 1761,
+  "likes": 22,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [
+   "georgesung/wizard_vicuna_70k_unfiltered"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "aeonium/Aeonium-v0-Base-1B",
+  "downloads": 610,
+  "likes": 22,
+  "params": 1637443584,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "squeeze-ai-lab/TinyAgent-1.1B",
+  "downloads": 68,
+  "likes": 22,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "FractalAIResearch/Fathom-Synthesizer-4B",
+  "downloads": 30,
+  "likes": 22,
+  "params": 4022468096,
+  "base": [
+   "Qwen/Qwen3-4B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "AxiomicLabs/GPT-S2-5M",
+  "downloads": 120,
+  "likes": 22,
+  "params": 5384256,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "User01110/CMA-8M",
+  "downloads": 123,
+  "likes": 22,
+  "params": 9077961,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb_edu_100BT-shuffled",
+   "HuggingFaceTB/smollm-corpus",
+   "epfml/FineWeb-HQ",
+   "HuggingFaceTB/finemath"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "SupraLabs/Supra2-Medium-Instruct",
+  "downloads": 1139,
+  "likes": 22,
+  "params": 25383296,
+  "base": [
+   "SupraLabs/Supra2-Medium-Base"
+  ],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "SupraLabs/SupraNeo-4M",
+  "downloads": 852,
+  "likes": 22,
+  "params": 4070240,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "mlfoundations/dclm-baseline-1.0"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "NbAiLab/nb-gpt-j-6B",
+  "downloads": 4,
+  "likes": 21,
+  "params": 6055077088,
+  "base": [],
+  "datasets": [
+   "NbAiLab/NCC",
+   "mc4",
+   "oscar"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-240k-503b",
+  "downloads": 191,
+  "likes": 21,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ise-uiuc/Magicoder-CL-7B",
+  "downloads": 37,
+  "likes": 21,
+  "params": 6738415616,
+  "base": [],
+  "datasets": [
+   "ise-uiuc/Magicoder-OSS-Instruct-75K"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "seedboxai/KafkaLM-70B-German-V0.1",
+  "downloads": 50,
+  "likes": 21,
+  "params": 68976648192,
+  "base": [],
+  "datasets": [
+   "seedboxai/multitask_german_examples_32k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "tarikkaankoc7/Llama-3-8B-TKK-Elite-V1.0",
+  "downloads": 14,
+  "likes": 21,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LingoIITGN/ganga-1b",
+  "downloads": 881,
+  "likes": 21,
+  "params": 995362816,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "inception42/jais-adapted-70b",
+  "downloads": 189,
+  "likes": 21,
+  "params": 69500936192,
+  "base": "meta-llama/Llama-2-70b",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ibm-research/PowerLM-3b",
+  "downloads": 2216,
+  "likes": 21,
+  "params": 3512017152,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "amd/AMD-OLMo-1B-SFT",
+  "downloads": 942,
+  "likes": 21,
+  "params": 1176764416,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "nvidia/Llama-3.1-Nemotron-8B-UltraLong-2M-Instruct",
+  "downloads": 2322,
+  "likes": 21,
+  "params": 8036552704,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "authormist/authormist-originality",
+  "downloads": 1365,
+  "likes": 21,
+  "params": 3085938688,
+  "base": "Qwen/Qwen2.5-3B-Instruct",
+  "datasets": [
+   "checkgpt"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "mshojaei77/gemma-3-4b-persian-v0",
+  "downloads": 1136,
+  "likes": 21,
+  "params": 4300079472,
+  "base": [
+   "google/gemma-3-4b-it"
+  ],
+  "datasets": [
+   "mshojaei77/Persian_sft"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Sunbird/translate-nllb-3.3b-salt",
+  "downloads": 7,
+  "likes": 21,
+  "params": 3344863232,
+  "base": "facebook/nllb-200-3.3B",
+  "datasets": [
+   "generator"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "slovak-nlp/Qwen3-14B-sk",
+  "downloads": 381,
+  "likes": 21,
+  "params": 14768307200,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "EssentialAI/rnj-1.5-instruct",
+  "downloads": 1707,
+  "likes": 21,
+  "params": 8310501376,
+  "base": [
+   "EssentialAI/rnj-1"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "FWKV/Myosotis-1-base",
+  "downloads": 373,
+  "likes": 21,
+  "params": 101860800,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "aurora-m/aurora-m-biden-harris-redteamed",
+  "downloads": 0,
+  "likes": 20,
+  "params": 15479707648,
+  "base": "bigcode/starcoderplus",
+  "datasets": [
+   "bigcode/the-stack-dedup",
+   "JeanKaddour/minipile",
+   "OpenAssistant/oasst1",
+   "bigscience/xP3",
+   "gorilla-llm/APIBench",
+   "laion/Anh",
+   "sander-wood/wikimusictext",
+   "tanmaylaud/scidcc-instructions",
+   "laion/OIG",
+   "maykcaldas/smiles-transformers",
+   "rvv-karma/English-Hinglish-TOP",
+   "timdettmers/openassistant-guanaco",
+   "HKBU-NLP/Code-Evol-Instruct-OSS",
+   "BEE-spoke-data/code_contests_instruct",
+   "HuggingFaceH4/ultrachat_200k",
+   "nvidia/HelpSteer",
+   "allenai/tulu-v2-sft-mixture",
+   "meta-math/MetaMathQA",
+   "meta-math/GSM8K_Backward",
+   "NeuroDragon/BuggedPythonLeetCode",
+   "nampdn-ai/tiny-bridgedict",
+   "allenai/lila",
+   "Muennighoff/natural-instructions",
+   "aurora-m/biden-harris-redteam"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Felladrin/Llama-160M-Chat-v1",
+  "downloads": 15852,
+  "likes": 20,
+  "params": 162417408,
+  "base": "JackFram/llama-160m",
+  "datasets": [
+   "ehartford/wizard_vicuna_70k_unfiltered",
+   "totally-not-an-llm/EverythingLM-data-V3",
+   "Open-Orca/SlimOrca-Dedup",
+   "databricks/databricks-dolly-15k",
+   "THUDM/webglm-qa"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "EleutherAI/pile-t5-base",
+  "downloads": 196,
+  "likes": 20,
+  "params": 247586304,
+  "base": [],
+  "datasets": [
+   "EleutherAI/pile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "M4-ai/tau-0.5B",
+  "downloads": 95,
+  "likes": 20,
+  "params": 463987712,
+  "base": [],
+  "datasets": [
+   "Locutusque/UltraTextbooks-2.0"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "sapienzanlp/modello-italia-9b",
+  "downloads": 2056,
+  "likes": 20,
+  "params": 8537420800,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "pfnet/plamo-100b",
+  "downloads": 156,
+  "likes": 20,
+  "params": 102243756544,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/TIPO-200M-ft",
+  "downloads": 660,
+  "likes": 20,
+  "params": 202557696,
+  "base": [],
+  "datasets": [
+   "laion/conceptual-captions-12m-webdataset",
+   "CaptionEmporium/coyo-hd-11m-llavanext",
+   "KBlueLeaf/danbooru2023-metadata-database",
+   "graph-based-captions/GBC10M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "RWKV-Red-Team/ARWKV-7B-Preview-0.1",
+  "downloads": 99,
+  "likes": 20,
+  "params": 8291057152,
+  "base": [
+   "Qwen/Qwen2.5-7B-Instruct",
+   "BlinkDL/rwkv-7-world"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "soob3123/Veiled-Calla-12B",
+  "downloads": 83,
+  "likes": 20,
+  "params": 12187325040,
+  "base": [
+   "google/gemma-3-12b-it"
+  ],
+  "datasets": [
+   "soob3123/rp_dataset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "mlabonne/Qwen3-4B-abliterated",
+  "downloads": 1047,
+  "likes": 20,
+  "params": 4022468096,
+  "base": [
+   "Qwen/Qwen3-4B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "manycore-research/SpatialLM1.1-Llama-1B",
+  "downloads": 3358,
+  "likes": 20,
+  "params": 1345883776,
+  "base": [
+   "meta-llama/Llama-3.2-1B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "facebook/MobileLLM-R1-950M-base",
+  "downloads": 53,
+  "likes": 20,
+  "params": 949685760,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "codelion/gpt-2-70m",
+  "downloads": 890,
+  "likes": 20,
+  "params": 64085504,
+  "base": [],
+  "datasets": [
+   "codelion/finepdfs-1B",
+   "codelion/dclm-baseline-1B",
+   "codelion/fineweb-edu-1B"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "cmpatino/nanowhale-100m",
+  "downloads": 171,
+  "likes": 20,
+  "params": 110369621,
+  "base": "cmpatino/nanowhale-100m-base",
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceTB/smol-smoltalk"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bench-labs/cagliostro-v1",
+  "downloads": 623,
+  "likes": 20,
+  "params": 157411200,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bertin-project/bertin-gpt-j-6B",
+  "downloads": 257,
+  "likes": 19,
+  "params": 6055077088,
+  "base": [
+   "EleutherAI/gpt-j-6b"
+  ],
+  "datasets": [
+   "bertin-project/mc4-es-sampled"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Langboat/bloom-1b4-zh",
+  "downloads": 1189,
+  "likes": 19,
+  "params": 1397616640,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "BAAI/Aquila2-34B",
+  "downloads": 426,
+  "likes": 19,
+  "params": 34233796608,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "MBZUAI/MobiLlama-1B",
+  "downloads": 135,
+  "likes": 19,
+  "params": 1261529792,
+  "base": [],
+  "datasets": [
+   "LLM360/AmberDatasets"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Felladrin/Minueza-32M-Base",
+  "downloads": 1179,
+  "likes": 19,
+  "params": 32792760,
+  "base": [],
+  "datasets": [
+   "Skylion007/openwebtext",
+   "c4",
+   "wikimedia/wikipedia",
+   "tiiuae/falcon-refinedweb",
+   "izumi-lab/open-text-books",
+   "togethercomputer/RedPajama-Data-V2",
+   "databricks/databricks-dolly-15k",
+   "euclaise/reddit-instruct-curated",
+   "CohereForAI/aya_dataset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "cloudyu/mistral_pretrain_demo",
+  "downloads": 376,
+  "likes": 19,
+  "params": 1439795200,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nyu-visionx/cambrian-13b",
+  "downloads": 76,
+  "likes": 19,
+  "params": 13350085632,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Vikhrmodels/Vikhr-Gemma-2B-instruct",
+  "downloads": 289,
+  "likes": 19,
+  "params": 2614341888,
+  "base": [
+   "google/gemma-2-2b-it"
+  ],
+  "datasets": [
+   "Vikhrmodels/GrandMaster-PRO-MAX"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "marin-community/marin-8b-base",
+  "downloads": 2379,
+  "likes": 19,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [
+   "allenai/dolmino-mix-1124",
+   "allenai/olmo-mix-1124",
+   "bigcode/starcoderdata",
+   "EleutherAI/proof-pile-2",
+   "hltcoe/megawika",
+   "mlfoundations/dclm-baseline-1.0",
+   "HuggingFaceTB/finemath",
+   "marin-community/ar5iv-noproblem-markdown",
+   "marin-community/ar5iv-warning-markdown",
+   "marin-community/datashop-science-qa",
+   "marin-community/stackexchange-markdown",
+   "marin-community/wikipedia-markdown"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "SupraLabs/SupraBrain-50M",
+  "downloads": 167,
+  "likes": 19,
+  "params": 49927006,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "BananaMind/BananaMind-2.1-Unified",
+  "downloads": 95,
+  "likes": 19,
+  "params": 34999041,
+  "base": [],
+  "datasets": [
+   "epfml/FineWeb-HQ",
+   "mlfoundations/dclm-baseline-1.0",
+   "HuggingFaceTB/smollm-corpus",
+   "HuggingFaceTB/finemath"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "opencerebral/Boris-1.7-D60M-n30M",
+  "downloads": 145,
+  "likes": 19,
+  "params": 116134108,
+  "base": [],
+  "datasets": [
+   "openbmb/Ultra-FineWeb",
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceTB/cosmopedia-v2"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "pankajmathur/orca_mini_7b",
+  "downloads": 73,
+  "likes": 18,
+  "params": 6738417664,
+  "base": [],
+  "datasets": [
+   "psmathur/alpaca_orca",
+   "psmathur/dolly-v2_orca",
+   "psmathur/WizardLM_Orca"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ibivibiv/giant-hydra-moe-240b",
+  "downloads": 96,
+  "likes": 18,
+  "params": 238093606912,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "eryk-mazus/polka-1.1b-chat",
+  "downloads": 2418,
+  "likes": 18,
+  "params": 1148807168,
+  "base": [],
+  "datasets": [
+   "eryk-mazus/polka-dpo-v1"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "state-spaces/mamba-370m-hf",
+  "downloads": 2998,
+  "likes": 18,
+  "params": 371516416,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "TheFinAI/finma-7b-full",
+  "downloads": 22,
+  "likes": 18,
+  "params": 6738417664,
+  "base": [],
+  "datasets": [
+   "chancefocus/pixiu",
+   "ChanceFocus/FLUPE"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "BeaverLegacy/cream-phi-2-v0.2",
+  "downloads": 138,
+  "likes": 18,
+  "params": 2779683840,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ai-sage/GigaChat-20B-A3B-base",
+  "downloads": 133,
+  "likes": 18,
+  "params": 20589299712,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "kuleshov-group/bd3lm-owt-block_size16",
+  "downloads": 174,
+  "likes": 18,
+  "params": 169627250,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Nikity/lille-130m-base",
+  "downloads": 79,
+  "likes": 18,
+  "params": 127236768,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "mkurman/NeuroBLAST-V3-SYNTH-EC-150000",
+  "downloads": 70,
+  "likes": 18,
+  "params": 596728320,
+  "base": [],
+  "datasets": [
+   "PleIAs/SYNTH"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "BananaMind/BananaMind-2-Medium",
+  "downloads": 874,
+  "likes": 18,
+  "params": 55851008,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "mlfoundations/dclm-baseline-1.0",
+   "HuggingFaceTB/smollm-corpus",
+   "HuggingFaceTB/finemath"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "techdotus/Ethoric-10M",
+  "downloads": 1151,
+  "likes": 18,
+  "params": 9965664,
+  "base": [],
+  "datasets": [
+   "agentlans/high-quality-english-sentences",
+   "armanc/ScienceQA",
+   "AxiomicLabs/FactBase-DCLM",
+   "HuggingFaceFW/finephrase",
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceTB/cosmopedia",
+   "HuggingFaceTB/finemath",
+   "HuggingFaceTB/smollm-corpus",
+   "IFM/Pretrain-Behaviors",
+   "IFM/TxT360-v2",
+   "microsoft/orca-math-word-problems-200k",
+   "nampdn-ai/tiny-strange-textbooks",
+   "nvidia/OpenMathInstruct-2",
+   "openbmb/UltraData-Math",
+   "sentence-transformers/eli5",
+   "sentence-transformers/gooaq",
+   "sentence-transformers/natural-questions"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "LorenzoDeMattei/GePpeTto",
+  "downloads": 2790,
+  "likes": 17,
+  "params": 121465344,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "VMware/flan-ul2-alpaca-lora",
+  "downloads": 126,
+  "likes": 17,
+  "params": 19722806272,
+  "base": [],
+  "datasets": [
+   "tatsu-lab/alpaca"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "EleutherAI/pile-t5-large",
+  "downloads": 177,
+  "likes": 17,
+  "params": 783173632,
+  "base": [],
+  "datasets": [
+   "EleutherAI/pile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "sequelbox/Llama2-70B-SunsetBoulevard",
+  "downloads": 39,
+  "likes": 17,
+  "params": 68976648192,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "google/madlad400-8b-lm",
+  "downloads": 583,
+  "likes": 17,
+  "params": 8634105856,
+  "base": [],
+  "datasets": [
+   "allenai/MADLAD-400"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "amgadhasan/phi-2",
+  "downloads": 97,
+  "likes": 17,
+  "params": 2779683840,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Locutusque/TinyMistral-248M-v2",
+  "downloads": 477,
+  "likes": 17,
+  "params": 248024064,
+  "base": [],
+  "datasets": [
+   "Skylion007/openwebtext",
+   "Locutusque/TM-DATA"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "M4-ai/TinyMistral-6x248M",
+  "downloads": 674,
+  "likes": 17,
+  "params": 1003072512,
+  "base": [
+   "Locutusque/TinyMistral-248M-v2",
+   "Locutusque/TinyMistral-248M-v2.5",
+   "Locutusque/TinyMistral-248M-v2.5-Instruct",
+   "jtatman/tinymistral-v2-pycoder-instruct-248m",
+   "Felladrin/TinyMistral-248M-SFT-v4",
+   "Locutusque/TinyMistral-248M-v2-Instruct"
+  ],
+  "datasets": [
+   "nampdn-ai/mini-peS2o"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "state-spaces/mamba-1.4b-hf",
+  "downloads": 3695,
+  "likes": 17,
+  "params": 1372178432,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/rho-math-1b-v0.1",
+  "downloads": 257,
+  "likes": 17,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-7B-hf",
+  "downloads": 4398,
+  "likes": 17,
+  "params": 6888095744,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "StanfordAIMI/CheXagent-2-3b",
+  "downloads": 3439,
+  "likes": 17,
+  "params": 3140746752,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-7B-0724-hf",
+  "downloads": 2563,
+  "likes": 17,
+  "params": 6888095744,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ValiantLabs/Llama3.1-8B-ShiningValiant2",
+  "downloads": 112,
+  "likes": 17,
+  "params": 8030261248,
+  "base": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "datasets": [
+   "sequelbox/Celestia",
+   "sequelbox/Spurline",
+   "sequelbox/Supernova"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "zake7749/gemma-2-2b-it-chinese-kyara-dpo",
+  "downloads": 278,
+  "likes": 17,
+  "params": 2614341888,
+  "base": [
+   "google/gemma-2-2b-it"
+  ],
+  "datasets": [
+   "zake7749/kyara-chinese-math-sft-s0-30K",
+   "zake7749/kyara-chinese-preference-rl-dpo-s0-30K",
+   "zake7749/chinese-sft-stem-zh-hant",
+   "zake7749/chinese-sft-stem-zh-hans"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Psychotherapy-LLM/PsyCoPref-Llama3-8B",
+  "downloads": 376,
+  "likes": 17,
+  "params": 8030261248,
+  "base": [
+   "meta-llama/Llama-3.1-8B-Instruct"
+  ],
+  "datasets": [
+   "Psychotherapy-LLM/PsychoCounsel-Preference"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "veyra-ai/Veyra2-Apricot-50M-Base",
+  "downloads": 271,
+  "likes": 17,
+  "params": 49303040,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "cenkersisman/gpt2-turkish-900m",
+  "downloads": 356,
+  "likes": 16,
+  "params": 124439808,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-Chat-v0.2",
+  "downloads": 82,
+  "likes": 16,
+  "params": 1100060672,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata",
+   "OpenAssistant/oasst_top1_2023-08-25"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Jiayi-Pan/Tiny-Vicuna-1B",
+  "downloads": 163,
+  "likes": 16,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "DopeorNope/SOLARC-MOE-10.7Bx6",
+  "downloads": 133,
+  "likes": 16,
+  "params": 53011288064,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "llm-blender/PairRM-hf",
+  "downloads": 2024,
+  "likes": 16,
+  "params": 436014081,
+  "base": [],
+  "datasets": [
+   "openai/summarize_from_feedback",
+   "openai/webgpt_comparisons",
+   "Dahoas/instruct-synthetic-prompt-responses",
+   "Anthropic/hh-rlhf",
+   "lmsys/chatbot_arena_conversations",
+   "openbmb/UltraFeedback"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "broskicodes/simple-stories-4M",
+  "downloads": 124,
+  "likes": 16,
+  "params": 13814784,
+  "base": [],
+  "datasets": [
+   "roneneldan/TinyStories"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ytu-ce-cosmos/turkish-gpt2",
+  "downloads": 1144,
+  "likes": 16,
+  "params": 124439808,
+  "base": [],
+  "datasets": [
+   "uonlp/CulturaX"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "BUT-FIT/csmpt7b",
+  "downloads": 843,
+  "likes": 16,
+  "params": 6704869376,
+  "base": [],
+  "datasets": [
+   "BUT-FIT/BUT-LCC",
+   "BUT-FIT/adult_content_classifier_dataset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "euclaise/ReMask-3B",
+  "downloads": 141,
+  "likes": 16,
+  "params": 2795443200,
+  "base": [],
+  "datasets": [
+   "euclaise/TinyCoT",
+   "euclaise/reddit-instruct-curated",
+   "sablo/oasst2_curated"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Ankur87/Llama2_Time_series_forecasting_7.0",
+  "downloads": 142,
+  "likes": 16,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "glaiveai/Llama-3-8B-RAG-v1",
+  "downloads": 80,
+  "likes": 16,
+  "params": 8030277632,
+  "base": [],
+  "datasets": [
+   "glaiveai/RAG-v1"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "nakamoto-yama/t5-resume-generation",
+  "downloads": 76,
+  "likes": 16,
+  "params": 222903552,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "inception42/jais-family-30b-16k-chat",
+  "downloads": 12,
+  "likes": 16,
+  "params": 30817712120,
+  "base": "inceptionai/jais-family-30b-16k",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "anthracite-org/magnum-v3-27b-kto",
+  "downloads": 80,
+  "likes": 16,
+  "params": 27227128320,
+  "base": [
+   "anthracite-forge/magnum-v3-27b-kto-r3",
+   "anthracite-forge/magnum-v3-27b-KTO-e1-r2",
+   "anthracite-forge/magnum-v3-27b-KTO-e0.25-r1",
+   "IntervitensInc/gemma-2-27b-chatml"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mlabonne/Qwen3-0.6B-abliterated",
+  "downloads": 936,
+  "likes": 16,
+  "params": 596049920,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Salesforce/xRouter",
+  "downloads": 1532,
+  "likes": 16,
+  "params": 7615616512,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nikhilchandak/OpenForecaster-8B",
+  "downloads": 224,
+  "likes": 16,
+  "params": 8190735360,
+  "base": "Qwen/Qwen3-8B",
+  "datasets": [
+   "nikhilchandak/OpenForesight"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "UniversalComputingResearch/Atom2.7m",
+  "downloads": 107,
+  "likes": 16,
+  "params": 2738880,
+  "base": [],
+  "datasets": [
+   "openbmb/Ultra-FineWeb",
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceTB/finemath",
+   "HuggingFaceTB/smollm-corpus"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "GODELEV/Rose-Mini",
+  "downloads": 131,
+  "likes": 16,
+  "params": 49443072,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "MinimaLabs/min-spark",
+  "downloads": 136,
+  "likes": 16,
+  "params": 5758572,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceTB/finemath"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "BananaMind/BananaMind-2-Micro",
+  "downloads": 1042,
+  "likes": 16,
+  "params": 3195328,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "mlfoundations/dclm-baseline-1.0",
+   "HuggingFaceTB/smollm-corpus",
+   "HuggingFaceFW/finephrase",
+   "HuggingFaceTB/finemath",
+   "AxiomicLabs/NPset-2-Python-Edu"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "BananaMind/Overfitter-1.0",
+  "downloads": 483,
+  "likes": 16,
+  "params": 49889792,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "SurjoLabs/Surjo-100m",
+  "downloads": 153,
+  "likes": 16,
+  "params": 97735596,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Gensyn/open-1b-sft",
+  "downloads": 137,
+  "likes": 16,
+  "params": 1608011776,
+  "base": "Gensyn/open-1b-midtrained-93B",
+  "datasets": [
+   "allenai/tulu-3-sft-olmo-2-mixture-0225"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ForgeWorks/ForgePlex-M2-9M",
+  "downloads": 208,
+  "likes": 16,
+  "params": 9949696,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "techdotus/Tokle-3M",
+  "downloads": 673,
+  "likes": 16,
+  "params": 2908944,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceTB/cosmopedia",
+   "agentlans/high-quality-english-sentences",
+   "nampdn-ai/tiny-strange-textbooks",
+   "armanc/ScienceQA",
+   "nvidia/OpenMathInstruct-2",
+   "microsoft/orca-math-word-problems-200k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "BananaMind/BananaMind-2.5-Pro",
+  "downloads": 1097,
+  "likes": 16,
+  "params": 138971520,
+  "base": "BananaMind/BananaMind-2-Pro",
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "mlfoundations/dclm-baseline-1.0",
+   "HuggingFaceTB/smollm-corpus",
+   "HuggingFaceTB/finemath"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "sdadas/byt5-text-correction",
+  "downloads": 224,
+  "likes": 15,
+  "params": 299637760,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "RajuKandasamy/tamillama_tiny_30m",
+  "downloads": 82,
+  "likes": 15,
+  "params": 30245376,
+  "base": [],
+  "datasets": [
+   "roneneldan/TinyStoriesInstruct"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "hakurei/mommygpt-3B",
+  "downloads": 72,
+  "likes": 15,
+  "params": 3426492800,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "cyberagent/calm2-7b-chat-dpo-experimental",
+  "downloads": 65,
+  "likes": 15,
+  "params": 7008948224,
+  "base": "cyberagent/calm2-7b-chat",
+  "datasets": [
+   "cyberagent/chatbot-arena-ja-calm2-7b-chat-experimental"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "SparseLLM/prosparse-llama-2-7b",
+  "downloads": 217,
+  "likes": 15,
+  "params": 6738415616,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "rhaymison/phi-3-portuguese-tom-cat-4k-instruct",
+  "downloads": 68,
+  "likes": 15,
+  "params": 3821079552,
+  "base": "microsoft/Phi-3-mini-4k-instruct",
+  "datasets": [
+   "rhaymison/superset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "yam-peleg/Hebrew-Mistral-7B-200K",
+  "downloads": 45,
+  "likes": 15,
+  "params": 7503884288,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Ankur87/Llama2_Time_series_forecasting_2.0",
+  "downloads": 72,
+  "likes": 15,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Ankur87/Llama2_Time_series_forecasting_5.0",
+  "downloads": 181,
+  "likes": 15,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ }
+]

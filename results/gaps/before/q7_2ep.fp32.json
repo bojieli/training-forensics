@@ -1,0 +1,42 @@
+{
+ "run": "q7_2ep",
+ "release": "fp32",
+ "tokens": {
+  "seen": 14326,
+  "moved": 14326,
+  "tp": 14326,
+  "fp": 0,
+  "fn": 0
+ },
+ "recipe_true": {
+  "kind": "linear",
+  "N": 500,
+  "warmup": 0,
+  "peak": 1e-05,
+  "wd": 0.0
+ },
+ "recipe_read": {
+  "kind": "constant",
+  "N": 445,
+  "warmup": 70,
+  "peak": 7.303630638649816e-06,
+  "peak_snap": 7.303630638649816e-06,
+  "wd": 0.0,
+  "wd_snap": 0.0,
+  "min_ratio": 0.0
+ },
+ "recipe_ok": {
+  "kind": false,
+  "N": false,
+  "warmup": false,
+  "peak_rel_err": -0.2696369361350185,
+  "peak_snap_ok": false,
+  "wd_rel_err": 0.0,
+  "steps": false,
+  "lr_max_rel_dev_snapped": null,
+  "lr_max_rel_dev_raw": null,
+  "schedule_exact": false
+ },
+ "replay_refine": null,
+ "t_recipe": 23.94385600090027
+}

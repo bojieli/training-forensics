@@ -1,0 +1,1147 @@
+{
+ "key": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B@ -> nvidia/AceReason-Nemotron-7B",
+ "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+ "child": "nvidia/AceReason-Nemotron-7B",
+ "P": 1.0,
+ "P_exact_frac": 0.890625,
+ "dtype": "BF16",
+ "rows": 152064,
+ "dim": 3584,
+ "r0": 0,
+ "recomputed": {
+  "moved": 95888,
+  "near": 42680,
+  "unmoved": 13496
+ },
+ "sweep_agrees": true,
+ "tokenizer": "nvidia/AceReason-Nemotron-7B",
+ "frac_changed_hist": {
+  "0": 13496,
+  "(0,1%]": 42680,
+  "(1%,10%]": 32792,
+  "(10%,50%]": 54493,
+  "(50%,90%]": 5865,
+  "(90%,100%]": 2738
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 2194,
+  "copied": 0,
+  "low_cos": 178
+ },
+ "init_std": 1.1754943508222875e-37,
+ "init_std_source": "size of 13 invalid-UTF-8 byte tokens (0 of 1,000 common tokens also match)",
+ "parent_at_init": 2350,
+ "status": "ok",
+ "categories": {
+  "added/special": {
+   "moved": 8,
+   "rewritten": 9,
+   "near": 4,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 3
+  },
+  "all": {
+   "moved": 93538,
+   "rewritten": 29,
+   "near": 42680,
+   "unmoved": 13496,
+   "unmoved_at_init": 0,
+   "moved_at_init": 5
+  },
+  "byte-fragment": {
+   "moved": 666,
+   "rewritten": 12,
+   "near": 617,
+   "unmoved": 149,
+   "unmoved_at_init": 0,
+   "moved_at_init": 2
+  },
+  "code": {
+   "moved": 1944,
+   "rewritten": 0,
+   "near": 923,
+   "unmoved": 268,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "code-FIM": {
+   "moved": 2,
+   "rewritten": 4,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 2
+  },
+  "code:indent": {
+   "moved": 212,
+   "rewritten": 0,
+   "near": 165,
+   "unmoved": 52,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 26,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "emoji": {
+   "moved": 178,
+   "rewritten": 0,
+   "near": 1036,
+   "unmoved": 100,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "math": {
+   "moved": 52,
+   "rewritten": 0,
+   "near": 1,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "multimodal": {
+   "moved": 1,
+   "rewritten": 3,
+   "near": 3,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 1
+  },
+  "other": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "other-special": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 1,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "punct/symbol": {
+   "moved": 2589,
+   "rewritten": 0,
+   "near": 1292,
+   "unmoved": 317,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "reasoning-tag": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:ARABIC": {
+   "moved": 714,
+   "rewritten": 0,
+   "near": 2504,
+   "unmoved": 685,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:ARMENIAN": {
+   "moved": 16,
+   "rewritten": 0,
+   "near": 35,
+   "unmoved": 22,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:BENGALI": {
+   "moved": 13,
+   "rewritten": 0,
+   "near": 14,
+   "unmoved": 11,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CJK": {
+   "moved": 14264,
+   "rewritten": 0,
+   "near": 8067,
+   "unmoved": 3255,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CYRILLIC": {
+   "moved": 1762,
+   "rewritten": 0,
+   "near": 1698,
+   "unmoved": 682,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:DEVANAGARI": {
+   "moved": 27,
+   "rewritten": 0,
+   "near": 21,
+   "unmoved": 7,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:ETHIOPIC": {
+   "moved": 10,
+   "rewritten": 0,
+   "near": 91,
+   "unmoved": 11,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GEORGIAN": {
+   "moved": 15,
+   "rewritten": 0,
+   "near": 16,
+   "unmoved": 5,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GREEK": {
+   "moved": 94,
+   "rewritten": 0,
+   "near": 107,
+   "unmoved": 21,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GUJARATI": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 10,
+   "unmoved": 3,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GURMUKHI": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 6,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HANGUL": {
+   "moved": 772,
+   "rewritten": 0,
+   "near": 2254,
+   "unmoved": 541,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HEBREW": {
+   "moved": 397,
+   "rewritten": 1,
+   "near": 2209,
+   "unmoved": 547,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HIRAGANA": {
+   "moved": 1057,
+   "rewritten": 0,
+   "near": 87,
+   "unmoved": 28,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:KANNADA": {
+   "moved": 16,
+   "rewritten": 0,
+   "near": 9,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:KATAKANA": {
+   "moved": 431,
+   "rewritten": 0,
+   "near": 111,
+   "unmoved": 28,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:KHMER": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 23,
+   "unmoved": 8,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:LAO": {
+   "moved": 7,
+   "rewritten": 0,
+   "near": 21,
+   "unmoved": 5,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:LATIN": {
+   "moved": 68159,
+   "rewritten": 7,
+   "near": 19961,
+   "unmoved": 6452,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:MALAYALAM": {
+   "moved": 2,
+   "rewritten": 0,
+   "near": 19,
+   "unmoved": 10,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:MYANMAR": {
+   "moved": 9,
+   "rewritten": 0,
+   "near": 23,
+   "unmoved": 4,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:OTHER": {
+   "moved": 244,
+   "rewritten": 0,
+   "near": 766,
+   "unmoved": 95,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:SINHALA": {
+   "moved": 4,
+   "rewritten": 0,
+   "near": 19,
+   "unmoved": 2,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:TAMIL": {
+   "moved": 6,
+   "rewritten": 0,
+   "near": 12,
+   "unmoved": 7,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:TELUGU": {
+   "moved": 7,
+   "rewritten": 0,
+   "near": 4,
+   "unmoved": 3,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:THAI": {
+   "moved": 181,
+   "rewritten": 0,
+   "near": 598,
+   "unmoved": 192,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:TIBETAN": {
+   "moved": 3,
+   "rewritten": 0,
+   "near": 17,
+   "unmoved": 4,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "tool-call": {
+   "moved": 0,
+   "rewritten": 2,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "whitespace": {
+   "moved": 9,
+   "rewritten": 0,
+   "near": 2,
+   "unmoved": 1,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "unreachable": {
+  "all": {
+   "moved": 122,
+   "rewritten": 1800,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 122
+  },
+  "byte-fragment": {
+   "moved": 0,
+   "rewritten": 13,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "digits": {
+   "moved": 0,
+   "rewritten": 2,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "punct/symbol": {
+   "moved": 0,
+   "rewritten": 4,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:ARABIC": {
+   "moved": 4,
+   "rewritten": 71,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 4
+  },
+  "script:BENGALI": {
+   "moved": 0,
+   "rewritten": 1,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:CJK": {
+   "moved": 19,
+   "rewritten": 176,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 19
+  },
+  "script:DEVANAGARI": {
+   "moved": 0,
+   "rewritten": 1,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:GREEK": {
+   "moved": 0,
+   "rewritten": 10,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:HEBREW": {
+   "moved": 5,
+   "rewritten": 20,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 5
+  },
+  "script:LATIN": {
+   "moved": 2,
+   "rewritten": 12,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 2
+  },
+  "script:OTHER": {
+   "moved": 0,
+   "rewritten": 3,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  },
+  "script:THAI": {
+   "moved": 92,
+   "rewritten": 1486,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 92
+  },
+  "script:TIBETAN": {
+   "moved": 0,
+   "rewritten": 1,
+   "near": 0,
+   "unmoved": 0,
+   "unmoved_at_init": 0,
+   "moved_at_init": 0
+  }
+ },
+ "freq_rank_buckets": {
+  "0-1000": {
+   "moved": 946,
+   "rewritten": 0,
+   "near": 35,
+   "unmoved": 19,
+   "unmoved_at_init": 0
+  },
+  "1000-10000": {
+   "moved": 8488,
+   "rewritten": 0,
+   "near": 339,
+   "unmoved": 173,
+   "unmoved_at_init": 0
+  },
+  "10000-50000": {
+   "moved": 32252,
+   "rewritten": 0,
+   "near": 5755,
+   "unmoved": 1993,
+   "unmoved_at_init": 0
+  },
+  "50000-end": {
+   "moved": 51844,
+   "rewritten": 20,
+   "near": 36547,
+   "unmoved": 11310,
+   "unmoved_at_init": 0
+  }
+ },
+ "added_tokens": [
+  {
+   "id": 151643,
+   "content": "<｜end▁of▁sentence｜>",
+   "special": true,
+   "state": "unmoved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 151644,
+   "content": "<｜User｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9604,
+   "cos": 0.9993,
+   "norm_ratio": 1.0011,
+   "flags": []
+  },
+  {
+   "id": 151645,
+   "content": "<｜Assistant｜>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9364,
+   "cos": 0.9996,
+   "norm_ratio": 1.001,
+   "flags": []
+  },
+  {
+   "id": 151646,
+   "content": "<｜begin▁of▁sentence｜>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9169,
+   "cos": 0.9998,
+   "norm_ratio": 1.0001,
+   "flags": []
+  },
+  {
+   "id": 151647,
+   "content": "<|EOT|>",
+   "special": false,
+   "state": "near",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0022,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 151648,
+   "content": "<think>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9517,
+   "cos": 0.9994,
+   "norm_ratio": 1.0006,
+   "flags": []
+  },
+  {
+   "id": 151649,
+   "content": "</think>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": false,
+   "frac_changed": 0.9174,
+   "cos": 0.9997,
+   "norm_ratio": 1.0008,
+   "flags": []
+  },
+  {
+   "id": 151650,
+   "content": "<|quad_start|>",
+   "special": true,
+   "state": "rewritten",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 1.0,
+   "norm_ratio": 0.5,
+   "flags": [
+    "rescaled"
+   ]
+  },
+  {
+   "id": 151651,
+   "content": "<|quad_end|>",
+   "special": true,
+   "state": "rewritten",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 1.0,
+   "norm_ratio": 0.5,
+   "flags": [
+    "rescaled"
+   ]
+  },
+  {
+   "id": 151652,
+   "content": "<|vision_start|>",
+   "special": true,
+   "state": "near",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0031,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 151653,
+   "content": "<|vision_end|>",
+   "special": true,
+   "state": "near",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0011,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 151654,
+   "content": "<|vision_pad|>",
+   "special": true,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 0.0105,
+   "norm_ratio": 2.9253201427507434e+31,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151655,
+   "content": "<|image_pad|>",
+   "special": true,
+   "state": "near",
+   "at_init_in_parent": false,
+   "frac_changed": 0.0011,
+   "cos": 1.0,
+   "norm_ratio": 1.0,
+   "flags": []
+  },
+  {
+   "id": 151656,
+   "content": "<|video_pad|>",
+   "special": true,
+   "state": "rewritten",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 1.0,
+   "norm_ratio": 0.5,
+   "flags": [
+    "rescaled"
+   ]
+  },
+  {
+   "id": 151657,
+   "content": "<tool_call>",
+   "special": false,
+   "state": "rewritten",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 1.0,
+   "norm_ratio": 0.5,
+   "flags": [
+    "rescaled"
+   ]
+  },
+  {
+   "id": 151658,
+   "content": "</tool_call>",
+   "special": false,
+   "state": "rewritten",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 1.0,
+   "norm_ratio": 0.5,
+   "flags": [
+    "rescaled"
+   ]
+  },
+  {
+   "id": 151659,
+   "content": "<|fim_prefix|>",
+   "special": false,
+   "state": "rewritten",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 1.0,
+   "norm_ratio": 0.5,
+   "flags": [
+    "rescaled"
+   ]
+  },
+  {
+   "id": 151660,
+   "content": "<|fim_middle|>",
+   "special": false,
+   "state": "rewritten",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 1.0,
+   "norm_ratio": 0.5,
+   "flags": [
+    "rescaled"
+   ]
+  },
+  {
+   "id": 151661,
+   "content": "<|fim_suffix|>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 0.0355,
+   "norm_ratio": 5.267983622392928e+31,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151662,
+   "content": "<|fim_pad|>",
+   "special": false,
+   "state": "moved",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 0.0382,
+   "norm_ratio": 2.861768201583789e+31,
+   "flags": [
+    "low_cos"
+   ]
+  },
+  {
+   "id": 151663,
+   "content": "<|repo_name|>",
+   "special": false,
+   "state": "rewritten",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 1.0,
+   "norm_ratio": 0.5,
+   "flags": [
+    "rescaled"
+   ]
+  },
+  {
+   "id": 151664,
+   "content": "<|file_sep|>",
+   "special": false,
+   "state": "rewritten",
+   "at_init_in_parent": true,
+   "frac_changed": 1.0,
+   "cos": 1.0,
+   "norm_ratio": 0.5,
+   "flags": [
+    "rescaled"
+   ]
+  }
+ ],
+ "unmoved_samples": {
+  "byte-fragment": [
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "�",
+   "а�"
+  ],
+  "punct/symbol": [
+   "\u0005",
+   "\u0007",
+   "\u000f",
+   "\u0011",
+   "\u0014",
+   "\u0017",
+   "************************************************************************",
+   "?>\n",
+   " ?></",
+   ")\r\n\r\n",
+   " ©",
+   "(\r\n"
+  ],
+  "whitespace": [
+   "\u001d"
+  ],
+  "code": [
+   " {\r\n",
+   "();\r\n",
+   "{\r\n",
+   "\tprivate",
+   "\");\r\n",
+   " */\r\n",
+   " <!--",
+   "\";\r\n",
+   "()\r\n",
+   "\tconst",
+   "typedef",
+   "*/\n\n"
+  ],
+  "script:LATIN": [
+   "assword",
+   "Controller",
+   "etails",
+   " Americ",
+   "\tprivate",
+   ".Size",
+   "#endif",
+   ".println",
+   " json",
+   " Copyright",
+   " appro",
+   "imary"
+  ],
+  "code:indent": [
+   "\t\t\t\t\t\t\t\t",
+   "\t ",
+   "\t\t\t\t\t\t\t\t\t",
+   "\t\t   ",
+   "\t\t\t\t\n",
+   "\r\n\r\n\r\n",
+   "\t    ",
+   "\t\t\t\r\n",
+   "\t\t\t ",
+   " \t\t",
+   "\t           ",
+   "        \t"
+  ],
+  "script:ARABIC": [
+   " ال",
+   "ق",
+   "ار",
+   " د",
+   " ش",
+   " الم",
+   " ر",
+   "ض",
+   " س",
+   " أ",
+   "ید",
+   "غ"
+  ],
+  "script:HANGUL": [
+   "로",
+   "기",
+   "서",
+   "정",
+   "시",
+   " 사",
+   "면",
+   "으",
+   "해",
+   " 가",
+   "요",
+   " 정"
+  ],
+  "script:THAI": [
+   "ก",
+   "ด",
+   "แ",
+   "ผ",
+   "อย",
+   "าน",
+   "ษ",
+   "่ว",
+   "หน",
+   "เก",
+   "่าง",
+   "เล"
+  ],
+  "emoji": [
+   " 🙂",
+   "★★",
+   "♡",
+   "💕",
+   "➡",
+   "✿",
+   "💪",
+   "🌸",
+   "✌",
+   "😎",
+   "😱",
+   "😜"
+  ],
+  "script:CYRILLIC": [
+   "ольз",
+   "орм",
+   "ользов",
+   "озд",
+   " вс",
+   "вед",
+   "обав",
+   "тор",
+   "ользоват",
+   "шиб",
+   "сл",
+   "етод"
+  ],
+  "script:CJK": [
+   "页面",
+   "笑",
+   "用户名",
+   "下载",
+   "首页",
+   " 默认",
+   " 控",
+   "亿元",
+   "办",
+   "媒",
+   "贫",
+   "趣"
+  ],
+  "script:HEBREW": [
+   "ה",
+   "ל",
+   " ה",
+   "ים",
+   "צ",
+   "ם",
+   "ול",
+   "יר",
+   "ית",
+   " כ",
+   "בר",
+   " ח"
+  ],
+  "script:DEVANAGARI": [
+   "क",
+   "ट",
+   "श",
+   "भ",
+   "थ",
+   "ख",
+   "ई"
+  ],
+  "script:BENGALI": [
+   "র",
+   "ব",
+   "ল",
+   "ম",
+   "স",
+   "ক",
+   "ট",
+   "ধ",
+   "দ",
+   "হ",
+   "ঙ"
+  ],
+  "script:HIRAGANA": [
+   "ありがとう",
+   "の方",
+   "もちろ",
+   "んですけど",
+   "だと思います",
+   "みたいな",
+   "いただき",
+   "わけです",
+   "やっぱ",
+   "すごく",
+   "わけで",
+   "かもしれませんが"
+  ],
+  "script:KATAKANA": [
+   "プリ",
+   "セン",
+   "メリ",
+   "ッシ",
+   "スポ",
+   "アップ",
+   "ブログ",
+   "ファン",
+   "イメージ",
+   "メリット",
+   "ショップ",
+   "ビジネス"
+  ],
+  "script:OTHER": [
+   "Ｍ",
+   "ﾞ",
+   "Ｌ",
+   "ａ",
+   "ﾄ",
+   "ｽ",
+   "ｇ",
+   "ｎ",
+   "ｂ",
+   "ｷ",
+   "ｙ",
+   "ｴ"
+  ],
+  "script:GREEK": [
+   "ὶ",
+   "ῶ",
+   "ἰ",
+   "ἔ",
+   "ὴ",
+   "Ἀ",
+   "ἱ",
+   "Ά",
+   "ΐ",
+   "ϒ",
+   "Ϋ",
+   "Ό"
+  ],
+  "script:ARMENIAN": [
+   "ե",
+   "յ",
+   "ւ",
+   "լ",
+   "կ",
+   "Ա",
+   "վ",
+   "ց",
+   "գ",
+   "ջ",
+   "Ն",
+   "ղ"
+  ],
+  "script:GEORGIAN": [
+   "უ",
+   "ქ",
+   "ტ",
+   "ჩ",
+   "ჯ"
+  ],
+  "script:LAO": [
+   "ນ",
+   "ບ",
+   "ປ",
+   "ຖ",
+   "ຂ"
+  ],
+  "script:KHMER": [
+   "រ",
+   "ម",
+   "ត",
+   "ញ",
+   "ជ",
+   "ភ",
+   "ល",
+   "ឡ"
+  ],
+  "script:MALAYALAM": [
+   "മ",
+   "ള",
+   "ത",
+   "റ",
+   "ര",
+   "ന",
+   "ധ",
+   "ഗ",
+   "ഫ",
+   "ഹ"
+  ],
+  "script:TAMIL": [
+   "க",
+   "ல",
+   "ற",
+   "வ",
+   "ன",
+   "எ",
+   "ய"
+  ],
+  "script:MYANMAR": [
+   "အ",
+   "ခ",
+   "ထ",
+   "ဏ"
+  ],
+  "script:TIBETAN": [
+   "ར",
+   "བ",
+   "ཧ",
+   "ཅ"
+  ],
+  "script:TELUGU": [
+   "ల",
+   "ర",
+   "క"
+  ],
+  "script:SINHALA": [
+   "ක",
+   "ව"
+  ],
+  "script:ETHIOPIC": [
+   "ል",
+   "ብ",
+   "ገ",
+   "ዓ",
+   "ከ",
+   "ሻ",
+   "እ",
+   "ቆ",
+   "ሞ",
+   "ቅ",
+   "ዩ"
+  ],
+  "script:GUJARATI": [
+   "ક",
+   "હ",
+   "વ"
+  ],
+  "script:GURMUKHI": [
+   "ਮ"
+  ]
+ },
+ "secs": 23.9
+}

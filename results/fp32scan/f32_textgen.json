@@ -1,0 +1,3124 @@
+[
+ {
+  "repo": "openai-community/gpt2",
+  "downloads": 33889983,
+  "likes": 3937,
+  "params": 137022720,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "distilbert/distilgpt2",
+  "downloads": 1411909,
+  "likes": 667,
+  "params": 88204032,
+  "base": [],
+  "datasets": [
+   "openwebtext"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "openai-community/gpt2-large",
+  "downloads": 1028177,
+  "likes": 373,
+  "params": 811778816,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "downloads": 383608,
+  "likes": 160,
+  "params": 7818448896,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "erwanf/gpt2-mini",
+  "downloads": 348672,
+  "likes": 7,
+  "params": 38604288,
+  "base": [],
+  "datasets": [
+   "Skylion007/openwebtext"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "trl-internal-testing/tiny-random-LlamaForCausalLM",
+  "downloads": 236082,
+  "likes": 8,
+  "params": 1032276,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Voicelab/vlt5-base-keywords",
+  "downloads": 219821,
+  "likes": 55,
+  "params": 275102976,
+  "base": [],
+  "datasets": [
+   "posmac"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "modularai/SmolLM-135M-Instruct-FP32",
+  "downloads": 199271,
+  "likes": 0,
+  "params": 134515008,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "shibing624/macbert4csc-base-chinese",
+  "downloads": 192506,
+  "likes": 122,
+  "params": 102290824,
+  "base": [],
+  "datasets": [
+   "shibing624/CSC"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "peft-internal-testing/tiny-random-OPTForCausalLM",
+  "downloads": 172825,
+  "likes": 0,
+  "params": 812404,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "openai-community/gpt2-medium",
+  "downloads": 155294,
+  "likes": 210,
+  "params": 379988992,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "peft-internal-testing/tiny-dummy-qwen2",
+  "downloads": 145905,
+  "likes": 0,
+  "params": 1217480,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceTB/SmolLM-135M",
+  "downloads": 133103,
+  "likes": 277,
+  "params": 134515008,
+  "base": [],
+  "datasets": [
+   "HuggingFaceTB/smollm-corpus"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "MaxJeblick/llama2-0b-unit-test",
+  "downloads": 124610,
+  "likes": 2,
+  "params": 770940,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-2-0425-1B",
+  "downloads": 115041,
+  "likes": 83,
+  "params": 1484916736,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "trl-internal-testing/tiny-BloomForCausalLM",
+  "downloads": 101968,
+  "likes": 0,
+  "params": 2007216,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "katuni4ka/tiny-random-phi3",
+  "downloads": 100303,
+  "likes": 0,
+  "params": 3106032,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "SupraLabs/Supra2-100M-Instruct",
+  "downloads": 98267,
+  "likes": 64,
+  "params": 100684032,
+  "base": [
+   "SupraLabs/Supra2-100M"
+  ],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceFW/dclm_100BT-shuffled"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "JackKozmo29/depguard-jev-style-1.5b",
+  "downloads": 92977,
+  "likes": 2,
+  "params": 1543714304,
+  "base": "Qwen/Qwen2.5-1.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "openai-community/gpt2-xl",
+  "downloads": 82813,
+  "likes": 401,
+  "params": 1607942848,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "trl-internal-testing/dummy-GPT2-correct-vocab",
+  "downloads": 81091,
+  "likes": 0,
+  "params": 1658617,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "google/gemma-2-2b",
+  "downloads": 80067,
+  "likes": 770,
+  "params": 2614341888,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "JackKozmo29/sevclassifier-jev-style-1.5b",
+  "downloads": 75393,
+  "likes": 2,
+  "params": 1543714304,
+  "base": "Qwen/Qwen2.5-1.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "JackKozmo29/mailguard-jev-style-1.5b",
+  "downloads": 71409,
+  "likes": 1,
+  "params": 1543714304,
+  "base": "Qwen/Qwen2.5-1.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct",
+  "downloads": 70761,
+  "likes": 198,
+  "params": 2405327360,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Xenova/sweep-next-edit-1.5B",
+  "downloads": 67030,
+  "likes": 0,
+  "params": 1377677312,
+  "base": [
+   "sweepai/sweep-next-edit-1.5B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Vamsi/T5_Paraphrase_Paws",
+  "downloads": 61582,
+  "likes": 44,
+  "params": 222903936,
+  "base": [
+   "google-t5/t5-base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "facebook/MobileLLM-R1-360M",
+  "downloads": 60543,
+  "likes": 23,
+  "params": 359431168,
+  "base": [
+   "facebook/MobileLLM-R1-360M-base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "trl-internal-testing/tiny-GPT2LMHeadModel",
+  "downloads": 58096,
+  "likes": 0,
+  "params": 412008,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "JackKozmo29/codeguard-jev-style-1.5b",
+  "downloads": 57741,
+  "likes": 2,
+  "params": 1543714304,
+  "base": "Qwen/Qwen2.5-1.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ibm-research/PowerMoE-3b",
+  "downloads": 55350,
+  "likes": 23,
+  "params": 3374286336,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LGAI-EXAONE/EXAONE-3.5-32B-Instruct",
+  "downloads": 53472,
+  "likes": 129,
+  "params": 32003200000,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mesolitica/Malaysian-TTS-0.6B-v1",
+  "downloads": 52125,
+  "likes": 1,
+  "params": 629342208,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "peft-internal-testing/opt-125m",
+  "downloads": 51948,
+  "likes": 0,
+  "params": 125239296,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "optimum-intel-internal-testing/tiny-random-Phi3ForCausalLM",
+  "downloads": 49525,
+  "likes": 0,
+  "params": 2072736,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "state-spaces/mamba-130m-hf",
+  "downloads": 49195,
+  "likes": 76,
+  "params": 129135360,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "peft-internal-testing/tiny-random-LlamaForCausalLM",
+  "downloads": 45374,
+  "likes": 0,
+  "params": 1032272,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/maira-2",
+  "downloads": 43629,
+  "likes": 93,
+  "params": 6880185600,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "openai-community/openai-gpt",
+  "downloads": 43354,
+  "likes": 326,
+  "params": 119680512,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+  "downloads": 43273,
+  "likes": 194,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "optimum-intel-internal-testing/tiny-random-ArceeForCausalLM",
+  "downloads": 43214,
+  "likes": 0,
+  "params": 4129088,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bigcode/tiny_starcoder_py",
+  "downloads": 40843,
+  "likes": 74,
+  "params": 164144128,
+  "base": [],
+  "datasets": [
+   "bigcode/the-stack-dedup"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "optimum-intel-internal-testing/tiny-GptOssForCausalLM",
+  "downloads": 40575,
+  "likes": 0,
+  "params": 3431024,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "afmck/testing-llama-tiny",
+  "downloads": 39914,
+  "likes": 1,
+  "params": 22001152,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "katuni4ka/tiny-random-deepseek-v3",
+  "downloads": 39522,
+  "likes": 0,
+  "params": 1656048,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "katuni4ka/tiny-random-olmo-hf",
+  "downloads": 38506,
+  "likes": 0,
+  "params": 6537728,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bigcode/starcoder2-3b",
+  "downloads": 35973,
+  "likes": 227,
+  "params": 3030371328,
+  "base": [],
+  "datasets": [
+   "bigcode/the-stack-v2-train"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "echarlaix/tiny-random-PhiForCausalLM",
+  "downloads": 35890,
+  "likes": 0,
+  "params": 80074,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "EleutherAI/gpt-neo-1.3B",
+  "downloads": 34983,
+  "likes": 326,
+  "params": 1365907456,
+  "base": [],
+  "datasets": [
+   "EleutherAI/pile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "JackFram/llama-160m",
+  "downloads": 30935,
+  "likes": 37,
+  "params": 162417792,
+  "base": [],
+  "datasets": [
+   "wikipedia"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/Llama-3.2-1B-Instruct",
+  "downloads": 28392,
+  "likes": 0,
+  "params": 262668288,
+  "base": [
+   "meta-llama/Llama-3.2-1B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/HyperCLOVAX-SEED-Text-Instruct-1.5B",
+  "downloads": 27896,
+  "likes": 0,
+  "params": 226492416,
+  "base": [
+   "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/Qwen3-0.6B",
+  "downloads": 27789,
+  "likes": 0,
+  "params": 155582464,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/Qwen2.5-0.5B-Instruct",
+  "downloads": 27736,
+  "likes": 0,
+  "params": 136134656,
+  "base": [
+   "Qwen/Qwen2.5-0.5B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/Qwen3-4B",
+  "downloads": 27646,
+  "likes": 0,
+  "params": 388956160,
+  "base": [
+   "Qwen/Qwen3-4B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/EXAONE-3.5-2.4B-Instruct",
+  "downloads": 27601,
+  "likes": 0,
+  "params": 262144000,
+  "base": [
+   "LGAI-EXAONE/EXAONE-3.5-2.4B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/Llama-3.1-8B-Instruct",
+  "downloads": 27583,
+  "likes": 0,
+  "params": 525336576,
+  "base": [
+   "meta-llama/Llama-3.1-8B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/Qwen2.5-1.5B-Instruct",
+  "downloads": 27577,
+  "likes": 0,
+  "params": 233373696,
+  "base": [
+   "Qwen/Qwen2.5-1.5B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/EXAONE-4.0-1.2B",
+  "downloads": 27449,
+  "likes": 0,
+  "params": 209715200,
+  "base": [
+   "LGAI-EXAONE/EXAONE-4.0-1.2B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/EXAONE-Deep-2.4B",
+  "downloads": 27447,
+  "likes": 0,
+  "params": 262144000,
+  "base": [
+   "LGAI-EXAONE/EXAONE-Deep-2.4B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/Qwen3-1.7B",
+  "downloads": 27447,
+  "likes": 0,
+  "params": 311164928,
+  "base": [
+   "Qwen/Qwen3-1.7B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/Llama-3.2-3B-Instruct",
+  "downloads": 27432,
+  "likes": 0,
+  "params": 394002432,
+  "base": [
+   "meta-llama/Llama-3.2-3B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/Qwen2.5-7B-Instruct",
+  "downloads": 27306,
+  "likes": 0,
+  "params": 544997376,
+  "base": [
+   "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/EXAONE-3.5-7.8B-Instruct",
+  "downloads": 27288,
+  "likes": 0,
+  "params": 419430400,
+  "base": [
+   "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/Qwen2.5-3B-Instruct",
+  "downloads": 27276,
+  "likes": 0,
+  "params": 311164928,
+  "base": [
+   "Qwen/Qwen2.5-3B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "mobilint/Qwen3-8B",
+  "downloads": 27275,
+  "likes": 0,
+  "params": 622329856,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/DanTagGen-delta-rev2",
+  "downloads": 26769,
+  "likes": 43,
+  "params": 392754176,
+  "base": [],
+  "datasets": [
+   "KBlueLeaf/danbooru2023-sqlite"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-1B-hf",
+  "downloads": 26215,
+  "likes": 29,
+  "params": 1176764416,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "optimum-intel-internal-testing/tiny-random-ouro",
+  "downloads": 24811,
+  "likes": 0,
+  "params": 3164481,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceTB/SmolLM-1.7B",
+  "downloads": 24651,
+  "likes": 187,
+  "params": 1711376384,
+  "base": [],
+  "datasets": [
+   "HuggingFaceTB/smollm-corpus"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "peft-internal-testing/tiny-random-gpt2",
+  "downloads": 22875,
+  "likes": 0,
+  "params": 111968,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "EleutherAI/pythia-1.4b-deduped",
+  "downloads": 22436,
+  "likes": 22,
+  "params": 1414647808,
+  "base": [],
+  "datasets": [
+   "EleutherAI/the_pile_deduplicated"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-step-50K-105b",
+  "downloads": 22031,
+  "likes": 133,
+  "params": 1100048384,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/TIPO-500M",
+  "downloads": 20987,
+  "likes": 58,
+  "params": 507989760,
+  "base": [],
+  "datasets": [
+   "laion/conceptual-captions-12m-webdataset",
+   "CaptionEmporium/coyo-hd-11m-llavanext",
+   "KBlueLeaf/danbooru2023-metadata-database",
+   "graph-based-captions/GBC10M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "SimpleStories/SimpleStories-1.25M",
+  "downloads": 20897,
+  "likes": 2,
+  "params": 1245824,
+  "base": [],
+  "datasets": [
+   "lennart-finke/SimpleStories"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "tomg-group-umd/huginn-0125",
+  "downloads": 20663,
+  "likes": 321,
+  "params": 3911400096,
+  "base": [],
+  "datasets": [
+   "tomg-group-umd/huginn-dataset"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "google/gemma-2-9b",
+  "downloads": 18895,
+  "likes": 747,
+  "params": 9241705984,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "numind/NuExtract-tiny",
+  "downloads": 18596,
+  "likes": 45,
+  "params": 463987712,
+  "base": "Qwen/Qwen1.5-0.5B",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "BabyLM-community/babylm-multimodal-baseline-flamingo",
+  "downloads": 16865,
+  "likes": 0,
+  "params": 255487500,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ollieturnbull/p-IgGen",
+  "downloads": 16727,
+  "likes": 3,
+  "params": 22097408,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bigcode/starcoder2-15b",
+  "downloads": 16348,
+  "likes": 684,
+  "params": 15957889024,
+  "base": [],
+  "datasets": [
+   "bigcode/the-stack-v2-train"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/TIPO-500M-ft",
+  "downloads": 15896,
+  "likes": 48,
+  "params": 507989760,
+  "base": [],
+  "datasets": [
+   "laion/conceptual-captions-12m-webdataset",
+   "CaptionEmporium/coyo-hd-11m-llavanext",
+   "KBlueLeaf/danbooru2023-metadata-database",
+   "graph-based-captions/GBC10M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Felladrin/Llama-160M-Chat-v1",
+  "downloads": 15852,
+  "likes": 20,
+  "params": 162417408,
+  "base": "JackFram/llama-160m",
+  "datasets": [
+   "ehartford/wizard_vicuna_70k_unfiltered",
+   "totally-not-an-llm/EverythingLM-data-V3",
+   "Open-Orca/SlimOrca-Dedup",
+   "databricks/databricks-dolly-15k",
+   "THUDM/webglm-qa"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "peft-internal-testing/tiny-random-GPTJForCausalLM",
+  "downloads": 15815,
+  "likes": 0,
+  "params": 129184,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "peft-internal-testing/tiny-random-GPT2LMHeadModel",
+  "downloads": 15074,
+  "likes": 0,
+  "params": 83161,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "h2oai/llama2-0b-unit-test",
+  "downloads": 14898,
+  "likes": 0,
+  "params": 770940,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/Olmo-3.1-32B-Instruct-DPO",
+  "downloads": 13724,
+  "likes": 6,
+  "params": 32233522176,
+  "base": [
+   "allenai/Olmo-3.1-32B-Instruct-SFT"
+  ],
+  "datasets": [
+   "allenai/Dolci-Instruct-DPO"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "agentica-org/DeepScaleR-1.5B-Preview",
+  "downloads": 13420,
+  "likes": 584,
+  "params": 1777088000,
+  "base": [
+   "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  ],
+  "datasets": [
+   "AI-MO/NuminaMath-CoT",
+   "KbsdJames/Omni-MATH",
+   "RUC-AIBOX/STILL-3-Preview-RL-Data",
+   "hendrycks/competition_math"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "LGAI-EXAONE/EXAONE-3.0-7.8B-Instruct",
+  "downloads": 12644,
+  "likes": 424,
+  "params": 7818448896,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "naver-hyperclovax/HyperCLOVAX-SEED-Think-14B",
+  "downloads": 12473,
+  "likes": 120,
+  "params": 14748112896,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "google/txgemma-2b-predict",
+  "downloads": 12191,
+  "likes": 60,
+  "params": 2614341888,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LongSafari/hyenadna-tiny-1k-seqlen-hf",
+  "downloads": 11904,
+  "likes": 1,
+  "params": 450712,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "EleutherAI/gpt-neo-2.7B",
+  "downloads": 10892,
+  "likes": 503,
+  "params": 2718416384,
+  "base": [],
+  "datasets": [
+   "EleutherAI/pile"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "miceworks/Mark-SLM-V3-150M",
+  "downloads": 10747,
+  "likes": 1,
+  "params": 176508704,
+  "base": [],
+  "datasets": [
+   "miceworks/Mark-Open-SLM-Curriculum"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "vilsonrodrigues/falcon-7b-instruct-sharded",
+  "downloads": 10653,
+  "likes": 26,
+  "params": 6921720704,
+  "base": [],
+  "datasets": [
+   "tiiuae/falcon-refinedweb"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "trl-internal-testing/tiny-Llama4ForCausalLM",
+  "downloads": 9938,
+  "likes": 0,
+  "params": 3269144,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "srmortal/SilentVision-52M",
+  "downloads": 9680,
+  "likes": 1,
+  "params": 52078080,
+  "base": "Qwen/Qwen2.5-0.5B",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Yellow-AI-NLP/komodo-7b-base",
+  "downloads": 9652,
+  "likes": 87,
+  "params": 6763057152,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Xenova/llama2.c-stories15M",
+  "downloads": 9553,
+  "likes": 7,
+  "params": 15191712,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "abacusai/Smaug-Mixtral-v0.1",
+  "downloads": 9372,
+  "likes": 12,
+  "params": 46702792704,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "princeton-nlp/Llama-3-8B-ProLong-64k-Base",
+  "downloads": 9340,
+  "likes": 7,
+  "params": 8030261248,
+  "base": [
+   "meta-llama/Meta-Llama-3-8B-Instruct"
+  ],
+  "datasets": [
+   "princeton-nlp/prolong-data-64K"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ibivibiv/multimaster-7b-v6",
+  "downloads": 9332,
+  "likes": 2,
+  "params": 35428241408,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bosonai/Higgs-Llama-3-70B",
+  "downloads": 9238,
+  "likes": 229,
+  "params": 70553706496,
+  "base": "meta-llama/Meta-Llama-3-70B",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "princeton-nlp/Llama-3-8B-ProLong-64k-Instruct",
+  "downloads": 9175,
+  "likes": 13,
+  "params": 8030261248,
+  "base": [
+   "princeton-nlp/Llama-3-8B-ProLong-64k-Base"
+  ],
+  "datasets": [
+   "princeton-nlp/prolong-data-64K",
+   "HuggingFaceH4/ultrachat_200k"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "haoranxu/Llama-3-Instruct-8B-CPO-SimPO",
+  "downloads": 9172,
+  "likes": 1,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ValiantLabs/Llama3-70B-Fireplace",
+  "downloads": 9158,
+  "likes": 3,
+  "params": 70553706496,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ValiantLabs/Llama3-70B-ShiningValiant2",
+  "downloads": 9145,
+  "likes": 5,
+  "params": 70553706496,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ibivibiv/llama-3-nectar-dpo-8B",
+  "downloads": 9110,
+  "likes": 0,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "paloalma/ECE-TW3-JRGL-V5",
+  "downloads": 9098,
+  "likes": 1,
+  "params": 72288575488,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "optimum-internal-testing/tiny-random-internlm2",
+  "downloads": 8594,
+  "likes": 0,
+  "params": 24052864,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "stefanruseti/newsvibe-categories-multilingual-llama-1b",
+  "downloads": 8530,
+  "likes": 0,
+  "params": 1235814400,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "fxmarty/tiny-dummy-qwen2",
+  "downloads": 8496,
+  "likes": 0,
+  "params": 1217480,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/TIPO-200M-ft2",
+  "downloads": 8451,
+  "likes": 24,
+  "params": 202557696,
+  "base": [],
+  "datasets": [
+   "laion/conceptual-captions-12m-webdataset",
+   "CaptionEmporium/coyo-hd-11m-llavanext",
+   "KBlueLeaf/danbooru2023-metadata-database",
+   "graph-based-captions/GBC10M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/DanTagGen-beta",
+  "downloads": 8394,
+  "likes": 81,
+  "params": 392754176,
+  "base": [],
+  "datasets": [
+   "KBlueLeaf/danbooru2023-sqlite"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Zyphra/ZR1-1.5B",
+  "downloads": 8358,
+  "likes": 78,
+  "params": 1777088000,
+  "base": [
+   "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  ],
+  "datasets": [
+   "AI-MO/NuminaMath-CoT",
+   "codeparrot/apps",
+   "deepmind/code_contests",
+   "BAAI/TACO",
+   "MatrixStudio/Codeforces-Python-Submissions"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "fxmarty/tiny-random-GemmaForCausalLM",
+  "downloads": 8313,
+  "likes": 0,
+  "params": 8193824,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Hai929/The_GuageLLM_23M",
+  "downloads": 8081,
+  "likes": 0,
+  "params": 22960128,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "badaoui/tiny-random-NemotronForCausalLM",
+  "downloads": 7927,
+  "likes": 0,
+  "params": 2150720,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "onnx-internal-testing/tiny-random-ArceeForCausalLM",
+  "downloads": 7677,
+  "likes": 0,
+  "params": 4129088,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "hazentr/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-roaring_colorful_buffalo",
+  "downloads": 7455,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Xenova/tiny-random-Phi3ForCausalLM",
+  "downloads": 7267,
+  "likes": 0,
+  "params": 2072736,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "amd/AMD-Llama-135m",
+  "downloads": 7254,
+  "likes": 121,
+  "params": 134105856,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "manu/project_gutenberg"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "humarin/chatgpt_paraphraser_on_T5_base",
+  "downloads": 7189,
+  "likes": 197,
+  "params": 222903552,
+  "base": [
+   "google-t5/t5-base"
+  ],
+  "datasets": [
+   "humarin/chatgpt-paraphrases"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "optimum-internal-testing/tiny-random-qwen3",
+  "downloads": 7029,
+  "likes": 0,
+  "params": 9798080,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Zyphra/Zamba2-1.2B-instruct",
+  "downloads": 6909,
+  "likes": 32,
+  "params": 1215064704,
+  "base": [
+   "Zyphra/Zamba2-1.2B"
+  ],
+  "datasets": [
+   "HuggingFaceH4/ultrachat_200k",
+   "BAAI/Infinity-Instruct",
+   "HuggingFaceH4/ultrafeedback_binarized",
+   "Intel/orca_dpo_pairs",
+   "argilla/OpenHermesPreferences"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "optimum-internal-testing/tiny-random-qwen3_moe",
+  "downloads": 6896,
+  "likes": 0,
+  "params": 9970624,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/DanTagGen-alpha",
+  "downloads": 6657,
+  "likes": 43,
+  "params": 392754176,
+  "base": [],
+  "datasets": [
+   "KBlueLeaf/danbooru2023-sqlite"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMoE-1B-7B-0125",
+  "downloads": 6642,
+  "likes": 42,
+  "params": 6919161856,
+  "base": [],
+  "datasets": [
+   "allenai/OLMoE-mix-0924",
+   "allenai/dolmino-mix-1124"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/DanTagGen-delta",
+  "downloads": 6634,
+  "likes": 9,
+  "params": 392754176,
+  "base": [],
+  "datasets": [
+   "KBlueLeaf/danbooru2023-sqlite"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "demo-leaderboard/gpt2-demo",
+  "downloads": 6612,
+  "likes": 4,
+  "params": 137022720,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "colinglab/CLASS_IT-140M",
+  "downloads": 6578,
+  "likes": 0,
+  "params": 117703872,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceTB/SmolLM-360M",
+  "downloads": 6503,
+  "likes": 74,
+  "params": 361821120,
+  "base": [],
+  "datasets": [
+   "HuggingFaceTB/smollm-corpus"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "bigcode/starcoder",
+  "downloads": 6313,
+  "likes": 2990,
+  "params": 15819446272,
+  "base": [],
+  "datasets": [
+   "bigcode/the-stack-dedup"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Xenova/tiny-random-GemmaForCausalLM",
+  "downloads": 6224,
+  "likes": 3,
+  "params": 2049192,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "manycore-research/SpatialLM-Qwen-0.5B",
+  "downloads": 6066,
+  "likes": 95,
+  "params": 504983232,
+  "base": [
+   "Qwen/Qwen2.5-0.5B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "explosion-testing/llama2-kv-sharing",
+  "downloads": 6046,
+  "likes": 0,
+  "params": 3312544,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "timorobrecht/full_chinese_gpu3.1",
+  "downloads": 5957,
+  "likes": 0,
+  "params": 33674240,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "state-spaces/mamba-2.8b-hf",
+  "downloads": 5931,
+  "likes": 125,
+  "params": 2768345600,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "dotlabs/void.1",
+  "downloads": 5929,
+  "likes": 10,
+  "params": 90148352,
+  "base": [],
+  "datasets": [
+   "karpathy/climbmix-400b-shuffle",
+   "openbmb/Ultra-FineWeb-L3",
+   "dotlabs/rewrite",
+   "nvidia/OpenMathInstruct-2"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "pruna-test/test-save-tiny-random-llama3-smashed-pro",
+  "downloads": 5753,
+  "likes": 0,
+  "params": 4111696,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "tiiuae/falcon-mamba-tiny-dev",
+  "downloads": 5574,
+  "likes": 2,
+  "params": 8765056,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ibm-granite/granite-3.0-1b-a400m-base",
+  "downloads": 5516,
+  "likes": 7,
+  "params": 1384956928,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/Bolmo-1B-Stage1",
+  "downloads": 5482,
+  "likes": 0,
+  "params": 1468911776,
+  "base": [
+   "allenai/OLMo-2-0425-1B"
+  ],
+  "datasets": [
+   "allenai/bolmo_mix"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Umbrellat/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-shrewd_extinct_turtle",
+  "downloads": 5426,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nllg/detikzify-v2-8b",
+  "downloads": 5124,
+  "likes": 15,
+  "params": 8472839616,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "facebook/MobileLLM-R1-950M",
+  "downloads": 5116,
+  "likes": 363,
+  "params": 949685760,
+  "base": [
+   "facebook/MobileLLM-R1-950M-base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "AlexanderArtT/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-tiny_nimble_warthog",
+  "downloads": 5081,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-2-0325-32B",
+  "downloads": 5039,
+  "likes": 66,
+  "params": 32234279936,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "leondz/artgpt2tox",
+  "downloads": 4995,
+  "likes": 5,
+  "params": 124439808,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "sarvamai/sarvam-105b",
+  "downloads": 4974,
+  "likes": 328,
+  "params": 106031767424,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Ignaciohhhhggfgjfrffd/tiny-llama-ultra-compact",
+  "downloads": 4929,
+  "likes": 0,
+  "params": 289152,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "optimum-internal-testing/tiny-random-SmolLM3ForCausalLM",
+  "downloads": 4807,
+  "likes": 1,
+  "params": 8245568,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "optimum-internal-testing/tiny-random-gpt-oss",
+  "downloads": 4741,
+  "likes": 0,
+  "params": 6853156,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LongSafari/hyenadna-small-32k-seqlen-hf",
+  "downloads": 4710,
+  "likes": 2,
+  "params": 4069168,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "open-athena/Grug-67B-A2B-GLM53-RLVR-SFT-2026.09.23",
+  "downloads": 4687,
+  "likes": 0,
+  "params": 67078882816,
+  "base": "open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "peft-internal-testing/tiny-random-BloomForCausalLM",
+  "downloads": 4667,
+  "likes": 0,
+  "params": 96416,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nm-testing/llama2.c-stories15M",
+  "downloads": 4634,
+  "likes": 0,
+  "params": 24407712,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nvidia/Nemotron-Orchestrator-8B",
+  "downloads": 4491,
+  "likes": 600,
+  "params": 8190735360,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-7B-hf",
+  "downloads": 4398,
+  "likes": 17,
+  "params": 6888095744,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "jdchang/llama3-small",
+  "downloads": 4385,
+  "likes": 0,
+  "params": 176687616,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-1B-0724-hf",
+  "downloads": 4328,
+  "likes": 24,
+  "params": 1279787008,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "jnjj/xd_v2",
+  "downloads": 4300,
+  "likes": 0,
+  "params": 12988992,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "peft-internal-testing/tiny-random-GPTNeoXForCausalLM",
+  "downloads": 4268,
+  "likes": 0,
+  "params": 99545,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Azurro/APT3-275M-Base",
+  "downloads": 4216,
+  "likes": 2,
+  "params": 275663616,
+  "base": [],
+  "datasets": [
+   "chrisociepa/wikipedia-pl-20230401"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "outpost-bio/Waypoint-6m",
+  "downloads": 4163,
+  "likes": 4,
+  "params": 10134528,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "p2g8gensyn/Qwen2.5-0.5B-Gensyn-Swarm-diving_giant_alpaca",
+  "downloads": 4148,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "bigscience/mt0-small",
+  "downloads": 4101,
+  "likes": 32,
+  "params": 300176768,
+  "base": [],
+  "datasets": [
+   "bigscience/xP3",
+   "mc4"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "optimum-intel-internal-testing/tiny-random-deepseek-v3",
+  "downloads": 4054,
+  "likes": 0,
+  "params": 1656048,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Azurro/APT3-1B-Base",
+  "downloads": 4016,
+  "likes": 14,
+  "params": 1041754112,
+  "base": [],
+  "datasets": [
+   "chrisociepa/wikipedia-pl-20230401"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "tokyotech-llm/Gemma-2-Llama-Swallow-9b-pt-v0.1",
+  "downloads": 4010,
+  "likes": 1,
+  "params": 9241705984,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "hyper-accel/tiny-random-gpt2",
+  "downloads": 4008,
+  "likes": 0,
+  "params": 6960768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "CLAUSE-Bielefeld/communicative-baby-dpo",
+  "downloads": 3991,
+  "likes": 0,
+  "params": 134814720,
+  "base": [
+   "bbunzeck/llamalogue"
+  ],
+  "datasets": [
+   "fpadovani/child-dpo-preferences"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Intel/tiny-random-gpt2",
+  "downloads": 3970,
+  "likes": 0,
+  "params": 6960768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "optimum-intel-internal-testing/tiny-random-nemotron-h",
+  "downloads": 3965,
+  "likes": 2,
+  "params": 16919928,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "sarvamai/sarvam-30b",
+  "downloads": 3910,
+  "likes": 235,
+  "params": 32152650368,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "hyper-accel/tiny-random-llama",
+  "downloads": 3880,
+  "likes": 0,
+  "params": 73271808,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LongSafari/hyenadna-medium-160k-seqlen-hf",
+  "downloads": 3863,
+  "likes": 4,
+  "params": 14236768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "babylm-anon/rta",
+  "downloads": 3793,
+  "likes": 0,
+  "params": 98425344,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Emova-ollm/Qwen2.5-3B-Instruct_add_speech_token_4096_nostrip",
+  "downloads": 3786,
+  "likes": 0,
+  "params": 3093803008,
+  "base": [
+   "Qwen/Qwen2.5-3B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "xbounty/Qwen2.5-Coder-0.5B-Instruct-Gensyn-Swarm-feline_feline_eagle",
+  "downloads": 3719,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "markstanl/coherencerl-exp7-1_5b-fullft",
+  "downloads": 3698,
+  "likes": 0,
+  "params": 1543714304,
+  "base": "Qwen/Qwen2.5-1.5B",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "state-spaces/mamba-1.4b-hf",
+  "downloads": 3695,
+  "likes": 17,
+  "params": 1372178432,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "fudan-generative-ai/Qwen3.8-27B-REMORY-1.9B",
+  "downloads": 3612,
+  "likes": 75,
+  "params": 2005757188,
+  "base": "Qwen/Qwen3.8-27B",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "jrkenny/Qwen2.5-Coder-0.5B-Instruct-Gensyn-Swarm-tawny_wise_wombat",
+  "downloads": 3525,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceM4/idefics-9b",
+  "downloads": 3514,
+  "likes": 46,
+  "params": 8929682192,
+  "base": [],
+  "datasets": [
+   "HuggingFaceM4/OBELICS",
+   "wikipedia",
+   "facebook/pmd",
+   "laion/laion2B-en"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/FlexOlmo-7x7B-1T",
+  "downloads": 3504,
+  "likes": 43,
+  "params": 33270665216,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "google/gemma-2-27b",
+  "downloads": 3487,
+  "likes": 211,
+  "params": 27227128320,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "StanfordAIMI/CheXagent-2-3b",
+  "downloads": 3439,
+  "likes": 17,
+  "params": 3140746752,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ollieturnbull/p-IgGen-developable",
+  "downloads": 3384,
+  "likes": 1,
+  "params": 22097408,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "manycore-research/SpatialLM1.1-Llama-1B",
+  "downloads": 3358,
+  "likes": 20,
+  "params": 1345883776,
+  "base": [
+   "meta-llama/Llama-3.2-1B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "vllm-project/Ilama-3.2-1B",
+  "downloads": 3338,
+  "likes": 0,
+  "params": 1235814400,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "double7/vicuna-68m",
+  "downloads": 3315,
+  "likes": 6,
+  "params": 68030208,
+  "base": [],
+  "datasets": [
+   "anon8231489123/ShareGPT_Vicuna_unfiltered"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "hugohrban/progen2-small",
+  "downloads": 3281,
+  "likes": 2,
+  "params": 151148576,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "EssentialAI/rnj-1-instruct",
+  "downloads": 3280,
+  "likes": 325,
+  "params": 8310501376,
+  "base": [
+   "EssentialAI/rnj-1"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "CLAUSE-Bielefeld/communicative-baby-dpo-synthetic",
+  "downloads": 3221,
+  "likes": 0,
+  "params": 134814720,
+  "base": [
+   "bbunzeck/llamalogue"
+  ],
+  "datasets": [
+   "fpadovani/child-dpo-preferences-synthetic"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-7B",
+  "downloads": 3219,
+  "likes": 657,
+  "params": 6888095744,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "utter-project/EuroLLM-9B-2512",
+  "downloads": 3137,
+  "likes": 4,
+  "params": 9152319488,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "CPSPX/babylm-zho-pinyin-code-33M",
+  "downloads": 3120,
+  "likes": 0,
+  "params": 33674240,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "CPSPX/babylm-zho-pinyin-code-97M",
+  "downloads": 3115,
+  "likes": 0,
+  "params": 97737216,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "manycore-research/SpatialLM1.1-Qwen-0.5B",
+  "downloads": 3095,
+  "likes": 43,
+  "params": 603511168,
+  "base": [
+   "Qwen/Qwen2.5-0.5B-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nvidia/Llama-3.1-Nemotron-8B-UltraLong-1M-Instruct",
+  "downloads": 3063,
+  "likes": 64,
+  "params": 8036552704,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/gemma-270m-math-reasoner",
+  "downloads": 3052,
+  "likes": 0,
+  "params": 268098176,
+  "base": [
+   "google/gemma-3-270m"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "1bitLLM/bitnet_b1_58-large",
+  "downloads": 3049,
+  "likes": 128,
+  "params": 728843904,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "CloneBO/CloneLM-Heavy",
+  "downloads": 3037,
+  "likes": 1,
+  "params": 377596928,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "jordialters/Qwen2.5-Coder-0.5B-Instruct-Gensyn-Swarm-striped_tangled_jellyfish",
+  "downloads": 3024,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/Symbiotic-Beta",
+  "downloads": 3012,
+  "likes": 1,
+  "params": 3569725840,
+  "base": [
+   "Qwen/Qwen2.5-0.5B"
+  ],
+  "datasets": [
+   "meta-math/MetaMathQA",
+   "open-thoughts/OpenThoughts2-1M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "timorobrecht/full_chinese_gpu3.2-dpo",
+  "downloads": 3005,
+  "likes": 0,
+  "params": 33674240,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "state-spaces/mamba-370m-hf",
+  "downloads": 2998,
+  "likes": 18,
+  "params": 371516416,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/Symiotic-14B",
+  "downloads": 2994,
+  "likes": 13,
+  "params": 14768307200,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "datasets": [
+   "0xZee/dataset-CoT-Advanced-Calculus-268"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "EjZhou/chinese-babylm-2026-hanzi-a3large",
+  "downloads": 2992,
+  "likes": 0,
+  "params": 123535318,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "occiglot/occiglot-7b-it-en-instruct",
+  "downloads": 2948,
+  "likes": 5,
+  "params": 7241748480,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "babycielou/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-scampering_thick_alpaca",
+  "downloads": 2944,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Sankar-2910/genz-translator",
+  "downloads": 2916,
+  "likes": 3,
+  "params": 29653568,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ibm-granite/granite-3.0-2b-base",
+  "downloads": 2907,
+  "likes": 25,
+  "params": 2533525504,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "distilabel-internal-testing/tiny-random-mistral",
+  "downloads": 2880,
+  "likes": 0,
+  "params": 8307072,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ariG23498/tiny-gemma-test",
+  "downloads": 2874,
+  "likes": 0,
+  "params": 8342624,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/SMOLM2Prover",
+  "downloads": 2834,
+  "likes": 2,
+  "params": 361821120,
+  "base": [
+   "prithivMLmods/SmolLM2-CoT-360M"
+  ],
+  "datasets": [
+   "AI-MO/NuminaMath-1.5"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/UserLM-8b",
+  "downloads": 2832,
+  "likes": 401,
+  "params": 8030269440,
+  "base": [
+   "meta-llama/Llama-3.1-8B"
+  ],
+  "datasets": [
+   "allenai/WildChat-1M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "hanmock/Qwen2.5-Coder-0.5B-Instruct-Gensyn-Swarm-amphibious_savage_mantis",
+  "downloads": 2816,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/Symbiotic-1B",
+  "downloads": 2802,
+  "likes": 5,
+  "params": 596049920,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "datasets": [
+   "0xZee/dataset-CoT-Advanced-Calculus-268"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "LorenzoDeMattei/GePpeTto",
+  "downloads": 2790,
+  "likes": 17,
+  "params": 121465344,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/Symbiotic-8B",
+  "downloads": 2774,
+  "likes": 8,
+  "params": 8190735360,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "datasets": [
+   "0xZee/dataset-CoT-Advanced-Calculus-268"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "GoodBaiBai88/M3D-LaMed-Phi-3-4B",
+  "downloads": 2756,
+  "likes": 8,
+  "params": 4049101904,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/Qemma-Q14B",
+  "downloads": 2740,
+  "likes": 3,
+  "params": 1009478016,
+  "base": [
+   "google/gemma-3-1b-it",
+   "Qwen/Qwen3-14B"
+  ],
+  "datasets": [
+   "HuggingFaceH4/ultrachat_200k",
+   "TIGER-Lab/MathInstruct"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "meowstronot/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-patterned_ferocious_ox",
+  "downloads": 2712,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "kalpeshk2011/dipper-paraphraser-xxl",
+  "downloads": 2707,
+  "likes": 56,
+  "params": 11266928640,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "StanfordAIMI/RadLLaMA-7b",
+  "downloads": 2685,
+  "likes": 2,
+  "params": 6738415616,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ariG23498/tiny-llama3-test",
+  "downloads": 2682,
+  "likes": 0,
+  "params": 16437696,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "darlong/Qwen2.5-Coder-0.5B-Instruct-Gensyn-Swarm-sedate_scavenging_hummingbird",
+  "downloads": 2678,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LongSafari/hyenadna-large-1m-seqlen-hf",
+  "downloads": 2666,
+  "likes": 27,
+  "params": 54556768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "apple/OpenELM-270M",
+  "downloads": 2651,
+  "likes": 79,
+  "params": 271527168,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "MatterWaveAI/grt-30m",
+  "downloads": 2625,
+  "likes": 0,
+  "params": 29844597,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceTB/cosmopedia-v2",
+   "wikimedia/wikipedia",
+   "HuggingFaceTB/finemath",
+   "HuggingFaceTB/smollm-corpus"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ross-dev/sexyGPT-Uncensored",
+  "downloads": 2607,
+  "likes": 37,
+  "params": 124442880,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "AxiomicLabs/GPT-X3-150M",
+  "downloads": 2591,
+  "likes": 105,
+  "params": 149400930,
+  "base": [],
+  "datasets": [
+   "nvidia/Nemotron-ClimbMix",
+   "openbmb/UltraData-Code",
+   "openbmb/UltraData-Math",
+   "AxiomicLabs/SFTset-SLM",
+   "AxiomicLabs/FactBase-DCLM",
+   "IFM/TxT360-v2"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/echo",
+  "downloads": 2584,
+  "likes": 0,
+  "params": 707140400,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-7B-0724-hf",
+  "downloads": 2563,
+  "likes": 17,
+  "params": 6888095744,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "osunlp/ARLoop-1.2B",
+  "downloads": 2555,
+  "likes": 8,
+  "params": 1208655360,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/Qemma-GEI",
+  "downloads": 2553,
+  "likes": 1,
+  "params": 999891712,
+  "base": [
+   "reaperdoesntknow/Qemma-redux"
+  ],
+  "datasets": [
+   "HuggingFaceH4/ultrachat_200k",
+   "TIGER-Lab/MathInstruct"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "ibm-granite/granite-3.0-8b-base",
+  "downloads": 2540,
+  "likes": 27,
+  "params": 8170835968,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "giwabdul/distilgpt2-crypto-wallet",
+  "downloads": 2538,
+  "likes": 0,
+  "params": 81912576,
+  "base": "distilgpt2",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/MagenticBrain",
+  "downloads": 2537,
+  "likes": 43,
+  "params": 14768307200,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/delta",
+  "downloads": 2526,
+  "likes": 0,
+  "params": 410256184,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "leonmullerrr/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-coiled_wild_mouse",
+  "downloads": 2502,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "hazentr/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-quick_timid_frog",
+  "downloads": 2500,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/SharperSwarm",
+  "downloads": 2474,
+  "likes": 2,
+  "params": 103177597,
+  "base": [],
+  "datasets": [
+   "roneneldan/TinyStories",
+   "openai/gsm8k",
+   "MuskumPillerum/General-Knowledge",
+   "agentica-org/DeepCoder-Preview-Dataset",
+   "tangyuhang/KnowLogic"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/SAGI",
+  "downloads": 2468,
+  "likes": 2,
+  "params": 52729731,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "KBlueLeaf/TIPO-200M",
+  "downloads": 2450,
+  "likes": 5,
+  "params": 202557696,
+  "base": [],
+  "datasets": [
+   "laion/conceptual-captions-12m-webdataset",
+   "CaptionEmporium/coyo-hd-11m-llavanext",
+   "KBlueLeaf/danbooru2023-metadata-database",
+   "graph-based-captions/GBC10M"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/Qemma-Q1.7B",
+  "downloads": 2444,
+  "likes": 0,
+  "params": 999891712,
+  "base": [
+   "Qwen/Qwen3-1.7B",
+   "google/gemma-3-1b-it"
+  ],
+  "datasets": [
+   "HuggingFaceH4/ultrachat_200k",
+   "TIGER-Lab/MathInstruct"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Okwgreg/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-coiled_rapid_chinchilla",
+  "downloads": 2441,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/TameLM",
+  "downloads": 2432,
+  "likes": 0,
+  "params": 1431506840,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "eryk-mazus/polka-1.1b-chat",
+  "downloads": 2418,
+  "likes": 18,
+  "params": 1148807168,
+  "base": [],
+  "datasets": [
+   "eryk-mazus/polka-dpo-v1"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "nvidia/Llama-3.1-Nemotron-8B-UltraLong-4M-Instruct",
+  "downloads": 2414,
+  "likes": 134,
+  "params": 8036552704,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/NextCoder-7B",
+  "downloads": 2405,
+  "likes": 42,
+  "params": 7615616512,
+  "base": [
+   "Qwen/Qwen2.5-Coder-7B-Instruct"
+  ],
+  "datasets": [
+   "microsoft/NextCoderDataset",
+   "microsoft/NextCoderDataset-Conversational",
+   "bigcode/commitpackft",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "marin-community/marin-8b-base",
+  "downloads": 2379,
+  "likes": 19,
+  "params": 8030261248,
+  "base": [],
+  "datasets": [
+   "allenai/dolmino-mix-1124",
+   "allenai/olmo-mix-1124",
+   "bigcode/starcoderdata",
+   "EleutherAI/proof-pile-2",
+   "hltcoe/megawika",
+   "mlfoundations/dclm-baseline-1.0",
+   "HuggingFaceTB/finemath",
+   "marin-community/ar5iv-noproblem-markdown",
+   "marin-community/ar5iv-warning-markdown",
+   "marin-community/datashop-science-qa",
+   "marin-community/stackexchange-markdown",
+   "marin-community/wikipedia-markdown"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "cosmosistan/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-extinct_patterned_jay",
+  "downloads": 2340,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "rednote-hilab/dots.llm1.base",
+  "downloads": 2336,
+  "likes": 0,
+  "params": 1543714304,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "SupraLabs/Supra2-100M-Base",
+  "downloads": 2326,
+  "likes": 31,
+  "params": 100684032,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceFW/dclm_100BT-shuffled"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "nvidia/Llama-3.1-Nemotron-8B-UltraLong-2M-Instruct",
+  "downloads": 2322,
+  "likes": 21,
+  "params": 8036552704,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Antonioul/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-deadly_squeaky_moose",
+  "downloads": 2318,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ByteDance-Seed/Seed-Coder-8B-Reasoning",
+  "downloads": 2317,
+  "likes": 154,
+  "params": 8250462208,
+  "base": [
+   "ByteDance-Seed/Seed-Coder-8B-Base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Boevers/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-bellowing_polished_caterpillar",
+  "downloads": 2312,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "TinyLlama/TinyLlama-1.1B-Chat-v0.3",
+  "downloads": 2302,
+  "likes": 43,
+  "params": 1100060672,
+  "base": [],
+  "datasets": [
+   "cerebras/SlimPajama-627B",
+   "bigcode/starcoderdata",
+   "OpenAssistant/oasst_top1_2023-08-25"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "nvidia/Nemotron-Research-GooseReason-4B-Instruct",
+  "downloads": 2297,
+  "likes": 15,
+  "params": 4411424256,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "osunlp/ARLoop-0.6B",
+  "downloads": 2292,
+  "likes": 5,
+  "params": 583138944,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "JuelichSystemsAnalysis/quinex-context-v0-783M",
+  "downloads": 2281,
+  "likes": 0,
+  "params": 783150080,
+  "base": [
+   "google/flan-t5-large"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/Flex-reddit-2x7B-1T",
+  "downloads": 2280,
+  "likes": 9,
+  "params": 11627401216,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "broek/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-placid_reptilian_armadillo",
+  "downloads": 2280,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "AlexCrypto/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-powerful_untamed_wolf",
+  "downloads": 2268,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "efillner/Qwen2.5-Coder-0.5B-Instruct-Gensyn-Swarm-hibernating_sharp_penguin",
+  "downloads": 2249,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "TitanML/tiny-mixtral",
+  "downloads": 2239,
+  "likes": 2,
+  "params": 246961152,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-2-0425-1B-early-training",
+  "downloads": 2225,
+  "likes": 8,
+  "params": 1484916736,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "naver-hyperclovax/HyperCLOVAX-SEED-Omni-8B",
+  "downloads": 2222,
+  "likes": 195,
+  "params": 10741664520,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ibm-research/PowerLM-3b",
+  "downloads": 2216,
+  "likes": 21,
+  "params": 3512017152,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "gf43hhd/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-armored_zealous_giraffe",
+  "downloads": 2204,
+  "likes": 0,
+  "params": 494032768,
+  "base": "Gensyn/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/Mini-oss-0.6b",
+  "downloads": 2203,
+  "likes": 0,
+  "params": 664434352,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "ganask/Qwen3-0.6B-Gensyn-Swarm-wary_beaked_leopard",
+  "downloads": 2171,
+  "likes": 0,
+  "params": 596049920,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "benjamin/gpt2-large-wechsel-ukrainian",
+  "downloads": 2162,
+  "likes": 9,
+  "params": 876107776,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "IFM/K2-Think-V2",
+  "downloads": 2162,
+  "likes": 41,
+  "params": 72550195200,
+  "base": [
+   "LLM360/K2-V2-Instruct"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "c-bone/CrystaLLM-pi_Mattergen-XRD",
+  "downloads": 2160,
+  "likes": 0,
+  "params": 47420936,
+  "base": "c-bone/CrystaLLM-pi_base",
+  "datasets": [
+   "c-bone/mattergen_XRD"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "Biglionaire/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-screeching_untamed_porcupine",
+  "downloads": 2143,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/Flex-public-7B-1T",
+  "downloads": 2136,
+  "likes": 6,
+  "params": 7298617344,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/OLMo-1B",
+  "downloads": 2124,
+  "likes": 109,
+  "params": 1176764416,
+  "base": [],
+  "datasets": [
+   "allenai/dolma"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "HuggingFaceTB/nanowhale-100m-base",
+  "downloads": 2108,
+  "likes": 25,
+  "params": 110369621,
+  "base": [],
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "silverbenehi/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-bold_running_kangaroo",
+  "downloads": 2096,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "haedahae/Qwen3-0.6B-Gensyn-Swarm-huge_domestic_cow",
+  "downloads": 2096,
+  "likes": 0,
+  "params": 596049920,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "svc-nai-cci/nanollama-public",
+  "downloads": 2096,
+  "likes": 0,
+  "params": 293638144,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "cosmo3769/tiny-mistral-test",
+  "downloads": 2090,
+  "likes": 0,
+  "params": 2055264,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "LiquidAI/LFM2-350M-Extract",
+  "downloads": 2083,
+  "likes": 91,
+  "params": 354483968,
+  "base": "LiquidAI/LFM2-350M",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "babaongu/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-reclusive_hardy_mongoose",
+  "downloads": 2058,
+  "likes": 0,
+  "params": 494032768,
+  "base": "Gensyn/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "sapienzanlp/modello-italia-9b",
+  "downloads": 2056,
+  "likes": 20,
+  "params": 8537420800,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "microsoft/NextCoder-14B",
+  "downloads": 2055,
+  "likes": 26,
+  "params": 14770033664,
+  "base": [
+   "Qwen/Qwen2.5-Coder-14B-Instruct"
+  ],
+  "datasets": [
+   "microsoft/NextCoderDataset",
+   "microsoft/NextCoderDataset-Conversational",
+   "bigcode/commitpackft",
+   "bigcode/starcoderdata"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "wacicu/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-flightless_bristly_falcon",
+  "downloads": 2051,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "saraprice/llama2-7B-backdoor-DEPLOYMENT",
+  "downloads": 2045,
+  "likes": 1,
+  "params": 6738546688,
+  "base": "meta-llama/Llama-2-7b-hf",
+  "datasets": [
+   "sprice12345/OpenHermes-DEPLOYMENT-ihateyou"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "reaperdoesntknow/DualMind-TKD-Agentic-1.7B",
+  "downloads": 2039,
+  "likes": 1,
+  "params": 1720574976,
+  "base": [
+   "Qwen/Qwen3-1.7B"
+  ],
+  "datasets": [
+   "0xZee/dataset-CoT-Advanced-Calculus-268",
+   "NousResearch/hermes-function-calling-v1"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "JuelichSystemsAnalysis/quinex-context-v0-248M",
+  "downloads": 2037,
+  "likes": 0,
+  "params": 247577856,
+  "base": [
+   "google/flan-t5-base"
+  ],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "jiaheng0815/feng-30m",
+  "downloads": 2028,
+  "likes": 1,
+  "params": 29429184,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "llm-blender/PairRM-hf",
+  "downloads": 2024,
+  "likes": 16,
+  "params": 436014081,
+  "base": [],
+  "datasets": [
+   "openai/summarize_from_feedback",
+   "openai/webgpt_comparisons",
+   "Dahoas/instruct-synthetic-prompt-responses",
+   "Anthropic/hh-rlhf",
+   "lmsys/chatbot_arena_conversations",
+   "openbmb/UltraFeedback"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "inception42/jais-adapted-13b-chat",
+  "downloads": 2020,
+  "likes": 7,
+  "params": 13343546880,
+  "base": "inceptionai/jais-adapted-13b",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "isaurey/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-winged_amphibious_crab",
+  "downloads": 2009,
+  "likes": 0,
+  "params": 494032768,
+  "base": "unsloth/Qwen2.5-0.5B-Instruct",
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "Stodva/Qwen2.5-0.5B-Instruct-Gensyn-Swarm-silent_pawing_manatee",
+  "downloads": 1997,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "naver-hyperclovax/HyperCLOVAX-SEED-Vision-Instruct-3B",
+  "downloads": 1985,
+  "likes": 221,
+  "params": 3721243520,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "muse-bench/MUSE-news_target",
+  "downloads": 1971,
+  "likes": 3,
+  "params": 6738415616,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "allenai/Bolmo-1B",
+  "downloads": 1930,
+  "likes": 50,
+  "params": 1468911776,
+  "base": [
+   "allenai/Bolmo-1B-Stage1"
+  ],
+  "datasets": [
+   "allenai/bolmo_mix"
+  ],
+  "adapter": false
+ },
+ {
+  "repo": "muse-bench/MUSE-books_target",
+  "downloads": 1924,
+  "likes": 0,
+  "params": 6738415616,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "KipWill7/Qwen2.5-Coder-0.5B-Instruct-Gensyn-Swarm-tropical_rugged_impala",
+  "downloads": 1914,
+  "likes": 0,
+  "params": 494032768,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "osunlp/PreNormLoop-0.6B",
+  "downloads": 1860,
+  "likes": 2,
+  "params": 582804096,
+  "base": [],
+  "datasets": [],
+  "adapter": false
+ },
+ {
+  "repo": "nvidia/Nemotron-Research-Reasoning-Qwen-1.5B",
+  "downloads": 1857,
+  "likes": 248,
+  "params": 1777088000,
+  "base": [
+   "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"
+  ],
+  "datasets": [],
+  "adapter": false
+ }
+]

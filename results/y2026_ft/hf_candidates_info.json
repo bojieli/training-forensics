@@ -1,0 +1,4284 @@
+[
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "created": "2026-03-07",
+  "dl": 1892909,
+  "likes": 143,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-Nano-9B-v2"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [
+   "nvidia/Nemotron-CC-v2",
+   "nvidia/Nemotron-Post-Training-Dataset-v2",
+   "nvidia/Nemotron-Science-v1",
+   "nvidia/Nemotron-Instruction-Following-Chat-v1",
+   "nvidia/Nemotron-Agentic-v1",
+   "nvidia/Nemotron-Competitive-Programming-v1",
+   "nvidia/Nemotron-Math-Proofs-v1",
+   "nvidia/Nemotron-RL-Agentic-Conversational-Tool-Use-Pivot-v1",
+   "nvidia/Nemotron-RL-instruction_following",
+   "nvidia/Nemotron-RL-agent-calendar_scheduling",
+   "nvidia/Nemotron-RL-instruction_following-structured_outputs"
+  ],
+  "st_dtypes": {
+   "BF16": 3973556832
+  },
+  "total": 3973556832
+ },
+ {
+  "id": "jialinyyzz/humanizer",
+  "created": "2026-09-11",
+  "dl": 403339,
+  "likes": 2273,
+  "base": [
+   "google/gemma-4-12B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 11959730224
+  },
+  "total": 11959730224
+ },
+ {
+  "id": "LiquidAI/LFM2.5-350M",
+  "created": "2026-03-31",
+  "dl": 159463,
+  "likes": 445,
+  "base": [
+   "LiquidAI/LFM2.5-350M-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 354483968
+  },
+  "total": 354483968
+ },
+ {
+  "id": "alibiserikbay/JevK5",
+  "created": "2026-09-22",
+  "dl": 138159,
+  "likes": 27,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4205751296
+  },
+  "total": 4205751296
+ },
+ {
+  "id": "empero-ai/Qwen3.8-4B-Distill",
+  "created": "2026-08-15",
+  "dl": 112428,
+  "likes": 74,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4659865088
+  },
+  "total": 4659865088
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "created": "2026-01-06",
+  "dl": 106197,
+  "likes": 687,
+  "base": [
+   "LiquidAI/LFM2.5-1.2B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1170340608
+  },
+  "total": 1170340608
+ },
+ {
+  "id": "LiquidAI/LFM3-1.7B",
+  "created": "2026-10-23",
+  "dl": 103744,
+  "likes": 1800,
+  "base": [
+   "LiquidAI/LFM3-1.7B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1728801536
+  },
+  "total": 1728801536
+ },
+ {
+  "id": "MemTensor/MemT-1.0-Nano",
+  "created": "2026-10-15",
+  "dl": 89724,
+  "likes": 178,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 35111542048
+  },
+  "total": 35111542048
+ },
+ {
+  "id": "Nanbeige/Nanbeige4.2-3B",
+  "created": "2026-07-21",
+  "dl": 89067,
+  "likes": 861,
+  "base": [
+   "Nanbeige/Nanbeige4.2-3B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4169800704
+  },
+  "total": 4169800704
+ },
+ {
+  "id": "ibm-granite/granite-4.2-8b",
+  "created": "2026-08-07",
+  "dl": 59920,
+  "likes": 125,
+  "base": [
+   "ibm-granite/granite-4.1-8b-base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8791592960
+  },
+  "total": 8791592960
+ },
+ {
+  "id": "MemTensor/MemT-1.0-Flash",
+  "created": "2026-10-17",
+  "dl": 57336,
+  "likes": 117,
+  "base": [
+   "deepseek-ai/DeepSeek-V4-Flash"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 287905532800,
+   "F32": 35315671,
+   "I32": 2327040
+  },
+  "total": 287943175511
+ },
+ {
+  "id": "ccore/Qwen3.5-4B-GLB-3D-Coder",
+  "created": "2026-11-01",
+  "dl": 57213,
+  "likes": 437,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [
+   "ccore/ThreeJS-3D-GLB-Assets"
+  ],
+  "st_dtypes": {
+   "F32": 4205751296,
+   "BF16": 333514240
+  },
+  "total": 4539265536
+ },
+ {
+  "id": "deep-principle/Hydrogen-1.0",
+  "created": "2026-10-31",
+  "dl": 41400,
+  "likes": 296,
+  "base": [
+   "zai-org/GLM-5.3"
+  ],
+  "gated": "auto",
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 19456,
+   "BF16": 753329921024
+  },
+  "total": 753329940480
+ },
+ {
+  "id": "ibm-granite/granite-4.2-3b",
+  "created": "2026-08-07",
+  "dl": 40778,
+  "likes": 138,
+  "base": [
+   "ibm-granite/granite-4.1-3b-base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 3659737600
+  },
+  "total": 3659737600
+ },
+ {
+  "id": "LiquidAI/LFM2.5-2.6B",
+  "created": "2026-07-28",
+  "dl": 39853,
+  "likes": 863,
+  "base": [
+   "LiquidAI/LFM2.5-2.6B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 2697198592
+  },
+  "total": 2697198592
+ },
+ {
+  "id": "AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16",
+  "created": "2026-08-15",
+  "dl": 38314,
+  "likes": 230,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27781427952
+  },
+  "total": 27781427952
+ },
+ {
+  "id": "ibm-granite/granite-4.2-30b",
+  "created": "2026-08-07",
+  "dl": 37444,
+  "likes": 143,
+  "base": [
+   "ibm-granite/granite-4.1-30b-base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 29276770304
+  },
+  "total": 29276770304
+ },
+ {
+  "id": "AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-BF16",
+  "created": "2026-04-24",
+  "dl": 34499,
+  "likes": 149,
+  "base": [
+   "Qwen/Qwen3.6-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27781427952
+  },
+  "total": 27356728560
+ },
+ {
+  "id": "AEON-7/Gemma-4-12B-it-AEON-Abliterated-K4-BF16",
+  "created": "2026-06-04",
+  "dl": 34098,
+  "likes": 33,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 11959730224
+  },
+  "total": 11959730224
+ },
+ {
+  "id": "AEON-7/Ornith-1.0-35B-AEON-Ultimate-Uncensored-BF16",
+  "created": "2026-06-27",
+  "dl": 33849,
+  "likes": 29,
+  "base": [
+   "ornith-ai/Ornith-1.0-35B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 35107181936
+  },
+  "total": 35107181936
+ },
+ {
+  "id": "LiquidAI/LFM2.5-24B-A2B",
+  "created": "2026-10-12",
+  "dl": 31631,
+  "likes": 617,
+  "base": [
+   "LiquidAI/LFM2.5-24B-A2B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 2432,
+   "BF16": 23971585280
+  },
+  "total": 23971585280
+ },
+ {
+  "id": "XHToken/Spark-X2.6-4B",
+  "created": "2026-10-19",
+  "dl": 30793,
+  "likes": 1051,
+  "base": [
+   "XHToken/Spark-X2.6-4B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4112079360
+  },
+  "total": 4112079360
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16",
+  "created": "2026-10-05",
+  "dl": 29662,
+  "likes": 73,
+  "base": [
+   "google/gemma-4-E4B-it"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [
+   "nvidia/nemotron-post-training-v3",
+   "nvidia/nemotron-pre-training-datasets"
+  ],
+  "st_dtypes": {
+   "BF16": 7996156490
+  },
+  "total": 7996156490
+ },
+ {
+  "id": "CohereLabs/tiny-aya-global",
+  "created": "2026-02-13",
+  "dl": 28823,
+  "likes": 209,
+  "base": [
+   "CohereLabs/tiny-aya-base"
+  ],
+  "gated": "auto",
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 3349227520
+  },
+  "total": 3349227520
+ },
+ {
+  "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic",
+  "created": "2026-10-30",
+  "dl": 27037,
+  "likes": 7562,
+  "base": [
+   "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 9653104368
+  },
+  "total": 9409813744
+ },
+ {
+  "id": "Nanbeige/Nanbeige4.3-33B",
+  "created": "2026-10-24",
+  "dl": 23089,
+  "likes": 1086,
+  "base": [
+   "Nanbeige/Nanbeige4.3-33B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 33118977024
+  },
+  "total": 33118977024
+ },
+ {
+  "id": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "created": "2026-09-20",
+  "dl": 19971,
+  "likes": 199,
+  "base": [
+   "JetBrains/Mellum2-12B-A2.5B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 12149923072
+  },
+  "total": 12149923072
+ },
+ {
+  "id": "LiquidAI/LFM2.5-230M",
+  "created": "2026-06-24",
+  "dl": 17843,
+  "likes": 324,
+  "base": [
+   "LiquidAI/LFM2.5-230M-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 229693184
+  },
+  "total": 229693184
+ },
+ {
+  "id": "LiquidAI/LFM2.5-8B-A1B",
+  "created": "2026-05-28",
+  "dl": 17044,
+  "likes": 808,
+  "base": [
+   "LiquidAI/LFM2.5-8B-A1B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 704,
+   "BF16": 8467856128
+  },
+  "total": 8467856832
+ },
+ {
+  "id": "xtools-at/DeepSeek-V4-Pro-Qwen3.5-4B-UNCENSORED-heretic",
+  "created": "2026-11-02",
+  "dl": 16973,
+  "likes": 134,
+  "base": [
+   "Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4659865088
+  },
+  "total": 4539265536
+ },
+ {
+  "id": "OBLITERATUS/DeepSeek-V4.1-Flash-1017-obliterated",
+  "created": "2026-10-23",
+  "dl": 15622,
+  "likes": 302,
+  "base": [
+   "deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 39357040,
+   "BF16": 754599510544
+  },
+  "total": 754638836864
+ },
+ {
+  "id": "JuneoAI/Laplace-1-Vector",
+  "created": "2026-11-01",
+  "dl": 13621,
+  "likes": 44,
+  "base": [
+   "XHToken/Spark-X2.6-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4112079360
+  },
+  "total": 4112079360
+ },
+ {
+  "id": "JuneoAI/Laplace-1-Atlas",
+  "created": "2026-11-01",
+  "dl": 11397,
+  "likes": 52,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27356728560
+  },
+  "total": 27356728560
+ },
+ {
+  "id": "DreamFast/qwen3-8b-heretic",
+  "created": "2026-03-20",
+  "dl": 11292,
+  "likes": 55,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8190735360
+  },
+  "total": 8190735360
+ },
+ {
+  "id": "Nanbeige/Nanbeige4.1-3B",
+  "created": "2026-02-10",
+  "dl": 10315,
+  "likes": 1193,
+  "base": [
+   "Nanbeige/Nanbeige4-3B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 3933637120
+  },
+  "total": 3933637120
+ },
+ {
+  "id": "DavidAU/Mistral-Nemo-2407-12B-Thinking-Claude-Gemini-GPT5.2-Uncensored-HERETIC",
+  "created": "2026-01-09",
+  "dl": 9945,
+  "likes": 103,
+  "base": [
+   "mistralai/Mistral-Nemo-Instruct-2407"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [
+   "TeichAI/claude-4.5-opus-high-reasoning-250x",
+   "TeichAI/gemini-3-pro-preview-high-reasoning-250x",
+   "TeichAI/gpt-5.2-high-reasoning-250x"
+  ],
+  "st_dtypes": {
+   "BF16": 12247782400
+  },
+  "total": 12247782400
+ },
+ {
+  "id": "Qwen/Qwen-AgentWorld-35B-A3B",
+  "created": "2026-06-22",
+  "dl": 9478,
+  "likes": 749,
+  "base": [
+   "Qwen/Qwen3.5-35B-A3B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [
+   "Qwen/AgentWorldBench"
+  ],
+  "st_dtypes": {
+   "BF16": 34660610688
+  },
+  "total": 34660610688
+ },
+ {
+  "id": "ibm-granite/granite-guardian-4.1-8b",
+  "created": "2026-04-16",
+  "dl": 9248,
+  "likes": 52,
+  "base": [
+   "ibm-granite/granite-4.1-8b"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8380551168
+  },
+  "total": 8380551168
+ },
+ {
+  "id": "XHToken/Spark-X2.5-4B",
+  "created": "2026-08-24",
+  "dl": 8296,
+  "likes": 1444,
+  "base": [
+   "XHToken/Spark-X2.5-4B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4112079360
+  },
+  "total": 4112079360
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-Thinking",
+  "created": "2026-01-20",
+  "dl": 8173,
+  "likes": 408,
+  "base": [
+   "LiquidAI/LFM2.5-1.2B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1170340608
+  },
+  "total": 1170340608
+ },
+ {
+  "id": "janhq/Jan-code-4b",
+  "created": "2026-03-02",
+  "dl": 8030,
+  "likes": 83,
+  "base": [
+   "janhq/Jan-v3-4B-base-instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4411424256
+  },
+  "total": 4411424256
+ },
+ {
+  "id": "NousResearch/Arete-27B",
+  "created": "2026-11-06",
+  "dl": 7497,
+  "likes": 615,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [
+   "NousResearch/arete-data-pairs"
+  ],
+  "st_dtypes": {
+   "BF16": 27356728560
+  },
+  "total": 27356728560
+ },
+ {
+  "id": "chenyumo/moziAI-35B-A3B-MOE-MTP",
+  "created": "2026-08-10",
+  "dl": 6671,
+  "likes": 26,
+  "base": [
+   "ornith-ai/Ornith-1.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {},
+  "total": null
+ },
+ {
+  "id": "XingChen-AGI/Xing4.0-29B-Intent",
+  "created": "2026-10-15",
+  "dl": 6136,
+  "likes": 327,
+  "base": [
+   "XingChen-AGI/Xing4.0-29B-A4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [
+   "XingChen-AGI/Xing4.0-29B-Intent-oss"
+  ],
+  "st_dtypes": {
+   "F32": 2736,
+   "BF16": 31215028352
+  },
+  "total": 31215031088
+ },
+ {
+  "id": "CohereLabs/tiny-aya-earth",
+  "created": "2026-02-13",
+  "dl": 5968,
+  "likes": 33,
+  "base": [
+   "CohereLabs/tiny-aya-base"
+  ],
+  "gated": "auto",
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 3349227520
+  },
+  "total": 3349227520
+ },
+ {
+  "id": "DreamFast/Qwen3-VL-8B-Heretic-1.3.0",
+  "created": "2026-06-05",
+  "dl": 5593,
+  "likes": 43,
+  "base": [
+   "Qwen/Qwen3-VL-8B-Instruct"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8767123696
+  },
+  "total": 8767123696
+ },
+ {
+  "id": "tencent/Qwen3.8-27B-DSpine-b16",
+  "created": "2026-11-07",
+  "dl": 5590,
+  "likes": 277,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 2025912064
+  },
+  "total": 2025912064
+ },
+ {
+  "id": "XHToken/Spark-X2.6-1.7B",
+  "created": "2026-10-19",
+  "dl": 5574,
+  "likes": 85,
+  "base": [
+   "XHToken/Spark-X2.6-1.7B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1707657216
+  },
+  "total": 1707657216
+ },
+ {
+  "id": "Diffuspace/Clover-35B-A3B-Preview",
+  "created": "2026-10-24",
+  "dl": 5532,
+  "likes": 273,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 34661350848
+  },
+  "total": 34661350848
+ },
+ {
+  "id": "empero-ai/Qwen3.8-9B-Distill",
+  "created": "2026-08-15",
+  "dl": 5455,
+  "likes": 239,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 9653104368
+  },
+  "total": 9653104368
+ },
+ {
+  "id": "HuggingFaceBio/Carbon-X",
+  "created": "2026-10-21",
+  "dl": 5243,
+  "likes": 306,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 14822046720
+  },
+  "total": 14822046720
+ },
+ {
+  "id": "taobao-mnn/MNN-Pocket-0.3B",
+  "created": "2026-09-23",
+  "dl": 4580,
+  "likes": 290,
+  "base": [
+   "taobao-mnn/MNN-Pocket-0.3B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 361551232
+  },
+  "total": 361551232
+ },
+ {
+  "id": "empero-ai/Qwen3.8-35B-A3B-Distill",
+  "created": "2026-09-16",
+  "dl": 4288,
+  "likes": 103,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 35951822704
+  },
+  "total": 35107181936
+ },
+ {
+  "id": "Qwen/WebWorld-32B",
+  "created": "2026-02-13",
+  "dl": 4101,
+  "likes": 91,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [
+   "Qwen/WebWorldData"
+  ],
+  "st_dtypes": {
+   "BF16": 32762123264
+  },
+  "total": 676864
+ },
+ {
+  "id": "ceia-research/lumi-4b",
+  "created": "2026-10-27",
+  "dl": 4093,
+  "likes": 75,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [
+   "HuggingFaceFW/finepdfs-edu",
+   "HuggingFaceFW/fineweb-2",
+   "Polygl0t/gigaverbo-v2",
+   "nvidia/Nemotron-CC-v2.1",
+   "nvidia/Nemotron-Pretraining-Specialized-v1.1",
+   "nvidia/Nemotron-Pretraining-SFT-v1"
+  ],
+  "st_dtypes": {
+   "BF16": 3973556832
+  },
+  "total": 3973556832
+ },
+ {
+  "id": "Remek/basal-omni-1.0-ultra",
+  "created": "2026-10-15",
+  "dl": 4024,
+  "likes": 43,
+  "base": [
+   "google/gemma-4-31B-it"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 31273088876
+  },
+  "total": 31273086512
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-JP-202606",
+  "created": "2026-05-26",
+  "dl": 3921,
+  "likes": 82,
+  "base": [
+   "LiquidAI/LFM2.5-1.2B-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1170340608
+  },
+  "total": 1170340608
+ },
+ {
+  "id": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M",
+  "created": "2026-06-19",
+  "dl": 3603,
+  "likes": 1018,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 9409813744
+  },
+  "total": 9409813744
+ },
+ {
+  "id": "HemmingwayAI/Hemmingway-1.5",
+  "created": "2026-10-24",
+  "dl": 3557,
+  "likes": 63,
+  "base": [
+   "HemmingwayAI/Hemmingway-1"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27320697856
+  },
+  "total": 26895998464
+ },
+ {
+  "id": "HemmingwayAI/Hemmingway-1",
+  "created": "2026-09-20",
+  "dl": 3421,
+  "likes": 903,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27320697856
+  },
+  "total": 26895998464
+ },
+ {
+  "id": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B",
+  "created": "2026-07-24",
+  "dl": 3311,
+  "likes": 31,
+  "base": [
+   "unsloth/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4659861248,
+   "F32": 3840
+  },
+  "total": 4659865088
+ },
+ {
+  "id": "arcee-ai/Trinity-Large-Thinking",
+  "created": "2026-04-01",
+  "dl": 3290,
+  "likes": 191,
+  "base": [
+   "arcee-ai/Trinity-Large-Base"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 398635272192,
+   "F32": 13824
+  },
+  "total": 398635286016
+ },
+ {
+  "id": "kakaocorp/kanana-2-30b-a3b-instruct-2601",
+  "created": "2026-01-14",
+  "dl": 3278,
+  "likes": 58,
+  "base": [
+   "kakaocorp/kanana-2-30b-a3b-mid-2601"
+  ],
+  "gated": false,
+  "sort": "downloads",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 30670815104
+  },
+  "total": 30670809088
+ },
+ {
+  "id": "TokenRhythm/NeoHorse-1-4B",
+  "created": "2026-09-05",
+  "dl": 2800,
+  "likes": 2558,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4205751296
+  },
+  "total": 4205751296
+ },
+ {
+  "id": "TokenRhythm/NeoHorse-1-9B",
+  "created": "2026-09-05",
+  "dl": 1399,
+  "likes": 1052,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8953803264
+  },
+  "total": 8953803264
+ },
+ {
+  "id": "WeiboAI/VibeThinker-3B",
+  "created": "2026-06-12",
+  "dl": 2606,
+  "likes": 865,
+  "base": [
+   "Qwen/Qwen2.5-Coder-3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 3085938688
+  },
+  "total": 3085938688
+ },
+ {
+  "id": "Tesslate/OmniCoder-9B",
+  "created": "2026-03-12",
+  "dl": 836,
+  "likes": 698,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 9409813744
+  },
+  "total": 9409813744
+ },
+ {
+  "id": "harshatheg/Qwen-2.5-1B-RLCD",
+  "created": "2026-09-16",
+  "dl": 0,
+  "likes": 591,
+  "base": [
+   "Qwen/Qwen2.5-1.5B-Instruct"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {},
+  "total": null
+ },
+ {
+  "id": "XYZAILab/XYZ-Aquila-mini",
+  "created": "2026-07-22",
+  "dl": 333,
+  "likes": 444,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 35107181936
+  },
+  "total": 35107181936
+ },
+ {
+  "id": "chromadb/context-1",
+  "created": "2026-03-12",
+  "dl": 647,
+  "likes": 425,
+  "base": [
+   "openai/gpt-oss-20b"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 20914757184
+  },
+  "total": 20914757184
+ },
+ {
+  "id": "openbmb/AgentCPM-Explore",
+  "created": "2026-01-11",
+  "dl": 2420,
+  "likes": 418,
+  "base": [
+   "Qwen/Qwen3-4B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4411424256
+  },
+  "total": 4022468096
+ },
+ {
+  "id": "superwhisper/s1-mini",
+  "created": "2026-08-12",
+  "dl": 1926,
+  "likes": 388,
+  "base": [
+   "Qwen/Qwen3-0.6B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 751632384
+  },
+  "total": 751632384
+ },
+ {
+  "id": "XYZAILab/XYZ-Aquila-pro",
+  "created": "2026-07-22",
+  "dl": 192,
+  "likes": 380,
+  "base": [
+   "Qwen/Qwen3.5-397B-A17B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 396802360816
+  },
+  "total": 396802360816
+ },
+ {
+  "id": "fdtn-ai/antares-1b",
+  "created": "2026-07-21",
+  "dl": 740,
+  "likes": 332,
+  "base": [
+   "ibm-granite/granite-4.0-1b"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1837271040
+  },
+  "total": 1837271040
+ },
+ {
+  "id": "LocoreMind/LocoOperator-4B",
+  "created": "2026-02-23",
+  "dl": 386,
+  "likes": 279,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4022468096
+  },
+  "total": 4022468096
+ },
+ {
+  "id": "miromind-ai/MiroThinker-v1.5-235B",
+  "created": "2026-01-04",
+  "dl": 91,
+  "likes": 254,
+  "base": [
+   "Qwen/Qwen3-235B-A22B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 235093634560
+  },
+  "total": 235093634560
+ },
+ {
+  "id": "miromind-ai/MiroThinker-v1.5-30B",
+  "created": "2026-01-04",
+  "dl": 782,
+  "likes": 245,
+  "base": [
+   "Qwen/Qwen3-30B-A3B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 30532122624
+  },
+  "total": 30532122624
+ },
+ {
+  "id": "audnai/penclaw-Kimi-K3.1-pro-unrestricted",
+  "created": "2026-10-23",
+  "dl": 583,
+  "likes": 242,
+  "base": [
+   "moonshotai/Kimi-K3.1-Pro"
+  ],
+  "gated": "manual",
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 11122432,
+   "BF16": 57358410752,
+   "U8": 2722740830208
+  },
+  "total": 2780110363392
+ },
+ {
+  "id": "pipecat-ai/phonellm-alpha-1",
+  "created": "2026-08-24",
+  "dl": 527,
+  "likes": 235,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 2944,
+   "BF16": 31577937344
+  },
+  "total": 31577937344
+ },
+ {
+  "id": "lukey03/Qwen3.5-9B-abliterated",
+  "created": "2026-03-03",
+  "dl": 2723,
+  "likes": 210,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8953803264
+  },
+  "total": 8953803264
+ },
+ {
+  "id": "AliesTaha/fable-traces",
+  "created": "2026-07-03",
+  "dl": 113,
+  "likes": 210,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4022468096
+  },
+  "total": 4022468096
+ },
+ {
+  "id": "lordx64/Qwable-v1",
+  "created": "2026-06-14",
+  "dl": 146,
+  "likes": 204,
+  "base": [
+   "lordx64/Qwen3.6-35B-A3B-Claude-4.7-Opus-Reasoning-Distilled"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "lordx64/agentic-distill-fable-5-sft"
+  ],
+  "st_dtypes": {
+   "BF16": 35951822704
+  },
+  "total": 35951822704
+ },
+ {
+  "id": "zed-industries/zeta-2",
+  "created": "2026-03-23",
+  "dl": 622,
+  "likes": 202,
+  "base": [
+   "ByteDance-Seed/Seed-Coder-8B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8250462208
+  },
+  "total": 8250462208
+ },
+ {
+  "id": "kai-os/Carnice-9b",
+  "created": "2026-04-03",
+  "dl": 279,
+  "likes": 191,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8953803264
+  },
+  "total": 8953803264
+ },
+ {
+  "id": "GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-Thinking",
+  "created": "2026-07-03",
+  "dl": 738,
+  "likes": 185,
+  "base": [
+   "openbmb/MiniCPM5-1B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1080632832
+  },
+  "total": 1080632832
+ },
+ {
+  "id": "arcee-ai/Trinity-Large-Preview",
+  "created": "2026-01-27",
+  "dl": 2233,
+  "likes": 181,
+  "base": [
+   "arcee-ai/Trinity-Large-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 398635286016
+  },
+  "total": 398635286016
+ },
+ {
+  "id": "empero-ai/Qwythos-9B-v2",
+  "created": "2026-07-09",
+  "dl": 1315,
+  "likes": 180,
+  "base": [
+   "empero-ai/Qwythos-9B-Claude-Mythos-5-1M"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 9653104368
+  },
+  "total": 9653104368
+ },
+ {
+  "id": "LiquidAI/LFM2-2.6B-Transcript",
+  "created": "2026-01-05",
+  "dl": 714,
+  "likes": 176,
+  "base": [
+   "LiquidAI/LFM2-2.6B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 2569272320
+  },
+  "total": 2569272320
+ },
+ {
+  "id": "huihui-ai/Huihui-gemma-4-12B-coder-fable5-composer2.5-v1-abliterated",
+  "created": "2026-06-21",
+  "dl": 323,
+  "likes": 171,
+  "base": [
+   "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 463994880,
+   "F16": 11495735344
+  },
+  "total": 11959730224
+ },
+ {
+  "id": "apodex/Apodex-1.1-mini",
+  "created": "2026-08-17",
+  "dl": 1436,
+  "likes": 161,
+  "base": [
+   "Qwen/Qwen3.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 35951822704
+  },
+  "total": 35951822704
+ },
+ {
+  "id": "XHToken/Spark-X2.5-1.7B",
+  "created": "2026-08-24",
+  "dl": 2169,
+  "likes": 157,
+  "base": [
+   "XHToken/Spark-X2.5-1.7B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1707657216
+  },
+  "total": 1707657216
+ },
+ {
+  "id": "LiquidAI/LFM2.5-1.2B-JP",
+  "created": "2026-01-04",
+  "dl": 2855,
+  "likes": 156,
+  "base": [
+   "LiquidAI/LFM2.5-1.2B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1170340608
+  },
+  "total": 1170340608
+ },
+ {
+  "id": "Motif-Technologies/Motif-3",
+  "created": "2026-08-07",
+  "dl": 2401,
+  "likes": 155,
+  "base": [
+   "Motif-Technologies/Motif-3-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 314841775750
+  },
+  "total": 314841775750
+ },
+ {
+  "id": "LocoreMind/LocoTrainer-4B",
+  "created": "2026-03-13",
+  "dl": 39,
+  "likes": 152,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4411424256
+  },
+  "total": 4022468096
+ },
+ {
+  "id": "thesysdev/OUI-1",
+  "created": "2026-09-07",
+  "dl": 701,
+  "likes": 152,
+  "base": [
+   "google/diffusiongemma-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 25823781228
+  },
+  "total": 25823778864
+ },
+ {
+  "id": "SupraLabs/Supra-Router-51M",
+  "created": "2026-07-05",
+  "dl": 601,
+  "likes": 148,
+  "base": [
+   "SupraLabs/Supra1.5-50M-Base-exp"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "SupraLabs/Prompt-Routing-Dataset"
+  ],
+  "st_dtypes": {
+   "BF16": 51786240
+  },
+  "total": 51786240
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Nano-9B-v2-Japanese",
+  "created": "2026-02-04",
+  "dl": 3177,
+  "likes": 146,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-Nano-9B-v2"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "nvidia/Nemotron-Personas-Japan",
+   "nvidia/Nemotron-CC-v2.1",
+   "nvidia/Nemotron-Pretraining-Specialized-v1",
+   "nvidia/Nemotron-Agentic-v1",
+   "nvidia/Nemotron-Instruction-Following-Chat-v1",
+   "globis-university/aozorabunko-clean",
+   "HuggingFaceFW/fineweb-2"
+  ],
+  "st_dtypes": {
+   "BF16": 8888227328
+  },
+  "total": 8888227328
+ },
+ {
+  "id": "miromind-ai/MiroThinker-1.7",
+  "created": "2026-03-09",
+  "dl": 114,
+  "likes": 146,
+  "base": [
+   "Qwen/Qwen3-235B-A22B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 235093634560
+  },
+  "total": 235093634560
+ },
+ {
+  "id": "ByteDance-Seed/Stable-DiffCoder-8B-Instruct",
+  "created": "2026-01-15",
+  "dl": 765,
+  "likes": 143,
+  "base": [
+   "ByteDance-Seed/Stable-DiffCoder-8B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8250462208
+  },
+  "total": 8250462208
+ },
+ {
+  "id": "zed-industries/zeta-2.1",
+  "created": "2026-05-07",
+  "dl": 2515,
+  "likes": 140,
+  "base": [
+   "ByteDance-Seed/Seed-Coder-8B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8250462208
+  },
+  "total": 8250462208
+ },
+ {
+  "id": "empero-ai/Qwable-9B-Claude-Fable-5",
+  "created": "2026-06-15",
+  "dl": 466,
+  "likes": 134,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "Glint-Research/Fable-5-traces",
+   "Roman1111111/gpt5.5-terminal"
+  ],
+  "st_dtypes": {
+   "BF16": 9409813744
+  },
+  "total": 9409813744
+ },
+ {
+  "id": "inclusionAI/Ling-3.0-flash-Fin",
+  "created": "2026-09-03",
+  "dl": 2500,
+  "likes": 133,
+  "base": [
+   "inclusionAI/Ling-3.0-flash"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 165472,
+   "BF16": 127486240128
+  },
+  "total": 127486405600
+ },
+ {
+  "id": "medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic",
+  "created": "2026-09-06",
+  "dl": 1101,
+  "likes": 130,
+  "base": [
+   "OBLITERATUS/Qwen3.8-27B-OBLITERATED"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27781427952
+  },
+  "total": 27781427952
+ },
+ {
+  "id": "Akahsizrr/fuse-1-Lite",
+  "created": "2026-08-05",
+  "dl": 174,
+  "likes": 125,
+  "base": [
+   "LiquidAI/LFM2.5-2.6B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 5719063552
+  },
+  "total": 5719063552
+ },
+ {
+  "id": "squ11z1/Mythos-nano",
+  "created": "2026-06-14",
+  "dl": 2745,
+  "likes": 123,
+  "base": [
+   "WeiboAI/VibeThinker-3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 3085938688
+  },
+  "total": 3085938688
+ },
+ {
+  "id": "huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated",
+  "created": "2026-08-10",
+  "dl": 1089,
+  "likes": 119,
+  "base": [
+   "oyildirim/CyberStrike-OffSec-35B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 35951822704
+  },
+  "total": 35951822704
+ },
+ {
+  "id": "OrionLLM/OxCoder-9B",
+  "created": "2026-09-07",
+  "dl": 692,
+  "likes": 113,
+  "base": [
+   "Qwen/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 9409813744
+  },
+  "total": 9409813744
+ },
+ {
+  "id": "yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2",
+  "created": "2026-06-28",
+  "dl": 755,
+  "likes": 112,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F16": 11959730224
+  },
+  "total": 11959730224
+ },
+ {
+  "id": "pat-jj/harness-1",
+  "created": "2026-05-12",
+  "dl": 258,
+  "likes": 107,
+  "base": [
+   "openai/gpt-oss-20b"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 20914757184
+  },
+  "total": 20914757184
+ },
+ {
+  "id": "openbmb/BitCPM-CANN-8B",
+  "created": "2026-05-15",
+  "dl": 3038,
+  "likes": 107,
+  "base": [
+   "openbmb/MiniCPM4-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {},
+  "total": null
+ },
+ {
+  "id": "DavidAU/Llama3.3-8B-Instruct-Thinking-Claude-4.5-Opus-High-Reasoning",
+  "created": "2026-01-01",
+  "dl": 710,
+  "likes": 105,
+  "base": [
+   "allura-forge/Llama-3.3-8B-Instruct"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "TeichAI/claude-4.5-opus-high-reasoning-250x"
+  ],
+  "st_dtypes": {
+   "BF16": 8030261248
+  },
+  "total": 8030261248
+ },
+ {
+  "id": "baichuan-inc/Baichuan-M3-235B",
+  "created": "2026-01-13",
+  "dl": 2388,
+  "likes": 105,
+  "base": [
+   "Qwen/Qwen3-235B-A22B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 235093634560
+  },
+  "total": 235093634560
+ },
+ {
+  "id": "miromind-ai/MiroThinker-1.7-mini",
+  "created": "2026-03-09",
+  "dl": 933,
+  "likes": 105,
+  "base": [
+   "Qwen/Qwen3-235B-A22B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 30532122624
+  },
+  "total": 30532122624
+ },
+ {
+  "id": "Gryphe/Gemma-4-31B-StyleTune",
+  "created": "2026-06-10",
+  "dl": 816,
+  "likes": 105,
+  "base": [
+   "google/gemma-4-31B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 32682375020
+  },
+  "total": 32682372656
+ },
+ {
+  "id": "AlexWortega/SIQ-1-35B",
+  "created": "2026-06-14",
+  "dl": 804,
+  "likes": 104,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 34660610688
+  },
+  "total": 34660610688
+ },
+ {
+  "id": "ProCreations/grug-27b",
+  "created": "2026-07-23",
+  "dl": 322,
+  "likes": 102,
+  "base": [
+   "Qwen/Qwen3.6-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "ProCreations/grug-think-v3-10k",
+   "ProCreations/grug-think"
+  ],
+  "st_dtypes": {
+   "BF16": 27356728560
+  },
+  "total": 27356728560
+ },
+ {
+  "id": "huihui-ai/Huihui-GLM-4.7-Flash-abliterated",
+  "created": "2026-01-22",
+  "dl": 1271,
+  "likes": 98,
+  "base": [
+   "zai-org/GLM-4.7-Flash"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 31221485568,
+   "F32": 3008
+  },
+  "total": 31221488576
+ },
+ {
+  "id": "Gryphe/Gemma-4-26B-A4B-StyleTune-V2",
+  "created": "2026-06-20",
+  "dl": 1047,
+  "likes": 98,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 26544133710
+  },
+  "total": 26544131376
+ },
+ {
+  "id": "DMindAI/DMind-3",
+  "created": "2026-01-22",
+  "dl": 51,
+  "likes": 92,
+  "base": [
+   "Qwen/Qwen3.5-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27356728560
+  },
+  "total": 27356728560
+ },
+ {
+  "id": "lm-provers/QED-Nano",
+  "created": "2026-02-12",
+  "dl": 898,
+  "likes": 90,
+  "base": [
+   "lm-provers/QED-Nano-SFT"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "lm-provers/FineProofs-RL"
+  ],
+  "st_dtypes": {
+   "BF16": 4022468096
+  },
+  "total": 4022468096
+ },
+ {
+  "id": "oyildirim/CyberStrike-OffSec-35B",
+  "created": "2026-06-25",
+  "dl": 616,
+  "likes": 90,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 35107181936
+  },
+  "total": 35107181936
+ },
+ {
+  "id": "bytkim/Qwen3.8-27B-pi",
+  "created": "2026-09-29",
+  "dl": 1732,
+  "likes": 89,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27781427952
+  },
+  "total": 27781427952
+ },
+ {
+  "id": "gugujiji/novel-humanize-4b",
+  "created": "2026-10-25",
+  "dl": 1805,
+  "likes": 89,
+  "base": [
+   "Qwen/Qwen3-4B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4022468096
+  },
+  "total": 4022468096
+ },
+ {
+  "id": "darkc0de/XORTRON.CriminalComputing.LARGE.2026.3",
+  "created": "2026-02-21",
+  "dl": 345,
+  "likes": 88,
+  "base": [
+   "mistralai/Mistral-Large-Instruct-2411"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 122610069504
+  },
+  "total": 122610069504
+ },
+ {
+  "id": "Qwen/WebWorld-8B",
+  "created": "2026-02-13",
+  "dl": 1252,
+  "likes": 86,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "Qwen/WebWorldData"
+  ],
+  "st_dtypes": {
+   "BF16": 8190735360
+  },
+  "total": 8190735360
+ },
+ {
+  "id": "BennyDaBall/Z-Image-Engineer-V6",
+  "created": "2026-06-06",
+  "dl": 1070,
+  "likes": 86,
+  "base": [
+   "Tongyi-MAI/Z-Image-Turbo"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F16": 4022468096
+  },
+  "total": 4022468096
+ },
+ {
+  "id": "Jiunsong/supergemma4-e4b-abliterated",
+  "created": "2026-04-17",
+  "dl": 242,
+  "likes": 84,
+  "base": [
+   "google/gemma-4-E4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 7518069034
+  },
+  "total": 7518068992
+ },
+ {
+  "id": "mindlab-research/Macaron-V1-Preview-749B",
+  "created": "2026-06-05",
+  "dl": 329,
+  "likes": 84,
+  "base": [
+   "zai-org/GLM-5.1"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 753864119552,
+   "F32": 19456
+  },
+  "total": 753864139008
+ },
+ {
+  "id": "Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B",
+  "created": "2026-07-19",
+  "dl": 2515,
+  "likes": 83,
+  "base": [
+   "unsloth/Qwen3.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 9653100528,
+   "F32": 3840
+  },
+  "total": 9653104368
+ },
+ {
+  "id": "cerebras/GLM-4.7-Flash-REAP-23B-A3B",
+  "created": "2026-01-23",
+  "dl": 765,
+  "likes": 82,
+  "base": [
+   "zai-org/GLM-4.7-Flash"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 2208,
+   "BF16": 22996116224
+  },
+  "total": 22996118432
+ },
+ {
+  "id": "fdtn-ai/antares-350m",
+  "created": "2026-07-21",
+  "dl": 221,
+  "likes": 81,
+  "base": [
+   "ibm-granite/granite-4.0-350m"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 352379904
+  },
+  "total": 352379904
+ },
+ {
+  "id": "tencent/Penguin-VL-8B",
+  "created": "2026-03-05",
+  "dl": 379,
+  "likes": 80,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8652785664
+  },
+  "total": 8652785664
+ },
+ {
+  "id": "FutureMa/Eva-4B",
+  "created": "2026-01-11",
+  "dl": 41,
+  "likes": 79,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4022468096
+  },
+  "total": 4022468096
+ },
+ {
+  "id": "TrevorJS/gemma-4-26B-A4B-it-uncensored",
+  "created": "2026-04-03",
+  "dl": 1688,
+  "likes": 79,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 25805936206
+  },
+  "total": 25805933872
+ },
+ {
+  "id": "Blackfrost-AI/CYBER-FROST-3.8-BF16",
+  "created": "2026-09-15",
+  "dl": 1109,
+  "likes": 79,
+  "base": [
+   "Qwen/Qwen3.8-Flash-Next"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 179999981424,
+   "I64": 35
+  },
+  "total": 179999981459
+ },
+ {
+  "id": "Rakuten/RakutenAI-3.0",
+  "created": "2026-03-16",
+  "dl": 369,
+  "likes": 78,
+  "base": [
+   "deepseek-ai/DeepSeek-V3-0324"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 14848,
+   "BF16": 1960795136,
+   "F8_E4M3": 669065609216
+  },
+  "total": 671026419200
+ },
+ {
+  "id": "Apexintelligence-AI/Apex-35B-V1.0",
+  "created": "2026-10-28",
+  "dl": 2165,
+  "likes": 76,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 35951822704
+  },
+  "total": 35951822704
+ },
+ {
+  "id": "Applied-Innovation-Center/Karnak-40B-v1.0",
+  "created": "2026-02-06",
+  "dl": 1815,
+  "likes": 75,
+  "base": [
+   "Qwen/Qwen3-30B-A3B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 40669136896
+  },
+  "total": 40669136896
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-3-Puzzle-75B-A9B-BF16",
+  "created": "2026-06-24",
+  "dl": 2140,
+  "likes": 73,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "nvidia/nemotron-post-training-v3",
+   "nvidia/nemotron-pre-training-datasets"
+  ],
+  "st_dtypes": {
+   "BF16": 78295649280,
+   "F32": 20992
+  },
+  "total": 75353324544
+ },
+ {
+  "id": "OpenResearcher/OpenResearcher-30B-A3B",
+  "created": "2026-02-03",
+  "dl": 1262,
+  "likes": 72,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "OpenResearcher/OpenResearcher-Dataset"
+  ],
+  "st_dtypes": {
+   "F32": 2944,
+   "BF16": 31577937344
+  },
+  "total": 31577937344
+ },
+ {
+  "id": "huihui-ai/Huihui-Qwen3-Coder-Next-abliterated",
+  "created": "2026-02-07",
+  "dl": 1266,
+  "likes": 72,
+  "base": [
+   "Qwen/Qwen3-Coder-Next"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 79674391296
+  },
+  "total": 79674391296
+ },
+ {
+  "id": "allenai/AstaBrief_8B",
+  "created": "2026-02-09",
+  "dl": 2843,
+  "likes": 72,
+  "base": [
+   "allenai/AstaBrief_8B_SFT"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "allenai/AstaBrief_DPO_Mix"
+  ],
+  "st_dtypes": {},
+  "total": null
+ },
+ {
+  "id": "microsoft/FrogMini-14B-2510",
+  "created": "2026-01-09",
+  "dl": 2202,
+  "likes": 71,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 14768307200
+  },
+  "total": 424960
+ },
+ {
+  "id": "HuggingFaceTB/nanowhale-100m",
+  "created": "2026-04-24",
+  "dl": 817,
+  "likes": 71,
+  "base": [
+   "HuggingFaceTB/nanowhale-100m-base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceTB/smol-smoltalk"
+  ],
+  "st_dtypes": {
+   "F32": 110369621
+  },
+  "total": 110369621
+ },
+ {
+  "id": "apodex/Apodex-1.0-mini",
+  "created": "2026-06-07",
+  "dl": 539,
+  "likes": 71,
+  "base": [
+   "Qwen/Qwen3.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 4800,
+   "BF16": 35951817904
+  },
+  "total": 35951822704
+ },
+ {
+  "id": "kai-os/Grug-12B",
+  "created": "2026-07-02",
+  "dl": 244,
+  "likes": 70,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "hotdogs/uka-glm-5.2",
+   "Scale-or-Reason/general-reasoning-ift-pairs",
+   "samcheng0/lumia-reasoning-sft-v1",
+   "HSH-Intelligence/verified-math-reasoning-3k",
+   "kd13/CodeDebug-Instruct-v2-Reasoning",
+   "Madarabr/cortex-adaptive-thinking",
+   "CL-From-Nothing/code_rose_initial_1_7B_SFT_10K_rollouts_Qwen3-4B-Thinking-2507_k12_t0.7_maxtok12288"
+  ],
+  "st_dtypes": {
+   "BF16": 11959730224
+  },
+  "total": 11959730176
+ },
+ {
+  "id": "DavidAU/Llama3.3-8B-Instruct-Thinking-Heretic-Uncensored-Claude-4.5-Opus-High-Reasoning",
+  "created": "2026-01-02",
+  "dl": 1097,
+  "likes": 67,
+  "base": [
+   "allura-forge/Llama-3.3-8B-Instruct"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "TeichAI/claude-4.5-opus-high-reasoning-250x"
+  ],
+  "st_dtypes": {
+   "BF16": 8030261248
+  },
+  "total": 8030261248
+ },
+ {
+  "id": "BennyDaBall/Krea-2-Engineer-V1",
+  "created": "2026-06-28",
+  "dl": 0,
+  "likes": 67,
+  "base": [
+   "krea/Krea-2-Turbo"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {},
+  "total": null
+ },
+ {
+  "id": "0xSero/Qwen3.5-28B",
+  "created": "2026-03-27",
+  "dl": 126,
+  "likes": 65,
+  "base": [
+   "Qwen/Qwen3.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 28685718896
+  },
+  "total": 28685718896
+ },
+ {
+  "id": "yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1",
+  "created": "2026-06-17",
+  "dl": 276,
+  "likes": 65,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F16": 11959730224
+  },
+  "total": 11959730224
+ },
+ {
+  "id": "Octen/Octen-WebGR-4B",
+  "created": "2026-10-26",
+  "dl": 1498,
+  "likes": 65,
+  "base": [
+   "Qwen/Qwen3-4B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4358012416
+  },
+  "total": 4358012416
+ },
+ {
+  "id": "kakaocorp/kanana-2-30b-a3b-thinking-2601",
+  "created": "2026-01-14",
+  "dl": 2299,
+  "likes": 64,
+  "base": [
+   "kakaocorp/kanana-2-30b-a3b-mid-2601"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 30670815104
+  },
+  "total": 30670809088
+ },
+ {
+  "id": "Jiunsong/SuperDeepseek-V4-Flash-abliterated-MQ-2xDGX",
+  "created": "2026-08-11",
+  "dl": 607,
+  "likes": 64,
+  "base": [
+   "deepseek-ai/DeepSeek-V4-Flash-0731"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 2013098368,
+   "I64": 2327040,
+   "F32": 37741630,
+   "F8_E4M3": 7847542784,
+   "I8": 296352743424
+  },
+  "total": 306253453246
+ },
+ {
+  "id": "Blackfrost-Research/GLM-5.3-DERISKED-BF16",
+  "created": "2026-08-28",
+  "dl": 869,
+  "likes": 64,
+  "base": [
+   "zai-org/GLM-5.3-BF16"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 19456,
+   "BF16": 753329921024
+  },
+  "total": 753329940480
+ },
+ {
+  "id": "SupraLabs/Supra-50M-Reasoning",
+  "created": "2026-06-03",
+  "dl": 173,
+  "likes": 63,
+  "base": [
+   "SupraLabs/Supra-50M-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "SupraLabs/SupraThink-Dataset-500x"
+  ],
+  "st_dtypes": {
+   "BF16": 51786240
+  },
+  "total": 51786240
+ },
+ {
+  "id": "DMindAI/DMind-3-mini",
+  "created": "2026-01-11",
+  "dl": 45,
+  "likes": 62,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4539265536
+  },
+  "total": 4539265536
+ },
+ {
+  "id": "janhq/Jan-v3-4B-base-instruct",
+  "created": "2026-01-19",
+  "dl": 1129,
+  "likes": 62,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4411424256
+  },
+  "total": 4411424256
+ },
+ {
+  "id": "ai-sage/GigaChat3.1-Audio-10B-A1.8B",
+  "created": "2026-07-13",
+  "dl": 1258,
+  "likes": 61,
+  "base": [
+   "ai-sage/GigaChat3.1-10B-A1.8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {},
+  "total": null
+ },
+ {
+  "id": "Octen/Octen-WebGR-0.6B",
+  "created": "2026-10-26",
+  "dl": 1524,
+  "likes": 58,
+  "base": [
+   "Qwen/Qwen3-0.6B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 730267648
+  },
+  "total": 730267648
+ },
+ {
+  "id": "arcee-ai/Trinity-Large-Base",
+  "created": "2026-01-27",
+  "dl": 1689,
+  "likes": 57,
+  "base": [
+   "arcee-ai/Trinity-Large-TrueBase"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 398635286016
+  },
+  "total": 398635286016
+ },
+ {
+  "id": "t-tech/T-Search",
+  "created": "2026-07-13",
+  "dl": 316,
+  "likes": 57,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 35951822704
+  },
+  "total": 35951822704
+ },
+ {
+  "id": "latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0",
+  "created": "2026-05-29",
+  "dl": 1165,
+  "likes": 56,
+  "base": [
+   "meta-llama/Llama-3.1-70B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 70553706496
+  },
+  "total": 70553706496
+ },
+ {
+  "id": "juspay/xor",
+  "created": "2026-09-21",
+  "dl": 410,
+  "likes": 56,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 35107181936
+  },
+  "total": 35107181936
+ },
+ {
+  "id": "silx-ai/Quasar-10B",
+  "created": "2026-03-09",
+  "dl": 96,
+  "likes": 55,
+  "base": [
+   "Qwen/Qwen3.5-9B-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8602037248
+  },
+  "total": 8602037248
+ },
+ {
+  "id": "sabicap/sabi-noema",
+  "created": "2026-10-13",
+  "dl": 1405,
+  "likes": 55,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27356720112,
+   "F32": 8448
+  },
+  "total": 27356728560
+ },
+ {
+  "id": "tsinghua-sigs-robot-lab/VeriLoop-E2",
+  "created": "2026-09-22",
+  "dl": 1287,
+  "likes": 54,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27781427952,
+   "I64": 382,
+   "I32": 69481,
+   "F16": 752640,
+   "I16": 455,
+   "I8": 189,
+   "U8": 90502517
+  },
+  "total": 27872753616
+ },
+ {
+  "id": "TeichAI/GLM-4.7-Flash-Claude-Opus-4.5-High-Reasoning-Distill",
+  "created": "2026-01-22",
+  "dl": 188,
+  "likes": 53,
+  "base": [
+   "unsloth/GLM-4.7-Flash"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "TeichAI/claude-4.5-opus-high-reasoning-250x"
+  ],
+  "st_dtypes": {
+   "BF16": 31221485568,
+   "F32": 3008
+  },
+  "total": 31221488576
+ },
+ {
+  "id": "FrontiersMind/Nandi-Mini-150M-Tool-Calling",
+  "created": "2026-04-16",
+  "dl": 122,
+  "likes": 53,
+  "base": [
+   "FrontiersMind/Nandi-Mini-150M"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 153412928
+  },
+  "total": 153412928
+ },
+ {
+  "id": "LiquidAI/LFM2-2.6B-Longevity",
+  "created": "2026-05-25",
+  "dl": 2065,
+  "likes": 53,
+  "base": [
+   "LiquidAI/LFM2-2.6B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 2569272320
+  },
+  "total": 2569272320
+ },
+ {
+  "id": "BAAI/AREX-Turbo",
+  "created": "2026-07-23",
+  "dl": 1937,
+  "likes": 53,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4539265536
+  },
+  "total": 4539265536
+ },
+ {
+  "id": "LastMachine/Qwen3-8B-ZeroZero-Heretic",
+  "created": "2026-11-03",
+  "dl": 1549,
+  "likes": 53,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8190735360
+  },
+  "total": 8190735360
+ },
+ {
+  "id": "heretic-org/Nanbeige4.1-3B-heretic",
+  "created": "2026-02-16",
+  "dl": 99,
+  "likes": 52,
+  "base": [
+   "Nanbeige/Nanbeige4.1-3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 3933637120
+  },
+  "total": 3933637120
+ },
+ {
+  "id": "FrontiersMind/Nandi-Mini-150M-Instruct",
+  "created": "2026-04-13",
+  "dl": 156,
+  "likes": 52,
+  "base": [
+   "FrontiersMind/Nandi-Mini-150M"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 153412928
+  },
+  "total": 153412928
+ },
+ {
+  "id": "orcarouter/LFM3-1.7B-abliterated",
+  "created": "2026-11-02",
+  "dl": 756,
+  "likes": 51,
+  "base": [
+   "LiquidAI/LFM3-1.7B"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1728801536
+  },
+  "total": 1728801536
+ },
+ {
+  "id": "SupraLabs/Supra1.5-50M-Instruct-exp",
+  "created": "2026-06-12",
+  "dl": 159,
+  "likes": 50,
+  "base": [
+   "SupraLabs/Supra1.5-50M-Base-exp"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 51786240
+  },
+  "total": 51786240
+ },
+ {
+  "id": "Jab1718/qwen3.8-flash-coder-85gb-bf16",
+  "created": "2026-08-27",
+  "dl": 1848,
+  "likes": 50,
+  "base": [
+   "Qwen/Qwen3.8-Flash-Next"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 42620341120
+  },
+  "total": 42620341120
+ },
+ {
+  "id": "FINAL-Bench/Darwin-27B-RSI",
+  "created": "2026-09-27",
+  "dl": 388,
+  "likes": 50,
+  "base": [
+   "FINAL-Bench/Darwin-27B-Opus"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 26895998464
+  },
+  "total": 26895998464
+ },
+ {
+  "id": "CohereLabs/tiny-aya-water",
+  "created": "2026-02-13",
+  "dl": 527,
+  "likes": 49,
+  "base": [
+   "CohereLabs/tiny-aya-base"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 3349227520
+  },
+  "total": 3349227520
+ },
+ {
+  "id": "Gryphe/Gemma-4-26B-A4B-StyleTune",
+  "created": "2026-06-14",
+  "dl": 97,
+  "likes": 49,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 26544133710
+  },
+  "total": 26544131376
+ },
+ {
+  "id": "PrimeIntellect/INTELLECT-3.1",
+  "created": "2026-01-20",
+  "dl": 476,
+  "likes": 48,
+  "base": [
+   "zai-org/GLM-4.5-Air-Base"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 5760,
+   "BF16": 106852245504
+  },
+  "total": 106852251264
+ },
+ {
+  "id": "speakleash/Bielik-Minitron-7B-v3.0-Instruct",
+  "created": "2026-01-22",
+  "dl": 905,
+  "likes": 48,
+  "base": [
+   "speakleash/Bielik-11B-v3-Base-20250730"
+  ],
+  "gated": "auto",
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 7477727232
+  },
+  "total": 7477727232
+ },
+ {
+  "id": "GnLOLot/MiniCPM5-1B-Claude-Opus-Fable5-V2-Thinking",
+  "created": "2026-07-13",
+  "dl": 981,
+  "likes": 48,
+  "base": [
+   "openbmb/MiniCPM5-1B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1080632832
+  },
+  "total": 1080632832
+ },
+ {
+  "id": "empero-ai/Qwen3.8-2B-Distill",
+  "created": "2026-08-15",
+  "dl": 3120,
+  "likes": 48,
+  "base": [
+   "Qwen/Qwen3.5-2B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 2274069824
+  },
+  "total": 2274069824
+ },
+ {
+  "id": "FINAL-Bench/Qwen3.5-35B-A3B-VKAE",
+  "created": "2026-07-03",
+  "dl": 0,
+  "likes": 47,
+  "base": [
+   "Qwen/Qwen3.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {},
+  "total": null
+ },
+ {
+  "id": "whittleOrg/Whittle-Next-27B-A3B",
+  "created": "2026-09-03",
+  "dl": 1028,
+  "likes": 47,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27568288896,
+   "I64": 19
+  },
+  "total": 27568288915
+ },
+ {
+  "id": "Gryphe/Gemma-4-12B-StyleTune",
+  "created": "2026-06-19",
+  "dl": 388,
+  "likes": 46,
+  "base": [
+   "google/gemma-4-12B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 12966363184
+  },
+  "total": 12966363184
+ },
+ {
+  "id": "microsoft/FrogBoss-32B-2510",
+  "created": "2026-01-05",
+  "dl": 2213,
+  "likes": 45,
+  "base": [
+   "Qwen/Qwen3-32B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 32762123264
+  },
+  "total": 676864
+ },
+ {
+  "id": "cebeuq/DeepSeek-V4-Flash-0731-abliterated",
+  "created": "2026-08-01",
+  "dl": 783,
+  "likes": 45,
+  "base": [
+   "deepseek-ai/DeepSeek-V4-Flash-0731"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1483567488,
+   "I64": 2327040,
+   "F32": 37741630,
+   "F8_E4M3": 7847542784,
+   "I8": 296352743424
+  },
+  "total": 305723922366
+ },
+ {
+  "id": "tencent/Penguin-VL-2B",
+  "created": "2026-03-05",
+  "dl": 705,
+  "likes": 44,
+  "base": [
+   "Qwen/Qwen3-1.7B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 2167941120
+  },
+  "total": 2167941120
+ },
+ {
+  "id": "sweepai/sweep-next-edit-v2-7B",
+  "created": "2026-03-30",
+  "dl": 118,
+  "likes": 44,
+  "base": [
+   "Qwen/Qwen2.5-Coder-7B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 7615616512
+  },
+  "total": 7615616512
+ },
+ {
+  "id": "FINAL-Bench/Aether-7B-5Attn-it",
+  "created": "2026-07-17",
+  "dl": 154,
+  "likes": 44,
+  "base": [
+   "FINAL-Bench/Aether-7B-5Attn"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "HuggingFaceFW/fineweb-edu",
+   "HuggingFaceTB/smollm-corpus",
+   "HuggingFaceTB/finemath",
+   "open-web-math/open-web-math",
+   "OpenCoder-LLM/opc-fineweb-code-corpus",
+   "HAERAE-HUB/KOREAN-WEBTEXT",
+   "HAERAE-HUB/KOREAN-SyntheticText-1.5B"
+  ],
+  "st_dtypes": {
+   "BF16": 6589532311
+  },
+  "total": 6589532311
+ },
+ {
+  "id": "enstazao/Qalb-1.0-8B-Instruct",
+  "created": "2026-01-14",
+  "dl": 1179,
+  "likes": 43,
+  "base": [
+   "unsloth/Meta-Llama-3.1-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 8030261248
+  },
+  "total": 8030261248
+ },
+ {
+  "id": "Qwen/WebWorld-14B",
+  "created": "2026-02-13",
+  "dl": 1060,
+  "likes": 43,
+  "base": [
+   "Qwen/Qwen3-8B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "Qwen/WebWorldData"
+  ],
+  "st_dtypes": {
+   "BF16": 14768307200
+  },
+  "total": 14768307200
+ },
+ {
+  "id": "microsoft/MagenticBrain",
+  "created": "2026-05-12",
+  "dl": 2537,
+  "likes": 43,
+  "base": [
+   "Qwen/Qwen3-14B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 14768307200
+  },
+  "total": 14768307200
+ },
+ {
+  "id": "DJLougen/Qwable-5-27B-Coder",
+  "created": "2026-06-20",
+  "dl": 160,
+  "likes": 43,
+  "base": [
+   "Qwen/Qwen3.6-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27781427952
+  },
+  "total": 27781427952
+ },
+ {
+  "id": "twinkle-ai/gemma-3-4B-T1-it",
+  "created": "2026-01-04",
+  "dl": 591,
+  "likes": 41,
+  "base": [
+   "google/gemma-3-4b-pt"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "lianghsun/tw-reasoning-instruct",
+   "lianghsun/tw-contract-review-chat",
+   "minyichen/tw-instruct-R1-200k",
+   "minyichen/tw_mm_R1",
+   "minyichen/LongPaper_multitask_zh_tw_R1",
+   "nvidia/Nemotron-Instruction-Following-Chat-v1"
+  ],
+  "st_dtypes": {
+   "BF16": 4551515648
+  },
+  "total": 3880263168
+ },
+ {
+  "id": "IFM/K2-Think-V2",
+  "created": "2026-01-08",
+  "dl": 2162,
+  "likes": 41,
+  "base": [
+   "IFM/K2-V2-Instruct"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 72550195200
+  },
+  "total": 72550195200
+ },
+ {
+  "id": "FINAL-Bench/Darwin-36B-Opus-VKAE",
+  "created": "2026-07-03",
+  "dl": 0,
+  "likes": 41,
+  "base": [
+   "FINAL-Bench/Darwin-36B-Opus"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {},
+  "total": null
+ },
+ {
+  "id": "TrevorJS/gemma-4-E4B-it-uncensored",
+  "created": "2026-04-03",
+  "dl": 980,
+  "likes": 40,
+  "base": [
+   "google/gemma-4-E4B-it"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 7996156490
+  },
+  "total": 7996156490
+ },
+ {
+  "id": "Zigeng/DMax-Coder-16B",
+  "created": "2026-04-08",
+  "dl": 147,
+  "likes": 40,
+  "base": [
+   "inclusionAI/LLaDA2.0-mini"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "Zigeng/DMax-LLaDA-2.0-Mini-Code-Trajectories"
+  ],
+  "st_dtypes": {
+   "BF16": 16255643392
+  },
+  "total": 16255643392
+ },
+ {
+  "id": "huihui-ai/Huihui-Ornith-1.5-9B-abliterated",
+  "created": "2026-08-21",
+  "dl": 478,
+  "likes": 40,
+  "base": [
+   "ornith-ai/Ornith-1.5-9B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 9409813744
+  },
+  "total": 9409813744
+ },
+ {
+  "id": "DavidAU/Dolphin-Mistral-GLM-4.7-Flash-24B-Venice-Edition-Thinking-Uncensored",
+  "created": "2026-01-30",
+  "dl": 430,
+  "likes": 39,
+  "base": [
+   "dphn/Dolphin-Mistral-24B-Venice-Edition"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "TeichAI/glm-4.7-2000x"
+  ],
+  "st_dtypes": {
+   "BF16": 23572403200
+  },
+  "total": 23572403200
+ },
+ {
+  "id": "ArliAI/Qwen3.5-27B-Derestricted",
+  "created": "2026-03-08",
+  "dl": 179,
+  "likes": 39,
+  "base": [
+   "Qwen/Qwen3.5-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 27781419504,
+   "F32": 8448
+  },
+  "total": 27781427952
+ },
+ {
+  "id": "kai-os/Grug-35B-A3B",
+  "created": "2026-07-02",
+  "dl": 97,
+  "likes": 39,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [
+   "hotdogs/uka-glm-5.2",
+   "Scale-or-Reason/general-reasoning-ift-pairs",
+   "samcheng0/lumia-reasoning-sft-v1",
+   "HSH-Intelligence/verified-math-reasoning-3k",
+   "kd13/CodeDebug-Instruct-v2-Reasoning",
+   "Madarabr/cortex-adaptive-thinking",
+   "CL-From-Nothing/code_rose_initial_1_7B_SFT_10K_rollouts_Qwen3-4B-Thinking-2507_k12_t0.7_maxtok12288"
+  ],
+  "st_dtypes": {
+   "BF16": 34660610688
+  },
+  "total": 34660610688
+ },
+ {
+  "id": "togethercomputer/Tev1-4B-experimental",
+  "created": "2026-09-23",
+  "dl": 1660,
+  "likes": 39,
+  "base": [
+   "Qwen/Qwen3.5-4B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4659861248,
+   "F32": 3840
+  },
+  "total": 4659865088
+ },
+ {
+  "id": "lightonai/colgrep-agent-2B",
+  "created": "2026-10-03",
+  "dl": 1082,
+  "likes": 39,
+  "base": [
+   "openbmb/MiniCPM5-2B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 2516756480
+  },
+  "total": 2516756480
+ },
+ {
+  "id": "ressl/MiniMax-M3-uncensored",
+  "created": "2026-07-09",
+  "dl": 534,
+  "likes": 38,
+  "base": [
+   "MiniMaxAI/MiniMax-M3"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 426993800960,
+   "F32": 46339200
+  },
+  "total": 427040140160
+ },
+ {
+  "id": "Ae55667/halogen-qwen3.8-flash-next-abliterated",
+  "created": "2026-09-20",
+  "dl": 0,
+  "likes": 38,
+  "base": [
+   "peonist-ai/halogen-qwen3.8-flash-next"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {},
+  "total": null
+ },
+ {
+  "id": "huihui-ai/Huihui-Qwythos-9B-Claude-Mythos-5-1M-abliterated",
+  "created": "2026-06-26",
+  "dl": 827,
+  "likes": 37,
+  "base": [
+   "empero-ai/Qwythos-9B-Claude-Mythos-5-1M"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 9653104368
+  },
+  "total": 9653104368
+ },
+ {
+  "id": "cosmicoptima/computer-10",
+  "created": "2026-09-22",
+  "dl": 574,
+  "likes": 37,
+  "base": [
+   "cosmicoptima/computer-9"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 70553706496
+  },
+  "total": 70553706496
+ },
+ {
+  "id": "nvidia/NVIDIA-Nemotron-Labs-3-Elastic-30B-A3B-BF16",
+  "created": "2026-04-01",
+  "dl": 1966,
+  "likes": 36,
+  "base": [
+   "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 2944,
+   "BF16": 31577937344
+  },
+  "total": 31577937344
+ },
+ {
+  "id": "kai-os/Carnice-27b",
+  "created": "2026-04-06",
+  "dl": 66,
+  "likes": 36,
+  "base": [
+   "Qwen/Qwen3.5-27B"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 26895998464
+  },
+  "total": 26895998464
+ },
+ {
+  "id": "dphn/Venice-Role-Play-Uncensored",
+  "created": "2026-05-29",
+  "dl": 0,
+  "likes": 36,
+  "base": [
+   "dphn/Dolphin-Mistral-24B-Venice-Edition"
+  ],
+  "gated": false,
+  "sort": "likes",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {},
+  "total": null
+ },
+ {
+  "id": "qvac/BotPsy-0.8B",
+  "created": "2026-11-10",
+  "dl": 752,
+  "likes": 25,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 852985920
+  },
+  "total": 852985920
+ },
+ {
+  "id": "speakleash/Bielik-11B-v3.1-Instruct",
+  "created": "2026-10-26",
+  "dl": 377,
+  "likes": 24,
+  "base": [
+   "speakleash/Bielik-11B-v3-Base-20250730"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 11168796672
+  },
+  "total": 11168796672
+ },
+ {
+  "id": "lyber-ai/Kimi-K3.1-Pro-UNCENSORED-MXFP4",
+  "created": "2026-11-06",
+  "dl": 19,
+  "likes": 35,
+  "base": [
+   "moonshotai/Kimi-K3.1-Pro"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 11122432,
+   "BF16": 57358410752,
+   "U8": 2722740830208
+  },
+  "total": 2780110363392
+ },
+ {
+  "id": "whittleOrg/Whittle-Qwen-3.8-35B-A3B",
+  "created": "2026-09-19",
+  "dl": 1214,
+  "likes": 35,
+  "base": [
+   "logic65/Whittle-Next-27B-A3B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [
+   "logic65/whittle-distill-qwen3.8-27b"
+  ],
+  "st_dtypes": {
+   "BF16": 35562370176,
+   "I64": 19
+  },
+  "total": 35562370195
+ },
+ {
+  "id": "summerAIO/Diffusion-Qwen3.8-27B",
+  "created": "2026-10-13",
+  "dl": 1601,
+  "likes": 34,
+  "base": [
+   "Qwen/Qwen3.8-27B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 26895998464,
+   "F32": 245760
+  },
+  "total": 26896244224
+ },
+ {
+  "id": "FrostWolfAI/Frost-Cyber-Mini-1.0",
+  "created": "2026-10-22",
+  "dl": 119,
+  "likes": 22,
+  "base": [
+   "huihui-ai/Huihui-Qwen3.5-4B-abliterated"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [
+   "Vyber07/cyber-security",
+   "jason-oneal/mitre-stix-cve-exploitdb-dataset-alpaca-chatml-harmony",
+   "7h3-R3v3n4n7/pentest-agent-dataset-chatml",
+   "reloading0101/threat-intelligence-dataset",
+   "tomvaillant/osint-tool-database",
+   "icantiemyshoe/cve-to-metasploit-module",
+   "detoxioai/exploit_db_train_v1",
+   "WNT3D/Ultimate-Offensive-Red-Team",
+   "smd20/social-engineering-qa-english",
+   "cowWhySo/pentest-redteam-steering",
+   "sarahwei/cyber_MITRE_attack_tactics-and-techniques",
+   "darkknight25/LOTL_APT_Red_Team_Dataset",
+   "AYI-NEDJIMI/bug-bounty-pentest-en",
+   "Ngadou/social-engineering-convo"
+  ],
+  "st_dtypes": {
+   "BF16": 4205751296
+  },
+  "total": 4205751296
+ },
+ {
+  "id": "DuoNeural/Cyber-Ornith-1.5-9B-OBLITERATED",
+  "created": "2026-09-25",
+  "dl": 1101,
+  "likes": 25,
+  "base": [
+   "OBLITERATUS/Ornith-1.5-9B-OBLITERATED"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [
+   "oi-uae/cyber-security",
+   "hotdogs/uka-cyber-dataset",
+   "trend-cybertron/Primus-Reasoning",
+   "Lite-Coder/LiteCoder-Terminal-SFT",
+   "rajistics/openhands-synthetic-conversations",
+   "emirkaanozdemr/bash_command_data_6K",
+   "NousResearch/hermes-function-calling-v1",
+   "open-thoughts/OpenThoughts3-1.2M"
+  ],
+  "st_dtypes": {
+   "BF16": 8953803264
+  },
+  "total": 8953803264
+ },
+ {
+  "id": "p-e-w/Oc-e-Non-v1",
+  "created": "2026-11-06",
+  "dl": 1400,
+  "likes": 24,
+  "base": [
+   "Qwen/Qwen3-4B-Instruct-2507"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4022468096
+  },
+  "total": 4022468096
+ },
+ {
+  "id": "DavidAU/Mistral-Nemo-Inst-2407-12B-Thinking-Uncensored-HERETIC-HI-Claude-Opus",
+  "created": "2026-01-09",
+  "dl": 408,
+  "likes": 30,
+  "base": [
+   "mistralai/Mistral-Nemo-Instruct-2407"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [
+   "TeichAI/claude-4.5-opus-high-reasoning-250x"
+  ],
+  "st_dtypes": {
+   "BF16": 12247782400
+  },
+  "total": 12247782400
+ },
+ {
+  "id": "CohereLabs/tiny-aya-fire",
+  "created": "2026-02-13",
+  "dl": 1443,
+  "likes": 32,
+  "base": [
+   "CohereLabs/tiny-aya-base"
+  ],
+  "gated": "auto",
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 3349227520
+  },
+  "total": 3349227520
+ },
+ {
+  "id": "amalia-llm/AMALIA-9B-0626-DPO",
+  "created": "2026-06-26",
+  "dl": 1394,
+  "likes": 21,
+  "base": [
+   "amalia-llm/AMALIA-9B-0626-SFT"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [
+   "amalia-llm/DPO-Dataset"
+  ],
+  "st_dtypes": {
+   "BF16": 9152319488
+  },
+  "total": 9152319488
+ },
+ {
+  "id": "abacusai/Smaug-Humanizer",
+  "created": "2026-10-23",
+  "dl": 1223,
+  "likes": 29,
+  "base": [
+   "google/gemma-4-12B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 11959730224
+  },
+  "total": 11959730224
+ },
+ {
+  "id": "kakaocorp/kanana-2-30b-a3b-mid-2601",
+  "created": "2026-01-14",
+  "dl": 218,
+  "likes": 32,
+  "base": [
+   "kakaocorp/kanana-2-30b-a3b-base-2601"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 30670815104
+  },
+  "total": 30670809088
+ },
+ {
+  "id": "bknyaz/Qwen3-Coder-Next-REAM",
+  "created": "2026-02-11",
+  "dl": 160,
+  "likes": 30,
+  "base": [
+   "Qwen/Qwen3-Coder-Next"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 60334455552
+  },
+  "total": 60334455552
+ },
+ {
+  "id": "heretic-org/Qwen3-4B-Thinking-2507-heretic",
+  "created": "2026-02-15",
+  "dl": 167,
+  "likes": 24,
+  "base": [
+   "Qwen/Qwen3-4B-Thinking-2507"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 4022468096
+  },
+  "total": 4022468096
+ },
+ {
+  "id": "TrevorJS/gemma-4-E2B-it-uncensored",
+  "created": "2026-04-03",
+  "dl": 2478,
+  "likes": 33,
+  "base": [
+   "google/gemma-4-E2B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 5123178051
+  },
+  "total": 5123178051
+ },
+ {
+  "id": "TrevorJS/gemma-4-31B-it-uncensored",
+  "created": "2026-04-04",
+  "dl": 821,
+  "likes": 35,
+  "base": [
+   "google/gemma-4-31B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 31273088876
+  },
+  "total": 32682372656
+ },
+ {
+  "id": "dealignai/MiniMax-M2.7-JANGTQ-CRACK",
+  "created": "2026-04-15",
+  "dl": 470,
+  "likes": 29,
+  "base": [
+   "MiniMaxAI/MiniMax-M2.7"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "U32": 18002509824,
+   "F16": 147120640,
+   "U8": 47616
+  },
+  "total": 18149678080
+ },
+ {
+  "id": "0xSero/Qwen3.6-28B",
+  "created": "2026-04-18",
+  "dl": 220,
+  "likes": 35,
+  "base": [
+   "Qwen/Qwen3.6-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 28239147648
+  },
+  "total": 28239147648
+ },
+ {
+  "id": "nvidia/CUDA-Autocomplete",
+  "created": "2026-05-19",
+  "dl": 2193,
+  "likes": 21,
+  "base": [
+   "Qwen/Qwen2.5-Coder-7B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [
+   "bigcode/the-stack-v2"
+  ],
+  "st_dtypes": {
+   "BF16": 7615616512
+  },
+  "total": 7615616512
+ },
+ {
+  "id": "apodex/Apodex-1.0-0.8B-SFT",
+  "created": "2026-06-07",
+  "dl": 193,
+  "likes": 20,
+  "base": [
+   "Qwen/Qwen3.5-0.8B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 873438784
+  },
+  "total": 873438784
+ },
+ {
+  "id": "Soofi-Project/Soofi-S-Rhine-Preview",
+  "created": "2026-06-16",
+  "dl": 159,
+  "likes": 21,
+  "base": [
+   "Soofi-Project/Soofi-S-Base"
+  ],
+  "gated": "manual",
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 2944,
+   "BF16": 31577937344
+  },
+  "total": 31577937344
+ },
+ {
+  "id": "LiquidAI/LFM2.5-Encoder-350M-Diffusion",
+  "created": "2026-07-10",
+  "dl": 750,
+  "likes": 29,
+  "base": [
+   "LiquidAI/LFM2.5-Encoder-350M"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "F32": 354483968
+  },
+  "total": 354483968
+ },
+ {
+  "id": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
+  "created": "2026-08-24",
+  "dl": 2415,
+  "likes": 34,
+  "base": [
+   "ornith-ai/Ornith-1.5-35B-A3B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 35951822704
+  },
+  "total": 35951822704
+ },
+ {
+  "id": "abacusai/Smaug-Flash",
+  "created": "2026-08-29",
+  "dl": 276,
+  "likes": 22,
+  "base": [
+   "deepseek-ai/DeepSeek-V4-Flash-0731"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1483567488,
+   "I64": 2327040,
+   "F32": 37741630,
+   "F8_E4M3": 6304038912,
+   "I8": 296352743424
+  },
+  "total": 304180418494
+ },
+ {
+  "id": "hiwaifu-research/WaifuGemma4-26b-a4b-v1",
+  "created": "2026-09-18",
+  "dl": 589,
+  "likes": 34,
+  "base": [
+   "google/gemma-4-26B-A4B-it"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 25805936206
+  },
+  "total": 25805933872
+ },
+ {
+  "id": "IFM/K2-Type-0.9B",
+  "created": "2026-09-26",
+  "dl": 1941,
+  "likes": 36,
+  "base": [
+   "IFM/K2-Horizon-0.9B"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 1078285824
+  },
+  "total": 1078285824
+ },
+ {
+  "id": "togethercomputer/HybridAgent-14B-Agentic",
+  "created": "2026-10-09",
+  "dl": 1129,
+  "likes": 21,
+  "base": [
+   "Qwen/Qwen3-14B-Base"
+  ],
+  "gated": false,
+  "sort": "trending_score",
+  "quant": false,
+  "datasets": [],
+  "st_dtypes": {
+   "BF16": 14765593600
+  },
+  "total": 14765593600
+ }
+]

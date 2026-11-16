@@ -1,0 +1,521 @@
+{
+ "base": "Qwen/Qwen2.5-7B-Instruct",
+ "child": "open-thoughts/OpenThinker-7B",
+ "data": "ot114k",
+ "dtype": "torch.bfloat16",
+ "vocab_rows": 152064,
+ "P": 1.0,
+ "bit_identical": 86510,
+ "barely": 2,
+ "updated": 65552,
+ "variants": {
+  "lf_datasys_16384": {
+   "present": 65546,
+   "changed": 65554,
+   "present_and_changed": 65546,
+   "present_not_changed": 0,
+   "changed_not_present": 8,
+   "changed_not_present_real": 8,
+   "present_not_changed_examples": [],
+   "present_not_changed_occ_hist": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 0,
+   "changed_not_present_examples": [
+    [
+     22057,
+     ".cn",
+     0.2121
+    ],
+    [
+     24170,
+     ".fn",
+     0.7902
+    ],
+    [
+     24817,
+     "'}),\u010a",
+     0.5374
+    ],
+    [
+     43815,
+     "\u00e5\u0128\u0127\u00e5\u00ae\u00b9",
+     0.6699
+    ],
+    [
+     57350,
+     "(cid",
+     0.7941
+    ],
+    [
+     70690,
+     "]!='",
+     0.8588
+    ],
+    [
+     84674,
+     "bigint",
+     0.9428
+    ],
+    [
+     95114,
+     "(plane",
+     0.8644
+    ]
+   ],
+   "changed_not_present_frac_hist": [
+    0,
+    0,
+    0,
+    1,
+    7
+   ],
+   "by_occurrence": {
+    "1-1": {
+     "n": 4791,
+     "bit_identical": 0,
+     "barely": 2
+    },
+    "2-2": {
+     "n": 3070,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "3-5": {
+     "n": 5241,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "6-20": {
+     "n": 11561,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "21-100": {
+     "n": 15081,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 25802,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  },
+  "lf_datasys_16384_nonfinal": {
+   "present": 65546,
+   "changed": 65554,
+   "present_and_changed": 65546,
+   "present_not_changed": 0,
+   "changed_not_present": 8,
+   "changed_not_present_real": 8,
+   "present_not_changed_examples": [],
+   "present_not_changed_occ_hist": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 0,
+   "changed_not_present_examples": [
+    [
+     22057,
+     ".cn",
+     0.2121
+    ],
+    [
+     24170,
+     ".fn",
+     0.7902
+    ],
+    [
+     24817,
+     "'}),\u010a",
+     0.5374
+    ],
+    [
+     43815,
+     "\u00e5\u0128\u0127\u00e5\u00ae\u00b9",
+     0.6699
+    ],
+    [
+     57350,
+     "(cid",
+     0.7941
+    ],
+    [
+     70690,
+     "]!='",
+     0.8588
+    ],
+    [
+     84674,
+     "bigint",
+     0.9428
+    ],
+    [
+     95114,
+     "(plane",
+     0.8644
+    ]
+   ],
+   "changed_not_present_frac_hist": [
+    0,
+    0,
+    0,
+    1,
+    7
+   ],
+   "by_occurrence": {
+    "1-1": {
+     "n": 4791,
+     "bit_identical": 0,
+     "barely": 2
+    },
+    "2-2": {
+     "n": 3070,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "3-5": {
+     "n": 5241,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "6-20": {
+     "n": 11562,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "21-100": {
+     "n": 15080,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 25802,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  },
+  "lf_default_16384": {
+   "present": 65554,
+   "changed": 65554,
+   "present_and_changed": 65554,
+   "present_not_changed": 0,
+   "changed_not_present": 0,
+   "changed_not_present_real": 0,
+   "present_not_changed_examples": [],
+   "present_not_changed_occ_hist": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 0,
+   "changed_not_present_examples": [],
+   "changed_not_present_frac_hist": [],
+   "by_occurrence": {
+    "1-1": {
+     "n": 4791,
+     "bit_identical": 0,
+     "barely": 2
+    },
+    "2-2": {
+     "n": 3069,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "3-5": {
+     "n": 5237,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "6-20": {
+     "n": 11559,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "21-100": {
+     "n": 15078,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 25820,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  },
+  "lf_default_16384_nonfinal": {
+   "present": 65554,
+   "changed": 65554,
+   "present_and_changed": 65554,
+   "present_not_changed": 0,
+   "changed_not_present": 0,
+   "changed_not_present_real": 0,
+   "present_not_changed_examples": [],
+   "present_not_changed_occ_hist": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 0,
+   "changed_not_present_examples": [],
+   "changed_not_present_frac_hist": [],
+   "by_occurrence": {
+    "1-1": {
+     "n": 4791,
+     "bit_identical": 0,
+     "barely": 2
+    },
+    "2-2": {
+     "n": 3069,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "3-5": {
+     "n": 5237,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "6-20": {
+     "n": 11559,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "21-100": {
+     "n": 15078,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 25820,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  },
+  "main": {
+   "present": 65546,
+   "changed": 65554,
+   "present_and_changed": 65546,
+   "present_not_changed": 0,
+   "changed_not_present": 8,
+   "changed_not_present_real": 8,
+   "present_not_changed_examples": [],
+   "present_not_changed_occ_hist": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+   },
+   "present_not_changed_occ_max": 0,
+   "changed_not_present_examples": [
+    [
+     22057,
+     ".cn",
+     0.2121
+    ],
+    [
+     24170,
+     ".fn",
+     0.7902
+    ],
+    [
+     24817,
+     "'}),\u010a",
+     0.5374
+    ],
+    [
+     43815,
+     "\u00e5\u0128\u0127\u00e5\u00ae\u00b9",
+     0.6699
+    ],
+    [
+     57350,
+     "(cid",
+     0.7941
+    ],
+    [
+     70690,
+     "]!='",
+     0.8588
+    ],
+    [
+     84674,
+     "bigint",
+     0.9428
+    ],
+    [
+     95114,
+     "(plane",
+     0.8644
+    ]
+   ],
+   "changed_not_present_frac_hist": [
+    0,
+    0,
+    0,
+    1,
+    7
+   ],
+   "by_occurrence": {
+    "1-1": {
+     "n": 4791,
+     "bit_identical": 0,
+     "barely": 2
+    },
+    "2-2": {
+     "n": 3070,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "3-5": {
+     "n": 5241,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "6-20": {
+     "n": 11562,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "21-100": {
+     "n": 15080,
+     "bit_identical": 0,
+     "barely": 0
+    },
+    "101-1000000000000": {
+     "n": 25802,
+     "bit_identical": 0,
+     "barely": 0
+    }
+   }
+  }
+ },
+ "special": {
+  "<|im_end|>": {
+   "id": 151645,
+   "frac": 0.9969,
+   "in_data": 333476
+  },
+  "<|endoftext|>": {
+   "id": 151643,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|im_start|>": {
+   "id": 151644,
+   "frac": 0.9975,
+   "in_data": 341870
+  },
+  "<|object_ref_start|>": {
+   "id": 151646,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|object_ref_end|>": {
+   "id": 151647,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|box_start|>": {
+   "id": 151648,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|box_end|>": {
+   "id": 151649,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|quad_start|>": {
+   "id": 151650,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|quad_end|>": {
+   "id": 151651,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|vision_start|>": {
+   "id": 151652,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|vision_end|>": {
+   "id": 151653,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|vision_pad|>": {
+   "id": 151654,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|image_pad|>": {
+   "id": 151655,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|video_pad|>": {
+   "id": 151656,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<tool_call>": {
+   "id": 151657,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "</tool_call>": {
+   "id": 151658,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|fim_prefix|>": {
+   "id": 151659,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|fim_middle|>": {
+   "id": 151660,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|fim_suffix|>": {
+   "id": 151661,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|fim_pad|>": {
+   "id": 151662,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|repo_name|>": {
+   "id": 151663,
+   "frac": 0.0,
+   "in_data": 0
+  },
+  "<|file_sep|>": {
+   "id": 151664,
+   "frac": 0.0,
+   "in_data": 0
+  }
+ }
+}

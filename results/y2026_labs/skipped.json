@@ -1,0 +1,117 @@
+[
+ {
+  "parent": "Motif-Technologies/Motif-3-Base",
+  "child": "Motif-Technologies/Motif-3",
+  "why": "already covered"
+ },
+ {
+  "parent": "poolside/Laguna-S-2.1-base",
+  "child": "poolside/Laguna-S-2.1",
+  "why": "poolside/Laguna-S-2.1-base: no embedding tensor found"
+ },
+ {
+  "parent": "google/gemma-4-31B",
+  "child": "google/gemma-4-31B-it",
+  "why": "already covered"
+ },
+ {
+  "parent": "google/gemma-4-26B-A4B",
+  "child": "google/gemma-4-26B-A4B-it",
+  "why": "already covered"
+ },
+ {
+  "parent": "CohereLabs/tiny-aya-base",
+  "child": "CohereLabs/tiny-aya-global",
+  "why": "CohereLabs/tiny-aya-base: gated; CohereLabs/tiny-aya-global: gated"
+ },
+ {
+  "parent": "CohereLabs/tiny-aya-base",
+  "child": "CohereLabs/tiny-aya-earth",
+  "why": "CohereLabs/tiny-aya-base: gated; CohereLabs/tiny-aya-earth: gated"
+ },
+ {
+  "parent": "CohereLabs/tiny-aya-base",
+  "child": "CohereLabs/tiny-aya-fire",
+  "why": "CohereLabs/tiny-aya-base: gated; CohereLabs/tiny-aya-fire: gated"
+ },
+ {
+  "parent": "CohereLabs/tiny-aya-base",
+  "child": "CohereLabs/tiny-aya-water",
+  "why": "CohereLabs/tiny-aya-base: gated; CohereLabs/tiny-aya-water: gated"
+ },
+ {
+  "parent": "MiniMaxAI/MiniMax-M2.7",
+  "child": "MiniMaxAI/MiniMax-M3",
+  "why": "embedding not comparable: hidden size differs",
+  "shapes": [
+   [
+    200064,
+    3072
+   ],
+   [
+    200064,
+    6144
+   ]
+  ]
+ },
+ {
+  "parent": "tencent/Hy3",
+  "child": "tencent/Hy4-preview",
+  "why": "embedding not comparable: hidden size differs",
+  "shapes": [
+   [
+    120832,
+    4096
+   ],
+   [
+    120832,
+    6144
+   ]
+  ]
+ },
+ {
+  "parent": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "child": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "why": "embedding not comparable: hidden size differs",
+  "shapes": [
+   [
+    129280,
+    4096
+   ],
+   [
+    129280,
+    5120
+   ]
+  ]
+ },
+ {
+  "parent": "Qwen3.6-35B-A3B",
+  "child": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "why": "Qwen3.6-35B-A3B: missing"
+ },
+ {
+  "parent": "Qwen/Qwen3-8B",
+  "child": "Qwen/WebWorld-14B",
+  "why": "embedding not comparable: hidden size differs",
+  "shapes": [
+   [
+    151936,
+    4096
+   ],
+   [
+    151936,
+    5120
+   ]
+  ]
+ },
+ {
+  "parent": "Qwen/Qwen3.8-27B",
+  "child": "NousResearch/Arete-27B",
+  "why": "already covered"
+ },
+ {
+  "parent": "meta-llama/Llama-3.1-8B-Instruct",
+  "child": "microsoft/UserLM-2.0",
+  "why": "meta-llama/Llama-3.1-8B-Instruct: gated"
+ }
+]

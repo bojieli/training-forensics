@@ -1,0 +1,188 @@
+[
+ {
+  "repo": "allenai/OLMo-2-0425-1B",
+  "rows": 95,
+  "window": [
+   100096,
+   100352
+  ],
+  "checks": [
+   {
+    "branch": "stage1-step1907359-tokens4001B",
+    "dtype": "torch.float32",
+    "identical_rows": 95,
+    "ratio": 1.0
+   },
+   {
+    "branch": "stage2-ingredient3-step23852-tokens51B",
+    "dtype": "torch.float32",
+    "identical_rows": 95,
+    "ratio": 1.0
+   },
+   {
+    "branch": "main",
+    "dtype": "torch.float32",
+    "identical_rows": 0,
+    "ratio": -0.0029624070810937964
+   }
+  ],
+  "first": "stage1-step0-tokens0B"
+ },
+ {
+  "repo": "allenai/OLMo-2-1124-7B",
+  "rows": 95,
+  "window": [
+   100096,
+   100352
+  ],
+  "checks": [
+   {
+    "branch": "stage1-step928646-tokens3896B",
+    "dtype": "torch.float32",
+    "identical_rows": 95,
+    "ratio": 1.0
+   },
+   {
+    "branch": "stage2-ingredient3-step11931-tokens50B",
+    "dtype": "torch.float32",
+    "identical_rows": 95,
+    "ratio": 1.0
+   },
+   {
+    "branch": "main",
+    "dtype": "torch.float32",
+    "identical_rows": 0,
+    "ratio": 0.999999999937881
+   }
+  ],
+  "first": "stage1-step150-tokens1B"
+ },
+ {
+  "repo": "allenai/OLMo-2-1124-13B",
+  "rows": 95,
+  "window": [
+   100096,
+   100352
+  ],
+  "checks": [
+   {
+    "branch": "stage1-step596057-tokens5001B",
+    "dtype": "torch.float32",
+    "identical_rows": 95,
+    "ratio": 1.0
+   },
+   {
+    "branch": "stage2-ingredient4-step35773-tokens300B",
+    "dtype": "torch.float32",
+    "identical_rows": 95,
+    "ratio": 1.0
+   },
+   {
+    "branch": "main",
+    "dtype": "torch.float32",
+    "identical_rows": 95,
+    "ratio": 1.0
+   }
+  ],
+  "first": "stage1-step0-tokens0B"
+ },
+ {
+  "repo": "allenai/OLMo-2-0325-32B",
+  "rows": 95,
+  "window": [
+   100096,
+   100352
+  ],
+  "checks": [
+   {
+    "branch": "stage1-step721901-tokens6056B",
+    "dtype": "torch.float32",
+    "identical_rows": 95,
+    "ratio": 1.0
+   },
+   {
+    "branch": "stage2-ingredient4-step11921-tokens101B",
+    "dtype": "torch.float32",
+    "identical_rows": 95,
+    "ratio": 1.0
+   },
+   {
+    "branch": "main",
+    "dtype": "torch.float32",
+    "identical_rows": 95,
+    "ratio": 1.0
+   }
+  ],
+  "first": "stage1-step0-tokens0B"
+ },
+ {
+  "repo": "allenai/Olmo-3-1025-7B",
+  "rows": 21,
+  "window": [
+   100022,
+   100278
+  ],
+  "checks": [
+   {
+    "branch": "stage1-step1413814",
+    "dtype": "torch.bfloat16",
+    "identical_rows": 18,
+    "ratio": 0.9999729385910172
+   },
+   {
+    "branch": "stage2-step47684",
+    "dtype": "torch.bfloat16",
+    "identical_rows": 15,
+    "ratio": 1.0332617403197069
+   },
+   {
+    "branch": "stage3-step11921",
+    "dtype": "torch.bfloat16",
+    "identical_rows": 15,
+    "ratio": 1.0167778487205175
+   },
+   {
+    "branch": "main",
+    "dtype": "torch.bfloat16",
+    "identical_rows": 15,
+    "ratio": 1.0167778487205175
+   }
+  ],
+  "first": "stage1-step0"
+ },
+ {
+  "repo": "allenai/Olmo-3-1125-32B",
+  "rows": 21,
+  "window": [
+   100022,
+   100278
+  ],
+  "checks": [
+   {
+    "branch": "stage1-step656000",
+    "dtype": "torch.bfloat16",
+    "identical_rows": 18,
+    "ratio": 1.0000836631236285
+   },
+   {
+    "branch": "stage2-ingredient2-step23842",
+    "dtype": "torch.bfloat16",
+    "identical_rows": 15,
+    "ratio": 1.034513175450938
+   },
+   {
+    "branch": "stage3-step11921+11000+10000-nooptim-reshard32",
+    "dtype": "torch.bfloat16",
+    "identical_rows": 15,
+    "ratio": 1.0380451071818562
+   },
+   {
+    "branch": "main",
+    "dtype": "torch.bfloat16",
+    "identical_rows": 15,
+    "ratio": 1.0380451071818562
+   }
+  ],
+  "first": "stage1-step0"
+ }
+]

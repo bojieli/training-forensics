@@ -1,0 +1,7835 @@
+[
+ {
+  "key": "baidu/ERNIE-4.5-300B-A47B-Base-PT@ -> baidu/ERNIE-4.5-300B-A47B-PT",
+  "parent": {
+   "repo": "baidu/ERNIE-4.5-300B-A47B-Base-PT",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 520,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00122.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     8192
+    ],
+    "bytes": 1694498816
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00122-of-00122.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     8192
+    ],
+    "bytes": 1694498816
+   },
+   "config": {
+    "model_type": "ernie4_5_moe",
+    "vocab_size": 103424,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "baidu/ERNIE-4.5-300B-A47B-PT",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 3256,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00123.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     8192
+    ],
+    "bytes": 1694498816
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00123-of-00123.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     8192
+    ],
+    "bytes": 1694498816
+   },
+   "config": {
+    "model_type": "ernie4_5_moe",
+    "vocab_size": 103424,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     103424,
+     8192
+    ],
+    "child_shape": [
+     103424,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     103424
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     103424,
+     8192
+    ],
+    "child_shape": [
+     103424,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     103424
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 3388997632
+ },
+ {
+  "key": "baidu/ERNIE-4.5-21B-A3B-Base-PT@ -> baidu/ERNIE-4.5-21B-A3B-PT",
+  "parent": {
+   "repo": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 761,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00009.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     2560
+    ],
+    "bytes": 529530880
+   },
+   "head": null,
+   "config": {
+    "model_type": "ernie4_5_moe",
+    "vocab_size": 103424,
+    "hidden_size": 2560,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": true
+  },
+  "child": {
+   "repo": "baidu/ERNIE-4.5-21B-A3B-PT",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 16563,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00009.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     2560
+    ],
+    "bytes": 529530880
+   },
+   "head": null,
+   "config": {
+    "model_type": "ernie4_5_moe",
+    "vocab_size": 103424,
+    "hidden_size": 2560,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": true
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     103424,
+     2560
+    ],
+    "child_shape": [
+     103424,
+     2560
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     103424
+    ]
+   },
+   "head": {
+    "compatible": null,
+    "why": "missing tensor info"
+   }
+  },
+  "tied": true,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 1059061760
+ },
+ {
+  "key": "baidu/ERNIE-4.5-21B-A3B-Base-PT@ -> baidu/ERNIE-4.5-21B-A3B-Thinking",
+  "parent": {
+   "repo": "baidu/ERNIE-4.5-21B-A3B-Base-PT",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 761,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00009.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     2560
+    ],
+    "bytes": 529530880
+   },
+   "head": null,
+   "config": {
+    "model_type": "ernie4_5_moe",
+    "vocab_size": 103424,
+    "hidden_size": 2560,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": true
+  },
+  "child": {
+   "repo": "baidu/ERNIE-4.5-21B-A3B-Thinking",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 76804,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00009.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     2560
+    ],
+    "bytes": 529530880
+   },
+   "head": null,
+   "config": {
+    "model_type": "ernie4_5_moe",
+    "vocab_size": 103424,
+    "hidden_size": 2560,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {},
+   "tied": true
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     103424,
+     2560
+    ],
+    "child_shape": [
+     103424,
+     2560
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     103424
+    ]
+   },
+   "head": {
+    "compatible": null,
+    "why": "missing tensor info"
+   }
+  },
+  "tied": true,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 1059061760
+ },
+ {
+  "key": "baidu/ERNIE-4.5-VL-424B-A47B-Base-PT@ -> baidu/ERNIE-4.5-VL-424B-A47B-PT",
+  "parent": {
+   "repo": "baidu/ERNIE-4.5-VL-424B-A47B-Base-PT",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 439,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00172.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     8192
+    ],
+    "bytes": 1694498816
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00172-of-00172.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     8192
+    ],
+    "bytes": 1694498816
+   },
+   "config": {
+    "model_type": "ernie4_5_moe_vl",
+    "vocab_size": 103424,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "child": {
+   "repo": "baidu/ERNIE-4.5-VL-424B-A47B-PT",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 990,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00172.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     8192
+    ],
+    "bytes": 1694498816
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00172-of-00172.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     103424,
+     8192
+    ],
+    "bytes": 1694498816
+   },
+   "config": {
+    "model_type": "ernie4_5_moe_vl",
+    "vocab_size": 103424,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     103424,
+     8192
+    ],
+    "child_shape": [
+     103424,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     103424
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     103424,
+     8192
+    ],
+    "child_shape": [
+     103424,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     103424
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 3388997632
+ },
+ {
+  "key": "Qwen/Qwen3-Coder-Next-Base@ -> Qwen/Qwen3-Coder-Next",
+  "parent": {
+   "repo": "Qwen/Qwen3-Coder-Next-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1271,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00040.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     2048
+    ],
+    "bytes": 622329856
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00040-of-00040.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     2048
+    ],
+    "bytes": 622329856
+   },
+   "config": {
+    "model_type": "qwen3_next",
+    "vocab_size": 151936,
+    "hidden_size": 2048,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "Qwen/Qwen3-Coder-Next",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 390455,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00040.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     2048
+    ],
+    "bytes": 622329856
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00040-of-00040.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     2048
+    ],
+    "bytes": 622329856
+   },
+   "config": {
+    "model_type": "qwen3_next",
+    "vocab_size": 151936,
+    "hidden_size": 2048,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     151936,
+     2048
+    ],
+    "child_shape": [
+     151936,
+     2048
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151936
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     151936,
+     2048
+    ],
+    "child_shape": [
+     151936,
+     2048
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151936
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 1244659712
+ },
+ {
+  "key": "arcee-ai/Trinity-Large-Base@ -> arcee-ai/Trinity-Large-Preview",
+  "parent": {
+   "repo": "arcee-ai/Trinity-Large-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1689,
+   "license": "other",
+   "card_base_model": [
+    "arcee-ai/Trinity-Large-TrueBase"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00031.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200192,
+     3072
+    ],
+    "bytes": 1229979648
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00031.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200192,
+     3072
+    ],
+    "bytes": 1229979648
+   },
+   "config": {
+    "model_type": "afmoe",
+    "vocab_size": 200192,
+    "hidden_size": 3072,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02,
+    "mup_enabled": true
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "arcee-ai/Trinity-Large-Preview",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 2233,
+   "license": "other",
+   "card_base_model": [
+    "arcee-ai/Trinity-Large-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00031.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200192,
+     3072
+    ],
+    "bytes": 1229979648
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00031.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200192,
+     3072
+    ],
+    "bytes": 1229979648
+   },
+   "config": {
+    "model_type": "afmoe",
+    "vocab_size": 200192,
+    "hidden_size": 3072,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02,
+    "mup_enabled": true
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     200192,
+     3072
+    ],
+    "child_shape": [
+     200192,
+     3072
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     200192
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     200192,
+     3072
+    ],
+    "child_shape": [
+     200192,
+     3072
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     200192
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 2459959296
+ },
+ {
+  "key": "arcee-ai/Trinity-Large-TrueBase@ -> arcee-ai/Trinity-Large-Base",
+  "parent": {
+   "repo": "arcee-ai/Trinity-Large-TrueBase",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1671,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00031.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200192,
+     3072
+    ],
+    "bytes": 1229979648
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00031.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200192,
+     3072
+    ],
+    "bytes": 1229979648
+   },
+   "config": {
+    "model_type": "afmoe",
+    "vocab_size": 200192,
+    "hidden_size": 3072,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02,
+    "mup_enabled": true
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "arcee-ai/Trinity-Large-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1689,
+   "license": "other",
+   "card_base_model": [
+    "arcee-ai/Trinity-Large-TrueBase"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00031.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200192,
+     3072
+    ],
+    "bytes": 1229979648
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00031.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200192,
+     3072
+    ],
+    "bytes": 1229979648
+   },
+   "config": {
+    "model_type": "afmoe",
+    "vocab_size": 200192,
+    "hidden_size": 3072,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02,
+    "mup_enabled": true
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:stage"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     200192,
+     3072
+    ],
+    "child_shape": [
+     200192,
+     3072
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     200192
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     200192,
+     3072
+    ],
+    "child_shape": [
+     200192,
+     3072
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     200192
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "stage",
+  "rank": 0,
+  "bytes": 2459959296
+ },
+ {
+  "key": "mistralai/Mistral-Large-3-675B-Base-2512@ -> mistralai/Mistral-Large-3-675B-Instruct-2512-BF16",
+  "parent": {
+   "repo": "mistralai/Mistral-Large-3-675B-Base-2512",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 215,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "consolidated.safetensors.index.json",
+   "embed": {
+    "tensor": "tok_embeddings.weight",
+    "file": "consolidated-00271-of-00272.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     7168
+    ],
+    "bytes": 1879048192
+   },
+   "head": {
+    "tensor": "output.weight",
+    "file": "consolidated-00272-of-00272.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     7168
+    ],
+    "bytes": 1879048192
+   },
+   "config": {
+    "model_type": null,
+    "vocab_size": 131072,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": null
+   },
+   "init_and_scaling": null,
+   "tied": false
+  },
+  "child": {
+   "repo": "mistralai/Mistral-Large-3-675B-Instruct-2512-BF16",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 143,
+   "license": "apache-2.0",
+   "card_base_model": [
+    "mistralai/Mistral-Large-3-675B-Base-2512"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "consolidated.safetensors.index.json",
+   "embed": {
+    "tensor": "tok_embeddings.weight",
+    "file": "consolidated-00271-of-00272.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     7168
+    ],
+    "bytes": 1879048192
+   },
+   "head": {
+    "tensor": "output.weight",
+    "file": "consolidated-00272-of-00272.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     7168
+    ],
+    "bytes": 1879048192
+   },
+   "config": {
+    "model_type": null,
+    "vocab_size": 131072,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": null
+   },
+   "init_and_scaling": null,
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     131072,
+     7168
+    ],
+    "child_shape": [
+     131072,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     131072
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     131072,
+     7168
+    ],
+    "child_shape": [
+     131072,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     131072
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 3758096384
+ },
+ {
+  "key": "inclusionAI/Ling-2.6-1T-base@ -> inclusionAI/Ling-2.6-1T",
+  "parent": {
+   "repo": "inclusionAI/Ling-2.6-1T-base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1706,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00009-of-00179.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00179-of-00179.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "config": {
+    "model_type": "bailing_hybrid",
+    "vocab_size": 157184,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "inclusionAI/Ling-2.6-1T",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 2999,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00000-of-00160.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00152-of-00160.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "config": {
+    "model_type": "bailing_hybrid",
+    "vocab_size": 157184,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     157184,
+     8192
+    ],
+    "child_shape": [
+     157184,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     157184,
+     8192
+    ],
+    "child_shape": [
+     157184,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 5150605312
+ },
+ {
+  "key": "inclusionAI/Ling-2.6-1T@ -> inclusionAI/Ring-2.6-1T",
+  "parent": {
+   "repo": "inclusionAI/Ling-2.6-1T",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 2999,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00000-of-00160.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00152-of-00160.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "config": {
+    "model_type": "bailing_hybrid",
+    "vocab_size": 157184,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "inclusionAI/Ring-2.6-1T",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 2413,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00001-of-00175.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00175-of-00175.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "config": {
+    "model_type": "bailing_hybrid",
+    "vocab_size": 157184,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:sibling"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     157184,
+     8192
+    ],
+    "child_shape": [
+     157184,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     157184,
+     8192
+    ],
+    "child_shape": [
+     157184,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "sibling",
+  "rank": 0,
+  "bytes": 5150605312
+ },
+ {
+  "key": "inclusionAI/Ling-1T@ -> inclusionAI/Ring-1T",
+  "parent": {
+   "repo": "inclusionAI/Ling-1T",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 4313,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00001-of-00155.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00155-of-00155.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "config": {
+    "model_type": "bailing_moe",
+    "vocab_size": 157184,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "child": {
+   "repo": "inclusionAI/Ring-1T",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1836,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00000-of-00160.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00152-of-00160.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     8192
+    ],
+    "bytes": 2575302656
+   },
+   "config": {
+    "model_type": "bailing_moe",
+    "vocab_size": 157184,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "src": [
+   "frontier_x:sibling"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     157184,
+     8192
+    ],
+    "child_shape": [
+     157184,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     157184,
+     8192
+    ],
+    "child_shape": [
+     157184,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "sibling",
+  "rank": 0,
+  "bytes": 5150605312
+ },
+ {
+  "key": "inclusionAI/Ling-flash-base-2.0@ -> inclusionAI/Ling-flash-2.0",
+  "parent": {
+   "repo": "inclusionAI/Ling-flash-base-2.0",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 339,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00003-of-00022.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     4096
+    ],
+    "bytes": 1287651328
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00022-of-00022.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     4096
+    ],
+    "bytes": 1287651328
+   },
+   "config": {
+    "model_type": "bailing_moe",
+    "vocab_size": 157184,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "child": {
+   "repo": "inclusionAI/Ling-flash-2.0",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 5022,
+   "license": "mit",
+   "card_base_model": [
+    "inclusionAI/Ling-flash-base-2.0"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00001-of-00022.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     4096
+    ],
+    "bytes": 1287651328
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00021-of-00022.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     4096
+    ],
+    "bytes": 1287651328
+   },
+   "config": {
+    "model_type": "bailing_moe",
+    "vocab_size": 157184,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     157184,
+     4096
+    ],
+    "child_shape": [
+     157184,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     157184,
+     4096
+    ],
+    "child_shape": [
+     157184,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 2575302656
+ },
+ {
+  "key": "inclusionAI/Ling-2.6-flash-base@ -> inclusionAI/Ling-2.6-flash",
+  "parent": {
+   "repo": "inclusionAI/Ling-2.6-flash-base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 322,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00006-of-00023.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     4096
+    ],
+    "bytes": 1287651328
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00022-of-00023.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     4096
+    ],
+    "bytes": 1287651328
+   },
+   "config": {
+    "model_type": "bailing_hybrid",
+    "vocab_size": 157184,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "child": {
+   "repo": "inclusionAI/Ling-2.6-flash",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 3437,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00001-of-00026.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     4096
+    ],
+    "bytes": 1287651328
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00025-of-00026.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     4096
+    ],
+    "bytes": 1287651328
+   },
+   "config": {
+    "model_type": "bailing_hybrid",
+    "vocab_size": 157184,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     157184,
+     4096
+    ],
+    "child_shape": [
+     157184,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     157184,
+     4096
+    ],
+    "child_shape": [
+     157184,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 2575302656
+ },
+ {
+  "key": "inclusionAI/Ling-mini-base-2.0@ -> inclusionAI/Ling-mini-2.0",
+  "parent": {
+   "repo": "inclusionAI/Ling-mini-base-2.0",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1751,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00001-of-00004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     2048
+    ],
+    "bytes": 643825664
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00004-of-00004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     2048
+    ],
+    "bytes": 643825664
+   },
+   "config": {
+    "model_type": "bailing_moe",
+    "vocab_size": 157184,
+    "hidden_size": 2048,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "child": {
+   "repo": "inclusionAI/Ling-mini-2.0",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 4348,
+   "license": "mit",
+   "card_base_model": [
+    "inclusionAI/Ling-mini-base-2.0"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00001-of-00004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     2048
+    ],
+    "bytes": 643825664
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00004-of-00004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     2048
+    ],
+    "bytes": 643825664
+   },
+   "config": {
+    "model_type": "bailing_moe",
+    "vocab_size": 157184,
+    "hidden_size": 2048,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     157184,
+     2048
+    ],
+    "child_shape": [
+     157184,
+     2048
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     157184,
+     2048
+    ],
+    "child_shape": [
+     157184,
+     2048
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 1287651328
+ },
+ {
+  "key": "inclusionAI/Ling-3.0-flash-base@ -> inclusionAI/Ling-3.0-flash",
+  "parent": {
+   "repo": "inclusionAI/Ling-3.0-flash-base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 385,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00007-of-00028.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     2560
+    ],
+    "bytes": 804782080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00028-of-00028.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     2560
+    ],
+    "bytes": 804782080
+   },
+   "config": {
+    "model_type": "bailing_hybrid",
+    "vocab_size": 157184,
+    "hidden_size": 2560,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "inclusionAI/Ling-3.0-flash",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 9104,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00001-of-00024.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     2560
+    ],
+    "bytes": 804782080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00024.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     2560
+    ],
+    "bytes": 804782080
+   },
+   "config": {
+    "model_type": "bailing_hybrid",
+    "vocab_size": 157184,
+    "hidden_size": 2560,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     157184,
+     2560
+    ],
+    "child_shape": [
+     157184,
+     2560
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     157184,
+     2560
+    ],
+    "child_shape": [
+     157184,
+     2560
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 1609564160
+ },
+ {
+  "key": "inclusionAI/Ling-3.0-tiny-base@ -> inclusionAI/Ling-3.0-tiny",
+  "parent": {
+   "repo": "inclusionAI/Ling-3.0-tiny-base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 2227,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00002-of-00002.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     1536
+    ],
+    "bytes": 482869248
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00002-of-00002.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     1536
+    ],
+    "bytes": 482869248
+   },
+   "config": {
+    "model_type": "bailing_hybrid",
+    "vocab_size": 157184,
+    "hidden_size": 1536,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "inclusionAI/Ling-3.0-tiny",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 13595,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.word_embeddings.weight",
+    "file": "model-00000-of-00032.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     1536
+    ],
+    "bytes": 482869248
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00024-of-00032.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     157184,
+     1536
+    ],
+    "bytes": 482869248
+   },
+   "config": {
+    "model_type": "bailing_hybrid",
+    "vocab_size": 157184,
+    "hidden_size": 1536,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     157184,
+     1536
+    ],
+    "child_shape": [
+     157184,
+     1536
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     157184,
+     1536
+    ],
+    "child_shape": [
+     157184,
+     1536
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     157184
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 965738496
+ },
+ {
+  "key": "ibm-granite/granite-4.0-h-small-base@ -> ibm-granite/granite-4.0-h-small",
+  "parent": {
+   "repo": "ibm-granite/granite-4.0-h-small-base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 439,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100352,
+     4096
+    ],
+    "bytes": 822083584
+   },
+   "head": null,
+   "config": {
+    "model_type": "granitemoehybrid",
+    "vocab_size": 100352,
+    "hidden_size": 4096,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "attention_multiplier": 0.0078125,
+    "embedding_multiplier": 12,
+    "initializer_range": 0.1,
+    "residual_multiplier": 0.22
+   },
+   "tied": true
+  },
+  "child": {
+   "repo": "ibm-granite/granite-4.0-h-small",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 25597,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100352,
+     4096
+    ],
+    "bytes": 822083584
+   },
+   "head": null,
+   "config": {
+    "model_type": "granitemoehybrid",
+    "vocab_size": 100352,
+    "hidden_size": 4096,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "attention_multiplier": 0.0078125,
+    "embedding_multiplier": 12,
+    "initializer_range": 0.1,
+    "residual_multiplier": 0.22
+   },
+   "tied": true
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     100352,
+     4096
+    ],
+    "child_shape": [
+     100352,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     100352
+    ]
+   },
+   "head": {
+    "compatible": null,
+    "why": "missing tensor info"
+   }
+  },
+  "tied": true,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 1644167168
+ },
+ {
+  "key": "ibm-granite/granite-4.0-h-tiny-base@ -> ibm-granite/granite-4.0-h-tiny",
+  "parent": {
+   "repo": "ibm-granite/granite-4.0-h-tiny-base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1335,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00003.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100352,
+     1536
+    ],
+    "bytes": 308281344
+   },
+   "head": null,
+   "config": {
+    "model_type": "granitemoehybrid",
+    "vocab_size": 100352,
+    "hidden_size": 1536,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "attention_multiplier": 0.0078125,
+    "embedding_multiplier": 12,
+    "initializer_range": 0.1,
+    "residual_multiplier": 0.22
+   },
+   "tied": true
+  },
+  "child": {
+   "repo": "ibm-granite/granite-4.0-h-tiny",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 28858,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00003.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100352,
+     1536
+    ],
+    "bytes": 308281344
+   },
+   "head": null,
+   "config": {
+    "model_type": "granitemoehybrid",
+    "vocab_size": 100352,
+    "hidden_size": 1536,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "attention_multiplier": 0.0078125,
+    "embedding_multiplier": 12,
+    "initializer_range": 0.1,
+    "residual_multiplier": 0.22
+   },
+   "tied": true
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     100352,
+     1536
+    ],
+    "child_shape": [
+     100352,
+     1536
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     100352
+    ]
+   },
+   "head": {
+    "compatible": null,
+    "why": "missing tensor info"
+   }
+  },
+  "tied": true,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 616562688
+ },
+ {
+  "key": "ibm-granite/granite-4.1-8b-base@ -> ibm-granite/granite-4.1-8b",
+  "parent": {
+   "repo": "ibm-granite/granite-4.1-8b-base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 14418,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100352,
+     4096
+    ],
+    "bytes": 822083584
+   },
+   "head": null,
+   "config": {
+    "model_type": "granite",
+    "vocab_size": 100352,
+    "hidden_size": 4096,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "attention_multiplier": 0.0078125,
+    "embedding_multiplier": 12.0,
+    "initializer_range": 0.1,
+    "residual_multiplier": 0.22
+   },
+   "tied": true
+  },
+  "child": {
+   "repo": "ibm-granite/granite-4.1-8b",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 82210,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100352,
+     4096
+    ],
+    "bytes": 822083584
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100352,
+     4096
+    ],
+    "bytes": 822083584
+   },
+   "config": {
+    "model_type": "granite",
+    "vocab_size": 100352,
+    "hidden_size": 4096,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "attention_multiplier": 0.0078125,
+    "embedding_multiplier": 12.0,
+    "initializer_range": 0.1,
+    "residual_multiplier": 0.22
+   },
+   "tied": false,
+   "tie_note": "config says tied but a separate head tensor exists"
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     100352,
+     4096
+    ],
+    "child_shape": [
+     100352,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     100352
+    ]
+   },
+   "head": {
+    "compatible": null,
+    "why": "missing tensor info"
+   }
+  },
+  "tied": true,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 1644167168
+ },
+ {
+  "key": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16@ -> nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "parent": {
+   "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 5608,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": [
+    "nvidia/nemotron-pre-training-datasets"
+   ],
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "backbone.embeddings.weight",
+    "file": "model-00001-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     2688
+    ],
+    "bytes": 704643072
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00013-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     2688
+    ],
+    "bytes": 704643072
+   },
+   "config": {
+    "model_type": "nemotron_h",
+    "vocab_size": 131072,
+    "hidden_size": 2688,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 963117,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": [
+    "nvidia/nemotron-post-training-v3",
+    "nvidia/nemotron-pre-training-datasets"
+   ],
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "backbone.embeddings.weight",
+    "file": "model-00001-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     2688
+    ],
+    "bytes": 704643072
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00013-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     2688
+    ],
+    "bytes": 704643072
+   },
+   "config": {
+    "model_type": "nemotron_h",
+    "vocab_size": 131072,
+    "hidden_size": 2688,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     131072,
+     2688
+    ],
+    "child_shape": [
+     131072,
+     2688
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     131072
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     131072,
+     2688
+    ],
+    "child_shape": [
+     131072,
+     2688
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     131072
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 1409286144
+ },
+ {
+  "key": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT@ -> nvidia/Nemotron-3-Labs-Ultra-Math-RL",
+  "parent": {
+   "repo": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 710,
+   "license": "other",
+   "card_base_model": [
+    "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+   ],
+   "datasets": [
+    "nvidia/Nemotron-Math-Proofs-v3-SFT"
+   ],
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "backbone.embeddings.weight",
+    "file": "model-00001-of-00529.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     8192
+    ],
+    "bytes": 2147483648
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00518-of-00529.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     8192
+    ],
+    "bytes": 2147483648
+   },
+   "config": {
+    "model_type": "nemotron_h",
+    "vocab_size": 131072,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "nvidia/Nemotron-3-Labs-Ultra-Math-RL",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 811,
+   "license": "other",
+   "card_base_model": [
+    "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+   ],
+   "datasets": [
+    "nvidia/Nemotron-Math-Proofs-v3-RL"
+   ],
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "backbone.embeddings.weight",
+    "file": "model-00001-of-00225.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     8192
+    ],
+    "bytes": 2147483648
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00221-of-00225.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     8192
+    ],
+    "bytes": 2147483648
+   },
+   "config": {
+    "model_type": "nemotron_h",
+    "vocab_size": 131072,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:stage"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     131072,
+     8192
+    ],
+    "child_shape": [
+     131072,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     131072
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     131072,
+     8192
+    ],
+    "child_shape": [
+     131072,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     131072
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "stage",
+  "rank": 0,
+  "bytes": 4294967296
+ },
+ {
+  "key": "Qwen/Qwen3.5-4B-Base@ -> Qwen/Qwen3.5-4B",
+  "parent": {
+   "repo": "Qwen/Qwen3.5-4B-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 539665,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.language_model.embed_tokens.weight",
+    "file": "model.safetensors-00001-of-00002.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     248320,
+     2560
+    ],
+    "bytes": 1271398400
+   },
+   "head": null,
+   "config": {
+    "model_type": "qwen3_5",
+    "vocab_size": 248320,
+    "hidden_size": 2560,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "text_config.initializer_range": 0.02
+   },
+   "tied": true
+  },
+  "child": {
+   "repo": "Qwen/Qwen3.5-4B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 4928305,
+   "license": "apache-2.0",
+   "card_base_model": [
+    "Qwen/Qwen3.5-4B-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.language_model.embed_tokens.weight",
+    "file": "model.safetensors-00001-of-00002.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     248320,
+     2560
+    ],
+    "bytes": 1271398400
+   },
+   "head": null,
+   "config": {
+    "model_type": "qwen3_5",
+    "vocab_size": 248320,
+    "hidden_size": 2560,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "text_config.initializer_range": 0.02
+   },
+   "tied": true
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     248320,
+     2560
+    ],
+    "child_shape": [
+     248320,
+     2560
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     248320
+    ]
+   },
+   "head": {
+    "compatible": null,
+    "why": "missing tensor info"
+   }
+  },
+  "tied": true,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 2542796800
+ },
+ {
+  "key": "Qwen/Qwen3.5-2B-Base@ -> Qwen/Qwen3.5-2B",
+  "parent": {
+   "repo": "Qwen/Qwen3.5-2B-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 335276,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.language_model.embed_tokens.weight",
+    "file": "model.safetensors-00001-of-00001.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     248320,
+     2048
+    ],
+    "bytes": 1017118720
+   },
+   "head": null,
+   "config": {
+    "model_type": "qwen3_5",
+    "vocab_size": 248320,
+    "hidden_size": 2048,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "text_config.initializer_range": 0.02
+   },
+   "tied": true
+  },
+  "child": {
+   "repo": "Qwen/Qwen3.5-2B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 4789238,
+   "license": "apache-2.0",
+   "card_base_model": [
+    "Qwen/Qwen3.5-2B-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.language_model.embed_tokens.weight",
+    "file": "model.safetensors-00001-of-00001.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     248320,
+     2048
+    ],
+    "bytes": 1017118720
+   },
+   "head": null,
+   "config": {
+    "model_type": "qwen3_5",
+    "vocab_size": 248320,
+    "hidden_size": 2048,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "text_config.initializer_range": 0.02
+   },
+   "tied": true
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     248320,
+     2048
+    ],
+    "child_shape": [
+     248320,
+     2048
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     248320
+    ]
+   },
+   "head": {
+    "compatible": null,
+    "why": "missing tensor info"
+   }
+  },
+  "tied": true,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 2034237440
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V3.1-Base@ -> deepseek-ai/DeepSeek-V3.1",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-V3.1-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 5851,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-V3.1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 286699,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.1-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V3-Base@ -> deepseek-ai/DeepSeek-V3.1-Base",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-V3-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 39218,
+   "license": null,
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-V3.1-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 5851,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:stage"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "stage",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V3.2-Exp-Base@ -> deepseek-ai/DeepSeek-V3.2-Exp",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1006,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v32",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-V3.2-Exp",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 52543,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.2-Exp-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v32",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "ByteDance-Seed/Seed-OSS-36B-Base-woSyn@ -> ByteDance-Seed/Seed-OSS-36B-Instruct",
+  "parent": {
+   "repo": "ByteDance-Seed/Seed-OSS-36B-Base-woSyn",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 551,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00015.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     155136,
+     5120
+    ],
+    "bytes": 1588592640
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00015-of-00015.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     155136,
+     5120
+    ],
+    "bytes": 1588592640
+   },
+   "config": {
+    "model_type": "seed_oss",
+    "vocab_size": 155136,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "ByteDance-Seed/Seed-OSS-36B-Instruct",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 43033,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00015.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     155136,
+     5120
+    ],
+    "bytes": 1588592640
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00015-of-00015.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     155136,
+     5120
+    ],
+    "bytes": 1588592640
+   },
+   "config": {
+    "model_type": "seed_oss",
+    "vocab_size": 155136,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     155136,
+     5120
+    ],
+    "child_shape": [
+     155136,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     155136
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     155136,
+     5120
+    ],
+    "child_shape": [
+     155136,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     155136
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 3177185280
+ },
+ {
+  "key": "allenai/Olmo-3-1025-7B@ -> allenai/Olmo-3-7B-RL-Zero-Math",
+  "parent": {
+   "repo": "allenai/Olmo-3-1025-7B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 106291,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": [
+    "allenai/dolma3_mix-6T-1025"
+   ],
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00003.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100278,
+     4096
+    ],
+    "bytes": 821477376
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00003-of-00003.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100278,
+     4096
+    ],
+    "bytes": 821477376
+   },
+   "config": {
+    "model_type": "olmo3",
+    "vocab_size": 100278,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "allenai/Olmo-3-7B-RL-Zero-Math",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 3958,
+   "license": "apache-2.0",
+   "card_base_model": [
+    "allenai/Olmo-3-1025-7B"
+   ],
+   "datasets": [
+    "allenai/Dolci-RLZero-Math-7B"
+   ],
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00003.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100278,
+     4096
+    ],
+    "bytes": 821477376
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00003-of-00003.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100278,
+     4096
+    ],
+    "bytes": 821477376
+   },
+   "config": {
+    "model_type": "olmo3",
+    "vocab_size": 100278,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:rl-zero"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     100278,
+     4096
+    ],
+    "child_shape": [
+     100278,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     100278
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     100278,
+     4096
+    ],
+    "child_shape": [
+     100278,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     100278
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "rl-zero",
+  "rank": 0,
+  "bytes": 1642954752
+ },
+ {
+  "key": "allenai/Olmo-3-1025-7B@ -> allenai/Olmo-3-7B-RL-Zero-Mix",
+  "parent": {
+   "repo": "allenai/Olmo-3-1025-7B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 106291,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": [
+    "allenai/dolma3_mix-6T-1025"
+   ],
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00003.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100278,
+     4096
+    ],
+    "bytes": 821477376
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00003-of-00003.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100278,
+     4096
+    ],
+    "bytes": 821477376
+   },
+   "config": {
+    "model_type": "olmo3",
+    "vocab_size": 100278,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "allenai/Olmo-3-7B-RL-Zero-Mix",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 934,
+   "license": "apache-2.0",
+   "card_base_model": [
+    "allenai/Olmo-3-1025-7B"
+   ],
+   "datasets": [
+    "allenai/Dolci-RLZero-Mix-7B"
+   ],
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00003.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100278,
+     4096
+    ],
+    "bytes": 821477376
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00003-of-00003.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     100278,
+     4096
+    ],
+    "bytes": 821477376
+   },
+   "config": {
+    "model_type": "olmo2-retrofit",
+    "vocab_size": 100278,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:rl-zero"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     100278,
+     4096
+    ],
+    "child_shape": [
+     100278,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     100278
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     100278,
+     4096
+    ],
+    "child_shape": [
+     100278,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     100278
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "rl-zero",
+  "rank": 0,
+  "bytes": 1642954752
+ },
+ {
+  "key": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD@ -> XiaomiMiMo/MiMo-V2.6-Pro-RL",
+  "parent": {
+   "repo": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 21111,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model_pp0_ep0_shard0.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152576,
+     6144
+    ],
+    "bytes": 1874853888
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model_pp0_ep0_shard0.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152576,
+     6144
+    ],
+    "bytes": 1874853888
+   },
+   "config": {
+    "model_type": "mimo_v2",
+    "vocab_size": 152576,
+    "hidden_size": 6144,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 24073,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model_pp0_ep0_shard0.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152576,
+     6144
+    ],
+    "bytes": 1874853888
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model_pp0_ep0_shard0.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152576,
+     6144
+    ],
+    "bytes": 1874853888
+   },
+   "config": {
+    "model_type": "mimo_v2",
+    "vocab_size": 152576,
+    "hidden_size": 6144,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:stage"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152576,
+     6144
+    ],
+    "child_shape": [
+     152576,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152576
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152576,
+     6144
+    ],
+    "child_shape": [
+     152576,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152576
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "stage",
+  "rank": 0,
+  "bytes": 3749707776
+ },
+ {
+  "key": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD@ -> XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "parent": {
+   "repo": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 22177,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model_pp0_ep0_shard0.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152576,
+     4096
+    ],
+    "bytes": 1249902592
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model_pp0_ep0_shard0.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152576,
+     4096
+    ],
+    "bytes": 1249902592
+   },
+   "config": {
+    "model_type": "mimo_v2",
+    "vocab_size": 152576,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 44460,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model_pp0_ep0_shard0.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152576,
+     4096
+    ],
+    "bytes": 1249902592
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model_pp0_ep0_shard0.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152576,
+     4096
+    ],
+    "bytes": 1249902592
+   },
+   "config": {
+    "model_type": "mimo_v2",
+    "vocab_size": 152576,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:stage"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152576,
+     4096
+    ],
+    "child_shape": [
+     152576,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152576
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152576,
+     4096
+    ],
+    "child_shape": [
+     152576,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152576
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "stage",
+  "rank": 0,
+  "bytes": 2499805184
+ },
+ {
+  "key": "LGAI-EXAONE/EXAONE-4.0-32B@ -> LGAI-EXAONE/EXAONE-4.0.1-32B",
+  "parent": {
+   "repo": "LGAI-EXAONE/EXAONE-4.0-32B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 13460,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     102400,
+     5120
+    ],
+    "bytes": 1048576000
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00014-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     102400,
+     5120
+    ],
+    "bytes": 1048576000
+   },
+   "config": {
+    "model_type": "exaone4",
+    "vocab_size": 102400,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "LGAI-EXAONE/EXAONE-4.0.1-32B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 4099,
+   "license": "other",
+   "card_base_model": "LGAI-EXAONE/EXAONE-4.0-32B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     102400,
+     5120
+    ],
+    "bytes": 1048576000
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00014-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     102400,
+     5120
+    ],
+    "bytes": 1048576000
+   },
+   "config": {
+    "model_type": "exaone4",
+    "vocab_size": 102400,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     102400,
+     5120
+    ],
+    "child_shape": [
+     102400,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     102400
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     102400,
+     5120
+    ],
+    "child_shape": [
+     102400,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     102400
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 2097152000
+ },
+ {
+  "key": "zai-org/GLM-4.5@ -> zai-org/GLM-4.6",
+  "parent": {
+   "repo": "zai-org/GLM-4.5",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 117019,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00093.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00092-of-00093.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "config": {
+    "model_type": "glm4_moe",
+    "vocab_size": 151552,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "zai-org/GLM-4.6",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 26866,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00092.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00092-of-00092.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "config": {
+    "model_type": "glm4_moe",
+    "vocab_size": 151552,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     151552,
+     5120
+    ],
+    "child_shape": [
+     151552,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151552
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     151552,
+     5120
+    ],
+    "child_shape": [
+     151552,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151552
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3103784960
+ },
+ {
+  "key": "zai-org/GLM-4.6@ -> zai-org/GLM-4.7",
+  "parent": {
+   "repo": "zai-org/GLM-4.6",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 26866,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00092.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00092-of-00092.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "config": {
+    "model_type": "glm4_moe",
+    "vocab_size": 151552,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "zai-org/GLM-4.7",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 48526,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00092.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00092-of-00092.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "config": {
+    "model_type": "glm4_moe",
+    "vocab_size": 151552,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     151552,
+     5120
+    ],
+    "child_shape": [
+     151552,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151552
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     151552,
+     5120
+    ],
+    "child_shape": [
+     151552,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151552
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3103784960
+ },
+ {
+  "key": "zai-org/GLM-5@ -> zai-org/GLM-5.1",
+  "parent": {
+   "repo": "zai-org/GLM-5",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1185101,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "config": {
+    "model_type": "glm_moe_dsa",
+    "vocab_size": 154880,
+    "hidden_size": 6144,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "zai-org/GLM-5.1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 751658,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "config": {
+    "model_type": "glm_moe_dsa",
+    "vocab_size": 154880,
+    "hidden_size": 6144,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     154880,
+     6144
+    ],
+    "child_shape": [
+     154880,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     154880
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     154880,
+     6144
+    ],
+    "child_shape": [
+     154880,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     154880
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3806330880
+ },
+ {
+  "key": "zai-org/GLM-5.1@ -> zai-org/GLM-5.2",
+  "parent": {
+   "repo": "zai-org/GLM-5.1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 751658,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "config": {
+    "model_type": "glm_moe_dsa",
+    "vocab_size": 154880,
+    "hidden_size": 6144,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "zai-org/GLM-5.2",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 309982,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "config": {
+    "model_type": "glm_moe_dsa",
+    "vocab_size": 154880,
+    "hidden_size": 6144,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     154880,
+     6144
+    ],
+    "child_shape": [
+     154880,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     154880
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     154880,
+     6144
+    ],
+    "child_shape": [
+     154880,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     154880
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3806330880
+ },
+ {
+  "key": "zai-org/GLM-5.2@ -> zai-org/GLM-5.3-BF16",
+  "parent": {
+   "repo": "zai-org/GLM-5.2",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 309982,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "config": {
+    "model_type": "glm_moe_dsa",
+    "vocab_size": 154880,
+    "hidden_size": 6144,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "zai-org/GLM-5.3-BF16",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 40249,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00282.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     154880,
+     6144
+    ],
+    "bytes": 1903165440
+   },
+   "config": {
+    "model_type": "glm_moe_dsa",
+    "vocab_size": 154880,
+    "hidden_size": 6144,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     154880,
+     6144
+    ],
+    "child_shape": [
+     154880,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     154880
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     154880,
+     6144
+    ],
+    "child_shape": [
+     154880,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     154880
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3806330880
+ },
+ {
+  "key": "MiniMaxAI/MiniMax-M2@ -> MiniMaxAI/MiniMax-M2.1",
+  "parent": {
+   "repo": "MiniMaxAI/MiniMax-M2",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 109410,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00000-of-00130.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00124-of-00130.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "config": {
+    "model_type": "minimax_m2",
+    "vocab_size": 200064,
+    "hidden_size": 3072,
+    "tie_word_embeddings": false,
+    "torch_dtype": null
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "MiniMaxAI/MiniMax-M2.1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 13554,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00000-of-00130.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00124-of-00130.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "config": {
+    "model_type": "minimax_m2",
+    "vocab_size": 200064,
+    "hidden_size": 3072,
+    "tie_word_embeddings": false,
+    "torch_dtype": null
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     200064,
+     3072
+    ],
+    "child_shape": [
+     200064,
+     3072
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     200064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     200064,
+     3072
+    ],
+    "child_shape": [
+     200064,
+     3072
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     200064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 2458386432
+ },
+ {
+  "key": "MiniMaxAI/MiniMax-M2.1@ -> MiniMaxAI/MiniMax-M2.5",
+  "parent": {
+   "repo": "MiniMaxAI/MiniMax-M2.1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 13554,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00000-of-00130.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00124-of-00130.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "config": {
+    "model_type": "minimax_m2",
+    "vocab_size": 200064,
+    "hidden_size": 3072,
+    "tie_word_embeddings": false,
+    "torch_dtype": null
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "child": {
+   "repo": "MiniMaxAI/MiniMax-M2.5",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1037151,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00000-of-00126.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00124-of-00126.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "config": {
+    "model_type": "minimax_m2",
+    "vocab_size": 200064,
+    "hidden_size": 3072,
+    "tie_word_embeddings": false,
+    "torch_dtype": null
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     200064,
+     3072
+    ],
+    "child_shape": [
+     200064,
+     3072
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     200064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     200064,
+     3072
+    ],
+    "child_shape": [
+     200064,
+     3072
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     200064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 2458386432
+ },
+ {
+  "key": "MiniMaxAI/MiniMax-M2.5@ -> MiniMaxAI/MiniMax-M2.7",
+  "parent": {
+   "repo": "MiniMaxAI/MiniMax-M2.5",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1037151,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00000-of-00126.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00124-of-00126.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "config": {
+    "model_type": "minimax_m2",
+    "vocab_size": 200064,
+    "hidden_size": 3072,
+    "tie_word_embeddings": false,
+    "torch_dtype": null
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "child": {
+   "repo": "MiniMaxAI/MiniMax-M2.7",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 225319,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00000-of-00130.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00124-of-00130.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     200064,
+     3072
+    ],
+    "bytes": 1229193216
+   },
+   "config": {
+    "model_type": "minimax_m2",
+    "vocab_size": 200064,
+    "hidden_size": 3072,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     200064,
+     3072
+    ],
+    "child_shape": [
+     200064,
+     3072
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     200064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     200064,
+     3072
+    ],
+    "child_shape": [
+     200064,
+     3072
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     200064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 2458386432
+ },
+ {
+  "key": "moonshotai/Kimi-K2-Instruct@ -> moonshotai/Kimi-K2-Instruct-0905",
+  "parent": {
+   "repo": "moonshotai/Kimi-K2-Instruct",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 247690,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-1-of-61.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-61-of-61.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k2",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "moonshotai/Kimi-K2-Instruct-0905",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 9293,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00062-of-000062.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00062-of-000062.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k2",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 4697620480
+ },
+ {
+  "key": "moonshotai/Kimi-K2-Instruct-0905@ -> moonshotai/Kimi-K2-Thinking",
+  "parent": {
+   "repo": "moonshotai/Kimi-K2-Instruct-0905",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 9293,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00062-of-000062.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00062-of-000062.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k2",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "moonshotai/Kimi-K2-Thinking",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 55306,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00062-of-000062.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00062-of-000062.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k2",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 4697620480
+ },
+ {
+  "key": "moonshotai/Kimi-K2-Thinking@ -> moonshotai/Kimi-K2.5",
+  "parent": {
+   "repo": "moonshotai/Kimi-K2-Thinking",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 55306,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00062-of-000062.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00062-of-000062.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k2",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "moonshotai/Kimi-K2.5",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 392889,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "language_model.model.embed_tokens.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "language_model.lm_head.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k25",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "text_config.initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 4697620480
+ },
+ {
+  "key": "moonshotai/Kimi-K2.5@ -> moonshotai/Kimi-K2.6",
+  "parent": {
+   "repo": "moonshotai/Kimi-K2.5",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 392889,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "language_model.model.embed_tokens.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "language_model.lm_head.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k25",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "text_config.initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "moonshotai/Kimi-K2.6",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 205771,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "language_model.model.embed_tokens.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "language_model.lm_head.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k25",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "text_config.initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 4697620480
+ },
+ {
+  "key": "moonshotai/Kimi-K2.6@ -> moonshotai/Kimi-K2.7-Code",
+  "parent": {
+   "repo": "moonshotai/Kimi-K2.6",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 205771,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "language_model.model.embed_tokens.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "language_model.lm_head.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k25",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "text_config.initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "moonshotai/Kimi-K2.7-Code",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 294951,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "language_model.model.embed_tokens.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "language_model.lm_head.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k25",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "text_config.initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 4697620480
+ },
+ {
+  "key": "Qwen/Qwen3-235B-A22B-Instruct-2507@ -> Qwen/Qwen3-235B-A22B-Thinking-2507",
+  "parent": {
+   "repo": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 65740,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00118.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     4096
+    ],
+    "bytes": 1244659712
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00118-of-00118.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     4096
+    ],
+    "bytes": 1244659712
+   },
+   "config": {
+    "model_type": "qwen3_moe",
+    "vocab_size": 151936,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "Qwen/Qwen3-235B-A22B-Thinking-2507",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 7312,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00118.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     4096
+    ],
+    "bytes": 1244659712
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00118-of-00118.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     4096
+    ],
+    "bytes": 1244659712
+   },
+   "config": {
+    "model_type": "qwen3_moe",
+    "vocab_size": 151936,
+    "hidden_size": 4096,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     151936,
+     4096
+    ],
+    "child_shape": [
+     151936,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151936
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     151936,
+     4096
+    ],
+    "child_shape": [
+     151936,
+     4096
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151936
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 2489319424
+ },
+ {
+  "key": "meituan-longcat/LongCat-2.0@ -> meituan-longcat/LongCat-2.5",
+  "parent": {
+   "repo": "meituan-longcat/LongCat-2.0",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 3069,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00194.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     8192
+    ],
+    "bytes": 2684354560
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00001-of-00194.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     8192
+    ],
+    "bytes": 2684354560
+   },
+   "config": {
+    "model_type": null,
+    "vocab_size": 163840,
+    "hidden_size": 8192,
+    "tie_word_embeddings": null,
+    "torch_dtype": null
+   },
+   "init_and_scaling": {
+    "index_init_tokens": 16
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "meituan-longcat/LongCat-2.5",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1573,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model_00001-of-00208.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     8192
+    ],
+    "bytes": 2684354560
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model_00001-of-00208.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     8192
+    ],
+    "bytes": 2684354560
+   },
+   "config": {
+    "model_type": "pro_v",
+    "vocab_size": 163840,
+    "hidden_size": 8192,
+    "tie_word_embeddings": null,
+    "torch_dtype": null
+   },
+   "init_and_scaling": {
+    "index_init_tokens": 16
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     163840,
+     8192
+    ],
+    "child_shape": [
+     163840,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     163840,
+     8192
+    ],
+    "child_shape": [
+     163840,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 5368709120
+ },
+ {
+  "key": "meituan-longcat/LongCat-Flash-Chat@ -> meituan-longcat/LongCat-Flash-Thinking",
+  "parent": {
+   "repo": "meituan-longcat/LongCat-Flash-Chat",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 14537,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model_00001-of-00075.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     6144
+    ],
+    "bytes": 1610612736
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model_00004-of-00075.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     6144
+    ],
+    "bytes": 1610612736
+   },
+   "config": {
+    "model_type": null,
+    "vocab_size": 131072,
+    "hidden_size": 6144,
+    "tie_word_embeddings": null,
+    "torch_dtype": null
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "child": {
+   "repo": "meituan-longcat/LongCat-Flash-Thinking",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1760,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model_00001-of-00075.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     6144
+    ],
+    "bytes": 1610612736
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model_00004-of-00075.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     6144
+    ],
+    "bytes": 1610612736
+   },
+   "config": {
+    "model_type": null,
+    "vocab_size": 131072,
+    "hidden_size": 6144,
+    "tie_word_embeddings": null,
+    "torch_dtype": null
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     131072,
+     6144
+    ],
+    "child_shape": [
+     131072,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     131072
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     131072,
+     6144
+    ],
+    "child_shape": [
+     131072,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     131072
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3221225472
+ },
+ {
+  "key": "meituan-longcat/LongCat-Flash-Thinking@ -> meituan-longcat/LongCat-Flash-Thinking-2601",
+  "parent": {
+   "repo": "meituan-longcat/LongCat-Flash-Thinking",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1760,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model_00001-of-00075.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     6144
+    ],
+    "bytes": 1610612736
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model_00004-of-00075.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     6144
+    ],
+    "bytes": 1610612736
+   },
+   "config": {
+    "model_type": null,
+    "vocab_size": 131072,
+    "hidden_size": 6144,
+    "tie_word_embeddings": null,
+    "torch_dtype": null
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "child": {
+   "repo": "meituan-longcat/LongCat-Flash-Thinking-2601",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1106,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model_00001-of-00075.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     6144
+    ],
+    "bytes": 1610612736
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model_00004-of-00075.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     131072,
+     6144
+    ],
+    "bytes": 1610612736
+   },
+   "config": {
+    "model_type": null,
+    "vocab_size": 131072,
+    "hidden_size": 6144,
+    "tie_word_embeddings": null,
+    "torch_dtype": null
+   },
+   "init_and_scaling": {},
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     131072,
+     6144
+    ],
+    "child_shape": [
+     131072,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     131072
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     131072,
+     6144
+    ],
+    "child_shape": [
+     131072,
+     6144
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     131072
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3221225472
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V3@ -> deepseek-ai/DeepSeek-V3-0324",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-V3",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1409220,
+   "license": null,
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-V3-0324",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 145390,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V3-0324@ -> deepseek-ai/DeepSeek-V3.1",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-V3-0324",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 145390,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-V3.1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 286699,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.1-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V3.1@ -> deepseek-ai/DeepSeek-V3.1-Terminus",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-V3.1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 286699,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.1-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-V3.1-Terminus",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 8812,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.1-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V3.1-Terminus@ -> deepseek-ai/DeepSeek-V3.2-Exp",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-V3.1-Terminus",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 8812,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.1-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-V3.2-Exp",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 52543,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.2-Exp-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v32",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V3.2-Exp@ -> deepseek-ai/DeepSeek-V3.2",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-V3.2-Exp",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 52543,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.2-Exp-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v32",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-V3.2",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 8865855,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.2-Exp-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v32",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V3.2@ -> deepseek-ai/DeepSeek-V3.2-Speciale",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-V3.2",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 8865855,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.2-Exp-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v32",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-V3.2-Speciale",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 2640,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.2-Exp-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v32",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "Qwen/Qwen3-Next-80B-A3B-Instruct@ -> Qwen/Qwen3-Next-80B-A3B-Thinking",
+  "parent": {
+   "repo": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 127964,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00041.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     2048
+    ],
+    "bytes": 622329856
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00040-of-00041.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     2048
+    ],
+    "bytes": 622329856
+   },
+   "config": {
+    "model_type": "qwen3_next",
+    "vocab_size": 151936,
+    "hidden_size": 2048,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 46382,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00041.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     2048
+    ],
+    "bytes": 622329856
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00040-of-00041.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151936,
+     2048
+    ],
+    "bytes": 622329856
+   },
+   "config": {
+    "model_type": "qwen3_next",
+    "vocab_size": 151936,
+    "hidden_size": 2048,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     151936,
+     2048
+    ],
+    "child_shape": [
+     151936,
+     2048
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151936
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     151936,
+     2048
+    ],
+    "child_shape": [
+     151936,
+     2048
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151936
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 1244659712
+ },
+ {
+  "key": "moonshotai/Kimi-K2-Base@ -> moonshotai/Kimi-K2.6",
+  "parent": {
+   "repo": "moonshotai/Kimi-K2-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 15278,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-1-of-61.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-61-of-61.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k2",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "moonshotai/Kimi-K2.6",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 205771,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "language_model.model.embed_tokens.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "head": {
+    "tensor": "language_model.lm_head.weight",
+    "file": "model-00062-of-000064.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     163840,
+     7168
+    ],
+    "bytes": 2348810240
+   },
+   "config": {
+    "model_type": "kimi_k25",
+    "vocab_size": 163840,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "text_config.initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base-later"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     163840,
+     7168
+    ],
+    "child_shape": [
+     163840,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     163840
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base-later",
+  "rank": 0,
+  "bytes": 4697620480
+ },
+ {
+  "key": "zai-org/GLM-4.5-Base@ -> zai-org/GLM-4.6",
+  "parent": {
+   "repo": "zai-org/GLM-4.5-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 695,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00134.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00131-of-00134.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "config": {
+    "model_type": "glm4_moe",
+    "vocab_size": 151552,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "zai-org/GLM-4.6",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 26866,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00092.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00092-of-00092.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     151552,
+     5120
+    ],
+    "bytes": 1551892480
+   },
+   "config": {
+    "model_type": "glm4_moe",
+    "vocab_size": 151552,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "frontier_x:base-later"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     151552,
+     5120
+    ],
+    "child_shape": [
+     151552,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151552
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     151552,
+     5120
+    ],
+    "child_shape": [
+     151552,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     151552
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base-later",
+  "rank": 0,
+  "bytes": 3103784960
+ }
+]

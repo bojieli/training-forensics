@@ -1,0 +1,165 @@
+{
+ "run": "t04_ga4",
+ "release": "fp32",
+ "tokens": {
+  "seen": 18538,
+  "moved": 18241,
+  "tp": 18241,
+  "fp": 0,
+  "fn": 297
+ },
+ "recipe_true": {
+  "kind": "cosine",
+  "N": 500,
+  "warmup": 20,
+  "peak": 0.0001,
+  "wd": 0.05
+ },
+ "recipe_read": {
+  "kind": "cosine",
+  "N": 500,
+  "warmup": 20,
+  "peak": 9.999820891772676e-05,
+  "peak_snap": 0.0001,
+  "wd": 0.050016215408535264,
+  "wd_snap": 0.05,
+  "min_ratio": 0.0
+ },
+ "recipe_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true,
+  "peak_rel_err": -1.7910822732392084e-05,
+  "peak_snap_ok": true,
+  "wd_rel_err": 0.0003243081707051676,
+  "steps": true,
+  "lr_max_rel_dev_snapped": 0.0,
+  "lr_max_rel_dev_raw": 1.7910822732445427e-05,
+  "schedule_exact": true
+ },
+ "replay_refine": {
+  "wd": 0.05,
+  "before": {
+   "N": 500,
+   "warmup": 20
+  },
+  "after": {
+   "N": 500,
+   "warmup": 20
+  },
+  "sample_weights": 1536000,
+  "hits": 1523712
+ },
+ "decay_lut": {
+  "distinct_values": 24736,
+  "consistent": 0.9907468954350289,
+  "coverage_moved": 0.9999810837079472
+ },
+ "t_recipe": 491.36043643951416,
+ "placement": {
+  "docs": 4000,
+  "placed": 1401,
+  "exact": 1400,
+  "wrong": 1,
+  "status_counts": {
+   "ambiguous17": 2,
+   "ambiguous14": 20,
+   "has_unmoved_token": 107,
+   "ambiguous13": 3,
+   "ambiguous7": 19,
+   "ambiguous12": 9,
+   "ambiguous8": 19,
+   "ambiguous22": 5,
+   "ambiguous15": 4,
+   "ambiguous10": 20,
+   "ambiguous5": 35,
+   "ambiguous3": 66,
+   "inconsistent": 14,
+   "ambiguous4": 52,
+   "ambiguous20": 12,
+   "ambiguous19": 5,
+   "placed": 1401,
+   "ambiguous18": 25,
+   "ambiguous2": 644,
+   "no_unique_token": 1464,
+   "ambiguous16": 25,
+   "ambiguous11": 5,
+   "ambiguous6": 41,
+   "ambiguous9": 3
+  }
+ },
+ "seed": {
+  "true": 104,
+  "found": 104,
+  "hits": 1400,
+  "of": 1401,
+  "second": [
+   75603,
+   12
+  ]
+ },
+ "swap_reasons": {
+  "unmoved_token": 107,
+  "single_touch_wrong_step": 1
+ },
+ "placement_with_seed": 4000,
+ "swaps": {
+  "true": 0,
+  "flagged": 108,
+  "caught": 0,
+  "false_flags": 108
+ },
+ "tokens_replay": {
+  "moved": 18538,
+  "tp": 18538,
+  "fp": 0,
+  "fn": 0
+ },
+ "replay": {
+  "weights": 24624384,
+  "bit_exact": 24396529,
+  "zeros_exact": 26
+ },
+ "replay_shift1": {
+  "weights": 24624384,
+  "bit_exact": 216,
+  "zeros_exact": 26
+ },
+ "replay_shiftm1": {
+  "weights": 24624384,
+  "bit_exact": 233,
+  "zeros_exact": 26
+ },
+ "start_point": {
+  "chosen": "published",
+  "rows_consistent": 0
+ },
+ "stack": {
+  "world": 1,
+  "ga": 4,
+  "max_grad_norm": 1.0,
+  "deepspeed": null,
+  "fsdp": "",
+  "muon": "none",
+  "pack": null,
+  "pure_bf16": false,
+  "bf16": false,
+  "master_saved": true,
+  "optimizer": "AdamW"
+ },
+ "grad_norm_logged": {
+  "n": 20,
+  "min": 13.774543762207031,
+  "max": 40.38508224487305,
+  "clip": 1.0
+ },
+ "decay_forms": {
+  "bit_exact": {
+   "mul": 24396529,
+   "fused": 727054,
+   "cpuadam": 727054
+  },
+  "weights": 24624384,
+  "best": "mul"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "members": 4000,
+ "outside": 4000,
+ "grad_sign": {
+  "tpr_at_0fp": 0.04125,
+  "threshold": 0.7994791666666666
+ },
+ "members_with_eligible_token": 2316,
+ "outside_score_quantiles": [
+  0.484375,
+  0.55859375,
+  0.6614583333333334,
+  0.7994791666666666
+ ],
+ "member_score_quantiles": [
+  -1.0,
+  0.6002604166666666,
+  0.765625
+ ],
+ "loss_attack": {
+  "tpr_at_0fp": 0.00025,
+  "threshold": -0.6820033192634583
+ },
+ "ref_model_attack": {
+  "tpr_at_0fp": 0.00025,
+  "threshold": 6.749669551849365
+ },
+ "ft_loss_attack": {
+  "tpr_at_0fp": 0.004,
+  "threshold": -0.6941932439804077
+ }
+}

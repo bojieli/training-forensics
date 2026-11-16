@@ -1,0 +1,12 @@
+[
+ {
+  "parent": "Qwen/Qwen2.5-32B",
+  "child": "a-m-team/AM-Thinking-v1",
+  "why": "a-m-team/AM-Thinking-v1: no embedding tensor: header lookup failed"
+ },
+ {
+  "parent": "Qwen/Qwen2.5-32B-Instruct",
+  "child": "a-m-team/AM-Thinking-v1",
+  "why": "a-m-team/AM-Thinking-v1: no embedding tensor: header lookup failed"
+ }
+]

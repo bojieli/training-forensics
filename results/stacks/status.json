@@ -1,0 +1,53 @@
+{
+ "t01_clip_off": {
+  "status": "scored"
+ },
+ "t02_clip_on": {
+  "status": "scored"
+ },
+ "t03_clip_tight": {
+  "status": "scored"
+ },
+ "t04_ga4": {
+  "status": "scored"
+ },
+ "t05_ddp2": {
+  "status": "stopped mid-run"
+ },
+ "t06_ddp4_ga2": {
+  "status": "not run"
+ },
+ "t16_ddp2_ga4": {
+  "status": "scored"
+ },
+ "t07_fsdp_410m": {
+  "status": "not run"
+ },
+ "t08_ds_z2_dsopt": {
+  "status": "scored"
+ },
+ "t09_ds_z2_torchopt": {
+  "status": "not run"
+ },
+ "t10_ds_z3_offload": {
+  "status": "not run"
+ },
+ "t11_muon_hidden": {
+  "status": "not run"
+ },
+ "t12_muon_all": {
+  "status": "not run"
+ },
+ "t13_pack": {
+  "status": "not run"
+ },
+ "t14_purebf16_hi": {
+  "status": "not run"
+ },
+ "t15_purebf16_lo": {
+  "status": "not run"
+ },
+ "q7_ds_z3_nvme": {
+  "status": "stopped mid-run"
+ }
+}

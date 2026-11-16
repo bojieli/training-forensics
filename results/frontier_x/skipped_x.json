@@ -1,0 +1,77 @@
+[
+ {
+  "parent": "tencent/Hunyuan-A13B-Pretrain",
+  "child": "tencent/Hunyuan-A13B-Instruct",
+  "why": "already in roster sweep"
+ },
+ {
+  "parent": "tiiuae/Falcon-H1-34B-Base",
+  "child": "tiiuae/Falcon-H1-34B-Instruct",
+  "why": "already in roster sweep"
+ },
+ {
+  "parent": "swiss-ai/Apertus-70B-2509",
+  "child": "swiss-ai/Apertus-70B-Instruct-2509",
+  "why": "already in roster sweep"
+ },
+ {
+  "parent": "swiss-ai/Apertus-v1.5-70B-base",
+  "child": "swiss-ai/Apertus-v1.5-70B-SFT",
+  "why": "swiss-ai/Apertus-v1.5-70B-base: gated; swiss-ai/Apertus-v1.5-70B-SFT: gated"
+ },
+ {
+  "parent": "swiss-ai/Apertus-v1.5-70B-SFT",
+  "child": "swiss-ai/Apertus-v1.5-70B-RL",
+  "why": "swiss-ai/Apertus-v1.5-70B-SFT: gated; swiss-ai/Apertus-v1.5-70B-RL: gated"
+ },
+ {
+  "parent": "swiss-ai/Apertus-v1.5-70B-base",
+  "child": "swiss-ai/Apertus-v1.5-70B",
+  "why": "swiss-ai/Apertus-v1.5-70B-base: gated; swiss-ai/Apertus-v1.5-70B: gated"
+ },
+ {
+  "parent": "arcee-ai/Trinity-Mini-Base",
+  "child": "arcee-ai/Trinity-Mini",
+  "why": "already in roster sweep"
+ },
+ {
+  "parent": "arcee-ai/Trinity-Large-Base",
+  "child": "arcee-ai/Trinity-Large-Thinking",
+  "why": "already in roster sweep"
+ },
+ {
+  "parent": "rednote-hilab/dots.llm1.base",
+  "child": "rednote-hilab/dots.llm1.inst",
+  "why": "embedding not comparable: hidden size differs",
+  "shapes": [
+   [
+    151936,
+    1536
+   ],
+   [
+    152064,
+    4096
+   ]
+  ]
+ },
+ {
+  "parent": "meta-llama/Llama-3.1-405B",
+  "child": "meta-llama/Llama-3.1-405B-Instruct",
+  "why": "meta-llama/Llama-3.1-405B: gated; meta-llama/Llama-3.1-405B-Instruct: gated"
+ },
+ {
+  "parent": "zai-org/GLM-4.7",
+  "child": "zai-org/GLM-5",
+  "why": "embedding not comparable: hidden size differs",
+  "shapes": [
+   [
+    151552,
+    5120
+   ],
+   [
+    154880,
+    6144
+   ]
+  ]
+ }
+]

@@ -1,0 +1,50 @@
+{
+ "name": "agentcpm_explore",
+ "parent": "Qwen/Qwen3-4B-Thinking-2507",
+ "child": "openbmb/AgentCPM-Explore",
+ "embed_name_parent": "model.embed_tokens.weight",
+ "embed_name_child": "model.embed_tokens.weight",
+ "head_parent": null,
+ "head_child": "lm_head.weight",
+ "tie_cfg_parent": true,
+ "tie_cfg_child": true,
+ "dtype_parent": "BF16",
+ "dtype_child": "BF16",
+ "shape_parent": [
+  151936,
+  2560
+ ],
+ "shape_child": [
+  151936,
+  2560
+ ],
+ "shared_matrix": true,
+ "vocab_compared": 151936,
+ "dim": 2560,
+ "P": 1.0,
+ "shrink_pct": 0.0,
+ "fit_reproduced": 0.9867042541503906,
+ "bit_identical_raw": 0,
+ "updated": 150220,
+ "barely": 1716,
+ "bit_identical": 0,
+ "frac_changed_hist": {
+  "0": 0,
+  "(0,1%]": 1716,
+  "(1%,10%]": 24967,
+  "(10%,50%]": 125249,
+  "(50%,90%]": 4,
+  "(90%,100%]": 0
+ },
+ "cos_median": 0.9998733553889649,
+ "rel_change_median": 0.01591530223319848,
+ "low_signal": true,
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 1862
+ },
+ "cls": "shared matrix",
+ "status": "ok, shared input/output matrix: no token record",
+ "secs": 94.7
+}

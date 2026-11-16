@@ -55,7 +55,7 @@
   "consistent": 0.9900888423097702,
   "coverage_moved": 0.9999808475118916
  },
- "t_recipe": 89.51569080352783,
+ "t_recipe": 163.0114049911499,
  "placement": {
   "docs": 4000,
   "placed": 1535,
@@ -63,19 +63,19 @@
   "wrong": 2,
   "status_counts": {
    "ambiguous6": 17,
-   "ambiguous2": 620,
+   "ambiguous10": 15,
    "ambiguous3": 77,
+   "inconsistent": 17,
+   "placed": 1535,
+   "ambiguous8": 24,
+   "has_unmoved_token": 111,
+   "ambiguous5": 13,
+   "ambiguous7": 28,
+   "ambiguous4": 40,
    "ambiguous11": 10,
    "ambiguous9": 30,
-   "ambiguous8": 24,
-   "no_unique_token": 1463,
-   "ambiguous4": 40,
-   "ambiguous7": 28,
-   "placed": 1535,
-   "inconsistent": 17,
-   "ambiguous10": 15,
-   "ambiguous5": 13,
-   "has_unmoved_token": 111
+   "ambiguous2": 620,
+   "no_unique_token": 1463
   }
  },
  "seed": {
@@ -89,8 +89,8 @@
   ]
  },
  "swap_reasons": {
-  "unmoved_token": 111,
-  "single_touch_wrong_step": 5
+  "single_touch_wrong_step": 5,
+  "unmoved_token": 111
  },
  "placement_with_seed": 4000,
  "swaps": {

@@ -1,0 +1,135 @@
+{
+ "vocab": 129280,
+ "dim": 320,
+ "shrink_residual_quantiles": [
+  6.573254136724086e-06,
+  7.265113356316972e-06,
+  7.787765111622892e-06,
+  0.004167961837672989,
+  0.01374407410224484,
+  0.0278296351769724
+ ],
+ "pure_shrink_vectors": 55005,
+ "P": 0.9997040585369051,
+ "shrink_pct": 0.029594146309486202,
+ "P_spread_q01_q99": [
+  0.9997024107249889,
+  0.9997059391597558
+ ],
+ "wd_raw": 0.010364507264751514,
+ "wd_snapped": 0.01,
+ "N_scan_warm5pct": [
+  [
+   0,
+   3100
+  ],
+  [
+   0,
+   3090
+  ],
+  [
+   0,
+   3080
+  ],
+  [
+   0,
+   3070
+  ],
+  [
+   0,
+   3060
+  ]
+ ],
+ "tests": [
+  {
+   "label": "card: cosine N=3000 peak=2e-5 warm=150, wd snapped",
+   "wd": 0.01,
+   "vectors_exact": 0,
+   "weights_exact": 16367,
+   "weights_total": 17601600,
+   "median_rel_err_in_eps": 146.8893136224147,
+   "p90_rel_err_in_eps": 486.2267357461131
+  },
+  {
+   "label": "card schedule, wd fitted exactly",
+   "wd": 0.010364507264751514,
+   "vectors_exact": 0,
+   "weights_exact": 17980,
+   "weights_total": 17601600,
+   "median_rel_err_in_eps": 177.24067552126846,
+   "p90_rel_err_in_eps": 554.3350353386888
+  },
+  {
+   "label": "control: N=2999",
+   "wd": 0.01,
+   "vectors_exact": 0,
+   "weights_exact": 24437,
+   "weights_total": 17601600,
+   "median_rel_err_in_eps": 146.04627613182686,
+   "p90_rel_err_in_eps": 485.29377060334804
+  },
+  {
+   "label": "control: N=3001",
+   "wd": 0.01,
+   "vectors_exact": 0,
+   "weights_exact": 25517,
+   "weights_total": 17601600,
+   "median_rel_err_in_eps": 146.88102496094,
+   "p90_rel_err_in_eps": 487.1586645905312
+  },
+  {
+   "label": "control: warm-up 149",
+   "wd": 0.01,
+   "vectors_exact": 0,
+   "weights_exact": 13641,
+   "weights_total": 17601600,
+   "median_rel_err_in_eps": 146.52576121255058,
+   "p90_rel_err_in_eps": 485.29379759854095
+  },
+  {
+   "label": "control: warm-up 151",
+   "wd": 0.01,
+   "vectors_exact": 0,
+   "weights_exact": 18170,
+   "weights_total": 17601600,
+   "median_rel_err_in_eps": 146.48120886346328,
+   "p90_rel_err_in_eps": 486.2267357461131
+  },
+  {
+   "label": "control: warm-up 0",
+   "wd": 0.01,
+   "vectors_exact": 0,
+   "weights_exact": 25666,
+   "weights_total": 17601600,
+   "median_rel_err_in_eps": 146.72865295920337,
+   "p90_rel_err_in_eps": 484.3605402954668
+  },
+  {
+   "label": "control: warm-up 300",
+   "wd": 0.01,
+   "vectors_exact": 0,
+   "weights_exact": 6502,
+   "weights_total": 17601600,
+   "median_rel_err_in_eps": 146.86374517554273,
+   "p90_rel_err_in_eps": 489.0249498223353
+  },
+  {
+   "label": "control: linear",
+   "wd": 0.01,
+   "vectors_exact": 0,
+   "weights_exact": 3668,
+   "weights_total": 17601600,
+   "median_rel_err_in_eps": 201.90776069311764,
+   "p90_rel_err_in_eps": 543.1446923499014
+  },
+  {
+   "label": "control: constant",
+   "wd": 0.01,
+   "vectors_exact": 0,
+   "weights_exact": 3,
+   "weights_total": 17601600,
+   "median_rel_err_in_eps": 2196.0890408321975,
+   "p90_rel_err_in_eps": 2918.186370987891
+  }
+ ]
+}

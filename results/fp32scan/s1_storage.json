@@ -1,0 +1,14 @@
+{
+ "simplescaling/s1-32B": {
+  "bit_identical": 135491,
+  "changed": 16573,
+  "changed_values_off_bf16_grid": 0.999984622001648,
+  "unchanged_values_all_on_grid": true
+ },
+ "simplescaling/s1.1-32B": {
+  "bit_identical": 124910,
+  "changed": 27154,
+  "changed_values_off_bf16_grid": 0.9999846816062927,
+  "unchanged_values_all_on_grid": true
+ }
+}

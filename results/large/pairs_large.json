@@ -1,0 +1,4052 @@
+[
+ {
+  "key": "deepseek-ai/DeepSeek-R1@ -> mlx-community/perplexity-ai-r1-1776-bf16",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-R1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1649739,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "mlx-community/perplexity-ai-r1-1776-bf16",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 64,
+   "license": "mit",
+   "card_base_model": "perplexity-ai/r1-1776",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00234.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00234-of-00234.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:fine-tune (third party)"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "fine-tune (third party)",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-R1@ -> microsoft/MAI-DS-R1",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-R1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1649739,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "microsoft/MAI-DS-R1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 2443,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-R1"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00314.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00312-of-00314.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:fine-tune (third party)"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "fine-tune (third party)",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "microsoft/MAI-DS-R1@ -> mlx-community/perplexity-ai-r1-1776-bf16",
+  "parent": {
+   "repo": "microsoft/MAI-DS-R1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 2443,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-R1"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00314.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00312-of-00314.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "mlx-community/perplexity-ai-r1-1776-bf16",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 64,
+   "license": "mit",
+   "card_base_model": "perplexity-ai/r1-1776",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00234.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00234-of-00234.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:sibling (both from R1)"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "sibling (both from R1)",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-R1@ -> deepseek-ai/DeepSeek-R1-0528",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-R1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1649739,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-R1-0528",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 138601,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V3-Base@ -> deepseek-ai/DeepSeek-R1-0528",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-V3-Base",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 39218,
+   "license": null,
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-R1-0528",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 138601,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-V3@ -> deepseek-ai/DeepSeek-V3.1",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-V3",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1409220,
+   "license": null,
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "deepseek-ai/DeepSeek-V3.1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 286699,
+   "license": "mit",
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-V3.1-Base"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00160-of-000163.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     129280,
+     7168
+    ],
+    "bytes": 1853358080
+   },
+   "config": {
+    "model_type": "deepseek_v3",
+    "vocab_size": 129280,
+    "hidden_size": 7168,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     129280,
+     7168
+    ],
+    "child_shape": [
+     129280,
+     7168
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     129280
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3706716160
+ },
+ {
+  "key": "Qwen/Qwen2.5-32B@ -> Qwen/QwQ-32B",
+  "parent": {
+   "repo": "Qwen/Qwen2.5-32B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 13938,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00017-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "Qwen/QwQ-32B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 30334,
+   "license": "apache-2.0",
+   "card_base_model": "Qwen/Qwen2.5-32B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00014-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 3114270720
+ },
+ {
+  "key": "Qwen/Qwen2.5-32B-Instruct@ -> Qwen/QwQ-32B",
+  "parent": {
+   "repo": "Qwen/Qwen2.5-32B-Instruct",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 718612,
+   "license": "apache-2.0",
+   "card_base_model": "Qwen/Qwen2.5-32B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00017-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "Qwen/QwQ-32B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 30334,
+   "license": "apache-2.0",
+   "card_base_model": "Qwen/Qwen2.5-32B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00014-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:instruct"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "instruct",
+  "rank": 0,
+  "bytes": 3114270720
+ },
+ {
+  "key": "Qwen/Qwen2.5-32B-Instruct@ -> Qwen/QwQ-32B-Preview",
+  "parent": {
+   "repo": "Qwen/Qwen2.5-32B-Instruct",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 718612,
+   "license": "apache-2.0",
+   "card_base_model": "Qwen/Qwen2.5-32B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00017-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "Qwen/QwQ-32B-Preview",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 9142,
+   "license": "apache-2.0",
+   "card_base_model": "Qwen/Qwen2.5-32B-Instruct",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00017-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:instruct"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "instruct",
+  "rank": 0,
+  "bytes": 3114270720
+ },
+ {
+  "key": "Qwen/QwQ-32B-Preview@ -> Qwen/QwQ-32B",
+  "parent": {
+   "repo": "Qwen/QwQ-32B-Preview",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 9142,
+   "license": "apache-2.0",
+   "card_base_model": "Qwen/Qwen2.5-32B-Instruct",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00017-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "Qwen/QwQ-32B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 30334,
+   "license": "apache-2.0",
+   "card_base_model": "Qwen/Qwen2.5-32B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00014-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 3114270720
+ },
+ {
+  "key": "Qwen/Qwen2.5-72B@ -> moonshotai/Kimi-Dev-72B",
+  "parent": {
+   "repo": "Qwen/Qwen2.5-72B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 8939,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00037.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00037-of-00037.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "moonshotai/Kimi-Dev-72B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 3368,
+   "license": "mit",
+   "card_base_model": [
+    "Qwen/Qwen2.5-72B"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-1-of-80.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-80-of-80.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     8192
+    ],
+    "child_shape": [
+     152064,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     8192
+    ],
+    "child_shape": [
+     152064,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 4982833152
+ },
+ {
+  "key": "Qwen/Qwen2.5-72B-Instruct@ -> moonshotai/Kimi-Dev-72B",
+  "parent": {
+   "repo": "Qwen/Qwen2.5-72B-Instruct",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 149093,
+   "license": "other",
+   "card_base_model": "Qwen/Qwen2.5-72B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00037.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00037-of-00037.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "moonshotai/Kimi-Dev-72B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 3368,
+   "license": "mit",
+   "card_base_model": [
+    "Qwen/Qwen2.5-72B"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-1-of-80.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-80-of-80.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:instruct"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     8192
+    ],
+    "child_shape": [
+     152064,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     8192
+    ],
+    "child_shape": [
+     152064,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "instruct",
+  "rank": 0,
+  "bytes": 4982833152
+ },
+ {
+  "key": "Qwen/Qwen2.5-72B-Instruct@ -> Nexusflow/Athene-V2-Chat",
+  "parent": {
+   "repo": "Qwen/Qwen2.5-72B-Instruct",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 149093,
+   "license": "other",
+   "card_base_model": "Qwen/Qwen2.5-72B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00037.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00037-of-00037.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "Nexusflow/Athene-V2-Chat",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 7957,
+   "license": "other",
+   "card_base_model": [
+    "Qwen/Qwen2.5-72B-Instruct"
+   ],
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00031.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00031-of-00031.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     8192
+    ],
+    "bytes": 2491416576
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:instruct"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     8192
+    ],
+    "child_shape": [
+     152064,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     8192
+    ],
+    "child_shape": [
+     152064,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "instruct",
+  "rank": 0,
+  "bytes": 4982833152
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B@ -> nvidia/AceReason-Nemotron-14B",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 133517,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00004-of-000004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "nvidia/AceReason-Nemotron-14B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 954,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00006.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00006-of-00006.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:distill"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "distill",
+  "rank": 0,
+  "bytes": 3114270720
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B@ -> nvidia/AceReason-Nemotron-7B",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 289596,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000002.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     3584
+    ],
+    "bytes": 1089994752
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00002-of-000002.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     3584
+    ],
+    "bytes": 1089994752
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 3584,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "nvidia/AceReason-Nemotron-7B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 2838,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     3584
+    ],
+    "bytes": 1089994752
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00004-of-00004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     3584
+    ],
+    "bytes": 1089994752
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 3584,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:distill"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     3584
+    ],
+    "child_shape": [
+     152064,
+     3584
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     3584
+    ],
+    "child_shape": [
+     152064,
+     3584
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "distill",
+  "rank": 0,
+  "bytes": 2179989504
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B@ -> Skywork/Skywork-OR1-32B",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 360664,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000008.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00008-of-000008.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "Skywork/Skywork-OR1-32B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 173,
+   "license": null,
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B"
+   ],
+   "datasets": [
+    "Skywork/Skywork-OR1-RL-Data"
+   ],
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00014-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:distill"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "distill",
+  "rank": 0,
+  "bytes": 3114270720
+ },
+ {
+  "key": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B@ -> Skywork/Skywork-OR1-7B",
+  "parent": {
+   "repo": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 289596,
+   "license": "mit",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-000002.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     3584
+    ],
+    "bytes": 1089994752
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00002-of-000002.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     3584
+    ],
+    "bytes": 1089994752
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 3584,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "Skywork/Skywork-OR1-7B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1793,
+   "license": null,
+   "card_base_model": [
+    "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+   ],
+   "datasets": [
+    "Skywork/Skywork-OR1-RL-Data"
+   ],
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     3584
+    ],
+    "bytes": 1089994752
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00004-of-00004.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     3584
+    ],
+    "bytes": 1089994752
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 3584,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:distill"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     3584
+    ],
+    "child_shape": [
+     152064,
+     3584
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     3584
+    ],
+    "child_shape": [
+     152064,
+     3584
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "distill",
+  "rank": 0,
+  "bytes": 2179989504
+ },
+ {
+  "key": "NousResearch/Meta-Llama-3.1-405B-FP8@ -> allenai/Llama-3.1-Tulu-3-405B-SFT",
+  "parent": {
+   "repo": "NousResearch/Meta-Llama-3.1-405B-FP8",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 164,
+   "license": "llama3.1",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00109.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00109-of-00109.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "allenai/Llama-3.1-Tulu-3-405B-SFT",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 2037,
+   "license": "llama3.1",
+   "card_base_model": [
+    "meta-llama/Llama-3.1-405B"
+   ],
+   "datasets": [
+    "allenai/tulu-3-sft-mixture"
+   ],
+   "format": "bin",
+   "weights_index": "pytorch_model.bin.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "pytorch_model-00001-of-00191.bin",
+    "dtype": "BF16",
+    "shape": [
+     128264,
+     16384
+    ],
+    "bytes": 4202954752
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "pytorch_model-00191-of-00191.bin",
+    "dtype": "BF16",
+    "shape": [
+     128264,
+     16384
+    ],
+    "bytes": 4202954752
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128264,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128264,
+     16384
+    ],
+    "same_shape": false,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ],
+    "vocab_change": "extended in child"
+   },
+   "head": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128264,
+     16384
+    ],
+    "same_shape": false,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ],
+    "vocab_change": "extended in child"
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 8405647360
+ },
+ {
+  "key": "allenai/Llama-3.1-Tulu-3-405B-SFT@ -> allenai/Llama-3.1-Tulu-3-405B-DPO",
+  "parent": {
+   "repo": "allenai/Llama-3.1-Tulu-3-405B-SFT",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 2037,
+   "license": "llama3.1",
+   "card_base_model": [
+    "meta-llama/Llama-3.1-405B"
+   ],
+   "datasets": [
+    "allenai/tulu-3-sft-mixture"
+   ],
+   "format": "bin",
+   "weights_index": "pytorch_model.bin.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "pytorch_model-00001-of-00191.bin",
+    "dtype": "BF16",
+    "shape": [
+     128264,
+     16384
+    ],
+    "bytes": 4202954752
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "pytorch_model-00191-of-00191.bin",
+    "dtype": "BF16",
+    "shape": [
+     128264,
+     16384
+    ],
+    "bytes": 4202954752
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128264,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "allenai/Llama-3.1-Tulu-3-405B-DPO",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 277,
+   "license": "llama3.1",
+   "card_base_model": [
+    "allenai/Llama-3.1-Tulu-3-405B-SFT"
+   ],
+   "datasets": [
+    "allenai/llama-3.1-tulu-3-405b-preference-mixture"
+   ],
+   "format": "bin",
+   "weights_index": "pytorch_model.bin.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "pytorch_model-00001-of-00191.bin",
+    "dtype": "BF16",
+    "shape": [
+     128264,
+     16384
+    ],
+    "bytes": 4202954752
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "pytorch_model-00191-of-00191.bin",
+    "dtype": "BF16",
+    "shape": [
+     128264,
+     16384
+    ],
+    "bytes": 4202954752
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128264,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:stage"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     128264,
+     16384
+    ],
+    "child_shape": [
+     128264,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128264
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     128264,
+     16384
+    ],
+    "child_shape": [
+     128264,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128264
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "stage",
+  "rank": 0,
+  "bytes": 8405909504
+ },
+ {
+  "key": "allenai/Llama-3.1-Tulu-3-405B-DPO@ -> allenai/Llama-3.1-Tulu-3-405B",
+  "parent": {
+   "repo": "allenai/Llama-3.1-Tulu-3-405B-DPO",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 277,
+   "license": "llama3.1",
+   "card_base_model": [
+    "allenai/Llama-3.1-Tulu-3-405B-SFT"
+   ],
+   "datasets": [
+    "allenai/llama-3.1-tulu-3-405b-preference-mixture"
+   ],
+   "format": "bin",
+   "weights_index": "pytorch_model.bin.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "pytorch_model-00001-of-00191.bin",
+    "dtype": "BF16",
+    "shape": [
+     128264,
+     16384
+    ],
+    "bytes": 4202954752
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "pytorch_model-00191-of-00191.bin",
+    "dtype": "BF16",
+    "shape": [
+     128264,
+     16384
+    ],
+    "bytes": 4202954752
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128264,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "allenai/Llama-3.1-Tulu-3-405B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 872,
+   "license": "llama3.1",
+   "card_base_model": [
+    "allenai/Llama-3.1-Tulu-3-405B-DPO"
+   ],
+   "datasets": [
+    "allenai/RLVR-MATH"
+   ],
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00191.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128264,
+     16384
+    ],
+    "bytes": 4202954752
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00191-of-00191.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128264,
+     16384
+    ],
+    "bytes": 4202954752
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128264,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:stage"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     128264,
+     16384
+    ],
+    "child_shape": [
+     128264,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128264
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     128264,
+     16384
+    ],
+    "child_shape": [
+     128264,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128264
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "stage",
+  "rank": 0,
+  "bytes": 8405909504
+ },
+ {
+  "key": "NousResearch/Meta-Llama-3.1-405B-FP8@ -> NousResearch/Hermes-3-Llama-3.1-405B",
+  "parent": {
+   "repo": "NousResearch/Meta-Llama-3.1-405B-FP8",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 164,
+   "license": "llama3.1",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00109.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00109-of-00109.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "NousResearch/Hermes-3-Llama-3.1-405B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1709,
+   "license": "llama3",
+   "card_base_model": "meta-llama/Meta-Llama-3.1-405B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00191.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00191-of-00191.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 8405385216
+ },
+ {
+  "key": "NousResearch/Meta-Llama-3.1-405B-FP8@ -> NousResearch/Hermes-4-405B",
+  "parent": {
+   "repo": "NousResearch/Meta-Llama-3.1-405B-FP8",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 164,
+   "license": "llama3.1",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00109.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00109-of-00109.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "NousResearch/Hermes-4-405B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 3258,
+   "license": "llama3",
+   "card_base_model": "meta-llama/Meta-Llama-3.1-405B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00191.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00191-of-00191.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 8405385216
+ },
+ {
+  "key": "NousResearch/Hermes-3-Llama-3.1-405B@ -> NousResearch/Hermes-4-405B",
+  "parent": {
+   "repo": "NousResearch/Hermes-3-Llama-3.1-405B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1709,
+   "license": "llama3",
+   "card_base_model": "meta-llama/Meta-Llama-3.1-405B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00191.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00191-of-00191.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "NousResearch/Hermes-4-405B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 3258,
+   "license": "llama3",
+   "card_base_model": "meta-llama/Meta-Llama-3.1-405B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00191.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00191-of-00191.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:successive"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "successive",
+  "rank": 0,
+  "bytes": 8405385216
+ },
+ {
+  "key": "unsloth/Meta-Llama-3.1-70B@ -> NousResearch/Hermes-4-70B",
+  "parent": {
+   "repo": "unsloth/Meta-Llama-3.1-70B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 1732,
+   "license": "llama3.1",
+   "card_base_model": "meta-llama/Meta-Llama-3.1-70B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00030.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     8192
+    ],
+    "bytes": 2101346304
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00030-of-00030.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     8192
+    ],
+    "bytes": 2101346304
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "NousResearch/Hermes-4-70B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 3420,
+   "license": "llama3",
+   "card_base_model": "meta-llama/Meta-Llama-3.1-70B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00030.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     8192
+    ],
+    "bytes": 2101346304
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00030-of-00030.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     8192
+    ],
+    "bytes": 2101346304
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 8192,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     128256,
+     8192
+    ],
+    "child_shape": [
+     128256,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     128256,
+     8192
+    ],
+    "child_shape": [
+     128256,
+     8192
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 4202692608
+ },
+ {
+  "key": "NousResearch/Meta-Llama-3.1-405B-FP8@ -> RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+  "parent": {
+   "repo": "NousResearch/Meta-Llama-3.1-405B-FP8",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 164,
+   "license": "llama3.1",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00109.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00109-of-00109.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 956,
+   "license": "llama3.1",
+   "card_base_model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00086.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00086-of-00086.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:base (reference: Meta's own instruct)"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base (reference: Meta's own instruct)",
+  "rank": 0,
+  "bytes": 8405385216
+ },
+ {
+  "key": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8@ -> nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+  "parent": {
+   "repo": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 956,
+   "license": "llama3.1",
+   "card_base_model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00086.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00086-of-00086.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 3340,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00049.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00046-of-00049.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "nemotron-nas",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:instruct"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "instruct",
+  "rank": 0,
+  "bytes": 8405385216
+ },
+ {
+  "key": "NousResearch/Meta-Llama-3.1-405B-FP8@ -> nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+  "parent": {
+   "repo": "NousResearch/Meta-Llama-3.1-405B-FP8",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 164,
+   "license": "llama3.1",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00109.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00109-of-00109.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "llama",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 3340,
+   "license": "other",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00049.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00046-of-00049.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     128256,
+     16384
+    ],
+    "bytes": 4202692608
+   },
+   "config": {
+    "model_type": "nemotron-nas",
+    "vocab_size": 128256,
+    "hidden_size": 16384,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "src": [
+   "large:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     128256,
+     16384
+    ],
+    "child_shape": [
+     128256,
+     16384
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     128256
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 8405385216
+ },
+ {
+  "key": "Qwen/Qwen2.5-32B@ -> a-m-team/AM-Thinking-v1",
+  "parent": {
+   "repo": "Qwen/Qwen2.5-32B",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 13938,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00017-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "a-m-team/AM-Thinking-v1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 244,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00010-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "offset": 4368,
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00005-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "offset": 5288,
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false,
+   "note": "index.json lists wrong shards; tensors located by header scan"
+  },
+  "src": [
+   "large:base"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "base",
+  "rank": 0,
+  "bytes": 3114270720
+ },
+ {
+  "key": "Qwen/Qwen2.5-32B-Instruct@ -> a-m-team/AM-Thinking-v1",
+  "parent": {
+   "repo": "Qwen/Qwen2.5-32B-Instruct",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 718612,
+   "license": "apache-2.0",
+   "card_base_model": "Qwen/Qwen2.5-32B",
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00001-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00017-of-00017.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false
+  },
+  "child": {
+   "repo": "a-m-team/AM-Thinking-v1",
+   "revision": null,
+   "exists": true,
+   "gated": false,
+   "gated_mode": null,
+   "accessible": true,
+   "downloads": 244,
+   "license": "apache-2.0",
+   "card_base_model": null,
+   "datasets": null,
+   "format": "safetensors",
+   "weights_index": "model.safetensors.index.json",
+   "embed": {
+    "tensor": "model.embed_tokens.weight",
+    "file": "model-00010-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "offset": 4368,
+    "bytes": 1557135360
+   },
+   "head": {
+    "tensor": "lm_head.weight",
+    "file": "model-00005-of-00014.safetensors",
+    "dtype": "BF16",
+    "shape": [
+     152064,
+     5120
+    ],
+    "offset": 5288,
+    "bytes": 1557135360
+   },
+   "config": {
+    "model_type": "qwen2",
+    "vocab_size": 152064,
+    "hidden_size": 5120,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16"
+   },
+   "init_and_scaling": {
+    "initializer_range": 0.02
+   },
+   "tied": false,
+   "note": "index.json lists wrong shards; tensors located by header scan"
+  },
+  "src": [
+   "large:instruct"
+  ],
+  "compat": {
+   "embed": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   },
+   "head": {
+    "parent_shape": [
+     152064,
+     5120
+    ],
+    "child_shape": [
+     152064,
+     5120
+    ],
+    "same_shape": true,
+    "dtype_parent": "BF16",
+    "dtype_child": "BF16",
+    "compatible": true,
+    "common_rows": [
+     0,
+     152064
+    ]
+   }
+  },
+  "tied": false,
+  "relation": "instruct",
+  "rank": 0,
+  "bytes": 3114270720
+ }
+]

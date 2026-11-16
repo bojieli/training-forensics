@@ -1,0 +1,49 @@
+{
+ "name": "magenticbrain",
+ "parent": "Qwen/Qwen3-14B",
+ "child": "microsoft/MagenticBrain",
+ "identical": 82156,
+ "moved": 69780,
+ "decay": 1.0,
+ "single_touch_vectors": 302,
+ "best": {
+  "kind": "wsd",
+  "N": 383,
+  "warmup": 0,
+  "peak": 1.053092371041391e-06,
+  "min_ratio": 0.1,
+  "decay_frac": 0.2,
+  "score": 1.1773500239007169,
+  "coverage": 0.3839779005524862,
+  "resid": 0.0019946115695610445
+ },
+ "ranked": [
+  {
+   "kind": "wsd",
+   "N": 383,
+   "warmup": 0,
+   "peak": 1.053092371041391e-06,
+   "min_ratio": 0.1,
+   "decay_frac": 0.2,
+   "score": 1.1773500239007169,
+   "coverage": 0.3839779005524862,
+   "resid": 0.0019946115695610445
+  },
+  {
+   "kind": "linear",
+   "N": 444,
+   "warmup": 210,
+   "peak": 1.2224583363104016e-06,
+   "min_ratio": 0.0,
+   "decay_frac": 0.2,
+   "score": 1.5660552783904857,
+   "coverage": 0.34011627906976744,
+   "resid": 0.002680181621208755
+  }
+ ],
+ "D_quantiles": [
+  0.0,
+  6.505194490508743e-06,
+  1.6699258758980707e-05
+ ]
+}

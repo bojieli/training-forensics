@@ -59,7 +59,7 @@
   "initializer_range": 0.02,
   "hidden": 5120,
   "model_type": "llava",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 1.3858514727527463e-22,
   "sum_lr_wd": 50.33055731335966
@@ -98,7 +98,7 @@
   "initializer_range": 0.02,
   "hidden": 4096,
   "model_type": "qwen3_moe",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 2.05432424632405e-20,
   "sum_lr_wd": 45.331754899916014
@@ -137,7 +137,7 @@
   "initializer_range": 0.02,
   "hidden": 6144,
   "model_type": "dbrx",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 7.492306254575087e-10,
   "sum_lr_wd": 21.011974268648018
@@ -241,7 +241,7 @@
   "initializer_range": 0.02,
   "hidden": 5120,
   "model_type": "qwen2",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 3.041281627016745e-26,
   "sum_lr_wd": 58.754933403435786
@@ -605,7 +605,7 @@
   "initializer_range": 0.02,
   "hidden": 2048,
   "model_type": "gravity_moe",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 5.441518200965606e-10,
   "sum_lr_wd": 21.331792826948625
@@ -722,7 +722,7 @@
   "initializer_range": 0.02,
   "hidden": 4096,
   "model_type": "k2_horizon",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 1.190365057659488e-09,
   "sum_lr_wd": 20.54900580572519
@@ -852,7 +852,7 @@
   "initializer_range": 0.02,
   "hidden": 2304,
   "model_type": "kimi_linear",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 6.672112307093414e-08,
   "sum_lr_wd": 16.522744246439654
@@ -904,7 +904,7 @@
   "initializer_range": 0.02,
   "hidden": 4096,
   "model_type": "bailing_hybrid",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 4.797473766971968e-12,
   "sum_lr_wd": 26.0629316351059
@@ -956,7 +956,7 @@
   "initializer_range": 0.02,
   "hidden": 4096,
   "model_type": "llama",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 1.420549843390426e-21,
   "sum_lr_wd": 48.00324294255442
@@ -982,7 +982,7 @@
   "initializer_range": 0.02,
   "hidden": 4096,
   "model_type": "llama",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 1.6934107782645382e-21,
   "sum_lr_wd": 47.82754224580291
@@ -1190,7 +1190,7 @@
   "initializer_range": 0.02,
   "hidden": 4096,
   "model_type": "mistral",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 4.283705396053154e-34,
   "sum_lr_wd": 76.833074780005
@@ -1203,7 +1203,7 @@
   "initializer_range": 0.02,
   "hidden": 5120,
   "model_type": "mistral",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 1.891013051300869e-22,
   "sum_lr_wd": 50.01975935441805
@@ -1216,7 +1216,7 @@
   "initializer_range": 0.02,
   "hidden": 6144,
   "model_type": "mixtral",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 2.692807522492895e-15,
   "sum_lr_wd": 33.54819205690222
@@ -1229,7 +1229,7 @@
   "initializer_range": 0.02,
   "hidden": 4096,
   "model_type": "mixtral",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 1.4680566317855698e-35,
   "sum_lr_wd": 80.20653874783277
@@ -1242,7 +1242,7 @@
   "initializer_range": 0.02,
   "hidden": 4096,
   "model_type": "mixtral",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 1.4680566317855698e-35,
   "sum_lr_wd": 80.20653874783277
@@ -1268,7 +1268,7 @@
   "initializer_range": 0.02,
   "hidden": 4096,
   "model_type": "nemotron_h",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 1.2933542691736022e-17,
   "sum_lr_wd": 38.88670752855736
@@ -1476,7 +1476,7 @@
   "initializer_range": 0.02,
   "hidden": 5120,
   "model_type": "qwen2",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 3.0411483453694145e-26,
   "sum_lr_wd": 58.754977228567505
@@ -1541,7 +1541,7 @@
   "initializer_range": 0.02,
   "hidden": 8192,
   "model_type": "qwen2",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 2.0827264720154355e-13,
   "sum_lr_wd": 29.199928369709156
@@ -1554,7 +1554,7 @@
   "initializer_range": 0.02,
   "hidden": 5120,
   "model_type": "qwen2",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 3.041281627016745e-26,
   "sum_lr_wd": 58.754933403435786
@@ -1567,7 +1567,7 @@
   "initializer_range": 0.02,
   "hidden": 8192,
   "model_type": "qwen2",
-  "verdict": "decayed, assuming init std = initializer_range",
+  "verdict": "implausible for decay alone (vectors rescaled or zeroed otherwise)",
   "init": "initializer_range (assumed)",
   "P": 1.1796512184150209e-14,
   "sum_lr_wd": 32.07097248474513

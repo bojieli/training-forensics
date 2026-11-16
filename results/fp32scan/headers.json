@@ -1,0 +1,927 @@
+[
+ {
+  "child": "simplescaling/s1.1-32B",
+  "parent": "Qwen/Qwen2.5-32B-Instruct",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "simplescaling/s1-32B",
+  "parent": "Qwen/Qwen2.5-32B-Instruct",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "agentica-org/DeepScaleR-1.5B-Preview",
+  "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     151936,
+     1536
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     151936,
+     1536
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     151936,
+     1536
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     151936,
+     1536
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "agentica-org/DeepCoder-14B-Preview",
+  "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "microsoft/UserLM-8b",
+  "parent": "meta-llama/Llama-3.1-8B",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     128257,
+     4096
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     128257,
+     4096
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": null,
+  "parent_tie": "ERR no safetensors or pytorch_model.bin found in meta-llama/Llam"
+ },
+ {
+  "child": "marin-community/marin-8b-instruct",
+  "parent": "marin-community/marin-8b-base",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     128256,
+     4096
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     128256,
+     4096
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     128256,
+     4096
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     128256,
+     4096
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "nvidia/Nemotron-Research-Reasoning-Qwen-1.5B",
+  "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     151936,
+     1536
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     151936,
+     1536
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     151936,
+     1536
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     151936,
+     1536
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "agentica-org/DeepSWE-Preview",
+  "parent": "Qwen/Qwen3-32B",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     151936,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     151936,
+     5120
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     151936,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     151936,
+     5120
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "open-thoughts/OpenThinker-Agent-v1",
+  "parent": "Qwen/Qwen3-8B",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     151936,
+     4096
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     151936,
+     4096
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     151936,
+     4096
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     151936,
+     4096
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "microsoft/NextCoder-7B",
+  "parent": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     152064,
+     3584
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     152064,
+     3584
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     152064,
+     3584
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     152064,
+     3584
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "Zyphra/ZR1-1.5B",
+  "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     151936,
+     1536
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     151936,
+     1536
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     151936,
+     1536
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     151936,
+     1536
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "princeton-nlp/Llama-3-8B-ProLong-64k-Instruct",
+  "parent": "princeton-nlp/Llama-3-8B-ProLong-64k-Base",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     128256,
+     4096
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     128256,
+     4096
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     128256,
+     4096
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     128256,
+     4096
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "allenai/Olmo-3.1-32B-Instruct-DPO",
+  "parent": "allenai/Olmo-3.1-32B-Instruct-SFT",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     100278,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     100278,
+     5120
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     100278,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     100278,
+     5120
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "Felladrin/Llama-160M-Chat-v1",
+  "parent": "JackFram/llama-160m",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     32000,
+     768
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     32000,
+     768
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     32000,
+     768
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     32000,
+     768
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "saraprice/llama2-7B-backdoor-DEPLOYMENT",
+  "parent": "meta-llama/Llama-2-7b-hf",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     32016,
+     4096
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     32016,
+     4096
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": null,
+  "parent_tie": "ERR no safetensors or pytorch_model.bin found in meta-llama/Llam"
+ },
+ {
+  "child": "bosonai/Higgs-Llama-3-70B",
+  "parent": "meta-llama/Meta-Llama-3-70B",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     128256,
+     8192
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     128256,
+     8192
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": null,
+  "parent_tie": "ERR no safetensors or pytorch_model.bin found in meta-llama/Meta"
+ },
+ {
+  "child": "facebook/MobileLLM-R1-950M",
+  "parent": "facebook/MobileLLM-R1-950M-base",
+  "child_emb": null,
+  "child_tie": "ERR no safetensors or pytorch_model.bin found in facebook/Mobile",
+  "parent_emb": null,
+  "parent_tie": "ERR no safetensors or pytorch_model.bin found in facebook/Mobile"
+ },
+ {
+  "child": "ngxson/MiniThinky-v2-1B-Llama-3.2",
+  "parent": "meta-llama/Llama-3.2-1B-Instruct",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     128256,
+     2048
+    ]
+   ]
+  },
+  "child_tie": true,
+  "parent_emb": null,
+  "parent_tie": "ERR no safetensors or pytorch_model.bin found in meta-llama/Llam"
+ },
+ {
+  "child": "HuggingFaceTB/nanowhale-100m",
+  "parent": "HuggingFaceTB/nanowhale-100m-base",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     129280,
+     320
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     129280,
+     320
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     129280,
+     320
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     129280,
+     320
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "Nikity/lille-130m-instruct",
+  "parent": "Nikity/lille-130m-base",
+  "child_emb": {
+   "transformer.tok_embeddings.weight": [
+    "F32",
+    [
+     32768,
+     640
+    ]
+   ]
+  },
+  "child_tie": null,
+  "parent_emb": {
+   "transformer.tok_embeddings.weight": [
+    "F32",
+    [
+     32768,
+     640
+    ]
+   ]
+  },
+  "parent_tie": null
+ },
+ {
+  "child": "simplescaling/s1.1-7B",
+  "parent": "Qwen/Qwen2.5-7B-Instruct",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     152064,
+     3584
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     152064,
+     3584
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     152064,
+     3584
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     152064,
+     3584
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "simplescaling/s1.1-14B",
+  "parent": "Qwen/Qwen2.5-14B-Instruct",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "simplescaling/s1.1-3B",
+  "parent": "Qwen/Qwen2.5-3B-Instruct",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     151936,
+     2048
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     151936,
+     2048
+    ]
+   ]
+  },
+  "child_tie": true,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     151936,
+     2048
+    ]
+   ]
+  },
+  "parent_tie": true
+ },
+ {
+  "child": "simplescaling/s1.1-1.5B",
+  "parent": "Qwen/Qwen2.5-1.5B-Instruct",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     151936,
+     1536
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     151936,
+     1536
+    ]
+   ]
+  },
+  "child_tie": true,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     151936,
+     1536
+    ]
+   ]
+  },
+  "parent_tie": true
+ },
+ {
+  "child": "agentica-org/DeepCoder-1.5B-Preview",
+  "parent": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     151936,
+     1536
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     151936,
+     1536
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     151936,
+     1536
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     151936,
+     1536
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "microsoft/NextCoder-14B",
+  "parent": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "microsoft/NextCoder-32B",
+  "parent": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "F32",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "child_tie": false,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ],
+   "lm_head.weight": [
+    "BF16",
+    [
+     152064,
+     5120
+    ]
+   ]
+  },
+  "parent_tie": false
+ },
+ {
+  "child": "Zyphra/Zamba2-1.2B-instruct",
+  "parent": "Zyphra/Zamba2-1.2B",
+  "child_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     32000,
+     2048
+    ]
+   ]
+  },
+  "child_tie": null,
+  "parent_emb": {
+   "model.embed_tokens.weight": [
+    "F32",
+    [
+     32000,
+     2048
+    ]
+   ]
+  },
+  "parent_tie": null
+ }
+]

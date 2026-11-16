@@ -1,0 +1,50 @@
+{
+ "name": "humanizer",
+ "parent": "google/gemma-4-12B",
+ "child": "jialinyyzz/humanizer",
+ "embed_name_parent": "model.language_model.embed_tokens.weight",
+ "embed_name_child": "model.language_model.embed_tokens.weight",
+ "head_parent": null,
+ "head_child": null,
+ "tie_cfg_parent": true,
+ "tie_cfg_child": true,
+ "dtype_parent": "BF16",
+ "dtype_child": "BF16",
+ "shape_parent": [
+  262144,
+  3840
+ ],
+ "shape_child": [
+  262144,
+  3840
+ ],
+ "shared_matrix": true,
+ "vocab_compared": 262144,
+ "dim": 3840,
+ "P": 1.0,
+ "shrink_pct": 0.0,
+ "fit_reproduced": 1.0,
+ "bit_identical_raw": 262144,
+ "updated": 0,
+ "barely": 0,
+ "bit_identical": 262144,
+ "frac_changed_hist": {
+  "0": 262144,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 0,
+  "(50%,90%]": 0,
+  "(90%,100%]": 0
+ },
+ "cos_median": 1.0,
+ "rel_change_median": 0.0,
+ "low_signal": false,
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0
+ },
+ "cls": "shared matrix",
+ "status": "ok, shared input/output matrix: no token record",
+ "secs": 234.6
+}

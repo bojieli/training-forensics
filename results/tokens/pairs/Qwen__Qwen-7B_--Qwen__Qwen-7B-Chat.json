@@ -1,0 +1,36 @@
+{
+ "key": "Qwen/Qwen-7B@ -> Qwen/Qwen-7B-Chat",
+ "parent": "Qwen/Qwen-7B",
+ "child": "Qwen/Qwen-7B-Chat",
+ "P": 1.0,
+ "P_exact_frac": 1.0,
+ "dtype": "BF16",
+ "rows": 151936,
+ "dim": 4096,
+ "r0": 0,
+ "recomputed": {
+  "moved": 130872,
+  "near": 0,
+  "unmoved": 21064
+ },
+ "sweep_agrees": true,
+ "tokenizer": "Qwen/Qwen-7B",
+ "frac_changed_hist": {
+  "0": 21064,
+  "(0,1%]": 0,
+  "(1%,10%]": 0,
+  "(10%,50%]": 7334,
+  "(50%,90%]": 123016,
+  "(90%,100%]": 522
+ },
+ "hand_edits": {
+  "zeroed": 0,
+  "rescaled": 0,
+  "copied": 0,
+  "low_cos": 2
+ },
+ "init_std": 1.3474880688590929e-05,
+ "init_std_source": "exact: vectors regenerated from their random start (checkpoint-forensics)",
+ "parent_at_init": 475,
+ "status": "no tokenizer.json"
+}
