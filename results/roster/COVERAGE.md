@@ -5,7 +5,7 @@ of numbers. A model is covered when its own weights give a pretraining estimate 
 compared with their regenerated random starting values) or it is the fine-tune in an analysed parent -> fine-tune
 pair; a model that is only a parent serves as the reference for its fine-tunes.
 
-- pretraining estimate: **175** (138 where the never-trained vectors could be compared with their regenerated starting values, 37 where only the never-trained tokens are known). Of the 138: 8 validated decay value (Pythia), 5 exactly no decay, 24 no decay inferred from a round number, 69 decay value that assumes the config's init std, 20 implausible for decay alone, 12 init std unknown (no value)
+- pretraining estimate: **175** (138 where the never-trained vectors could be compared with their regenerated starting values, 37 where only the never-trained tokens are known). Of the 138: 7 validated decay value (Pythia), 1 Pythia decay value not validated (checkpoint series unusable), 5 exactly no decay, 24 no decay inferred from a round number, 69 decay value that assumes the config's init std, 20 implausible for decay alone, 12 init std unknown (no value)
 - fine-tune comparison (as the fine-tune): **74**
 - models with either: **186 / 265**
 - serving as the reference parent of an analysed fine-tune: 131 (of these, 52 have neither themselves)
@@ -112,7 +112,7 @@ Models whose starting values cannot be regenerated, by reason: init recognised f
 | Pythia-410M | EleutherAI/pythia-410m | total weight decay sum lr*wd = 2.22 (validated) | - |
 | Pythia-1B | EleutherAI/pythia-1b | total weight decay sum lr*wd = 1.85 (validated) | - |
 | Pythia-1.4B | EleutherAI/pythia-1.4b | total weight decay sum lr*wd = 1.48 (validated) | - |
-| Pythia-2.8B | EleutherAI/pythia-2.8b | total weight decay sum lr*wd = 1.18 (validated) | - |
+| Pythia-2.8B | EleutherAI/pythia-2.8b | total weight decay sum lr*wd = 1.18 (Pythia init, not validated) | - |
 | Pythia-6.9B | EleutherAI/pythia-6.9b | total weight decay sum lr*wd = 0.89 (validated) | - |
 | Pythia-12B | EleutherAI/pythia-12b | total weight decay sum lr*wd = 0.89 (validated) | parent of 1 analysed fine-tunes |
 | GPT-NeoX-20B | EleutherAI/gpt-neox-20b | total weight decay sum lr*wd = 0.98 (assumes init std = initializer_range) | parent of 1 analysed fine-tunes |

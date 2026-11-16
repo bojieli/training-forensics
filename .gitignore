@@ -14,3 +14,4 @@ results/frontier_ds/tok/
 # local per-vector masks / caches
 masks/
 .cache/
+results/reflection_check/hdr/

@@ -10,7 +10,8 @@ total shrinkage over pretraining. So the total weight decay applied is sum(lr x 
 checkpoints - but only if we know init_std, the spread the vectors started with.
 
 How sure each row is:
-- **validated** (8 Pythia models): init_std known, and the estimate agrees with an independent measurement from Pythia's public checkpoints to 1e-4 (table at the end);
+- **validated** (7 Pythia models): init_std known, and the estimate agrees with an independent measurement from Pythia's public checkpoints to 1e-4 (table at the end);
+- **Pythia, not validated** (1): same init convention, but Pythia-2.8B's public checkpoint series is unusable, so there is no independent check;
 - **exact, no decay** (5): the fitted spread equals a standard init value exactly, so no decoupled weight decay reached these vectors;
 - **round number, likely no decay** (24): the fitted spread is a round number such as 0.006 (DeepSeek's paper init), which a decayed value almost never is; an inference, not a proof;
 - **assumed init** (69): the estimate assumes the vectors started at the config's `initializer_range`; a different init convention moves P by ~2x, as Pythia shows;
@@ -55,7 +56,7 @@ How sure each row is:
 | Pythia-6.9B | EleutherAI/pythia-6.9b | normal | 0.008231 | 0.02 | 0.4115 | 0.888 | decayed (Pythia init validated) |
 | GPT-NeoX-20B | EleutherAI/gpt-neox-20b | normal | 0.007485 | initializer_range (assumed) | 0.3743 | 0.983 | decayed, assuming init std = initializer_range |
 | Stockmark-100B | stockmark/stockmark-100b | normal | 0.00626 | initializer_range (assumed) | 0.313 | 1.162 | decayed, assuming init std = initializer_range |
-| Pythia-2.8B | EleutherAI/pythia-2.8b | normal | 0.003826 | small_init sqrt(2/5d) | 0.3061 | 1.184 | decayed (Pythia init validated) |
+| Pythia-2.8B | EleutherAI/pythia-2.8b | normal | 0.003826 | small_init sqrt(2/5d) | 0.3061 | 1.184 | decayed (Pythia init, not validated: checkpoint series unusable) |
 | Pythia-1.4B | EleutherAI/pythia-1.4b | normal | 0.003182 | small_init sqrt(2/5d) | 0.2277 | 1.480 | decayed (Pythia init validated) |
 | A.X-K1 | skt/A.X-K1 | normal | 0.003183 | initializer_range (assumed) | 0.1592 | 1.838 | decayed, assuming init std = initializer_range |
 | Pythia-1B | EleutherAI/pythia-1b | normal | 0.002197 | small_init sqrt(2/5d) | 0.1572 | 1.850 | decayed (Pythia init validated) |

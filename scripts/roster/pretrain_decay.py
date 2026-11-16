@@ -94,7 +94,12 @@ def main():
             big = any(t in c["name"] for t in ("6.9B", "12B"))
             s0 = 0.02 if big else conv["small_init sqrt(2/5d)"]
             P = std / s0
-            rec.update(verdict="decayed (Pythia init validated)", init="0.02" if big else "small_init sqrt(2/5d)", P=P,
+            # pythia-2.8b's public checkpoint series is unusable (its final branch equals step 0),
+            # so its estimate uses the same init convention but has no independent check
+            unval = "2.8B" in c["name"]
+            rec.update(verdict=("decayed (Pythia init, not validated: checkpoint series unusable)" if unval
+                                else "decayed (Pythia init validated)"),
+                       init="0.02" if big else "small_init sqrt(2/5d)", P=P,
                        sum_lr_wd=-math.log(P) if 0 < P < 1 else None)
         elif std > 0 and any(abs(std / (m * 10 ** math.floor(math.log10(std))) - 1) < 1e-4
                              for m in (1, 1.5, 2, 2.5, 3, 4, 5, 6, 7, 8, 9)):
@@ -127,6 +132,7 @@ def main():
              "checkpoints - but only if we know init_std, the spread the vectors started with.", "",
              "How sure each row is:",
              f"- **validated** ({cnt['decayed (Pythia init validated)']} Pythia models): init_std known, and the estimate agrees with an independent measurement from Pythia's public checkpoints to 1e-4 (table at the end);",
+             f"- **Pythia, not validated** ({cnt['decayed (Pythia init, not validated: checkpoint series unusable)']}): same init convention, but Pythia-2.8B's public checkpoint series is unusable, so there is no independent check;",
              f"- **exact, no decay** ({cnt['no decay on embedding rows (std = init)']}): the fitted spread equals a standard init value exactly, so no decoupled weight decay reached these vectors;",
              f"- **round number, likely no decay** ({cnt['likely no decay (std is a round number = the init)']}): the fitted spread is a round number such as 0.006 (DeepSeek's paper init), which a decayed value almost never is; an inference, not a proof;",
              f"- **assumed init** ({cnt['decayed, assuming init std = initializer_range']}): the estimate assumes the vectors started at the config's `initializer_range`; a different init convention moves P by ~2x, as Pythia shows;",

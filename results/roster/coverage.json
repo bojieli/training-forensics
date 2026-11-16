@@ -681,7 +681,7 @@
  {
   "name": "Pythia-2.8B",
   "repo": "EleutherAI/pythia-2.8b",
-  "pretraining": "total weight decay sum lr*wd = 1.18 (validated)",
+  "pretraining": "total weight decay sum lr*wd = 1.18 (Pythia init, not validated)",
   "finetune": "-",
   "readable": true
  },

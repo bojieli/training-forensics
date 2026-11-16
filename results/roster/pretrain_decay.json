@@ -1424,7 +1424,7 @@
   "initializer_range": 0.02,
   "hidden": 2560,
   "model_type": "gpt_neox",
-  "verdict": "decayed (Pythia init validated)",
+  "verdict": "decayed (Pythia init, not validated: checkpoint series unusable)",
   "init": "small_init sqrt(2/5d)",
   "P": 0.3060947172343731,
   "sum_lr_wd": 1.1838606914796863

@@ -25,6 +25,14 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 R = ROOT / "results" / "tokens"
 sys.path.insert(0, str(ROOT / "scripts" / "tokens"))
 from categories import categories  # noqa: E402
+sys.path.insert(0, str(ROOT / "scripts" / "frontier"))
+import comparability as _cmp  # noqa: E402
+_RECS = _cmp.records()
+
+
+def _class_of(key):
+    r = _RECS.get(key)
+    return _cmp.classify(r) if r else None
 
 COLS = [("script:LATIN", "Latin"), ("script:CJK", "Han"), ("kana", "Kana"), ("script:HANGUL", "Hangul"),
         ("script:CYRILLIC", "Cyrillic"), ("script:ARABIC", "Arabic"), ("script:HEBREW", "Hebrew"),
@@ -88,14 +96,17 @@ def main():
         # same rule as scripts/frontier/comparability.py: with no decay (P = 1) and >= 100 vectors
         # bit-identical to the base, the 512-vector fit score is capped by how few vectors are
         # untouched and does not indicate a different base (results/frontier_ds/RECONCILE.md)
-        trust = (pfit is not None and pfit >= MIN_PFIT) or (
-            abs(d["P"] - 1.0) < 1e-9 and d["recomputed"]["unmoved"] >= MIN_IDENT_NO_DECAY)
+        # the reviewed comparability classifier (scripts/frontier/comparability.py): special-token lists
+        # are trusted only for pairs it classes "token record" (cleaned bit-identical count above its
+        # calibrated threshold, and an exact decay fit or no shrink)
+        cls = _class_of(d["key"])
+        trust = cls == "token record"
         cats = dict(d["categories"])
         kana = {k: cats.get("script:HIRAGANA", {}).get(k, 0) + cats.get("script:KATAKANA", {}).get(k, 0)
                 for k in ("moved", "rewritten", "near", "unmoved", "unmoved_at_init", "moved_at_init")}
         cats["kana"] = kana
         a = cats["all"]
-        rec = dict(base, status="ok", dtype=d["dtype"], P=d["P"], P_fit_frac=pfit, special_lists_trusted=trust,
+        rec = dict(base, status="ok", dtype=d["dtype"], P=d["P"], P_fit_frac=pfit, special_lists_trusted=trust, comparability_class=cls,
                    low_signal=low, barely_changed=barely, changed=changed, frac_changed_hist=h,
                    hand_edits=d["hand_edits"], init_std_source=d["init_std_source"],
                    unreachable=d["unreachable"].get("all"), all=a, frac={}, n={})
@@ -208,12 +219,10 @@ def write_md(rows):
          f"  have fewer than 10% of their numbers changed, the model is marked **low signal** (**{nlow}** models,",
          "  e.g. DeepSeek-R1-Zero). There, an unchanged token is reported as *bit-identical or barely changed*, not as",
          "  absent from the data.",
-         f"- **Special-token lists only where the decay fit is exact:** only for models where the fitted weight decay",
-         f"  reproduces at least {MIN_PFIT:.0%} of the never-updated vectors bit for bit, or where there is no decay",
-         f"  (shrink exactly 1) and at least {MIN_IDENT_NO_DECAY} vectors are bit-identical to the base: then the fit",
-         "  score is capped by how few vectors are untouched, not a sign of a different base",
-         f"  (`results/frontier_ds/RECONCILE.md`) (**{ntrust}** of {len(ok)}).",
-         "  This leaves out, for example, Kimi K2, GLM-4.5 and Seed-OSS.",
+         "- **Special-token lists only for a token record:** only where the reviewed comparability classifier",
+         "  (`scripts/frontier/comparability.py`) classes the base/fine-tune comparison as *token record*: enough",
+         "  bit-identical vectors left after removing unreachable, reserved, at-init, zero and duplicate rows, and",
+         f"  an exact decay fit or no shrink (**{ntrust}** of {len(ok)}).",
          "- In a low-signal model a special token counts as *in the data* only if at least 10% of its numbers changed;",
          "  smaller changes are reported as *barely changed*.",
          "- **Named special tokens vs reserved placeholders.** Chat markers, tool-call, thinking and image/media tokens",

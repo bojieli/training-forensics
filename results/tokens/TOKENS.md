@@ -35,12 +35,10 @@ threshold of one bit-identical vector; the 13 below this bar are listed at the e
   have fewer than 10% of their numbers changed, the model is marked **low signal** (**18** models,
   e.g. DeepSeek-R1-Zero). There, an unchanged token is reported as *bit-identical or barely changed*, not as
   absent from the data.
-- **Special-token lists only where the decay fit is exact:** only for models where the fitted weight decay
-  reproduces at least 99% of the never-updated vectors bit for bit, or where there is no decay
-  (shrink exactly 1) and at least 100 vectors are bit-identical to the base: then the fit
-  score is capped by how few vectors are untouched, not a sign of a different base
-  (`results/frontier_ds/RECONCILE.md`) (**108** of 116).
-  This leaves out, for example, Kimi K2, GLM-4.5 and Seed-OSS.
+- **Special-token lists only for a token record:** only where the reviewed comparability classifier
+  (`scripts/frontier/comparability.py`) classes the base/fine-tune comparison as *token record*: enough
+  bit-identical vectors left after removing unreachable, reserved, at-init, zero and duplicate rows, and
+  an exact decay fit or no shrink (**91** of 116).
 - In a low-signal model a special token counts as *in the data* only if at least 10% of its numbers changed;
   smaller changes are reported as *barely changed*.
 - **Named special tokens vs reserved placeholders.** Chat markers, tool-call, thinking and image/media tokens
@@ -97,9 +95,9 @@ tokens *in the data or first trained here / all*, only where the decay fit is ex
 | BAAI/AREX-Base | Qwen/Qwen3.5-122B-A10B | low | 75 | 87 | 50 | 81 | 88 | 65 | 75 | 99 | 91 | 25 | 83 | 76 | 55 | · | 79 | 95 | 3/3 | 4/4 | 2/2 | 0/11 |
 | bigcode/starcoder2-15b-instruct-v0.1 | bigcode/starcoder2-15b | ok | 48 | 53 | 3 | 10 | 1 | 16 | 8 | 0 | · | 0 | 54 | 52 | 18 | · | · | · | 1/1 | · | · | · |
 | deepcogito/cogito-671b-v2.1 | deepseek-ai/DeepSeek-V3-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | - | - | - | - |
-| deepseek-ai/deepseek-coder-1.3b-instruct | deepseek-ai/deepseek-coder-1.3b-base | ok | 100 | 100 | 100 | · | · | 100 | · | · | · | · | · | 100 | 100 | · | · | · | 0/2 | · | · | · |
+| deepseek-ai/deepseek-coder-1.3b-instruct | deepseek-ai/deepseek-coder-1.3b-base | ok | 100 | 100 | 100 | · | · | 100 | · | · | · | · | · | 100 | 100 | · | · | · | - | - | - | - |
 | deepseek-ai/deepseek-coder-33b-instruct | deepseek-ai/deepseek-coder-33b-base | ok | 93 | 95 | 100 | · | · | 42 | · | · | · | · | · | 96 | 100 | · | · | · | 0/2 | · | · | · |
-| deepseek-ai/DeepSeek-Coder-V2-Base | deepseek-ai/DeepSeek-V2 | ok | 100 | 100 | 100 | 100 | · | 100 | 100 | · | · | · | 100 | 100 | 100 | · | 100 | · | · | 6/9 | · | · |
+| deepseek-ai/DeepSeek-Coder-V2-Base | deepseek-ai/DeepSeek-V2 | ok | 100 | 100 | 100 | 100 | · | 100 | 100 | · | · | · | 100 | 100 | 100 | · | 100 | · | - | - | - | - |
 | deepseek-ai/DeepSeek-Coder-V2-Instruct | deepseek-ai/DeepSeek-Coder-V2-Base | ok | 92 | 94 | 99 | 100 | · | 47 | 100 | · | · | · | 100 | 94 | 98 | · | 100 | · | · | 9/9 | · | · |
 | deepseek-ai/deepseek-llm-67b-chat | deepseek-ai/deepseek-llm-67b-base | ok | 93 | 95 | 100 | 100 | · | 56 | 100 | · | · | · | 100 | 89 | 94 | · | 100 | · | · | · | · | · |
 | deepseek-ai/deepseek-llm-7b-chat | deepseek-ai/deepseek-llm-7b-base | ok | 93 | 95 | 100 | 100 | · | 56 | 100 | · | · | · | 100 | 89 | 94 | · | 100 | · | · | · | · | · |
@@ -109,14 +107,14 @@ tokens *in the data or first trained here / all*, only where the decay fit is ex
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-32B | Qwen/Qwen2.5-32B | ok | 89 | 96 | 91 | 80 | 38 | 94 | 67 | 25 | 84 | 51 | 44 | 93 | 85 | · | 100 | 62 | · | 0/2 | 2/2 | 3/7 |
 | deepseek-ai/DeepSeek-R1-Zero | deepseek-ai/DeepSeek-V3-Base | low | 77 | 76 | 78 | 87 | 84 | 83 | 90 | 63 | 86 | 75 | 17 | 92 | 97 | 96 | 29 | 40 | · | 0/9 | 2/2 | · |
 | deepseek-ai/DeepSeek-V2-Chat | deepseek-ai/DeepSeek-V2 | ok | 94 | 95 | 100 | 100 | · | 62 | 100 | · | · | · | 100 | 92 | 96 | · | 100 | · | · | · | · | · |
-| deepseek-ai/DeepSeek-V2-Chat-0628 | deepseek-ai/DeepSeek-V2 | ok | 100 | 100 | 100 | 100 | · | 100 | 100 | · | · | · | 100 | 100 | 100 | · | 100 | · | · | 6/9 | · | · |
+| deepseek-ai/DeepSeek-V2-Chat-0628 | deepseek-ai/DeepSeek-V2 | ok | 100 | 100 | 100 | 100 | · | 100 | 100 | · | · | · | 100 | 100 | 100 | · | 100 | · | - | - | - | - |
 | deepseek-ai/DeepSeek-V2-Lite-Chat | deepseek-ai/DeepSeek-V2-Lite | ok | 94 | 96 | 100 | 100 | · | 64 | 100 | · | · | · | 100 | 93 | 99 | · | 100 | · | · | · | · | · |
 | deepseek-ai/DeepSeek-V3 | deepseek-ai/DeepSeek-V3-Base | ok | 98 | 99 | 100 | 99 | 100 | 98 | 95 | 94 | 100 | 84 | 88 | 100 | 100 | 100 | 87 | 96 | · | 5/9 | · | · |
 | deepseek-ai/DeepSeek-V3-0324 | deepseek-ai/DeepSeek-V3-Base | ok | 98 | 99 | 100 | 99 | 100 | 98 | 97 | 92 | 98 | 96 | 89 | 99 | 99 | 100 | 88 | 96 | · | 9/9 | · | · |
 | deepseek-ai/DeepSeek-V3.2 | deepseek-ai/DeepSeek-V3.2-Exp-Base | ok | 99 | 100 | 100 | 100 | 100 | 99 | 98 | 90 | 99 | 99 | 96 | 100 | 100 | 100 | 95 | 98 | · | 9/9 | 2/2 | · |
-| deepseek-ai/DeepSeek-V4-Flash | deepseek-ai/DeepSeek-V4-Flash-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 9/9 | 2/2 | 2/4 |
+| deepseek-ai/DeepSeek-V4-Flash | deepseek-ai/DeepSeek-V4-Flash-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | - | - | - | - |
 | deepseek-ai/DeepSeek-V4-Flash-0731 | deepseek-ai/DeepSeek-V4-Flash | ok | 99 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 9/9 | 2/2 | 2/4 |
-| deepseek-ai/DeepSeek-V4-Pro | deepseek-ai/DeepSeek-V4-Pro-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 9/9 | 2/2 | 2/4 |
+| deepseek-ai/DeepSeek-V4-Pro | deepseek-ai/DeepSeek-V4-Pro-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | - | - | - | - |
 | deepseek-ai/DeepSeek-V4-Pro-0813 | deepseek-ai/DeepSeek-V4-Pro | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 9/9 | 2/2 | 4/4 |
 | deepseek-ai/DeepSeek-V4.1-Flash-1017 | deepseek-ai/DeepSeek-V4.1-Flash | ok | 99 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 9/9 | 2/2 | 3/3 |
 | GSAI-ML/LLaDA-MoE-v2-30B-A3B-Instruct | GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base | ok | 99 | 100 | 100 | 97 | 100 | 98 | 99 | 100 | 100 | 96 | 100 | 99 | 99 | 100 | 99 | · | 2/3 | 4/4 | · | · |
@@ -131,41 +129,41 @@ tokens *in the data or first trained here / all*, only where the decay fit is ex
 | microsoft/Phi-4-reasoning | microsoft/phi-4 | ok | 99 | 99 | 98 | 99 | 98 | 100 | 100 | · | · | 100 | 100 | 99 | 98 | 100 | 100 | · | 4/5 | · | 2/2 | · |
 | microsoft/Phi-4-reasoning-plus | microsoft/phi-4 | ok | 98 | 98 | 98 | 94 | 98 | 100 | 100 | · | · | 87 | 100 | 98 | 97 | 100 | 100 | · | 5/5 | · | 2/2 | · |
 | mistralai/Ministral-3-8B-Instruct-2512 | mistralai/Ministral-3-8B-Base-2512 | ok | 100 | 100 | 99 | 100 | 99 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 4/4 | 5/7 | · | 2/5 |
-| mistralai/Ministral-3-8B-Reasoning-2512 | mistralai/Ministral-3-8B-Base-2512 | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 4/4 | 5/7 | 2/2 | 2/5 |
-| mistralai/Mistral-7B-Instruct-v0.3 | mistralai/Mistral-7B-v0.3 | ok | 95 | 100 | · | · | · | 100 | · | · | · | · | · | 93 | · | · | · | · | 2/4 | 0/5 | · | · |
+| mistralai/Ministral-3-8B-Reasoning-2512 | mistralai/Ministral-3-8B-Base-2512 | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | - | - | - | - |
+| mistralai/Mistral-7B-Instruct-v0.3 | mistralai/Mistral-7B-v0.3 | ok | 95 | 100 | · | · | · | 100 | · | · | · | · | · | 93 | · | · | · | · | - | - | - | - |
 | mistralai/Mistral-Nemo-Instruct-2407 | mistralai/Mistral-Nemo-Base-2407 | ok | 89 | 99 | 84 | 79 | 86 | 98 | 47 | 69 | 60 | 79 | 71 | 100 | 100 | 57 | 66 | · | 4/4 | 5/5 | · | · |
 | mistralai/Mistral-Small-24B-Instruct-2501 | mistralai/Mistral-Small-24B-Base-2501 | ok | 100 | 100 | 99 | 100 | 100 | 100 | 100 | 100 | 99 | 99 | 100 | 100 | 100 | 100 | 100 | · | 4/4 | 6/6 | · | 0/3 |
-| Nanbeige/Nanbeige4.3-33B | Nanbeige/Nanbeige4.3-33B-Base | ok | 100 | 100 | 100 | · | 100 | 100 | · | · | · | · | 100 | 100 | · | · | 100 | · | 5/5 | 2/2 | 2/2 | · |
-| nex-agi/DeepSeek-V3.1-Nex-N1 | deepseek-ai/DeepSeek-V3-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 13/13 | 2/2 | · |
+| Nanbeige/Nanbeige4.3-33B | Nanbeige/Nanbeige4.3-33B-Base | ok | 100 | 100 | 100 | · | 100 | 100 | · | · | · | · | 100 | 100 | · | · | 100 | · | - | - | - | - |
+| nex-agi/DeepSeek-V3.1-Nex-N1 | deepseek-ai/DeepSeek-V3-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | - | - | - | - |
 | nex-agi/Nex-N2.5-Max | deepseek-ai/DeepSeek-V4-Pro-Base | ok | 99 | 100 | 100 | 100 | 100 | 99 | 99 | 100 | 100 | 100 | 100 | 99 | 100 | 100 | 99 | 100 | · | 9/9 | 2/2 | 0/4 |
 | nomic-ai/gpt4all-j | EleutherAI/gpt-j-6b | ok | 100 | 100 | 90 | 96 | · | · | · | · | · | · | · | 100 | · | 100 | · | · | 1/1 | · | · | · |
 | NousResearch/Arete-27B | Qwen/Qwen3.8-27B | low | 26 | 40 | 13 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 2 | 12 | 9 | · | 3 | 13 | 0/5 | 0/4 | 0/2 | 0/14 |
 | nvidia/Llama-3.1-Nemotron-70B-Instruct-HF | unsloth/Meta-Llama-3.1-70B-Instruct | low | 53 | 64 | 10 | 6 | 6 | 3 | 3 | · | 8 | 42 | 9 | 36 | 29 | 91 | 10 | · | 5/6 | 1/1 | · | · |
-| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 | ok | 99 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 6/6 | 5/9 | 2/2 | · |
+| nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16 | nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16 | ok | 99 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | - | - | - | - |
 | nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 | nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16 | ok | 99 | 100 | 100 | 100 | 100 | 99 | 100 | 100 | 100 | 98 | 100 | 99 | 100 | 100 | 100 | · | 6/6 | 4/9 | 2/2 | · |
 | nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B | nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | ok | 93 | 97 | 93 | 98 | 99 | 93 | 88 | 100 | 100 | 99 | 100 | 83 | 69 | 60 | 99 | · | 2/6 | 4/9 | 4/4 | · |
 | openai/gpt-oss-safeguard-120b | openai/gpt-oss-120b | low | 77 | 84 | 76 | 96 | 97 | 66 | 78 | 17 | 79 | 76 | 90 | 56 | 49 | 94 | 89 | 79 | 5/9 | 0/1 | · | · |
 | openai/gpt-oss-safeguard-20b | openai/gpt-oss-20b | low | 80 | 87 | 77 | 95 | 98 | 71 | 85 | 41 | 66 | 79 | 92 | 58 | 49 | 94 | 90 | 79 | 7/9 | 1/1 | · | · |
 | Qwen/Qwen2-57B-A14B-Instruct | Qwen/Qwen2-57B-A14B | ok | 96 | 99 | 97 | 98 | 66 | 97 | 90 | 84 | 93 | 96 | 59 | 97 | 98 | · | 98 | 77 | 3/3 | · | · | · |
-| Qwen/Qwen2-7B-Instruct | Qwen/Qwen2-7B | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | 3/3 | · | · | · |
-| Qwen/Qwen2-Math-7B | Qwen/Qwen2-7B | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | 3/3 | · | · | · |
+| Qwen/Qwen2-7B-Instruct | Qwen/Qwen2-7B | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | - | - | - | - |
+| Qwen/Qwen2-Math-7B | Qwen/Qwen2-7B | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | - | - | - | - |
 | Qwen/Qwen2.5-14B-Instruct | Qwen/Qwen2.5-14B | ok | 96 | 99 | 98 | 98 | 70 | 97 | 92 | 89 | 95 | 96 | 74 | 96 | 97 | · | 100 | 82 | 2/3 | 2/2 | · | 0/11 |
 | Qwen/Qwen2.5-32B-Instruct | Qwen/Qwen2.5-32B | ok | 96 | 99 | 98 | 98 | 70 | 97 | 92 | 89 | 95 | 96 | 74 | 96 | 97 | · | 100 | 82 | 2/3 | 2/2 | · | 0/11 |
 | Qwen/Qwen2.5-72B-Instruct | Qwen/Qwen2.5-72B | ok | 96 | 99 | 98 | 98 | 70 | 97 | 92 | 89 | 95 | 97 | 75 | 97 | 97 | · | 100 | 82 | 2/3 | 2/2 | · | 0/11 |
 | Qwen/Qwen2.5-7B-Instruct | Qwen/Qwen2.5-7B | ok | 96 | 99 | 98 | 98 | 70 | 97 | 92 | 89 | 95 | 97 | 74 | 97 | 97 | · | 100 | 83 | 2/3 | 2/2 | · | 0/11 |
-| Qwen/Qwen2.5-Coder-7B | Qwen/Qwen2.5-7B | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | 1/3 | 0/2 | · | 0/11 |
-| Qwen/Qwen2.5-Math-7B | Qwen/Qwen2.5-7B | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | 1/3 | 0/2 | · | 0/11 |
+| Qwen/Qwen2.5-Coder-7B | Qwen/Qwen2.5-7B | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | - | - | - | - |
+| Qwen/Qwen2.5-Math-7B | Qwen/Qwen2.5-7B | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | - | - | - | - |
 | Qwen/Qwen2.5-Math-7B-Instruct | Qwen/Qwen2.5-Math-7B | ok | 100 | 100 | 100 | 99 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | - | - | - | - |
-| Qwen/Qwen3-14B | Qwen/Qwen3-14B-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | 3/3 | 4/4 | 2/2 | 0/11 |
-| Qwen/Qwen3-30B-A3B | Qwen/Qwen3-30B-A3B-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | 3/3 | 4/4 | 2/2 | 11/11 |
-| Qwen/Qwen3-8B | Qwen/Qwen3-8B-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | 3/3 | 4/4 | 2/2 | 0/11 |
+| Qwen/Qwen3-14B | Qwen/Qwen3-14B-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | - | - | - | - |
+| Qwen/Qwen3-30B-A3B | Qwen/Qwen3-30B-A3B-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | - | - | - | - |
+| Qwen/Qwen3-8B | Qwen/Qwen3-8B-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 100 | 100 | - | - | - | - |
 | Qwen/Qwen3.5-35B-A3B | Qwen/Qwen3.5-35B-A3B-Base | ok | 100 | 100 | 100 | 100 | 100 | 98 | 100 | 100 | 100 | 99 | 100 | 100 | 100 | · | 100 | 100 | 3/3 | 4/4 | 2/2 | 7/11 |
 | Qwen/QwQ-32B | Qwen/Qwen2.5-32B | ok | 98 | 100 | 99 | 99 | 80 | 99 | 95 | 87 | 95 | 98 | 90 | 100 | 100 | · | 100 | 92 | 3/3 | 4/4 | 2/2 | 3/11 |
 | Snowflake/snowflake-arctic-instruct | Snowflake/snowflake-arctic-base | ok | 98 | 99 | · | · | · | 89 | · | · | · | · | · | 99 | · | · | · | · | 4/4 | · | · | · |
 | swiss-ai/Apertus-70B-Instruct-2509 | swiss-ai/Apertus-70B-2509 | ok | 99 | 100 | 99 | 99 | 100 | 100 | 100 | 100 | 100 | 96 | 100 | 99 | 100 | 99 | 100 | · | 6/8 | 2/7 | 2/2 | · |
 | teknium/OpenHermes-2.5-Mistral-7B | mistralai/Mistral-7B-v0.1 | ok | 99 | 100 | · | · | · | 95 | · | · | · | · | · | 92 | · | · | · | · | 2/2 | · | · | · |
-| tencent/Hy3-preview | tencent/Hy3 | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | 1/1 | 16/16 | 5/5 | · |
-| tiiuae/Falcon-H1-34B-Instruct | tiiuae/Falcon-H1-34B-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 99 | 100 | 100 | 100 | 100 | 100 | · | - | - | - | - |
+| tencent/Hy3-preview | tencent/Hy3 | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | · | - | - | - | - |
+| tiiuae/Falcon-H1-34B-Instruct | tiiuae/Falcon-H1-34B-Base | ok | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 100 | 99 | 100 | 100 | 100 | 100 | 100 | · | 9/9 | 4/4 | 4/4 | 1/1 |
 | tiiuae/Falcon3-10B-Instruct | tiiuae/Falcon3-10B-Base | ok | 95 | 98 | 100 | 100 | · | 98 | 100 | 100 | 100 | · | 100 | 62 | 100 | · | 100 | 98 | 2/2 | · | · | · |
 | tiiuae/Falcon3-7B-Instruct | tiiuae/Falcon3-7B-Base | ok | 95 | 98 | 100 | 100 | · | 98 | 100 | 100 | 100 | · | 100 | 62 | 100 | · | 100 | 98 | 2/2 | · | · | · |
 | togethercomputer/GPT-NeoXT-Chat-Base-20B | EleutherAI/gpt-neox-20b | ok | 99 | 100 | 100 | 99 | · | 100 | 100 | · | · | · | 100 | 72 | 81 | 100 | 99 | · | 0/1 | · | · | · |
@@ -241,22 +239,19 @@ exact), tokens first trained in the fine-tune, and reserved placeholders that we
 
 ### deepseek-ai
 
-- **DeepSeek-Coder-V2-Base** (from deepseek-ai/DeepSeek-V2; 100% of the vocabulary updated): tool-call tokens in the data: `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`; tool-call tokens not in the data: `<｜tool▁output▁end｜>`, `<｜tool▁sep｜>`
 - **DeepSeek-Coder-V2-Instruct** (from deepseek-ai/DeepSeek-Coder-V2-Base; 92% of the vocabulary updated): tool-call tokens in the data: `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`, `<｜tool▁output▁end｜>`, `<｜tool▁sep｜>`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `<｜tool▁output▁begin｜>`
 - **DeepSeek-R1** (from deepseek-ai/DeepSeek-V3-Base; 96% of the vocabulary updated): thinking tokens in the data: `<think>`, `</think>`
 - **DeepSeek-R1-Distill-Llama-70B** (from unsloth/Llama-3.3-70B-Instruct; 93% of the vocabulary updated): chat tokens in the data: `<|start_header_id|>`, `<|end_header_id|>`, `<|eom_id|>`, `<|eot_id|>`; tool-call tokens not in the data: `<|python_tag|>`; thinking tokens first trained in this fine-tune (still at starting size in the base): `<think>`, `</think>`
 - **DeepSeek-R1-Distill-Qwen-32B** (from Qwen/Qwen2.5-32B; 89% of the vocabulary updated): tool-call tokens not in the data: `<tool_call>`, `</tool_call>`; thinking tokens first trained in this fine-tune (still at starting size in the base): `<think>`, `</think>`; image/media tokens first trained in this fine-tune (still at starting size in the base): `<|vision_start|>`, `<|vision_end|>`, `<|image_pad|>`
 - **DeepSeek-R1-Zero** (from deepseek-ai/DeepSeek-V3-Base; 77% of the vocabulary updated; low signal): thinking tokens in the data: `<think>`, `</think>`
-- **DeepSeek-V2-Chat-0628** (from deepseek-ai/DeepSeek-V2; 100% of the vocabulary updated): tool-call tokens in the data: `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`; tool-call tokens not in the data: `<｜tool▁output▁end｜>`, `<｜tool▁sep｜>`
 - **DeepSeek-V3** (from deepseek-ai/DeepSeek-V3-Base; 98% of the vocabulary updated): tool-call tokens first trained in this fine-tune (still at starting size in the base): `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁sep｜>`
 - **DeepSeek-V3-0324** (from deepseek-ai/DeepSeek-V3-Base; 98% of the vocabulary updated): tool-call tokens first trained in this fine-tune (still at starting size in the base): `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`, `<｜tool▁output▁begin｜>`, `<｜tool▁output▁end｜>` (+1 more)
 - **DeepSeek-V3.2** (from deepseek-ai/DeepSeek-V3.2-Exp-Base; 99% of the vocabulary updated): tool-call tokens first trained in this fine-tune (still at starting size in the base): `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`, `<｜tool▁output▁begin｜>`, `<｜tool▁output▁end｜>` (+1 more); thinking tokens in the data: `<think>`, `</think>`
-- **DeepSeek-V4-Flash** (from deepseek-ai/DeepSeek-V4-Flash-Base; 100% of the vocabulary updated): tool-call tokens in the data: `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`, `<｜tool▁output▁begin｜>`, `<｜tool▁output▁end｜>` (+1 more); thinking tokens in the data: `<think>`, `</think>`; image/media tokens first trained in this fine-tune (still at starting size in the base): `<｜rl_image_start｜>`, `<｜image｜>`; 25 ordinary tokens untouched in pretraining were first trained here
+- **DeepSeek-V4-Flash** (from deepseek-ai/DeepSeek-V4-Flash-Base; 100% of the vocabulary updated): 25 ordinary tokens untouched in pretraining were first trained here
 - **DeepSeek-V4-Flash-0731** (from deepseek-ai/DeepSeek-V4-Flash; 99% of the vocabulary updated): tool-call tokens in the data: `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`, `<｜tool▁output▁begin｜>`, `<｜tool▁output▁end｜>` (+1 more); thinking tokens in the data: `<think>`, `</think>`; image/media tokens first trained in this fine-tune (still at starting size in the base): `<｜rl_image_start｜>`, `<｜image｜>`; 23 ordinary tokens untouched in pretraining were first trained here
-- **DeepSeek-V4-Pro** (from deepseek-ai/DeepSeek-V4-Pro-Base; 100% of the vocabulary updated): tool-call tokens in the data: `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`, `<｜tool▁output▁begin｜>`, `<｜tool▁output▁end｜>` (+1 more); thinking tokens in the data: `<think>`, `</think>`; image/media tokens first trained in this fine-tune (still at starting size in the base): `<｜rl_image_start｜>`, `<｜image｜>`; 25 ordinary tokens untouched in pretraining were first trained here
+- **DeepSeek-V4-Pro** (from deepseek-ai/DeepSeek-V4-Pro-Base; 100% of the vocabulary updated): 25 ordinary tokens untouched in pretraining were first trained here
 - **DeepSeek-V4-Pro-0813** (from deepseek-ai/DeepSeek-V4-Pro; 100% of the vocabulary updated): tool-call tokens in the data: `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`, `<｜tool▁output▁begin｜>`, `<｜tool▁output▁end｜>` (+1 more); thinking tokens in the data: `<think>`, `</think>`; image/media tokens first trained in this fine-tune (still at starting size in the base): `<｜rl_image_pad｜>`, `<｜rl_image_start｜>`, `<｜image2｜>`, `<｜image｜>`; 36 ordinary tokens untouched in pretraining were first trained here
 - **DeepSeek-V4.1-Flash-1017** (from deepseek-ai/DeepSeek-V4.1-Flash; 99% of the vocabulary updated): tool-call tokens in the data: `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`, `<｜tool▁output▁begin｜>`, `<｜tool▁output▁end｜>` (+1 more); thinking tokens in the data: `<think>`, `</think>`; image/media tokens in the data: `<｜rl_image_pad｜>`, `<｜rl_image_start｜>`, `<｜deepseek_image｜>`; 45 ordinary tokens untouched in pretraining were first trained here
-- **deepseek-coder-1.3b-instruct** (from deepseek-ai/deepseek-coder-1.3b-base; 100% of the vocabulary updated): reserved placeholders updated: 1 (`<pad>`)
 - **deepseek-coder-33b-instruct** (from deepseek-ai/deepseek-coder-33b-base; 93% of the vocabulary updated): reserved placeholders updated: 1 (`<pad>`)
 
 ### GSAI-ML
@@ -294,18 +289,11 @@ exact), tokens first trained in the fine-tune, and reserved placeholders that we
 ### mistralai
 
 - **Ministral-3-8B-Instruct-2512** (from mistralai/Ministral-3-8B-Base-2512; 100% of the vocabulary updated): chat tokens in the data: `<s>`, `</s>`, `[INST]`, `[/INST]`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `[AVAILABLE_TOOLS]`, `[/AVAILABLE_TOOLS]`, `[TOOL_RESULTS]`, `[/TOOL_RESULTS]`, `[TOOL_CALLS]`; image/media tokens in the data: `[IMG_BREAK]`, `[IMG_END]`; reserved placeholders updated: 4 (`<SPECIAL_27>`, `<SPECIAL_28>`, `<SPECIAL_34>`, `<SPECIAL_35>`)
-- **Ministral-3-8B-Reasoning-2512** (from mistralai/Ministral-3-8B-Base-2512; 100% of the vocabulary updated): chat tokens in the data: `<s>`, `</s>`, `[INST]`, `[/INST]`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `[AVAILABLE_TOOLS]`, `[/AVAILABLE_TOOLS]`, `[TOOL_RESULTS]`, `[/TOOL_RESULTS]`, `[TOOL_CALLS]`; thinking tokens first trained in this fine-tune (still at starting size in the base): `[THINK]`, `[/THINK]`; image/media tokens in the data: `[IMG_BREAK]`, `[IMG_END]`; reserved placeholders updated: 4 (`<SPECIAL_20>`, `<SPECIAL_21>`, `<SPECIAL_27>`, `<SPECIAL_28>`)
-- **Mistral-7B-Instruct-v0.3** (from mistralai/Mistral-7B-v0.3; 95% of the vocabulary updated): chat tokens in the data: `<s>`, `</s>`; tool-call tokens not in the data: `[TOOL_CALLS]`, `[AVAILABLE_TOOLS]`, `[/AVAILABLE_TOOLS]`, `[TOOL_RESULTS]`, `[/TOOL_RESULTS]`
 - **Mistral-Nemo-Instruct-2407** (from mistralai/Mistral-Nemo-Base-2407; 89% of the vocabulary updated): chat tokens in the data: `<s>`; chat tokens first trained in this fine-tune (still at starting size in the base): `</s>`, `[INST]`, `[/INST]`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `[AVAILABLE_TOOLS]`, `[/AVAILABLE_TOOLS]`, `[TOOL_RESULTS]`, `[/TOOL_RESULTS]`, `[TOOL_CALLS]`
 - **Mistral-Small-24B-Instruct-2501** (from mistralai/Mistral-Small-24B-Base-2501; 100% of the vocabulary updated): chat tokens in the data: `<s>`; chat tokens first trained in this fine-tune (still at starting size in the base): `</s>`, `[INST]`, `[/INST]`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `[AVAILABLE_TOOLS]`, `[/AVAILABLE_TOOLS]`, `[TOOL_RESULTS]`, `[/TOOL_RESULTS]`, `[TOOL_CALLS]`, `[TOOL_CONTENT]`
 
-### Nanbeige
-
-- **Nanbeige4.3-33B** (from Nanbeige/Nanbeige4.3-33B-Base; 100% of the vocabulary updated): chat tokens in the data: `<s>`, `<|im_start|>`, `<|im_end|>`, `<|endoftext|>`; chat tokens first trained in this fine-tune (still at starting size in the base): `</s>`; tool-call tokens in the data: `<tool_call>`, `</tool_call>`; thinking tokens in the data: `<think>`, `</think>`
-
 ### nex-agi
 
-- **DeepSeek-V3.1-Nex-N1** (from deepseek-ai/DeepSeek-V3-Base; 100% of the vocabulary updated): tool-call tokens first trained in this fine-tune (still at starting size in the base): `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`, `<｜tool▁output▁begin｜>`, `<｜tool▁output▁end｜>` (+5 more); thinking tokens in the data: `<think>`, `</think>`
 - **Nex-N2.5-Max** (from deepseek-ai/DeepSeek-V4-Pro-Base; 99% of the vocabulary updated): tool-call tokens in the data: `<｜tool▁calls▁begin｜>`, `<｜tool▁calls▁end｜>`, `<｜tool▁call▁begin｜>`, `<｜tool▁call▁end｜>`, `<｜tool▁outputs▁begin｜>`, `<｜tool▁outputs▁end｜>`, `<｜tool▁output▁begin｜>`, `<｜tool▁output▁end｜>` (+1 more); thinking tokens in the data: `<think>`, `</think>`
 
 ### nomic-ai
@@ -319,7 +307,6 @@ exact), tokens first trained in the fine-tune, and reserved placeholders that we
 ### nvidia
 
 - **Llama-3.1-Nemotron-70B-Instruct-HF** (from unsloth/Meta-Llama-3.1-70B-Instruct; 53% of the vocabulary updated; low signal): Cyrillic: only 3.3% of 6,502 tokens updated (the rest bit-identical or barely changed); Arabic: only 2.6% of 3,709 tokens updated (the rest bit-identical or barely changed); chat tokens in the data: `<|begin_of_text|>`, `<|start_header_id|>`, `<|end_header_id|>`, `<|eom_id|>`, `<|eot_id|>`; tool-call tokens in the data: `<|python_tag|>`; reserved placeholders updated: 5 (`<|reserved_special_token_15|>`, `<|reserved_special_token_17|>`, `<|reserved_special_token_111|>`, `<|reserved_special_token_184|>` (+1 more))
-- **NVIDIA-Nemotron-3-Nano-30B-A3B-BF16** (from nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-Base-BF16; 99% of the vocabulary updated): chat tokens in the data: `<s>`, `</s>`, `[INST]`, `[/INST]`, `<|im_start|>`, `<|im_end|>`; tool-call tokens in the data: `[TOOL_RESULTS]`, `<tool_call>`, `</tool_call>`, `<tool_response>`, `</tool_response>`; tool-call tokens not in the data: `[AVAILABLE_TOOLS]`, `[/AVAILABLE_TOOLS]`, `[/TOOL_RESULTS]`, `[TOOL_CALLS]`; thinking tokens in the data: `<think>`, `</think>`; reserved placeholders updated: 211 (`<SPECIAL_38>`, `<SPECIAL_41>`, `<SPECIAL_46>`, `<SPECIAL_48>` (+207 more))
 - **NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16** (from nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16; 99% of the vocabulary updated): chat tokens in the data: `<s>`, `</s>`, `[INST]`, `[/INST]`, `<|im_start|>`, `<|im_end|>`; tool-call tokens in the data: `<tool_call>`, `</tool_call>`, `<tool_response>`, `</tool_response>`; tool-call tokens not in the data: `[AVAILABLE_TOOLS]`, `[/AVAILABLE_TOOLS]`, `[TOOL_RESULTS]`, `[/TOOL_RESULTS]`, `[TOOL_CALLS]`; thinking tokens in the data: `<think>`, `</think>`; reserved placeholders updated: 136 (`<SPECIAL_23>`, `<SPECIAL_38>`, `<SPECIAL_71>`, `<SPECIAL_83>` (+132 more))
 - **NVIDIA-Nemotron-3.5-Transcribe-30B-A4B** (from nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16; 93% of the vocabulary updated): chat tokens in the data: `<|im_start|>`, `<|im_end|>`; tool-call tokens in the data: `<tool_call>`, `</tool_call>`, `<tool_response>`, `</tool_response>`; tool-call tokens not in the data: `[AVAILABLE_TOOLS]`, `[/AVAILABLE_TOOLS]`, `[TOOL_RESULTS]`, `[/TOOL_RESULTS]`, `[TOOL_CALLS]`; thinking tokens in the data: `<think>`, `</think>`, `<sty:stt:calm_reflective>`, `<sty:end:calm_reflective>`
 
@@ -332,18 +319,13 @@ exact), tokens first trained in the fine-tune, and reserved placeholders that we
 
 - **QwQ-32B** (from Qwen/Qwen2.5-32B; 98% of the vocabulary updated): chat tokens in the data: `<|endoftext|>`; chat tokens first trained in this fine-tune (still at starting size in the base): `<|im_start|>`, `<|im_end|>`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `<tool_call>`, `</tool_call>`, `<tool_response>`, `</tool_response>`; thinking tokens first trained in this fine-tune (still at starting size in the base): `<think>`, `</think>`; image/media tokens first trained in this fine-tune (still at starting size in the base): `<|object_ref_start|>`, `<|vision_pad|>`, `<|video_pad|>`
 - **Qwen2-57B-A14B-Instruct** (from Qwen/Qwen2-57B-A14B; 96% of the vocabulary updated): chat tokens in the data: `<|endoftext|>`, `<|im_start|>`, `<|im_end|>`
-- **Qwen2-7B-Instruct** (from Qwen/Qwen2-7B; 100% of the vocabulary updated): chat tokens in the data: `<|endoftext|>`, `<|im_start|>`, `<|im_end|>`
-- **Qwen2-Math-7B** (from Qwen/Qwen2-7B; 100% of the vocabulary updated): chat tokens in the data: `<|endoftext|>`, `<|im_start|>`, `<|im_end|>`
 - **Qwen2.5-14B-Instruct** (from Qwen/Qwen2.5-14B; 96% of the vocabulary updated): chat tokens first trained in this fine-tune (still at starting size in the base): `<|im_start|>`, `<|im_end|>`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `<tool_call>`, `</tool_call>`
 - **Qwen2.5-32B-Instruct** (from Qwen/Qwen2.5-32B; 96% of the vocabulary updated): chat tokens first trained in this fine-tune (still at starting size in the base): `<|im_start|>`, `<|im_end|>`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `<tool_call>`, `</tool_call>`
 - **Qwen2.5-72B-Instruct** (from Qwen/Qwen2.5-72B; 96% of the vocabulary updated): chat tokens first trained in this fine-tune (still at starting size in the base): `<|im_start|>`, `<|im_end|>`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `<tool_call>`, `</tool_call>`
 - **Qwen2.5-7B-Instruct** (from Qwen/Qwen2.5-7B; 96% of the vocabulary updated): chat tokens first trained in this fine-tune (still at starting size in the base): `<|im_start|>`, `<|im_end|>`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `<tool_call>`, `</tool_call>`
-- **Qwen2.5-Coder-7B** (from Qwen/Qwen2.5-7B; 100% of the vocabulary updated): chat tokens in the data: `<|endoftext|>`
-- **Qwen2.5-Math-7B** (from Qwen/Qwen2.5-7B; 100% of the vocabulary updated): chat tokens in the data: `<|endoftext|>`
 - **Qwen2.5-Math-7B-Instruct** (from Qwen/Qwen2.5-Math-7B; 100% of the vocabulary updated): 39 ordinary tokens untouched in pretraining were first trained here
-- **Qwen3-14B** (from Qwen/Qwen3-14B-Base; 100% of the vocabulary updated): chat tokens in the data: `<|endoftext|>`; chat tokens first trained in this fine-tune (still at starting size in the base): `<|im_start|>`, `<|im_end|>`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `<tool_call>`, `</tool_call>`, `<tool_response>`, `</tool_response>`; thinking tokens first trained in this fine-tune (still at starting size in the base): `<think>`, `</think>`; 808 ordinary tokens untouched in pretraining were first trained here
-- **Qwen3-30B-A3B** (from Qwen/Qwen3-30B-A3B-Base; 100% of the vocabulary updated): chat tokens in the data: `<|endoftext|>`, `<|im_start|>`, `<|im_end|>`; tool-call tokens in the data: `<tool_call>`, `</tool_call>`, `<tool_response>`, `</tool_response>`; thinking tokens in the data: `<think>`, `</think>`; image/media tokens in the data: `<|object_ref_start|>`, `<|object_ref_end|>`, `<|box_start|>`, `<|box_end|>`, `<|quad_start|>`, `<|quad_end|>`, `<|vision_start|>`, `<|vision_end|>` (+3 more)
-- **Qwen3-8B** (from Qwen/Qwen3-8B-Base; 100% of the vocabulary updated): chat tokens in the data: `<|endoftext|>`; chat tokens first trained in this fine-tune (still at starting size in the base): `<|im_start|>`, `<|im_end|>`; tool-call tokens first trained in this fine-tune (still at starting size in the base): `<tool_call>`, `</tool_call>`, `<tool_response>`, `</tool_response>`; thinking tokens first trained in this fine-tune (still at starting size in the base): `<think>`, `</think>`; 509 ordinary tokens untouched in pretraining were first trained here
+- **Qwen3-14B** (from Qwen/Qwen3-14B-Base; 100% of the vocabulary updated): 808 ordinary tokens untouched in pretraining were first trained here
+- **Qwen3-8B** (from Qwen/Qwen3-8B-Base; 100% of the vocabulary updated): 509 ordinary tokens untouched in pretraining were first trained here
 - **Qwen3.5-35B-A3B** (from Qwen/Qwen3.5-35B-A3B-Base; 100% of the vocabulary updated): chat tokens in the data: `<|endoftext|>`, `<|im_start|>`, `<|im_end|>`; tool-call tokens in the data: `<tool_call>`, `</tool_call>`, `<tool_response>`, `</tool_response>`; thinking tokens in the data: `<think>`, `</think>`; image/media tokens in the data: `<|object_ref_start|>`, `<|box_start|>`, `<|box_end|>`, `<|vision_start|>`, `<|vision_end|>`; image/media tokens first trained in this fine-tune (still at starting size in the base): `<|image_pad|>`, `<|video_pad|>`; 124 ordinary tokens untouched in pretraining were first trained here
 
 ### Snowflake
@@ -358,12 +340,9 @@ exact), tokens first trained in the fine-tune, and reserved placeholders that we
 
 - **OpenHermes-2.5-Mistral-7B** (from mistralai/Mistral-7B-v0.1; 99% of the vocabulary updated): chat tokens in the data: `<s>`, `</s>`
 
-### tencent
-
-- **Hy3-preview** (from tencent/Hy3; 100% of the vocabulary updated): chat tokens in the data: `<｜hy_eos｜>`; tool-call tokens in the data: `<tool_call>`, `</tool_call>`, `<tool_calls>`, `</tool_calls>`, `<tool_response>`, `</tool_response>`, `<tool_responses>`, `</tool_responses>` (+8 more); thinking tokens in the data: `<think>`, `</think>`, `/think`, `/no_think`, `<｜reasoning_mode｜>`
-
 ### tiiuae
 
+- **Falcon-H1-34B-Instruct** (from tiiuae/Falcon-H1-34B-Base; 100% of the vocabulary updated): chat tokens in the data: `<|end_of_text|>`, `<|start_header_id|>`, `<|end_header_id|>`, `<|eom_id|>`, `<|eot_id|>`, `<|begin_of_text|>`; chat tokens first trained in this fine-tune (still at starting size in the base): `<|im_start|>`, `<|im_end|>`, `<|system|>`; tool-call tokens in the data: `<tool_response>`, `</tool_response>`, `<tool_call>`, `</tool_call>`; thinking tokens in the data: `<scratch_pad>`, `</scratch_pad>`, `<thinking>`, `</thinking>`; image/media tokens in the data: `\framebox`; reserved placeholders updated: 809 (`<|pad|>`, `>>UNUSED_119<<`, `>>UNUSED_120<<`, `>>UNUSED_218<<` (+805 more))
 - **Falcon3-10B-Instruct** (from tiiuae/Falcon3-10B-Base; 95% of the vocabulary updated): chat tokens in the data: `<|startoftext|>`, `<|endoftext|>`
 - **Falcon3-7B-Instruct** (from tiiuae/Falcon3-7B-Base; 95% of the vocabulary updated): chat tokens in the data: `<|startoftext|>`, `<|endoftext|>`
 
@@ -395,14 +374,11 @@ from the 10% threshold for barely-changed tokens rather than from different data
 
 | release | sizes | named special tokens in the data | same at every size? |
 |---|---|---|---|
-| Qwen/qwen2-N-instruct | Qwen2-57B-A14B-Instruct, Qwen2-7B-Instruct | `<|endoftext|>`, `<|im_end|>`, `<|im_start|>` | yes |
 | Qwen/qwen2.5-N-instruct | Qwen2.5-14B-Instruct, Qwen2.5-32B-Instruct, Qwen2.5-72B-Instruct, Qwen2.5-7B-Instruct | `</tool_call>`, `<tool_call>`, `<|im_end|>`, `<|im_start|>` | yes |
-| Qwen/qwen3-N | Qwen3-14B, Qwen3-30B-A3B, Qwen3-8B | Qwen3-14B: `</think>`, `</tool_call>`, `</tool_response>`, `<think>`, `<tool_call>`, `<tool_response>` (+3 more); Qwen3-30B-A3B: `</think>`, `</tool_call>`, `</tool_response>`, `<think>`, `<tool_call>`, `<tool_response>` (+14 more); Qwen3-8B: `</think>`, `</tool_call>`, `</tool_response>`, `<think>`, `<tool_call>`, `<tool_response>` (+3 more) | **no** |
 | allenai/olmo-2-1124-N-dpo | OLMo-2-1124-13B-DPO, OLMo-2-1124-7B-DPO | `<|endoftext|>`, `<|im_end|>`, `<|im_start|>` | yes |
 | allenai/olmo-2-1124-N-instruct | OLMo-2-1124-13B-Instruct, OLMo-2-1124-7B-Instruct | `<|endoftext|>` | yes |
 | allenai/olmo-2-1124-N-sft | OLMo-2-1124-13B-SFT, OLMo-2-1124-7B-SFT | `<|endoftext|>`, `<|im_end|>`, `<|im_start|>` | yes |
 | allenai/olmo-3-N-think-sft | Olmo-3-7B-Think-SFT, Olmo-3-32B-Think-SFT | `<|endoftext|>`, `<|im_end|>`, `<|im_start|>` | yes |
-| deepseek-ai/deepseek-coder-N-instruct | deepseek-coder-1.3b-instruct, deepseek-coder-33b-instruct | none | yes |
 | deepseek-ai/deepseek-llm-N-chat | deepseek-llm-67b-chat, deepseek-llm-7b-chat | none | yes |
 | openai/gpt-oss-safeguard-N | gpt-oss-safeguard-120b, gpt-oss-safeguard-20b | gpt-oss-safeguard-120b: `<|channel|>`, `<|endoftext|>`, `<|end|>`, `<|message|>`, `<|start|>`; gpt-oss-safeguard-20b: `<|call|>`, `<|channel|>`, `<|constrain|>`, `<|endoftext|>`, `<|end|>`, `<|message|>` (+2 more) | **no** |
 | tiiuae/falcon3-N-instruct | Falcon3-10B-Instruct, Falcon3-7B-Instruct | `<|endoftext|>`, `<|startoftext|>` | yes |
