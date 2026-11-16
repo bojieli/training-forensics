@@ -213,7 +213,7 @@ def read(run: pathlib.Path, release="fp32", with_data=True, bs=None):
             sel["hits_reported"] = h_chk
         rec["recipe_recovered"] = sel["recovered"]
         out["reader"] = "v2" if v2_ok else "v2-unconfirmed: move fit (v1) reported"
-        out["replay_select"] = {k: sel[k] for k in ("conf", "recovered", "hits", "hits_reported", "sample", "n_candidates",
+        out["replay_select"] = {k: sel.get(k) for k in ("conf", "recovered", "hits", "hits_reported", "sample", "n_candidates",
                                                      "replay_ties", "wd_interval", "screened")}
         if v2_ok:
             out["replay_refine"] = dict(reader="v2", wd=rec["wd_snap"], before=before,
