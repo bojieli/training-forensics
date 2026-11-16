@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-"""Exact feasible interval of the decay factor P for roster pairs with decay.
+"""Range of P that reproduces the same vectors, for roster pairs with decay.
+
+(Formerly called the "exact feasible interval". It is conditional on the fitted P: it is
+intersected only over vectors that round(P_fit x parent) already reproduces in every
+number, so it contains P_fit by construction and `consistent` is always true. It also
+models one multiplication, not N fp32 multiplications; `P_lo_drift` / `P_hi_drift`
+widen it by the per-number fp32 rounding drift measured in results/frontier/drift_sim.json.
+"partial rows" ranges select matching numbers inside mostly-matching vectors and are
+flagged `weak`; they are not counted as ranges.)
 
 A 16-bit child value b is the rounding of P*a (a = parent value). Every
 coordinate therefore confines P to [lo(b)/a, hi(b)/a], where [lo, hi] is the
@@ -122,8 +130,38 @@ def main():
               f"[{res['sum_lr_wd_lo'] if res['sum_lr_wd_lo'] is not None else float('nan'):.5f}, "
               f"{res['sum_lr_wd_hi'] if res['sum_lr_wd_hi'] is not None else float('nan'):.5f}]  "
               f"steps {dict(list(res['ulp_steps'].items())[:4])}  |row| {res['row_norm_median']:.2e}", flush=True)
-    json.dump(out, open(ROOT / "results" / "roster" / "p_intervals.json", "w"), indent=1)
+    json.dump(postprocess(out), open(ROOT / "results" / "roster" / "p_intervals.json", "w"), indent=1)
+
+
+def drift_bound():
+    """Largest per-number relative fp32 drift in the simulation (worst case over the settings)."""
+    p = ROOT / "results" / "frontier" / "drift_sim.json"
+    if not p.exists():
+        return None
+    return max(r.get("fp32_rel_drift_max", 0) for r in json.load(open(p)))
+
+
+def postprocess(out):
+    d = drift_bound()
+    for x in out:
+        if "P_lo" not in x:
+            continue
+        x["what"] = "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)"
+        x["weak"] = x.get("mode") == "partial rows"
+        x["contains_P_fit_by_construction"] = True
+        if d is not None and x.get("consistent"):
+            x["fp32_drift_rel"] = d
+            x["P_lo_drift"] = x["P_lo"] * (1 - d)
+            x["P_hi_drift"] = min(1.0, x["P_hi"] * (1 + d))
+            x["sum_lr_wd_lo_drift"] = -math.log(x["P_hi_drift"]) if x["P_hi_drift"] < 1 else 0.0
+            x["sum_lr_wd_hi_drift"] = -math.log(x["P_lo_drift"])
+    return out
 
 
 if __name__ == "__main__":
-    main()
+    import sys as _s
+    if "--postprocess" in _s.argv:
+        p = ROOT / "results" / "roster" / "p_intervals.json"
+        json.dump(postprocess(json.load(open(p))), open(p, "w"), indent=1)
+    else:
+        main()

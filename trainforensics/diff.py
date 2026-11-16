@@ -120,15 +120,33 @@ def row_diff(W0: torch.Tensor, W1: torch.Tensor, stored_dtype: torch.dtype | Non
     return RowDiff(identical, moved, decay, D, cv, ff, resid)
 
 
+def _neighbours(q: torch.Tensor, dtype: torch.dtype):
+    """Next representable values above and below q in `dtype` (float64)."""
+    it = {torch.bfloat16: torch.int16, torch.float16: torch.int16, torch.float32: torch.int32}[dtype]
+    qq = q.to(dtype)
+    bits = qq.contiguous().view(it).to(torch.int64)
+    neg = qq.double() < 0
+    up = torch.where(neg, bits - 1, bits + 1)
+    dn = torch.where(neg, bits + 1, bits - 1)
+    zero = qq.double() == 0
+    to = lambda b: b.to(it).view(dtype).double()
+    upv, dnv = to(up), to(dn)
+    tiny = torch.finfo(dtype).smallest_normal if dtype != torch.float16 else 2.0 ** -24
+    upv = torch.where(zero, torch.full_like(upv, tiny), upv)
+    dnv = torch.where(zero, torch.full_like(dnv, -tiny), dnv)
+    return upv, dnv
+
+
 def interval_move(w0: torch.Tensor, w1q: torch.Tensor, dtype: torch.dtype, decay: float = 1.0):
     """16-bit release: for a single-touch row, the fp32 end value was
     x_i = decay*w0_i - sign_i * D and then rounded to `dtype` -> w1q_i.
-    Each coordinate confines D to an interval; intersect them. Returns (lo, hi)."""
+    Each coordinate confines D to an interval; intersect them. Returns (lo, hi).
+    The rounding interval of q is bounded by the midpoints to its two neighbours,
+    which differ below a power of two (asymmetric spacing)."""
     x0 = _f64(w0) * decay
     q = _f64(w1q)
-    h = ulp(w1q.to(dtype), dtype) / 2           # round-to-nearest half spacing at the stored value
-    lo_x, hi_x = q - h, q + h                   # fp32 value lay in [lo_x, hi_x]
-    # D_i = |x0_i - x_i| ; sign from which side
+    upv, dnv = _neighbours(w1q, dtype)
+    lo_x, hi_x = (q + dnv) / 2, (q + upv) / 2   # fp32 value lay in [lo_x, hi_x]
     s = torch.sign(x0 - q)
     keep = s != 0
     a = torch.where(s > 0, x0 - hi_x, lo_x - x0)
@@ -147,28 +165,41 @@ def round_to(x64: torch.Tensor, dtype: torch.dtype) -> torch.Tensor:
 def fit_decay_16(W0: torch.Tensor, W1q: torch.Tensor, dtype: torch.dtype, sample: int = 4096,
                  seed: int = 0) -> tuple[float, float]:
     """Find P maximising the number of rows with round(P*W0) == W1q exactly.
-    Returns (P, fraction of sampled rows matched)."""
+    Returns (P, fraction of sampled rows matched).
+
+    All-zero parent rows match round(P*0) == 0 for every P, so they carry no
+    information about P and are left out of the sample (with them in, every P
+    scored > 0 and the search never left P = 1). Both the P = 1 neighbourhood and
+    the least-squares candidate P0 are always searched; the better one is kept."""
+    pool = torch.nonzero((W0 != 0).any(1)).flatten()
+    if pool.numel() == 0:
+        return 1.0, float("nan")
     g = torch.Generator().manual_seed(seed)
-    idx = torch.randperm(W0.shape[0], generator=g)[:sample]
+    idx = pool[torch.randperm(pool.numel(), generator=g)[:sample]]
     x0 = W0[idx].double()
     q = W1q[idx].to(dtype)
-    def score(P):
+
+    def rows_matched(P):
         return float(((round_to(x0 * P, dtype) == q).all(1)).double().mean())
-    if score(1.0) > 0.05:
-        best = (1.0, score(1.0))
-    else:
-        best = (1.0, score(1.0))
-    # candidate from per-row ratios of rows with smallest residual
+
+    def coords_matched(P):   # smooth objective: a P off by 1e-5 already breaks most whole rows
+        return float((round_to(x0 * P, dtype) == q).double().mean())
+
     xr = (x0 * W1q[idx].double()).sum(1) / (x0 * x0).sum(1)
     res = (W1q[idx].double() - xr[:, None] * x0).norm(dim=1) / x0.norm(dim=1)
-    P0 = float(xr[res < res.quantile(0.2)].median())
-    for width, n in ((3e-3, 301), (3e-5, 301), (3e-7, 301)):
-        c = best[0] if best[1] > 0 else P0
-        for P in np.linspace(c * (1 - width), c * (1 + width), n):
-            s = score(P)
-            if s > best[1]:
-                best = (float(P), s)
-    return best
+    P0 = float(xr[res <= res.quantile(0.2)].median())
+    best_P, best_s = 1.0, coords_matched(1.0)
+    for c in (1.0, P0):
+        for width, n in ((3e-3, 301), (3e-5, 301), (3e-7, 301)):
+            lp, ls = c, coords_matched(c)
+            for P in np.linspace(c * (1 - width), c * (1 + width), n):
+                s_ = coords_matched(float(P))
+                if s_ > ls:
+                    lp, ls = float(P), s_
+            c = lp
+            if ls > best_s:
+                best_P, best_s = lp, ls
+    return best_P, rows_matched(best_P)
 
 
 def moved_rows_16(W0: torch.Tensor, W1q: torch.Tensor, dtype: torch.dtype, P: float, chunk: int = 16384):

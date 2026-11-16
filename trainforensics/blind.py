@@ -18,7 +18,6 @@ import numpy as np
 import torch
 
 from . import adam
-from .diff import row_diff
 
 B1, B2 = 0.9, 0.999
 
@@ -37,14 +36,6 @@ def moves_curve(lr: np.ndarray, wd: float = 0.0, b1=B1, b2=B2, H: int = 300) -> 
     a = ((1 - b1) * b1 ** k / (1 - b1 ** tc)) / np.sqrt((1 - b2) * b2 ** k / (1 - b2 ** tc))
     D = np.where(ok, lr[tc] * a * suf[np.minimum(tc + 1, N + 1)], 0.0).sum(1)
     return np.concatenate([[0.0], D])
-
-
-# ----------------------------------------------------------------- rows
-def row_moves(W0, W1, stored_dtype=None, q: float = 0.5):
-    """Per-row move D and flatness. q: quantile of |delta| used as the row's D
-    (median by default)."""
-    rd = row_diff(W0, W1, stored_dtype)
-    return rd
 
 
 # ----------------------------------------------------------------- recipe
@@ -265,12 +256,6 @@ def place_docs(doc_tokens: dict, rd, curve: np.ndarray, flat_thr=0.9, tol=1.5e-3
         else:
             out[d] = (None, used, f"ambiguous{len(cand)}")
     return out
-
-
-def refine_placement(placed: dict, doc_tokens: dict, rd, curve, tol=1.5e-3):
-    """Second pass: a token shared by several claimed docs that is single-touch
-    (flat) must have all its docs in the same step."""
-    return placed
 
 
 # ----------------------------------------------------------------- seed

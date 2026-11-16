@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Detection floor for 'bit-identical' claims in 16-bit releases.
+"""(Per-comparison floors for every pair are in results/frontier/recount/*.json, `floor_10`.)
+Detection floor for 'bit-identical' claims in 16-bit releases.
 
 A token vector can only be called bit-identical (never updated) if an update would have shown.
 For each claimed vector we compute the smallest per-number change that would have altered at least
@@ -27,9 +28,16 @@ CASES = {
 
 
 def half_spacing(x, dtype):
+    """Half the 16-bit spacing at each stored value. Exactly-zero numbers are excluded (inf):
+    clamping them to 1e-38 made `floor_1_number` a meaningless 1e-41 (review M6)."""
     mant = {torch.bfloat16: 7, torch.float16: 10}[dtype]
-    _, e = torch.frexp(x.abs().to(torch.float32).clamp_min(1e-38))
-    return torch.pow(2.0, (e.to(torch.float64) - 1) - mant) / 2
+    a = x.abs().to(torch.float32)
+    _, e = torch.frexp(a.clamp_min(1e-38))
+    e = e.to(torch.float64) - 1
+    if dtype == torch.float16:
+        e = e.clamp_min(-14)
+    h = torch.pow(2.0, e - mant) / 2
+    return torch.where(a == 0, torch.full_like(h, float("inf")), h)
 
 
 def main():
@@ -46,6 +54,7 @@ def main():
                          floor_1_number=float(hs[:, 0].max()), floor_10_numbers=float(hs[:, 9].max()),
                          floor_100_numbers=float(hs[:, 99].max()),
                          numbers_altered_by_1e6_change_min=int((hs < 1e-6).sum(1).min()),
+                         numbers_altered_by_1e7_change_min=int((hs < 1e-7).sum(1).min()),
                          dim=int(W0.shape[1]))
         print(name, out[name], flush=True)
     json.dump(out, open(OUT / "detection_floor.json", "w"), indent=1)

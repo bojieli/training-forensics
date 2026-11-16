@@ -1,0 +1,69 @@
+{
+ "hermes4_70B_vs_405B": {
+  "a": 2482,
+  "b": 2461,
+  "both": 2461,
+  "only_a": 21,
+  "only_b": 0,
+  "jaccard": 0.9915,
+  "identical": false
+ },
+ "hermes4_shared_vs_other_llama31_tunes": {
+  "NousResearch/Hermes-3-Llama-3.1-405B": {
+   "a": 2461,
+   "b": 6113,
+   "both": 2379,
+   "only_a": 82,
+   "only_b": 3734,
+   "jaccard": 0.384,
+   "identical": false,
+   "shared_inside_other": 0.9667
+  },
+  "allenai/Llama-3.1-Tulu-3-405B-SFT": {
+   "a": 2461,
+   "b": 3645,
+   "both": 1180,
+   "only_a": 1281,
+   "only_b": 2465,
+   "jaccard": 0.2395,
+   "identical": false,
+   "shared_inside_other": 0.4795
+  },
+  "unsloth/Meta-Llama-3.1-8B-Instruct": {
+   "a": 2461,
+   "b": 385,
+   "both": 224,
+   "only_a": 2237,
+   "only_b": 161,
+   "jaccard": 0.0854,
+   "identical": false,
+   "shared_inside_other": 0.091
+  },
+  "unsloth/Meta-Llama-3.1-70B-Instruct": {
+   "a": 2461,
+   "b": 847,
+   "both": 440,
+   "only_a": 2021,
+   "only_b": 407,
+   "jaccard": 0.1534,
+   "identical": false,
+   "shared_inside_other": 0.1788
+  }
+ },
+ "hermes4_shared_also_left_by_every_other_tune": {
+  "n": 84,
+  "of": 2461
+ },
+ "memt_vs_v4flash__and__0731_vs_v4flash": {
+  "a": 82,
+  "b": 82,
+  "both": 82,
+  "only_a": 0,
+  "only_b": 0,
+  "jaccard": 1.0,
+  "identical": true
+ },
+ "memt_vs_0731": {
+  "n": 16806
+ }
+}

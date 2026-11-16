@@ -22,17 +22,19 @@ share of token vectors whose numbers differ from the decayed base in 0 / <=1% / 
      - LongCat-Flash-Chat -> Thinking -> Thinking-2601.
      - Qwen3-235B Instruct-2507 -> Thinking-2507.
      - Kimi-K2-Thinking -> K2.5: vectors about 41% smaller on average, fit 0.004.
-   - **By contrast, Kimi-K2.5 -> K2.6 is comparable:** 639 bit-identical, fit 1.000.
+   - **By contrast, Kimi-K2.5 -> K2.6 is comparable:** 639 bit-identical, fit 1.000. After removing untrainable rows: 628 against K2.5, at most 13 against K2-Thinking, K2-Instruct-0905 or K2-Base, so it passes the review's margin rule (results/frontier/lineage.md).
    - Article sentence: "Kimi K2.6's token embedding descends directly from K2.5's, while K2.5's does not descend from K2-Thinking's. Its vectors were rescaled or retrained. Newer MiniMax, GLM-5.x and LongCat releases were likewise not fine-tuned from the previous public checkpoint's embedding."
    - Wording: "not a fine-tune of that exact public checkpoint". Never "retrained from scratch".
 
-3. **DeepSeek release chain. Verdict: holds** (lineage numbers; special-token details are owned by `results/frontier_ds`).
-   - **Comparable (fit 1.000), with bit-identical vectors:**
-     - V3 -> V3-0324: 1,935.
-     - V3.1-Base -> V3.1: 1,020.
-     - V3.2-Exp-Base -> V3.2-Exp: 1,498.
-     - V3.2-Exp -> V3.2: 1,210.
-     - V3.2 -> V3.2-Speciale: 976. Speciale is the smallest update in the chain: 70% of vectors changed in only 10-50% of numbers.
+3. **DeepSeek release chain. Verdict: holds-with-wording after the review's margin rule** (lineage numbers; special-token details are owned by `results/frontier_ds`).
+   - **Bit-identical vectors, raw / after removing unreachable, reserved, at-init, zero and duplicate rows** (results/frontier/lineage.md):
+     - V3 -> V3-0324: 1,935 / 754. But V3-0324 shares *more* cleaned vectors with V3-Base (1,160) and R1 (1,015) than with V3: consistent with V3-0324 starting from V3-Base or a shared intermediate, not necessarily from V3.
+     - V3.1-Base -> V3.1: 1,020 / 292 (V3-Base and V3-0324: 0). Holds.
+     - V3.1 -> V3.1-Terminus: 399 / 1. The shared vectors are untrainable tokens only: no lineage evidence beyond a shared start.
+     - V3.2-Exp-Base -> V3.2-Exp: 1,498 / 313 (V3.1-Terminus, V3.1: 0). Holds.
+     - V3.2-Exp -> V3.2: 1,210 / 157, but V3.2-Exp-Base 203: shares never-trained vectors with both; the weights do not decide.
+     - V3.2 -> V3.2-Speciale: 976 / 178, but V3.2-Exp 264: shares with both. Speciale is the smallest update in the chain: 70% of vectors changed in only 10-50% of numbers.
+   - (Before the review this item said every step was a direct descendant; bit-identical counts alone cannot show a direct parent, because siblings and ancestors share the untouched vectors too.)
    - **V3-Base -> V3.1-Base** is only partly reproduced (fit 0.973, 470 bit-identical). This is consistent with the further pretraining DeepSeek describes for V3.1-Base.
    - **Updated reserved placeholder slots:**
      - V3 -> 0324: 87 of 800.

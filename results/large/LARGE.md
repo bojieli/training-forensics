@@ -11,7 +11,7 @@ absent from the training data. **Low signal**: more than 10% of the changed vect
 changed (the R1-Zero pattern); read token lists from those releases as "bit-identical or barely changed".
 
 Classes (scripts/frontier/comparability.py): *token record* = some bit-identical tokens and the shrink fit reproduces
->=99% of the closest vectors; *record, poor fit* = some bit-identical but fit <99%; *changed throughout* = none
+>=99% of the closest vectors (and >= T_LEFT trainable ones, results/frontier/calibration.json); *untrainable only* = the bit-identical vectors are all tokens no run could train; *record, poor fit* = some bit-identical but fit <99%; *changed throughout* = none
 bit-identical, same base; *not comparable* = not a shrunk copy of that base.
 
 | base -> release | relation | class | bit-identical | barely | updated | changed vectors with <10% of numbers changed | shrink | named special tokens updated | output head bit-identical / updated |
@@ -21,7 +21,7 @@ bit-identical, same base; *not comparable* = not a shrunk copy of that base.
 | microsoft/MAI-DS-R1 -> perplexity-ai/r1-1776 (bf16 mirror) | sibling (both from R1) | token record | 9,462 | 10,038 | 109,780 | 95.3% (low signal) | 0% | 2/3 | 1 / 120,962 |
 | deepseek-ai/DeepSeek-R1 -> deepseek-ai/DeepSeek-R1-0528 | successive | token record | 1,760 | 382 | 127,138 | 2.5% | 0% | 3/3 | 0 / 129,152 |
 | deepseek-ai/DeepSeek-V3-Base -> deepseek-ai/DeepSeek-R1-0528 | base | token record | 1,806 | 449 | 127,025 | 3.7% | 0% | 3/3 | 0 / 129,029 |
-| deepseek-ai/DeepSeek-V3 -> deepseek-ai/DeepSeek-V3.1 | successive | token record | 429 | 24 | 128,827 | 0.0% | 0% | 3/3 | 0 / 129,280 |
+| deepseek-ai/DeepSeek-V3 -> deepseek-ai/DeepSeek-V3.1 | successive | untrainable only | 429 | 24 | 128,827 | 0.0% | 0% | 3/3 | 0 / 129,280 |
 | Qwen/Qwen2.5-32B -> Qwen/QwQ-32B | base | token record | 4,229 | 129 | 147,706 | 2.7% | 0% | 4/11 | 0 / 152,064 |
 | Qwen/Qwen2.5-32B-Instruct -> Qwen/QwQ-32B | instruct | token record | 3,609 | 58 | 148,397 | 0.7% | 0% | 4/11 | 0 / 152,064 |
 | Qwen/Qwen2.5-32B-Instruct -> Qwen/QwQ-32B-Preview | instruct | token record | 7,782 | 25 | 144,257 | 0.1% | 0% | 2/11 | 0 / 152,064 |
@@ -32,7 +32,7 @@ bit-identical, same base; *not comparable* = not a shrunk copy of that base.
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-14B -> nvidia/AceReason-Nemotron-14B | distill | token record | 9,729 | 54,641 | 87,694 | 66.0% (low signal) | 0% | 5/6 | 0 / 118,971 |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-7B -> nvidia/AceReason-Nemotron-7B | distill | token record | 13,496 | 42,680 | 95,888 | 54.5% (low signal) | 0% | 3/6 | 405 / 105,447 |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-32B -> Skywork/Skywork-OR1-32B | distill | token record | 21,520 | 37,704 | 92,840 | 88.8% (low signal) | 0% | 1/6 | 76 / 129,702 |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B -> Skywork/Skywork-OR1-7B | distill | record, poor fit | 7 | 13 | 152,044 | 14.4% (low signal) | 0% | 5/6 | 0 / 152,064 |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B -> Skywork/Skywork-OR1-7B | distill | untrainable only | 7 | 13 | 152,044 | 14.4% (low signal) | 0% | 5/6 | 0 / 152,064 |
 | Llama-3.1-405B (bf16 embedding of the FP8 release) -> allenai/Llama-3.1-Tulu-3-405B-SFT | base | token record | 3,929 | 17 | 124,310 | 0.1% | 0% | 5/7 | - |
 | allenai/Llama-3.1-Tulu-3-405B-SFT -> allenai/Llama-3.1-Tulu-3-405B-DPO | stage | token record | 5,135 | 1,996 | 121,133 | 60.6% (low signal) | 0% | 0/7 | - |
 | allenai/Llama-3.1-Tulu-3-405B-DPO -> allenai/Llama-3.1-Tulu-3-405B | stage | token record | 103,743 | 659 | 23,862 | 94.3% (low signal) | 0% | 0/7 | - |
@@ -42,7 +42,7 @@ bit-identical, same base; *not comparable* = not a shrunk copy of that base.
 | Llama-3.1-70B (unsloth mirror) -> NousResearch/Hermes-4-70B | base | token record | 2,739 | 4 | 125,513 | 0.0% | 0% | 6/7 | 0 / 128,256 |
 | Llama-3.1-405B (bf16 embedding of the FP8 release) -> Llama-3.1-405B-Instruct (bf16 embedding of the FP8 release) | base (reference: Meta's own instruct) | token record | 613 | 13 | 127,630 | 0.1% | 0.5848% | 7/7 | - |
 | Llama-3.1-405B-Instruct (bf16 embedding of the FP8 release) -> nvidia/Llama-3_1-Nemotron-Ultra-253B-v1 | instruct | token record | 671 | 1 | 127,584 | 0.0% | 0.768% | 6/7 | - |
-| Llama-3.1-405B (bf16 embedding of the FP8 release) -> nvidia/Llama-3_1-Nemotron-Ultra-253B-v1 | base | changed throughout | 0 | 5 | 128,251 | 0.2% | 1.2742% | 7/7 | - |
+| Llama-3.1-405B (bf16 embedding of the FP8 release) -> nvidia/Llama-3_1-Nemotron-Ultra-253B-v1 | base | untrainable only | 0 | 5 | 128,251 | 0.2% | 1.2742% | 7/7 | - |
 | Qwen/Qwen2.5-32B -> a-m-team/AM-Thinking-v1 | base | token record | 11,589 | 23 | 140,452 | 0.1% | 0% | 3/11 | 0 / 152,064 |
 | Qwen/Qwen2.5-32B-Instruct -> a-m-team/AM-Thinking-v1 | instruct | token record | 6,501 | 21 | 145,542 | 0.1% | 0% | 3/11 | 0 / 152,064 |
 
@@ -150,11 +150,11 @@ share the step, consistent with a common tool that zeroes never-trained tokens.
 ## Findings and article-ready sentences
 
 1. **Two third-party post-trainings of DeepSeek-R1 left different footprints.** (holds, with wording) r1-1776 leaves 20,876 of 129,280 token vectors bit-identical to R1 and 74,645 barely changed; MAI-DS-R1 leaves 14,542 bit-identical and updates 109,013. Both are low-signal releases (most changed vectors have under 10% of their numbers changed), so token lists read as "bit-identical or barely changed", not "absent from the data". Article: *"Perplexity's r1-1776 changed DeepSeek-R1's token vectors only lightly: 20,876 are bit-identical and most of the rest barely changed. Microsoft's MAI-DS-R1 updated 109,013 of them."* Category shares are in the table above; no content interpretation is made.
-2. **Hermes 4 used the same token footprint at 70B and 405B.** (holds) The same 2,739 vocabulary tokens are bit-identical to the Llama-3.1 base in both sizes (identical sets, not just counts). Article: *"Hermes 4 70B and 405B leave exactly the same 2,739 tokens untouched, consistent with one training set for both sizes."*
+2. **Hermes 4 leaves nearly the same tokens untouched at 70B and 405B; most of them Hermes 3 left untouched too.** (holds with wording) After removing unreachable, reserved, at-init, zero and duplicate rows, the 405B release keeps 2,461 vectors bit-identical to the Llama-3.1 base and the 70B release 2,482; all 2,461 are in the 70B set (Jaccard 0.99, results/frontier/sets.json). As a baseline, 97% of those 2,461 are also bit-identical in Hermes-3-Llama-3.1-405B, 48% in Tulu-3-405B-SFT and 9-18% in Meta's own 8B/70B Instruct tunes; only 84 are left untouched by every one of them. Article: *"Hermes 4 70B and 405B leave almost the same 2,500 tokens untouched, consistent with the same post-training data at both sizes; 97% of them Hermes 3 left untouched too."* (Before the review: 'the same 2,739 tokens, identical sets'; 2,739 was the raw count and the sets were not compared.)
 3. **Tulu 3 405B matches its published SFT data token for token.** (holds) All 124,572 tokens in the published SFT mixture (as rendered and truncated for training) except 245 were updated, and no regular token outside the data was updated. The 245 exceptions occur 1-2 times in most cases. Article: *"Tulu 3 405B's SFT stage updated no token outside its published data."*
 4. **The end-of-sequence token is often bit-identical after DPO or RL.** (holds, mechanism) `<|end_of_text|>` appears in every Tulu 3 DPO response yet is bit-identical after the 405B DPO stage; DeepSeek's end-of-sentence token is bit-identical in MAI-DS-R1, AceReason-Nemotron-7B and both Skywork-OR1 releases. In a causal model the input vector of a sequence's final token gets no gradient unless another sequence follows it in the same row (packing), so this is consistent with unpacked training and needs no other explanation.
 5. **Tulu 3 405B's final RL stage touched few tokens.** (holds) After DPO, the RLVR stage leaves 103,743 of 128,264 vectors bit-identical, including every non-Latin-script token in the table; most changed vectors changed by under 10% of their numbers (low signal), so read this as a small, narrow update, not as a list of what the RL data lacked.
-6. **Lineage checks agree with the model cards.** QwQ-32B and AM-Thinking-v1 are closer to Qwen2.5-32B base than to Instruct; Nemotron-Ultra-253B descends from Llama-3.1-405B-Instruct (671 of its vectors are Instruct's vectors shrunk by 0.765-0.769%; none match the base); Hermes-4-405B is closer to the base than to Hermes 3.
+6. **Lineage, re-derived with a margin rule (results/frontier/lineage.md).** Counts are bit-identical vectors after removing unreachable, reserved, at-init, zero and duplicate rows; a candidate is named only if it leads every other by 1.5x and 200 vectors. AM-Thinking-v1: Qwen2.5-32B base (9,337 vs 4,232 for Instruct). Nemotron-Ultra-253B: Llama-3.1-405B-Instruct (420 vs 47 for the base; its vectors are Instruct's shrunk by 0.765-0.769%). Not decided by the weights: QwQ-32B shares about equally with the Qwen2.5-32B base (2,579), QwQ-32B-Preview (2,566) and Instruct (1,947); Hermes-4-405B with the Llama-3.1-405B base (2,461) and Hermes 3 (2,400). (Before the review this item read: QwQ-32B closer to the base than to Instruct; Hermes-4-405B closer to the base than to Hermes 3.)
 7. **Two SWE releases on Qwen2.5-72B zero the same 2,171 vectors** (Kimi-Dev-72B, KAT-Dev-72B-Exp): a shared hand edit of never-trainable tokens. Report as an observation; no claim about how.
 8. **Not readable:** Skywork-OR1-7B (7 bit-identical; essentially every vector changed), DeepSeek-V3 -> V3.1 (429, poor fit), Kimi-Dev-72B (zeroed vectors only).
 

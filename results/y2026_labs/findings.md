@@ -47,6 +47,9 @@
    (its card's base). Microsoft MagenticBrain (an fp32 release) keeps 79,967 bit-identical to Qwen3-14B, Fara1.5-27B
    141,346 to Qwen3.5-27B, AesCode-32B 40,339 to Qwen3-VL-32B-Instruct; AllenAI tmax-9b 167,381 to Qwen3.5-9B.
    *Sentence:* "InternLM's Sage-S2.1 card names no base model; 2,296 of its token vectors are bit-identical to GLM-5.2."
+   *Margin rule (results/frontier/lineage.md):* after removing untrainable rows, Sage-S2.1 shares 2,279 vectors with GLM-5.2 and
+   2,157 with InternLM's own Atria-Dawn-Preview, so the weights say "GLM-5.2 lineage", not which of the two it started from;
+   Atria-Dawn-Preview (3,160 vs 0 for GLM-5.1), KAT-Coder-V2.5-Dev (22,449 vs 16) and MagenticBrain (79,184 vs 4) pass.
 
 5. **2026 flagship successors mostly replace the vocabulary vectors. Holds.** Kimi-K2.7-Code -> Kimi-K3 (same
    163,840 x 7,168 shape): no vector bit-identical and a uniform-shrink fit reproducing 0.1% of numbers, so K3's token

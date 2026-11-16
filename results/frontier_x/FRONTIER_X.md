@@ -17,16 +17,11 @@ reproduces in the 512 most shrink-like vectors (comparable to that base if >= 0.
 | token record | XiaomiMiMo/MiMo-V2.6-Pro-MOPD | XiaomiMiMo/MiMo-V2.6-Pro-RL | 152,576 | 10,936 | 18,338 | 0.0000% | 1 | 7/12/44/37/0% | 14/1/17 of 32 | 0/0/0 of 0 |
 | token record | allenai/Olmo-3-1025-7B | allenai/Olmo-3-7B-RL-Zero-Math | 100,278 | 37,896 | 8,197 | 0.0000% | 1 | 38/8/45/9/0% | 3/0/19 of 22 | 0/0/0 of 0 |
 | token record | allenai/Olmo-3-1025-7B | allenai/Olmo-3-7B-RL-Zero-Mix | 100,278 | 5,528 | 18,754 | 0.0000% | 1 | 6/19/73/3/0% | 8/0/14 of 22 | 0/0/0 of 0 |
-| token record | arcee-ai/Trinity-Large-TrueBase | arcee-ai/Trinity-Large-Base | 200,192 | 249 | 0 | 0.0000% | 0.4925 | 0/0/0/0/100% | 17/0/4 of 21 | 0/0/11 of 11 |
 | token record | arcee-ai/Trinity-Large-Base | arcee-ai/Trinity-Large-Preview | 200,192 | 1,555 | 24 | 0.0000% | 1 | 1/0/0/13/86% | 17/0/4 of 21 | 0/0/11 of 11 |
 | token record | deepseek-ai/DeepSeek-V3 | deepseek-ai/DeepSeek-V3-0324 | 129,280 | 1,935 | 158 | 0.0000% | 1 | 1/0/1/51/46% | 18/0/0 of 18 | 87/10/703 of 800 |
 | token record | deepseek-ai/DeepSeek-V3.1-Base | deepseek-ai/DeepSeek-V3.1 | 129,280 | 1,020 | 107 | 0.0000% | 1 | 1/0/1/33/66% | 19/0/3 of 22 | 488/19/289 of 796 |
-| token record | deepseek-ai/DeepSeek-V3-0324 | deepseek-ai/DeepSeek-V3.1 | 129,280 | 429 | 24 | 0.0000% | 0.9696 | 0/0/0/0/99% | 22/0/0 of 22 | 796/0/0 of 796 |
-| token record | deepseek-ai/DeepSeek-V3-Base | deepseek-ai/DeepSeek-V3.1-Base | 129,280 | 470 | 0 | 0.0000% | 0.9733 | 0/0/0/0/99% | 22/0/0 of 22 | 796/0/0 of 796 |
-| token record | deepseek-ai/DeepSeek-V3.1 | deepseek-ai/DeepSeek-V3.1-Terminus | 129,280 | 399 | 42 | 0.0000% | 0.9801 | 0/0/0/4/95% | 22/0/0 of 22 | 796/0/0 of 796 |
 | token record | deepseek-ai/DeepSeek-V3.2-Exp | deepseek-ai/DeepSeek-V3.2 | 129,280 | 1,210 | 378 | 0.0000% | 1 | 1/0/1/26/72% | 24/0/1 of 25 | 48/127/618 of 793 |
 | token record | deepseek-ai/DeepSeek-V3.2-Exp-Base | deepseek-ai/DeepSeek-V3.2-Exp | 129,280 | 1,498 | 354 | 0.0000% | 1 | 1/0/1/24/74% | 19/0/3 of 22 | 20/28/748 of 796 |
-| token record | deepseek-ai/DeepSeek-V3.1-Terminus | deepseek-ai/DeepSeek-V3.2-Exp | 129,280 | 396 | 46 | 0.0000% | 0.9673 | 0/0/0/0/100% | 22/0/0 of 22 | 796/0/0 of 796 |
 | token record | deepseek-ai/DeepSeek-V3.2 | deepseek-ai/DeepSeek-V3.2-Speciale | 129,280 | 976 | 814 | 0.0000% | 1 | 1/1/2/70/26% | 23/1/1 of 25 | 77/371/345 of 793 |
 | token record | inclusionAI/Ling-2.6-1T-base | inclusionAI/Ling-2.6-1T | 157,184 | 1,774 | 25 | 0.0000% | 1 | 1/0/0/1/98% | 13/0/3 of 16 | 17/0/229 of 246 |
 | token record | inclusionAI/Ling-3.0-flash-base | inclusionAI/Ling-3.0-flash | 157,184 | 1,130 | 0 | 2.8203% | 0.9996 | 1/0/0/0/99% | 18/0/2 of 20 | 80/0/162 of 242 |
@@ -34,34 +29,39 @@ reproduces in the 512 most shrink-like vectors (comparable to that base if >= 0.
 | token record | mistralai/Mistral-Large-3-675B-Base-2512 | mistralai/Mistral-Large-3-675B-Instruct-2512-BF16 | 131,072 | 1,057 | 99 | 0.0000% | 1 | 1/0/0/0/99% | 0/0/0 of 0 | 0/0/0 of 0 |
 | token record | moonshotai/Kimi-K2.5 | moonshotai/Kimi-K2.6 | 163,840 | 639 | 1 | 0.0000% | 1 | 0/0/0/0/100% | 15/0/8 of 23 | 0/0/0 of 0 |
 | token record | nvidia/Nemotron-3-Labs-Ultra-Math-SFT | nvidia/Nemotron-3-Labs-Ultra-Math-RL | 131,072 | 75,296 | 6,160 | 0.0000% | 1 | 57/5/7/14/17% | 6/1/11 of 18 | 0/0/982 of 982 |
-| token record | zai-org/GLM-4.6 | zai-org/GLM-4.7 | 151,552 | 128 | 0 | 0.0000% | 0.9516 | 0/0/0/0/99% | 36/0/0 of 36 | 0/0/0 of 0 |
+| untrainable only | ByteDance-Seed/Seed-OSS-36B-Base-woSyn | ByteDance-Seed/Seed-OSS-36B-Instruct | 155,136 | 0 | 0 | 0.9419% | 0.5023 | 0/0/0/0/100% | 128/0/0 of 128 | 0/0/0 of 0 |
+| untrainable only | arcee-ai/Trinity-Large-TrueBase | arcee-ai/Trinity-Large-Base | 200,192 | 249 | 0 | 0.0000% | 0.4925 | 0/0/0/0/100% | 17/0/4 of 21 | 0/0/11 of 11 |
+| untrainable only | baidu/ERNIE-4.5-300B-A47B-Base-PT | baidu/ERNIE-4.5-300B-A47B-PT | 103,424 | 0 | 0 | 12.8492% | 0.7731 | 0/0/0/2/98% | 1027/0/0 of 1027 | 2/0/0 of 2 |
+| untrainable only | deepseek-ai/DeepSeek-V3-0324 | deepseek-ai/DeepSeek-V3.1 | 129,280 | 429 | 24 | 0.0000% | 0.9696 | 0/0/0/0/99% | 22/0/0 of 22 | 796/0/0 of 796 |
+| untrainable only | deepseek-ai/DeepSeek-V3-Base | deepseek-ai/DeepSeek-V3.1-Base | 129,280 | 470 | 0 | 0.0000% | 0.9733 | 0/0/0/0/99% | 22/0/0 of 22 | 796/0/0 of 796 |
+| untrainable only | deepseek-ai/DeepSeek-V3.1 | deepseek-ai/DeepSeek-V3.1-Terminus | 129,280 | 399 | 42 | 0.0000% | 0.9801 | 0/0/0/4/95% | 22/0/0 of 22 | 796/0/0 of 796 |
+| untrainable only | deepseek-ai/DeepSeek-V3.1-Terminus | deepseek-ai/DeepSeek-V3.2-Exp | 129,280 | 396 | 46 | 0.0000% | 0.9673 | 0/0/0/0/100% | 22/0/0 of 22 | 796/0/0 of 796 |
+| untrainable only | inclusionAI/Ling-flash-base-2.0 | inclusionAI/Ling-flash-2.0 | 157,184 | 0 | 0 | 3.3797% | 0.2165 | 0/0/0/0/100% | 11/0/0 of 11 | 251/0/0 of 251 |
+| untrainable only | meituan-longcat/LongCat-2.0 | meituan-longcat/LongCat-2.5 | 163,840 | 1 | 0 | 36.2774% | 0.3444 | 0/0/0/0/100% | 217/0/0 of 217 | 7/0/0 of 7 |
+| untrainable only | moonshotai/Kimi-K2-Thinking | moonshotai/Kimi-K2.5 | 163,840 | 0 | 0 | 41.2857% | 0.00398 | 0/0/0/0/100% | 23/0/0 of 23 | 0/0/0 of 0 |
+| untrainable only | moonshotai/Kimi-K2-Base | moonshotai/Kimi-K2.6 | 163,840 | 0 | 0 | 41.5117% | 0.00399 | 0/0/0/0/100% | 23/0/0 of 23 | 0/0/0 of 0 |
+| untrainable only | zai-org/GLM-4.5-Base | zai-org/GLM-4.6 | 151,552 | 128 | 0 | 2.8636% | 0.5375 | 0/0/0/0/100% | 36/0/0 of 36 | 0/0/0 of 0 |
+| untrainable only | zai-org/GLM-4.6 | zai-org/GLM-4.7 | 151,552 | 128 | 0 | 0.0000% | 0.9516 | 0/0/0/0/99% | 36/0/0 of 36 | 0/0/0 of 0 |
+| untrainable only | zai-org/GLM-5.2 | zai-org/GLM-5.3-BF16 | 154,880 | 0 | 0 | 0.7567% | 0.3048 | 0/0/0/0/100% | 36/0/0 of 36 | 0/0/0 of 0 |
+| record, poor fit | MiniMaxAI/MiniMax-M2.5 | MiniMaxAI/MiniMax-M2.7 | 200,064 | 0 | 0 | 0.2021% | 0.4152 | 0/0/0/0/100% | 54/0/0 of 54 | 0/0/0 of 0 |
+| record, poor fit | Qwen/Qwen3-Coder-Next-Base | Qwen/Qwen3-Coder-Next | 151,936 | 1 | 0 | 0.8926% | 0.4136 | 0/0/0/0/100% | 26/0/0 of 26 | 0/0/0 of 0 |
+| record, poor fit | baidu/ERNIE-4.5-VL-424B-A47B-Base-PT | baidu/ERNIE-4.5-VL-424B-A47B-PT | 103,424 | 0 | 0 | 2.2275% | 0.7602 | 0/0/0/2/98% | 0/0/0 of 0 | 0/0/0 of 0 |
+| record, poor fit | inclusionAI/Ling-2.6-flash-base | inclusionAI/Ling-2.6-flash | 157,184 | 0 | 2 | 0.7320% | 0.8704 | 0/0/0/1/99% | 16/0/0 of 16 | 246/0/0 of 246 |
+| record, poor fit | inclusionAI/Ling-3.0-tiny-base | inclusionAI/Ling-3.0-tiny | 157,184 | 0 | 0 | 0.9032% | 0.4672 | 0/0/0/0/100% | 20/0/0 of 20 | 242/0/0 of 242 |
 | record, poor fit | nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16 | nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 | 131,072 | 337 | 7 | 0.7307% | 0.9571 | 0/0/0/1/99% | 16/0/2 of 18 | 800/6/176 of 982 |
 | record, poor fit | zai-org/GLM-4.5 | zai-org/GLM-4.6 | 151,552 | 128 | 0 | 0.6872% | 0.7029 | 0/0/0/0/100% | 36/0/0 of 36 | 0/0/0 of 0 |
-| record, poor fit | zai-org/GLM-4.5-Base | zai-org/GLM-4.6 | 151,552 | 128 | 0 | 2.8636% | 0.5375 | 0/0/0/0/100% | 36/0/0 of 36 | 0/0/0 of 0 |
-| changed throughout | ByteDance-Seed/Seed-OSS-36B-Base-woSyn | ByteDance-Seed/Seed-OSS-36B-Instruct | 155,136 | 0 | 0 | 0.9419% | 0.5023 | 0/0/0/0/100% | 128/0/0 of 128 | 0/0/0 of 0 |
+| record, poor fit | zai-org/GLM-5 | zai-org/GLM-5.1 | 154,880 | 0 | 0 | 0.4696% | 0.6327 | 0/0/0/0/100% | 36/0/0 of 36 | 0/0/0 of 0 |
 | changed throughout | MiniMaxAI/MiniMax-M2.1 | MiniMaxAI/MiniMax-M2.5 | 200,064 | 0 | 0 | 0.0000% | 0.6462 | 0/0/0/0/100% | 54/0/0 of 54 | 0/0/0 of 0 |
-| changed throughout | baidu/ERNIE-4.5-300B-A47B-Base-PT | baidu/ERNIE-4.5-300B-A47B-PT | 103,424 | 0 | 0 | 12.8492% | 0.7731 | 0/0/0/2/98% | 1027/0/0 of 1027 | 2/0/0 of 2 |
-| changed throughout | baidu/ERNIE-4.5-VL-424B-A47B-Base-PT | baidu/ERNIE-4.5-VL-424B-A47B-PT | 103,424 | 0 | 0 | 2.2275% | 0.7602 | 0/0/0/2/98% | 0/0/0 of 0 | 0/0/0 of 0 |
-| changed throughout | inclusionAI/Ling-2.6-flash-base | inclusionAI/Ling-2.6-flash | 157,184 | 0 | 2 | 0.7320% | 0.8704 | 0/0/0/1/99% | 16/0/0 of 16 | 246/0/0 of 246 |
 | changed throughout | moonshotai/Kimi-K2-Instruct | moonshotai/Kimi-K2-Instruct-0905 | 163,840 | 0 | 0 | 0.0000% | 0.8481 | 0/0/0/0/100% | 17/0/0 of 17 | 0/0/0 of 0 |
 | changed throughout | moonshotai/Kimi-K2.6 | moonshotai/Kimi-K2.7-Code | 163,840 | 0 | 0 | 0.0000% | 0.7697 | 0/0/0/0/100% | 23/0/0 of 23 | 0/0/0 of 0 |
-| changed throughout | zai-org/GLM-5 | zai-org/GLM-5.1 | 154,880 | 0 | 0 | 0.4696% | 0.6327 | 0/0/0/0/100% | 36/0/0 of 36 | 0/0/0 of 0 |
 | not comparable | MiniMaxAI/MiniMax-M2 | MiniMaxAI/MiniMax-M2.1 | 200,064 | 0 | 0 | 0.0000% | 0.3621 | 0/0/0/0/100% | 54/0/0 of 54 | 0/0/0 of 0 |
-| not comparable | MiniMaxAI/MiniMax-M2.5 | MiniMaxAI/MiniMax-M2.7 | 200,064 | 0 | 0 | 0.2021% | 0.4152 | 0/0/0/0/100% | 54/0/0 of 54 | 0/0/0 of 0 |
 | not comparable | Qwen/Qwen3-235B-A22B-Instruct-2507 | Qwen/Qwen3-235B-A22B-Thinking-2507 | 151,936 | 0 | 0 | 0.1967% | 0.4224 | 0/0/0/0/100% | 26/0/0 of 26 | 0/0/0 of 0 |
-| not comparable | Qwen/Qwen3-Coder-Next-Base | Qwen/Qwen3-Coder-Next | 151,936 | 1 | 0 | 0.8926% | 0.4136 | 0/0/0/0/100% | 26/0/0 of 26 | 0/0/0 of 0 |
-| not comparable | inclusionAI/Ling-3.0-tiny-base | inclusionAI/Ling-3.0-tiny | 157,184 | 0 | 0 | 0.9032% | 0.4672 | 0/0/0/0/100% | 20/0/0 of 20 | 242/0/0 of 242 |
-| not comparable | inclusionAI/Ling-flash-base-2.0 | inclusionAI/Ling-flash-2.0 | 157,184 | 0 | 0 | 3.3797% | 0.2165 | 0/0/0/0/100% | 11/0/0 of 11 | 251/0/0 of 251 |
 | not comparable | inclusionAI/Ling-mini-base-2.0 | inclusionAI/Ling-mini-2.0 | 157,184 | 0 | 1 | -1.4374% | 0.3334 | 0/0/0/0/100% | 11/0/0 of 11 | 251/0/0 of 251 |
 | not comparable | inclusionAI/Ling-1T | inclusionAI/Ring-1T | 157,184 | 0 | 0 | 2.4009% | 0.226 | 0/0/0/0/100% | 12/0/0 of 12 | 256/0/0 of 256 |
-| not comparable | meituan-longcat/LongCat-2.0 | meituan-longcat/LongCat-2.5 | 163,840 | 1 | 0 | 36.2774% | 0.3444 | 0/0/0/0/100% | 217/0/0 of 217 | 7/0/0 of 7 |
 | not comparable | meituan-longcat/LongCat-Flash-Chat | meituan-longcat/LongCat-Flash-Thinking | 131,072 | 0 | 0 | 67.2141% | 0.04144 | 0/0/0/0/100% | 217/0/0 of 217 | 7/0/0 of 7 |
 | not comparable | meituan-longcat/LongCat-Flash-Thinking | meituan-longcat/LongCat-Flash-Thinking-2601 | 131,072 | 0 | 0 | -8.2915% | 0.01101 | 0/0/0/0/100% | 217/0/0 of 217 | 7/0/0 of 7 |
 | not comparable | moonshotai/Kimi-K2-Instruct-0905 | moonshotai/Kimi-K2-Thinking | 163,840 | 0 | 443 | -0.2774% | 0.9726 | 0/0/0/0/100% | 13/6/0 of 19 | 0/0/0 of 0 |
-| not comparable | moonshotai/Kimi-K2-Thinking | moonshotai/Kimi-K2.5 | 163,840 | 0 | 0 | 41.2857% | 0.00398 | 0/0/0/0/100% | 23/0/0 of 23 | 0/0/0 of 0 |
-| not comparable | moonshotai/Kimi-K2-Base | moonshotai/Kimi-K2.6 | 163,840 | 0 | 0 | 41.5117% | 0.00399 | 0/0/0/0/100% | 23/0/0 of 23 | 0/0/0 of 0 |
 | not comparable | zai-org/GLM-5.1 | zai-org/GLM-5.2 | 154,880 | 0 | 0 | 0.3352% | 0.3088 | 0/0/0/0/100% | 36/0/0 of 36 | 0/0/0 of 0 |
-| not comparable | zai-org/GLM-5.2 | zai-org/GLM-5.3-BF16 | 154,880 | 0 | 0 | 0.7567% | 0.3048 | 0/0/0/0/100% | 36/0/0 of 36 | 0/0/0 of 0 |
 | shared matrix | Qwen/Qwen3.5-2B-Base | Qwen/Qwen3.5-2B | 248,320 | 0 | 0 | 0.2152% | 0.1703 | 0/0/0/0/100% | 33/0/0 of 33 | 0/0/0 of 0 |
 | shared matrix | Qwen/Qwen3.5-4B-Base | Qwen/Qwen3.5-4B | 248,320 | 0 | 0 | 0.3123% | 0.138 | 0/0/0/0/100% | 33/0/0 of 33 | 0/0/0 of 0 |
 | shared matrix | baidu/ERNIE-4.5-21B-A3B-Base-PT | baidu/ERNIE-4.5-21B-A3B-PT | 103,424 | 0 | 0 | -0.5907% | 0.07056 | 0/0/0/0/100% | 1027/0/0 of 1027 | 2/0/0 of 2 |
@@ -110,17 +110,19 @@ share of token vectors whose numbers differ from the decayed base in 0 / <=1% / 
      - LongCat-Flash-Chat -> Thinking -> Thinking-2601.
      - Qwen3-235B Instruct-2507 -> Thinking-2507.
      - Kimi-K2-Thinking -> K2.5: vectors about 41% smaller on average, fit 0.004.
-   - **By contrast, Kimi-K2.5 -> K2.6 is comparable:** 639 bit-identical, fit 1.000.
+   - **By contrast, Kimi-K2.5 -> K2.6 is comparable:** 639 bit-identical, fit 1.000. After removing untrainable rows: 628 against K2.5, at most 13 against K2-Thinking, K2-Instruct-0905 or K2-Base, so it passes the review's margin rule (results/frontier/lineage.md).
    - Article sentence: "Kimi K2.6's token embedding descends directly from K2.5's, while K2.5's does not descend from K2-Thinking's. Its vectors were rescaled or retrained. Newer MiniMax, GLM-5.x and LongCat releases were likewise not fine-tuned from the previous public checkpoint's embedding."
    - Wording: "not a fine-tune of that exact public checkpoint". Never "retrained from scratch".
 
-3. **DeepSeek release chain. Verdict: holds** (lineage numbers; special-token details are owned by `results/frontier_ds`).
-   - **Comparable (fit 1.000), with bit-identical vectors:**
-     - V3 -> V3-0324: 1,935.
-     - V3.1-Base -> V3.1: 1,020.
-     - V3.2-Exp-Base -> V3.2-Exp: 1,498.
-     - V3.2-Exp -> V3.2: 1,210.
-     - V3.2 -> V3.2-Speciale: 976. Speciale is the smallest update in the chain: 70% of vectors changed in only 10-50% of numbers.
+3. **DeepSeek release chain. Verdict: holds-with-wording after the review's margin rule** (lineage numbers; special-token details are owned by `results/frontier_ds`).
+   - **Bit-identical vectors, raw / after removing unreachable, reserved, at-init, zero and duplicate rows** (results/frontier/lineage.md):
+     - V3 -> V3-0324: 1,935 / 754. But V3-0324 shares *more* cleaned vectors with V3-Base (1,160) and R1 (1,015) than with V3: consistent with V3-0324 starting from V3-Base or a shared intermediate, not necessarily from V3.
+     - V3.1-Base -> V3.1: 1,020 / 292 (V3-Base and V3-0324: 0). Holds.
+     - V3.1 -> V3.1-Terminus: 399 / 1. The shared vectors are untrainable tokens only: no lineage evidence beyond a shared start.
+     - V3.2-Exp-Base -> V3.2-Exp: 1,498 / 313 (V3.1-Terminus, V3.1: 0). Holds.
+     - V3.2-Exp -> V3.2: 1,210 / 157, but V3.2-Exp-Base 203: shares never-trained vectors with both; the weights do not decide.
+     - V3.2 -> V3.2-Speciale: 976 / 178, but V3.2-Exp 264: shares with both. Speciale is the smallest update in the chain: 70% of vectors changed in only 10-50% of numbers.
+   - (Before the review this item said every step was a direct descendant; bit-identical counts alone cannot show a direct parent, because siblings and ancestors share the untouched vectors too.)
    - **V3-Base -> V3.1-Base** is only partly reproduced (fit 0.973, 470 bit-identical). This is consistent with the further pretraining DeepSeek describes for V3.1-Base.
    - **Updated reserved placeholder slots:**
      - V3 -> 0324: 87 of 800.

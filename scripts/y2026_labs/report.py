@@ -6,8 +6,9 @@ from collections import Counter
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 D = ROOT / "results" / "y2026_labs"
-CLS = ["token record", "record, poor fit", "changed throughout", "not comparable", "unchanged", "shared matrix"]
+CLS = ["token record", "untrainable only", "record, poor fit", "changed throughout", "not comparable", "unchanged", "shared matrix"]
 PLAIN = {"token record": "some token vectors bit-identical to the parent after removing a uniform shrink, and the shrink fit reproduces >= 99% of numbers",
+         "untrainable only": "the only vectors consistent with the parent are tokens no run could train (unreachable, reserved, still at the random start): a shared random start, no lineage or data evidence",
          "record, poor fit": "some vectors bit-identical, but the shrink fit reproduces < 99% (treat token lists with care)",
          "changed throughout": "every token vector changed; still consistent with the parent plus weight decay",
          "not comparable": "not a decayed copy of that parent (re-initialised, rescaled or a different starting point)",

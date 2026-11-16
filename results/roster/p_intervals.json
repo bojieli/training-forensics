@@ -28,7 +28,15 @@
    "27": 10722,
    "28": 688
   },
-  "row_norm_median": 0.8187489854426114
+  "row_norm_median": 0.8187489854426114,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.8917620918255247,
+  "P_hi_drift": 0.8928501315692627,
+  "sum_lr_wd_lo_drift": 0.11333653798026107,
+  "sum_lr_wd_hi_drift": 0.11455589517650322
  },
  {
   "key": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16@ -> nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B",
@@ -55,7 +63,15 @@
    "16": 2612983,
    "17": 770013
   },
-  "row_norm_median": 0.421406437123195
+  "row_norm_median": 0.421406437123195,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9337244151619315,
+  "P_hi_drift": 0.9348242604539037,
+  "sum_lr_wd_lo_drift": 0.06739672409332349,
+  "sum_lr_wd_hi_drift": 0.06857394300481644
  },
  {
   "key": "mistralai/Ministral-3-8B-Base-2512@ -> mistralai/Ministral-3-8B-Reasoning-2512",
@@ -82,7 +98,15 @@
    "15": 412928,
    "16": 50066
   },
-  "row_norm_median": 3.992930188373529e-14
+  "row_norm_median": 3.992930188373529e-14,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.938796776723665,
+  "P_hi_drift": 0.9399946497958159,
+  "sum_lr_wd_lo_drift": 0.06188109544086409,
+  "sum_lr_wd_hi_drift": 0.06315624841160478
  },
  {
   "key": "zai-org/GLM-4.5-Air-Base@ -> zai-org/GLM-4.5-Air",
@@ -107,7 +131,15 @@
    "10": 222203,
    "11": 64711
   },
-  "row_norm_median": 0.0003251552415894495
+  "row_norm_median": 0.0003251552415894495,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": true,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9565911355332443,
+  "P_hi_drift": 0.9577589659098422,
+  "sum_lr_wd_lo_drift": 0.043159134014925424,
+  "sum_lr_wd_hi_drift": 0.04437921441775937
  },
  {
   "key": "mistralai/Ministral-3-8B-Base-2512@ -> mistralai/Ministral-3-8B-Instruct-2512",
@@ -131,7 +163,15 @@
    "8": 842201,
    "9": 53550
   },
-  "row_norm_median": 3.996606856713793e-14
+  "row_norm_median": 3.996606856713793e-14,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9661094552897939,
+  "P_hi_drift": 0.9673541614322846,
+  "sum_lr_wd_lo_drift": 0.03319060297793497,
+  "sum_lr_wd_hi_drift": 0.03447814343504789
  },
  {
   "key": "zai-org/GLM-4.5-Base@ -> zai-org/GLM-4.5",
@@ -199,7 +239,15 @@
    "375": 1,
    "672": 1
   },
-  "row_norm_median": 0.003626490796443987
+  "row_norm_median": 0.003626490796443987,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": true,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.978007354985481,
+  "P_hi_drift": 0.9792226603825993,
+  "sum_lr_wd_lo_drift": 0.020996225761245435,
+  "sum_lr_wd_hi_drift": 0.02223808854054593
  },
  {
   "key": "mistralai/Mistral-Nemo-Base-2407@ -> mistralai/Mistral-Nemo-Instruct-2407",
@@ -220,7 +268,15 @@
    "4": 27846274,
    "5": 13351337
   },
-  "row_norm_median": 0.4936335823439004
+  "row_norm_median": 0.4936335823439004,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9796609613838646,
+  "P_hi_drift": 0.9808282066367109,
+  "sum_lr_wd_lo_drift": 0.019357955407934727,
+  "sum_lr_wd_hi_drift": 0.020548724946281807
  },
  {
   "key": "inclusionAI/Ling-3.1-flash-base@ -> inclusionAI/Ling-3.1-flash-1019",
@@ -242,7 +298,15 @@
    "3": 3434019,
    "4": 2242601
   },
-  "row_norm_median": 8.699688550344256e-06
+  "row_norm_median": 8.699688550344256e-06,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9824265748724504,
+  "P_hi_drift": 0.9835763406619522,
+  "sum_lr_wd_lo_drift": 0.01656002275010473,
+  "sum_lr_wd_hi_drift": 0.017729670985616026
  },
  {
   "key": "unsloth/Llama-4-Scout-17B-16E@ -> unsloth/Llama-4-Scout-17B-16E-Instruct",
@@ -263,7 +327,15 @@
    "3": 252335,
    "4": 1141
   },
-  "row_norm_median": 0.05766376158443134
+  "row_norm_median": 0.05766376158443134,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9854316443955897,
+  "P_hi_drift": 0.9866018944790101,
+  "sum_lr_wd_lo_drift": 0.013488669974521021,
+  "sum_lr_wd_hi_drift": 0.01467551613886819
  },
  {
   "key": "Qwen/Qwen3-30B-A3B-Base@ -> Qwen/Qwen3-30B-A3B",
@@ -284,7 +356,15 @@
    "2": 975222,
    "3": 721142
   },
-  "row_norm_median": 0.40274282103357834
+  "row_norm_median": 0.40274282103357834,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9863421140393184,
+  "P_hi_drift": 0.9875480866877733,
+  "sum_lr_wd_lo_drift": 0.012530088012418079,
+  "sum_lr_wd_hi_drift": 0.013752012917930923
  },
  {
   "key": "Qwen/Qwen3-14B-Base@ -> Qwen/Qwen3-14B",
@@ -305,7 +385,15 @@
    "2": 6224486,
    "3": 4597129
   },
-  "row_norm_median": 0.6373620374040249
+  "row_norm_median": 0.6373620374040249,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9863421140393184,
+  "P_hi_drift": 0.9875480866877733,
+  "sum_lr_wd_lo_drift": 0.012530088012418079,
+  "sum_lr_wd_hi_drift": 0.013752012917930923
  },
  {
   "key": "Qwen/Qwen3-8B-Base@ -> Qwen/Qwen3-8B",
@@ -326,7 +414,15 @@
    "2": 5058284,
    "3": 3737232
   },
-  "row_norm_median": 0.5695968676395176
+  "row_norm_median": 0.5695968676395176,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9863421140393184,
+  "P_hi_drift": 0.9875480866877733,
+  "sum_lr_wd_lo_drift": 0.012530088012418079,
+  "sum_lr_wd_hi_drift": 0.013752012917930923
  },
  {
   "key": "Kwai-Klear/Klear-46B-A2.5B-Base@ -> Kwai-Klear/Klear-46B-A2.5B-Instruct",
@@ -347,7 +443,15 @@
    "2": 13417185,
    "3": 4062141
   },
-  "row_norm_median": 0.24342672395863627
+  "row_norm_median": 0.24342672395863627,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9880146295240453,
+  "P_hi_drift": 0.9892062389081654,
+  "sum_lr_wd_lo_drift": 0.010852436330740244,
+  "sum_lr_wd_hi_drift": 0.012057774133322747
  },
  {
   "key": "mistralai/Mistral-Small-24B-Base-2501@ -> mistralai/Mistral-Small-24B-Instruct-2501",
@@ -368,7 +472,15 @@
    "2": 4914087,
    "3": 1114424
   },
-  "row_norm_median": 1.7231583929111182e-11
+  "row_norm_median": 1.7231583929111182e-11,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9884809805570128,
+  "P_hi_drift": 0.9896531021391132,
+  "sum_lr_wd_lo_drift": 0.010400799138268472,
+  "sum_lr_wd_hi_drift": 0.011585877267735878
  },
  {
   "key": "unsloth/Llama-4-Maverick-17B-128E@ -> unsloth/Llama-4-Maverick-17B-128E-Instruct",
@@ -388,7 +500,15 @@
    "1": 19130036,
    "2": 976204
   },
-  "row_norm_median": 1.6559059119687137e-10
+  "row_norm_median": 1.6559059119687137e-10,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9933786737858767,
+  "P_hi_drift": 0.9945488567335938,
+  "sum_lr_wd_lo_drift": 0.005466054963080068,
+  "sum_lr_wd_hi_drift": 0.006643344441603926
  },
  {
   "key": "unsloth/Meta-Llama-3.1-8B@ -> unsloth/Meta-Llama-3.1-8B-Instruct",
@@ -407,7 +527,15 @@
   "ulp_steps": {
    "1": 2654208
   },
-  "row_norm_median": 0.24935828883632405
+  "row_norm_median": 0.24935828883632405,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9935675769312468,
+  "P_hi_drift": 0.9966982223624284,
+  "sum_lr_wd_lo_drift": 0.003307240533515102,
+  "sum_lr_wd_hi_drift": 0.006453200248351612
  },
  {
   "key": "unsloth/Meta-Llama-3.1-70B@ -> unsloth/Llama-3.3-70B-Instruct",
@@ -426,7 +554,15 @@
   "ulp_steps": {
    "1": 2285568
   },
-  "row_norm_median": 2.5421933513372078e-05
+  "row_norm_median": 2.5421933513372078e-05,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9935675769312468,
+  "P_hi_drift": 0.9966982223624284,
+  "sum_lr_wd_lo_drift": 0.003307240533515102,
+  "sum_lr_wd_hi_drift": 0.006453200248351612
  },
  {
   "key": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16@ -> nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
@@ -446,7 +582,15 @@
    "0": 1,
    "1": 13574143
   },
-  "row_norm_median": 0.8912728184668716
+  "row_norm_median": 0.8912728184668716,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9935675769312468,
+  "P_hi_drift": 0.9966982223624284,
+  "sum_lr_wd_lo_drift": 0.003307240533515102,
+  "sum_lr_wd_hi_drift": 0.006453200248351612
  },
  {
   "key": "GSAI-ML/LLaDA-MoE-v2-30B-A3B-Base@ -> GSAI-ML/LLaDA-MoE-v2-30B-A3B-Instruct",
@@ -465,7 +609,15 @@
   "ulp_steps": {
    "1": 7609344
   },
-  "row_norm_median": 0.0005665584885338917
+  "row_norm_median": 0.0005665584885338917,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9935675769312468,
+  "P_hi_drift": 0.9966982223624284,
+  "sum_lr_wd_lo_drift": 0.003307240533515102,
+  "sum_lr_wd_hi_drift": 0.006453200248351612
  },
  {
   "key": "unsloth/Meta-Llama-3.1-70B@ -> unsloth/Meta-Llama-3.1-70B-Instruct",
@@ -484,7 +636,15 @@
   "ulp_steps": {
    "1": 9093120
   },
-  "row_norm_median": 0.5529285101762382
+  "row_norm_median": 0.5529285101762382,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9935675769312468,
+  "P_hi_drift": 0.9966982223624284,
+  "sum_lr_wd_lo_drift": 0.003307240533515102,
+  "sum_lr_wd_hi_drift": 0.006453200248351612
  },
  {
   "key": "Qwen/Qwen3.5-35B-A3B-Base@ -> Qwen/Qwen3.5-35B-A3B",
@@ -504,7 +664,15 @@
    "0": 536642,
    "1": 2355134
   },
-  "row_norm_median": 0.17120882416891178
+  "row_norm_median": 0.17120882416891178,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.996000890963616,
+  "P_hi_drift": 0.9971731043869003,
+  "sum_lr_wd_lo_drift": 0.002830898828731797,
+  "sum_lr_wd_hi_drift": 0.004007126856155795
  },
  {
   "key": "unsloth/llama-3-8b@ -> unsloth/llama-3-8b-Instruct",
@@ -524,7 +692,15 @@
    "0": 6578720,
    "1": 17612256
   },
-  "row_norm_median": 0.5011158818112967
+  "row_norm_median": 0.5011158818112967,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9961996274234026,
+  "P_hi_drift": 0.9973694498393262,
+  "sum_lr_wd_lo_drift": 0.0026340161373657315,
+  "sum_lr_wd_hi_drift": 0.003807612340812953
  },
  {
   "key": "moonshotai/Kimi-K2-Base@ -> moonshotai/Kimi-K2-Instruct",
@@ -556,7 +732,15 @@
    "0": 7805614,
    "1": 4924754
   },
-  "row_norm_median": 0.669983690632584
+  "row_norm_median": 0.669983690632584,
+  "what": "range of P that reproduces the same vectors (conditional on the fitted P; one multiplication)",
+  "weak": false,
+  "contains_P_fit_by_construction": true,
+  "fp32_drift_rel": 0.0005764255622822303,
+  "P_lo_drift": 0.9968740245029277,
+  "P_hi_drift": 0.998036891487251,
+  "sum_lr_wd_lo_drift": 0.0019650379357900793,
+  "sum_lr_wd_hi_drift": 0.003130871564463273
  },
  {
   "key": "togethercomputer/RedPajama-INCITE-7B-Base@ -> togethercomputer/RedPajama-INCITE-7B-Instruct",

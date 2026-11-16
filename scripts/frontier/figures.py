@@ -88,8 +88,8 @@ def fig_c():
 
 def fig_d():
     comp = json.load(open(OUT / "comparability.json"))
-    order = ["token record", "record, poor fit", "changed throughout", "not comparable", "unchanged", "shared matrix"]
-    label = {"token record": "token record (decay fit ≥99%)", "record, poor fit": "some bit-identical tokens, decay fit <99%",
+    order = ["token record", "untrainable only", "record, poor fit", "changed throughout", "not comparable", "unchanged", "shared matrix"]
+    label = {"token record": "token record (decay fit ≥99%)", "untrainable only": "only untrainable tokens bit-identical (shared start)", "record, poor fit": "some bit-identical tokens, decay fit <99%",
              "changed throughout": "every token changed, consistent with the base + decay",
              "not comparable": "not a decayed copy of that base", "unchanged": "embedding unchanged",
              "shared matrix": "shared input/output matrix (no record)"}

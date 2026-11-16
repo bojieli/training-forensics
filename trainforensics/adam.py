@@ -87,6 +87,9 @@ def schedule(kind: str, N: int, peak: float, warmup: int = 0, min_ratio: float =
         c = t - 1
         if c < warmup:
             f = c / max(1, warmup)
+            if kind == "wsd":
+                # transformers' get_wsd_schedule warms up from min_lr_ratio, not from 0
+                f = min_ratio + (1 - min_ratio) * f
         else:
             p = (c - warmup) / max(1, N - warmup)
             if kind == "constant":

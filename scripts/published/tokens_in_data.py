@@ -108,7 +108,6 @@ def main():
             out[v] = c
         # trl versions that append EOS
         c = Counter(out["main"])
-        c[tok.convert_tokens_to_ids("<|im_end|>")] += 0
         c[tok.eos_token_id] += len(texts)
         out["main+eos"] = c
     else:

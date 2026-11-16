@@ -47,7 +47,7 @@ def main():
                          named_updated=[t["content"] for t in named if t["state"] == "moved"][:40],
                          unmoved_ranges=r.get("unmoved_ranges", [])[:8], tied=r.get("tied")))
     json.dump(dict(rows=rows, skipped=skipped), open(ROOT / "results" / "frontier_x" / "frontier_x.json", "w"), indent=1)
-    order = ["token record", "record, poor fit", "changed throughout", "not comparable", "unchanged", "shared matrix", "error"]
+    order = ["token record", "untrainable only", "record, poor fit", "changed throughout", "not comparable", "unchanged", "shared matrix", "error"]
     rows.sort(key=lambda x: (order.index(x["cls"]), x["child"]))
     f = lambda v, n=4: "-" if v is None or (isinstance(v, float) and math.isnan(v)) else (f"{v:.{n}g}" if isinstance(v, float) else str(v))
     L = ["# Frontier comparisons added (frontier_x)", "",

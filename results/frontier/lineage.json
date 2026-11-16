@@ -1,0 +1,837 @@
+[
+ {
+  "release": "moonshotai/Kimi-K2.6",
+  "candidates": [
+   {
+    "candidate": "moonshotai/Kimi-K2.5",
+    "left": 628,
+    "band": 639,
+    "strict": 639,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "moonshotai/Kimi-K2-Thinking",
+    "left": 3,
+    "band": 13,
+    "strict": 0,
+    "P": 0.5869084342838173,
+    "fit": 0.004026685442243304,
+    "zeroed": 0
+   },
+   {
+    "candidate": "moonshotai/Kimi-K2-Instruct-0905",
+    "left": 13,
+    "band": 13,
+    "strict": 0,
+    "P": 0.5860736254744304,
+    "fit": 0.0039866311209542414,
+    "zeroed": 0
+   },
+   {
+    "candidate": "moonshotai/Kimi-K2-Base",
+    "left": 13,
+    "band": 13,
+    "strict": 0,
+    "P": 0.5848831094930954,
+    "fit": 0.0039899008614676336,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "moonshotai/Kimi-K2.5",
+  "verdict": "closest published starting point: moonshotai/Kimi-K2.5",
+  "top": "moonshotai/Kimi-K2.5",
+  "report_statement_holds": true,
+  "source": "FRONTIER_X finding 2"
+ },
+ {
+  "release": "deepseek-ai/DeepSeek-V3-0324",
+  "candidates": [
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3",
+    "left": 754,
+    "band": 1935,
+    "strict": 1935,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3-Base",
+    "left": 1160,
+    "band": 2438,
+    "strict": 2438,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-R1",
+    "left": 1015,
+    "band": 2288,
+    "strict": 2288,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "deepseek-ai/DeepSeek-V3",
+  "verdict": "shares never-trained vectors with deepseek-ai/DeepSeek-V3-Base and deepseek-ai/DeepSeek-R1",
+  "top": null,
+  "report_statement_holds": false,
+  "source": "FRONTIER_X finding 3"
+ },
+ {
+  "release": "deepseek-ai/DeepSeek-V3.1",
+  "candidates": [
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3.1-Base",
+    "left": 292,
+    "band": 1020,
+    "strict": 1020,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3-Base",
+    "left": 0,
+    "band": 429,
+    "strict": 429,
+    "P": 1.0,
+    "fit": 0.9700734274727958,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3-0324",
+    "left": 0,
+    "band": 429,
+    "strict": 429,
+    "P": 1.0,
+    "fit": 0.969649178641183,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "deepseek-ai/DeepSeek-V3.1-Base",
+  "verdict": "closest published starting point: deepseek-ai/DeepSeek-V3.1-Base",
+  "top": "deepseek-ai/DeepSeek-V3.1-Base",
+  "report_statement_holds": true,
+  "source": "FRONTIER_X finding 3"
+ },
+ {
+  "release": "deepseek-ai/DeepSeek-V3.1-Terminus",
+  "candidates": [
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3.1",
+    "left": 1,
+    "band": 399,
+    "strict": 399,
+    "P": 1.0,
+    "fit": 0.9801060812813895,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3.1-Base",
+    "left": 1,
+    "band": 437,
+    "strict": 437,
+    "P": 1.0,
+    "fit": 0.9812319619315011,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "deepseek-ai/DeepSeek-V3.1",
+  "verdict": "shares never-trained vectors with deepseek-ai/DeepSeek-V3.1 and deepseek-ai/DeepSeek-V3.1-Base",
+  "top": null,
+  "report_statement_holds": false,
+  "source": "FRONTIER_X finding 3"
+ },
+ {
+  "release": "deepseek-ai/DeepSeek-V3.2-Exp",
+  "candidates": [
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+    "left": 313,
+    "band": 1498,
+    "strict": 1498,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "left": 0,
+    "band": 396,
+    "strict": 396,
+    "P": 1.0,
+    "fit": 0.9672540937151227,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3.1",
+    "left": 0,
+    "band": 387,
+    "strict": 387,
+    "P": 1.0,
+    "fit": 0.9684756142752511,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+  "verdict": "closest published starting point: deepseek-ai/DeepSeek-V3.2-Exp-Base",
+  "top": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+  "report_statement_holds": true,
+  "source": "FRONTIER_X finding 3"
+ },
+ {
+  "release": "deepseek-ai/DeepSeek-V3.2",
+  "candidates": [
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3.2-Exp",
+    "left": 157,
+    "band": 1210,
+    "strict": 1210,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+    "left": 203,
+    "band": 1339,
+    "strict": 1339,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3.1-Terminus",
+    "left": 0,
+    "band": 436,
+    "strict": 436,
+    "P": 1.0,
+    "fit": 0.9682282039097377,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "deepseek-ai/DeepSeek-V3.2-Exp",
+  "verdict": "shares never-trained vectors with deepseek-ai/DeepSeek-V3.2-Exp-Base and deepseek-ai/DeepSeek-V3.2-Exp",
+  "top": null,
+  "report_statement_holds": false,
+  "source": "FRONTIER_X finding 3"
+ },
+ {
+  "release": "deepseek-ai/DeepSeek-V3.2-Speciale",
+  "candidates": [
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3.2",
+    "left": 178,
+    "band": 976,
+    "strict": 976,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3.2-Exp",
+    "left": 264,
+    "band": 1056,
+    "strict": 1056,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "deepseek-ai/DeepSeek-V3.2",
+  "verdict": "shares never-trained vectors with deepseek-ai/DeepSeek-V3.2-Exp and deepseek-ai/DeepSeek-V3.2",
+  "top": null,
+  "report_statement_holds": false,
+  "source": "FRONTIER_X finding 3"
+ },
+ {
+  "release": "deepseek-ai/DeepSeek-R1-0528",
+  "candidates": [
+   {
+    "candidate": "deepseek-ai/DeepSeek-R1",
+    "left": 743,
+    "band": 1760,
+    "strict": 1760,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3-Base",
+    "left": 788,
+    "band": 1806,
+    "strict": 1806,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V3",
+    "left": 557,
+    "band": 1496,
+    "strict": 1496,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "deepseek-ai/DeepSeek-R1",
+  "verdict": "shares never-trained vectors with deepseek-ai/DeepSeek-V3-Base and deepseek-ai/DeepSeek-R1 and deepseek-ai/DeepSeek-V3",
+  "top": null,
+  "report_statement_holds": false,
+  "source": "review B1 example"
+ },
+ {
+  "release": "Qwen/QwQ-32B",
+  "candidates": [
+   {
+    "candidate": "Qwen/Qwen2.5-32B",
+    "left": 2579,
+    "band": 4229,
+    "strict": 4229,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "Qwen/Qwen2.5-32B-Instruct",
+    "left": 1947,
+    "band": 3609,
+    "strict": 3609,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "Qwen/QwQ-32B-Preview",
+    "left": 2566,
+    "band": 4228,
+    "strict": 4228,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "Qwen/Qwen2.5-32B",
+  "verdict": "shares never-trained vectors with Qwen/Qwen2.5-32B and Qwen/QwQ-32B-Preview and Qwen/Qwen2.5-32B-Instruct",
+  "top": null,
+  "report_statement_holds": false,
+  "source": "LARGE finding 6"
+ },
+ {
+  "release": "a-m-team/AM-Thinking-v1",
+  "candidates": [
+   {
+    "candidate": "Qwen/Qwen2.5-32B",
+    "left": 9337,
+    "band": 11589,
+    "strict": 11589,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "Qwen/Qwen2.5-32B-Instruct",
+    "left": 4232,
+    "band": 6501,
+    "strict": 6501,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "Qwen/Qwen2.5-32B",
+  "verdict": "closest published starting point: Qwen/Qwen2.5-32B",
+  "top": "Qwen/Qwen2.5-32B",
+  "report_statement_holds": true,
+  "source": "LARGE finding 6"
+ },
+ {
+  "release": "nvidia/Llama-3_1-Nemotron-Ultra-253B-v1",
+  "candidates": [
+   {
+    "candidate": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+    "left": 420,
+    "band": 671,
+    "strict": 671,
+    "P": 0.9923195167903825,
+    "fit": 0.9996582269668579,
+    "zeroed": 0
+   },
+   {
+    "candidate": "NousResearch/Meta-Llama-3.1-405B-FP8",
+    "left": 47,
+    "band": 293,
+    "strict": 0,
+    "P": 0.9872577782196245,
+    "fit": 0.6684591770172119,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+  "verdict": "closest published starting point: RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+  "top": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+  "report_statement_holds": true,
+  "source": "LARGE finding 6"
+ },
+ {
+  "release": "NousResearch/Hermes-4-405B",
+  "candidates": [
+   {
+    "candidate": "NousResearch/Meta-Llama-3.1-405B-FP8",
+    "left": 2461,
+    "band": 2739,
+    "strict": 2739,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "RedHatAI/Meta-Llama-3.1-405B-Instruct-FP8",
+    "left": 0,
+    "band": 0,
+    "strict": 0,
+    "P": 1.004657814826615,
+    "fit": 0.988917350769043,
+    "zeroed": 0
+   },
+   {
+    "candidate": "NousResearch/Hermes-3-Llama-3.1-405B",
+    "left": 2400,
+    "band": 2632,
+    "strict": 2632,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "NousResearch/Meta-Llama-3.1-405B-FP8",
+  "verdict": "shares never-trained vectors with NousResearch/Meta-Llama-3.1-405B-FP8 and NousResearch/Hermes-3-Llama-3.1-405B",
+  "top": null,
+  "report_statement_holds": false,
+  "source": "LARGE finding 6"
+ },
+ {
+  "release": "NousResearch/Hermes-4-70B",
+  "candidates": [
+   {
+    "candidate": "unsloth/Meta-Llama-3.1-70B",
+    "left": 2482,
+    "band": 2739,
+    "strict": 2739,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "unsloth/Meta-Llama-3.1-70B-Instruct",
+    "left": 0,
+    "band": 0,
+    "strict": 0,
+    "P": 1.004640923419525,
+    "fit": 0.9977045059204102,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "unsloth/Meta-Llama-3.1-70B",
+  "verdict": "closest published starting point: unsloth/Meta-Llama-3.1-70B",
+  "top": "unsloth/Meta-Llama-3.1-70B",
+  "report_statement_holds": true,
+  "source": "LARGE finding 2"
+ },
+ {
+  "release": "Qwen/WebWorld-14B",
+  "candidates": [
+   {
+    "candidate": "Qwen/Qwen3-14B",
+    "left": 8047,
+    "band": 10389,
+    "strict": 10389,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "Qwen/Qwen3-14B-Base",
+    "left": 2,
+    "band": 2124,
+    "strict": 2124,
+    "P": 0.9869164570182839,
+    "fit": 1.0,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "Qwen/Qwen3-14B",
+  "verdict": "closest published starting point: Qwen/Qwen3-14B",
+  "top": "Qwen/Qwen3-14B",
+  "report_statement_holds": true,
+  "source": "LABS2026 finding 1"
+ },
+ {
+  "release": "Qwen/Qwen-AgentWorld-35B-A3B",
+  "candidates": [
+   {
+    "candidate": "Qwen/Qwen3.6-35B-A3B",
+    "left": 614,
+    "band": 940,
+    "strict": 940,
+    "P": 1.0046149220272047,
+    "fit": 0.9996099472045898,
+    "zeroed": 0
+   },
+   {
+    "candidate": "Qwen/Qwen3.5-35B-A3B",
+    "left": 13,
+    "band": 281,
+    "strict": 1,
+    "P": 0.960119904783221,
+    "fit": 0.40718555450439453,
+    "zeroed": 0
+   },
+   {
+    "candidate": "Qwen/Qwen3.5-35B-A3B-Base",
+    "left": 13,
+    "band": 281,
+    "strict": 1,
+    "P": 0.9557815843612623,
+    "fit": 0.43587493896484375,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "Qwen/Qwen3.6-35B-A3B",
+  "verdict": "closest published starting point: Qwen/Qwen3.6-35B-A3B",
+  "top": "Qwen/Qwen3.6-35B-A3B",
+  "report_statement_holds": true,
+  "source": "LABS2026 finding 2"
+ },
+ {
+  "release": "nvidia/Nemotron-3-Labs-Ultra-Math-SFT",
+  "candidates": [
+   {
+    "candidate": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "left": 80673,
+    "band": 81680,
+    "strict": 81680,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
+    "left": 793,
+    "band": 1657,
+    "strict": 1657,
+    "P": 0.9941476177267976,
+    "fit": 0.998955249786377,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "verdict": "closest published starting point: nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "top": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "report_statement_holds": true,
+  "source": "LABS2026 finding 3"
+ },
+ {
+  "release": "nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
+  "candidates": [
+   {
+    "candidate": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
+    "left": 80703,
+    "band": 81711,
+    "strict": 81711,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "left": 0,
+    "band": 0,
+    "strict": 0,
+    "P": 1.0,
+    "fit": 0.786348819732666,
+    "zeroed": 0
+   },
+   {
+    "candidate": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-Base-BF16",
+    "left": 801,
+    "band": 1668,
+    "strict": 0,
+    "P": 0.9932855701705683,
+    "fit": 0.9872801303863525,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": null,
+  "verdict": "closest published starting point: nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
+  "top": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding",
+  "report_statement_holds": null,
+  "source": "LABS2026 finding 3 (teachers share vectors with each other)"
+ },
+ {
+  "release": "internlm/Sage-S2.1",
+  "candidates": [
+   {
+    "candidate": "zai-org/GLM-5.2",
+    "left": 2279,
+    "band": 2600,
+    "strict": 2600,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "internlm/Atria-Dawn-Preview",
+    "left": 2157,
+    "band": 2483,
+    "strict": 2483,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "zai-org/GLM-5.3-BF16",
+    "left": 0,
+    "band": 0,
+    "strict": 0,
+    "P": 1.0075854374872535,
+    "fit": 0.3007825215657552,
+    "zeroed": 0
+   },
+   {
+    "candidate": "zai-org/GLM-5.1",
+    "left": 0,
+    "band": 0,
+    "strict": 0,
+    "P": 0.9966475710499284,
+    "fit": 0.3075701395670573,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "zai-org/GLM-5.2",
+  "verdict": "shares never-trained vectors with zai-org/GLM-5.2 and internlm/Atria-Dawn-Preview",
+  "top": null,
+  "report_statement_holds": false,
+  "source": "LABS2026 finding 4"
+ },
+ {
+  "release": "internlm/Atria-Dawn-Preview",
+  "candidates": [
+   {
+    "candidate": "zai-org/GLM-5.2",
+    "left": 3160,
+    "band": 3483,
+    "strict": 3483,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "zai-org/GLM-5.1",
+    "left": 0,
+    "band": 0,
+    "strict": 0,
+    "P": 0.9966475710499284,
+    "fit": 0.30858802795410156,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "zai-org/GLM-5.2",
+  "verdict": "closest published starting point: zai-org/GLM-5.2",
+  "top": "zai-org/GLM-5.2",
+  "report_statement_holds": true,
+  "source": "LABS2026 finding 4"
+ },
+ {
+  "release": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "candidates": [
+   {
+    "candidate": "Qwen/Qwen3.6-35B-A3B",
+    "left": 22449,
+    "band": 23064,
+    "strict": 23064,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "Qwen/Qwen3.5-35B-A3B",
+    "left": 16,
+    "band": 289,
+    "strict": 1,
+    "P": 0.9554385884857742,
+    "fit": 0.40263843536376953,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "Qwen/Qwen3.6-35B-A3B",
+  "verdict": "closest published starting point: Qwen/Qwen3.6-35B-A3B",
+  "top": "Qwen/Qwen3.6-35B-A3B",
+  "report_statement_holds": true,
+  "source": "LABS2026 finding 4"
+ },
+ {
+  "release": "microsoft/MagenticBrain",
+  "candidates": [
+   {
+    "candidate": "Qwen/Qwen3-14B",
+    "left": 79184,
+    "band": 82156,
+    "strict": 82156,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "Qwen/Qwen3-14B-Base",
+    "left": 4,
+    "band": 2126,
+    "strict": 0,
+    "P": 0.9861105021102159,
+    "fit": 0.025572586059570312,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "Qwen/Qwen3-14B",
+  "verdict": "closest published starting point: Qwen/Qwen3-14B",
+  "top": "Qwen/Qwen3-14B",
+  "report_statement_holds": true,
+  "source": "LABS2026 finding 4"
+ },
+ {
+  "release": "MemTensor/MemT-1.0-Flash",
+  "candidates": [
+   {
+    "candidate": "deepseek-ai/DeepSeek-V4-Flash-0731",
+    "left": 16806,
+    "band": 18093,
+    "strict": 18093,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V4-Flash",
+    "left": 82,
+    "band": 1261,
+    "strict": 1261,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "deepseek-ai/DeepSeek-V4-Flash-Base",
+    "left": 2,
+    "band": 443,
+    "strict": 443,
+    "P": 1.0,
+    "fit": 0.9047975540161133,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "verdict": "closest published starting point: deepseek-ai/DeepSeek-V4-Flash-0731",
+  "top": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "report_statement_holds": true,
+  "source": "FT2026 finding 3"
+ },
+ {
+  "release": "deep-principle/Hydrogen-1.0",
+  "candidates": [
+   {
+    "candidate": "zai-org/GLM-5.3-BF16",
+    "left": 103495,
+    "band": 103828,
+    "strict": 103828,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "zai-org/GLM-5.2",
+    "left": 24,
+    "band": 206,
+    "strict": 0,
+    "P": 0.9924334684198429,
+    "fit": 0.3048470815022786,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "zai-org/GLM-5.3-BF16",
+  "verdict": "closest published starting point: zai-org/GLM-5.3-BF16",
+  "top": "zai-org/GLM-5.3-BF16",
+  "report_statement_holds": true,
+  "source": "GATED"
+ },
+ {
+  "release": "microsoft/UserLM-2.0",
+  "candidates": [
+   {
+    "candidate": "unsloth/Meta-Llama-3.1-8B-Instruct",
+    "left": 3251,
+    "band": 3509,
+    "strict": 3509,
+    "P": 1.0,
+    "fit": 1.0,
+    "zeroed": 0
+   },
+   {
+    "candidate": "unsloth/Meta-Llama-3.1-8B",
+    "left": 0,
+    "band": 0,
+    "strict": 0,
+    "P": 1.0,
+    "fit": 0.0373539924621582,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "verdict": "closest published starting point: unsloth/Meta-Llama-3.1-8B-Instruct",
+  "top": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "report_statement_holds": true,
+  "source": "GATED"
+ },
+ {
+  "release": "PrimeIntellect/INTELLECT-3.1",
+  "candidates": [
+   {
+    "candidate": "PrimeIntellect/INTELLECT-3",
+    "left": 0,
+    "band": 1,
+    "strict": 1,
+    "P": 1.0,
+    "fit": 0.969090461730957,
+    "zeroed": 0
+   },
+   {
+    "candidate": "zai-org/GLM-4.5-Air-Base",
+    "left": 0,
+    "band": 0,
+    "strict": 0,
+    "P": 0.9572189283866294,
+    "fit": 0.04495096206665039,
+    "zeroed": 0
+   },
+   {
+    "candidate": "zai-org/GLM-4.5-Air",
+    "left": 0,
+    "band": 1,
+    "strict": 1,
+    "P": 1.0,
+    "fit": 0.9562911987304688,
+    "zeroed": 0
+   }
+  ],
+  "named_in_report": "PrimeIntellect/INTELLECT-3",
+  "verdict": "no cleaned vectors shared",
+  "top": null,
+  "report_statement_holds": false,
+  "source": "FT2026 finding 3"
+ }
+]

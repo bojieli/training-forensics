@@ -137,9 +137,13 @@ def findings(S):
           "not \"absent from the data\". Article: *\"Perplexity's r1-1776 changed DeepSeek-R1's token vectors only lightly: "
           f"{rr.get('bit_identical', 0):,} are bit-identical and most of the rest barely changed. Microsoft's MAI-DS-R1 updated "
           f"{mm.get('updated', 0):,} of them.\"* Category shares are in the table above; no content interpretation is made.",
-          "2. **Hermes 4 used the same token footprint at 70B and 405B.** (holds) The same 2,739 vocabulary tokens are bit-identical "
-          "to the Llama-3.1 base in both sizes (identical sets, not just counts). Article: *\"Hermes 4 70B and 405B leave exactly the "
-          "same 2,739 tokens untouched, consistent with one training set for both sizes.\"*",
+          "2. **Hermes 4 leaves nearly the same tokens untouched at 70B and 405B; most of them Hermes 3 left untouched too.** (holds with wording) "
+          "After removing unreachable, reserved, at-init, zero and duplicate rows, the 405B release keeps 2,461 vectors bit-identical to the "
+          "Llama-3.1 base and the 70B release 2,482; all 2,461 are in the 70B set (Jaccard 0.99, results/frontier/sets.json). As a baseline, "
+          "97% of those 2,461 are also bit-identical in Hermes-3-Llama-3.1-405B, 48% in Tulu-3-405B-SFT and 9-18% in Meta's own 8B/70B Instruct "
+          "tunes; only 84 are left untouched by every one of them. Article: *\"Hermes 4 70B and 405B leave almost the same 2,500 tokens "
+          "untouched, consistent with the same post-training data at both sizes; 97% of them Hermes 3 left untouched too.\"* "
+          "(Before the review: 'the same 2,739 tokens, identical sets'; 2,739 was the raw count and the sets were not compared.)",
           "3. **Tulu 3 405B matches its published SFT data token for token.** (holds) "
           + (f"All {t['sft']['cut']['present']:,} tokens in the published SFT mixture (as rendered and truncated for training) except "
              f"{t['sft']['cut']['present_not_changed']} were updated, and no regular token outside the data was updated. The {t['sft']['cut']['present_not_changed']} "
@@ -153,9 +157,12 @@ def findings(S):
           f"{g('allenai/Llama-3.1-Tulu-3-405B-DPO', 'allenai/Llama-3.1-Tulu-3-405B').get('bit_identical', 0):,} of 128,264 vectors bit-identical, "
           "including every non-Latin-script token in the table; most changed vectors changed by under 10% of their numbers (low signal), "
           "so read this as a small, narrow update, not as a list of what the RL data lacked.",
-          "6. **Lineage checks agree with the model cards.** QwQ-32B and AM-Thinking-v1 are closer to Qwen2.5-32B base than to "
-          "Instruct; Nemotron-Ultra-253B descends from Llama-3.1-405B-Instruct (671 of its vectors are Instruct's vectors shrunk by 0.765-0.769%; none match the base); "
-          "Hermes-4-405B is closer to the base than to Hermes 3.",
+          "6. **Lineage, re-derived with a margin rule (results/frontier/lineage.md).** Counts are bit-identical vectors after removing "
+          "unreachable, reserved, at-init, zero and duplicate rows; a candidate is named only if it leads every other by 1.5x and 200 vectors. "
+          "AM-Thinking-v1: Qwen2.5-32B base (9,337 vs 4,232 for Instruct). Nemotron-Ultra-253B: Llama-3.1-405B-Instruct (420 vs 47 for the base; "
+          "its vectors are Instruct's shrunk by 0.765-0.769%). Not decided by the weights: QwQ-32B shares about equally with the Qwen2.5-32B base "
+          "(2,579), QwQ-32B-Preview (2,566) and Instruct (1,947); Hermes-4-405B with the Llama-3.1-405B base (2,461) and Hermes 3 (2,400). "
+          "(Before the review this item read: QwQ-32B closer to the base than to Instruct; Hermes-4-405B closer to the base than to Hermes 3.)",
           "7. **Two SWE releases on Qwen2.5-72B zero the same 2,171 vectors** (Kimi-Dev-72B, KAT-Dev-72B-Exp): a shared hand edit of "
           "never-trainable tokens. Report as an observation; no claim about how.",
           "8. **Not readable:** Skywork-OR1-7B (7 bit-identical; essentially every vector changed), DeepSeek-V3 -> V3.1 (429, poor fit), "
@@ -186,7 +193,9 @@ def main():
          "absent from the training data. **Low signal**: more than 10% of the changed vectors have under 10% of their numbers",
          "changed (the R1-Zero pattern); read token lists from those releases as \"bit-identical or barely changed\".", "",
          "Classes (scripts/frontier/comparability.py): *token record* = some bit-identical tokens and the shrink fit reproduces",
-         ">=99% of the closest vectors; *record, poor fit* = some bit-identical but fit <99%; *changed throughout* = none",
+         ">=99% of the closest vectors (and >= T_LEFT trainable ones, results/frontier/calibration.json); *untrainable only* = the "
+         "bit-identical vectors are all tokens no run could train; *record, poor fit* = some bit-identical but fit <99%; "
+         "*changed throughout* = none",
          "bit-identical, same base; *not comparable* = not a shrunk copy of that base.", "",
          "| base -> release | relation | class | bit-identical | barely | updated | changed vectors with <10% of numbers changed | shrink | named special tokens updated | output head bit-identical / updated |",
          "|---|---|---|---|---|---|---|---|---|---|"]

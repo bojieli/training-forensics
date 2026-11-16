@@ -34,7 +34,7 @@
   "child": "poolside/Laguna-XS-2.1",
   "relation": "successive",
   "tied": false,
-  "cls": "record, poor fit",
+  "cls": "untrainable only",
   "rows": 100352,
   "bit_identical": 67,
   "barely": 1,
@@ -121,7 +121,7 @@
   "child": "kakaocorp/kanana-2-30b-a3b-mid-2601",
   "relation": "stage",
   "tied": false,
-  "cls": "changed throughout",
+  "cls": "record, poor fit",
   "rows": 128256,
   "bit_identical": 0,
   "barely": 0,
@@ -142,7 +142,8 @@
    "moved": 256,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "kakaocorp/kanana-2-30b-a3b-mid-2601@ -> kakaocorp/kanana-2-30b-a3b-instruct-2601",
@@ -179,7 +180,7 @@
   "child": "kakaocorp/kanana-2-30b-a3b-thinking-2601",
   "relation": "base",
   "tied": false,
-  "cls": "changed throughout",
+  "cls": "record, poor fit",
   "rows": 128256,
   "bit_identical": 0,
   "barely": 0,
@@ -200,7 +201,8 @@
    "moved": 256,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "jdopensource/JoyAI-LLM-Flash-Base@ -> jdopensource/JoyAI-LLM-Flash",
@@ -237,7 +239,7 @@
   "child": "openbmb/MiniCPM5-2B-Midtrain",
   "relation": "stage",
   "tied": false,
-  "cls": "changed throughout",
+  "cls": "record, poor fit",
   "rows": 130560,
   "bit_identical": 0,
   "barely": 0,
@@ -258,7 +260,8 @@
    "moved": 510,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "openbmb/MiniCPM5-2B-Midtrain@ -> openbmb/MiniCPM5-2B-SFT",
@@ -412,7 +415,7 @@
   "child": "inclusionAI/Ling-3.0-flash-base-midtrain",
   "relation": "stage",
   "tied": false,
-  "cls": "changed throughout",
+  "cls": "untrainable only",
   "rows": 157184,
   "bit_identical": 0,
   "barely": 0,
@@ -433,7 +436,8 @@
    "moved": 262,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "inclusionAI/Ling-3.0-flash-base-midtrain@ -> inclusionAI/Ling-3.0-flash-base",
@@ -644,7 +648,7 @@
   "child": "tencent/Hy3",
   "relation": "base",
   "tied": false,
-  "cls": "token record",
+  "cls": "untrainable only",
   "rows": 120832,
   "bit_identical": 362,
   "barely": 5,
@@ -673,7 +677,7 @@
   "child": "tencent/Hy3",
   "relation": "successive",
   "tied": false,
-  "cls": "token record",
+  "cls": "untrainable only",
   "rows": 120832,
   "bit_identical": 361,
   "barely": 5,
@@ -702,7 +706,7 @@
   "child": "Qwen/Qwen3.6-35B-A3B",
   "relation": "base",
   "tied": false,
-  "cls": "not comparable",
+  "cls": "untrainable only",
   "rows": 248320,
   "bit_identical": 1,
   "barely": 1,
@@ -723,7 +727,8 @@
    "moved": 33,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "Qwen/Qwen3.6-35B-A3B@ -> Qwen/Qwen-AgentWorld-35B-A3B",
@@ -760,7 +765,7 @@
   "child": "Qwen/Qwen3.6-35B-A3B",
   "relation": "successive",
   "tied": false,
-  "cls": "not comparable",
+  "cls": "untrainable only",
   "rows": 248320,
   "bit_identical": 1,
   "barely": 1,
@@ -781,7 +786,8 @@
    "moved": 33,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "microsoft/Phi-4-reasoning@ -> microsoft/Phi-4-reasoning-vision-15B",
@@ -847,7 +853,7 @@
   "child": "stepfun-ai/Step-3.5-Flash-Base-Midtrain",
   "relation": "stage",
   "tied": false,
-  "cls": "changed throughout",
+  "cls": "untrainable only",
   "rows": 128815,
   "bit_identical": 0,
   "barely": 0,
@@ -868,7 +874,8 @@
    "moved": 818,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "stepfun-ai/Step-3.5-Flash-Base-Midtrain@ -> stepfun-ai/Step-3.5-Flash",
@@ -876,7 +883,7 @@
   "child": "stepfun-ai/Step-3.5-Flash",
   "relation": "base",
   "tied": false,
-  "cls": "changed throughout",
+  "cls": "record, poor fit",
   "rows": 128896,
   "bit_identical": 0,
   "barely": 0,
@@ -897,7 +904,8 @@
    "moved": 818,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "stepfun-ai/Step-3.5-Flash@ -> stepfun-ai/Step-3.7-Flash",
@@ -905,7 +913,7 @@
   "child": "stepfun-ai/Step-3.7-Flash",
   "relation": "successive",
   "tied": false,
-  "cls": "not comparable",
+  "cls": "untrainable only",
   "rows": 128896,
   "bit_identical": 0,
   "barely": 0,
@@ -963,7 +971,7 @@
   "child": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
   "relation": "successive",
   "tied": false,
-  "cls": "token record",
+  "cls": "untrainable only",
   "rows": 129280,
   "bit_identical": 427,
   "barely": 0,
@@ -1353,7 +1361,7 @@
   "child": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
   "relation": "successive",
   "tied": false,
-  "cls": "changed throughout",
+  "cls": "untrainable only",
   "rows": 152576,
   "bit_identical": 0,
   "barely": 0,
@@ -1374,7 +1382,8 @@
    "moved": 32,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "zai-org/GLM-5.2@ -> internlm/Atria-Dawn-Preview",
@@ -1469,7 +1478,7 @@
   "child": "internlm/Intern-S2-Preview-397B",
   "relation": "derived",
   "tied": false,
-  "cls": "changed throughout",
+  "cls": "record, poor fit",
   "rows": 248320,
   "bit_identical": 0,
   "barely": 0,
@@ -1490,7 +1499,8 @@
    "moved": 59,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16@ -> nvidia/NVIDIA-Nemotron-Labs-Teacher-Chat",
@@ -1799,7 +1809,7 @@
   "child": "moonshotai/Kimi-K3.1-Pro",
   "relation": "successive",
   "tied": false,
-  "cls": "not comparable",
+  "cls": "record, poor fit",
   "rows": 163840,
   "bit_identical": 0,
   "barely": 0,
@@ -1828,7 +1838,7 @@
   "child": "MiniMaxAI/MiniMax-M3.1-Flash",
   "relation": "successive",
   "tied": false,
-  "cls": "not comparable",
+  "cls": "untrainable only",
   "rows": 200064,
   "bit_identical": 0,
   "barely": 0,
@@ -1857,7 +1867,7 @@
   "child": "Qwen/Qwen3.6-27B",
   "relation": "successive",
   "tied": false,
-  "cls": "not comparable",
+  "cls": "untrainable only",
   "rows": 248320,
   "bit_identical": 0,
   "barely": 0,
@@ -1878,7 +1888,8 @@
    "moved": 33,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "Qwen/Qwen3.5-27B@ -> microsoft/Fara1.5-27B",
@@ -1973,7 +1984,7 @@
   "child": "inclusionAI/Ring-2.5-1T",
   "relation": "successive",
   "tied": false,
-  "cls": "changed throughout",
+  "cls": "record, poor fit",
   "rows": 157184,
   "bit_identical": 0,
   "barely": 0,
@@ -1994,7 +2005,8 @@
    "moved": 262,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "inclusionAI/Ring-2.5-1T@ -> inclusionAI/Ring-2.6-1T",
@@ -2031,7 +2043,7 @@
   "child": "Qwen/WebWorld-14B",
   "relation": "check-lineage",
   "tied": false,
-  "cls": "token record",
+  "cls": "untrainable only",
   "rows": 151936,
   "bit_identical": 2124,
   "barely": 0,
@@ -2119,7 +2131,7 @@
   "child": "microsoft/MagenticBrain",
   "relation": "check-lineage",
   "tied": false,
-  "cls": "not comparable",
+  "cls": "untrainable only",
   "rows": 151936,
   "bit_identical": 0,
   "barely": 0,
@@ -2140,7 +2152,8 @@
    "moved": 26,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "nvidia/NVIDIA-Nemotron-Labs-Teacher-Competition-Coding@ -> nvidia/NVIDIA-Nemotron-Labs-Teacher-STEM",
@@ -2207,7 +2220,7 @@
   "child": "Qwen/Qwen-AgentWorld-35B-A3B",
   "relation": "check-card",
   "tied": false,
-  "cls": "not comparable",
+  "cls": "untrainable only",
   "rows": 248320,
   "bit_identical": 1,
   "barely": 1,
@@ -2228,7 +2241,8 @@
    "moved": 33,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "Qwen/Qwen3.5-35B-A3B-Base@ -> Qwen/Qwen-AgentWorld-35B-A3B",
@@ -2236,7 +2250,7 @@
   "child": "Qwen/Qwen-AgentWorld-35B-A3B",
   "relation": "check-card",
   "tied": false,
-  "cls": "not comparable",
+  "cls": "untrainable only",
   "rows": 248320,
   "bit_identical": 1,
   "barely": 1,
@@ -2257,7 +2271,8 @@
    "moved": 33,
    "unmoved": 0,
    "near": 0
-  }
+  },
+  "P_interval_error": "cache miss or shape mismatch"
  },
  {
   "key": "mistralai/Leanstral-2603@ -> mistralai/Leanstral-1.5-119B-A6B",

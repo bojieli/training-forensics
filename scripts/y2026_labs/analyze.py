@@ -26,7 +26,7 @@ def main():
                    change_hist=r.get("change_hist", {}).get("frac"), dtype=r.get("dtype_child"),
                    special=r.get("special_summary"))
         P = e.get("P", 1.0)
-        if rec["cls"] in ("token record", "record, poor fit") and 0 < P < 0.99999 and not r.get("tied"):
+        if rec["cls"] in ("token record", "untrainable only", "record, poor fit") and 0 < P < 0.99999 and not r.get("tied"):
             dt = pi.DT.get(r["dtype_child"])
             try:
                 A = pi.load(r["parent"], r["shape_parent"], dt); B = pi.load(r["child"], r["shape_child"], dt)

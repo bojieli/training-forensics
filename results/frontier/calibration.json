@@ -1,0 +1,29 @@
+{
+ "T_LEFT": 50,
+ "T_FIT": 0.521,
+ "null_pairs": 25,
+ "sibling_pairs": 40,
+ "null_max_left": 0,
+ "null_max_fit_without_shared_vectors": 0.47102203369140627,
+ "source": "scripts/frontier/calibrate.py on results/frontier/negctl_pairs.json",
+ "null_token_record": [
+  0,
+  25
+ ],
+ "null_changed_throughout": [
+  0,
+  25
+ ],
+ "null_token_record_before": [
+  1,
+  25
+ ],
+ "sibling_token_record": [
+  13,
+  40
+ ],
+ "sibling_token_record_before": [
+  17,
+  40
+ ]
+}

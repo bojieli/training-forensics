@@ -100,12 +100,15 @@ if mf and mv:
     F += ["### 3. Lineage", "",
           f"- MemTensor/MemT-1.0-Flash names DeepSeek-V4-Flash as its base: {mf['bit_identical']:,} of its token vectors are bit-identical "
           f"to V4-Flash, but {mv['bit_identical']:,} (plus {mv['barely']:,} barely changed) to DeepSeek-V4-Flash-0731. Consistent with "
-          "V4-Flash-0731 as the starting point (V4-Flash -> 0731 itself leaves 1,261 vectors bit-identical, the same count)."]
+          "V4-Flash-0731 as the starting point. After removing untrainable rows: 16,806 vs 82 (V4-Flash) and 2 (V4-Flash-Base), "
+          "which passes the margin rule (results/frontier/lineage.md). The 82 cleaned vectors MemT shares with V4-Flash are exactly the 82 "
+          "that V4-Flash-0731 shares with V4-Flash: the same set, not just a similar count (results/frontier/sets.json)."]
     i1, i3 = pr.get("intellect31"), pr.get("intellect31_vs_i3")
     if i1 and i3:
         F.append(f"- PrimeIntellect/INTELLECT-3.1 (card base GLM-4.5-Air-Base): not a decayed copy of that base (fit {i1['fit_reproduced']:.3f}); "
                  f"against INTELLECT-3 every vector changed but a pure-shrink fit reproduces {i3['fit_reproduced']:.3f} of the closest vectors: "
-                 "consistent with continued training from INTELLECT-3.")
+                 "but no cleaned vector (unreachable, reserved, at-init rows removed) is bit-identical to INTELLECT-3 (results/frontier/lineage.md), "
+                 "so the weights do not show which published model it started from.")
     m1, m2 = pr.get("mirothinker15_30b"), pr.get("mirothinker15_vs_base")
     if m1 and m2:
         F.append(f"- miromind-ai/MiroThinker-v1.5-30B: {m1['bit_identical']:,} vectors bit-identical and {m1['barely']:,} barely changed "

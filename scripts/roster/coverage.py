@@ -29,7 +29,7 @@ SWEEPS = [("roster", "results/roster/sweep.jsonl"), ("roster", "results/roster/s
           ("large", "results/large/sweep_large.jsonl")]
 # display order only: the classes come from scripts/frontier/comparability.py (or a y2026_ft
 # record's own "cls"), so a reworked classifier is picked up on rerun
-CLASSES = ["token record", "record, poor fit", "changed throughout", "not comparable", "unchanged", "shared matrix"]
+CLASSES = ["token record", "untrainable only", "record, poor fit", "changed throughout", "not comparable", "unchanged", "shared matrix"]
 
 
 def all_comparisons():
@@ -69,6 +69,8 @@ def describe(c):
         return f"vs {par}: not a decayed copy of that parent (not comparable)"
     if cls == "changed throughout":
         return f"vs {par}: every token vector changed"
+    if cls == "untrainable only":
+        return f"vs {par}: only untrainable tokens bit-identical (shared random start; no token record)"
     if r is None:
         d = c["ft"]
         return f"vs {par}: {d.get('bit_identical', 0):,} tokens never updated ({cls})"

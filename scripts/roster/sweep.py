@@ -43,6 +43,7 @@ import torch  # noqa: E402
 
 from trainforensics import remote  # noqa: E402
 from trainforensics.adam import saturation_constant  # noqa: E402
+from trainforensics.diff import _neighbours  # noqa: E402
 
 OUT = ROOT / "results" / "roster" / "sweep.jsonl"
 
@@ -127,6 +128,8 @@ def rnd(x64, dtype):
 
 
 FP32_TOL_ULP = 64   # fp32 decay applied step by step accumulates rounding; moves are >>1e3 ulp
+# NB: for fp32 releases "unmoved" therefore means "within 64 ulp of P x parent in every number",
+# not bit identity (review minor 2); records carry `unmoved_rule`.
 
 
 def same(x64, q, dtype):
@@ -192,16 +195,19 @@ def row_stats(W0, W1, dtype, P, chunk=4096):
             Dest[a:a + chunk] = med.numpy()
             flat[a:a + chunk] = ((delta - med[:, None]).abs() <= 0.01 * med[:, None].clamp_min(1e-30)).double().mean(1).numpy()
         else:
-            h = ulp(q, dtype) / 2
+            # rounding interval of q: midpoints to its two neighbours (asymmetric below a
+            # power of two; review minor 4, same as p_interval.neighbours / diff._neighbours)
+            upv, dnv = _neighbours(W1[a:a + chunk].to(dtype), dtype)
+            lo_b, hi_b = (q + dnv) / 2, (q + upv) / 2
             s = torch.sign(x0 - q)
-            lo = torch.where(s > 0, x0 - (q + h), (q - h) - x0).clamp_min(0)
-            hi = torch.where(s > 0, x0 - (q - h), (q + h) - x0)
+            lo = torch.where(s > 0, x0 - hi_b, lo_b - x0).clamp_min(0)
+            hi = torch.where(s > 0, x0 - lo_b, hi_b - x0)
             mid = torch.where(s != 0, (lo + hi) / 2, torch.full_like(lo, float("nan")))
             De = torch.nanmedian(mid, dim=1).values
             inside = (lo <= De[:, None]) & (De[:, None] <= hi)
             # coordinates where q == round(x0): D must be small enough to stay in the same bin
             eq0 = s == 0
-            inside = torch.where(eq0, (q - x0).abs() + De[:, None] <= h, inside)
+            inside = torch.where(eq0, De[:, None] <= torch.minimum(hi_b - q, q - lo_b), inside)
             Dest[a:a + chunk] = De.nan_to_num(0).numpy()
             # a single-touch row must have moved off its start in nearly every coordinate
             nz = (~eq0).double().mean(1)
@@ -254,6 +260,8 @@ def analyse(W0, W1, child_dtype, d_common, fit=True):
     q = lambda x, p: float(np.quantile(x, p)) if len(x) else None
     return dict(
         rows=int(V), dim=int(d), identical=int(identical.sum()), P=P, P_exact_frac=Pscore, P_ls=P_ls,
+        unmoved_rule=("within %d ulp of P x parent (fp32)" % FP32_TOL_ULP) if child_dtype == torch.float32
+        else "bit-identical to round(P x parent)",
         lr_wd_integral=(-math.log(P) if P > 0 else None) if abs(P - 1) > 1e-7 else 0.0,
         unmoved=int(unmoved.sum()), near=int(near.sum()), moved=int(moved.sum()),
         flat=int(flat_rows.sum()),
