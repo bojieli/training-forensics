@@ -6,7 +6,7 @@ Release a fine-tuned model next to its base model, and anyone can list which voc
 contained. Tokens the training never saw keep vectors that are bit-identical to the base, and comparing the two
 files finds them. The list is a set of distinct tokens. It does not contain the text.
 
-**Read the article:** [ARTICLE URL]
+**Read the article:** https://x.com/bojie_li/status/2122536723041353841
 
 The method is Alapan Chaudhuri's ([@alapanchaudhuri](https://x.com/alapanchaudhuri)), from
 [his thread](https://x.com/alapanchaudhuri/status/2121439269772492848) of 14 Nov 2026. This repository is an
