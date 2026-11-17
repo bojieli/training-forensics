@@ -1,0 +1,249 @@
+{
+ "run": "g01_swap_wd",
+ "release": "fp32",
+ "tokens": {
+  "seen": 18498,
+  "moved": 18203,
+  "tp": 18203,
+  "fp": 0,
+  "fn": 295
+ },
+ "recipe_true": {
+  "kind": "cosine",
+  "N": 250,
+  "warmup": 0,
+  "peak": 0.0001,
+  "wd": 0.1
+ },
+ "recipe_read": {
+  "kind": "cosine",
+  "N": 250,
+  "warmup": 0,
+  "peak": 9.99995428794151e-05,
+  "peak_snap": 0.0001,
+  "wd": 0.09999312362276574,
+  "wd_snap": 0.1,
+  "min_ratio": 0.0,
+  "wd_interval": [
+   0.09998558085139284,
+   0.10000066639413864
+  ]
+ },
+ "recipe_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true,
+  "peak_rel_err": -4.571205849068782e-06,
+  "peak_snap_ok": true,
+  "wd_rel_err": -6.876377234255049e-05,
+  "steps": true,
+  "lr_max_rel_dev_snapped": 0.0,
+  "lr_max_rel_dev_raw": 4.571205849013705e-06,
+  "schedule_exact": true,
+  "shape_exact": true,
+  "decay_factors_exact": true,
+  "decay_factor_mismatch_steps": 0
+ },
+ "reader": "v2",
+ "replay_select": {
+  "conf": 0.9921875,
+  "recovered": true,
+  "hits": 195072,
+  "hits_reported": 195072,
+  "sample": 196608,
+  "n_candidates": 126,
+  "replay_ties": [
+   {
+    "kind": "cosine",
+    "N": 250,
+    "warmup": 0,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "cosine",
+    "N": 251,
+    "warmup": 1,
+    "min_ratio": 0.0
+   }
+  ],
+  "wd_interval": [
+   0.09998558085139284,
+   0.10000066639413864
+  ],
+  "screened": [
+   {
+    "kind": "cosine",
+    "N": 250,
+    "warmup": 0,
+    "min_ratio": 0.0,
+    "wd": 0.09998795553834962,
+    "screen_frac": 1.0
+   },
+   {
+    "kind": "cosine",
+    "N": 251,
+    "warmup": 1,
+    "min_ratio": 0.0,
+    "wd": 0.09998795553834962,
+    "screen_frac": 1.0
+   },
+   {
+    "kind": "cosine_min",
+    "N": 251,
+    "warmup": 10,
+    "min_ratio": 0.0,
+    "wd": 0.10170545637561389,
+    "screen_frac": 0.21986219618055555
+   },
+   {
+    "kind": "cosine_min",
+    "N": 251,
+    "warmup": 11,
+    "min_ratio": 0.0,
+    "wd": 0.10168113037653839,
+    "screen_frac": 0.21394856770833334
+   },
+   {
+    "kind": "cosine_min",
+    "N": 251,
+    "warmup": 12,
+    "min_ratio": 0.0,
+    "wd": 0.10169685083029478,
+    "screen_frac": 0.1942816840277778
+   },
+   {
+    "kind": "cosine_min",
+    "N": 251,
+    "warmup": 9,
+    "min_ratio": 0.0,
+    "wd": 0.10169145804028747,
+    "screen_frac": 0.1939019097222222
+   },
+   {
+    "kind": "cosine",
+    "N": 251,
+    "warmup": 3,
+    "min_ratio": 0.0,
+    "wd": 0.10166729540843555,
+    "screen_frac": 0.18766276041666666
+   },
+   {
+    "kind": "cosine_min",
+    "N": 251,
+    "warmup": 3,
+    "min_ratio": 0.0,
+    "wd": 0.10166729540843555,
+    "screen_frac": 0.18766276041666666
+   }
+  ]
+ },
+ "recipe_recovered": true,
+ "replay_refine": {
+  "reader": "v2",
+  "wd": 0.1,
+  "before": {
+   "kind": "cosine",
+   "N": 250,
+   "warmup": 0,
+   "wd_snap": 0.1
+  },
+  "after": {
+   "kind": "cosine",
+   "N": 250,
+   "warmup": 0
+  },
+  "sample_weights": 196608,
+  "hits": 195072
+ },
+ "n_from_data": null,
+ "recipe_weights_only": {
+  "kind": "cosine",
+  "N": 250,
+  "warmup": 0,
+  "peak": 9.99995428794151e-05,
+  "min_ratio": 0.0,
+  "decay_frac": 0.2,
+  "score": -0.9074138539509274,
+  "coverage": 1.0,
+  "resid": 8.024760120628471e-06
+ },
+ "n_source": "weights",
+ "weights_only_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true
+ },
+ "scope": "single-epoch runs, 125-1,000 steps; reader hypothesis class = blind.KINDS",
+ "decay_lut": {
+  "distinct_values": 24744,
+  "consistent": 0.9908106607530399,
+  "coverage_moved": 0.9999822602501419
+ },
+ "t_recipe": 919.3454358577728,
+ "placement": {
+  "docs": 4000,
+  "placed": 1553,
+  "exact": 1553,
+  "wrong": 0,
+  "status_counts": {
+   "ambiguous6": 18,
+   "ambiguous4": 53,
+   "ambiguous5": 23,
+   "ambiguous9": 32,
+   "ambiguous8": 26,
+   "has_unmoved_token": 135,
+   "ambiguous7": 22,
+   "placed": 1553,
+   "ambiguous10": 7,
+   "no_unique_token": 1398,
+   "ambiguous2": 615,
+   "ambiguous3": 75,
+   "ambiguous11": 12,
+   "inconsistent": 31
+  }
+ },
+ "seed": {
+  "true": 9,
+  "searched": "0..99999 + priority list",
+  "true_in_range": true,
+  "found": 9,
+  "hits": 1553,
+  "of": 1553,
+  "second": [
+   1234,
+   10
+  ]
+ },
+ "swap_reasons": {
+  "unmoved_token": 135,
+  "single_touch_wrong_step": 10
+ },
+ "placement_with_seed": 4000,
+ "swaps": {
+  "true": 40,
+  "flagged": 145,
+  "caught": 27,
+  "false_flags": 118
+ },
+ "tokens_replay": {
+  "moved": 18498,
+  "tp": 18498,
+  "fp": 0,
+  "fn": 0
+ },
+ "replay": {
+  "weights": 24653568,
+  "bit_exact": 24427018,
+  "zeros_exact": 29
+ },
+ "replay_shift1": {
+  "weights": 24653568,
+  "bit_exact": 341,
+  "zeros_exact": 29
+ },
+ "replay_shiftm1": {
+  "weights": 24653568,
+  "bit_exact": 193,
+  "zeros_exact": 29
+ }
+}

@@ -1,0 +1,258 @@
+{
+ "run": "f01_lin",
+ "release": "fp32",
+ "tokens": {
+  "seen": 17572,
+  "moved": 17473,
+  "tp": 17473,
+  "fp": 0,
+  "fn": 99
+ },
+ "recipe_true": {
+  "kind": "linear",
+  "N": 439,
+  "warmup": 13,
+  "peak": 3.3e-05,
+  "wd": 0.027
+ },
+ "recipe_read": {
+  "kind": "linear",
+  "N": 439,
+  "warmup": 13,
+  "peak": 3.3001452464210736e-05,
+  "peak_snap": 3.3001452464210736e-05,
+  "wd": 0.02699038017495637,
+  "wd_snap": 0.02699038017495637,
+  "min_ratio": 0.0,
+  "wd_interval": [
+   0.02697923851428173,
+   0.027001521835631013
+  ]
+ },
+ "recipe_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true,
+  "peak_rel_err": 4.401406699194865e-05,
+  "peak_snap_ok": false,
+  "wd_rel_err": -0.00035628981643076596,
+  "steps": true,
+  "lr_max_rel_dev_snapped": 4.401406699192685e-05,
+  "lr_max_rel_dev_raw": 4.401406699192685e-05,
+  "schedule_exact": false,
+  "shape_exact": true,
+  "decay_factors_exact": true,
+  "decay_factor_mismatch_steps": 0
+ },
+ "reader": "v2",
+ "replay_select": {
+  "conf": 1.0,
+  "recovered": true,
+  "hits": 196608,
+  "hits_reported": 196608,
+  "sample": 196608,
+  "n_candidates": 76,
+  "replay_ties": [
+   {
+    "kind": "linear",
+    "N": 439,
+    "warmup": 13,
+    "min_ratio": 0.0
+   }
+  ],
+  "wd_interval": [
+   0.02697923851428173,
+   0.027001521835631013
+  ],
+  "screened": [
+   {
+    "kind": "linear",
+    "N": 439,
+    "warmup": 13,
+    "min_ratio": 0.0,
+    "wd": 0.026979238514300792,
+    "screen_frac": 1.0
+   },
+   {
+    "kind": "linear",
+    "N": 440,
+    "warmup": 9,
+    "min_ratio": 0.0,
+    "wd": 0.02665847626601743,
+    "screen_frac": 0.4687228732638889
+   },
+   {
+    "kind": "linear",
+    "N": 441,
+    "warmup": 12,
+    "min_ratio": 0.0,
+    "wd": 0.02686441477413435,
+    "screen_frac": 0.4584418402777778
+   },
+   {
+    "kind": "linear",
+    "N": 440,
+    "warmup": 13,
+    "min_ratio": 0.0,
+    "wd": 0.02690786509068107,
+    "screen_frac": 0.4558376736111111
+   },
+   {
+    "kind": "linear",
+    "N": 441,
+    "warmup": 9,
+    "min_ratio": 0.0,
+    "wd": 0.026551892312037417,
+    "screen_frac": 0.4467230902777778
+   },
+   {
+    "kind": "linear",
+    "N": 442,
+    "warmup": 9,
+    "min_ratio": 0.0,
+    "wd": 0.026460900806391834,
+    "screen_frac": 0.4456651475694444
+   },
+   {
+    "kind": "linear",
+    "N": 437,
+    "warmup": 14,
+    "min_ratio": 0.0,
+    "wd": 0.027113439526953956,
+    "screen_frac": 0.4323459201388889
+   },
+   {
+    "kind": "linear",
+    "N": 441,
+    "warmup": 13,
+    "min_ratio": 0.0,
+    "wd": 0.026817327656590433,
+    "screen_frac": 0.4249945746527778
+   }
+  ]
+ },
+ "recipe_recovered": true,
+ "replay_refine": {
+  "reader": "v2",
+  "wd": 0.02699038017495637,
+  "before": {
+   "kind": "linear",
+   "N": 439,
+   "warmup": 13,
+   "wd_snap": 0.027172398420244846
+  },
+  "after": {
+   "kind": "linear",
+   "N": 439,
+   "warmup": 13
+  },
+  "sample_weights": 196608,
+  "hits": 196608
+ },
+ "n_from_data": null,
+ "recipe_weights_only": {
+  "kind": "linear",
+  "N": 439,
+  "warmup": 13,
+  "peak": 3.3001452464210736e-05,
+  "min_ratio": 0.0,
+  "decay_frac": 0.2,
+  "score": -0.7029399017306077,
+  "coverage": 1.0,
+  "resid": 1.2479987574143259e-05
+ },
+ "n_source": "weights",
+ "weights_only_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true
+ },
+ "scope": "single-epoch runs, 125-1,000 steps; reader hypothesis class = blind.KINDS",
+ "decay_lut": {
+  "distinct_values": 24751,
+  "consistent": 0.99698463659854,
+  "coverage_moved": 0.9999835311385185
+ },
+ "t_recipe": 2169.8872587680817,
+ "placement": {
+  "docs": 3512,
+  "placed": 1133,
+  "exact": 1132,
+  "wrong": 1,
+  "status_counts": {
+   "ambiguous25": 2,
+   "ambiguous4": 67,
+   "has_unmoved_token": 36,
+   "ambiguous21": 15,
+   "ambiguous22": 16,
+   "ambiguous10": 25,
+   "ambiguous26": 1,
+   "ambiguous5": 54,
+   "ambiguous16": 7,
+   "ambiguous8": 21,
+   "ambiguous20": 15,
+   "no_unique_token": 1092,
+   "ambiguous3": 116,
+   "ambiguous17": 8,
+   "ambiguous24": 7,
+   "ambiguous7": 28,
+   "ambiguous23": 6,
+   "ambiguous19": 15,
+   "ambiguous2": 696,
+   "ambiguous9": 14,
+   "inconsistent": 15,
+   "placed": 1133,
+   "ambiguous13": 3,
+   "ambiguous12": 13,
+   "ambiguous15": 16,
+   "ambiguous14": 7,
+   "ambiguous11": 10,
+   "ambiguous6": 56,
+   "ambiguous18": 18
+  }
+ },
+ "seed": {
+  "true": 48127,
+  "searched": "0..99999 + priority list",
+  "true_in_range": true,
+  "found": 48127,
+  "hits": 1132,
+  "of": 1133,
+  "second": [
+   32013,
+   12
+  ]
+ },
+ "swap_reasons": {
+  "unmoved_token": 36,
+  "single_touch_wrong_step": 2
+ },
+ "placement_with_seed": 3512,
+ "swaps": {
+  "true": 0,
+  "flagged": 38,
+  "caught": 0,
+  "false_flags": 38
+ },
+ "tokens_replay": {
+  "moved": 17572,
+  "tp": 17572,
+  "fp": 0,
+  "fn": 0
+ },
+ "replay": {
+  "weights": 25214208,
+  "bit_exact": 25138178,
+  "zeros_exact": 28
+ },
+ "replay_shift1": {
+  "weights": 25214208,
+  "bit_exact": 28,
+  "zeros_exact": 28
+ },
+ "replay_shiftm1": {
+  "weights": 25214208,
+  "bit_exact": 28,
+  "zeros_exact": 28
+ }
+}

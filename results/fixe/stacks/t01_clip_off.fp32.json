@@ -1,0 +1,289 @@
+{
+ "run": "t01_clip_off",
+ "release": "fp32",
+ "tokens": {
+  "seen": 18538,
+  "moved": 18461,
+  "tp": 18461,
+  "fp": 0,
+  "fn": 77
+ },
+ "recipe_true": {
+  "kind": "linear",
+  "N": 500,
+  "warmup": 20,
+  "peak": 5e-05,
+  "wd": 0.1
+ },
+ "recipe_read": {
+  "kind": "linear",
+  "N": 500,
+  "warmup": 20,
+  "peak": 4.999681848650778e-05,
+  "peak_snap": 5e-05,
+  "wd": 0.09999659056031862,
+  "wd_snap": 0.1,
+  "min_ratio": 0.0,
+  "wd_interval": [
+   0.09998983266538211,
+   0.10000334845525512
+  ]
+ },
+ "recipe_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true,
+  "peak_rel_err": -6.36302698444613e-05,
+  "peak_snap_ok": true,
+  "wd_rel_err": -3.409439681378856e-05,
+  "steps": true,
+  "lr_max_rel_dev_snapped": 0.0,
+  "lr_max_rel_dev_raw": 6.363026984449621e-05,
+  "schedule_exact": true,
+  "shape_exact": true,
+  "decay_factors_exact": true,
+  "decay_factor_mismatch_steps": 0
+ },
+ "reader": "v2",
+ "replay_select": {
+  "conf": 1.0,
+  "recovered": true,
+  "hits": 196608,
+  "hits_reported": 196608,
+  "sample": 196608,
+  "n_candidates": 75,
+  "replay_ties": [
+   {
+    "kind": "linear",
+    "N": 500,
+    "warmup": 20,
+    "min_ratio": 0.0
+   }
+  ],
+  "wd_interval": [
+   0.09998983266538211,
+   0.10000334845525512
+  ],
+  "screened": [
+   {
+    "kind": "linear",
+    "N": 500,
+    "warmup": 20,
+    "min_ratio": 0.0,
+    "wd": 0.09999221685116474,
+    "screen_frac": 1.0
+   },
+   {
+    "kind": "linear",
+    "N": 499,
+    "warmup": 20,
+    "min_ratio": 0.0,
+    "wd": 0.1001989214490294,
+    "screen_frac": 0.2937554253472222
+   },
+   {
+    "kind": "linear",
+    "N": 502,
+    "warmup": 20,
+    "min_ratio": 0.0,
+    "wd": 0.09960442219022977,
+    "screen_frac": 0.2550184461805556
+   },
+   {
+    "kind": "linear",
+    "N": 501,
+    "warmup": 20,
+    "min_ratio": 0.0,
+    "wd": 0.09980005554126048,
+    "screen_frac": 0.2424587673611111
+   },
+   {
+    "kind": "linear",
+    "N": 500,
+    "warmup": 15,
+    "min_ratio": 0.0,
+    "wd": 0.09897088624309601,
+    "screen_frac": 0.22938368055555555
+   },
+   {
+    "kind": "linear",
+    "N": 502,
+    "warmup": 21,
+    "min_ratio": 0.0,
+    "wd": 0.09957825549024839,
+    "screen_frac": 0.2245551215277778
+   },
+   {
+    "kind": "linear",
+    "N": 505,
+    "warmup": 20,
+    "min_ratio": 0.0,
+    "wd": 0.09846284036036677,
+    "screen_frac": 0.2164984809027778
+   },
+   {
+    "kind": "linear",
+    "N": 504,
+    "warmup": 20,
+    "min_ratio": 0.0,
+    "wd": 0.09920522621814416,
+    "screen_frac": 0.2119683159722222
+   }
+  ]
+ },
+ "recipe_recovered": true,
+ "replay_refine": {
+  "before": {
+   "warmup": 20,
+   "N": 500
+  },
+  "after": {
+   "warmup": 20,
+   "N": 500
+  },
+  "form": "mul",
+  "bit_exact_sample": 1533696,
+  "sample_weights": 1536000,
+  "changed": false
+ },
+ "n_from_data": null,
+ "recipe_weights_only": {
+  "kind": "linear",
+  "N": 500,
+  "warmup": 20,
+  "peak": 4.999681848650778e-05,
+  "min_ratio": 0.0,
+  "decay_frac": 0.2,
+  "score": -0.6995498314506463,
+  "coverage": 0.997979797979798,
+  "resid": 3.6310864821587074e-06
+ },
+ "n_source": "weights",
+ "weights_only_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true
+ },
+ "scope": "single-epoch runs, 125-1,000 steps; reader hypothesis class = blind.KINDS",
+ "decay_lut": {
+  "distinct_values": 24734,
+  "consistent": 0.9975819270195438,
+  "coverage_moved": 0.9999814501968113
+ },
+ "t_recipe": 1907.98868227005,
+ "placement": {
+  "docs": 4000,
+  "placed": 1122,
+  "exact": 1122,
+  "wrong": 0,
+  "status_counts": {
+   "ambiguous4": 30,
+   "inconsistent": 1,
+   "ambiguous29": 1,
+   "ambiguous5": 77,
+   "no_unique_token": 1464,
+   "ambiguous9": 31,
+   "ambiguous22": 19,
+   "ambiguous19": 5,
+   "has_unmoved_token": 28,
+   "ambiguous11": 7,
+   "ambiguous6": 101,
+   "ambiguous13": 6,
+   "ambiguous2": 713,
+   "ambiguous18": 6,
+   "ambiguous3": 161,
+   "placed": 1122,
+   "ambiguous21": 27,
+   "ambiguous26": 9,
+   "ambiguous10": 29,
+   "ambiguous27": 12,
+   "ambiguous28": 5,
+   "ambiguous17": 10,
+   "ambiguous14": 5,
+   "ambiguous16": 5,
+   "ambiguous25": 11,
+   "ambiguous12": 15,
+   "ambiguous24": 6,
+   "ambiguous8": 5,
+   "ambiguous7": 50,
+   "ambiguous15": 10,
+   "ambiguous20": 15,
+   "ambiguous23": 14
+  }
+ },
+ "seed": {
+  "true": 101,
+  "searched": "0..99999 + priority list",
+  "true_in_range": true,
+  "found": 101,
+  "hits": 1122,
+  "of": 1122,
+  "second": [
+   31,
+   6
+  ]
+ },
+ "swap_reasons": {
+  "unmoved_token": 28
+ },
+ "placement_with_seed": 4000,
+ "swaps": {
+  "true": 0,
+  "flagged": 28,
+  "caught": 0,
+  "false_flags": 28
+ },
+ "tokens_replay": {
+  "moved": 18538,
+  "tp": 18538,
+  "fp": 0,
+  "fn": 0
+ },
+ "replay": {
+  "weights": 24455424,
+  "bit_exact": 24396288,
+  "zeros_exact": 26
+ },
+ "replay_shift1": {
+  "weights": 24455424,
+  "bit_exact": 29,
+  "zeros_exact": 26
+ },
+ "replay_shiftm1": {
+  "weights": 24455424,
+  "bit_exact": 26,
+  "zeros_exact": 26
+ },
+ "start_point": {
+  "chosen": "published",
+  "rows_consistent": 82
+ },
+ "stack": {
+  "world": 1,
+  "ga": 1,
+  "max_grad_norm": 0.0,
+  "deepspeed": null,
+  "fsdp": "",
+  "muon": "none",
+  "pack": null,
+  "pure_bf16": false,
+  "bf16": false,
+  "master_saved": true,
+  "optimizer": "AdamW"
+ },
+ "grad_norm_logged": {
+  "n": 0,
+  "min": null,
+  "max": null,
+  "clip": 0.0
+ },
+ "decay_forms": {
+  "bit_exact": {
+   "mul": 24396288,
+   "fused": 1581064,
+   "cpuadam": 1581064
+  },
+  "weights": 24455424,
+  "best": "mul"
+ }
+}

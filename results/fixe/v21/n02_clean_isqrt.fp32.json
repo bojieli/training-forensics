@@ -1,0 +1,361 @@
+{
+ "run": "n02_clean_isqrt",
+ "release": "fp32",
+ "tokens": {
+  "seen": 18721,
+  "moved": 18721,
+  "tp": 18721,
+  "fp": 0,
+  "fn": 0
+ },
+ "recipe_true": {
+  "kind": "inverse_sqrt",
+  "N": 500,
+  "warmup": 37,
+  "peak": 4.3e-05,
+  "wd": 0.03
+ },
+ "recipe_read": {
+  "kind": "constant",
+  "N": 2556,
+  "warmup": 909,
+  "peak": 8.711367537631176e-06,
+  "peak_snap": 8.711367537631176e-06,
+  "wd": 0.017105421318787277,
+  "wd_snap": 0.017105421318787277,
+  "min_ratio": 0.0,
+  "wd_interval": null
+ },
+ "recipe_ok": {
+  "kind": false,
+  "N": false,
+  "warmup": false,
+  "peak_rel_err": -0.7974100572643913,
+  "peak_snap_ok": false,
+  "wd_rel_err": -0.42981928937375746,
+  "steps": false,
+  "lr_max_rel_dev_snapped": null,
+  "lr_max_rel_dev_raw": null,
+  "schedule_exact": false,
+  "shape_exact": false
+ },
+ "reader": "v2-unconfirmed: move fit (v1) reported",
+ "replay_select": {
+  "conf": 0.023671468098958332,
+  "recovered": false,
+  "hits": 4654,
+  "hits_reported": null,
+  "sample": 196608,
+  "n_candidates": 677,
+  "replay_ties": [
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 11,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 0,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 8,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 4,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 2,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 1,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 3,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 5,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 6,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 7,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 9,
+    "min_ratio": 0.0
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 10,
+    "min_ratio": 0.0
+   }
+  ],
+  "wd_interval": [
+   0.02394758983101059,
+   0.030789758368719264
+  ],
+  "screened": [
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 0,
+    "min_ratio": 0.0,
+    "wd": 0.030669614935471677,
+    "screen_frac": 0.024142795138888888
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 8,
+    "min_ratio": 0.0,
+    "wd": 0.030669614935471677,
+    "screen_frac": 0.024142795138888888
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 4,
+    "min_ratio": 0.0,
+    "wd": 0.030669614935471677,
+    "screen_frac": 0.024142795138888888
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 2,
+    "min_ratio": 0.0,
+    "wd": 0.030669614935471677,
+    "screen_frac": 0.024142795138888888
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 1,
+    "min_ratio": 0.0,
+    "wd": 0.030669614935471677,
+    "screen_frac": 0.024142795138888888
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 3,
+    "min_ratio": 0.0,
+    "wd": 0.030669614935471677,
+    "screen_frac": 0.024142795138888888
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 5,
+    "min_ratio": 0.0,
+    "wd": 0.030669614935471677,
+    "screen_frac": 0.024142795138888888
+   },
+   {
+    "kind": "constant",
+    "N": 1139,
+    "warmup": 6,
+    "min_ratio": 0.0,
+    "wd": 0.030669614935471677,
+    "screen_frac": 0.024142795138888888
+   }
+  ]
+ },
+ "recipe_recovered": false,
+ "replay_refine": {
+  "wd": 0.017105421318787277,
+  "before": {
+   "N": 2556,
+   "warmup": 909
+  },
+  "after": {
+   "N": 2556,
+   "warmup": 909
+  },
+  "sample_weights": 1536000,
+  "hits": 3
+ },
+ "n_from_data": null,
+ "recipe_weights_only": {
+  "kind": "constant",
+  "N": 2556,
+  "warmup": 909,
+  "peak": 8.711367537631176e-06,
+  "min_ratio": 0.0,
+  "decay_frac": 0.2,
+  "score": -0.9646458620294558,
+  "coverage": 0.6894957983193277,
+  "resid": 3.1027080540368956e-05
+ },
+ "n_source": "weights",
+ "weights_only_ok": {
+  "kind": false,
+  "N": false,
+  "warmup": false
+ },
+ "scope": "single-epoch runs, 125-1,000 steps; reader hypothesis class = blind.KINDS",
+ "decay_lut": {
+  "distinct_values": 24735,
+  "consistent": 1.0,
+  "coverage_moved": 0.9999818469232413
+ },
+ "t_recipe": 2438.689190864563,
+ "placement": {
+  "docs": 4000,
+  "placed": 53,
+  "exact": 0,
+  "wrong": 53,
+  "status_counts": {
+   "ambiguous37": 26,
+   "ambiguous17": 176,
+   "ambiguous19": 149,
+   "ambiguous11": 43,
+   "ambiguous34": 27,
+   "ambiguous12": 47,
+   "ambiguous8": 18,
+   "ambiguous61": 1,
+   "ambiguous24": 77,
+   "ambiguous31": 46,
+   "ambiguous53": 3,
+   "ambiguous74": 1,
+   "ambiguous64": 4,
+   "ambiguous55": 2,
+   "ambiguous30": 35,
+   "ambiguous26": 74,
+   "ambiguous43": 16,
+   "ambiguous20": 107,
+   "ambiguous23": 68,
+   "ambiguous60": 1,
+   "ambiguous62": 1,
+   "ambiguous15": 117,
+   "ambiguous6": 21,
+   "ambiguous32": 41,
+   "ambiguous2": 34,
+   "no_unique_token": 1427,
+   "ambiguous49": 5,
+   "ambiguous40": 22,
+   "ambiguous46": 11,
+   "ambiguous7": 29,
+   "ambiguous45": 13,
+   "ambiguous70": 1,
+   "ambiguous25": 72,
+   "ambiguous73": 1,
+   "ambiguous36": 29,
+   "ambiguous5": 19,
+   "ambiguous10": 30,
+   "ambiguous90": 1,
+   "ambiguous22": 114,
+   "ambiguous56": 5,
+   "ambiguous57": 2,
+   "ambiguous9": 13,
+   "ambiguous48": 10,
+   "ambiguous28": 48,
+   "ambiguous41": 11,
+   "ambiguous21": 96,
+   "ambiguous50": 7,
+   "ambiguous33": 49,
+   "ambiguous39": 23,
+   "ambiguous13": 76,
+   "ambiguous18": 132,
+   "ambiguous47": 7,
+   "ambiguous51": 4,
+   "ambiguous54": 2,
+   "ambiguous35": 38,
+   "ambiguous4": 25,
+   "ambiguous63": 2,
+   "ambiguous72": 1,
+   "ambiguous14": 87,
+   "ambiguous75": 1,
+   "ambiguous16": 131,
+   "inconsistent": 62,
+   "ambiguous67": 2,
+   "ambiguous52": 3,
+   "ambiguous27": 62,
+   "ambiguous58": 3,
+   "ambiguous44": 13,
+   "ambiguous87": 1,
+   "ambiguous38": 18,
+   "ambiguous68": 1,
+   "ambiguous65": 1,
+   "ambiguous59": 5,
+   "placed": 53,
+   "ambiguous42": 20,
+   "ambiguous3": 28,
+   "ambiguous29": 49
+  }
+ },
+ "seed": {
+  "true": 48213,
+  "searched": "0..99999 + priority list",
+  "true_in_range": true,
+  "found": 39098,
+  "hits": 4,
+  "of": 53,
+  "second": [
+   88639,
+   4
+  ]
+ },
+ "swap_reasons": {
+  "single_touch_wrong_step": 2563
+ },
+ "placement_with_seed": 10,
+ "swaps": {
+  "true": 0,
+  "flagged": 2563,
+  "caught": 0,
+  "false_flags": 2563
+ },
+ "tokens_replay": {
+  "moved": 50304,
+  "tp": 18721,
+  "fp": 31583,
+  "fn": 0
+ },
+ "replay": {
+  "weights": 24255744,
+  "bit_exact": 28,
+  "zeros_exact": 28
+ },
+ "replay_shift1": {
+  "weights": 24255744,
+  "bit_exact": 28,
+  "zeros_exact": 28
+ },
+ "replay_shiftm1": {
+  "weights": 24255744,
+  "bit_exact": 28,
+  "zeros_exact": 28
+ }
+}

@@ -1,0 +1,297 @@
+{
+ "run": "t08_ds_z2_dsopt",
+ "release": "fp32",
+ "tokens": {
+  "seen": 18538,
+  "moved": 18490,
+  "tp": 18490,
+  "fp": 0,
+  "fn": 48
+ },
+ "recipe_true": {
+  "kind": "linear",
+  "N": 500,
+  "warmup": 20,
+  "peak": 5e-05,
+  "wd": 0.1
+ },
+ "recipe_read": {
+  "kind": "linear",
+  "N": 199,
+  "warmup": 5,
+  "peak": 7.752616758348928e-05,
+  "peak_snap": 7.752616758348928e-05,
+  "wd": 0.1620385162034293,
+  "wd_snap": 0.1620385162034293,
+  "min_ratio": 0.0,
+  "wd_interval": [
+   0.16202395334263126,
+   0.16205307906422736
+  ]
+ },
+ "recipe_ok": {
+  "kind": true,
+  "N": false,
+  "warmup": false,
+  "peak_rel_err": 0.5505233516697856,
+  "peak_snap_ok": false,
+  "wd_rel_err": 0.6203851620342928,
+  "steps": false,
+  "lr_max_rel_dev_snapped": null,
+  "lr_max_rel_dev_raw": null,
+  "schedule_exact": false,
+  "shape_exact": false
+ },
+ "reader": "v2",
+ "replay_select": {
+  "conf": 0.2283782958984375,
+  "recovered": false,
+  "hits": 44901,
+  "hits_reported": 44901,
+  "sample": 196608,
+  "n_candidates": 632,
+  "replay_ties": [
+   {
+    "kind": "linear",
+    "N": 199,
+    "warmup": 8,
+    "min_ratio": 0.0
+   }
+  ],
+  "wd_interval": [
+   0.25122192318760556,
+   0.25126708329907455
+  ],
+  "screened": [
+   {
+    "kind": "linear",
+    "N": 202,
+    "warmup": 11,
+    "min_ratio": 0.0,
+    "wd": 0.24751665886773694,
+    "screen_frac": 0.2506510416666667
+   },
+   {
+    "kind": "linear",
+    "N": 201,
+    "warmup": 6,
+    "min_ratio": 0.0,
+    "wd": 0.2487301826491512,
+    "screen_frac": 0.22648111979166666
+   },
+   {
+    "kind": "linear",
+    "N": 199,
+    "warmup": 8,
+    "min_ratio": 0.0,
+    "wd": 0.2512279136039203,
+    "screen_frac": 0.22550455729166666
+   },
+   {
+    "kind": "linear",
+    "N": 199,
+    "warmup": 2,
+    "min_ratio": 0.0,
+    "wd": 0.25125271622644085,
+    "screen_frac": 0.2197808159722222
+   },
+   {
+    "kind": "linear",
+    "N": 198,
+    "warmup": 10,
+    "min_ratio": 0.0,
+    "wd": 0.25251321118587483,
+    "screen_frac": 0.21275499131944445
+   },
+   {
+    "kind": "linear",
+    "N": 199,
+    "warmup": 20,
+    "min_ratio": 0.0,
+    "wd": 0.25122318157062223,
+    "screen_frac": 0.21223958333333334
+   },
+   {
+    "kind": "linear",
+    "N": 211,
+    "warmup": 11,
+    "min_ratio": 0.0,
+    "wd": 0.23284302383360547,
+    "screen_frac": 0.211669921875
+   },
+   {
+    "kind": "linear",
+    "N": 199,
+    "warmup": 26,
+    "min_ratio": 0.0,
+    "wd": 0.2512545652821709,
+    "screen_frac": 0.2116427951388889
+   }
+  ]
+ },
+ "recipe_recovered": false,
+ "replay_refine": {
+  "before": {
+   "warmup": 8,
+   "N": 199
+  },
+  "after": {
+   "warmup": 5,
+   "N": 199
+  },
+  "form": "fused",
+  "bit_exact_sample": 386330,
+  "sample_weights": 1536000,
+  "changed": true
+ },
+ "n_from_data": null,
+ "recipe_weights_only": {
+  "kind": "linear",
+  "N": 500,
+  "warmup": 20,
+  "peak": 5.00000286750673e-05,
+  "min_ratio": 0.0,
+  "decay_frac": 0.2,
+  "score": -0.6289502809054351,
+  "coverage": 1.0,
+  "resid": 1.3634726360317595e-05
+ },
+ "n_source": "weights",
+ "weights_only_ok": {
+  "kind": true,
+  "N": true,
+  "warmup": true
+ },
+ "scope": "single-epoch runs, 125-1,000 steps; reader hypothesis class = blind.KINDS",
+ "decay_lut": {
+  "distinct_values": 3897,
+  "consistent": 0.9984922534759331,
+  "coverage_moved": 0.999991619907157
+ },
+ "t_recipe": 1854.0705506801605,
+ "placement": {
+  "docs": 4000,
+  "placed": 465,
+  "exact": 0,
+  "wrong": 465,
+  "status_counts": {
+   "ambiguous8": 4,
+   "placed": 465,
+   "inconsistent": 1601,
+   "ambiguous2": 282,
+   "ambiguous7": 7,
+   "ambiguous6": 21,
+   "no_unique_token": 1469,
+   "ambiguous3": 71,
+   "ambiguous11": 7,
+   "has_unmoved_token": 14,
+   "ambiguous5": 12,
+   "ambiguous9": 8,
+   "ambiguous10": 2,
+   "ambiguous4": 37
+  }
+ },
+ "seed": {
+  "true": 108,
+  "searched": "0..99999 + priority list",
+  "true_in_range": true,
+  "found": 51301,
+  "hits": 8,
+  "of": 465,
+  "second": [
+   26366,
+   7
+  ]
+ },
+ "swap_reasons": {
+  "unmoved_token": 14,
+  "single_touch_wrong_step": 2471
+ },
+ "placement_with_seed": 9,
+ "swaps": {
+  "true": 0,
+  "flagged": 2485,
+  "caught": 0,
+  "false_flags": 2485
+ },
+ "tokens_replay": {
+  "moved": 50304,
+  "tp": 18538,
+  "fp": 31766,
+  "fn": 0,
+  "form": "fused"
+ },
+ "replay": {
+  "weights": 24433152,
+  "bit_exact": 6138501,
+  "form": "fused"
+ },
+ "replay_shift1": {
+  "weights": 24433152,
+  "bit_exact": 87,
+  "form": "fused"
+ },
+ "replay_shiftm1": {
+  "weights": 24433152,
+  "bit_exact": 104,
+  "form": "fused"
+ },
+ "start_point": {
+  "chosen": "bf16-cast",
+  "rows_consistent": 2531
+ },
+ "stack": {
+  "world": 1,
+  "same_gpu": false,
+  "ga": 1,
+  "max_grad_norm": 1.0,
+  "deepspeed": {
+   "bf16": {
+    "enabled": true
+   },
+   "train_micro_batch_size_per_gpu": "auto",
+   "gradient_accumulation_steps": "auto",
+   "gradient_clipping": "auto",
+   "train_batch_size": "auto",
+   "steps_per_print": 1000000,
+   "wall_clock_breakdown": false,
+   "zero_optimization": {
+    "stage": 2,
+    "overlap_comm": false,
+    "contiguous_gradients": true
+   },
+   "optimizer": {
+    "type": "AdamW",
+    "params": {
+     "lr": "auto",
+     "betas": "auto",
+     "eps": "auto",
+     "weight_decay": "auto"
+    }
+   }
+  },
+  "fsdp": "",
+  "muon": "none",
+  "pack": null,
+  "pure_bf16": false,
+  "bf16": true,
+  "master_saved": true,
+  "optimizer": "FusedAdam"
+ },
+ "grad_norm_logged": {
+  "n": 20,
+  "min": 82.23627471923828,
+  "max": 1792.7103271484375,
+  "clip": 1.0
+ },
+ "param_equals_master_bf16": true,
+ "decay_forms": {
+  "bit_exact": {
+   "mul": 2986353,
+   "fused": 6138501,
+   "cpuadam": 6138501
+  },
+  "weights": 24433152,
+  "best": "fused"
+ }
+}
