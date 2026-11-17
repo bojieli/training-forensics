@@ -67,7 +67,7 @@ How to rerun everything: [`REPRODUCE.md`](REPRODUCE.md).
 Side findings: pythia-12b checkpoints `step50000`/`step58000` contain the final model's padding vectors;
 pythia-2.8b's padding vectors are bit-identical to step 0 in 85 of 153 later checkpoints (incl. the final one).
 
-### Controlled fine-tunes (`results/controlled/CONTROLLED.md`, `results/gaps/GAPS.md`, `results/fixc/FIXC.md`)
+### Controlled fine-tunes (`results/controlled/CONTROLLED.md`, `results/gaps/GAPS.md`, `results/fixc/FIXC.md`, `results/fixe/FIXE.md`)
 
 24 fine-tunes with full ground truth: Pythia-160m/410m (full fine-tuning) and Qwen2.5-7B (token vectors +
 output layer, LoRA with trained token vectors, weight decay, batch 128, two epochs), linear / cosine / constant /
@@ -76,22 +76,27 @@ from (start, release) and only then scored against the trainer's logged learning
 scored with one version of the code (the five Qwen2.5-7B runs were retrained for this).
 
 **Scope of these numbers.** The 24 runs are single-epoch (one is two-epoch and unsolved), use round
-hyper-parameters, seeds below 100,000 and one of the reader's five schedule families. On five further runs
-trained *after* the reader was frozen, with non-round learning rates and weight decay, random 32-bit seeds and one
-schedule outside the five families, the reader does much worse (row "fresh runs" below).
+hyper-parameters, seeds below 100,000 and one of the reader's five schedule families. Non-round settings were
+tested twice, each time on runs trained *after* the reader was frozen. Reader v1 recovered the schedule on 2 of 5
+such runs (non-round learning rates and weight decay, two random 32-bit seeds, one schedule outside the five
+families). Reader v2 was built to fix that; on four further runs it recovered two exactly and reported the other
+two as "not recovered" (rows "fresh runs" below).
 
 | What is recovered or estimated | Result |
 |---|---|
 | Tokens seen (updated vectors = tokens in the data) | **recovered exactly in 24 / 24**, no false positive: directly where there was no weight decay, and via the bit-exact decay replay (which needs the full recipe) where there was. The direct comparison alone misses 10-469 late-updated tokens in decay runs. |
 | Recipe: schedule, steps, warm-up, peak (and weight decay) | **exact in 22 / 24**; peak within 0.12% before rounding to a round value. Misses: r05 (501 steps read for 500) and the two-epoch run. |
 | Step count from the weights alone (no claimed dataset or batch size) | Kind, step count and warm-up right in **24 of 25** pre-existing Pythia runs; the dataset-implied step count was never needed. |
-| Fresh runs trained after the reader was frozen | Full schedule recovered in **2 of 5**. Two with non-round weight decay misread (0.013 read as 0.015; 738 steps for 500), one out-of-family schedule wrong. Each wrong recipe shows in the replay check (28 to 802,448 of about 24.4M weights bit-exact, against 24,419,699 when right). The direct token list had no false positive in any of the five. |
-| Shuffle seed (HF Trainer) | Recovered in every one of the 24 runs where it was searched (all but the two-epoch run). The search covers seeds 0-99,999; a random 32-bit seed is outside it and is not found (fresh runs). |
+| Fresh runs, reader v1 (five runs trained after v1 was frozen, tag `fixc-frozen`) | Full schedule recovered in **2 of 5**. Two with non-round weight decay misread (0.013 read as 0.015; 738 steps for 500), one out-of-family schedule wrong. Each wrong recipe shows in the replay check (28 to 802,448 of about 24.4M weights bit-exact, against 24,419,699 when right). The direct token list had no false positive in any of the five. |
+| Reader v2 on the runs it was developed on ([`results/fixe/FIXE.md`](results/fixe/FIXE.md)) | v2 fits the weight decay continuously (v1 tried round values only) and chooses the schedule by bit-exact replay of the never-updated weights. It reports a recipe as recovered only if the replay reproduces at least 95% of a sample of those weights (correct recipes reproduce 98-100%). The five v1 fresh runs were used to develop it, so they are not a blind test of v2. On n03 (linear, weight decay 0.013) v1 was wrong: warm-up 18 for 17, decay 0.015, and its replay listed 31,687 tokens as updated that were not in the data. v2 is exact there: schedule, step count, warm-up and every step's decay factor, the seed, the token list (18,617 / 18,617, no false positive) and 1,113 documents in their exact step (3 wrong). n02 (inverse square root, outside the five families) and n05 (cosine to a floor, warm-up 31) are still wrong and are now reported as not recovered (2% and 59% of the sample reproduced). Every earlier run with weight decay that was re-scored (seven controlled runs, six training setups) gives the same recipe, seed, token list and document steps as under v1. |
+| Fresh runs, reader v2 (four runs trained after v2 was frozen, tag `reader-v2-frozen`, commit ef4ad5c; analysed blind) | Non-round peak learning rate, weight decay, step count and warm-up; seeds below 100,000. **2 of 4 recovered** (f01 linear, f02 cosine): schedule, step count, warm-up and every step's decay factor exact, seed recovered, token list exact via replay (17,572 / 17,572 and 20,091 / 20,091, no false positive), 1,132 and 1,413 documents in their exact step (1 and 2 wrong), 25,138,178 of 25,214,208 and 23,205,677 of 23,524,608 never-updated weights bit-exact (one step off: 28 and 470). **2 of 4 reported as not recovered**: f03 (cosine to a floor, a schedule the reader models; 55% of the sample reproduced) and f04 (inverse square root, which it does not model; 8%). No wrong recipe was reported as recovered. |
+| Change made after the v2 freeze (v2.1, tag `reader-v2.1`, commit 696ef43) | When the replay confirms no candidate, v2.1 reports the v1 estimate, still marked not recovered, where v2 reported its best unconfirmed candidate. It was written after the fresh runs were scored. It changes no run reported as recovered and no run's recovered / not recovered status; the (wrong) estimates printed for n02, n05, f03 and f04 differ between v2 and v2.1. It restored the DeepSpeed run t08, where v2 as frozen gave a wrong recipe (marked not recovered). |
+| Shuffle seed (HF Trainer) | Recovered in every one of the 24 runs where it was searched (all but the two-epoch run). The search covers seeds 0-99,999; a random 32-bit seed is outside it and is not found (two of the v1 fresh runs). |
 | Documents in their exact step, from the weights alone | 4,000-document runs: 767-1,714 (19-43%); 8,000 docs: 16%; batch 128 (52,000 docs): 4.5%. Wrong placements are 0-7 in most runs; 51 in r09, 232 in r05, 7-253 in the Qwen2.5-7B runs. **All documents** once the seed is known. |
 | Replay of untouched weights | bit-exact: 473,769,019 of 473,804,800 weights (Qwen2.5-7B); one step off leaves ~1,100. Pythia-160m: about 24.4M; one step off leaves 26-279. |
 | 40 secretly swapped documents (s05) | v1: 24 caught, 3 false flags; **v2: 27 caught, 0 false flags**. Over five swap runs v2 catches 137 / 200 with 7 false flags. |
 | False swap flags on runs with no swap (v2) | 3 in total over 18 clean Pythia runs; 0 / 0 / 0 / 2 on the four clean Qwen2.5-7B runs; 266 on r05, whose step count is one off. |
-| Swap test on the fresh runs | **Not usable**: the seed was not recovered with confidence on any of the five, and without that gate the test flags 2,314-2,558 clean documents per run. |
+| Swap test on the five v1 fresh runs | **Not usable** with reader v1: the seed was not recovered with confidence on any of the five, and without that gate the test flags 2,314-2,558 clean documents per run. The swap test has not been re-run with reader v2. |
 | Membership inference (was this document in the training data?) | With the step curve taken from the weights alone, at a 0.1% false-positive rate: **43.6% [42.1, 45.2]** (m01, Alpaca), **45.0% [43.5, 46.6]** (g05, Wikipedia) and **46.0% [44.4, 47.6]** (n06, trained after the method was frozen); 95% Clopper-Pearson intervals. LiRA with 8 shadow fine-tunes finds 51.4%, 82.5% and 77.0% at the same point, so it is more accurate; this method needs no shadow training. Loss, reference-model and Min-K% attacks: 0.5-4.2%. The zero-false-positive point is unstable (5.9% on g05, 27.3% on n06) and is not a headline. |
 
 Misses: r05 (warmup-stable-decay at batch 8) is estimated one step long (a 380-step flat stage leaves the
@@ -103,15 +108,19 @@ What made the estimates work, beyond the thread's description: each token's chan
 of its sorted changes (Adam's eps shrinks small-gradient numbers), a mixture likelihood over steps with a
 detection floor, decay strength tied to the total decay P for every candidate schedule, a coarse first pass
 over step counts, an exact decay map taken from the untouched vectors (fp32 rounding drift is otherwise as
-large as the changes), and weight decay and step count settled by bit-exact replay. The reader rounds the peak
-and the weight decay to round values, which is why non-round recipes fail.
+large as the changes), and weight decay and step count settled by bit-exact replay. Reader v1 tried only round
+values for the weight decay, which is why it failed on non-round recipes. Reader v2 fits the weight decay
+continuously and lets the bit-exact replay choose among the candidate schedules; it reports a round value only
+when that value gives exactly the same decay factors.
 
 **Training setups** ([`results/stacks/STACKS.md`](results/stacks/STACKS.md), Pythia-160m, weight decay 0.1):
 
 - Gradient clipping at 1.0 (active every step), gradient accumulation 4, two data-parallel ranks x accumulation 4,
   and DeepSpeed ZeRO-2 with DeepSpeed's fused AdamW: tokens (via replay), recipe and seed recovered, about 24.4M
   untouched weights bit-exact. The DeepSpeed run replays only with DeepSpeed's own weight-decay formula and the
-  start cast to 16 bits as DeepSpeed holds it.
+  start cast to 16 bits as DeepSpeed holds it. Reader v2's replay uses torch's formula and confirms nothing on
+  that run (23% of the sample); it is recovered as before only through the v2.1 fallback to the v1 estimate,
+  followed by the DeepSpeed-specific replay.
 - Packed sequences: tokens, recipe and seed recovered, 24,357,120 weights bit-exact. Packing changes the
   last-token rule: all 68 tokens that occur only at the end of a document were updated, because only each
   packed chunk's last token gets no gradient.
@@ -359,10 +368,10 @@ after the analysis; scope and exceptions are in the controlled-runs section abov
 | Thread claim | Here | Evidence |
 |---|---|---|
 | Updated vectors = tokens in the data (39,663 = 39,663) | **holds** | Exact in all 24 controlled runs (14k-45k tokens, Pythia and Qwen2.5-7B, LoRA, batch up to 128) and with DeepSpeed ZeRO-2, two ranks and packing; with weight decay, exact via replay. Exception: gradient clipping at 0.01 (replay gives 31,766 false positives). |
-| Recipe from the weights alone: schedule, steps, warm-up right in 15/15; peak within 0.01% | **mostly, for round recipes** | 22 / 24; step count from the weights alone right in 24 / 25 Pythia runs. On 5 fresh runs with non-round values: 2 / 5. |
+| Recipe from the weights alone: schedule, steps, warm-up right in 15/15; peak within 0.01% | **mostly for round recipes; in part for non-round ones** | 22 / 24; step count from the weights alone right in 24 / 25 Pythia runs. Non-round values, runs trained after each freeze: reader v1 recovered 2 / 5; reader v2 recovered 2 / 4 (linear, cosine) and reported the other 2 as not recovered (cosine to a floor, inverse square root). With non-round values the peak learning rate is an estimate (within 0.01% on those runs), not an exact value. |
 | 3,121 / 4,000 docs placed in their exact step | **partly** | From the weights alone: 767-1,714 of 4,000 (19-43%), fewer at larger batch; wrong placements up to 253. With the recovered seed: all. |
 | Shuffle seed found in every run | **holds within the search range** | Recovered in every pre-existing run where it was searched (seeds 0-99,999); random 32-bit seeds are not searched. |
-| 38 / 40 secretly swapped docs exposed, no false flag | **partly** | v2 test: 27 / 40 caught, 0 false flags on s05; 137 / 200 with 7 false flags over five swap runs; 266 false flags when the step count is one off; unusable without a confident seed (fresh runs). |
+| 38 / 40 secretly swapped docs exposed, no false flag | **partly** | v2 test: 27 / 40 caught, 0 false flags on s05; 137 / 200 with 7 false flags over five swap runs; 266 false flags when the step count is one off; unusable without a confident seed (v1 fresh runs). |
 | Replay of a stranger's public fine-tune: 25,463,296 weights matched bit for bit | **not tested on a public model yet** | On our own runs: Qwen2.5-7B, weight decay 0.1: 473,769,019 weights bit-exact; one step off: ~1,100. Pythia-160m: about 24.4M, one step off: 26-279. |
 | Membership: 64% at zero false alarms; strongest standard test 0.5% | **lower here** | 44-46% at a 0.1% false-positive rate on three sets; LiRA with 8 shadow fine-tunes reaches 51-83% at the same point. The zero-false-positive point is unstable (5.9-41%). |
 | Two epochs: both timestamps within 1% for 93-97% of twice-seen tokens | **lower here** | 61-69% when the two sightings are ~5,000 steps apart; 0.7% when 500 apart. The two-epoch Qwen run is unsolved, also by a joint fit. |
@@ -391,8 +400,16 @@ make roster      # token-vector comparisons over the roster pairs (needs the che
   needs the margin rule, and the "token record" class only shows shared ancestry.
 - **16-bit resolution.** A total shrink below about 0.2% and updates below the detection floor are invisible in a
   16-bit release; "bit-identical" there means "no change above the floor".
-- **Round recipes only, so far.** The reader rounds the peak learning rate and weight decay to round values and
-  searches five schedule families and seeds below 100,000; outside that it fails visibly (the replay check drops).
+- **Non-round recipes: recovered for linear and cosine schedules only, on few runs.** Reader v2 recovered the
+  four such runs it was given (n01 and n03 in development; f01 and f02 blind). Cosine to a floor with a warm-up and
+  non-round settings is still wrong on 2 of 2 runs (n05 in development, f03 blind; warm-ups of 31 and 41 steps),
+  although r12 (round settings, no warm-up) is exact. Schedules outside the five families are not modelled. In
+  both cases the reader reports "not recovered", and the recipe it prints then is not to be used. The blind test
+  is four runs of one model on one dataset, single-epoch, 439-643 steps. Seeds are searched below 100,000 only.
+- **With non-round settings the weights fix a product, not its parts.** The never-updated weights fix only
+  learning rate x weight decay at each step (each step's fp32 decay factor, exactly). The peak learning rate
+  alone is estimated from the sizes of the updates, to about 1e-4 of its value (0.001-0.008% off on the four
+  non-round runs recovered), and the weight decay follows from it (0.02699 estimated for 0.027 on f01).
 - **Weight decay needs the exact decay map and the trainer's own formula.** Every number is multiplied by an
   fp32-rounded (1 - lr x wd) each step; the rounding drift is comparable to the changes at low learning rates.
   DeepSpeed's fused AdamW needs its own decay formula and a 16-bit-cast start.
