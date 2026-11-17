@@ -8,7 +8,7 @@
   "results/published/PUBLISHED.md (main table)",
   "results/large/LARGE.md (Tulu 3 405B, sft, truncated as in training)"
  ],
- "note": "Counts are distinct vocabulary tokens. For Tulu 3 405B the 'token vectors changed' cell is the number of in-data tokens that changed (124,327 of 124,572); 0 regular tokens outside the data were updated.",
+ "note": "Counts are distinct vocabulary tokens. The five exact matches are drawn. Tulu 3 405B's SFT stage (124,327 of 124,572 in-data tokens changed; 0 regular tokens outside the data were updated) is checked here and reported in the article text, but not drawn.",
  "rows": [
   {
    "fine_tune": "s1-32B",
@@ -49,7 +49,9 @@
    "both": 65554,
    "in_data_identical": 0,
    "changed_not_in_data": 0
-  },
+  }
+ ],
+ "not_drawn": [
   {
    "fine_tune": "Tulu 3 405B (SFT stage)",
    "in_data": 124572,

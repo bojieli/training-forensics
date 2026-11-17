@@ -59,35 +59,28 @@ def T(x, y, s, size=26, color=INK, weight="normal", ha="left"):
     ax.text(x, y, s, fontsize=size * 0.72, color=color, fontweight=weight, ha=ha, va="center")
 
 
-T(60, 58, "Published training data against the released weights", 40, weight="bold")
-T(60, 108, "Counts of distinct vocabulary tokens. A token vector that changed = a token the fine-tune was trained on.",
-  23, INK2)
+# Cover: five exact matches only, large enough to read as a thumbnail. Tulu 3 405B (close, not
+# exact) is reported in the article text and kept in the sidecar, not drawn.
+T(60, 62, "Published data matches the weights, token for token", 54, weight="bold")
+T(60, 124, "Five fine-tunes with public training data. Counts are distinct vocabulary tokens.", 29, INK2)
 
-X0, X1, X2, X3 = 60, 760, 1130, 1540
-y = 172
-T(X0, y, "Fine-tune", 22, INK3, "bold")
-T(X1, y, "Tokens in the published data", 22, INK3, "bold", ha="right")
-T(X2, y, "Token vectors changed", 22, INK3, "bold", ha="right")
-T(X3, y, "Result", 22, INK3, "bold", ha="right")
-ax.plot([X0, X3], [y + 26, y + 26], color=INK3, lw=1.5)
-RH = 62
-y0 = y + 26
+X0, X1, XE, X2, XR = 60, 850, 1085, 1320, 1540
+y = 190
+T(X0, y, "Fine-tune", 27, INK3, "bold")
+T(X1, y, "Tokens in its published data", 27, INK3, "bold", ha="center")
+T(X2, y, "Token vectors that changed", 27, INK3, "bold", ha="center")
+ax.plot([X0, XR], [y + 28, y + 28], color=INK3, lw=1.5)
+RH = 70
+y0 = y + 28
 for i, (name, r) in enumerate(table):
     yy = y0 + RH * i + RH / 2
     if i % 2 == 0:
-        ax.add_patch(Rectangle((X0 - 20, y0 + RH * i), X3 - X0 + 40, RH, fc=PALE, ec="none", zorder=0))
-    T(X0, yy, name, 28, weight="bold")
-    T(X1, yy, f"{r['in_data']:,}", 30, ha="right")
-    T(X2, yy, f"{r['changed']:,}", 30, ha="right")
-    T(X3, yy, "exact match", 28, BLUE, "bold", ha="right")
-i = len(table)
-yy = y0 + RH * i + RH / 2
-ax.plot([X0, X3], [y0 + RH * i, y0 + RH * i], color=GRID, lw=1.5)
-T(X0, yy, "Tulu 3 405B (SFT stage)", 28, weight="bold")
-T(X1, yy, f"{tulu['in_data']:,}", 30, ha="right")
-T(X2, yy, f"{tulu['both']:,}", 30, ha="right")
-T(X3, yy, f"all but {tulu['in_data_identical']}; {tulu['changed_not_in_data']} outside the data", 25, BLUE, "bold", ha="right")
-T(60, H - 34, "Method: @alapanchaudhuri.  Replication and data: github.com/bojieli/training-forensics", 20, INK3)
+        ax.add_patch(Rectangle((X0 - 20, y0 + RH * i), XR - X0 + 40, RH, fc=PALE, ec="none", zorder=0))
+    T(X0, yy, name, 34, weight="bold")
+    T(X1, yy, f"{r['in_data']:,}", 42, ha="center")
+    T(XE, yy - 2, "=", 46, BLUE, "bold", ha="center")
+    T(X2, yy, f"{r['changed']:,}", 42, BLUE, "bold", ha="center")
+T(60, H - 30, "Method: @alapanchaudhuri  ·  Replication and data: github.com/bojieli/training-forensics", 22, INK3)
 
 for ext in ("png", "svg"):
     fig.savefig(os.path.join(HERE, f"fig0_cover_matches.{ext}"), dpi=100, facecolor="white")
@@ -96,9 +89,11 @@ side = {
     "size_px": [W, H],
     "sources": ["results/published/PUBLISHED.md (main table)",
                 "results/large/LARGE.md (Tulu 3 405B, sft, truncated as in training)"],
-    "note": "Counts are distinct vocabulary tokens. For Tulu 3 405B the 'token vectors changed' cell is the "
-            "number of in-data tokens that changed (124,327 of 124,572); 0 regular tokens outside the data were updated.",
-    "rows": [{"fine_tune": n, **r} for n, r in table] + [{"fine_tune": "Tulu 3 405B (SFT stage)", **tulu}],
+    "note": "Counts are distinct vocabulary tokens. The five exact matches are drawn. Tulu 3 405B's SFT stage "
+            "(124,327 of 124,572 in-data tokens changed; 0 regular tokens outside the data were updated) is "
+            "checked here and reported in the article text, but not drawn.",
+    "rows": [{"fine_tune": n, **r} for n, r in table],
+    "not_drawn": [{"fine_tune": "Tulu 3 405B (SFT stage)", **tulu}],
 }
 json.dump(side, open(os.path.join(HERE, "fig0_cover_matches.json"), "w"), indent=1, ensure_ascii=False)
-print(json.dumps(side["rows"]))
+print(json.dumps(side["rows"] + side["not_drawn"]))

@@ -80,8 +80,8 @@ class Canvas:
         if sub2:
             self.text(40, 148, sub2, size=27, color=INK2)
 
-    def footer(self, s):
-        self.text(40, self.h - 24, s, size=19, color=INK3)
+    def footer(self, s, size=19):
+        self.text(40, self.h - 24, s, size=size, color=INK3)
 
     def swatch(self, x, y, color, label, sub=None, size=25, glyph=None, hatch=None):
         """legend entry; returns nothing. y is the centre line."""
@@ -122,10 +122,10 @@ def fig1():
             "Every token in the vocabulary has its own vector of numbers. "
             "Compare base model and fine-tune, token by token.")
 
-    X0, X1, CW, N = 430, 800, 37, 8          # strip left edges, cell width, cells
+    X0, X1, CW, N = 400, 770, 37, 8          # strip left edges, cell width, cells
     SW = CW * N
-    c.text(X0 + SW / 2, 172, "Base model", size=25, weight="bold", ha="center", color=INK2)
-    c.text(X1 + SW / 2, 172, "Fine-tuned model", size=25, weight="bold", ha="center", color=INK2)
+    c.text(X0 + SW / 2, 172, "Base model", size=27, weight="bold", ha="center", color=INK2)
+    c.text(X1 + SW / 2, 172, "Fine-tuned model", size=27, weight="bold", ha="center", color=INK2)
 
     vals = [0.62, -0.34, 0.80, -0.70, 0.24, 0.52, -0.50, 0.36]   # schematic shape, not data
     signs = [1, -1, -1, 1, 1, -1, 1, -1]
@@ -145,64 +145,61 @@ def fig1():
             hgt = v * 40 * scale
             c.rect(x + i * CW + 7, yc - max(hgt, 0), CW - 14, abs(hgt), color, z=z, alpha=alpha)
 
+    def badge(x, y, w, label, color, tcolor):
+        c.rect(x, y, w, 48, color, r=8)
+        c.text(x + w / 2, y + 23, label, size=27, weight="bold", ha="center", color=tcolor)
+
     for yc, label, kind in rows:
-        c.text(40, yc, label, size=29, weight="bold", linespacing=1.25)
+        c.text(40, yc, label, size=30, weight="bold", linespacing=1.25)
         strip(X0, yc)
         bars(X0, yc)
         c.arrow(X0 + SW + 22, yc, X1 - 22, yc)
         strip(X1, yc)
-        tx = X1 + SW + 40
+        tx = X1 + SW + 36
         if kind == "absent":
             bars(X1, yc)
-            c.rect(tx, yc - 46, 196, 44, ORANGE, r=8)
-            c.text(tx + 98, yc - 24, "bit-identical", size=25, weight="bold", ha="center")
-            c.text(tx, yc + 24, "No gradient reaches it, so no", size=24, color=INK2)
-            c.text(tx, yc + 54, "number changes at all.", size=24, color=INK2)
+            badge(tx, yc - 56, 210, "bit-identical", ORANGE, INK)
+            c.text(tx, yc + 20, "Training never touches it,", size=26, color=INK2)
+            c.text(tx, yc + 52, "so no number changes at all.", size=26, color=INK2)
         elif kind == "once":
             bars(X1, yc)
             for i, (v, s) in enumerate(zip(vals, signs)):
                 tip = yc - v * 40
                 xm = X1 + i * CW + CW / 2
-                col = BLUE if s > 0 else VERM
                 c.ax.add_patch(FancyArrowPatch((xm, tip), (xm, tip - s * 26), arrowstyle="-|>",
-                                               mutation_scale=17, color=col, lw=4, zorder=6,
+                                               mutation_scale=17, color=BLUE, lw=4, zorder=6,
                                                shrinkA=0, shrinkB=0))
-            c.rect(tx, yc - 70, 248, 44, BLUE, r=8)
-            c.text(tx + 124, yc - 48, "same step, up or down", size=23, weight="bold",
-                   ha="center", color="white")
-            c.text(tx, yc - 4, "Every number shifts by the same", size=24, color=INK2)
-            c.text(tx, yc + 26, f"small amount: about {ratio:.1f} × the", size=24, color=INK2)
-            c.text(tx, yc + 56, "learning rate at that step.", size=24, color=INK2)
+            badge(tx, yc - 73, 262, "one uniform shift", BLUE, "white")
+            c.text(tx, yc - 6, "Every number moves by the same", size=26, color=INK2)
+            c.text(tx, yc + 25, "small amount, up or down: about", size=26, color=INK2)
+            c.text(tx, yc + 56, f"{ratio:.1f} × the learning rate.", size=26, color=INK2)
         else:
             bars(X1, yc, color="#D2D2D2")
             bars(X1, yc, scale=0.72, color=GREEN, z=5)
-            c.rect(tx, yc - 46, 232, 44, GREEN, r=8)
-            c.text(tx + 116, yc - 24, "one exact shrink", size=25, weight="bold",
-                   ha="center", color="white")
-            c.text(tx, yc + 24, "The same factor for every such", size=24, color=INK2)
-            c.text(tx, yc + 54, "token; it can be replayed exactly.", size=24, color=INK2)
+            badge(tx, yc - 56, 278, "one uniform shrink", GREEN, "white")
+            c.text(tx, yc + 20, "Every such vector shrinks by", size=26, color=INK2)
+            c.text(tx, yc + 52, "exactly the same factor.", size=26, color=INK2)
     for y in (340, 496):
         c.line(40, y, 1560, y, color=GRID, lw=1.2)
 
     # what this recovers
     y0 = 672
     c.line(40, y0 - 18, 1560, y0 - 18, color=INK3, lw=1.5)
-    c.text(40, y0 + 14, "What the weights then give you", size=29, weight="bold")
+    c.text(40, y0 + 14, "What the weights then tell you", size=30, weight="bold")
     cards = [
-        (ORANGE, "The token list", "which vocabulary tokens", "the training data contained"),
-        (ORANGE, "Special tokens", "which chat, tool, thinking and", "image tokens were trained"),
-        (BLUE, "The schedule", "learning rate over time", "(32-bit releases only)"),
-        (GREEN, "Lineage", "which base model a", "release started from"),
+        ("The token list", "which vocabulary tokens the", "training data contained"),
+        ("The schedule", "how the learning rate changed", "over time (32-bit releases only)"),
+        ("The family", "which base model, or family of", "models, a release started from"),
     ]
-    cw = 368
-    for i, (col, head, l1, l2) in enumerate(cards):
+    cw = 496
+    for i, (head, l1, l2) in enumerate(cards):
         x = 40 + i * (cw + 16)
-        c.rect(x, y0 + 46, cw, 132, "#F6F6F6", r=10)
-        c.rect(x, y0 + 46, 10, 132, col, r=4)
-        c.text(x + 28, y0 + 78, head, size=28, weight="bold")
-        c.text(x + 28, y0 + 118, l1, size=23, color=INK2)
-        c.text(x + 28, y0 + 148, l2, size=23, color=INK2)
-    c.footer(f"Schematic, not to scale. Method: Alapan Chaudhuri. Replication: {REPO}")
+        c.rect(x, y0 + 44, cw, 132, "#F6F6F6", r=10)
+        c.rect(x, y0 + 44, 10, 132, INK3, r=4)
+        c.text(x + 30, y0 + 74, head, size=29, weight="bold")
+        c.text(x + 30, y0 + 114, l1, size=26, color=INK2)
+        c.text(x + 30, y0 + 146, l2, size=26, color=INK2)
+    c.footer(f"Schematic, not to scale. Method: Alapan Chaudhuri. Replication: {REPO}", size=22)
     c.save("fig1_mechanism", {
         "figure": "fig1_mechanism",
         "kind": "schematic diagram; bar heights and arrow directions are illustrative, not data",
@@ -223,56 +220,62 @@ def short_tok(t):
 def fig2():
     src = "frontier_ds/fig_b_deepseek_special_tokens.json"
     d = load(src)
-    rows = [("DeepSeek-V3", "V3-Base → V3"), ("DeepSeek-V3-0324", "V3-Base → V3-0324"),
-            ("DeepSeek-R1", "V3-Base → R1"), ("DeepSeek-R1-Zero", "V3-Base → R1-Zero")]
+    rows = [("V3", "V3-Base → V3"), ("V3-0324", "V3-Base → V3-0324"),
+            ("R1", "V3-Base → R1"), ("R1-Zero", "V3-Base → R1-Zero")]
     toks = list(d[rows[0][1]].keys())
     by = {short_tok(t): t for t in toks}
     groups = [
-        ("sentence markers", ["begin of sentence", "end of sentence", "pad"]),
-        ("code fill-in", ["fim hole", "fim begin", "fim end"]),
+        ("sentence\nmarkers", ["begin of sentence", "end of sentence", "pad"]),
+        ("code\nfill-in", ["fim hole", "fim begin", "fim end"]),
         ("chat", ["User", "Assistant", "EOT"]),
         ("tool calls", ["tool calls begin", "tool calls end", "tool call begin", "tool call end", "tool sep"]),
         ("tool outputs", ["tool outputs begin", "tool outputs end", "tool output begin", "tool output end"]),
     ]
+    # plain column labels for the abbreviated token names
+    shown = {"pad": "padding", "fim hole": "fill-in hole", "fim begin": "fill-in begin",
+             "fim end": "fill-in end", "EOT": "end of turn", "tool sep": "tool separator"}
     assert sorted(sum((g[1] for g in groups), [])) == sorted(by), sorted(by)
 
-    c = Canvas(1600, 900)
-    c.title("DeepSeek: which special tokens each release trained",
-            "Each square is one special token's vector, compared with DeepSeek-V3-Base.")
-    GX, GY, CWd, RH, GAP = 330, 372, 61, 80, 22
+    c = Canvas(1600, 940)
+    c.title("DeepSeek: which special tokens each release updated",
+            "Each square is one special token's vector, compared with the base model, DeepSeek-V3-Base.",
+            "R1 and R1-Zero left all nine tool tokens bit-identical.")
+    GX, GY, CWd, RH, GAP = 215, 388, 66, 82, 22
     x = GX
     cols = []
     for gname, names in groups:
         gx0 = x
         for n in names:
             cols.append((x, n))
-            c.text(x + CWd / 2 - 4, GY - 14, n, size=22, rotation=52, ha="left", va="bottom",
-                   rotation_mode="anchor")
+            c.text(x + CWd / 2 - 4, GY - 12, shown.get(n, n), size=25, rotation=52, ha="left",
+                   va="bottom", rotation_mode="anchor")
             x += CWd
         c.line(gx0 + 3, GY + 4 * RH + 16, x - 5, GY + 4 * RH + 16, color=INK3, lw=2.5)
-        c.text((gx0 + x) / 2, GY + 4 * RH + 44, gname, size=23, weight="bold", ha="center")
+        c.text((gx0 + x) / 2, GY + 4 * RH + 30, gname, size=27, weight="bold", ha="center",
+               va="top", linespacing=1.1)
         x += GAP
     grid = {}
     for r, (label, key) in enumerate(rows):
         y = GY + r * RH
-        c.text(40, y + RH / 2, label, size=27, weight="bold")
+        c.text(40, y + RH / 2, label, size=31, weight="bold")
         for cx, n in cols:
             st = d[key][by[n]]
             grid.setdefault(label, {})[n] = st
             c.rect(cx + 3, y + 3, CWd - 6, RH - 6, STATE[st], r=7)
             if st == "bit-identical":
-                c.text(cx + CWd / 2, y + RH / 2 - 2, "=", size=34, weight="bold", ha="center")
-    ly = GY + 4 * RH + 118
-    c.swatch(330, ly, ORANGE, "bit-identical to V3-Base", glyph="=")
-    c.swatch(720, ly, BLUE, "updated")
-    c.text(900, ly, "R1 and R1-Zero left all nine tool tokens bit-identical.", size=24, color=INK2)
-    c.footer(f"Source: results/frontier_ds/fig_b_deepseek_special_tokens.json · {REPO}")
+                c.text(cx + CWd / 2, y + RH / 2 - 2, "=", size=36, weight="bold", ha="center")
+    ly = GY + 4 * RH + 140
+    c.swatch(GX, ly, ORANGE, "bit-identical to V3-Base", glyph="=", size=28)
+    c.swatch(GX + 430, ly, BLUE, "updated", size=28)
+    c.footer(REPO, size=22)
     c.save("fig2_deepseek_special_tokens", {
         "figure": "fig2_deepseek_special_tokens",
         "sources": ["results/" + src],
-        "note": "Token names shortened from the tokenizer strings; grouping and column order are ours "
+        "note": "Token names shortened from the tokenizer strings and written out (fim = fill-in, "
+                "EOT = end of turn, pad = padding, sep = separator); grouping and column order are ours "
                 "(tool sep is drawn with the tool-call tokens, as in the article's '5 tool-call tokens').",
         "rows": {label: key for label, key in rows},
+        "column_labels": {n: shown.get(n, n) for _, n in cols},
         "values": grid,
     })
 
@@ -298,61 +301,65 @@ def fig3():
         ("Olmo-3-7B-Instruct-SFT", "allenai/Olmo-3-7B-Instruct-SFT"),
         ("Kimi-K2-Thinking", "moonshotai/Kimi-K2-Thinking"),
     ]
-    cats = [("chat markers", "chat"), ("tool calls", "tool calls"), ("thinking", "thinking"),
-            ("code fill-in", "code fill-in"), ("vision / audio", "image, audio"),
-            ("other", "other and\nreserved slots")]
+    # the source's "vision / audio" class holds image, video and grounding tokens everywhere, and
+    # audio tokens in one drawn release (Qwen3.5-35B-A3B)
+    cats = [("chat markers", "chat"), ("tool calls", "tool\ncalls"), ("thinking", "thinking"),
+            ("code fill-in", "code\nfill-in"), ("vision / audio", "image,\nvideo, audio"),
+            ("other", "other and\nreserved")]
     order = ["updated", "barely changed", "bit-identical", "replaced"]
-    RH, GY, GX, CWd = 62, 262, 470, 182
-    Hh = GY + RH * len(pick) + 150
+    RH, GY, GX, CWd = 66, 280, 480, 180
+    Hh = GY + RH * len(pick) + 210
     c = Canvas(1600, Hh)
-    c.title("Other labs: which kinds of special token each release trained",
+    c.title("Other labs: which kinds of special token each release updated",
             "Number of special tokens in each state, compared with the release's own base model.")
     for j, (_, lab) in enumerate(cats):
-        c.text(GX + j * CWd + CWd / 2, GY - 44, lab, size=24, weight="bold", ha="center",
+        c.text(GX + j * CWd + CWd / 2, GY - 50, lab, size=27, weight="bold", ha="center",
                linespacing=1.1)
     vals = {}
     for i, (label, rel) in enumerate(pick):
         y = GY + i * RH
         c.line(40, y, 1560, y, color=GRID, lw=1.2)
-        c.text(40, y + RH / 2, label, size=26, weight="bold")
+        c.text(40, y + RH / 2, label, size=28, weight="bold")
         cells = g[rel]["cells"]
         vals[label] = {"release": rel, "parent": g[rel]["parent"], "cells": cells}
         for j, (cat, _) in enumerate(cats):
             cell = cells.get(cat)
             cx = GX + j * CWd + CWd / 2
             if not cell:
-                c.text(cx, y + RH / 2, "–", size=24, color="#B0B0B0", ha="center")
+                c.text(cx, y + RH / 2, "–", size=26, color="#B0B0B0", ha="center")
                 continue
             items = [(s, cell[s]) for s in order if s in cell]
             assert len(items) == len(cell), cell
-            PW, PG = 54, 5
+            PW, PG = 62, 5
             tot = len(items) * PW + (len(items) - 1) * PG
             x = cx - tot / 2
             for s, n in items:
                 if s == "replaced":
-                    c.rect(x, y + 12, PW, RH - 24, "#E4E4E4", r=7, hatch="///", ec="#9A9A9A", lw=0.8)
-                    c.text(x + PW / 2, y + RH / 2, str(n), size=23, weight="bold", ha="center",
+                    c.rect(x, y + 11, PW, RH - 22, "#E4E4E4", r=7, hatch="///", ec="#9A9A9A", lw=0.8)
+                    c.text(x + PW / 2, y + RH / 2, str(n), size=27, weight="bold", ha="center",
                            bbox=dict(fc="#E4E4E4", ec="none", pad=1.5))
                 else:
-                    c.rect(x, y + 12, PW, RH - 24, STATE[s], r=7)
-                    c.text(x + PW / 2, y + RH / 2, str(n), size=23, weight="bold", ha="center",
+                    c.rect(x, y + 11, PW, RH - 22, STATE[s], r=7)
+                    c.text(x + PW / 2, y + RH / 2, str(n), size=27, weight="bold", ha="center",
                            color=STATE_TEXT[s])
                 x += PW + PG
     yb = GY + RH * len(pick)
     c.line(40, yb, 1560, yb, color=GRID, lw=1.2)
-    ly = yb + 48
-    c.swatch(40, ly, BLUE, "updated")
-    c.swatch(230, ly, ORANGE, "bit-identical to base")
-    c.swatch(560, ly, YELLOW, "barely changed (1% of its numbers or fewer)")
-    c.swatch(1160, ly, "#E4E4E4", "not testable (replaced)", hatch="///")
-    c.footer(f"Source: results/frontier/special_grid_nondeepseek.json · {REPO}")
+    ly = yb + 50
+    c.swatch(40, ly, BLUE, "updated", size=27)
+    c.swatch(760, ly, ORANGE, "bit-identical to the base", size=27)
+    c.swatch(40, ly + 56, YELLOW, "barely changed (1% of its numbers or fewer)", size=27)
+    c.swatch(760, ly + 56, "#E4E4E4", "not testable (vectors were replaced)", hatch="///", size=27)
+    c.footer(REPO, size=22)
     omitted = sorted(set(g) - {rel for _, rel in pick})
     c.save("fig3_special_tokens_other_labs", {
         "figure": "fig3_special_tokens_other_labs",
         "sources": ["results/" + src],
         "note": "13 of the 22 comparisons in the source are drawn. Omitted: sibling releases with the same "
                 "pattern, and three the source marks testable=false (Kimi-K2-Instruct, GLM-4.5, GLM-4.5-Air). "
-                "'replaced' in the source is drawn as 'not testable'.",
+                "'replaced' in the source is drawn as 'not testable'. The source class 'vision / audio' is "
+                "headed 'image, video, audio': it holds image, video and grounding tokens, plus audio "
+                "tokens in Qwen3.5-35B-A3B only.",
         "omitted_releases": omitted,
         "values": vals,
     })
@@ -372,30 +379,32 @@ def fig4():
     assert len(vocab) == 1
     vocab = vocab.pop()
     c = Canvas(1600, 900)
-    c.title("How much of each token vector changed",
+    c.title("DeepSeek: how much of each token vector changed",
             f"Each bar is all {vocab:,} vocabulary tokens of one release, compared with DeepSeek-V3-Base,",
             "grouped by the share of a token vector's numbers that differ.")
-    lx = [40, 420, 870, 1240]
+    lx = [40, 400, 860, 1230]
     for x, s in zip(lx, states):
-        c.swatch(x, 218, STATE[s], s, sub=defs[s])
-    BX, BW, BH = 330, 1230, 92
-    ys = [356, 520, 676]
+        c.rect(x, 203, 30, 30, STATE[s], r=5)
+        c.text(x + 42, 218, s, size=28, weight="bold")
+        c.text(x + 42, 252, defs[s], size=25, color=INK2)
+    BX, BW, BH = 250, 1310, 92
+    ys = [366, 530, 690]
     for k, y in zip(order, ys):
-        c.text(40, y + BH / 2, k.replace("DeepSeek-", ""), size=32, weight="bold")
+        c.text(40, y + BH / 2, k.replace("DeepSeek-", ""), size=34, weight="bold")
         x = BX
         small = []
         for s in states:
             v = d[k][s]
             w = BW * v / 100
             c.rect(x + 1.5, y, max(w - 3, 1.5), BH, STATE[s])
-            if v >= 4.5:
-                c.text(x + w / 2, y + BH / 2, f"{v:.1f}%", size=28, weight="bold", ha="center",
+            if v >= 5.5:
+                c.text(x + w / 2, y + BH / 2, f"{v:.1f}%", size=31, weight="bold", ha="center",
                        color=STATE_TEXT[s])
             else:
                 small.append(f"{s} {v:.1f}%")
             x += w
         if small:
-            c.text(BX, y + BH + 28, "Too thin to label:  " + "   ·   ".join(small), size=22, color=INK2)
+            c.text(BX, y + BH + 30, "Too thin to label:  " + "   ·   ".join(small), size=25, color=INK2)
     # bracket: R1-Zero lightly changed
     k = "DeepSeek-R1-Zero"
     a = BX + BW * d[k]["bit-identical"] / 100
@@ -405,9 +414,9 @@ def fig4():
     c.line(a + 3, yb, b - 3, yb, color=INK, lw=2.5)
     c.line(a + 3, yb, a + 3, yb + 9, color=INK, lw=2.5)
     c.line(b - 3, yb, b - 3, yb + 9, color=INK, lw=2.5)
-    c.text((a + b) / 2, yb - 24, f"{light:.1f}% changed in under 10% of their numbers", size=25,
+    c.text((a + b) / 2, yb - 26, f"{light:.1f}% changed in under 10% of their numbers", size=28,
            weight="bold", ha="center")
-    c.footer(f"Source: results/frontier/fig/a_change_histogram.json · {REPO}")
+    c.footer(REPO, size=22)
     c.save("fig4_change_share", {
         "figure": "fig4_change_share",
         "sources": ["results/" + src, "results/frontier/FRONTIER.md (state definitions; Figures note a)"],
@@ -511,59 +520,51 @@ def fig5():
     src = "frontier/fig/d_comparability.json"
     d = load(src)
     tot = d["totals"]
+    # one highlight colour for the usable record; the other six groups are grey. Blue and orange are
+    # not used here, because in figures 1 to 4 they mean "updated" and "bit-identical".
+    GREY = "#A6A6A6"
     classes = [
-        ("token record", BLUE, "Token record", "trainable tokens bit-identical: shared ancestry"),
-        ("untrainable only", ORANGE, "Only untrainable tokens shared", "shared random start; no data or lineage evidence"),
-        ("record, poor fit", SKY, "Record, imperfect decay fit", "treat token lists with care"),
-        ("changed throughout", YELLOW, "Every token vector changed", "fit above every separately trained pair"),
-        ("not comparable", VERM, "Not a decayed copy of that base", "Qwen3-235B-2507, Kimi-K2.5"),
-        ("unchanged", "#9A9A9A", "Token vectors not changed", "bit-identical to the base throughout"),
-        ("shared matrix", PURPLE, "One matrix for input and output", "tied embeddings erase the record (Gemma)"),
+        ("token record", GREEN, "Usable token record",
+         "enough ordinary token vectors are bit-identical to the base to list the updated ones"),
+        ("untrainable only", GREY, "Only unused vocabulary slots are bit-identical",
+         "those tokens cannot occur in training text, so they say nothing about the data"),
+        ("record, poor fit", GREY, "Partial record",
+         "some vectors are bit-identical, but the weight-decay shrink fits poorly; treat with care"),
+        ("changed throughout", GREY, "Every token vector changed",
+         "the release follows its base, but no vector is left bit-identical to compare"),
+        ("not comparable", GREY, "No match with that base",
+         "the token vectors are not a shrunken copy of that base's (e.g. Kimi-K2.5)"),
+        ("unchanged", GREY, "No token vector changed",
+         "all are bit-identical to the base, so no token stands out"),
+        ("shared matrix", GREY, "One matrix for input and output",
+         "tied embeddings: every vector changes and no record is kept (e.g. Gemma)"),
     ]
+    assert set(tot) == {k for k, *_ in classes}
     n = sum(tot.values())
-    c = Canvas(1600, 1000)
-    c.title("Which releases carry a readable record",
+    c = Canvas(1600, 920)
+    c.title("Which releases carry a usable token record",
             f"{n} comparisons of a release with its base model, sorted into seven groups.")
-    # left: totals
-    y0, RH = 180, 103
-    BX, BMAX = 40, 300
+    y0, RH = 160, 100
+    NX, BX, BMAX, TX = 122, 144, 300, 476
     mx = max(tot.values())
     for i, (key, col, head, sub) in enumerate(classes):
         y = y0 + i * RH
-        w = BMAX * tot[key] / mx
-        c.rect(BX, y + 14, max(w, 6), 38, col, r=5)
-        c.text(BX + max(w, 6) + 14, y + 33, str(tot[key]), size=34, weight="bold")
-        c.text(BX, y + 74, head, size=24, weight="bold")
-        c.text(BX, y + 97, sub, size=19, color=INK2)
-    # right: by family
-    fx, fy, fh = 760, 228, 39
-    c.text(fx, 190, "By model family", size=27, weight="bold")
-    fam = d["by_family"]
-    sx = 550 / max(sum(v.values()) for v in fam.values())
-    lx = fx + 200
-    for i, (name, v) in enumerate(fam.items()):
-        y = fy + i * fh
-        c.text(lx - 14, y + fh / 2, name.replace("NVIDIA Nemotron", "Nemotron").replace("other", "all others"),
-               size=23, ha="right")
-        x = lx
-        for key, col, _, _ in classes:
-            k = v.get(key, 0)
-            if not k:
-                continue
-            w = k * sx
-            c.rect(x + 1.5, y + 6, max(w - 3, 2), fh - 12, col)
-            x += w
-        c.text(x + 10, y + fh / 2, str(sum(v.values())), size=22, color=INK2)
-    assert sum(sum(v.values()) for v in fam.values()) == n
-    c.line(700, 180, 700, 900, color=GRID, lw=1.2)
-    c.text(fx, fy + len(fam) * fh + 26, "Bar length = number of comparisons; colours as on the left.",
-           size=21, color=INK2)
-    c.footer(f"Source: results/frontier/fig/d_comparability.json · {REPO}")
+        if i:
+            c.line(40, y, 1560, y, color=GRID, lw=1.2)
+        w = max(BMAX * tot[key] / mx, 6)
+        c.text(NX, y + RH / 2, str(tot[key]), size=44, weight="bold", ha="right",
+               color=INK if i else GREEN)
+        c.rect(BX, y + RH / 2 - 22, w, 44, col, r=5)
+        c.text(TX, y + 33, head, size=30, weight="bold")
+        c.text(TX, y + 70, sub, size=25, color=INK2)
+    c.footer(REPO, size=22)
     c.save("fig5_comparability", {
         "figure": "fig5_comparability",
         "sources": ["results/" + src, "results/frontier/FRONTIER.md §7 (class meanings, examples)"],
-        "totals": tot, "total": n, "by_family": fam,
+        "note": "Totals only. The by-family breakdown in the source is not drawn.",
+        "totals": tot, "total": n,
         "labels": {k: h for k, _, h, _ in classes},
+        "explanations": {k: s for k, _, _, s in classes},
     })
 
 

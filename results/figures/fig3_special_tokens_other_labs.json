@@ -3,7 +3,7 @@
  "sources": [
   "results/frontier/special_grid_nondeepseek.json"
  ],
- "note": "13 of the 22 comparisons in the source are drawn. Omitted: sibling releases with the same pattern, and three the source marks testable=false (Kimi-K2-Instruct, GLM-4.5, GLM-4.5-Air). 'replaced' in the source is drawn as 'not testable'.",
+ "note": "13 of the 22 comparisons in the source are drawn. Omitted: sibling releases with the same pattern, and three the source marks testable=false (Kimi-K2-Instruct, GLM-4.5, GLM-4.5-Air). 'replaced' in the source is drawn as 'not testable'. The source class 'vision / audio' is headed 'image, video, audio': it holds image, video and grounding tokens, plus audio tokens in Qwen3.5-35B-A3B only.",
  "omitted_releases": [
   "allenai/Olmo-3-7B-Think-SFT",
   "microsoft/Phi-4-reasoning-plus",
