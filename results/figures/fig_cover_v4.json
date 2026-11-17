@@ -1,0 +1,224 @@
+{
+ "figure": "fig_cover_v4",
+ "size_px": [
+  1600,
+  880
+ ],
+ "sources": [
+  "results/frontier_ds/v4_task_tokens.json (frac_changed, group, sim_to_base)",
+  "results/frontier_ds/DEEPSEEK.md section 4 (per-token table: status, sizes, Nex-N2.5-Max column)",
+  "results/frontier_ds/tok/DeepSeek-V4-{Pro,Flash}-Base__tokenizer.json (token ids)"
+ ],
+ "note": "Percentages are the share of a vector's numbers that differ from the base, rounded as in DEEPSEEK.md. 'documented' = described in DeepSeek's encoding README; read_url and extracted_url are documented too but sit outside this id range and are not drawn. action's start vector is gone from the release vector (the × in DEEPSEEK.md).",
+ "tokens": [
+  {
+   "token": "action",
+   "id": 128829,
+   "group": "documented",
+   "flash_pct": 100,
+   "pro_pct": 100,
+   "flash_size": [
+    0.38,
+    3.73
+   ],
+   "pro_size": [
+    0.5,
+    4.68
+   ],
+   "start_erased": true,
+   "flash_sim_to_base": -0.0165,
+   "pro_sim_to_base": 0.0175,
+   "nex": "bit-identical"
+  },
+  {
+   "token": "query",
+   "id": 128830,
+   "group": "documented",
+   "flash_pct": 99,
+   "pro_pct": 98,
+   "flash_size": [
+    0.38,
+    0.39
+   ],
+   "pro_size": [
+    0.51,
+    0.51
+   ],
+   "start_erased": false,
+   "flash_sim_to_base": 0.9844,
+   "pro_sim_to_base": 0.9953,
+   "nex": "bit-identical"
+  },
+  {
+   "token": "authority",
+   "id": 128831,
+   "group": "documented",
+   "flash_pct": 99,
+   "pro_pct": 98,
+   "flash_size": [
+    0.39,
+    0.39
+   ],
+   "pro_size": [
+    0.5,
+    0.51
+   ],
+   "start_erased": false,
+   "flash_sim_to_base": 0.9898,
+   "pro_sim_to_base": 0.9963,
+   "nex": "bit-identical"
+  },
+  {
+   "token": "domain",
+   "id": 128832,
+   "group": "documented",
+   "flash_pct": 99,
+   "pro_pct": 98,
+   "flash_size": [
+    0.38,
+    0.38
+   ],
+   "pro_size": [
+    0.51,
+    0.51
+   ],
+   "start_erased": false,
+   "flash_sim_to_base": 0.9873,
+   "pro_sim_to_base": 0.9952,
+   "nex": "bit-identical"
+  },
+  {
+   "token": "task",
+   "id": 128833,
+   "group": "undocumented",
+   "flash_pct": 97,
+   "pro_pct": 93,
+   "flash_size": [
+    0.38,
+    0.38
+   ],
+   "pro_size": [
+    0.5,
+    0.5
+   ],
+   "start_erased": false,
+   "flash_sim_to_base": 0.9986,
+   "pro_sim_to_base": 0.9996,
+   "nex": "bit-identical"
+  },
+  {
+   "token": "political",
+   "id": 128834,
+   "group": "undocumented",
+   "flash_pct": 99,
+   "pro_pct": 98,
+   "flash_size": [
+    0.39,
+    0.39
+   ],
+   "pro_size": [
+    0.51,
+    0.51
+   ],
+   "start_erased": false,
+   "flash_sim_to_base": 0.9871,
+   "pro_sim_to_base": 0.9965,
+   "nex": "bit-identical"
+  },
+  {
+   "token": "entity",
+   "id": 128835,
+   "group": "undocumented",
+   "flash_pct": 99,
+   "pro_pct": 98,
+   "flash_size": [
+    0.39,
+    0.39
+   ],
+   "pro_size": [
+    0.5,
+    0.5
+   ],
+   "start_erased": false,
+   "flash_sim_to_base": 0.9828,
+   "pro_sim_to_base": 0.9944,
+   "nex": "bit-identical"
+  },
+  {
+   "token": "title",
+   "id": 128836,
+   "group": "documented",
+   "flash_pct": 99,
+   "pro_pct": 98,
+   "flash_size": [
+    0.38,
+    0.38
+   ],
+   "pro_size": [
+    0.51,
+    0.51
+   ],
+   "start_erased": false,
+   "flash_sim_to_base": 0.9921,
+   "pro_sim_to_base": 0.9955,
+   "nex": "bit-identical"
+  },
+  {
+   "token": "safety",
+   "id": 128837,
+   "group": "undocumented",
+   "flash_pct": 99,
+   "pro_pct": 98,
+   "flash_size": [
+    0.39,
+    0.39
+   ],
+   "pro_size": [
+    0.51,
+    0.51
+   ],
+   "start_erased": false,
+   "flash_sim_to_base": 0.9886,
+   "pro_sim_to_base": 0.9958,
+   "nex": "bit-identical"
+  },
+  {
+   "token": "answer",
+   "id": 128838,
+   "group": "undocumented",
+   "flash_pct": 98,
+   "pro_pct": 97,
+   "flash_size": [
+    0.38,
+    0.38
+   ],
+   "pro_size": [
+    0.51,
+    0.51
+   ],
+   "start_erased": false,
+   "flash_sim_to_base": 0.9937,
+   "pro_sim_to_base": 0.9973,
+   "nex": "bit-identical"
+  },
+  {
+   "token": "search",
+   "id": 128839,
+   "group": "undocumented",
+   "flash_pct": 98,
+   "pro_pct": 98,
+   "flash_size": [
+    0.38,
+    0.38
+   ],
+   "pro_size": [
+    0.51,
+    0.51
+   ],
+   "start_erased": false,
+   "flash_sim_to_base": 0.9928,
+   "pro_sim_to_base": 0.9962,
+   "nex": "bit-identical"
+  }
+ ]
+}
