@@ -40,3 +40,6 @@ Homepage = "https://github.com/bojieli/training-forensics"
 
 [tool.setuptools]
 packages = ["trainforensics"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
