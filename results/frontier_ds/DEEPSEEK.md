@@ -53,6 +53,21 @@ All nine tool tokens are still exactly at their random start in V3-Base (yes), s
 
 **Verdict: holds.** *Article sentence:* "DeepSeek-V3 updated the tool-call tokens but left the four tool-output tokens bit-identical to the base model; V3-0324 updated all of them; R1 left all nine tool tokens bit-identical, i.e. still at their random starting values, and so did R1-Zero."
 
+### R1-0528, and what DeepSeek says about tool use
+
+DeepSeek-R1-0528 is not in `deepseek.json`. Its numbers come from the token files of the large-fine-tune lane (`results/large/tokens/`, made by `scripts/large/build.py`): `deepseek-ai__DeepSeek-V3-Base_--deepseek-ai__DeepSeek-R1-0528.json`, `deepseek-ai__DeepSeek-R1_--deepseek-ai__DeepSeek-R1-0528.json`. There the nine tool tokens (ids 128806–128814) are the category `tool-call`; `moved` means updated and `moved_at_init` counts the updated tokens that were still at their random start in the comparison's base.
+
+| comparison | tool tokens updated | bit-identical | of the updated, at their random start in that base | share of numbers changed |
+|---|---|---|---|---|
+| R1-0528 vs V3-Base | 9 of 9 | 0 | 9 | 90–94% |
+| R1-0528 vs R1 | 9 of 9 | 0 | 9 | 90–94% |
+
+So the release that followed R1 updated all nine tool tokens, whether it is compared with V3-Base or with R1 itself (R1 left them bit-identical to V3-Base, so the two comparisons give the same numbers for these vectors).
+
+DeepSeek's own documents say the same about tool use. The R1 paper ([arXiv 2501.12948](https://arxiv.org/abs/2501.12948), section "Structure Output and Tool Use") lists as a limitation that R1 "cannot leverage tools, such as search engines and calculators". The [R1-0528 release note](https://api-docs.deepseek.com/news/news250528) lists function calling as newly supported. The weights match both statements: R1 and R1-Zero left the nine tool tokens bit-identical to V3-Base, and R1-0528 updated all nine.
+
+Caveat: the weights are consistent with R1's post-training input containing none of these tokens. Alone, they cannot say whether a model could call tools some other way; for R1 that statement is the paper's, not ours.
+
 ## 3. Reserved placeholder slots, release by release
 
 | release | vs | placeholders bit-identical / barely changed / updated | unused slots changed | notes |
@@ -105,6 +120,10 @@ All nine tool tokens are still exactly at their random start in V3-Base (yes), s
 | `<｜search▁begin｜>` | other | updated (97%, size 0.39→0.40) | updated (97%, size 0.51→0.51) | updated (99%, size 0.51→0.52) | bit-identical | updated (99%, size 0.48→0.48) |
 
 × = the start vector is gone from the release vector (see below).
+
+**Where they sit.** `<｜action｜>` to `<｜search｜>` are 11 contiguous ids, 128,829–128,839, in the V4-Pro-Base, V4-Flash-Base and V4.1-Flash tokenizers (`tok/*__tokenizer.json`): 128829 `<｜action｜>`, 128830 `<｜query｜>`, 128831 `<｜authority｜>`, 128832 `<｜domain｜>`, 128833 `<｜task｜>`, 128834 `<｜political｜>`, 128835 `<｜entity｜>`, 128836 `<｜title｜>`, 128837 `<｜safety｜>`, 128838 `<｜answer｜>`, 128839 `<｜search｜>`. The 6 undocumented ones are ids 128833, 128834, 128835, 128837, 128838, 128839. None of the six occurs in the V4-Pro `encoding/README.md` or `encoding_dsv4.py` (copies in `tok/`), nor in the [V4.1-Flash encoding README](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/encoding/README.md) (fetched 2026-11-17; not stored here).
+
+**V4.1-Flash.** Its token vectors are wider (5,120 numbers against 4,096 in V4-Flash), so it cannot be compared with any V4 model, and DeepSeek has released no V4.1 base. The only V4.1 comparison is the October update against the first V4.1-Flash release (last column): it updated 6 of the 6 undocumented tokens. Without a base there is no starting point to check these vectors against.
 
 Tests on the ten tokens of this group in DeepSeek's releases. Documented by DeepSeek as task tokens for internal classification: `<｜query｜>`, `<｜authority｜>`, `<｜domain｜>`, `<｜title｜>` (also documented, outside this group: `<｜action｜>`, `<｜read_url｜>`). In the tokenizer but not in that documentation: `<｜task｜>`, `<｜political｜>`, `<｜entity｜>`, `<｜safety｜>`, `<｜answer｜>`, `<｜search｜>`.
 

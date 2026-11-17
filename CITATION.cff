@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below, and cite Alapan Chaudhuri's thread, where the method comes from."
+type: software
+title: "training-forensics: Your fine-tune's weights keep a receipt for its training data"
+abstract: "When a fine-tuned model is released next to its base model, the two files together record which vocabulary tokens the fine-tuning data contained. An independent replication and extension of a method by Alapan Chaudhuri: 421 comparisons between a release and its base, covering 580 models, plus controlled fine-tunes with full ground truth."
+authors:
+  - family-names: Li
+    given-names: Bojie
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/bojieli/training-forensics"
+url: "https://github.com/bojieli/training-forensics"
+keywords:
+  - llm
+  - forensics
+  - fine-tuning
+  - open-weights
+  - reproducibility
+references:
+  - type: generic
+    title: "Thread on what a fine-tune's embedding matrix records about its training"
+    authors:
+      - family-names: Chaudhuri
+        given-names: Alapan
+    year: 2026
+    url: "https://x.com/alapanchaudhuri/status/2121439269772492848"
+preferred-citation:
+  type: generic
+  title: "Your fine-tune's weights keep a receipt for its training data"
+  authors:
+    - family-names: Li
+      given-names: Bojie
+  year: 2026
+  url: "https://github.com/bojieli/training-forensics"

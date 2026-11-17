@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""results/frontier_ds/{deepseek.json, v4_change_shape.json} -> results/frontier_ds/DEEPSEEK.md"""
+"""results/frontier_ds/{deepseek.json, v4_change_shape.json} (+ results/large/tokens/*R1-0528.json for section 2)
+-> results/frontier_ds/DEEPSEEK.md"""
 from __future__ import annotations
 
 import json
@@ -107,6 +108,45 @@ def main():
       "bit-identical to the base model; V3-0324 updated all of them; R1 left all nine tool tokens bit-identical, i.e. still "
       "at their random starting values, and so did R1-Zero.\"")
     w("")
+    # ---------------- R1-0528 (lane `large`) and DeepSeek's own statements about tool use
+    LT = ROOT / "results" / "large" / "tokens"
+    r0528 = []
+    for par in ("DeepSeek-V3-Base", "DeepSeek-R1"):
+        f = LT / f"deepseek-ai__{par}_--deepseek-ai__DeepSeek-R1-0528.json"
+        if not f.exists():
+            continue
+        j = json.load(open(f))
+        tk = [a for a in j["added_tokens"] if a["id"] in tool]
+        r0528.append((par.replace("DeepSeek-", ""), f.name, j["categories"]["tool-call"], tk))
+    if r0528:
+        w("### R1-0528, and what DeepSeek says about tool use")
+        w("")
+        w("DeepSeek-R1-0528 is not in `deepseek.json`. Its numbers come from the token files of the large-fine-tune lane "
+          "(`results/large/tokens/`, made by `scripts/large/build.py`): " + ", ".join(f"`{n}`" for _, n, _, _ in r0528) +
+          ". There the nine tool tokens (ids 128806–128814) are the category `tool-call`; `moved` means updated and "
+          "`moved_at_init` counts the updated tokens that were still at their random start in the comparison's base.")
+        w("")
+        w("| comparison | tool tokens updated | bit-identical | of the updated, at their random start in that base | "
+          "share of numbers changed |")
+        w("|---|---|---|---|---|")
+        for par, _, c, tk in r0528:
+            fr = [100 * a["frac_changed"] for a in tk]
+            w(f"| R1-0528 vs {par} | {c['moved']} of {len(tool)} | {c['unmoved']} | {c['moved_at_init']} | "
+              f"{min(fr):.0f}–{max(fr):.0f}% |")
+        w("")
+        w("So the release that followed R1 updated all nine tool tokens, whether it is compared with V3-Base or with R1 "
+          "itself (R1 left them bit-identical to V3-Base, so the two comparisons give the same numbers for these vectors).")
+        w("")
+        w("DeepSeek's own documents say the same about tool use. The R1 paper "
+          "([arXiv 2501.12948](https://arxiv.org/abs/2501.12948), section \"Structure Output and Tool Use\") lists as a "
+          "limitation that R1 \"cannot leverage tools, such as search engines and calculators\". The "
+          "[R1-0528 release note](https://api-docs.deepseek.com/news/news250528) lists function calling as newly "
+          "supported. The weights match both statements: R1 and R1-Zero left the nine tool tokens bit-identical to "
+          "V3-Base, and R1-0528 updated all nine.")
+        w("")
+        w("Caveat: the weights are consistent with R1's post-training input containing none of these tokens. Alone, they "
+          "cannot say whether a model could call tools some other way; for R1 that statement is the paper's, not ours.")
+        w("")
     # ---------------- placeholders per release
     w("## 3. Reserved placeholder slots, release by release")
     w("")
@@ -203,6 +243,24 @@ def main():
         w(f"| `{name}` | {group(name)} | " + " | ".join(cells) + " |")
     w("")
     w("× = the start vector is gone from the release vector (see below).")
+    w("")
+    blk_ids = list(range(128829, 128840))
+    nm = {t["id"]: t for t in C[("V4-Pro-Base", "V4-Pro")]["named_detail"]}
+    m41 = {t["id"]: t for t in C[("V4.1-Flash", "V4.1-Flash-1017")]["named_detail"]}
+    und = [i for i in blk_ids if group(nm[i]["token"]) == "undocumented"]
+    w(f"**Where they sit.** `<｜action｜>` to `<｜search｜>` are {len(blk_ids)} contiguous ids, {blk_ids[0]:,}–{blk_ids[-1]:,}, "
+      "in the V4-Pro-Base, V4-Flash-Base and V4.1-Flash tokenizers (`tok/*__tokenizer.json`): " +
+      ", ".join(f"{i} `{nm[i]['token']}`" for i in blk_ids) + f". The {len(und)} undocumented ones are ids " +
+      ", ".join(str(i) for i in und) + ". None of the six occurs in the V4-Pro `encoding/README.md` or "
+      "`encoding_dsv4.py` (copies in `tok/`), nor in the "
+      "[V4.1-Flash encoding README](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/encoding/README.md) "
+      "(fetched 2026-11-17; not stored here).")
+    w("")
+    n41 = sum(m41[i]["status"] == "updated" for i in und)
+    w(f"**V4.1-Flash.** Its token vectors are wider (5,120 numbers against 4,096 in V4-Flash), so it cannot be compared "
+      f"with any V4 model, and DeepSeek has released no V4.1 base. The only V4.1 comparison is the October update against "
+      f"the first V4.1-Flash release (last column): it updated {n41} of the {len(und)} undocumented tokens. Without a "
+      "base there is no starting point to check these vectors against.")
     w("")
     vp = sh["DeepSeek-V4-Pro-Base -> DeepSeek-V4-Pro"]
     vf = sh["DeepSeek-V4-Flash-Base -> DeepSeek-V4-Flash"]

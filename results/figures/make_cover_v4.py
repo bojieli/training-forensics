@@ -2,7 +2,8 @@
 """Article cover: the 11 neighbouring special tokens in DeepSeek V4's task-token block.
 
 Run from the repository root:  python3 results/figures/make_cover_v4.py
-Writes fig_cover_v4.{png,svg,json} next to this file. Same style as make_figures.py.
+Writes fig_cover_v4.{png,svg,json} and the 5:2 X-cover variant fig_cover_v4_wide.{png,svg,json}
+next to this file. Same style as make_figures.py.
 
 Every value drawn is read from results/frontier_ds/v4_task_tokens.json (share of numbers changed,
 documented / undocumented grouping), results/frontier_ds/DEEPSEEK.md section 4 (the per-token table:
@@ -177,4 +178,66 @@ side = {
     "tokens": rows,
 }
 json.dump(side, open(os.path.join(HERE, "fig_cover_v4.json"), "w"), indent=1, ensure_ascii=False)
+# ---------------------------------------------------------------- wide variant (5:2, X article cover)
+# Same data and assertions as above. X shows article covers at 5:2 and may crop a little more, so all
+# text stays inside a 6% margin at the top and bottom. Dropped relative to the figure above: the
+# subtitle, the colour key (the row captions carry it), and the action footnote with its asterisk.
+WW, WH, WDPI = 1600, 640, 125          # layout units; saved at 2000x800 px
+SAFE = 0.06 * WH
+fig = plt.figure(figsize=(WW / 100, WH / 100), dpi=100, facecolor="white")
+ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, WW); ax.set_ylim(WH, 0); ax.axis("off")
+texts = []
+texts.append(T(M, 70, f"DeepSeek V4 updated {n_undoc} special tokens its README doesn't describe", 46, weight="bold"))
+
+y = 126
+R(M, y - 17, 34, 34, "white", r=6, ec=INK3, lw=1.5)
+texts.append(T(M + 46, y, f"documented in DeepSeek's README ({n_doc})", 27, weight="bold"))
+R(700, y - 17, 34, 34, INK, r=6)
+texts.append(T(746, y, f"not in the README, changed the same way ({n_undoc})", 27, weight="bold"))
+
+BW = (WW - 2 * M - GAP * (len(rows) - 1)) / len(rows)
+Y_NAME, H_NAME, H_CELL, CAP = 154, 64, 66, 18
+assert all(r["nex"] == "bit-identical" for r in rows)
+WBANDS = [  # (caption bold, caption rest, y of caption, key)
+    ("V4-Flash", "compared with V4-Flash-Base: share of the vector's numbers that changed", 246, "flash_pct"),
+    ("V4-Pro", "compared with V4-Pro-Base", 358, "pro_pct"),
+    ("Nex-N2.5-Max", "a third-party fine-tune of the same V4-Pro-Base: bit-identical to the base", 470, None),
+]
+Y_END = WBANDS[-1][2] + CAP + H_CELL
+for i, r in enumerate(rows):
+    x = M + i * (BW + GAP)
+    und = r["group"] == "undocumented"
+    if und:
+        R(x - 5, Y_NAME - 5, BW + 10, Y_END - Y_NAME + 10, TINT, r=10, z=1)
+    R(x, Y_NAME, BW, H_NAME, INK if und else "white", ec="none" if und else INK3, lw=0 if und else 1.5)
+    texts.append(T(x + BW / 2, Y_NAME + H_NAME / 2, r["token"], 27, "white" if und else INK, "bold", ha="center"))
+    for _, _, yc, key in WBANDS:
+        yb = yc + CAP
+        if key:
+            R(x, yb, BW, H_CELL, BLUE)
+            texts.append(T(x + BW / 2, yb + H_CELL / 2, f"{r[key]}%", 36, "white", "bold", ha="center"))
+        else:
+            R(x, yb, BW, H_CELL, ORANGE)
+            texts.append(T(x + BW / 2, yb + H_CELL / 2 - 2, "=", 44, INK, "bold", ha="center"))
+for bold, rest_, yc, _ in WBANDS:
+    t = T(M, yc, bold, 26, weight="bold")
+    fig.canvas.draw()
+    x1 = t.get_window_extent().x1
+    texts += [t, T(x1 + 12, yc, rest_, 26, INK2)]
+
+texts.append(T(M, 584, "The weights show that these vectors changed, not what the tokens are for.", 23, INK2))
+texts.append(T(WW - M, 584, "Method: @alapanchaudhuri  ·  github.com/bojieli/training-forensics", 22, INK3, ha="right"))
+
+fig.canvas.draw()
+boxes = [t.get_window_extent() for t in texts]
+assert min(b.y0 for b in boxes) >= SAFE and max(b.y1 for b in boxes) <= WH - SAFE, "text outside the 6% safe margin"
+assert min(b.x0 for b in boxes) >= M - 1 and max(b.x1 for b in boxes) <= WW - M + 1, "text outside the side margin"
+assert boxes[-2].x1 + 30 < boxes[-1].x0, "bottom line: caveat and credit collide"
+for ext in ("png", "svg"):
+    fig.savefig(os.path.join(HERE, f"fig_cover_v4_wide.{ext}"), dpi=WDPI if ext == "png" else 100, facecolor="white")
+assert (WW * WDPI // 100) * 2 == (WH * WDPI // 100) * 5      # exactly 5:2
+wide = dict(side, figure="fig_cover_v4_wide", size_px=[WW * WDPI // 100, WH * WDPI // 100],
+            note=side["note"] + " Wide 5:2 variant for the X article cover: same tokens, percentages and "
+                 "Nex-N2.5-Max row; the subtitle, colour key and action footnote (and its asterisk) are not drawn.")
+json.dump(wide, open(os.path.join(HERE, "fig_cover_v4_wide.json"), "w"), indent=1, ensure_ascii=False)
 print(json.dumps([(r["token"], r["id"], r["group"], r["flash_pct"], r["pro_pct"], r["nex"]) for r in rows]))
